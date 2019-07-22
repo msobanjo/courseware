@@ -27,7 +27,7 @@ Here is an example output when creating a new key pair:
 It is important that we save the private key somewhere, because we will not be able to gain access to it again.
 To do this we can add a query to our command which gets the `KeyMaterial` property when the key information is returned, we can then specify that we would like a text output and then redirect the output to a file for the key to be stored in.
 
-*Make sure that you do not put your key somewhere publicly accessible, such as a GitHub repository*
+**Make sure that you do not put your key somewhere publicly accessible, such as a GitHub repository**
 ```bash
 # aws ec2 create-key-pair --key-name [KEY_PAIR_NAME] --query [QUERY] --output [OUTPUT_TYPE]
 aws ec2 create-key-pair --key-name MyKeyPair --query ‘KeyMaterial’ --output text > ~/.ssh/MyKeyPair.pem
