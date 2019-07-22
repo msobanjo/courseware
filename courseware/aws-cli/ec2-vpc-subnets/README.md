@@ -8,7 +8,7 @@ By launching instances in separate Availability Zones, you can protect your appl
 We assign a unique ID to each subnet.
 
 ## Creating Subnets
-## Basic Usage
+### Basic Usage
 After you create a subnet, you can't change its CIDR block.
 The size of the subnet's IPv4 CIDR block can be the same as a VPC's IPv4 CIDR block, or a subset of a VPC's IPv4 CIDR block.
 If you create more than one subnet in a VPC, the subnets' CIDR blocks must not overlap.
