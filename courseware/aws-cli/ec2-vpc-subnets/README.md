@@ -20,4 +20,33 @@ When you create each subnet, you provide the VPC ID and IPv4 CIDR block for the 
 aws ec2 create-subnet --vpc-id vpc-081ec835f3EXAMPLE --cidr-block 10.0.1.0/24
 ```
 
+## View Existing Subnets
+### Basic Usage
+You may want to view the existing Subnets to view the properties of them:
+```bash
+aws ec2 describe-subnets
+```
+### Getting the ID Property Using Queries
+To manage a Subnet, such as when you want to delete it, then you will need to be able to reference that Subnet by its ID.
+If you have several Subnets then the output can be a little overwhelming, considering that you just want to see the IDs.
+We can use a query like belown and change the output to just be text to make a list of Subnet IDs.
+```bash
+# aws ec2 describe-subnets --output text --query Subnets[].SubnetId
+aws ec2 describe-subnets --output text --query Subnets[].SubnetId
+```
 
+## Delete Subnets
+### Basic Usage
+The Subnet ID must be provided when deleting a Subnet:
+```bash
+# aws ec2 delete-subnet --subnet-id [SUBNET_ID]
+aws ec2 delete-subnet --subnet-id subnet-04c9613a521b24db0
+```
+
+## Tasks
+Try to complete the following tasks using the commands you learned above:
+- Create a new VPC with a CIDR block of 10.0.0.0/16
+- Create a new Subnet inside the VPC you made, with a CIDR block of 10.0.1.0/24
+- Create another Subnet inside the same VPC, with a CIDR block of 10.0.2.0/24
+- List the Subnets you have, showing only the IDs of them
+- Delete the VPC and Subnets that you created by their IDs it's ID
