@@ -25,23 +25,6 @@ The following are the basic characteristics of security groups for your VPC:
 - A security group name cannot start with sg-.
 - A security group name must be unique within the VPC.
 
-## Security Group Rules
-You can add or remove rules for a security group (also referred to as authorizing or revoking inbound or outbound access). A rule applies either to inbound traffic (ingress) or outbound traffic (egress). You can grant access to a specific CIDR range, or to another security group in your VPC or in a peer VPC (requires a VPC peering connection).
-
-The following are the basic parts of a security group rule in a VPC:
-- (Inbound rules only) The source of the traffic and the destination port or port range. The source can be another security group, an IPv4 or IPv6 CIDR block, or a single IPv4 or IPv6 address.
-- (Outbound rules only) The destination for the traffic and the destination port or port range. The destination can be another security group, an IPv4 or IPv6 CIDR block, a single IPv4 or IPv6 address, or a prefix list ID ( A service is identified by a prefix list—the name and ID of a service for a Region).
-- Any protocol that has a standard protocol number (for a list, see Protocol Numbers). If you specify ICMP as the protocol, you can specify any or all of the ICMP types and codes.
-- An optional description for the security group rule to help you identify it later. A description can be up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*.
-
-When you specify a CIDR block as the source for a rule, traffic is allowed from the specified addresses for the specified protocol and port. When you specify a security group as the source for a rule, traffic is allowed from the elastic network interfaces (ENI) for the instances associated with the source security group for the specified protocol and port. Adding a security group as a source does not add rules from the source security group.
-
-If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length.
-
-Some systems for setting up firewalls let you filter on source ports. Security groups let you filter only on destination ports.
-
-When you add or remove rules, they are automatically applied to all instances associated with the security group.
-
 ## Creating Security Groups
 Security groups can be created and applied to a VPC, instances within this VPC will then be effected.
 ```bash
@@ -65,6 +48,23 @@ aws ec2 describe-security-groups --group-names my-sg
 ```
 
 ## Security Group Rules
+### Overview
+You can add or remove rules for a security group (also referred to as authorizing or revoking inbound or outbound access). A rule applies either to inbound traffic (ingress) or outbound traffic (egress). You can grant access to a specific CIDR range, or to another security group in your VPC or in a peer VPC (requires a VPC peering connection).
+
+The following are the basic parts of a security group rule in a VPC:
+- (Inbound rules only) The source of the traffic and the destination port or port range. The source can be another security group, an IPv4 or IPv6 CIDR block, or a single IPv4 or IPv6 address.
+- (Outbound rules only) The destination for the traffic and the destination port or port range. The destination can be another security group, an IPv4 or IPv6 CIDR block, a single IPv4 or IPv6 address, or a prefix list ID ( A service is identified by a prefix list—the name and ID of a service for a Region).
+- Any protocol that has a standard protocol number (for a list, see Protocol Numbers). If you specify ICMP as the protocol, you can specify any or all of the ICMP types and codes.
+- An optional description for the security group rule to help you identify it later. A description can be up to 255 characters in length. Allowed characters are a-z, A-Z, 0-9, spaces, and ._-:/()#,@[]+=;{}!$*.
+
+When you specify a CIDR block as the source for a rule, traffic is allowed from the specified addresses for the specified protocol and port. When you specify a security group as the source for a rule, traffic is allowed from the elastic network interfaces (ENI) for the instances associated with the source security group for the specified protocol and port. Adding a security group as a source does not add rules from the source security group.
+
+If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length.
+
+Some systems for setting up firewalls let you filter on source ports. Security groups let you filter only on destination ports.
+
+When you add or remove rules, they are automatically applied to all instances associated with the security group.
+
 ### Basic Usage
 To make a rule to allow incoming traffic, we must provide the Security Group ID, the Protocol being used, the address range where the requests will be coming from and the port that will be used.
 ```bash
