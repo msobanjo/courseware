@@ -90,6 +90,12 @@ Once you know your public IP address, this can be used when configuring the SSH 
 # aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
 aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 22 --cidr 203.0.113.57/32
 ```
+You can also use command substitution in bash to get this working in a single command:
+```bash
+# aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
+aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 22 --cidr $(curl https://checkip.amazonaws.com)/32
+```
+
 ## Deleting a Security Group
 ### Basic Usage
 You must provide the ID of the Security Group when you are deleting it.
