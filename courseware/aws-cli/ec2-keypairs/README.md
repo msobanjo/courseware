@@ -3,14 +3,14 @@ Key Pairs in EC2 can be used for securely connecting to EC2 instances in AWS.
 Connections are usually over SSH which uses public and private keys.
 This handout discusses how to manage these Key Pairs and how to locally store the private keys that are generated on your local system.
 
-# Creating Key Pairs
-## Basic Usage
+## Creating Key Pairs
+### Basic Usage
 The create-key-pair command can be used to create our key pair, the name of the Key Pair so that it can be easily referenced later on, such as when we want to add a key pair to an EC2 instance.
 ```bash
 # aws ec2 create-key-pair --key-name [KEY_PAIR_NAME]
 aws ec2 create-key-pair --key-name MyKeyPair
 ```
-## The Private Key
+### The Private Key
 Once a new Key Pair has been created, the AWS CLI will print out the private key, along with some other information about the Key Pair.
 The private key is what we can use on the client side, to authenticate with an EC2 instance.
 
@@ -23,7 +23,7 @@ Here is an example which has been made much shorter:
 }
 ```
 
-## Locally Storing the Private Key
+### Locally Storing the Private Key
 It is important that we save the private key somewhere, because we will not be able to gain access to it again.
 To do this we can add a query to our command which gets the KeyMaterial property when the key information is returned, we can then specify that we would like a text output and then redirect the output to a file for the key to be stored in.
 ```bash
@@ -31,7 +31,7 @@ To do this we can add a query to our command which gets the KeyMaterial property
 aws ec2 create-key-pair --key-name MyKeyPair --query ‘KeyMaterial’ --output text > ~/.ssh/MyKeyPair.pem
 ```
 
-## Private Key Permissions
+### Private Key Permissions
 When storing a private key, it is important that only you as the owner are the one that is able to read it. Make sure you change the file permissions to allow this:
 ```bash
 chmod 400 ~/.ssh/MyKeyPair.pem
