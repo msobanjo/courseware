@@ -39,3 +39,20 @@ When storing a private key, it is important that only you as the owner are the o
 chmod 400 ~/.ssh/MyKeyPair.pem
 ```
 
+## Deleting Key Pairs
+#### Basic Usage
+Deleting key pairs is very easy, just be careful that you are sure that you want to delete them!
+
+Provide the name of the Key Pair to delete it:
+```bash
+# aws ec2 delete-key-pair --key-name [KEY_PAIR_NAME]
+aws ec2 delete-key-pair --key-name MyKeyPair
+```
+
+## Tasks
+Try to complete the following tasks:
+- Create a new key pair called `MyKeyPair`, make sure the value of the key gets saved to a file: `~/ssh/MyKeyPair.pem`
+- Verify the key has been saved properly by viewing the contents of the file
+- Delete the key pair that you created and the file that you saved also
+
+
