@@ -1,3 +1,3 @@
-# qac-courseware
-Centralised courseware project for QAC
+# Learning Hub
+Centralised project for learnign Cloud and DevOps Topics
 
