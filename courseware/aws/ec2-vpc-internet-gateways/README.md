@@ -22,3 +22,51 @@ To enable communication over the internet for IPv4, your instance must have a pu
 Your instance is only aware of the private (internal) IP address space defined within the VPC and subnet.
 The internet gateway logically provides the one-to-one NAT on behalf of your instance, so that when traffic leaves your VPC subnet and goes to the internet, the reply address field is set to the public IPv4 address or Elastic IP address of your instance, and not its private IP address.
 Conversely, traffic that's destined for the public IPv4 address or Elastic IP address of your instance has its destination address translated into the instance's private IPv4 address before the traffic is delivered to the VPC.
+
+## Creating an Internet Gateway
+### Basic Usage
+Creating an Internet Gateway is very simple, no parameters are required:
+```bash
+aws ec2 create-internet-gateway 
+```
+
+## Attaching an Internet Gateway to a VPC
+### Basic Usage
+You must have an existing VPC to attach the internet gateway to.
+To attach an Internet Gateway to a VPC you must provide the IDs for both the VPC and Internet Gateway.
+```bash
+# aws ec2 attach-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID] --vpc-id [VPC_ID]
+aws ec2 attach-internet-gateway --internet-gateway-id igw-0a831f55f06387254 --vpc-id vpc-05207b1e60ee695c5
+```
+
+## View Existing Internet Gateways
+We can use the `describe-internet-gateways` command to see the existing Internet Gateways.
+This will also give us useful information about them such as their IDs and the VPCs that they are attached to.
+```bash
+aws ec2 describe-internet-gateways
+```
+
+## Detaching Internet Gateways
+Before you can delete an Internet Gateway it must be detached first, otherwise you will get an error complaining that it has dependencies that can't be deleted.
+Detaching an Internet Gateway can be done by providing the Internet Gateway ID and the ID of the VPC that it is attached to.
+```bash
+# aws ec2 detach-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID] --vpc-id [VPC_ID]
+aws ec2 detach-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID] --vpc-id [VPC_ID]
+```
+
+## Deleting Internet Gateways
+An Internet Gateway can be deleted by providing the ID of the Internet Gateway.
+```bash
+# aws ec2 delete-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID]
+aws ec2 delete-internet-gateway --internet-gateway-id igw-0a831f55f06387254
+```
+
+## Tasks
+Try to complete the following tasks:
+- Create a VPC
+- Create an Internet Gateway
+- Attach the new Internet Gateway to the VPC that you created
+- View information about the Internet Gateway, does it say that it is attached to a VPC?
+- Detach the Internet Gateway
+- Delete the VPC and Internet Gateway that you created
+
