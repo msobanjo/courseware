@@ -8,3 +8,5 @@ Amazon EC2 reduces the time required to obtain and boot new server instances to 
 Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use.
 Amazon EC2 provides developers the tools to build failure resilient applications and isolate them from common failure scenarios.
 
+## Tasks
+- Learn how to manage [VPCs](./vpc/README.md)
