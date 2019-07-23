@@ -70,3 +70,5 @@ Try to complete the following tasks:
 - Detach the Internet Gateway
 - Delete the VPC and Internet Gateway that you created
 
+[Return to VPC Tasks](../README.md#tasks)
+
