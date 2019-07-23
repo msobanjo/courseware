@@ -74,4 +74,4 @@ Try to complete the following tasks using the commands you learned above:
 - Learn about [Security Groups](./security-groups)
 - Learn about [Subnets](./subnets)
 
-[Go Back to EC2 Tasks](../README.md#tasks)
+[Go Back](../README.md#tasks)

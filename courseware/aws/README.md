@@ -9,5 +9,6 @@ With just one tool to download and configure, you can control multiple AWS servi
 
 ## Tasks
 - Follow the official installation guide for installing the AWS Command Line Interface: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+- Learn about [VPC](./vpc/)
 - Learn about [EC2](./ec2/)
 
