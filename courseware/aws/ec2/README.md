@@ -9,4 +9,6 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for ca
 Amazon EC2 provides developers the tools to build failure resilient applications and isolate them from common failure scenarios.
 
 ## Tasks
-- Learn how to manage [VPCs](./vpc/README.md)
+- EC2 instances operate inside Virtual Private Clouds, so we should learn how to manage [VPCs](./vpc/README.md) first.
+
+[Go Back to AWS Tasks](../README.md#tasks)
