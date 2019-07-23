@@ -1,3 +1,3 @@
 # Learning Hub
-Centralised project for learnign Cloud and DevOps Topics
+Centralised project for learning Cloud and DevOps Topics
 
