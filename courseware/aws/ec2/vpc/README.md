@@ -70,4 +70,5 @@ Try to complete the following tasks using the commands you learned above:
 - Create a new VPC with a CIDR block of 10.0.0.0/16
 - List the VPCs you have, showing only the IDs of them
 - Delete the VPC that you created by it's ID
-- Learn about [Subnets](./subnets)
+- Learn about [Internet Gateways](./internet-gateways)
+
