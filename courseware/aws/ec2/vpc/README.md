@@ -71,5 +71,7 @@ Try to complete the following tasks using the commands you learned above:
 - List the VPCs you have, showing only the IDs of them
 - Delete the VPC that you created by it's ID
 - Learn about [Internet Gateways](./internet-gateways)
+- Learn about [Security Groups](./security-groups)
+- Learn about [Subnets](./subnets)
 
 [Go Back to EC2 Tasks](../README.md#tasks)
