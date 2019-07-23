@@ -10,5 +10,6 @@ Amazon EC2 provides developers the tools to build failure resilient applications
 
 ## Tasks
 - EC2 instances operate inside Virtual Private Clouds, so we should learn how to manage [VPCs](./vpc/README.md) first.
+- To be able to connect securely to our EC2 instances we need to configure keys, this can be done with  [Key Pairs](./key-pairs)
 
-[Go Back to AWS Tasks](../README.md#tasks)
+[Go Back](../README.md#tasks)
