@@ -72,3 +72,4 @@ Try to complete the following tasks using the commands you learned above:
 - Delete the VPC that you created by it's ID
 - Learn about [Internet Gateways](./internet-gateways)
 
+[Go Back to EC2 Tasks](../README.md#tasks)
