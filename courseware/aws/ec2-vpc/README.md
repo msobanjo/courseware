@@ -29,6 +29,16 @@ VPCs can be create very easily, you only should have to provide the CIDR block w
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 ```
 
+### Create a Default VPC
+If you created your AWS account after 2013-12-04, it supports only EC2-VPC. In this case, you have a default VPC in each AWS Region. A default VPC is ready for you to use so that you don't have to create and configure your own VPC. You can immediately start launching Amazon EC2 instances into your default VPC. You can also use services such as Elastic Load Balancing, Amazon RDS, and Amazon EMR in your default VPC.
+
+A default VPC is suitable for getting started quickly, and for launching public instances such as a blog or simple website. You can modify the components of your default VPC as needed. 
+
+If for whatever reason you have deleted your default VPC, its easy to create another one:
+```bash
+aws ec2 create-default-vpc
+```
+
 ### CIDR Blocks & Limitations
 The CIDR block is what defines how large or small your subnet is.
 The smallest CIDR block you can have is /28, with 16 hosts or /16, which can have up to 65,536 hosts.
