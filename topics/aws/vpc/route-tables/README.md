@@ -47,10 +47,10 @@ aws ec2 delete-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.
 ```
 
 ## Tasks
-- Create VPC and an Internet Gateway that is associated with it
-- Create a Route Table for the new VPC
-- Add a Route that allows Internet Access for the VPC
-- Delete the Route Table, Disassociate from the VPC and delete the Internet Gateway, Delete the VPC
+- Create VPC and an Internet Gateway that is attached to it.
+- Create a Route Table for the new VPC.
+- Add a Route that allows Internet Access for the VPC.
+- Delete the Route Table, detach the Internet Gateway from the VPC and delete the it, Delete the VPC
 
 
 [Go Back](../README.md#tasks)
