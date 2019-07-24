@@ -27,9 +27,9 @@ You may want to view the existing Subnets to view the properties of them:
 aws ec2 describe-subnets
 ```
 ### Getting the ID Property Using Queries
-To manage a Subnet, such as when you want to delete it, then you will need to be able to reference that Subnet by its ID.
-If you have several Subnets then the output can be a little overwhelming, considering that you just want to see the IDs.
-We can use a query like belown and change the output to just be text to make a list of Subnet IDs.
+To manage a Subnet, such as when you want to delete it, you will need to be able to reference that Subnet by its ID.
+If you have several Subnets, the output can be a little overwhelming, considering that you just want to see the IDs.
+We can use a query, like the one below, and change the output to be text only; this will return a list of Subnet IDs.
 ```bash
 # aws ec2 describe-subnets --output text --query Subnets[].SubnetId
 aws ec2 describe-subnets --output text --query Subnets[].SubnetId
