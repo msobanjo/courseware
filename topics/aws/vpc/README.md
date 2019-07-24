@@ -53,13 +53,33 @@ aws ec2 create-default-vpc
 ```
 
 ## Tasks
-### Create a Simple VPC
+### Create and delete simple VPC
 Try to complete the following tasks, using the commands you learned above:
-- Create a new VPC with a CIDR block of 10.0.0.0/16
-- List the VPCs you have, showing only the IDs of them
-- Delete the VPC that you created
+- Create a new VPC with a CIDR block of `10.0.0.0/16`:
+    ```bash
+    aws ec2 create-vpc --cidr-block 10.0.0.0/16
+    ```
+- We can then delete the VPC using its ID, just replace `[VPC_ID]` in the command below with the ID of your VPC you just created.
+    ```bash
+    aws ec2 delete-vpc --vpc-id [VPC_ID]
+    ```
+- When making scripts, we will want to get the VPC ID on creation, we can use a query command for this and store it in a variable. Try the following commands:
+    ```bash
+    vpc_id=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query Vpc.VpcId --output text)
+    echo ${vpc_id}
+    ```
+    Now you can access the `vpc_id` variable in another parts of script you are writing, whenever you need to reference this VPC's ID.
+- Now try using the `vpc_id` variable that we made to delete the VPC:
+    ```bash
+    aws ec2 delete-vpc --vpc-id ${vpc_id}
+    ```
+- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+    ```bash
+    aws ec2 describe-vpcs
+    ```
 
-### Learn how to Fully Configure VPC
+### Learn how to Fully Configure a VPC
+Unless you create a default VPC, there are several other components to understand and configure:
 - Learn about [Subnets](./subnets)
 - Learn about [Internet Gateways](./internet-gateways)
 - Learn about [Route Tables](./route-tables)

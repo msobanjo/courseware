@@ -26,7 +26,7 @@ The following are the basic characteristics of security groups for your VPC:
 - A security group name must be unique within the VPC.
 
 ## Creating Security Groups
-Security groups can be created and applied to a VPC; instances within this VPC will then be affected:
+Security groups can be created and applied to a VPC; instances within this VPC will then be affected, unless a Security Group has been applied to them directly.
 ```bash
 # aws ec2 create-security-group --group-name [SECURITY_GROUP_NAME] --description [DESCRIPTION] --vpc-id [VPC_ID]
 aws ec2 create-security-group --group-name my-sg --description "My security group" --vpc-id vpc-1a2b3c4d
@@ -59,7 +59,7 @@ The following are the basic parts of a security group rule in a VPC:
 
 When you specify a CIDR block as the source for a rule, traffic is allowed from the specified addresses for the specified protocol and port. When you specify a security group as the source for a rule, traffic is allowed from the elastic network interfaces (ENI) for the instances associated with the source security group for the specified protocol and port. Adding a security group as a source does not add rules from the source security group.
 
-If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length.
+If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length. For example to specify the address `216.58.213.14`, you can use the following: `216.58.213.14/32`
 
 Some systems for setting up firewalls let you filter on source ports. Security groups only let you filter on destination ports.
 
