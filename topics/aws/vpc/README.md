@@ -16,18 +16,8 @@ VPCs can be created very easily - you should only have to provide the CIDR block
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 ```
 
-### Create a Default VPC
-If you created your AWS account after 04-12-2013, it only supports EC2-VPC. In this case, you have a default VPC in each AWS Region. A default VPC is ready for you to use so that you don't have to create and configure your own VPC. You can immediately start launching Amazon EC2 instances into your default VPC. You can also use services such as Elastic Load Balancing, Amazon RDS, and Amazon EMR in your default VPC.
-
-A default VPC is suitable for getting started quickly, and for launching public instances such as a blog or simple website. You can modify the components of your default VPC as needed. 
-
-If, for whatever reason, you have deleted your default VPC, it's easy to create another one:
-```bash
-aws ec2 create-default-vpc
-```
-
 ### CIDR Blocks & Limitations
-The CIDR block is what defines the size of your subnet.
+The CIDR block is what defines the size of your network.
 The smallest CIDR block you can have is /28, with 16 hosts, or /16, which can have up to 65,536 hosts.
 
 ## View Existing VPCs
@@ -53,14 +43,27 @@ The VPC ID must be provided when deleting a VPC:
 aws ec2 delete-vpc --vpc-id vpc-061635ad5414cf433
 ```
 
+### Creating a Default VPC
+A default VPC is suitable for getting started quickly, and for launching public instances such as a blog or simple website. You can modify the components of your default VPC as needed.
+Other resources that are needed to get EC2 instances functional are already in place such as an Internet Gateway, DHCP Options Set, Subnets and Security Groups.
+
+If, for whatever reason, you have deleted your default VPC, it's easy to create another one:
+```bash
+aws ec2 create-default-vpc
+```
+
 ## Tasks
+### Create a Simple VPC
 Try to complete the following tasks, using the commands you learned above:
 - Create a new VPC with a CIDR block of 10.0.0.0/16
 - List the VPCs you have, showing only the IDs of them
 - Delete the VPC that you created
+
+### Learn how to Fully Configure VPC
 - Learn about [Subnets](./subnets)
 - Learn about [Route Tables](./route-tables)
 - Learn about [Internet Gateways](./internet-gateways)
 - Learn about [Security Groups](./security-groups)
 
 [Go Back](../README.md#tasks)
+
