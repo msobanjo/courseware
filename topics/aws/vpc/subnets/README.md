@@ -14,7 +14,7 @@ The size of the subnet's IPv4 CIDR block can be the same as a VPC's IPv4 CIDR bl
 If you create more than one subnet in a VPC, the subnets' CIDR blocks must not overlap.
 The smallest IPv4 subnet (and VPC) you can create uses a /28 netmask (16 IPv4 addresses), and the largest uses a /16 netmask (65,536 IPv4 addresses).
 
-When you create each subnet, you provide the VPC ID and IPv4 CIDR block for the subnet.
+When you create each subnet, you provide the VPC ID and IPv4 CIDR block for the subnet:
 ```bash
 # aws ec2 create-subnet --vpc-id [VPC_ID] --cidr-block [CIDR_BLOCK]
 aws ec2 create-subnet --vpc-id vpc-081ec835f3EXAMPLE --cidr-block 10.0.1.0/24
@@ -29,7 +29,7 @@ aws ec2 describe-subnets
 ### Getting the ID Property Using Queries
 To manage a Subnet, such as when you want to delete it, you will need to be able to reference that Subnet by its ID.
 If you have several Subnets, the output can be a little overwhelming, considering that you just want to see the IDs.
-We can use a query, like the one below, and change the output to be text only; this will return a list of Subnet IDs.
+We can use a query, like the one below, and change the output to be text only; this will return a list of Subnet IDs:
 ```bash
 # aws ec2 describe-subnets --output text --query Subnets[].SubnetId
 aws ec2 describe-subnets --output text --query Subnets[].SubnetId
