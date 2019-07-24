@@ -61,8 +61,8 @@ Try to complete the following tasks, using the commands you learned above:
 
 ### Learn how to Fully Configure VPC
 - Learn about [Subnets](./subnets)
-- Learn about [Route Tables](./route-tables)
 - Learn about [Internet Gateways](./internet-gateways)
+- Learn about [Route Tables](./route-tables)
 - Learn about [Security Groups](./security-groups)
 
 [Go Back](../README.md#tasks)
