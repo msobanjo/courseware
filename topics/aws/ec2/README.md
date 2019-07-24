@@ -10,5 +10,6 @@ Amazon EC2 provides developers the tools to build failure resilient applications
 
 ## Tasks
 - To be able to connect securely to our EC2 instances we need to configure keys, this can be done with  [Key Pairs](./key-pairs)
+- Learn about running [EC2 Instances](./instances)
 
 [Go Back](../README.md#tasks)
