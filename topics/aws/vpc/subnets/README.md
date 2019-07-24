@@ -49,6 +49,6 @@ Try to complete the following tasks using the commands you learned above:
 - Create a new Subnet inside the VPC you made, with a CIDR block of 10.0.1.0/24
 - Create another Subnet inside the same VPC, with a CIDR block of 10.0.2.0/24
 - List the Subnets you have, showing only the IDs of them
-- Delete the VPC and Subnets that you created by their IDs it's ID
+- Delete the VPC and Subnets that you created.
 
 [Go Back to VPC Tasks](../README.md#tasks)
