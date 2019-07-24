@@ -8,19 +8,6 @@ You can easily customize the network configuration for your Amazon VPC.
 For example, you can create a public-facing subnet for your web servers that has access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access.
 You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
 
-## Use Cases
-### Host a Simple, Public-Facing Website
-You can host a basic web application, such as a blog or simple website in a VPC, and gain the additional layers of privacy and security afforded by Amazon VPC.
-You can help secure the website by creating security group rules which allow the webserver to respond to inbound HTTP and SSL requests from the Internet while simultaneously prohibiting the webserver from initiating outbound connections to the Internet.
-You can create a VPC that supports this use case by selecting "VPC with a Single Public Subnet Only" from the Amazon VPC console wizard.
-
-### Host Multi-Tier Web Applications
-You can use Amazon VPC to host multi-tier web applications and strictly enforce access and security restrictions between your webservers, application servers, and databases.
-You can launch webservers in a publicly accessible subnet, and application servers and databases in non-publically accessible subnets.
-The application servers and databases can’t be directly accessed from the Internet, but they can still access the Internet via a NAT gateway to download patches, for example.
-You can control access between the servers and subnets using inbound and outbound packet filtering, provided by network access control lists and security groups.
-To create a VPC that supports this use case, you can select "VPC with Public and Private Subnets" in the Amazon VPC console wizard.
-
 ## Creating a VPC
 ### Basic Usage
 VPCs can be created very easily - you should only have to provide the CIDR block, which defines the address range for your subnet.
