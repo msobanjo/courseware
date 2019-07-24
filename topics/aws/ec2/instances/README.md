@@ -1,8 +1,21 @@
 # AWS EC2 Instances
 ## Overview
+An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.  
+
+AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that allows business subscribers to run application programs in the computing environment. The EC2 can serve as a practically unlimited set of virtual machines. 
+
+Amazon provides a variety of types of instances with different configurations of CPU, memory, storage, and networking resources to suit user needs. Each type is also available in two different sizes to address workload requirements.
+
+Instance types are grouped into families based on target application profiles. These groups include: general purpose, compute-optimized, GPU instances, memory optimized, storage optimized and micro instances.
 
 
-## Running an Instance
+## Amazon Machine Images (AMIs)
+### Overview
+Instances are created from Amazon Machine Images (AMI).
+The machine images are like templates that are configured with an operating system and other software, which determine the user’s operating environment.
+Users can select an AMI provided by AWS, the user community, or through the AWS Marketplace.
+Users can also create their own AMIs and share them.
+
 ### Viewing Available AMIs
 We need to provide an AMI when running an instance, Amazon has a page with commands for finding the latest image for popular operating systems: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html please note that you will need `jq` installed to run the commands provided.
 Here is an example that gets the latest `ubuntu 18.04` image id (AMI):
@@ -10,7 +23,9 @@ Here is an example that gets the latest `ubuntu 18.04` image id (AMI):
 aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-????????' 'Name=state,Values=available' --output json | jq -r '.Images | sort_by(.CreationDate) | last(.[]).ImageId'
 ```
 
-### Running an Instance
+
+## Running an Instance
+### Basic Usage
 Running an instance requires quite a few options:
 - Image ID
     This is the base image that the machine will use, Ubuntu is an example.
