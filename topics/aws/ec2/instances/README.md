@@ -11,8 +11,20 @@ aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu
 ```
 
 ### Running an Instance
+Running an instance requires quite a few options:
+- Image ID
+    This is the base image that the machine will use, Ubuntu is an example.
+- Count
+    The amount of instances to run from this command
+- Instance Type
+    The size of the machine, how many CPUs and how much RAM
+- Key Name
+    The Key Pair to install onto the machine, we need this to be able to securely connect to the instance with SSH.
+- Subnet ID
+    Which subnet to run the instance in. The instance will be given a private IP address from the subnet that you put it in and and security group rules from the VPC will be applied to the instance.
 ```bash
-aws ec2 run-instances --image-id ami-1a2b3c4d --count 1 --instance-type c3.large --key-name MyKeyPair --security-groups MySecurityGroup
+# aws ec2 run-instances --image-id [IMAGE_ID] --count [AMOUNT_OF_INSTANCES] --instance-type [MACHINE_SIZE] --key-name [KEY_PAIR_NAME] --subnet-id [SUBNET_ID]
+aws ec2 run-instances --image-id ami-0ee246e709782b1be --count 1 --instance-type t2.micro --key-name MyKeyPair --subnet-id subnet-0b601356c0674d00d
 ```
 
 ## View Running Instances
