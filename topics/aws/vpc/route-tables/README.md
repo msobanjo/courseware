@@ -16,9 +16,41 @@ The following are the basic things that you need to know about route tables:
 - When you add an Internet gateway, an egress-only Internet gateway, a virtual private gateway, a NAT device, a peering connection, or a VPC endpoint in your VPC, you must update the route table for any subnet that uses these gateways or connections.
 
 ## Creating Route Tables
-
-## Associating Route Tables with Subnets
-
-## Disassociating Route Tables from Subnets
-
+When creating a route table, you will need a VPC to attach it to, this is then referenced when creating the Route Table by it's ID.
+```bash
+# aws ec2 create-route-table --vpc-id [VPC_ID]
+aws ec2 create-route-table --vpc-id vpc-a01106c2
+```
 ## Deleting Route Tables
+### Basic Usage
+Like most resource, a Route Table can be deleted by referencing its ID.
+Be careful that the Route Table isn't being used by any VPCs or Subnets.
+```bash
+# aws ec2 delete-route-table --route-table-id [ROUTE_TABLE_ID]
+aws ec2 delete-route-table --route-table-id rtb-22574640
+```
+
+## Creating Routes
+### Route for Internet Access
+A very common reason for needing to create routes is for Internet access, we can create a route for all requests from instances in an VPC going to the `0.0.0.0/0` address range to get routed to an Internet Gateway, allowing internet access for that instance.
+```bash
+# aws ec2 create-route --route-table-id [ROUTE_TABLE_ID] --destination-cidr-block [ADDRESS_RANGE] --gateway-id [INTERNET_GATEWAY_ID]
+aws ec2 create-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.0.0/0 --gateway-id igw-c0a643a9
+```
+
+## Deleting Routes
+### Basic Usage
+When deleting a Route from a Route Table, you must reference the Route Table ID and the destination CIDR block (the address range) that the Route has configured, for example: `0.0.0.0/0`.
+```bash
+# aws ec2 delete-route --route-table-id [ROUTE_TABLE_ID] --destination-cidr-block [CIDR_BLOCK]
+aws ec2 delete-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.0.0/0
+```
+
+## Tasks
+- Create VPC and an Internet Gateway that is associated with it.
+- Create a Route Table for the new VPC
+- Add a Route that allows Internet Access for the VPC
+- Delete the Route Table, Disassociate from the VPC and delete the Internet Gateway, Delete the VPC.
+
+
+[Go Back](../README.md#tasks)

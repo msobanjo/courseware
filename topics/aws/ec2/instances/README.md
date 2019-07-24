@@ -1,13 +1,12 @@
 # AWS EC2 Instances
 ## Overview
-An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.  
+An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.
 
 AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that allows business subscribers to run application programs in the computing environment. The EC2 can serve as a practically unlimited set of virtual machines. 
 
 Amazon provides a variety of types of instances with different configurations of CPU, memory, storage, and networking resources to suit user needs. Each type is also available in two different sizes to address workload requirements.
 
 Instance types are grouped into families based on target application profiles. These groups include: general purpose, compute-optimized, GPU instances, memory optimized, storage optimized and micro instances.
-
 
 ## Amazon Machine Images (AMIs)
 ### Overview
@@ -23,12 +22,11 @@ Here is an example that gets the latest `ubuntu 18.04` image id (AMI):
 aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-????????' 'Name=state,Values=available' --output json | jq -r '.Images | sort_by(.CreationDate) | last(.[]).ImageId'
 ```
 
-
 ## Running an Instance
 ### Basic Usage
 Running an instance requires quite a few options:
 - Image ID
-    This is the base image that the machine will use, Ubuntu is an example.
+    This is the base image that the machine will use which usually comes with an operating system install, Ubuntu is an example.
 - Count
     The amount of instances to run from this command
 - Instance Type
@@ -56,4 +54,7 @@ We can terminate instances by providing their IDs to the `terminate-instances` c
 # aws ec2 terminate-instances --instance-ids [INSTANCE_IDS]
 aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 ```
+
+
+[Go Back](../README.md#tasks)
 
