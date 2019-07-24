@@ -53,30 +53,32 @@ aws ec2 create-default-vpc
 ```
 
 ## Tasks
-### Create and delete simple VPC
+### Managing a Simple VPC
 Try to complete the following tasks, using the commands you learned above:
-- Create a new VPC with a CIDR block of `10.0.0.0/16`:
-    ```bash
-    aws ec2 create-vpc --cidr-block 10.0.0.0/16
-    ```
-- We can then delete the VPC using its ID, just replace `[VPC_ID]` in the command below with the ID of your VPC you just created.
-    ```bash
-    aws ec2 delete-vpc --vpc-id [VPC_ID]
-    ```
-- When making scripts, we will want to get the VPC ID on creation, we can use a query command for this and store it in a variable. Try the following commands:
-    ```bash
-    vpc_id=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query Vpc.VpcId --output text)
-    echo ${vpc_id}
-    ```
-    Now you can access the `vpc_id` variable in another parts of script you are writing, whenever you need to reference this VPC's ID.
-- Now try using the `vpc_id` variable that we made to delete the VPC:
-    ```bash
-    aws ec2 delete-vpc --vpc-id ${vpc_id}
-    ```
-- Make sure that there are none of the VPCs we created here are left and move on to the next section:
-    ```bash
-    aws ec2 describe-vpcs
-    ```
+#### Create a new VPC with a CIDR block of `10.0.0.0/16`
+This example creates a VPC network that can have up to 65,536 hosts.
+```bash
+aws ec2 create-vpc --cidr-block 10.0.0.0/16
+```
+#### Delete a VPC using ID
+We can then delete the VPC using its ID, just replace `[VPC_ID]` in the command below with the ID of your VPC you just created.
+```bash
+aws ec2 delete-vpc --vpc-id [VPC_ID]
+```
+#### Storing a VPC's ID in a Bash Variable
+```bash
+vpc_id=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query Vpc.VpcId --output text)
+echo ${vpc_id}
+```
+Now you can access the `vpc_id` variable in another parts of script you are writing, whenever you need to reference this VPC's ID.
+#### Using a Bash Variable to Delete a VPC
+```bash
+aws ec2 delete-vpc --vpc-id ${vpc_id}
+```
+#### Make sure that there are none of the VPCs we created here are left and move on to the next section:
+```bash
+aws ec2 describe-vpcs
+```
 
 ### Learn how to Fully Configure a VPC
 Unless you create a default VPC, there are several other components to understand and configure:
