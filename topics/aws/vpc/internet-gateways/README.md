@@ -51,7 +51,7 @@ Before you can delete an Internet Gateway, it must be detached. If you don't do 
 Detaching an Internet Gateway can be done by providing the Internet Gateway ID and the ID of the VPC that it is attached to:
 ```bash
 # aws ec2 detach-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID] --vpc-id [VPC_ID]
-aws ec2 detach-internet-gateway --internet-gateway-id [INTERNET_GATEWAY_ID] --vpc-id [VPC_ID]
+aws ec2 detach-internet-gateway --internet-gateway-id igw-0a831f55f06387254 --vpc-id vpc-05207b1e60ee695c5
 ```
 
 ## Deleting Internet Gateways
