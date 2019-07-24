@@ -54,6 +54,7 @@ To manage a VPC, such as when you want to delete it, you will need to be able to
 If you have several VPCs then the output can be a little overwhelming, considering that you just want to see the IDs.
 We can use a query, like the one below, and change the output to be text only; this will return a list of VPC IDs.
 ```bash
+# aws ec2 describe-vpcs --output [OUTPUT_TYPE] --query [JSON_QUERY]
 aws ec2 describe-vpcs --output text --query "Vpcs[].VpcId"
 ```
 
@@ -62,7 +63,7 @@ aws ec2 describe-vpcs --output text --query "Vpcs[].VpcId"
 The VPC ID must be provided when deleting a VPC:
 ```bash
 # aws ec2 delete-vpc --vpc-id [VPC_ID]
-aws ec2 deletecreate-vpc --vpc-id vpc-061635ad5414cf433
+aws ec2 delete-vpc --vpc-id vpc-061635ad5414cf433
 ```
 
 ## Tasks
