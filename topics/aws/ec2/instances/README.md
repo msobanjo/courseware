@@ -55,6 +55,19 @@ We can terminate instances by providing their IDs to the `terminate-instances` c
 aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 ```
 
+## Tasks
+- Create and configure a VPC with the following:
+    - CIDR Block of 10.0.0.0/16
+    - Associated Internet Gateway
+    - Route Table configured for Internet Access
+    - Subnet with a CIDR block of 10.0.1.0/24
+    - Security Group which allows SSH access from anywhere
+- Create a Key Pair called MyKeyPair, store the private key into `~/.ssh/MyKeyPair.pem`
+- Run an EC2 instance with the following:
+    - AMI of your choice
+    - The Key Pair you created
+    - In the Subnet that you created
+- Connect to your EC2 instance using SSH and the private key that you stored
 
 [Go Back](../README.md#tasks)
 
