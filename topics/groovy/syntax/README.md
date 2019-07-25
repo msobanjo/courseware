@@ -28,24 +28,6 @@ As long as the `groovy` command is available on your `PATH`, you can add a sheba
 println "Hello"
 ```
 If the script above was in a file called `test.groovy` you would be able to execute it by running `./test.groovy`.
-## Function Definition
-### Basic Usage
-Functions can be defined using the `def` keyword and by including `() {}` afterwards:
-```groovy
-def myFunction() {
-    // does lots of cool stuff
-}
-```
-### Parameters
-We can provide parameters to functions with or without types:
-```groovy
-def functionWithoutTypes(param1, param2) {
-    println "${param1}, ${param2}"
-}
-def functionWithTypes(String param1, String param2) {
-    println "${param1}, ${param2}"
-}
-```
 ## String Interpolation (GStrings)
 String interpolation can be used to get the value of variables into a string easily, in Groovy these are known as GStrings.
 The syntax is to include the variable reference within `${}` inside of a literal string:
