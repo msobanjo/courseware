@@ -14,11 +14,12 @@ myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 ```
 
 ## Tasks
-### Define and Access
+### Define and Access Variables
 View and then execute the `variable-definition.groovy` script in this folder.
 Then edit the script to define a `message` variable that has the value `"how are you?"`, add this to the `println` function call. 
 
-<details><summary>Show Solution</summary>
+<details>
+<summary>Show Solution</summary>
 
 ```groovy
 #!/usr/bin/env groovy
