@@ -41,6 +41,33 @@ For example a variable created using `def` that starts out as a `String` type, c
 def myString = "My String"
 myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 ```
+## Function Definition
+### Basic Usage
+Functions can be defined using the `def` keyword and by including `() {}` afterwards:
+```groovy
+def myFunction() {
+    // does lots of cool stuff
+}
+```
+### Parameters
+We can provide parameters to functions with or without types:
+```groovy
+
+```
+## String Interpolation (GStrings)
+String interpolation can be used to get the value of variables into a string easily, in Groovy these are known as GStrings.
+The syntax is to include the variable reference within `${}` inside of a literal string:
+```groovy
+def name = "bob"
+println "Hello, my name is ${name}"
+```
+This doesn't stop at variables, you can also make function calls which inturn return a string to interpolate into the literal string.
+```groovy
+def getName() {
+    "Bob"
+}
+println "Hello, ${getName()}"
+```
 ## Optional Parenthesis
 ### Overview
 In an attempt to make code more readable, with Groovy you have the choice of omitting parenthesis if you choose to.
@@ -60,4 +87,10 @@ println person.name
 // accessing a function
 println person.getName()
 ```
+### Omitting Parenthesis with Named Parenthesis 
+Named parameters can be used whilst ommitting parenthesis:
+```groovy
+myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
+```
+## Tasks
 
