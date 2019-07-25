@@ -41,3 +41,23 @@ For example a variable created using `def` that starts out as a `String` type, c
 def myString = "My String"
 myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 ```
+## Optional Parenthesis
+### Overview
+In an attempt to make code more readable, with Groovy you have the choice of omitting parenthesis if you choose to.
+For exmaple on function calls, you can omit parenthesis:
+```groovy
+// calling a function like in java
+System.out.println("Hello")
+// and the "groovy" way...
+println "Hello"
+```
+### When you need parenthesis
+One example of a time that you will need a set of parenthesis is when you are calling a function with no parameters.
+We need to include parenthesis here or else Groovy will think that you are trying to access a property, not a function.
+```groovy
+// accessing a property
+println person.name
+// accessing a function
+println person.getName()
+```
+
