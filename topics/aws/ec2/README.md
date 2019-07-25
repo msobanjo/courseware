@@ -9,7 +9,7 @@ Amazon EC2 changes the economics of computing by allowing you to pay only for ca
 Amazon EC2 provides developers the tools to build failure resilient applications and isolate them from common failure scenarios.
 
 ## Tasks
-- To be able to connect securely to our EC2 instances we need to configure keys, this can be done with  [Key Pairs](./key-pairs)
+- To be able to connect securely to our EC2 instances, we need to configure keys. This can be done with  [Key Pairs](./key-pairs)
 - Learn about running [EC2 Instances](./instances)
 
 [Go Back](../README.md#tasks)
