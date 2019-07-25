@@ -36,7 +36,10 @@ String withoutReturnKeyword() {
     "String Example"
 }
 ```
+## Calling Functions
+
 ## Parameters
+### Creating Functions with Parameters
 We can provide parameters to functions with or without types:
 ```groovy
 def functionWithoutTypes(param1, param2) {
@@ -46,3 +49,8 @@ def functionWithTypes(String param1, String param2) {
     println "${param1}, ${param2}"
 }
 ```
+### Calling Functions with Parameters
+
+## Tasks
+### Create a Basic Function
+
