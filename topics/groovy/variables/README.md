@@ -20,6 +20,7 @@ Then edit the script to define a `message` variable that has the value `"how are
 
 <details><summary>Show Solution</summary>
 <p>
+#### Solution
 ```python
 print("hello world!")
 ```
