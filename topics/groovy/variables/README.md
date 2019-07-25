@@ -20,8 +20,14 @@ Then edit the script to define a `message` variable that has the value `"how are
 
 <details><summary>Show Solution</summary>
 
-```python
-print("hello world!")
+```groovy
+#!/usr/bin/env groovy
+# get the current user on the system
+String name = System.getenv("USER")
+# set the message variable
+String message = "how are you?"
+# say hello to the user, with the message as well
+println "Hello ${name}, ${message}"
 ```
 
 </details>
