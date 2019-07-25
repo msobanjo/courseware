@@ -52,7 +52,12 @@ def myFunction() {
 ### Parameters
 We can provide parameters to functions with or without types:
 ```groovy
-
+def functionWithoutTypes(param1, param2) {
+    println "${param1}, ${param2}"
+}
+def functionWithTypes(String param1, String param2) {
+    println "${param1}, ${param2}"
+}
 ```
 ## String Interpolation (GStrings)
 String interpolation can be used to get the value of variables into a string easily, in Groovy these are known as GStrings.
@@ -61,7 +66,7 @@ The syntax is to include the variable reference within `${}` inside of a literal
 def name = "bob"
 println "Hello, my name is ${name}"
 ```
-This doesn't stop at variables, you can also make function calls which inturn return a string to interpolate into the literal string.
+This doesn't stop at variables, you can also make function calls which return a string to interpolate into the literal string.
 ```groovy
 def getName() {
     "Bob"
