@@ -28,19 +28,6 @@ As long as the `groovy` command is available on your `PATH`, you can add a sheba
 println "Hello"
 ```
 If the script above was in a file called `test.groovy` you would be able to execute it by running `./test.groovy`.
-## Variables
-Variables are of course very commonly used, across all programming languages.
-In Groovy, you can create variables with an implicit, fixed type, or by using the `def` keyword or by explicitly giving it a type such as `String`.
-```groovy
-def myString = "This variable does not have a fixed type"
-String myOtherString = "This variable has a fixed type"
-```
-Variables that have been declared using the `def` keyword can have different types assigned to it at run time.
-For example a variable created using `def` that starts out as a `String` type, could then have an `Array` type assigned to it later on:
-```groovy
-def myString = "My String"
-myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
-```
 ## Function Definition
 ### Basic Usage
 Functions can be defined using the `def` keyword and by including `() {}` afterwards:
