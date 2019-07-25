@@ -10,7 +10,7 @@ You can leverage multiple layers of security, including security groups and netw
 
 ## Creating a VPC
 ### Basic Usage
-VPCs can be created very easily - you should only have to provide the CIDR block, which defines the address range for your subnet.
+VPCs can be created very easily - you should only have to provide the CIDR block, which defines the address range for your subnet:
 ```bash
 # aws ec2 create-vpc --cidr-block [CIDR_DEFINITION]
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
@@ -29,7 +29,7 @@ aws ec2 describe-vpcs
 ### Getting the ID Property Using Queries
 To manage a VPC, such as when you want to delete it, you will need to be able to reference that VPC by its ID.
 If you have several VPCs then the output can be a little overwhelming, considering that you just want to see the IDs.
-We can use a query, like the one below, and change the output to be text only; this will return a list of VPC IDs.
+We can use a query, like the one below, and change the output to be text only; this will return a list of VPC IDs:
 ```bash
 # aws ec2 describe-vpcs --output [OUTPUT_TYPE] --query [JSON_QUERY]
 aws ec2 describe-vpcs --output text --query "Vpcs[].VpcId"
@@ -56,12 +56,12 @@ aws ec2 create-default-vpc
 ### Managing a Simple VPC
 Try to complete the following tasks, using the commands you learned above:
 #### Create a new VPC with a CIDR block of `10.0.0.0/16`
-This example creates a VPC network that can have up to 65,536 hosts.
+This example creates a VPC network that can have up to 65,536 hosts:
 ```bash
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 ```
 #### Delete a VPC using ID
-We can then delete the VPC using its ID, just replace `[VPC_ID]` in the command below with the ID of your VPC you just created.
+We can then delete the VPC using its ID; just replace `[VPC_ID]` in the command below with the ID of your VPC you just created:
 ```bash
 aws ec2 delete-vpc --vpc-id [VPC_ID]
 ```
@@ -70,7 +70,7 @@ aws ec2 delete-vpc --vpc-id [VPC_ID]
 vpc_id=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query Vpc.VpcId --output text)
 echo ${vpc_id}
 ```
-Now you can access the `vpc_id` variable in another parts of script you are writing, whenever you need to reference this VPC's ID.
+You wil now be able to access the `vpc_id` variable in other parts of the script you are writing.
 #### Using a Bash Variable to Delete a VPC
 ```bash
 aws ec2 delete-vpc --vpc-id ${vpc_id}
