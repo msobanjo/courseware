@@ -7,4 +7,4 @@ It integrates smoothly with any Java program, and immediately delivers to your a
 - Install Groovy
 - Try run a Hello World application
 
-[Go Back](../README.md)
+[Go Back](../)
