@@ -92,7 +92,7 @@ println person.name
 // accessing a function
 println person.getName()
 ```
-### Omitting Parenthesis with Named Parenthesis 
+### Omitting Parenthesis with Named Parameters
 Named parameters can be used whilst ommitting parenthesis:
 ```groovy
 myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
