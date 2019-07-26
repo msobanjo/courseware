@@ -52,9 +52,10 @@ def functionWithTypes(String param1, String param2) {
 ### Calling Functions with Parameters
 
 ## Tasks
+Please create any files for these tasks in this folder.
 ### Create Some Basic Functions
 #### Current User Message Function
-Create a file in this folder called `current-user-message.groovy`.
+Create a file called `current-user-message.groovy`.
 The following function can take a string parameter, a message, and then add the current user's name to the message provided, this string will then be returned.
 Add the function and function call to `current-user-message.groovy` and execute the file to see it working.
 ```groovy
@@ -64,7 +65,8 @@ String formatMessageForCurrentUser(String message) {
 println formatMessageForCurrentUser("how are you?")
 ```
 #### Addition Function
-Try to create another function that can add two numbers together in a file called `addition-function.groovy`
+Try to create another function that can add two numbers together and return the value as an `int` type.
+Create this in a file called `addition-function.groovy`
 <details>
 <summary>Show Solution</summary>
 
