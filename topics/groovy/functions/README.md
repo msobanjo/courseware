@@ -52,5 +52,25 @@ def functionWithTypes(String param1, String param2) {
 ### Calling Functions with Parameters
 
 ## Tasks
-### Create a Basic Function
+### Create Some Basic Functions
+Create a file in this folder called `basic-function.groovy`.
+The following function can take a string parameter, a message, and then add the current user's name to the message provided, this string will then be returned.
+Add the function and function call to `basic-function.groovy` and execute the file.
+```groovy
+String formatMessageForCurrentUser(String message) {
+    "Hi ${System.getenv("USER")}, ${message}"
+}
+println formatMessageForCurrentUser("how are you?")
+```
+Try to create another function that can add two numbers together in a file called `addition-function.groovy`
+<details>
+<summary>Show Solution</summary>
 
+```groovy
+int sumOf(int firstNumber, int secondNumber) {
+    firstNumber + secondNumber
+}
+println sumOf(1, 2)
+```
+
+</details>
