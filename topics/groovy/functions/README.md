@@ -53,15 +53,17 @@ def functionWithTypes(String param1, String param2) {
 
 ## Tasks
 ### Create Some Basic Functions
-Create a file in this folder called `basic-function.groovy`.
+#### Current User Message Function
+Create a file in this folder called `current-user-message.groovy`.
 The following function can take a string parameter, a message, and then add the current user's name to the message provided, this string will then be returned.
-Add the function and function call to `basic-function.groovy` and execute the file.
+Add the function and function call to `current-user-message.groovy` and execute the file to see it working.
 ```groovy
 String formatMessageForCurrentUser(String message) {
     "Hi ${System.getenv("USER")}, ${message}"
 }
 println formatMessageForCurrentUser("how are you?")
 ```
+#### Addition Function
 Try to create another function that can add two numbers together in a file called `addition-function.groovy`
 <details>
 <summary>Show Solution</summary>
