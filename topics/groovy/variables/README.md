@@ -15,14 +15,14 @@ myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 
 ## Tasks
 ### Define and Access Variables
-Here is som Groovy code that stores the current users name in a variable and then prints out "Hello" and the users name:
+Here is some Groovy code that stores the current users name in a variable and then prints out "Hello" and the users name:
 ```groovy
 # get the current user on the system
 String name = System.getenv("USER")
 # say hello to the user
 println "Hello ${name}"
 ```
-Using the above as a reference, create a Groovy script that will also print a message for the user using a variable called `message` that a `String` type.
+Using the above as a reference, create a Groovy script that will also print a message for the user using a variable called `message` that is a `String` type.
 The output should look something like this if the user was called Bob:
 ```text
 Hi Bob, how are you?
