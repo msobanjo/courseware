@@ -91,6 +91,25 @@ The easiest way to implement this is by using a multi-line comment:
 ```
 
 </details>
+### String Interpolation
+The following example interpolates the `name` variable into a string and uses the `println` function to print it to the console:
+```groovy
+String name = "bob"
+println "Hello ${name}"
+```
+We can use `System.getenv("USER")` to get the current user running the application.
+By just using the `println` function, try to print the same string, but for the current user who is running the applicatoin.
+<details>
+<summary>Show Solution</summary>
+Function calls can be interpolated into strings just like variables:
+
+```groovy
+println "Hello, ${System.getenv("USER")}"
+```
+
+</details>
+
+### Omitting Parenthesis
 
 <!--
 - commenting (applied)
