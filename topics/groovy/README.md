@@ -5,6 +5,14 @@ It integrates smoothly with any Java program, and immediately delivers powerful 
 
 ![Groovy Baby](./images/austin-powers.jpg)
 
+## Installation
+
+### Mac OS X
+Brew is an easy way to get Groovy on Mac OS X.
+```bash
+brew install groovy
+```
+Wind
 
 ## Tasks
 - Install Groovy
