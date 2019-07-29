@@ -67,10 +67,32 @@ Named parameters can be used whilst ommitting parenthesis:
 myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 ## Tasks
+Here are some tasks to try out some of the syntax dicussed above.
+For any of the tasks where you are writing code, please add them to a `groovy-syntax.groovy` file in this folder.
+### Commenting
+Create a comment at the top of the file which contains the following:
+```text
+  ___  ____   __    __   _  _  _  _    ____  _  _  __ _  ____  __   _  _
+ / __)(  _ \ /  \  /  \ / )( \( \/ )  / ___)( \/ )(  ( \(_  _)/ _\ ( \/ )
+( (_ \ )   /(  O )(  O )\ \/ / )  /   \___ \ )  / /    /  )( /    \ )  (
+ \___/(__\_) \__/  \__/  \__/ (__/    (____/(__/  \_)__) (__)\_/\_/(_/\_)
+ ```
+<details>
+<summary>Show Solution</summary>
+The easiest way to implement this is by using a multi-line comment:
+```groovy
+/*
+  ___  ____   __    __   _  _  _  _    ____  _  _  __ _  ____  __   _  _
+ / __)(  _ \ /  \  /  \ / )( \( \/ )  / ___)( \/ )(  ( \(_  _)/ _\ ( \/ )
+( (_ \ )   /(  O )(  O )\ \/ / )  /   \___ \ )  / /    /  )( /    \ )  (
+ \___/(__\_) \__/  \__/  \__/ (__/    (____/(__/  \_)__) (__)\_/\_/(_/\_)
+ */
+```
+
+</details>
 
 <!--
 - commenting (applied)
-- groovy shebang (only linux)
 - println hello world or something
 - string interpolation
     - working example
