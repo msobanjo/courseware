@@ -80,6 +80,7 @@ Create a comment at the top of the file which contains the following:
 <details>
 <summary>Show Solution</summary>
 The easiest way to implement this is by using a multi-line comment:
+
 ```groovy
 /*
   ___  ____   __    __   _  _  _  _    ____  _  _  __ _  ____  __   _  _
