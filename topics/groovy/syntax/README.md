@@ -120,17 +120,24 @@ println "Hello, ${System.getenv("USER")}"
 </details>
 
 ### Omitting Parenthesis
+Here is a block of groovy code that looks very similar to Java, try making it more "Groovy" by ommiting unnecessary parenthesis.
+Why not use string interpolation as well instead of the string concatination that is already there.
+```groovy
+def user = System.console().readLine("What's your name?\n")
+def age = System.console().readLine("Hi " + user + ", what is your age?\n")
+println("Your name is " + user + " and you are " + age + " years old.")
+```
 
-<!--
-- commenting (applied)
-- println hello world or something
-- string interpolation
-    - working example
-    - provide output, ask to code it using example as reference
-- optional parenthesis
-    - example for ommitted paranthesis
-    - ask them to build another example using this one as a reference
--->
+<details>
+<summary>Show Solution</summary>
+We can remove the parenthesis for the function calls and interpolate the `user` and `age` variables like this:
 
+```groovy
+def user = System.console().readLine("What's your name?\n")
+def age = System.console().readLine("Hi " + user + ", what is your age?\n")
+println("Your name is " + user + " and you are " + age + " years old.")
+```
+
+</details>
 
 [Go Back](../)
