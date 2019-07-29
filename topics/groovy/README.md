@@ -32,10 +32,9 @@ sudo apt install -y groovy
 sudo yum install -y groovy
 ```
 
-## Tasks
-- Install Groovy
-- [Groovy Syntax](./syntax), basic syntax for Groovy programming
-- [Variables](./variables)
-- [Functions](./functions)
+## Modules
+- [Groovy Syntax](./syntax): basic syntax for Groovy programming
+- [Variables](./variables): Working with variables in Groovy
+- [Functions](./functions): Creating using functions in Groovy
 
 [Go Back](../)
