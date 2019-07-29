@@ -5,7 +5,8 @@
 ### Create
 ### Execute
 ### Parameters
+### Implicit "it" Parameter
 ## Closure as Parameter
-### .each example
-### .filter example
+### each Function Example
+### findAll Function Example
 
