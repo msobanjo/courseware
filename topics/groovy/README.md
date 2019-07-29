@@ -5,6 +5,6 @@ It integrates smoothly with any Java program, and immediately delivers powerful 
 
 ## Tasks
 - Install Groovy
-- Try run a Hello World application
+- Try to run a Hello World application
 
 [Go Back](../)
