@@ -68,7 +68,7 @@ myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 ## Tasks
 
-[//] # (
+<!--
 - commenting (applied)
 - groovy shebang (only linux)
 - println hello world or something
@@ -78,7 +78,7 @@ myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 - optional parenthesis
     - example for ommitted paranthesis
     - ask them to build another example using this one as a reference
-)
+-->
 
 
 [Go Back](../)
