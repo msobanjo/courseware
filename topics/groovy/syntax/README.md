@@ -1,6 +1,6 @@
 # Groovy Syntax
 ## Overview
-This document aims to cover the basics of the Groovy programming lanuguage's syntax.
+This document aims to cover the basics of the Groovy programming language's syntax.
 Many of the concepts will be easier to pick up if you have used a programming language like Java before.
 
 ## Commenting
@@ -17,7 +17,7 @@ Multi line comments start with `/*` and end with `*/`, this saves you having to 
 */
 ```
 ### Inline Commenting
-The same syntax for multi line comments can be used for commentin inline:
+The same syntax for multi line comments can be used for commenting inline:
 ```groovy
 println 1 /* one */ + 2 /* two */
 ```
@@ -45,7 +45,7 @@ println "Hello, ${getName()}"
 ## Optional Parenthesis
 ### Overview
 In an attempt to make code more readable, with Groovy you have the choice of omitting parenthesis if you choose to.
-For exmaple on function calls, you can omit parenthesis:
+For example on function calls, you can omit parenthesis:
 ```groovy
 // calling a function like in java
 System.out.println("Hello")
@@ -62,12 +62,12 @@ println person.name
 println person.getName()
 ```
 ### Omitting Parenthesis with Named Parameters
-Named parameters can be used whilst ommitting parenthesis:
+Named parameters can be used whilst omitting parenthesis:
 ```groovy
 myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 ## Tasks
-Here are some tasks to try out some of the syntax dicussed above.
+Here are some tasks to try out some of the syntax discussed above.
 For any of the tasks where you are writing code, please add them to a `groovy-syntax.groovy` file in this folder and create a single line comment to separate each task, using the task name, like this:
 ```groovy
 // First Task
@@ -121,8 +121,8 @@ println "Hello, ${System.getenv("USER")}"
 </details>
 
 ### Omitting Parenthesis
-Here is a block of groovy code that looks very similar to Java, try making it more "Groovy" by ommiting unnecessary parenthesis.
-Why not use string interpolation as well instead of the string concatination that is already there.
+Here is a block of groovy code that looks very similar to Java, try making it more "Groovy" by omitting unnecessary parenthesis.
+Why not use string interpolation as well instead of the string concatenation that is already there.
 ```groovy
 def user = System.console().readLine("What's your name?\n")
 def age = System.console().readLine("Hi " + user + ", what is your age?\n")
@@ -135,9 +135,9 @@ println("Your name is " + user + " and you are " + age + " years old.")
 We can remove the parenthesis for the function calls and interpolate the `user` and `age` variables like this:
 
 ```groovy
-def user = System.console().readLine("What's your name?\n")
-def age = System.console().readLine("Hi " + user + ", what is your age?\n")
-println("Your name is " + user + " and you are " + age + " years old.")
+def user = System.console().readLine "What's your name?\n"
+def age = System.console().readLine "Hi ${user}, what is your age?\n"
+println "Your name is ${user} and you are ${age} years old."
 ```
 
 </details>
