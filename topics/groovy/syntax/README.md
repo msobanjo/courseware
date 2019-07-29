@@ -67,6 +67,7 @@ Named parameters can be used whilst ommitting parenthesis:
 myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 ## Tasks
+
 [//] # (
 - commenting (applied)
 - groovy shebang (only linux)
