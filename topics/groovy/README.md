@@ -33,8 +33,8 @@ sudo yum install -y groovy
 ```
 
 ## Modules
-- [Groovy Syntax](./syntax): basic syntax for Groovy programming
+- [Groovy Syntax](./syntax): Basic syntax for Groovy programming
 - [Variables](./variables): Working with variables in Groovy
-- [Functions](./functions): Creating using functions in Groovy
+- [Functions](./functions): Creating and using functions in Groovy
 
 [Go Back](../)
