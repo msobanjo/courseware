@@ -17,7 +17,20 @@ Brew is an easy way to get Groovy on Mac OS X.
 ```bash
 brew install groovy
 ```
-Wind
+### Windows
+The [Chocolatey package manager](https://chocolatey.org/) is recommended for installing Groovy on Windows:
+```cmd
+choco install -y groovy
+```
+### Linux
+#### Ubuntu/Debian
+```bash
+sudo apt install -y groovy
+```
+#### CentOS/RHEL
+```bash
+sudo yum install -y groovy
+```
 
 ## Tasks
 - Install Groovy
