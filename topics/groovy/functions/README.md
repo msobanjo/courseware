@@ -1,10 +1,38 @@
 # Groovy Functions
-## Basic Usage
+## basic Usage
+### Creating a Function
 Functions can be defined by declaring a type to return, like `String` or specifying `void`, meaning that the function wont return anything and then including `() {}` after the function name:
 ```groovy
-def myFunction() {
+void myFunction() {
     // does lots of cool stuff
 }
+```
+### Calling a Function
+Stating the function name with `()` afterwards will call (execute) the function:
+```groovy
+void testFunction() {
+    println "I've been called!"
+}
+testFunction()
+```
+Note: parenthesis cannot be omitted if the function does not take any parameters.
+### Creating Functions with Parameters
+We can provide parameters to functions with or without types:
+```groovy
+def functionWithoutTypes(param1, param2) {
+    println "${param1}, ${param2}"
+}
+def functionWithTypes(String param1, String param2) {
+    println "${param1}, ${param2}"
+}
+```
+### Calling Functions with Parameters
+Parameters must be passed in order to the function:
+```groovy
+void logItem(String item, int amount) {
+    println "Item: ${item}, Amount: ${amount}"
+}
+logItem("Apple", 5)
 ```
 ## Return Values
 ### No value (void)
@@ -36,20 +64,6 @@ String withoutReturnKeyword() {
     "String Example"
 }
 ```
-## Calling Functions
-
-## Parameters
-### Creating Functions with Parameters
-We can provide parameters to functions with or without types:
-```groovy
-def functionWithoutTypes(param1, param2) {
-    println "${param1}, ${param2}"
-}
-def functionWithTypes(String param1, String param2) {
-    println "${param1}, ${param2}"
-}
-```
-### Calling Functions with Parameters
 
 ## Tasks
 Please create any files for these tasks in this folder.
