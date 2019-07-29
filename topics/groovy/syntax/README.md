@@ -111,6 +111,7 @@ We can use `System.getenv("USER")` to get the current user running the applicati
 By just using the `println` function, try to print the same string, but for the current user who is running the application.
 <details>
 <summary>Show Solution</summary>
+
 Function calls can be interpolated into strings just like variables:
 
 ```groovy
@@ -130,6 +131,7 @@ println("Your name is " + user + " and you are " + age + " years old.")
 
 <details>
 <summary>Show Solution</summary>
+
 We can remove the parenthesis for the function calls and interpolate the `user` and `age` variables like this:
 
 ```groovy
