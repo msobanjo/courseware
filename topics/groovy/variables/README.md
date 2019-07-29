@@ -15,18 +15,23 @@ myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 
 ## Tasks
 ### Define and Access Variables
-View and then execute the `variable-definition.groovy` script in this folder.
-
-Using the `variable-definition.groovy` file as a reference, create a Groovy script that will output the following:
+Here is som Groovy code that stores the current users name in a variable and then prints out "Hello" and the users name:
+```groovy
+# get the current user on the system
+String name = System.getenv("USER")
+# say hello to the user
+println "Hello ${name}"
+```
+Using the above as a reference, create a Groovy script that will also print a message for the user using a variable called `message` that a `String` type.
+The output should look something like this if the user was called Bob:
 ```text
-
+Hi Bob, how are you?
 ```
 
 <details>
 <summary>Show Solution</summary>
 
 ```groovy
-#!/usr/bin/env groovy
 # get the current user on the system
 String name = System.getenv("USER")
 # set the message variable
