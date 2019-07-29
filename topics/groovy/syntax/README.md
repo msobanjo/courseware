@@ -91,6 +91,7 @@ The easiest way to implement this is by using a multi-line comment:
 ```
 
 </details>
+
 ### String Interpolation
 The following example interpolates the `name` variable into a string and uses the `println` function to print it to the console:
 ```groovy
