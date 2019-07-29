@@ -68,7 +68,16 @@ myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 ## Tasks
 Here are some tasks to try out some of the syntax dicussed above.
-For any of the tasks where you are writing code, please add them to a `groovy-syntax.groovy` file in this folder.
+For any of the tasks where you are writing code, please add them to a `groovy-syntax.groovy` file in this folder and create a single line comment to separate each task, using the task name, like this:
+```groovy
+// First Task
+println "code for first task"
+
+// String Interpolation
+def codeForSecondTask() {
+    return ""
+}
+```
 ### Commenting
 Create a comment at the top of the file which contains the following:
 ```text
@@ -99,7 +108,7 @@ String name = "bob"
 println "Hello ${name}"
 ```
 We can use `System.getenv("USER")` to get the current user running the application.
-By just using the `println` function, try to print the same string, but for the current user who is running the applicatoin.
+By just using the `println` function, try to print the same string, but for the current user who is running the application.
 <details>
 <summary>Show Solution</summary>
 Function calls can be interpolated into strings just like variables:
