@@ -34,6 +34,8 @@ sudo yum install -y groovy
 
 ## Tasks
 - Install Groovy
-- Try to run a Hello World application
+- [Groovy Syntax](./syntax), basic syntax for Groovy programming
+- [Variables](./variables)
+- [Functions](./functions)
 
 [Go Back](../)
