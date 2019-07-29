@@ -122,7 +122,7 @@ println "Hello, ${System.getenv("USER")}"
 
 ### Omitting Parenthesis
 Here is a block of groovy code that looks very similar to Java; try making it more "Groovy" by omitting unnecessary parenthesis.
-Why not use string interpolation, instead of the string concatenation that is already there.
+Why not use string interpolation, instead of the string concatenation that is already there:
 ```groovy
 def user = System.console().readLine("What's your name?\n")
 def age = System.console().readLine("Hi " + user + ", what is your age?\n")
