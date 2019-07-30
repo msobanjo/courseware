@@ -40,10 +40,11 @@ sudo yum install -y groovy
 
 [Go Back](../)
 
+
 <!--MODULES_START-->
 ## Modules
-- [closures](./modules/closures)
-- [syntax](./modules/syntax)
-- [variables](./modules/variables)
-- [functions](./modules/functions)
+- [Groovy Closures](./modules/closures)
+- [Groovy Syntax](./modules/syntax)
+- [Variables](./modules/variables)
+- [Groovy Functions](./modules/functions)
 <!--MODULES_END-->

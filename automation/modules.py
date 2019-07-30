@@ -8,9 +8,16 @@ for topic in get_folders("./topics"):
     print(topic + ":")
     # find all modules and create markdown for the links
     module_links = "## Modules"
+    module_name = ""
     for module in get_folders("./topics/" + topic + "/modules"):
-        print("\t" + module)
-        module_links = module_links + "\n- [" + module + "](./modules/" + module + ")"
+        # get the module name from the module's readme
+        with open("./topics/" + topic + "/modules/" + module + "/README.md") as file:
+            for line in file.read().split("\n"):
+                if line.startswith("#"):
+                    module_name = line.replace("#","").strip()
+                    break
+        print("\t" + module_name)
+        module_links = module_links + "\n- [" + module_name + "](./modules/" + module + ")"
     start = "<!--MODULES_START-->"
     end = "<!--MODULES_END-->"
     module_links = start  + "\n" + module_links + "\n" + end
@@ -31,7 +38,6 @@ for topic in get_folders("./topics"):
                 else:
                     readme = readme + "\n" + line
     readme = readme + "\n" + module_links
-    print(readme)
     # update readme file
     with open(readme_file, "w") as file:
         file.write(readme)
