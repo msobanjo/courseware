@@ -32,15 +32,6 @@ sudo apt install -y groovy
 sudo yum install -y groovy
 ```
 
-## Modules
-- [Groovy Syntax](modules/syntax): Basic syntax for Groovy programming
-- [Variables](modules/variables): Working with variables in Groovy
-- [Functions](modules/functions): Creating and using functions in Groovy
-- [Closures](modules/closures): Anonymous Functions in Groovy
-
-[Go Back](../)
-
-
 <!--MODULES_START-->
 ## Modules
 - [Groovy Closures](./modules/closures)
