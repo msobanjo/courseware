@@ -9,7 +9,9 @@ for topic in get_folders("./topics"):
     # find all modules and create markdown for the links
     module_links = "## Modules"
     module_name = ""
-    for module in get_folders("./topics/" + topic + "/modules"):
+    modules = get_folders("./topics/" + topic + "/modules")
+    modules.sort()
+    for module in modules:
         # get the module name from the module's readme
         with open("./topics/" + topic + "/modules/" + module + "/README.md") as file:
             for line in file.read().split("\n"):

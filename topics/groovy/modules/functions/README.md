@@ -1,4 +1,4 @@
-# Groovy Functions
+# Functions
 ## Basic Usage
 ### Creating a Function
 Functions can be defined by declaring a type to return, like `String` or specifying `void`, meaning that the function wont return anything and then including `() {}` after the function name:

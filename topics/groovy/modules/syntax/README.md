@@ -1,4 +1,4 @@
-# Groovy Syntax
+# Syntax
 ## Overview
 This document aims to cover the basics of the Groovy programming language's syntax.
 Many of the concepts will be easier to pick up if you have used a programming language like Java before, but don't worry if you haven't!
