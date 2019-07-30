@@ -25,11 +25,11 @@ simpleClosure.call()
 Closures can be configured to have parameters very easily:
 ```groovy
 // one parameter
-def singleParamClosure = { param -> {
+def singleParamClosure = {param ->
     println "${param}"
 }
 // two parameters
-def multiParamClosure = { param1, param2, param3 -> {
+def multiParamClosure = {param1, param2, param3 ->
     println "${param1}, ${param2}, ${param3}" 
 }
 ```
