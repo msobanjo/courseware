@@ -3,14 +3,15 @@
 # Groovy Programming Language 
 
 <!--TOC_START-->
-- Overview
-- Installation
-	- Mac OS X
-	- Windows
-	- Linux
-		- Ubuntu/Debian
-		- CentOS/RHEL
-- Modules
+## Contents
+- [Overview](#overview)
+- [Installation](#installation)
+	- [Mac OS X](#mac-os-x)
+	- [Windows](#windows)
+	- [Linux](#linux)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+- [Modules](#modules)
 
 <!--TOC_END-->
 ## Overview

@@ -16,7 +16,7 @@ for readme in Path("topics").glob("**/README.md"):
         for line in lines:
             if line.startswith("```"):
                 code_block = not code_block
-            if not code_block and line.startswith("#"):
+            if not code_block and line.startswith("#") and line != "## Contents":
                 headings.append(line)
 
     heading_links = []
@@ -38,19 +38,19 @@ for readme in Path("topics").glob("**/README.md"):
                         heading_links[i] = heading + "-" + str(x)
                     x += 1
     toc = {}
+    table_of_contents = "## Contents\n"
     for i, heading in enumerate(headings):
         depth = 0
         for letter in heading:
             if letter != "#":
                 break
             depth += 1
-            toc[heading.replace("#", "").strip()] = depth
-    table_of_contents = ""
-    for heading, depth in toc.items():
+        formatted_heading = heading.replace("#", "").strip()
         indent = ""
-        for i in range(2, depth):
+        for a in range(2, depth):
             indent = indent + "\t"
-        table_of_contents = table_of_contents + indent + "- " + heading + "\n"
+        entry = "[" + formatted_heading + "](#" + heading_links[i] + ")"
+        table_of_contents = table_of_contents + indent + "- " + entry + "\n"
     readme_no_toc = ""
     in_toc = False
     for line in lines:

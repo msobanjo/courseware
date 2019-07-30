@@ -1,8 +1,9 @@
 # Variables
 <!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
+## Contents
+- [Basic Usage](#basic-usage)
+- [Tasks](#tasks)
+	- [Define and Access Variables](#define-and-access-variables)
 
 <!--TOC_END-->
 ## Basic Usage

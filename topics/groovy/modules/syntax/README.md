@@ -1,16 +1,19 @@
 # Syntax
 <!--TOC_START-->
-	- Overview
-	- Commenting
-	- Single Line Comments
-	- Multi-Line Comments
-	- Inline Commenting
-	- Shebang Line
-- String Interpolation (GStrings)
-- Optional Parenthesis
-	- When you need parenthesis
-	- Omitting Parenthesis with Named Parameters
-- Tasks
+## Contents
+- [Overview](#overview)
+- [Commenting](#commenting)
+	- [Single Line Comments](#single-line-comments)
+	- [Multi-Line Comments](#multiline-comments)
+	- [Inline Commenting](#inline-commenting)
+	- [Shebang Line](#shebang-line)
+- [String Interpolation (GStrings)](#string-interpolation-gstrings)
+- [Optional Parenthesis](#optional-parenthesis)
+	- [Overview](#overview-1)
+	- [When you need parenthesis](#when-you-need-parenthesis)
+	- [Omitting Parenthesis with Named Parameters](#omitting-parenthesis-with-named-parameters)
+- [Tasks](#tasks)
+	- [Commenting](#commenting-1)
 
 <!--TOC_END-->
 ## Overview

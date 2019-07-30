@@ -1,14 +1,15 @@
 # Closures
 <!--TOC_START-->
-- Overview
-- Basic Usage
-	- Create
-	- Execute
-	- Parameters
-	- Implicit `it` Parameter
-- Using a Closure as a Parameter
-	- `each` Function Example
-	- `find` Function Example
+## Contents
+- [Overview](#overview)
+- [Basic Usage](#basic-usage)
+	- [Create](#create)
+	- [Execute](#execute)
+	- [Parameters](#parameters)
+	- [Implicit `it` Parameter](#implicit-it-parameter)
+- [Using a Closure as a Parameter](#using-a-closure-as-a-parameter)
+	- [`each` Function Example](#each-function-example)
+	- [`find` Function Example](#find-function-example)
 
 <!--TOC_END-->
 ## Overview

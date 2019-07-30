@@ -1,13 +1,17 @@
 # AWS EC2 Instances
 <!--TOC_START-->
-	- Overview
-- Amazon Machine Images (AMIs)
-	- Viewing Available AMIs
-- Running an Instance
-	- Basic Usage
-- View Running Instances
-- Terminate a Running Instance
-- Tasks
+## Contents
+- [Overview](#overview)
+- [Amazon Machine Images (AMIs)](#amazon-machine-images-amis)
+	- [Overview](#overview-1)
+	- [Viewing Available AMIs](#viewing-available-amis)
+- [Running an Instance](#running-an-instance)
+	- [Basic Usage](#basic-usage)
+- [View Running Instances](#view-running-instances)
+	- [Basic Usage](#basic-usage-1)
+- [Terminate a Running Instance](#terminate-a-running-instance)
+	- [Basic Usage](#basic-usage-2)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview

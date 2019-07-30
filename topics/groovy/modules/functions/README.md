@@ -1,18 +1,19 @@
 # Functions
 <!--TOC_START-->
-- Basic Usage
-	- Creating a Function
-	- Calling a Function
-	- Creating Functions with Parameters
-	- Calling Functions with Parameters
-- Return Values
-	- No value (void)
-	- Returning a Type
-	- Return Keyword
-- Tasks
-	- Create Some Basic Functions
-		- Current User Message Function
-		- Addition Function
+## Contents
+- [Basic Usage](#basic-usage)
+	- [Creating a Function](#creating-a-function)
+	- [Calling a Function](#calling-a-function)
+	- [Creating Functions with Parameters](#creating-functions-with-parameters)
+	- [Calling Functions with Parameters](#calling-functions-with-parameters)
+- [Return Values](#return-values)
+	- [No value (void)](#no-value-void)
+	- [Returning a Type](#returning-a-type)
+	- [Return Keyword](#return-keyword)
+- [Tasks](#tasks)
+	- [Create Some Basic Functions](#create-some-basic-functions)
+		- [Current User Message Function](#current-user-message-function)
+		- [Addition Function](#addition-function)
 
 <!--TOC_END-->
 ## Basic Usage

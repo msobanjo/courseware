@@ -1,14 +1,16 @@
 # EC2 VPC Internet Gateways
 <!--TOC_START-->
-- Overview
-- Allowing Your EC2 Instances Internet Access
-- Creating an Internet Gateway
-	- Basic Usage
-- Attaching an Internet Gateway to a VPC
-- View Existing Internet Gateways
-- Detaching Internet Gateways
-- Deleting Internet Gateways
-- Tasks
+## Contents
+- [Overview](#overview)
+- [Allowing Your EC2 Instances Internet Access](#allowing-your-ec2-instances-internet-access)
+- [Creating an Internet Gateway](#creating-an-internet-gateway)
+	- [Basic Usage](#basic-usage)
+- [Attaching an Internet Gateway to a VPC](#attaching-an-internet-gateway-to-a-vpc)
+	- [Basic Usage](#basic-usage-1)
+- [View Existing Internet Gateways](#view-existing-internet-gateways)
+- [Detaching Internet Gateways](#detaching-internet-gateways)
+- [Deleting Internet Gateways](#deleting-internet-gateways)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview

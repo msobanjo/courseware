@@ -4,13 +4,15 @@ Connections are usually over SSH, which uses public and private keys.
 This handout discusses how to manage these Key Pairs, and how to locally store the private keys that are generated.
 
 <!--TOC_START-->
-- Creating Key Pairs
-		- Basic Usage
-	- The Private Key
-	- Locally Storing the Private Key
-	- Private Key Permissions
-- Deleting Key Pairs
-- Tasks
+## Contents
+- [Creating Key Pairs](#creating-key-pairs)
+	- [Basic Usage](#basic-usage)
+	- [The Private Key](#the-private-key)
+	- [Locally Storing the Private Key](#locally-storing-the-private-key)
+	- [Private Key Permissions](#private-key-permissions)
+- [Deleting Key Pairs](#deleting-key-pairs)
+		- [Basic Usage](#basic-usage-1)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Creating Key Pairs

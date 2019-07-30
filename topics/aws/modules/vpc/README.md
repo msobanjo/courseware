@@ -1,21 +1,24 @@
 # Virtual Private Cloud (VPC)
 <!--TOC_START-->
-- Overview
-- Creating a VPC
-	- Basic Usage
-	- CIDR Blocks & Limitations
-- View Existing VPCs
-	- Getting the ID Property Using Queries
-- Delete VPCs
-	- Creating a Default VPC
-- Tasks
-	- Managing a Simple VPC
-		- Create a new VPC with a CIDR block of `10.0.0.0/16`
-		- Delete a VPC using ID
-		- Storing a VPC's ID in a Bash Variable
-		- Using a Bash Variable to Delete a VPC
-		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
-	- Learn how to Fully Configure a VPC
+## Contents
+- [Overview](#overview)
+- [Creating a VPC](#creating-a-vpc)
+	- [Basic Usage](#basic-usage)
+	- [CIDR Blocks & Limitations](#cidr-blocks--limitations)
+- [View Existing VPCs](#view-existing-vpcs)
+	- [Basic Usage](#basic-usage-1)
+	- [Getting the ID Property Using Queries](#getting-the-id-property-using-queries)
+- [Delete VPCs](#delete-vpcs)
+	- [Basic Usage](#basic-usage-2)
+	- [Creating a Default VPC](#creating-a-default-vpc)
+- [Tasks](#tasks)
+	- [Managing a Simple VPC](#managing-a-simple-vpc)
+		- [Create a new VPC with a CIDR block of `10.0.0.0/16`](#create-a-new-vpc-with-a-cidr-block-of-1000016)
+		- [Delete a VPC using ID](#delete-a-vpc-using-id)
+		- [Storing a VPC's ID in a Bash Variable](#storing-a-vpcs-id-in-a-bash-variable)
+		- [Using a Bash Variable to Delete a VPC](#using-a-bash-variable-to-delete-a-vpc)
+		- [Make sure that there are none of the VPCs we created here are left and move on to the next section:](#make-sure-that-there-are-none-of-the-vpcs-we-created-here-are-left-and-move-on-to-the-next-section)
+	- [Learn how to Fully Configure a VPC](#learn-how-to-fully-configure-a-vpc)
 
 <!--TOC_END-->
 ## Overview
