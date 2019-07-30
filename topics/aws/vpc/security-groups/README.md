@@ -26,7 +26,7 @@ The following are the basic characteristics of security groups for your VPC:
 - A security group name must be unique within the VPC.
 
 ## Creating Security Groups
-Security groups can be created and applied to a VPC, instances within this VPC will then be effected.
+Security groups can be created and applied to a VPC; instances within this VPC will then be affected, unless a Security Group has been applied to them directly.
 ```bash
 # aws ec2 create-security-group --group-name [SECURITY_GROUP_NAME] --description [DESCRIPTION] --vpc-id [VPC_ID]
 aws ec2 create-security-group --group-name my-sg --description "My security group" --vpc-id vpc-1a2b3c4d
@@ -41,7 +41,7 @@ aws ec2 describe-security-groups
 ```
 
 ### Filtering Out Security Groups by Name
-Viewing Security Groups by the name can be useful when you have a lot of them.
+Viewing Security Groups by name can be useful when you have a lot of them:
 ```bash
 # aws ec2 describe-security-groups --group-names [GROUP_NAMES]
 aws ec2 describe-security-groups --group-names my-sg
@@ -59,33 +59,33 @@ The following are the basic parts of a security group rule in a VPC:
 
 When you specify a CIDR block as the source for a rule, traffic is allowed from the specified addresses for the specified protocol and port. When you specify a security group as the source for a rule, traffic is allowed from the elastic network interfaces (ENI) for the instances associated with the source security group for the specified protocol and port. Adding a security group as a source does not add rules from the source security group.
 
-If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length.
+If you specify a single IPv4 address, specify the address using the /32 prefix length. If you specify a single IPv6 address, specify it using the /128 prefix length. For example to specify the address `216.58.213.14`, you can use the following: `216.58.213.14/32`
 
-Some systems for setting up firewalls let you filter on source ports. Security groups let you filter only on destination ports.
+Some systems for setting up firewalls let you filter on source ports. Security groups only let you filter on destination ports.
 
 When you add or remove rules, they are automatically applied to all instances associated with the security group.
 
 ### Basic Usage
-To make a rule to allow incoming traffic, we must provide the Security Group ID, the Protocol being used, the address range where the requests will be coming from and the port that will be used.
+To make a rule allowing incoming traffic, we must provide the Security Group ID, the Protocol being used, the address range where the requests will be coming from and the port that will be used:
 ```bash
 # aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
 aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 443 --cidr 0.0.0.0/0
 ```
 ### Example for Allowing SSH from Anywhere
-Here is an example that will allow anyone in the world to attempt an SSH connection to your machine
+Here is an example that will allow anyone in the world to attempt an SSH connection to your machine:
 ```bash
 # aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
 aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 22 --cidr 0.0.0.0/0
 ```
 
 ### Allow SSH Only from Your IP Address
-Allowing access from anywhere may be a security concern, so it's good to know a way of tightening up the access.
-We can use https://checkip.amazonaws.com for checking our public IP address:
+Allowing access from anywhere may be a security concern, so it's good to know how to control access.
+We can use https://checkip.amazonaws.com to check our public IP address:
 ```bash
 $ curl https://checkip.amazonaws.com
 203.0.113.57
 ```
-Once you know your public IP address, this can be used when configuring the SSH rule in our Security Group
+Once you know your public IP address, this can be used when configuring the SSH rule in our Security Group:
 ```bash
 # aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
 aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 22 --cidr 203.0.113.57/32
@@ -98,7 +98,7 @@ aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp -
 
 ## Deleting a Security Group
 ### Basic Usage
-You must provide the ID of the Security Group when you are deleting it.
+You must provide the ID of the Security Group when you are deleting it:
 ```bash
 # aws ec2 delete-security-group --group-id [SECURITY_GROUP_ID]
 aws ec2 delete-security-group --group-id sg-903004f8
