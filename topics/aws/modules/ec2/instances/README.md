@@ -1,4 +1,13 @@
 # AWS EC2 Instances
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
 <!--TOC_START-->
 	- Overview
 - Amazon Machine Images (AMIs)
@@ -22,7 +31,331 @@
 - Tasks
 
 <!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
 <!--TOC_START-->
 	- Overview
 - Amazon Machine Images (AMIs)
@@ -58,6 +391,222 @@ AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that
 - Tasks
 
 <!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 
 <!--TOC_START-->
 	- Overview
@@ -82,6 +631,222 @@ Amazon provides a variety of types of instances with different configurations of
 - Tasks
 
 <!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 
 <!--TOC_START-->
 	- Overview
@@ -95,6 +860,114 @@ Amazon provides a variety of types of instances with different configurations of
 
 <!--TOC_END-->
 Instance types are grouped into families based on target application profiles. These groups include: general purpose, compute-optimized, GPU instances, memory optimized, storage optimized and micro instances.
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Amazon Machine Images (AMIs)
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Viewing Available AMIs
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Running an Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+	- Basic Usage
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- View Running Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Terminate a Running Instance
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+- Tasks
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
+
 <!--TOC_START-->
 	- Overview
 - Amazon Machine Images (AMIs)
@@ -169,6 +1042,8 @@ aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 - Connect to your EC2 instance using SSH and the private key that you stored
 
 [Go Back](../README.md#tasks)
+
+
 
 
 

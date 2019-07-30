@@ -7,6 +7,13 @@ Availability Zones are distinct locations that are engineered to be isolated fro
 By launching instances in separate Availability Zones, you can protect your applications from the failure of a single location.
 We assign a unique ID to each subnet.
 
+- Creating Subnets
+	- Basic Usage
+- View Existing Subnets
+	- Getting the ID Property Using Queries
+- Delete Subnets
+- Tasks
+
 <!--TOC_START-->
 - Creating Subnets
 	- Basic Usage
@@ -61,5 +68,7 @@ Try to complete the following tasks using the commands you learned above:
 - Delete the VPC and Subnets that you created.
 
 [Go Back to VPC Tasks](../README.md#tasks)
+
+
 
 
