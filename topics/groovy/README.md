@@ -39,3 +39,11 @@ sudo yum install -y groovy
 - [Closures](modules/closures): Anonymous Functions in Groovy
 
 [Go Back](../)
+
+<!--MODULES_START-->
+## Modules
+- [closures](./modules/closures)
+- [syntax](./modules/syntax)
+- [variables](./modules/variables)
+- [functions](./modules/functions)
+<!--MODULES_END-->

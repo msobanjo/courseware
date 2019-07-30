@@ -12,3 +12,7 @@ With just one tool to download and configure, you can control multiple AWS servi
 - Learn about [VPC](./vpc/)
 - Learn about [EC2](./ec2/)
 
+
+<!--MODULES_START-->
+## Modules
+<!--MODULES_END-->
