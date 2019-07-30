@@ -1,6 +1,6 @@
 # Closures
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Basic Usage](#basic-usage)
 	- [Create](#create)

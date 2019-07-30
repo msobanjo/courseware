@@ -8,7 +8,7 @@ By launching instances in separate Availability Zones, you can protect your appl
 We assign a unique ID to each subnet.
 
 <!--TOC_START-->
-## Contents
+### Contents
 - [Creating Subnets](#creating-subnets)
 	- [Basic Usage](#basic-usage)
 - [View Existing Subnets](#view-existing-subnets)

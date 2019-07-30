@@ -1,6 +1,6 @@
 # Syntax
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Commenting](#commenting)
 	- [Single Line Comments](#single-line-comments)

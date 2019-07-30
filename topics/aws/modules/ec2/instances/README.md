@@ -1,6 +1,6 @@
 # AWS EC2 Instances
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Amazon Machine Images (AMIs)](#amazon-machine-images-amis)
 	- [Overview](#overview-1)

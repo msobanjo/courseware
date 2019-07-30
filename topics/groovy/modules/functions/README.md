@@ -1,6 +1,6 @@
 # Functions
 <!--TOC_START-->
-## Contents
+### Contents
 - [Basic Usage](#basic-usage)
 	- [Creating a Function](#creating-a-function)
 	- [Calling a Function](#calling-a-function)

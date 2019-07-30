@@ -1,6 +1,6 @@
 # Virtual Private Cloud (VPC)
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Creating a VPC](#creating-a-vpc)
 	- [Basic Usage](#basic-usage)

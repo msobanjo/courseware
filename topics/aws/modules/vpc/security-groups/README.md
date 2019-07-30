@@ -1,6 +1,6 @@
 # EC2 VPC Security Groups
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Security Group basics](#security-group-basics)
 - [Creating Security Groups](#creating-security-groups)

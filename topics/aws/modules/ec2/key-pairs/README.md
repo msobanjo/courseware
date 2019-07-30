@@ -4,7 +4,7 @@ Connections are usually over SSH, which uses public and private keys.
 This handout discusses how to manage these Key Pairs, and how to locally store the private keys that are generated.
 
 <!--TOC_START-->
-## Contents
+### Contents
 - [Creating Key Pairs](#creating-key-pairs)
 	- [Basic Usage](#basic-usage)
 	- [The Private Key](#the-private-key)

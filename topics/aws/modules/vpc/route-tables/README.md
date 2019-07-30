@@ -1,7 +1,7 @@
 # AWS Route Tables
 
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Creating Route Tables](#creating-route-tables)
 - [Deleting Route Tables](#deleting-route-tables)

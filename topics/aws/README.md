@@ -1,7 +1,7 @@
 # AWS Introduction
 
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [AWS CLI](#aws-cli)
 - [Modules](#modules)

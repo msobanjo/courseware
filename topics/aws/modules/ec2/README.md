@@ -1,6 +1,6 @@
 # Elastic Cloud Compute (EC2)
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Tasks](#tasks)
 

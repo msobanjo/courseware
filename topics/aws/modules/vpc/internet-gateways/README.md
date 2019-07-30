@@ -1,6 +1,6 @@
 # EC2 VPC Internet Gateways
 <!--TOC_START-->
-## Contents
+### Contents
 - [Overview](#overview)
 - [Allowing Your EC2 Instances Internet Access](#allowing-your-ec2-instances-internet-access)
 - [Creating an Internet Gateway](#creating-an-internet-gateway)
