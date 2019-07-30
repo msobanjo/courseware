@@ -1,7 +1,7 @@
 # Groovy Closures
 ## Overview
-A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, Closure in the Groovy language can also contain free variables which are defined outside of its surrounding scope.
-While breaking the formal concept of a closure, it offers a variety of advantages.
+A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.
+Although it breaks the formal concept of a closure, a Groovy closure does offer many advantages.
 ## Basic Usage
 ### Create
 Here is a very simple example of a Closure:
@@ -11,7 +11,7 @@ def simpleClosure = {
 }
 ```
 ### Execute
-We can execute a closure either just like we would a function by using `()` or by using the `call()` function:
+We can execute a closure either just like we would a function, by using `()`, or by using the `call()` function:
 ```bash
 def simpleClosure = {
     println "Hi"
@@ -34,15 +34,15 @@ def multiParamClosure = { param1, param2, param3 -> {
 }
 ```
 ### Implicit `it` Parameter
-If you define a closure without parameters, it can still take a single parameter that will stored in a variable called `it` implicitly:
+If you define a closure without parameters, it can still take a single parameter; this parameter will be stored in a variable called `it`:
 ```groovy
 def justAnotherClosure = {
     println "Value of it: ${it}"
 }
 justAnotherClosure "test"
 ```
-## Closure as Parameter
-Because closures are just stored as variables, they can be passed to other functions and closures as such:
+## Using a Closure as a Parameter
+Because closures are just stored as variables, they can be passed to other functions and closures:
 ```groovy
 def myClosure = {
     println "Hello from myClosure"
@@ -57,16 +57,17 @@ myFunction myClosure
 // Hello from myClosure
 ```
 ### `each` Function Example
-We can pass a closure to the each function which will execute the closure for each element in the array:
+We can pass a closure to the `each` function, which will execute the closure for each element in an array:
 ```groovy
 def students = ["bob", "jay", "shafeeq", "dev"]
+
 students.each {
     println it
 }
 ```
 
 ### `find` Function Example
-The find function can be used to select an element from an array, all we have to do is pass it a closure that returns a boolean value, the the boolean value is true, then that element will be returned:
+The `find` function can be used to select an element from an array; all we have to do is pass it a closure that returns a boolean value. If the boolean value is true, the element will be returned:
 ```groovy
 def students = ["bob", "jay", "shafeeq", "dev"]
 
