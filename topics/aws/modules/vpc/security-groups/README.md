@@ -237,7 +237,3 @@ aws ec2 delete-security-group --group-id sg-903004f8
 [Go Back to VPC Tasks](../README.md#tasks)
 
 
-
-
-
-

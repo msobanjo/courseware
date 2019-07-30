@@ -262,7 +262,3 @@ Unless you create a default VPC, there are several other components to understan
 
 
 
-
-
-
-

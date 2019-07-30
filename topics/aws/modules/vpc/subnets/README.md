@@ -63,7 +63,3 @@ Try to complete the following tasks using the commands you learned above:
 [Go Back to VPC Tasks](../README.md#tasks)
 
 
-
-
-
-

@@ -172,7 +172,3 @@ aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 
 
 
-
-
-
-

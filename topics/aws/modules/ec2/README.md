@@ -60,7 +60,3 @@ Amazon EC2 provides developers the tools to build failure resilient applications
 [Go Back](../README.md#tasks)
 
 
-
-
-
-

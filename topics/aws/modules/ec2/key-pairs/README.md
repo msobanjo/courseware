@@ -68,7 +68,3 @@ Try to complete the following tasks:
 [Go Back](../README.md#tasks)
 
 
-
-
-
-
