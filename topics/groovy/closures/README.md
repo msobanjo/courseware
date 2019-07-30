@@ -6,13 +6,24 @@ In opposition to the formal definition of a closure, Closure in the Groovy langu
 While breaking the formal concept of a closure, it offers a variety of advantages.
 ## Basic Usage
 ### Create
-Here is a very simple example of a ClosureL
+Here is a very simple example of a Closure:
 ```groovy
 def simpleClosure = {
     println "Hi"
 }
 ```
 ### Execute
+We can execute a closure either just like we would a function by using `()` or by using the `call()` function:
+```bash
+def simpleClosure = {
+    println "Hi"
+}
+// using ()
+simpleClosure()
+// using the call() function
+simpleClosure.call()
+```
+
 ### Parameters
 ### Implicit "it" Parameter
 ## Closure as Parameter
