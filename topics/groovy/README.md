@@ -2,6 +2,18 @@
 
 # Groovy Programming Language 
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Installation](#installation)
+	- [Mac OS X](#mac-os-x)
+	- [Windows](#windows)
+	- [Linux](#linux)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+- [Modules](#modules)
+
+<!--TOC_END-->
 ## Overview
 
 Apache Groovy is a powerful, optionally typed and dynamic language for the Java platform, with static-typing and static compilation capabilities. It is aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.

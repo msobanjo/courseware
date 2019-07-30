@@ -1,4 +1,21 @@
 # Syntax
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Commenting](#commenting)
+	- [Single Line Comments](#single-line-comments)
+	- [Multi-Line Comments](#multiline-comments)
+	- [Inline Commenting](#inline-commenting)
+	- [Shebang Line](#shebang-line)
+- [String Interpolation (GStrings)](#string-interpolation-gstrings)
+- [Optional Parenthesis](#optional-parenthesis)
+	- [Overview](#overview-1)
+	- [When you need parenthesis](#when-you-need-parenthesis)
+	- [Omitting Parenthesis with Named Parameters](#omitting-parenthesis-with-named-parameters)
+- [Tasks](#tasks)
+	- [Commenting](#commenting-1)
+
+<!--TOC_END-->
 ## Overview
 This document aims to cover the basics of the Groovy programming language's syntax.
 Many of the concepts will be easier to pick up if you have used a programming language like Java before, but don't worry if you haven't!
@@ -141,4 +158,3 @@ println "Your name is ${user} and you are ${age} years old."
 ```
 
 </details>
-

@@ -1,4 +1,18 @@
 # EC2 VPC Internet Gateways
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Allowing Your EC2 Instances Internet Access](#allowing-your-ec2-instances-internet-access)
+- [Creating an Internet Gateway](#creating-an-internet-gateway)
+	- [Basic Usage](#basic-usage)
+- [Attaching an Internet Gateway to a VPC](#attaching-an-internet-gateway-to-a-vpc)
+	- [Basic Usage](#basic-usage-1)
+- [View Existing Internet Gateways](#view-existing-internet-gateways)
+- [Detaching Internet Gateways](#detaching-internet-gateways)
+- [Deleting Internet Gateways](#deleting-internet-gateways)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet.
 It therefore imposes no availability risks or bandwidth constraints on your network traffic.
@@ -71,4 +85,3 @@ Try to complete the following tasks:
 - Delete the VPC and Internet Gateway that you created
 
 [Return to VPC Tasks](../README.md#tasks)
-

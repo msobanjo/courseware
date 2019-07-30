@@ -1,4 +1,21 @@
 # Functions
+<!--TOC_START-->
+### Contents
+- [Basic Usage](#basic-usage)
+	- [Creating a Function](#creating-a-function)
+	- [Calling a Function](#calling-a-function)
+	- [Creating Functions with Parameters](#creating-functions-with-parameters)
+	- [Calling Functions with Parameters](#calling-functions-with-parameters)
+- [Return Values](#return-values)
+	- [No value (void)](#no-value-void)
+	- [Returning a Type](#returning-a-type)
+	- [Return Keyword](#return-keyword)
+- [Tasks](#tasks)
+	- [Create Some Basic Functions](#create-some-basic-functions)
+		- [Current User Message Function](#current-user-message-function)
+		- [Addition Function](#addition-function)
+
+<!--TOC_END-->
 ## Basic Usage
 ### Creating a Function
 Functions can be defined by declaring a type to return, like `String` or specifying `void`, meaning that the function wont return anything and then including `() {}` after the function name:

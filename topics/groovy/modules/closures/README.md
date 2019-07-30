@@ -1,4 +1,17 @@
 # Closures
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Basic Usage](#basic-usage)
+	- [Create](#create)
+	- [Execute](#execute)
+	- [Parameters](#parameters)
+	- [Implicit `it` Parameter](#implicit-it-parameter)
+- [Using a Closure as a Parameter](#using-a-closure-as-a-parameter)
+	- [`each` Function Example](#each-function-example)
+	- [`find` Function Example](#find-function-example)
+
+<!--TOC_END-->
 ## Overview
 A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.
 Although it breaks the formal concept of a closure, a Groovy closure does offer many advantages.
