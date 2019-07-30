@@ -1,8 +1,4 @@
 # Variables
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -16,63 +12,7 @@
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 Variables are of course very commonly used, across all programming languages.
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -86,63 +26,7 @@ In Groovy, you can create variables with an implicit, fixed type, or by using th
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 ```groovy
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -156,34 +40,6 @@ def myString = "This variable does not have a fixed type"
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 String myOtherString = "This variable has a fixed type"
 <!--TOC_START-->
 - Basic Usage
@@ -191,63 +47,7 @@ String myOtherString = "This variable has a fixed type"
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 ```
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -261,63 +61,7 @@ Variables that have been declared using the `def` keyword can have different typ
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 For example a variable created using `def` that starts out as a `String` type, could then have an `Array` type assigned to it later on:
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -331,63 +75,7 @@ For example a variable created using `def` that starts out as a `String` type, c
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 def myString = "My String"
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -401,63 +89,7 @@ myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 	- Define and Access Variables
 
 <!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
 ```
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Basic Usage
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-- Tasks
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-	- Define and Access Variables
-<!--TOC_START-->
-- Basic Usage
-- Tasks
-	- Define and Access Variables
-
-<!--TOC_END-->
-
 <!--TOC_START-->
 - Basic Usage
 - Tasks
@@ -493,8 +125,6 @@ println "Hello ${name}, ${message}"
 ```
 
 </details>
-
-
 
 
 

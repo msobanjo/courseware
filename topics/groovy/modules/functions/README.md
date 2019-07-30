@@ -1,18 +1,4 @@
 # Functions
-- Basic Usage
-	- Creating a Function
-	- Calling a Function
-	- Creating Functions with Parameters
-	- Calling Functions with Parameters
-- Return Values
-	- No value (void)
-	- Returning a Type
-	- Return Keyword
-- Tasks
-	- Create Some Basic Functions
-		- Current User Message Function
-		- Addition Function
-
 <!--TOC_START-->
 - Basic Usage
 	- Creating a Function
@@ -122,7 +108,5 @@ println sumOf(1, 2)
 ```
 
 </details>
-
-
 
 
