@@ -1,8 +1,6 @@
 # Groovy Closures
 ## Overview
-A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.
-A closure may reference variables declared in its surrounding scope.
-In opposition to the formal definition of a closure, Closure in the Groovy language can also contain free variables which are defined outside of its surrounding scope.
+A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, Closure in the Groovy language can also contain free variables which are defined outside of its surrounding scope.
 While breaking the formal concept of a closure, it offers a variety of advantages.
 ## Basic Usage
 ### Create
@@ -35,7 +33,14 @@ def multiParamClosure = { param1, param2, param3 -> {
     println "${param1}, ${param2}, ${param3}" 
 }
 ```
-### Implicit "it" Parameter
+### Implicit `it` Parameter
+If you define a closure without parameters, it can still take a single parameter that will stored in a variable called `it` implicitly:
+```groovy
+def justAnotherClosure = {
+    println "Value of it: ${it}"
+}
+justAnotherClosure "test"
+```
 ## Closure as Parameter
 ### each Function Example
 ### findAll Function Example
