@@ -81,8 +81,3 @@ aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 - Connect to your EC2 instance using SSH and the private key that you stored
 
 [Go Back](../README.md#tasks)
-
-
-
-
-

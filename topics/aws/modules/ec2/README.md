@@ -18,7 +18,3 @@ Amazon EC2 provides developers the tools to build failure resilient applications
 - Learn about running [EC2 Instances](./instances)
 
 [Go Back](../README.md#tasks)
-
-
-
-

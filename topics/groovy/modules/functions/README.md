@@ -108,7 +108,3 @@ println sumOf(1, 2)
 ```
 
 </details>
-
-
-
-

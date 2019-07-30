@@ -19,6 +19,3 @@ With just one tool to download and configure, you can control multiple AWS servi
 - [Elastic Cloud Compute (EC2)](./modules/ec2)
 - [Virtual Private Cloud (VPC)](./modules/vpc)
 <!--MODULES_END-->
-
-
-

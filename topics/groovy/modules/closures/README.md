@@ -89,7 +89,3 @@ def numberOne = students.find {
 
 println numberOne
 ```
-
-
-
-

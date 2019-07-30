@@ -47,8 +47,3 @@ println "Hello ${name}, ${message}"
 ```
 
 </details>
-
-
-
-
-

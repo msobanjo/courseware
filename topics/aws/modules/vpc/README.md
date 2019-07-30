@@ -107,8 +107,3 @@ Unless you create a default VPC, there are several other components to understan
 - Learn about [Security Groups](./security-groups)
 
 [Go Back](../README.md#tasks)
-
-
-
-
-

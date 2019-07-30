@@ -73,7 +73,6 @@ for readme in Path("topics").glob("**/README.md"):
         new_readme = new_readme + line + "\n"
 
     file = open(readme, "w")
-    file.write(new_readme)
+    file.write(new_readme.strip() + "\n")
     file.close()
-    print(new_readme)
 

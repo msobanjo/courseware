@@ -61,7 +61,3 @@ Try to complete the following tasks using the commands you learned above:
 - Delete the VPC and Subnets that you created.
 
 [Go Back to VPC Tasks](../README.md#tasks)
-
-
-
-

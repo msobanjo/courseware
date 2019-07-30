@@ -66,7 +66,3 @@ Try to complete the following tasks:
 - Delete the key pair that you created and also the file that you saved
 
 [Go Back](../README.md#tasks)
-
-
-
-

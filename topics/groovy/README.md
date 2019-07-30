@@ -51,6 +51,3 @@ sudo yum install -y groovy
 - [Syntax](./modules/syntax)
 - [Variables](./modules/variables)
 <!--MODULES_END-->
-
-
-
