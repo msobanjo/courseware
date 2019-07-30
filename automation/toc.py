@@ -51,17 +51,17 @@ for readme in Path("topics").glob("**/README.md"):
         for i in range(2, depth):
             indent = indent + "\t"
         table_of_contents = table_of_contents + indent + "- " + heading + "\n"
-    # print(toc_start + "\n" + table_of_contents + toc_end)
     readme_no_toc = ""
+    in_toc = False
     for line in lines:
-        in_toc = False
         if line == toc_start:
             in_toc = True
-        elif line == toc_end:
+        if line == toc_end:
             in_toc = False
             continue
         if not in_toc:
             readme_no_toc = readme_no_toc + line + "\n"
+    print(readme_no_toc)
     new_readme = ""
     heading_count = 0
     for line in readme_no_toc.split("\n"):
@@ -75,5 +75,4 @@ for readme in Path("topics").glob("**/README.md"):
     file = open(readme, "w")
     file.write(new_readme)
     file.close()
-    print(new_readme)
 
