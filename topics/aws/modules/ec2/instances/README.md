@@ -1,12 +1,111 @@
 # AWS EC2 Instances
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 ## Overview
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 AWS is a comprehensive, evolving cloud computing platform; EC2 is a service that allows business subscribers to run application programs in the computing environment. The EC2 can serve as a practically unlimited set of virtual machines. 
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 Amazon provides a variety of types of instances with different configurations of CPU, memory, storage, and networking resources to suit user needs. Each type is also available in two different sizes to address workload requirements.
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 Instance types are grouped into families based on target application profiles. These groups include: general purpose, compute-optimized, GPU instances, memory optimized, storage optimized and micro instances.
+<!--TOC_START-->
+	- Overview
+- Amazon Machine Images (AMIs)
+	- Viewing Available AMIs
+- Running an Instance
+	- Basic Usage
+- View Running Instances
+- Terminate a Running Instance
+- Tasks
+
+<!--TOC_END-->
 
 ## Amazon Machine Images (AMIs)
 ### Overview
@@ -70,4 +169,6 @@ aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 - Connect to your EC2 instance using SSH and the private key that you stored
 
 [Go Back](../README.md#tasks)
+
+
 

@@ -1,6 +1,42 @@
 # Closures
+<!--TOC_START-->
+- Overview
+- Basic Usage
+	- Create
+	- Execute
+	- Parameters
+	- Implicit `it` Parameter
+- Using a Closure as a Parameter
+	- `each` Function Example
+	- `find` Function Example
+
+<!--TOC_END-->
 ## Overview
+<!--TOC_START-->
+- Overview
+- Basic Usage
+	- Create
+	- Execute
+	- Parameters
+	- Implicit `it` Parameter
+- Using a Closure as a Parameter
+	- `each` Function Example
+	- `find` Function Example
+
+<!--TOC_END-->
 A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.
+<!--TOC_START-->
+- Overview
+- Basic Usage
+	- Create
+	- Execute
+	- Parameters
+	- Implicit `it` Parameter
+- Using a Closure as a Parameter
+	- `each` Function Example
+	- `find` Function Example
+
+<!--TOC_END-->
 Although it breaks the formal concept of a closure, a Groovy closure does offer many advantages.
 ## Basic Usage
 ### Create
@@ -77,3 +113,5 @@ def numberOne = students.find {
 
 println numberOne
 ```
+
+

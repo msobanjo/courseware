@@ -1,17 +1,101 @@
 # Variables
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 ## Basic Usage
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 Variables are of course very commonly used, across all programming languages.
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 In Groovy, you can create variables with an implicit, fixed type, or by using the `def` keyword or by explicitly giving it a type such as `String`.
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 ```groovy
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 def myString = "This variable does not have a fixed type"
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 String myOtherString = "This variable has a fixed type"
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 ```
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 Variables that have been declared using the `def` keyword can have different types assigned to it at run time.
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 For example a variable created using `def` that starts out as a `String` type, could then have an `Array` type assigned to it later on:
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 ```groovy
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 def myString = "My String"
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 ```
+<!--TOC_START-->
+- Basic Usage
+- Tasks
+	- Define and Access Variables
+
+<!--TOC_END-->
 
 ## Tasks
 ### Define and Access Variables
@@ -41,4 +125,6 @@ println "Hello ${name}, ${message}"
 ```
 
 </details>
+
+
 

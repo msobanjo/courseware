@@ -1,4 +1,20 @@
 # Functions
+<!--TOC_START-->
+- Basic Usage
+	- Creating a Function
+	- Calling a Function
+	- Creating Functions with Parameters
+	- Calling Functions with Parameters
+- Return Values
+	- No value (void)
+	- Returning a Type
+	- Return Keyword
+- Tasks
+	- Create Some Basic Functions
+		- Current User Message Function
+		- Addition Function
+
+<!--TOC_END-->
 ## Basic Usage
 ### Creating a Function
 Functions can be defined by declaring a type to return, like `String` or specifying `void`, meaning that the function wont return anything and then including `() {}` after the function name:
@@ -92,3 +108,5 @@ println sumOf(1, 2)
 ```
 
 </details>
+
+

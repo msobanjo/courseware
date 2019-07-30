@@ -1,7 +1,63 @@
 # Syntax
+<!--TOC_START-->
+	- Overview
+	- Commenting
+	- Single Line Comments
+	- Multi-Line Comments
+	- Inline Commenting
+	- Shebang Line
+- String Interpolation (GStrings)
+- Optional Parenthesis
+	- When you need parenthesis
+	- Omitting Parenthesis with Named Parameters
+- Tasks
+
+<!--TOC_END-->
 ## Overview
+<!--TOC_START-->
+	- Overview
+	- Commenting
+	- Single Line Comments
+	- Multi-Line Comments
+	- Inline Commenting
+	- Shebang Line
+- String Interpolation (GStrings)
+- Optional Parenthesis
+	- When you need parenthesis
+	- Omitting Parenthesis with Named Parameters
+- Tasks
+
+<!--TOC_END-->
 This document aims to cover the basics of the Groovy programming language's syntax.
+<!--TOC_START-->
+	- Overview
+	- Commenting
+	- Single Line Comments
+	- Multi-Line Comments
+	- Inline Commenting
+	- Shebang Line
+- String Interpolation (GStrings)
+- Optional Parenthesis
+	- When you need parenthesis
+	- Omitting Parenthesis with Named Parameters
+- Tasks
+
+<!--TOC_END-->
 Many of the concepts will be easier to pick up if you have used a programming language like Java before, but don't worry if you haven't!
+<!--TOC_START-->
+	- Overview
+	- Commenting
+	- Single Line Comments
+	- Multi-Line Comments
+	- Inline Commenting
+	- Shebang Line
+- String Interpolation (GStrings)
+- Optional Parenthesis
+	- When you need parenthesis
+	- Omitting Parenthesis with Named Parameters
+- Tasks
+
+<!--TOC_END-->
 
 ## Commenting
 Comments in Groovy are just like Java:
@@ -141,4 +197,6 @@ println "Your name is ${user} and you are ${age} years old."
 ```
 
 </details>
+
+
 

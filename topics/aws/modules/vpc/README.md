@@ -1,12 +1,183 @@
 # Virtual Private Cloud (VPC)
-## Overview
-Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.
-You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
-You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
 
+<!--TOC_END-->
+## Overview
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
+Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
+You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
+You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
+
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
 You can easily customize the network configuration for your Amazon VPC.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
 For example, you can create a public-facing subnet for your web servers that has access to the Internet, and place your backend systems such as databases or application servers in a private-facing subnet with no Internet access.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
 You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+<!--TOC_START-->
+- Overview
+- Creating a VPC
+	- Basic Usage
+	- CIDR Blocks & Limitations
+- View Existing VPCs
+	- Getting the ID Property Using Queries
+- Delete VPCs
+	- Creating a Default VPC
+- Tasks
+	- Managing a Simple VPC
+		- Create a new VPC with a CIDR block of `10.0.0.0/16`
+		- Delete a VPC using ID
+		- Storing a VPC's ID in a Bash Variable
+		- Using a Bash Variable to Delete a VPC
+		- Make sure that there are none of the VPCs we created here are left and move on to the next section:
+	- Learn how to Fully Configure a VPC
+
+<!--TOC_END-->
 
 ## Creating a VPC
 ### Basic Usage
@@ -88,4 +259,6 @@ Unless you create a default VPC, there are several other components to understan
 - Learn about [Security Groups](./security-groups)
 
 [Go Back](../README.md#tasks)
+
+
 

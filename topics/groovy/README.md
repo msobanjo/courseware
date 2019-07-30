@@ -2,13 +2,101 @@
 
 # Groovy Programming Language 
 
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
+
+<!--TOC_END-->
 ## Overview
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
+
+<!--TOC_END-->
 Apache Groovy is a powerful, optionally typed and dynamic language for the Java platform, with static-typing and static compilation capabilities. It is aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
+
+<!--TOC_END-->
 <img align="right" src="images/austin-powers.png">
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
 
+<!--TOC_END-->
+
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
+
+<!--TOC_END-->
 It integrates smoothly with any Java program, and immediately delivers powerful features to your application, including: scripting capabilities, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming.
+<!--TOC_START-->
+- Overview
+- Installation
+	- Mac OS X
+	- Windows
+	- Linux
+		- Ubuntu/Debian
+		- CentOS/RHEL
+- Modules
+
+<!--TOC_END-->
 
 ## Installation
 
@@ -40,3 +128,4 @@ sudo yum install -y groovy
 - [Syntax](./modules/syntax)
 - [Variables](./modules/variables)
 <!--MODULES_END-->
+
