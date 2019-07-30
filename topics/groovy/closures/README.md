@@ -53,7 +53,26 @@ void myFunction(exec) {
 }
 
 myFunction myClosure
-```
-### each Function Example
-### findAll Function Example
 
+// Hello from myClosure
+```
+### `each` Function Example
+We can pass a closure to the each function which will execute the closure for each element in the array:
+```groovy
+def students = ["bob", "jay", "shafeeq", "dev"]
+students.each {
+    println it
+}
+```
+
+### `find` Function Example
+The find function can be used to select an element from an array, all we have to do is pass it a closure that returns a boolean value, the the boolean value is true, then that element will be returned:
+```groovy
+def students = ["bob", "jay", "shafeeq", "dev"]
+
+def numberOne = students.find {
+    it.equals "shafeeq"
+}
+
+println numberOne
+```
