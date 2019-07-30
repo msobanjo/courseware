@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# generate modules list for every topic
 import os
 # get everything from a folder but the README.md file
 def get_folders(dir):
