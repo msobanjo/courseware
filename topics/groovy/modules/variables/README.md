@@ -42,4 +42,3 @@ println "Hello ${name}, ${message}"
 
 </details>
 
-[Go Back](../)

@@ -142,4 +142,3 @@ println "Your name is ${user} and you are ${age} years old."
 
 </details>
 
-[Go Back](../)
