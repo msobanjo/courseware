@@ -51,23 +51,23 @@ for readme in Path("topics").glob("**/README.md"):
         for i in range(2, depth):
             indent = indent + "\t"
         table_of_contents = table_of_contents + indent + "- " + heading + "\n"
-    # print(toc_start + "\n" + table_of_contents + toc_end)
     readme_no_toc = ""
+    in_toc = False
     for line in lines:
-        in_toc = False
         if line == toc_start:
             in_toc = True
-        elif line == toc_end:
+        if line == toc_end:
             in_toc = False
             continue
         if not in_toc:
             readme_no_toc = readme_no_toc + line + "\n"
     new_readme = ""
     heading_count = 0
+    toc_added = False
     for line in readme_no_toc.split("\n"):
         if line.startswith("#"):
             heading_count += 1
-        if heading_count == 2:
+        if heading_count == 2 and not toc_added:
             new_readme = new_readme + toc_start +  "\n" + table_of_contents + "\n" + toc_end + "\n"
             toc_added = True
         new_readme = new_readme + line + "\n"
