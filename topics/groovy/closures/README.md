@@ -42,6 +42,18 @@ def justAnotherClosure = {
 justAnotherClosure "test"
 ```
 ## Closure as Parameter
+Because closures are just stored as variables, they can be passed to other functions and closures as such:
+```groovy
+def myClosure = {
+    println "Hello from myClosure"
+}
+
+void myFunction(exec) {
+    exec()
+}
+
+myFunction myClosure
+```
 ### each Function Example
 ### findAll Function Example
 
