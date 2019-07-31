@@ -40,7 +40,7 @@ for topic in get_folders("./topics"):
                     readme = readme + line
                 else:
                     readme = readme + "\n" + line
-    readme = readme + "\n" + module_links
+    readme = readme + module_links
     # update readme file
     with open(readme_file, "w") as file:
         file.write(readme)
