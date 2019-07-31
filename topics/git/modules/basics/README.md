@@ -1,4 +1,20 @@
 # Basics
+<!--TOC_START-->
+### Contents
+- [Basic Workflow](#basic-workflow)
+- [Common Commands and Concepts](#common-commands-and-concepts)
+	- [Cloning a Repository (`git clone`)](#cloning-a-repository-git-clone)
+	- [Staging a Change (`git add`)](#staging-a-change-git-add)
+	- [Username and Email in Git Config (`git config`)](#username-and-email-in-git-config-git-config)
+		- [Setting Config Globally](#setting-config-globally)
+		- [Setting Config Locally](#setting-config-locally)
+	- [Local Repository Status (`git status`)](#local-repository-status-git-status)
+	- [Commiting a Change (`git commit`)](#commiting-a-change-git-commit)
+	- [Pushing Changes (`git push`)](#pushing-changes-git-push)
+	- [Retrieving Remote Changes](#retrieving-remote-changes)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Basic Workflow
 The basic workflow for using Git includes staging, committing and pushing changes.
 Before a change can be committed it must be staged and to apply your changes for everyone else on the team, the changes must be pushed to the remote repository.
@@ -87,4 +103,3 @@ git pull origin master
 - Add a new file called file.py
 - Stage all files and commit them
 - Push the changes to your remote repository
-
