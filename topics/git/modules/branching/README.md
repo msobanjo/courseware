@@ -1,4 +1,13 @@
 # Branching
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Git Branching Workflow Example](#git-branching-workflow-example)
+	- [New Application Features](#new-application-features)
+	- [Releases](#releases)
+	- [Hotfixes](#hotfixes)
+
+<!--TOC_END-->
 ## Overview
 Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.
 With version control systems like Git we can separate the codebase on to many different branches.
@@ -21,4 +30,3 @@ Hotfixes should be prevented where possible, but, as this is the wonderful world
 A hotfix can be conducted by creating a hotfix branch from the master branch and applying the changes on that branch; before merging back into the master branch all the changes should, of course, be tested and reviewed to avoid even more hotfixes!
 Once merged into the master branch, the changes must also be merged back into the develop branch; this will keep any important changes the hotfix made, and the code in the master branch should be tagged.
 ![Workflow](../../../images/git/workflow.png )
-

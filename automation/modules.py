@@ -3,7 +3,7 @@
 import os
 # get everything from a folder but the README.md file
 def get_folders(dir):
-    return filter(lambda file: file != "README.md", os.listdir(dir))
+    return list(filter(lambda file: file != "README.md", os.listdir(dir)))
 
 for topic in get_folders("./topics"):
     print(topic + ":")
