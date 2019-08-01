@@ -1,4 +1,21 @@
 # Freestyle Project
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Create a Freestyle Project](#create-a-freestyle-project)
+- [Source Code Management](#source-code-management)
+- [Build Triggers](#build-triggers)
+	- [Build Periodically](#build-periodically)
+	- [GitHub Hook](#github-hook)
+	- [Poll SCM](#poll-scm)
+- [Build Environment](#build-environment)
+	- [Delete Workspace Before Build Starts](#delete-workspace-before-build-starts)
+	- [Secret Texts & Files](#secret-texts--files)
+- [Build](#build)
+- [Post-build Actions](#postbuild-actions)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 Freestyle projects in Jenkins are a type of job you can create for pretty much any automated task.
 These are the best place to start for building any sort of general purpose automation in Jenkins.
