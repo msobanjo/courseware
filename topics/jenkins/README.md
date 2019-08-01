@@ -1,4 +1,14 @@
 # Jenkins
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Installation](#installation)
+	- [Docker (Any Platform)](#docker-any-platform)
+	- [Windows](#windows)
+	- [Linux](#linux)
+- [Modules](#modules)
+
+<!--TOC_END-->
 ## Overview
 Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 Jenkins can be installed through native system packages, Docker, or even run standalone by any machine with a Java Runtime Environment (JRE) installed.
@@ -18,3 +28,7 @@ Simply put this script on the machine you wish to install it on and execute it l
 ```bash
 ./jenkins-install.sh
 ```
+<!--MODULES_START-->
+## Modules
+- [Jenkins Setup from the Portal](./modules/web-setup)
+<!--MODULES_END-->

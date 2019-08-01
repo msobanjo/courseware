@@ -1,5 +1,13 @@
 # Jenkins Setup from the Portal
 Configuring Jenkins using a graphical interface.
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Unlocking Jenkins](#unlocking-jenkins)
+- [Customize Jenkins](#customize-jenkins)
+- [Plugin Installation](#plugin-installation)
+
+<!--TOC_END-->
 ## Overview
 This document aims to guide you through the setup process of Jenkins through the graphical (web) interface.
 ## Unlocking Jenkins
