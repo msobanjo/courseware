@@ -2,12 +2,12 @@
 Centralised project for learning Cloud and DevOps Topics, just getting started.
 <!--TOC_START-->
 ### Contents
-	- [Repository Forking & Rebasing](#repository-forking--rebasing)
-	- [Collaboration](#collaboration)
-		- [Concepts](#concepts)
+- [Repository Forking & Rebasing](#repository-forking--rebasing)
+- [Collaboration](#collaboration)
+	- [Concepts](#concepts)
 
 <!--TOC_END-->
-### Repository Forking & Rebasing
+## Repository Forking & Rebasing
 It's recommended to fork this repository to benefit from the examples and exercises.
 To handle updates from this main repository on you forked one, you can rebase to update any changes:
 1. Add this project as an upstream from your forked repository:
@@ -27,9 +27,9 @@ git rebase upstream/master
 git push -u origin master
 ```
 If you are having issues pushing to your master branch you may need to add the `--force` option to the previous command and try it again.
-### Collaboration
+## Collaboration
 Anyone is welcome to collaborate on this project but please adhere to conventions in place.
-#### Concepts
+### Concepts
 - Topics
     This is a subject, which could be a programming language or tool; Java, Jenkins, Kubernetes, Google Cloud Platform for instance.
 - Modules
