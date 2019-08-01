@@ -7,7 +7,9 @@ import re
 toc_start = "<!--TOC_START-->"
 toc_end = "<!--TOC_END-->"
 # get every readme file
-for readme in Path("topics").glob("**/README.md"):
+readme_files = list(Path("topics").glob("**/README.md"))
+readme_files.append("./README.md")
+for readme in readme_files:
     print(readme)
     headings = []
     with open(readme, "r") as file:
