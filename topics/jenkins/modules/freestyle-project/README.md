@@ -57,7 +57,10 @@ Like with most of the options, the sky is the limit depending on what plugins ar
 ## Tasks
 1. If you haven't created a Fresstyle Project already, go ahead and create one now
 2. Lets configure it to download this project and checkout to this subdirectory:
-    ![Source Code Management](https://i.imgur.com/6itMbjh.png)
+    - Under `Source Code Management` select `Git`
+    - Enter `https://github.com/bob-crutchley/notes` into the `Repository URL` field
+    - Select to add `Additional Behaviours`
+        - Select `Check out to a sub-directory` and enter `topics/jenkins/modules/freestyle-project`
 3. Now add an `Execute shell` build step and enter the following into it:
     ```bash
     sh run.sh
