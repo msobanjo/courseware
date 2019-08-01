@@ -6,6 +6,9 @@ Configuring Jenkins using a graphical interface.
 - [Unlocking Jenkins](#unlocking-jenkins)
 - [Customize Jenkins](#customize-jenkins)
 - [Plugin Installation](#plugin-installation)
+- [Create the First Admin User](#create-the-first-admin-user)
+- [Instance Configuration](#instance-configuration)
+- [Dashboard](#dashboard)
 
 <!--TOC_END-->
 ## Overview
