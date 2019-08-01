@@ -9,6 +9,14 @@ Configuring Jenkins using a graphical interface.
 - [Create the First Admin User](#create-the-first-admin-user)
 - [Instance Configuration](#instance-configuration)
 - [Dashboard](#dashboard)
+	- [Dashboard Links](#dashboard-links)
+		- [New Item](#new-item)
+		- [People](#people)
+		- [Build History](#build-history)
+		- [Manage Jenkins](#manage-jenkins)
+		- [My Views](#my-views)
+		- [Credentials](#credentials)
+		- [Lockable Resources](#lockable-resources)
 
 <!--TOC_END-->
 ## Overview
