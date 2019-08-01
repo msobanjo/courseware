@@ -38,6 +38,12 @@ jobs:
       - run:
           name: Generate Table of Contents for README Files
           command: ./automation/toc.py
+      - run:
+          name: Push Changes
+          command: |
+            git status
+            git config user.name "Circle CI"
+            git config user.email "N/A"
       - save_cache:
           paths:
             - ./venv
