@@ -59,7 +59,9 @@ Links to topic modules are included on main topic README files and a table of co
 This has been automated by Python scripts in the `automation` folder:
 - `modules.py` - Generate module links for the main README on topics
 - `toc.py` - Generate a table of contents for every README on the project
-#### Setup
+#### Circle CI
+Circle CI has been setup to run these scripts automatically and then commit the changes back to the branch being built, so don't feel like you need to get these scripts working before making a pull request.
+#### Local Setup
 You'll need to install some dependencies from the `pip_dependecies` files, using a virtual environment is also recommended.
 1. Make sure you have Python 3.* installed and Pip
 2. Make sure virtualenv is installed with `pip install virtualenv`
