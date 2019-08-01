@@ -9,8 +9,7 @@ Centralised project for learning Cloud and DevOps Topics, just getting started.
 <!--TOC_END-->
 ## Repository Forking & Rebasing
 It's recommended to fork this repository to benefit from the examples and exercises.
-To handle updates from this main repository on you forked one, you can rebase to update any changes:
-1. Add this project as an upstream from your forked repository:
+To handle updates from this main repository on you forked one, you can rebase to update any changes: 1. Add this project as an upstream from your forked repository:
 ```bash
 git remote add upstream https://github.com/bob-crutchley/notes
 ```
@@ -38,3 +37,29 @@ Anyone is welcome to collaborate on this project but please adhere to convention
     A course is a carefully ordered set of modules from any topics that are relevant for the course outcome.
 - Pathways
     Pathways are courses that have been put in order.
+### Topic Structure
+Any example files & projects can be stored in the module folder.
+There shouldn't be an reason for binary files to be on this repository other than images at this point, if binary files are generated from examples then be sure to include them in the `.gitignore`.
+If you would like to include images, store them in `images/[TOPIC_NAME]` at the **root** of this repository.
+Here is an example layout of a topic:
+```text
+./topics/example-topic/
+├── modules
+│   ├── module-1
+│   │   └── README.md - Include broken-down concepts and tasks here
+│   └── module-2
+│       └── README.md
+└── README.md - Overview of the topic, you could maybe include installation guides here if they aren't to cumbersome
+```
+### Automation
+Links to topic modules are included on main topic README files and a table of contents is entered into every README file.
+This has been automated by Python scripts in the `automation` folder:
+- `modules.py` - Generate module links for the main README on topics
+- `toc.py` - Generate a table of contents for every README on the project
+#### Setup
+You'll need to install some dependencies from the `pip_dependecies` files, using a virtual environment is also recommended.
+1. Make sure you have Python 3.* installed and Pip
+2. Make sure virtualenv is installed with `pip install virtualenv`
+3. Configure a virtual environment with `virtualenv -p python3 venv` 
+4. Load into the virtual environment: `source venv/bin/activate`
+5. Install the required dependencies: `pip install -r pip_dependecies`
