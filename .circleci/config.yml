@@ -36,5 +36,5 @@ jobs:
       - save_cache:
           paths:
             - ./venv
-          key: v1-dependencies-{{ checksum "pip_dependecies" }}
+          key: v1-dependencies-{{ checksum "pip_dependencies" }}
 
