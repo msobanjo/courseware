@@ -5,6 +5,9 @@ Centralised project for learning Cloud and DevOps Topics, just getting started.
 - [Repository Forking & Rebasing](#repository-forking--rebasing)
 - [Collaboration](#collaboration)
 	- [Concepts](#concepts)
+	- [Topic Structure](#topic-structure)
+	- [Automation](#automation)
+		- [Setup](#setup)
 
 <!--TOC_END-->
 ## Repository Forking & Rebasing
