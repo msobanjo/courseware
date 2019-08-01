@@ -7,7 +7,8 @@ Centralised project for learning Cloud and DevOps Topics, just getting started.
 	- [Concepts](#concepts)
 	- [Topic Structure](#topic-structure)
 	- [Automation](#automation)
-		- [Setup](#setup)
+		- [Circle CI](#circle-ci)
+		- [Local Setup](#local-setup)
 
 <!--TOC_END-->
 ## Repository Forking & Rebasing
