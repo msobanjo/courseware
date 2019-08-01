@@ -32,10 +32,12 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r pip_dependencies
-
       - run:
-          name: generate topic modules
+          name: Generate Topic Module Links
           command: ./automation/modules.py
+      - run:
+          name: Generate Table of Contents for README Files
+          command: ./automation/toc.py
       - save_cache:
           paths:
             - ./venv
