@@ -39,11 +39,14 @@ jobs:
           name: Generate Table of Contents for README Files
           command: ./automation/toc.py
       - run:
-          name: Push Changes
+          name: Push Changes Made from Scripts
           command: |
             git status
             git config user.name "Circle CI"
             git config user.email "N/A"
+            git add .
+            git commit -m "circle ci - document formatting [ci skip]"
+            git push -u origin $(git branch | grep \* | cut -d ' ' -f2)
       - save_cache:
           paths:
             - ./venv
