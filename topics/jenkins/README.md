@@ -30,5 +30,6 @@ Simply put this script on the machine you wish to install it on and execute it l
 ```
 <!--MODULES_START-->
 ## Modules
+- [Jobs](./modules/jobs)
 - [Jenkins Setup from the Portal](./modules/web-setup)
 <!--MODULES_END-->
