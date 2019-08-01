@@ -33,6 +33,9 @@ jobs:
             . venv/bin/activate
             pip install -r pip_dependencies
 
+      - run:
+          name: generate topic modules
+          command: ./automation/modules.py
       - save_cache:
           paths:
             - ./venv
