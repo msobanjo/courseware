@@ -2,7 +2,6 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-	- [What is Git?](#what-is-git)
 	- [Software and Version Control](#software-and-version-control)
 	- [Online Services That Use Git](#online-services-that-use-git)
 - [Installation](#installation)
@@ -16,7 +15,6 @@
 
 <!--TOC_END-->
 ## Overview
-### What is Git?
 Git is a distributed version-control system for tracking changes in source code during software development.
 It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 Its goals include speed, data integrity, and support for distributed, non-linear workflows.
