@@ -2,7 +2,6 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-	- [What is Git?](#what-is-git)
 	- [Software and Version Control](#software-and-version-control)
 	- [Online Services That Use Git](#online-services-that-use-git)
 - [Installation](#installation)
