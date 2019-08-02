@@ -2,7 +2,7 @@
 name: Syntax Error
 about: Incorrect syntax for a code or script example.
 title: ''
-labels: ''
+labels: syntax-error
 assignees: ''
 
 ---
