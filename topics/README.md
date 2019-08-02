@@ -1,5 +1,12 @@
 # Topics
-#### [a](#a) [b](#b) [c](#c) [d](#d) [e](#e) [f](#f) [g](#g) [h](#h) [i](#i) [j](#j) [k](#k) [l](#l) [m](#m) [n](#n) [o](#o) [p](#p) [q](#q) [r](#r) [s](#s) [t](#t) [u](#u) [v](#v) [w](#w) [x](#x) [y](#y) [z](#z)
+<!--TOC_START-->
+### Contents
+- [A](#a)
+	- [AWS [&rarr;](./aws)](#aws-rarraws)
+- [G](#g)
+	- [Groovy Programming [&rarr;](./groovy)](#groovy-programming-rarrgroovy)
+
+<!--TOC_END-->
 ## A
 ### AWS [&rarr;](./aws)
 

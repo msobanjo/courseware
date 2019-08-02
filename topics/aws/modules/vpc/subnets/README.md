@@ -7,6 +7,18 @@ Availability Zones are distinct locations that are engineered to be isolated fro
 By launching instances in separate Availability Zones, you can protect your applications from the failure of a single location.
 We assign a unique ID to each subnet.
 
+<!--TOC_START-->
+### Contents
+- [Creating Subnets](#creating-subnets)
+	- [Basic Usage](#basic-usage)
+- [View Existing Subnets](#view-existing-subnets)
+	- [Basic Usage](#basic-usage-1)
+	- [Getting the ID Property Using Queries](#getting-the-id-property-using-queries)
+- [Delete Subnets](#delete-subnets)
+	- [Basic Usage](#basic-usage-2)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Creating Subnets
 ### Basic Usage
 After you create a subnet, you can't change its CIDR block.

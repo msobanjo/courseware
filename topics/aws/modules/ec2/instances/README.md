@@ -1,4 +1,19 @@
 # AWS EC2 Instances
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Amazon Machine Images (AMIs)](#amazon-machine-images-amis)
+	- [Overview](#overview-1)
+	- [Viewing Available AMIs](#viewing-available-amis)
+- [Running an Instance](#running-an-instance)
+	- [Basic Usage](#basic-usage)
+- [View Running Instances](#view-running-instances)
+	- [Basic Usage](#basic-usage-1)
+- [Terminate a Running Instance](#terminate-a-running-instance)
+	- [Basic Usage](#basic-usage-2)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 An EC2 instance is a virtual server in Amazon’s Elastic Compute Cloud (EC2) for running applications on the Amazon Web Services (AWS) infrastructure.
 
@@ -70,4 +85,3 @@ aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 - Connect to your EC2 instance using SSH and the private key that you stored
 
 [Go Back](../README.md#tasks)
-

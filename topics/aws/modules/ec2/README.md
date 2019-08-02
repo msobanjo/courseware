@@ -1,4 +1,10 @@
-# AWS EC2
+# Elastic Cloud Compute (EC2)
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 

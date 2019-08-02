@@ -1,4 +1,11 @@
 # Variables
+<!--TOC_START-->
+### Contents
+- [Basic Usage](#basic-usage)
+- [Tasks](#tasks)
+	- [Define and Access Variables](#define-and-access-variables)
+
+<!--TOC_END-->
 ## Basic Usage
 Variables are of course very commonly used, across all programming languages.
 In Groovy, you can create variables with an implicit, fixed type, or by using the `def` keyword or by explicitly giving it a type such as `String`.
@@ -41,4 +48,3 @@ println "Hello ${name}, ${message}"
 ```
 
 </details>
-

@@ -2,6 +2,18 @@
 
 # Groovy Programming Language 
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Installation](#installation)
+	- [Mac OS X](#mac-os-x)
+	- [Windows](#windows)
+	- [Linux](#linux)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+- [Modules](#modules)
+
+<!--TOC_END-->
 ## Overview
 
 Apache Groovy is a powerful, optionally typed and dynamic language for the Java platform, with static-typing and static compilation capabilities. It is aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
@@ -31,11 +43,10 @@ sudo apt install -y groovy
 ```bash
 sudo yum install -y groovy
 ```
-
+<!--MODULES_START-->
 ## Modules
-- [Groovy Syntax](modules/syntax): Basic syntax for Groovy programming
-- [Variables](modules/variables): Working with variables in Groovy
-- [Functions](modules/functions): Creating and using functions in Groovy
-- [Closures](modules/closures): Anonymous Functions in Groovy
-
-[Go Back](../)
+- [Closures](./modules/closures)
+- [Functions](./modules/functions)
+- [Syntax](./modules/syntax)
+- [Variables](./modules/variables)
+<!--MODULES_END-->
