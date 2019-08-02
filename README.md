@@ -43,7 +43,7 @@ Anyone is welcome to collaborate on this project but please adhere to convention
     Pathways are courses that have been put in order.
 ### Topic Structure
 Any example files & projects can be stored in the module folder.
-There shouldn't be an reason for binary files to be on this repository other than images at this point, if binary files are generated from examples then be sure to include them in the `.gitignore`.
+There shouldn't be an reason for binary files to be on this repository which includes images, if binary files are generated from examples then be sure to include them in the `.gitignore`.
 If you would like to include images, store them in `images/[TOPIC_NAME]` at the **root** of this repository.
 Here is an example layout of a topic:
 ```text
