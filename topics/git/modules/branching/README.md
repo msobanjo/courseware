@@ -29,4 +29,4 @@ Preventing hotfixes is one of the main reasons for designing a workflow such as 
 Hotfixes should be prevented where possible, but, as this is the wonderful world of IT we work in, they could still happen at some point.
 A hotfix can be conducted by creating a hotfix branch from the master branch and applying the changes on that branch; before merging back into the master branch all the changes should, of course, be tested and reviewed to avoid even more hotfixes!
 Once merged into the master branch, the changes must also be merged back into the develop branch; this will keep any important changes the hotfix made, and the code in the master branch should be tagged.
-![Workflow](../../../../images/git/workflow.png )
+![Workflow](https://i.imgur.com/TTzISff.png)
