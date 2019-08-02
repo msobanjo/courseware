@@ -13,7 +13,8 @@ Centralised project for learning Cloud and DevOps Topics (just getting started).
 <!--TOC_END-->
 ## Repository Forking & Rebasing
 It's recommended to fork this repository to benefit from the examples and exercises.
-To handle updates from this main repository on your forked one, you can rebase to update any changes: 1. Add this project as an upstream from your forked repository:
+To handle updates from this main repository on your forked one, you can rebase to update any changes:
+1. Add this project as an upstream from your forked repository:
 ```bash
 git remote add upstream https://github.com/bob-crutchley/notes
 ```
