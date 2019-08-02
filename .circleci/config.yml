@@ -49,8 +49,9 @@ jobs:
             git config user.name "Circle CI"
             git config user.email "N/A"
             git add .
-            git commit -m "circle ci - document formatting [ci skip]"
-            git push -u origin $(git branch | grep \* | cut -d ' ' -f2)
+            if git commit -m "circle ci - document formatting [ci skip]"; then
+              git push -u origin $(git branch | grep \* | cut -d ' ' -f2)
+            fi
       - save_cache:
           paths:
             - ./venv
