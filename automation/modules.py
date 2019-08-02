@@ -2,6 +2,10 @@
 # generate modules list for every topic
 import os
 
+#set global variables
+start = "<!--MODULES_START-->"
+end = "<!--MODULES_END-->"
+
 # get everything from a folder but the README.md file
 def get_folders(dir):
     return list(filter(lambda file: file != "README.md", os.listdir(dir)))
@@ -23,18 +27,13 @@ def get_module_links(topic):
 					break
 				print("\t" + module_name)
 				module_links = module_links + "\n- [" + module_name + "](./modules/" + module + ")"
-	start = "<!--MODULES_START-->"
-	end = "<!--MODULES_END-->"
 	module_links = start  + "\n" + module_links + "\n" + end
 	return module_links
 
 # build readme with module links
 # function 2 - takes module_links as parameter
-def build_readme(topic, module_links):
+def build_readme(topic, module_links, readme_file):
 	readme = ""
-	readme_file = "./topics/" + topic + "/README.md"
-	start = "<!--MODULES_START-->"
-	end = "<!--MODULES_END-->"
 	with open(readme_file, "r") as file:
 		delete = False
 		for i, line in enumerate(file.read().split("\n")):
@@ -53,8 +52,7 @@ def build_readme(topic, module_links):
 
 # update readme file
 # function 3 - takes read me as parameter
-def update_readme(topic, readme):
-	readme_file = "./topics/" + topic + "/README.md"
+def update_readme(topic, readme, readme_file):
 	with open(readme_file, "w") as file:
 		#file.write(readme)
 		print(readme)
@@ -62,6 +60,7 @@ def update_readme(topic, readme):
 #for each topic create the modules
 for topic in get_folders("./topics"):
 	print(topic + ":")
+	readme_file = "./topics/" + topic + "/README.md"
 	module_links = get_module_links(topic)
-	readme = build_readme(topic, module_links)
-	update_readme(topic, readme)
+	readme = build_readme(topic, module_links, readme_file)
+	update_readme(topic, readme, readme_file)
