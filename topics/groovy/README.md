@@ -1,4 +1,4 @@
-<img align="right" src="./images/groovy-logo.png">
+<img align="right" src="https://i.imgur.com/MvR6SEF.png">
 
 # Groovy Programming Language 
 
@@ -18,7 +18,7 @@
 
 Apache Groovy is a powerful, optionally typed and dynamic language for the Java platform, with static-typing and static compilation capabilities. It is aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
 
-<img align="right" src="images/austin-powers.png">
+<img align="right" src="https://i.imgur.com/qeXEJ5F.png">
 
 It integrates smoothly with any Java program, and immediately delivers powerful features to your application, including: scripting capabilities, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming.
 
