@@ -2,7 +2,7 @@
 name: Broken Installation Guide
 about: Broken or outdated installation guide.
 title: Broken Installation Guide
-labels: ''
+labels: broken-installation-guide
 assignees: ''
 
 ---
