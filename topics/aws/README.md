@@ -1,4 +1,4 @@
-# AWS Introduction
+# Amazon Web Services (AWS)
 
 <!--TOC_START-->
 ### Contents
