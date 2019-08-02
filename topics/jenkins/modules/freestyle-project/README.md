@@ -46,7 +46,7 @@ The folder where the job runs on the host machine's file system will be deleted 
 You may securely use secret texts and files that you have configured in the Credentials section here in the job.
 These secrets will also be hidden in the Jenkins logs as well.
 ## Build
-This is likely where you will spend most of your time on a Jenkin's job.
+This is likely where you will spend most of your time on a Jenkins job.
 The most common build step here is `Execute shell`; other options are available, depending on what plugins you have installed.
 Exactly what your job accomplishes is configured here.
 ## Post-build Actions
