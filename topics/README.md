@@ -1,17 +1,9 @@
 # Topics
-<!--TOC_START-->
-### Contents
-- [A](#a)
-	- [AWS [&rarr;](./aws)](#aws-rarraws)
-- [G](#g)
-	- [Groovy Programming [&rarr;](./groovy)](#groovy-programming-rarrgroovy)
+## AWS Introduction [&xrarr;](./aws)
+Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally.
+## Git [&xrarr;](./git)
+Git is a distributed version-control system for tracking changes in source code during software development.
+## Groovy Programming Language  [&xrarr;](./groovy)
 
-<!--TOC_END-->
-## A
-### AWS [&rarr;](./aws)
-
-Amazon Web Services is a subsidiary of Amazon that provides on-demand cloud computing platforms to individuals, companies, and governments, on a metered pay-as-you-go basis.
-
-## G
-### Groovy Programming [&rarr;](./groovy)
-Apache Groovy is a Java-syntax-compatible object-oriented programming language for the Java platform. It is both a static and dynamic language with features similar to those of Python, Ruby, Perl, and Smalltalk.
+## Jenkins [&xrarr;](./jenkins)
+Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
