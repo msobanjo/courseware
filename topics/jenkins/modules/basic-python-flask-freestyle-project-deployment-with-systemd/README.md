@@ -10,6 +10,15 @@
 }
 -->
 # Basic Python Flask Freestyle Project Deployment with systemd
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Sample Project](#sample-project)
+- [Host Machine Configuration](#host-machine-configuration)
+- [Jenkins Job](#jenkins-job)
+	- [Configure Source Control Management](#configure-source-control-management)
+
+<!--TOC_END-->
 ## Overview
 Basic deployment of a Python Flask server using systemd and a Freestyle Project
 Included in this module folder is a Python Server that uses the Flask framework.
@@ -27,5 +36,4 @@ There are a few prerequisites before getting this to work, so make sure the foll
 Create a Jenkins Freestyle Project called flask-app and configure it to deploy this application:
 ### Configure Source Control Management
 We need Jenkins to download to download this code onto its filesystem, this can be configured in the Source Control Management section:
-- 
-
+-
