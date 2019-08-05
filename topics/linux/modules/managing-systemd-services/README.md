@@ -1,4 +1,27 @@
 # Managing systemd Services
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [systemctl](#systemctl)
+	- [Listing Services](#listing-services)
+	- [Starting a Service](#starting-a-service)
+	- [Stopping a Service](#stopping-a-service)
+	- [Restarting a Service](#restarting-a-service)
+	- [Reloading a Service Configuration](#reloading-a-service-configuration)
+	- [Enabling a Service](#enabling-a-service)
+		- [Enable and Start](#enable-and-start)
+	- [Disable a Service](#disable-a-service)
+	- [Check the Service Status](#check-the-service-status)
+- [Tasks](#tasks)
+	- [Install NGINX](#install-nginx)
+	- [Check the Service Status](#check-the-service-status-1)
+	- [Stop the Service](#stop-the-service)
+	- [Check the Service Status](#check-the-service-status-2)
+	- [Enable and Start the Service](#enable-and-start-the-service)
+	- [Make a Config Change](#make-a-config-change)
+	- [Cleanup](#cleanup)
+
+<!--TOC_END-->
 ## Overview
 A service, or daemon is a background application that waits to be used, or carry out essential tasks rather than being in direct control of an interactive user.
 Some examples of this are all of the processes running in the background on a machine; such as the networking services, graphical interface etc.
