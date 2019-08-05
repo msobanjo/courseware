@@ -1,41 +1,6 @@
 {
     "topics": [
         {
-            "path": "./topics/git",
-            "readme": "./topics/git/README.md",
-            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
-            "name": "Git",
-            "modules": [
-                {
-                    "path": "./topics/git/modules/branching",
-                    "readme": "./topics/git/modules/branching/README.md",
-                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-                    "name": "Branching"
-                },
-                {
-                    "name": "Basics",
-                    "est_time": 15,
-                    "path": "./topics/git/modules/basics",
-                    "readme": "./topics/git/modules/basics/README.md",
-                    "overview": ""
-                }
-            ]
-        },
-        {
-            "path": "./topics/linux",
-            "readme": "./topics/linux/README.md",
-            "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
-            "name": "Linux",
-            "modules": [
-                {
-                    "path": "./topics/linux/modules/managing-systemd-services",
-                    "readme": "./topics/linux/modules/managing-systemd-services/README.md",
-                    "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
-                    "name": "Managing systemd Services"
-                }
-            ]
-        },
-        {
             "path": "./topics/jenkins",
             "readme": "./topics/jenkins/README.md",
             "overview": "Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.",
@@ -62,22 +27,36 @@
             ]
         },
         {
+            "path": "./topics/linux",
+            "readme": "./topics/linux/README.md",
+            "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
+            "name": "Linux",
+            "modules": [
+                {
+                    "path": "./topics/linux/modules/managing-systemd-services",
+                    "readme": "./topics/linux/modules/managing-systemd-services/README.md",
+                    "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
+                    "name": "Managing systemd Services"
+                }
+            ]
+        },
+        {
             "path": "./topics/groovy",
             "readme": "./topics/groovy/README.md",
             "overview": "",
             "name": "Groovy Programming Language ",
             "modules": [
                 {
-                    "path": "./topics/groovy/modules/functions",
-                    "readme": "./topics/groovy/modules/functions/README.md",
-                    "overview": "",
-                    "name": "Functions"
-                },
-                {
                     "path": "./topics/groovy/modules/syntax",
                     "readme": "./topics/groovy/modules/syntax/README.md",
                     "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
                     "name": "Syntax"
+                },
+                {
+                    "path": "./topics/groovy/modules/functions",
+                    "readme": "./topics/groovy/modules/functions/README.md",
+                    "overview": "",
+                    "name": "Functions"
                 },
                 {
                     "path": "./topics/groovy/modules/closures",
@@ -100,16 +79,37 @@
             "name": "Amazon Web Services (AWS)",
             "modules": [
                 {
-                    "path": "./topics/aws/modules/vpc",
-                    "readme": "./topics/aws/modules/vpc/README.md",
-                    "overview": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
-                    "name": "Virtual Private Cloud (VPC)"
-                },
-                {
                     "path": "./topics/aws/modules/ec2",
                     "readme": "./topics/aws/modules/ec2/README.md",
                     "overview": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
                     "name": "Elastic Cloud Compute (EC2)"
+                },
+                {
+                    "path": "./topics/aws/modules/vpc",
+                    "readme": "./topics/aws/modules/vpc/README.md",
+                    "overview": "Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.",
+                    "name": "Virtual Private Cloud (VPC)"
+                }
+            ]
+        },
+        {
+            "path": "./topics/git",
+            "readme": "./topics/git/README.md",
+            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "name": "Git",
+            "modules": [
+                {
+                    "path": "./topics/git/modules/branching",
+                    "readme": "./topics/git/modules/branching/README.md",
+                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+                    "name": "Branching"
+                },
+                {
+                    "name": "Basics",
+                    "est_time": 15,
+                    "path": "./topics/git/modules/basics",
+                    "readme": "./topics/git/modules/basics/README.md",
+                    "overview": ""
                 }
             ]
         }
