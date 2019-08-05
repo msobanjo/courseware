@@ -18,7 +18,7 @@
 	- [Stop the Service](#stop-the-service)
 	- [Check the Service Status](#check-the-service-status-2)
 	- [Enable and Start the Service](#enable-and-start-the-service)
-	- [Make a Config Change](#make-a-config-change)
+	- [Make a Configuration Change](#make-a-configuration-change)
 	- [Cleanup](#cleanup)
 
 <!--TOC_END-->
