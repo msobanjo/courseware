@@ -1,8 +1,9 @@
 [Unit]
 Description=Flask Application
 [Service]
+EnvironmentFile=/opt/flask-app/venv/bin/activate
 User=pythonadm
 WorkingDirectory=/opt/flask-app
-ExecStart=/opt/flask-app/app.py
+ExecStart=/source/opt/flask-app/app.py
 [Install]
 WantedBy=multi-user.target
