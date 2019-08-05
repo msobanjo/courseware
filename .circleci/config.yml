@@ -46,6 +46,9 @@ jobs:
           name: Create Topics List of Links
           command: ./automation/topics.py
       - run:
+          name: Create State
+          command: ./automation/state.py > state.json
+      - run:
           name: Push Changes Made from Scripts
           command: |
             git status

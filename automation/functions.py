@@ -22,16 +22,23 @@ def get_title(contents):
         exit(1)
     return title
 
-def get_module_props(module):
+def get_enclosed_contents(start, end, content):
+    sub_content_list = re.findall(r"(?<=" + start + ")((.*\n)*)(?=" + end + ")", content)
+    if len(sub_content_list) > 0:
+        return sub_content_list[0][0].strip()
+    else:
+        return ""
+
+def get_props(module):
     module_readme = open(module + "/README.md", "r")
     contents = module_readme.read()
-    props_list = re.findall(r"(?<=<!--PROPS\n)((.*\n)*)(?=-->)", contents)
-    props_string = "{}"
-    if len(props_list) > 0:
-        props_string = props_list[0][0].strip()
     module_readme.close()
+    props_string = get_enclosed_contents("<!--PROPS", "-->", contents)
+    if props_string == "":
+        props_string = "{}"
     props = json.loads(props_string)
     props["path"] = module
+    props["readme"] = module + "/README.md"
     props["overview"] = get_overview(contents)
     props["name"] = get_title(contents)
     return props
@@ -42,22 +49,24 @@ def get_all_modules_for_topic(topic):
     module_paths = map(lambda module: str(module), module_paths)
     modules = []
     for module in module_paths:
-        modules.append(get_module_props(module))
+        modules.append(get_props("./" + module))
     return modules
 
 def get_all_topics():
     items = list(Path("./topics").glob("*"))
     topics = filter(lambda item: os.path.isdir(item), items)
-    return map(lambda topic: "./" + str(topic), topics)
+    topics = map(lambda topic: str(topic), topics)
+    new_topics = []
+    for topic in topics:
+        new_topics.append(get_props("./" + topic))
+    return new_topics
 
 def get_state():
     state = {
         "topics": []
     }
     for topic in get_all_topics():
-        state["topics"].append({
-            "path": topic,
-            "modules": list(get_all_modules_for_topic(topic))
-        })
+        topic["modules"] = get_all_modules_for_topic(topic["path"])
+        state["topics"].append(topic)
     return state
 
