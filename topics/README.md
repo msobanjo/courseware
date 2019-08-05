@@ -7,3 +7,5 @@ Git is a distributed version-control system for tracking changes in source code 
 
 ## Jenkins [&xrarr;](./jenkins)
 Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
+## Linux [&xrarr;](./linux)
+The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix.
