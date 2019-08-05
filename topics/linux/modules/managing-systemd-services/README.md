@@ -132,7 +132,7 @@ Check the status to see the service is back up:
 ```bash
 sudo systemctl status nginx
 ```
-### Make a Config Change
+### Make a Configuration Change
 Edit the `/etc/nginx/nginx.conf` using `sudo` or as the `root` user and enter the following:
 ```nginx.conf
 events {}
