@@ -25,8 +25,8 @@ def get_module_links(topic):
 				if line.startswith("#"):
 					module_name = line.replace("#","").strip()
 					break
-				print("\t" + module_name)
-				module_links = module_links + "\n- [" + module_name + "](./modules/" + module + ")"
+			print("\t" + module_name)
+			module_links = module_links + "\n- [" + module_name + "](./modules/" + module + ")"
 	module_links = start  + "\n" + module_links + "\n" + end
 	return module_links
 
