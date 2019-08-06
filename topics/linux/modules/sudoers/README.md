@@ -13,6 +13,13 @@
 - [Configuring a sudo User](#configuring-a-sudo-user)
 	- [Run sudo Commands Without a Password](#run-sudo-commands-without-a-password)
 	- [Only Allow Specific Commands](#only-allow-specific-commands)
+- [Tasks](#tasks)
+	- [Create a Jenkins User](#create-a-jenkins-user)
+	- [Install NGINX](#install-nginx)
+	- [Configure Jenkins as sudo User](#configure-jenkins-as-sudo-user)
+	- [Check the Basic sudoers Configuration Works](#check-the-basic-sudoers-configuration-works)
+	- [Configure sudoers to Only Manage NGINX](#configure-sudoers-to-only-manage-nginx)
+	- [Check the More Advanced Configuration Works](#check-the-more-advanced-configuration-works)
 
 <!--TOC_END-->
 ## Overview
