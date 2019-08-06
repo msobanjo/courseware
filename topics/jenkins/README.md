@@ -28,6 +28,7 @@ Simply run this script on the machine you wish to install it on, and execute it 
 ```bash
 ./jenkins-install.sh
 ```
+
 <!--MODULES_START-->
 ## Modules
 - [Freestyle Project](./modules/freestyle-project)
