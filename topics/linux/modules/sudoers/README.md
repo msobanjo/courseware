@@ -7,6 +7,14 @@
 }
 -->
 # Sudoers
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Configuring a sudo User](#configuring-a-sudo-user)
+	- [Run sudo Commands Without a Password](#run-sudo-commands-without-a-password)
+	- [Only Allow Specific Commands](#only-allow-specific-commands)
+
+<!--TOC_END-->
 ## Overview
 The sudo tools allows a user to act as a superuser for a command.
 You can think of running a command as sudo like running a an application as administrator on a Windows machine.
