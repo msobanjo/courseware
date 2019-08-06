@@ -35,9 +35,7 @@ There are a few prerequisites for this module, so make sure the following has be
 - Python 3 installed
 - Jenkins user, configured as a sudo user with no password
 ## Jenkins Job
-Create a Jenkins Freestyle Project called flask-app and configure it to deploy this application:
-(SOMETHING MISSING HERE?)
-We need Jenkins to download this code onto its filesystem; this can be configured in the Source Control Management section:
+Create a Jenkins Freestyle Project called flask-app and configure it to download this code onto its filesystem; this can be configured in the Source Control Management section:
 - `Repository URL` set to `https://github.com/bob-crutchley/notes`
 ## Shell Script
 Add the following into an `Execute shell` build step:
