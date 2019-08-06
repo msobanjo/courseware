@@ -16,7 +16,9 @@
 - [Sample Project](#sample-project)
 - [Host Machine Configuration](#host-machine-configuration)
 - [Jenkins Job](#jenkins-job)
-	- [Configure Source Control Management](#configure-source-control-management)
+- [Shell Script](#shell-script)
+	- [Installing the systemd Service](#installing-the-systemd-service)
+	- [Installing and Configuring the Application Files](#installing-and-configuring-the-application-files)
 
 <!--TOC_END-->
 ## Overview
