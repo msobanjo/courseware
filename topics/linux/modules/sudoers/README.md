@@ -90,8 +90,8 @@ sudo echo "Hello I'm jenkins using sudo!"
 exit
 ```
 ### Configure sudoers to Only Manage NGINX
-We can now be more specific with our sudoers configuration by only allowing the jenkins user to stop, start and check the status of the NGINX systemd service.
-To understand what to put in the sudoers file lets see what commands jenkins will need to be able to run:
+We can now be more specific with our sudoers configuration by only allowing the `jenkins` user to stop, start and check the status of the NGINX systemd service.
+To understand what to put in the sudoers file lets see what commands `jenkins` will need to be able to run:
 ```bash
 sudo systemctl start nginx
 sudo systemctl stop nginx
