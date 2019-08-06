@@ -22,21 +22,22 @@
 
 <!--TOC_END-->
 ## Overview
-Basic deployment of a Python Flask server using systemd and a Freestyle Project
+Basic deployment of a Python Flask server, using systemd and a Freestyle Project.
 Included in this module folder is a Python Server that uses the Flask framework.
 ## Sample Project
 The sample project included for this example is a single python script.
-There is a systemd service configuration included also for running the application as the `pythonadm` user.
-Please note that this example will not work inside a docker container because of systemd.
+There is also a systemd service configuration included, for running the application as the `pythonadm` user.
+Please note that, because of systemd, this example will not work inside a docker container.
 ## Host Machine Configuration
-There are a few prerequisites before getting this to work, so make sure the following has been configured on your machine:
+There are a few prerequisites for this module, so make sure the following has been configured on your machine:
 - Linux operating system with systemd, not in a container
 - Jenkins installed & running
 - Python 3 installed
-- Jenkins user configured as a sudo user with no password
+- Jenkins user, configured as a sudo user with no password
 ## Jenkins Job
 Create a Jenkins Freestyle Project called flask-app and configure it to deploy this application:
-We need Jenkins to download to download this code onto its filesystem, this can be configured in the Source Control Management section:
+(SOMETHING MISSING HERE?)
+We need Jenkins to download this code onto its filesystem; this can be configured in the Source Control Management section:
 - `Repository URL` set to `https://github.com/bob-crutchley/notes`
 ## Shell Script
 Add the following into an `Execute shell` build step:
@@ -65,10 +66,10 @@ EOF
 # start the flask app
 sudo systemctl start flask-app
 ```
-See below for the reasoning for the commands in the script:
+See below for explanation of the commands used in this script:
 ### Installing the systemd Service 
-Incase any changes to the script have been made, or it is the first time installing the application; the service script needs to be installed into `/etc/systemd/system/`.
-For systemd to pickup the changes we must also reload the services with `systemctl daemon-reload`.
+To account for any changes to the script, or if this is the first time installing the application, the service script needs to be installed into `/etc/systemd/system/`.
+For systemd to pickup the changes, we must also reload the services with `systemctl daemon-reload`.
 Before we start replacing the old application files, the service should be stopped by running `systemctl stop flask-app`:
 ```bash
 # install the service script
@@ -79,12 +80,12 @@ sudo systemctl daemon-reload
 sudo systemctl stop flask-app
 ```
 ### Installing and Configuring the Application Files
-Here we can recreate the application folder to make sure we have a fresh start.
-Once the folder has been recreated the application can be copied in.
+Here, we can recreate the application folder to make sure we have a fresh start.
+Once the folder has been recreated, the application can be copied in.
 We then need to make sure that `pythonadm` owns the folder, because that's the user that is going to be running the application.
 Then we need to setup the python virtual environment and install the dependencies.
-This gets run as the `pythonadm` user to make sure that the files remain owned by the `pythonadm` user.
-Once all that is done the service can then be started again using `sudo systemctl start flask-app`.
+This is ran as the `pythonadm` user, to make sure that the files remain owned by the `pythonadm` user.
+Once all that is done, the service can then be started again using `sudo systemctl start flask-app`.
 ```bash
 # install the application files
 install_dir=/opt/flask-app
