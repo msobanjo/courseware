@@ -1,3 +1,9 @@
+<!--PROPS
+{
+    "name": "Basics",
+    "est_time": 15
+}
+-->
 # Basics
 <!--TOC_START-->
 ### Contents
