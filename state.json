@@ -33,12 +33,6 @@
                     "name": "Freestyle Project"
                 },
                 {
-                    "path": "./topics/jenkins/modules/web-setup",
-                    "readme": "./topics/jenkins/modules/web-setup/README.md",
-                    "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
-                    "name": "Jenkins Setup from the Portal"
-                },
-                {
                     "prereqs": [
                         "jenkins/web-setup",
                         "jenkins/jobs",
@@ -52,31 +46,16 @@
                     "name": "Basic Python Flask Freestyle Project Deployment with systemd"
                 },
                 {
+                    "path": "./topics/jenkins/modules/web-setup",
+                    "readme": "./topics/jenkins/modules/web-setup/README.md",
+                    "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
+                    "name": "Jenkins Setup from the Portal"
+                },
+                {
                     "path": "./topics/jenkins/modules/jobs",
                     "readme": "./topics/jenkins/modules/jobs/README.md",
                     "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
                     "name": "Jobs"
-                }
-            ]
-        },
-        {
-            "path": "./topics/git",
-            "readme": "./topics/git/README.md",
-            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
-            "name": "Git",
-            "modules": [
-                {
-                    "path": "./topics/git/modules/branching",
-                    "readme": "./topics/git/modules/branching/README.md",
-                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-                    "name": "Branching"
-                },
-                {
-                    "name": "Basics",
-                    "est_time": 15,
-                    "path": "./topics/git/modules/basics",
-                    "readme": "./topics/git/modules/basics/README.md",
-                    "overview": ""
                 }
             ]
         },
@@ -87,10 +66,10 @@
             "name": "Groovy Programming Language ",
             "modules": [
                 {
-                    "path": "./topics/groovy/modules/variables",
-                    "readme": "./topics/groovy/modules/variables/README.md",
-                    "overview": "Variables are of course very commonly used, across all programming languages.",
-                    "name": "Variables"
+                    "path": "./topics/groovy/modules/functions",
+                    "readme": "./topics/groovy/modules/functions/README.md",
+                    "overview": "",
+                    "name": "Functions"
                 },
                 {
                     "path": "./topics/groovy/modules/syntax",
@@ -105,10 +84,31 @@
                     "name": "Closures"
                 },
                 {
-                    "path": "./topics/groovy/modules/functions",
-                    "readme": "./topics/groovy/modules/functions/README.md",
-                    "overview": "",
-                    "name": "Functions"
+                    "path": "./topics/groovy/modules/variables",
+                    "readme": "./topics/groovy/modules/variables/README.md",
+                    "overview": "Variables are of course very commonly used, across all programming languages.",
+                    "name": "Variables"
+                }
+            ]
+        },
+        {
+            "path": "./topics/git",
+            "readme": "./topics/git/README.md",
+            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "name": "Git",
+            "modules": [
+                {
+                    "name": "Basics",
+                    "est_time": 15,
+                    "path": "./topics/git/modules/basics",
+                    "readme": "./topics/git/modules/basics/README.md",
+                    "overview": ""
+                },
+                {
+                    "path": "./topics/git/modules/branching",
+                    "readme": "./topics/git/modules/branching/README.md",
+                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+                    "name": "Branching"
                 }
             ]
         },
