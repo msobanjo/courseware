@@ -1,18 +1,18 @@
 #! /usr/bin/env python
 # generate modules list for every topic
+
 import os
 
 #set global variables
 start = "<!--MODULES_START-->"
 end = "<!--MODULES_END-->"
 
-# get everything from a folder but the README.md file
+# function to get a list of everything in a given directory, apart from the README.md files
 def get_folders(dir):
     return list(filter(lambda file: file != "README.md", os.listdir(dir)))
 
 
-# find all modules and create markdown for the links
-# function 1 - return module_links
+# function to create a list of module links from the given topic's README.md file
 def get_module_links(topic):
 	module_links = "## Modules"
 	module_name = ""
@@ -30,8 +30,7 @@ def get_module_links(topic):
 	module_links = start  + "\n" + module_links + "\n" + end
 	return module_links
 
-# build readme with module links
-# function 2 - takes module_links as parameter
+# function 2 - stages README.md to include new module links
 def build_readme(topic, module_links, readme_file):
 	readme = ""
 	with open(readme_file, "r") as file:
@@ -50,14 +49,12 @@ def build_readme(topic, module_links, readme_file):
 	readme = readme + module_links
 	return readme
 
-# update readme file
-# function 3 - takes read me as parameter
+# function 3 - writes staged README.md to existing README.md
 def update_readme(topic, readme, readme_file):
 	with open(readme_file, "w") as file:
-		#file.write(readme)
-		print(readme)
+		file.write(readme)
 
-#for each topic create the modules
+#function calls
 for topic in get_folders("./topics"):
 	print(topic + ":")
 	readme_file = "./topics/" + topic + "/README.md"
