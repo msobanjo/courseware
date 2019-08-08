@@ -10,4 +10,8 @@ Jenkins is a self-contained, open source automation server that can be used to a
 ## Linux [&xrarr;](./linux)
 The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix.
 ## Markdown [&xrarr;](./markdown)
+<<<<<<< HEAD
 
+=======
+Markdown is a way to write content for the web.
+>>>>>>> ac4b1c87ac25ceedd4c7defcb0b82bdaf358d2d6
