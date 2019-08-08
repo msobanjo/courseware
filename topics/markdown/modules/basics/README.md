@@ -1,5 +1,17 @@
 # Basics
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Italics & Bold](#italics--bold)
+- [Headers](#headers)
+- [Blockquotes](#blockquotes)
+- [Lists](#lists)
+- [Paragraphs](#paragraphs)
+	- [Hard Breaks](#hard-breaks)
+	- [Soft Breaks](#soft-breaks)
+
+<!--TOC_END-->
 ## Overview
 
 This module covers some of the fundamentals of Markdown. After this, you should be well on your way to creating your own Markdown files. 
