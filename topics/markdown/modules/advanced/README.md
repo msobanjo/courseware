@@ -112,5 +112,5 @@ By no means is this an extensive Markdown module, but it should give you the too
   * Pip install virtualenv with `pip install virtualenv`
   * Create their vierual environment - `virtualenv venv`
     * And make sure they are working inside of it - `source venv/bin/activate`
-  * Install the pip dependencies file, using `pip install -r pip_dependencies`
+  * Install the pip dependencies file, using `pip install -r pip_dependencies.txt`
   * Run the python program - `python hangman.py`
