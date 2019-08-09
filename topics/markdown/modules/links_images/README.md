@@ -1,5 +1,17 @@
 # Links and Images
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Links](#links)
+	- [Inline Link](#inline-link)
+		- [Search for it on [Google](www.google.com)](#search-for-it-on-googlewwwgooglecom)
+	- [Reference Link](#reference-link)
+- [Images](#images)
+	- [Inline Image Link](#inline-image-link)
+	- [Reference Image Link](#reference-image-link)
+
+<!--TOC_END-->
 ## Overview
 This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.
 
@@ -69,4 +81,3 @@ For this, you follow the same pattern as the reference link above, but use the `
 [red]: https://images.footyroom.com/posts/52f298e49dc85c55bcba71990c73153d/16111905-10211321425782611-258512663-n
 
 > If you want the image to just appear in the body of your Markdown file (without having to follow a link), just remove the `!` mark and see the ![magic](https://cambridgewords.files.wordpress.com/2017/11/magic-wand.jpg) happen.
-
