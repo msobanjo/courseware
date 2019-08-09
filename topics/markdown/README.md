@@ -24,9 +24,11 @@ You will see Markdown used in GitHub `README.md` files, which are great for prov
 If you're here simply for a cheat sheet, you're in luck! You can find one here: <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>.
 
 
+
 <!--MODULES_START-->
 ## Modules
 - [Advanced](./modules/advanced)
 - [Basics](./modules/basics)
-- [Lists and Images](./modules/lists_images)
+- [Links and Images](./modules/links_images)
+- [Project for Markdown Task](./modules/project)
 <!--MODULES_END-->
