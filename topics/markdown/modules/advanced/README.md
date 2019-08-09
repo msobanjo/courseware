@@ -108,9 +108,9 @@ By no means is this an extensive Markdown module, but it should give you the too
 * Create a README.md to explain how to get the simple python game up and running
 * The formatting is for you to be creative with, but you must highlight to the user that they need to:
   * Install python3 (including a link to the website)
-  * Install [pip](https://pip.pypa.io/en/stable/installing/)
-  * Pip install virtualenv with `pip install virtualenv`
-  * Create their vierual environment - `virtualenv venv`
+  * Install `pip3` - `sudo apt install python-pip`
+  * Pip install virtualenv with `pip3 install virtualenv`
+  * Create their virtual environment - `virtualenv venv`
     * And make sure they are working inside of it - `source venv/bin/activate`
-  * Install the pip dependencies file, using `pip install -r pip_dependencies.txt`
-  * Run the python program - `python hangman.py`
+  * Install the pip dependencies file, using `pip3 install -r pip_dependencies.txt`
+  * Run the python program - `python3 pass_gen.py`
