@@ -23,14 +23,6 @@ An inline link occurs within the text body, and is a really quick way of creatin
 ```
 
 [Search for it](http://www.google.com)
-
-You could also add an inline link to a heading:
-```
-#### Search for it on [Google](http://www.google.com)
-```
-
-<!----> #### Search for it on [Google](http://www.google.com)
-
 ### Reference Link
 These links, as the name implies, reference another place on your document, where the link is defined. The syntax for these is similar to, but not the same as, inline links:
 ```
@@ -58,11 +50,11 @@ Just like links, images have two styles that render in exactly the same way:
 To create an inline image link, enter an exclamation mark `!`, wrap the alt text in square brackets `[]`, and then wrap the link in normal brackets `()`:
 ```
 My favourite food:  
-![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
+![egg](https://static-s.aa-cdn.net/img/ios/454956113/395fdfd6a701d37e111c1ff20b993aed)
 ```
 
 My favourite food:  
-![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
+![egg](https://static-s.aa-cdn.net/img/ios/454956113/395fdfd6a701d37e111c1ff20b993aed)
 
 You don't necessarily need to add the alt text (in this case `egg`), but it makes the content asccesible to a wider audience (such as visually impaired), which is always a good thing.
 ### Reference Image Link
@@ -71,12 +63,14 @@ For this, you follow the same pattern as the reference link in the previous sect
 ![Manchester City][blue]
 ![Manchester United][red]
 
-[blue]: https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/5/12/1ded5ce1b11546adb562b21a7fcafb27_18.jpg
-[red]: https://images.footyroom.com/posts/52f298e49dc85c55bcba71990c73153d/16111905-10211321425782611-258512663-n
+[blue]: https://cdn.images.express.co.uk/img/dynamic/footballteams/x256/20.png
+[red]: https://icons.iconseeker.com/png/fullsize/soccer-teams/manchester-united-fc-logo.png
 ```
 
 ![Manchester City][blue]
 ![Manchester United][red]
 
-[blue]: https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/5/12/1ded5ce1b11546adb562b21a7fcafb27_18.jpg
-[red]: https://images.footyroom.com/posts/52f298e49dc85c55bcba71990c73153d/16111905-10211321425782611-258512663-n
+[blue]: https://cdn.images.express.co.uk/img/dynamic/footballteams/x256/20.png
+[red]: https://icons.iconseeker.com/png/fullsize/soccer-teams/manchester-united-fc-logo.png
+
+And that's it, for now, for links and images!
