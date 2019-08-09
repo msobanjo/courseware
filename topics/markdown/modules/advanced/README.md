@@ -61,6 +61,7 @@ ___
 <details>
 <summary>Click to learn!</summary>
 
+
 Collapsing large blocks of text can make your Markdown easier to read. It is also really useful for solutions or hints to exercises.
 
 
