@@ -20,10 +20,10 @@ There are two different link types in Markdown, but both of them render the exac
 ### Inline Link
 An inline link occurs within the text body, and is a really quick way of creating a link in your Markdown file. To do an inline link, you wrap the text you want to use as the link in square brackets `[]`, and then put the link in normal brackets `()`:
 ```
-[Search for it](www.google.com)
+[Search for it](http://www.google.com)
 ```
 
-[Search for it](www.google.com)
+[Search for it](http://www.google.com)
 
 You could also add an inline link to a heading:
 ```
@@ -42,7 +42,7 @@ And one to [GitHub][github-link]
 [github-link]: www.github.com
 ```
 
-Here's a link to [Google][google-link]
+Here's a link to [Google][google-link]  
 And one to [GitHub][github-link]
 
 [google-link]: www.google.com
