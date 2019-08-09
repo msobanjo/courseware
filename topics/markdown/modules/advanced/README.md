@@ -21,20 +21,23 @@ This topic will go over some of the more advanced Markdown syntax and formatting
 As you saw in the last topic, we didn't dictate where we wanted our images to be displayed on the page. You'll be glad to hear that we are able to do this: 
 ### Left Alignment
 To left align your images, you need to do the following:
-```
-<img align="left" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
-```
 
 <img align="left" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+
+```
+<img align="left" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+```
 
 ___
 
 ### Right Alignment
-```
-<img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
-```
+To right align your images, use:
 
 <img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+
+```
+<img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+```
 
 ___
 
@@ -67,32 +70,35 @@ this is hidden
 </details>
 ```
 </details>
+
+___
+
 ## Tables
 To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table:
 ```
-| Syntax      | Description |
+| Column1     | Column2     |
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
 ```
 
-| Syntax      | Description |
+| Column1     | Column2     |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Row1        | Row1        |
+| Row2        | Row2        |
 ### Table Alignment
 You can align text in the columns to the left, right, or center by adding a colon (:) to the left, right, or on both side of the hyphens within the header row:
 ```
-| Syntax      | Description | Test Text     |
+| Column1     | Column2     | Column3       |
 | :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Row1        | Row1        | Row1          |
+| Row2        | Row2        | Row2          |
 ```
 
-| Syntax      | Description | Test Text     |
+| Column1     | Column2     | Column3       |
 | :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Row1        | Row1        | Row1          |
+| Row2        | Row2        | Row2          |
 ## Closing
 By no means is this an extensive Markdown module, but it should give you the tools to create Markdown README.md files to a relatively good standard. Make sure to give the task below a go!
 ## Task
