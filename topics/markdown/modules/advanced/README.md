@@ -18,7 +18,7 @@
 This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!
 
 ## Image Align
-As you saw in the last topic, we didn't dictate where we wanted our images to be displayed on the page. 
+As you saw in the last topic, we didn't dictate where we wanted our images to be displayed on the page. You'll be glad to hear that we are able to do this: 
 ### Left Alignment
 To left align your images, you need to do the following:
 ```
@@ -26,12 +26,14 @@ To left align your images, you need to do the following:
 ```
 
 <img align="left" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+
 ### Right Alignment
 ```
 <img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
 ```
 
 <img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
+
 ### Centre Alignment
 To align your images in the centre of a page, simply use:
 ```
