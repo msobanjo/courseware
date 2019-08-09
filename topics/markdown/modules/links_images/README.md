@@ -5,7 +5,6 @@
 - [Overview](#overview)
 - [Links](#links)
 	- [Inline Link](#inline-link)
-		- [Search for it on [Google](http://www.google.com)](#search-for-it-on-googlehttpwwwgooglecom)
 	- [Reference Link](#reference-link)
 - [Images](#images)
 	- [Inline Image Link](#inline-image-link)
