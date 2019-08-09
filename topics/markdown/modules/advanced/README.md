@@ -26,15 +26,14 @@ To left align your images, you need to do the following:
 ```
 
 <img align="left" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
-\\\\\\\\\
+___
 ### Right Alignment
 ```
 <img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
 ```
 
 <img align="right" width="100" height="100" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
-
-
+___
 ### Centre Alignment
 To align your images in the centre of a page, simply use:
 ```
@@ -44,8 +43,7 @@ To align your images in the centre of a page, simply use:
 <img align="left" width="460" height="300" src="https://s3.amazonaws.com/spectrumnews-web-assets/wp-content/uploads/2018/11/13154625/20181112-SHANK3monkey-844.jpg">
 
 As you can see, you can also dictate the width and height of an image here!
-
-
+___
 ## Collapse Sections
 <details>
 <summary>"Click to learn!"</summary>
