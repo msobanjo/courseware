@@ -1,5 +1,19 @@
 # Advanced
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Image Align](#image-align)
+	- [Left Alignment](#left-alignment)
+	- [Right Alignment](#right-alignment)
+	- [Centre Alignment](#centre-alignment)
+- [Collapse Sections](#collapse-sections)
+- [Tables](#tables)
+	- [Table Alignment](#table-alignment)
+- [Closing](#closing)
+- [Task](#task)
+
+<!--TOC_END-->
 ## Overview
 This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!
 
@@ -79,4 +93,3 @@ By no means is this an extensive Markdown module, but it should give you the too
     * And make sure they are working inside of it - `source venv/bin/activate`
   * Install the pip dependencies file, using `pip install -r pip_dependencies`
   * Run the python program - `python hangman.py`
-
