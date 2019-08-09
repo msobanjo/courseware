@@ -56,16 +56,18 @@ Once you know how to create links in Markdown, you can work with images! The mai
 
 Just like links, images have two styles that render in exactly the same way:
 ### Inline Image Link
-To create an inline image link, enter an exclamation mark `!`, wrap the text you want to use as a link in squafre brackets `[]`, and then wrap the link in normal brackets `()`:
+To create an inline image link, enter an exclamation mark `!`, wrap the alt text in square brackets `[]`, and then wrap the link in normal brackets `()`:
 ```
-A picture of an ![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
+My favourite food:  
+![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
 ```
 
-A picture of an ![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
+My favourite food:  
+![egg](https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/01/14/09/worldrecordegg1401a.jpg?w968)
 
-You don't necessarily need to add the text you want to use as a link (in this case `egg`), but it makes the content asccesible to your audience, which is always a good thing.
+You don't necessarily need to add the alt text (in this case `egg`), but it makes the content asccesible to a wider audience (such as visually impaired), which is always a good thing.
 ### Reference Image Link
-For this, you follow the same pattern as the reference link above, but use the `!` as well:
+For this, you follow the same pattern as the reference link in the previous section, but use the `!` as well:
 ```
 ![Manchester City][blue]
 ![Manchester United][red]
@@ -79,5 +81,3 @@ For this, you follow the same pattern as the reference link above, but use the `
 
 [blue]: https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2019/5/12/1ded5ce1b11546adb562b21a7fcafb27_18.jpg
 [red]: https://images.footyroom.com/posts/52f298e49dc85c55bcba71990c73153d/16111905-10211321425782611-258512663-n
-
-> If you want the image to just appear in the body of your Markdown file (without having to follow a link), just remove the `!` mark and see the ![magic](https://cambridgewords.files.wordpress.com/2017/11/magic-wand.jpg) happen.
