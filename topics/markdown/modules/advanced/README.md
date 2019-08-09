@@ -59,8 +59,10 @@ ___
 
 ## Collapse Sections
 <details>
-<summary>"Click to learn!"</summary>
+<summary>Click to learn!</summary>
+
 Collapsing large blocks of text can make your Markdown easier to read. It is also really useful for solutions or hints to exercises.
+
 
 To add a collapsing section, you need to do:
 ```
