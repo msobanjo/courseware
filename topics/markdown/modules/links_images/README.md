@@ -29,19 +29,19 @@ These links, as the name implies, reference another place on your document, wher
 Here's a link to [Google][google-link]
 And one to [GitHub][github-link]
 
-[google-link]: www.google.com
-[github-link]: www.github.com
+[google-link]: http://www.google.com
+[github-link]: http://www.github.com
 ```
 
 Here's a link to [Google][google-link]  
 And one to [GitHub][github-link]
 
-[google-link]: www.google.com
-[github-link]: www.github.com
+[google-link]: http://www.google.com
+[github-link]: http://www.github.com
 
 The advantage of a reference link is that if you had multiple links to the same place in your document, and the link changed, you'd only need to update the link in one place (think variable in programming!)
 
-You can add other Markdown elements to links, such as bold and italics, by simply using the syntax you saw in the last module.
+You can add other Markdown elements to links, such as **bold** and _italics_, by simply using the syntax you saw in the last module.
 ## Images
 Once you know how to create links in Markdown, you can work with images! The main difference is that images are prefaced with an exclamation mark `!`.
 
@@ -53,7 +53,8 @@ My favourite food:
 ![egg](https://static-s.aa-cdn.net/img/ios/454956113/395fdfd6a701d37e111c1ff20b993aed)
 ```
 
-My favourite food:  
+My favourite food:
+
 ![egg](https://static-s.aa-cdn.net/img/ios/454956113/395fdfd6a701d37e111c1ff20b993aed)
 
 You don't necessarily need to add the alt text (in this case `egg`), but it makes the content asccesible to a wider audience (such as visually impaired), which is always a good thing.
@@ -68,6 +69,7 @@ For this, you follow the same pattern as the reference link in the previous sect
 ```
 
 ![Manchester City][blue]
+
 ![Manchester United][red]
 
 [blue]: https://cdn.images.express.co.uk/img/dynamic/footballteams/x256/20.png
