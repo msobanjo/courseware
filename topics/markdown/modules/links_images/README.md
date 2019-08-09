@@ -15,10 +15,10 @@ An inline link occurs within the text body, and is a really quick way of creatin
 
 You could also add an inline link to a heading:
 ```
-#### Search for it on [Google](www.google.com)
+#### Search for it on [Google](http://www.google.com)
 ```
 
-#### Search for it on [Google](www.google.com)
+#### Search for it on [Google](http://www.google.com)
 
 ### Reference Link
 These links, as the name implies, reference another place on your document, where the link is defined. The syntax for these is similar to, but not the same as, inline links:
