@@ -170,7 +170,7 @@ Reverting pushed work
 will look similar to this ``e367834``
 * Create a new repository on GitHub with the name of your choosing, leave everything else default
 * Associate the remote with your local repository
-* Push all you work
+* Push all your work
 * Now use the revert command to revert to a previous commit
 * You will need to resolve any merge conflicts
 * Stage your files
