@@ -104,3 +104,37 @@ appropriate to use ```git revert``` strategy.
 * Repeat the previous two steps until you have done 4-5 commits
 * Now check the git log history for the branch you are on
 * Try out the additional flags for viewing the git log history
+* Pick one of the previous commits to which you would like to revert the changes back and keep note of the SHA-1 which
+will look similar to this ``e367834``
+* Now use the revert command to go back to your chosen commit
+* Create a new branch with your chosen name
+* Delete the previous branch
+* Once you're done with the task, remove the tmp folder and all of the files inside it
+
+Continue on working like the changes by the commits we reverted back never happened.
+
+
+
+### Task 2
+
+* Create a folder called "tmp", after the task we'll delete the files therefore this will make it easier to delete them
+* Within the folder open up git bash
+* Initialise the folder as a git repository
+* Create a new text file, call it test.txt
+* Place some text within the file
+* Stage the file and commit
+* Repeat the previous two steps until you have done 4-5 commits
+* Now check the git log history for the branch you are on
+* Try out the additional flags for viewing the git log history
+* Pick one of the previous commits to which you would like to revert the changes back and keep note of the SHA-1 which
+will look similar to this ``e367834``
+* Now use the reset command and do a hard reset to your chosen commit
+* Check on the git commit log history whether the commit we chose to reset are part of the history
+
+Continue on working on the same branch like the commits we chosen to revert never happened. Keep in mind this should
+only be used for the local changes reset, not when you have already pushed your work up.
+
+#### Task Summary
+* Learned how to check git commit history
+* Learned how to revert and reset back to a previous commit
+* Learned about the differences between the revert and reset and the use cases for them
