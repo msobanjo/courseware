@@ -171,7 +171,12 @@ will look similar to this ``e367834``
 * Create a new repository on GitHub with the name of your choosing, leave everything else default
 * Associate the remote with your local repository
 * Push all you work
-* 
+* Now use the revert command to revert to a previous commit
+* You will need to resolve any merge conflicts
+* Stage your files
+* Commit your files
+* Push your changes
+* Once you're done with the task, remove the tmp folder and all of the files inside it as well as the git repository
 
 #### Task Summary
 * Learned how to check git commit history
