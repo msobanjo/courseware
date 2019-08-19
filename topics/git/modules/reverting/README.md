@@ -1,5 +1,19 @@
 # Reverting
 
+<!--TOC_START-->
+### Contents
+- [Reviewing the history of a repository](#reviewing-the-history-of-a-repository)
+- [Reverting to an older commit with checkout](#reverting-to-an-older-commit-with-checkout)
+- [Reverting to a previous commit with revert](#reverting-to-a-previous-commit-with-revert)
+- [Reverting with reset](#reverting-with-reset)
+- [Summary](#summary)
+- [Tasks](#tasks)
+	- [Task 1](#task-1)
+	- [Task 2](#task-2)
+	- [Task 3](#task-3)
+		- [Task Summary](#task-summary)
+
+<!--TOC_END-->
 ## Reviewing the history of a repository
 
 The best way to view the history is by using the following command:

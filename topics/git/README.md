@@ -53,8 +53,10 @@ brew install git
 
 
 
+
 <!--MODULES_START-->
 ## Modules
 - [Basics](./modules/basics)
 - [Branching](./modules/branching)
+- [Reverting](./modules/reverting)
 <!--MODULES_END-->
