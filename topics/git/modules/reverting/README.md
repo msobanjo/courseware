@@ -90,3 +90,17 @@ appropriate to use ```git revert``` strategy.
 * ``checkout`` moving around and reviewing commit history
 * ``revert`` shared work undoing
 * ``reset`` local work undoing
+
+## Tasks
+
+### Task 1
+
+* Create a folder called "tmp", after the task we'll delete the files therefore this will make it easier to delete them
+* Within the folder open up git bash
+* Initialise the folder as a git repository
+* Create a new text file, call it test.txt
+* Place some text within the file
+* Stage the file and commit
+* Repeat the previous two steps until you have done 4-5 commits
+* Now check the git log history for the branch you are on
+* Try out the additional flags for viewing the git log history
