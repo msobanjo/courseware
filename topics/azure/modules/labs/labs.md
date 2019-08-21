@@ -17,3 +17,18 @@ installer required
 `az --help` and press enter
 ![alt text](lab-1-images/image4.png)
 8. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
+
+## Installing Azure CLI on Linux
+1. Open terminal
+2. Run the following command `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+![alt text](lab-1-images/image5.png)
+3. You will most likely be asked to enter password, enter it
+4. Once the installation has been completed run the following command to make sure installation was successful
+`az --help`
+![alt text](lab-1-images/image6.png)
+5. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
+
+## Summary
+
+In this lab we have learned how to install Azure CLI on either Windows or Linux
+
