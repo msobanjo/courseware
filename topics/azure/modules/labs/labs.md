@@ -108,6 +108,21 @@ There is a way to simplify the output to the specific selected parts.
 14. If you wanted to get the size of the disk space the command would be 
 `az vm show --name VM1 --resource-group my-first-vm --query 'storageProfile.osDisk.diskSizeGb' --output json`
 As you can notice we use fullstops to navigate into the child elements of the output. One thing to note is that
-if the child element had [] you would need to add them too like in this command
+if the child element had [] it means it's an array, and we would need to flatten it by using [] as well to get the wanted 
+value like in this command
 `az vm show --name VM1 --resource-group my-first-vm --query 'networkProfile.networkInterfaces[].resourceGroup' --output json`
 ![alt text](lab-1-images/image24.png)
+15. You can also simplify the commad to
+`az vm show -n VM1 -g my-first-vm --query 'networkProfile.networkInterfaces[].resourceGroup' -o json`
+![alt text](lab-1-images/image25.png)
+16. Before we can move on we need to get the ID for this VM's Network Interface Card, execute the following command and save this value
+`az vm show -n VM1 -g my-first-vm --query 'networkProfile.networkInterfaces[].id' -o json`
+![alt text](lab-1-images/image26.png)
+Save the value in a text file
+17. By using the network interface card you will now try to retrieve the information about the `VM1`, execute the following
+command but replace the value with the one you saved in the previous step
+`az network nic show --ids "/subscriptions/82793162-0a22-432e-8aa0-fab8ebfcd812/resourceGroups/my-first-vm/providers/Microsoft.Network/networkInterfaces/VM1VMNic"`
+Notice that once again there is a large amount of information returned. To find a specific peace, you would need to use
+the `--query` to filter it down.
+![alt text](lab-1-images/image27.png)
+
