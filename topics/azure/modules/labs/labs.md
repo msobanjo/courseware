@@ -52,12 +52,16 @@ time you're using it to download and install all the requirements
 ![alt text](lab-1-images/image12.png)
 8. After choosing your option about the telemetry data you will then be taken to the interactive CLI window
 ![alt text](lab-1-images/image13.png)
+`az interactive` gives a couple of benefits like auto-completion, command descriptions and examples
+9. Pick a style for the interactive mode from the available list by running the command `az interactive --style styleName`
+![alt text](lab-1-images/image14.png)
+10. You can also execure shell commands by using `#`, let's list all the contents of the current directory by executing
+`#dir` you should see the terminal display the contents
 
+## Summary
 
-
-
-
-
+In this lab you have learned how to log in to your Azure services through CLI, as well as how to start the CLI 
+interactive mode
 
 
 
