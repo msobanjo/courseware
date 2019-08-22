@@ -74,29 +74,40 @@ In this lab we'll be creating a Virtual Machine and other required resources thr
 ![alt text](lab-1-images/image15.png)
 We can see that under the *properties -> provisioningState* the value is *Succeeded* this means that your resource
 group has been successfully created
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+4. Now we'll create a VM within our created resource group, execute the following command to create a VM 
+`az vm create --resource-group my-first-vm --name VM1 --image UbuntuLTS --generate-ssh-keys --output json --verbose`
+Wait until the VM is created. If the terminal isn't returned back to you after a couple of minutes, try pressing enter.
+This command will create a VM in the resource group `my-first-vm` the name of the VM will be `VM1` the image deployed as
+the OS will be `UbuntuLTS` you will also generate an ssh key and expect the output about the creation process to be in
+json format and with all the details. The ssh key will be used in order to connect to the `VM1`.
+5. Once the `VM1` is created you will get some information about it, we are particularly interested in the `publicIpAddress`
+![alt text](lab-1-images/image16.png)
+6. Now we'll connect to the `VM1` by using `SSH` and the public ip. But first type `exit` and hit enter, as within the 
+interactive mode, we cannot use ssh. Execute the following command and insert your `VM1` public ip `ssh 51.140.252.222`.
+When prompted about continuing the connection type `yes` and press enter.
+![alt text](lab-1-images/image17.png)
+7. You will get a message about the IP address being added to the list of known hosts. 
+![alt text](lab-1-images/image18.png)
+8. Run the `ssh 51.140.252.222` command again and you should then be connected to the `VM1`
+![alt text](lab-1-images/image19.png)
+9. Notice that you got information about the `VM1` this means you have successfully connected. After making sure that 
+the `VM` is running we will disconnect from the virtual machine. Type `exit` and press enter. You will get a message
+about closing the connection.
+![alt text](lab-1-images/image20.png)
+10. Invoke the interactive azure CLI again
+11. You have seen that after creating the VM you receive information about it. But what if the VM has been running for 
+a long time now? We will now use a command `show` which will allow you to get information about the VM. Execute the
+following command `az vm show --name VM1 --ressource-group my-first-vm`. 
+![alt text](lab-1-images/image21.png)
+12. You will see that the amount of information we get about the VM is quite extensive. 
+![alt text](lab-1-images/image22.png)
+There is a way to simplify the output to the specific selected parts.
+13. Let's say we want the name of the `VM1` the command to get it directly would be 
+`az vm show --name VM1 --resource-group my-first-vm --query 'name' --output json`
+![alt text](lab-1-images/image23.png)
+14. If you wanted to get the size of the disk space the command would be 
+`az vm show --name VM1 --resource-group my-first-vm --query 'storageProfile.osDisk.diskSizeGb' --output json`
+As you can notice we use fullstops to navigate into the child elements of the output. One thing to note is that
+if the child element had [] you would need to add them too like in this command
+`az vm show --name VM1 --resource-group my-first-vm --query 'networkProfile.networkInterfaces[].resourceGroup' --output json`
+![alt text](lab-1-images/image24.png)
