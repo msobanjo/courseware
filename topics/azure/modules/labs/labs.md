@@ -36,4 +36,54 @@ In this lab we have learned how to install Azure CLI on either Windows or Linux
 
 In this lab you will connect to the Azure services through the terminal and learn how to use the interactive mode.
 
-1. 
+1. Open a terminal
+2. Execute the following command `az login`, your default browser will open up a Microsoft page
+![alt text](lab-1-images/image7.png)
+3. Enter the details for the Azure account you're using
+![alt text](lab-1-images/image8.png)
+![alt text](lab-1-images/image9.png)
+4. You will be redirected to the page that should say
+![alt text](lab-1-images/image10.png)
+5. On the terminal you should see a similar output but with your details
+![alt text](lab-1-images/image11.png)
+6. Execute the following command to invoke interactive CLI mode `az interactive` it will take a few minutes the first 
+time you're using it to download and install all the requirements
+7. You can choose to send or not to the telemetry data
+![alt text](lab-1-images/image12.png)
+8. After choosing your option about the telemetry data you will then be taken to the interactive CLI window
+![alt text](lab-1-images/image13.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
