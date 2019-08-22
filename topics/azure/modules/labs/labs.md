@@ -63,8 +63,17 @@ time you're using it to download and install all the requirements
 In this lab you have learned how to log in to your Azure services through CLI, as well as how to start the CLI 
 interactive mode
 
+# Lab-3 Creating a VM through CLI
 
+In this lab we'll be creating a Virtual Machine and other required resources through CLI
 
+1. Open terminal
+2. Log in
+3. First we'll create a new resource group in the *ukwest* region by executing the following command
+`az group create --name my-first-vm --location ukwest`
+![alt text](lab-1-images/image15.png)
+We can see that under the *properties -> provisioningState* the value is *Succeeded* this means that your resource
+group has been successfully created
 
 
 
