@@ -32,3 +32,8 @@ installer required
 
 In this lab we have learned how to install Azure CLI on either Windows or Linux
 
+# Lab-2 Connecting to Azure and using interactive mode
+
+In this lab you will connect to the Azure services through the terminal and learn how to use the interactive mode.
+
+1. 
