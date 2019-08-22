@@ -125,4 +125,19 @@ command but replace the value with the one you saved in the previous step
 Notice that once again there is a large amount of information returned. To find a specific peace, you would need to use
 the `--query` to filter it down.
 ![alt text](lab-1-images/image27.png)
+18. Now if your interests were in finding just the IP and Subnet executing the following command would produce the wanted result 
+`az network nic show 
+--ids "/subscriptions/82793162-0a22-432e-8aa0-fab8ebfcd812/resourceGroups/my-first-vm/providers/Microsoft.Network/networkInterfaces/VM1VMNic"
+--query '{IP:ipConfigurations[].publicIpAddress.id, Subnet:ipConfigurations[].subnet.id}' -o json`
+![alt text](lab-1-images/image28.png)
+Save the value of `Subnet` you'll need it in the next step
+19. You can now use the `Subnet` value to now create another VM within the same subnet as the existing VM we previously
+created. Additional option needs to be added `--subenet` and a value provided. Another change is that now the VM creation
+command has a `--query publicIpAddress` option added, this will only return the IP address for the newly created VM
+instead of all the previously seen information.
+`az vm create -g my-first-vm -n VM2 --image UbuntuLTS --generate-ssh-keys --subnet "/subscriptions/82793162-0a22-432e-8aa0-fab8ebfcd812/resourceGroups/my-first-vm/providers/Microsoft.Network/virtualNetworks/VM1VNET/subnets/VM1Subnet" --query publicIpAddress -o json`
+20. To clean up delete all the resources under the resource group with the following command
+`az group delete --name my-first-vm`
+Agree yes to the prompt.
+![alt text](lab-1-images/image29.png)
 
