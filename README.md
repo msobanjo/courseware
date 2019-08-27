@@ -45,7 +45,8 @@ Anyone is welcome to collaborate on this project, but please adhere to conventio
 ### Topic Structure
 Any example files & projects can be stored in the module folder.
 There shouldn't be any reason for binary files to be on this repository, other than images at this point. If binary files are generated from examples, then be sure to include them in the `.gitignore`.
-If you would like to include images, store them in `images/[TOPIC_NAME]` at the **root** of this repository.
+Images should not be uploaded, otherwise this project will be a very big download.
+You can, of course, still use images, but source them from somewhere else on the internet (such as a public storage bucket).
 Here is an example layout of a topic:
 ```text
 ./topics/example-topic/
