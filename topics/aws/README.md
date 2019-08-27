@@ -13,13 +13,6 @@ Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopte
 ## AWS CLI
 The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services.
 With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
-
-
-
-
-
-
-
 <!--MODULES_START-->
 ## Modules
 - [Elastic Cloud Compute (EC2)](./modules/ec2)
