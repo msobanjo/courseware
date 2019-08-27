@@ -35,7 +35,7 @@ Depending on what tools are installed on your system there are several ways that
 # using ifconfig
 ifconfig -a
 # using ip
-ip a
+ip link show
 ```
 ## Format
 ### Hexadecimals
@@ -63,3 +63,6 @@ ip link set dev [INTERFACE] up
 ### Why?
 Changing a devices MAC address can be used for bypassing or "tricking" access control in place by disguising itself as another device.
 This is typically a technique used for malicious purposes but can be used for penetration testing and ensuring your services are robust enough to not be susceptible to this.
+## Tasks
+- Find the MAC address of the current device that you are using, remember you can use `ipconfig /all` on Windows an `ip link show` on Linux
+- Use the first 3 bytes of your MAC to find out who manufactured your network interface card (NIC), you usually just put it in a Google search
