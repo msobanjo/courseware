@@ -29,14 +29,6 @@ Simply run this script on the machine you wish to install it on, and execute it 
 ./jenkins-install.sh
 ```
 
-
-
-
-
-
-
-
-
 <!--MODULES_START-->
 ## Modules
 - [Basic Python Flask Freestyle Project Deployment with systemd](./modules/basic-python-flask-freestyle-project-deployment-with-systemd)
