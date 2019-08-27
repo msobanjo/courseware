@@ -6,7 +6,7 @@ In this lab you will go through the steps required to install the Azure CLI.
 1. Go to the following [URL](https://aka.ms/installazurecliwindows) this will automatically start downloading the 
 installer required
 2. Open the downloaded file, you will most likely see an image like this:
-![alt text](lab-1-images/image1.png)
+![alt text](https://imgur.com/kZHgpv0)
 3. Click on *Run*
 4. Accept the license agreement and click *Install*
 ![alt text](lab-1-images/image2.png)
