@@ -7,6 +7,8 @@ In this lab you will go through the steps required to install the Azure CLI.
 	- [Installing Azure CLI on Windows](#installing-azure-cli-on-windows)
 	- [Installing Azure CLI on Linux](#installing-azure-cli-on-linux)
 	- [Summary](#summary)
+- [Lab-2 Connecting to Azure and using interactive mode](#lab2-connecting-to-azure-and-using-interactive-mode)
+	- [Summary](#summary-1)
 
 <!--TOC_END-->
 ### Installing Azure CLI on Windows
