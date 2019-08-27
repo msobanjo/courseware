@@ -24,3 +24,13 @@ ifconfig -a
 # using ip
 ip a
 ```
+## MAC Address Format
+### Hexadecimals
+MAC addresses are 6 bytes (48 bits) of data represented as a hexadecimal:
+```
+1C-B7-2C-B9-27-09
+```
+### OEM & Unique ID
+The first 3 bytes in a MAC addres is issued to the Original Equipment Manufacturer (OEM) to assign to the device.
+The last 3 bytes are unique to the device which are created and assigned by the OEM.
+For example in the MAC address `1C-B7-2C-B9-27-09`; `1C-B7-2C` would be the part issued to the OEM to assign and `B9-27-09` is what was created and assigned by the OEM.
