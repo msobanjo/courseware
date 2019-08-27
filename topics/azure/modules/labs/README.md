@@ -1,8 +1,8 @@
-# Lab-1 Installing Azure CLI
+## Lab-1 Installing Azure CLI
 
 In this lab you will go through the steps required to install the Azure CLI.
 
-## Installing Azure CLI on Windows
+### Installing Azure CLI on Windows
 1. Go to the following [URL](https://aka.ms/installazurecliwindows) this will automatically start downloading the 
 installer required
 2. Open the downloaded file, you will most likely see an image like this:
@@ -26,7 +26,7 @@ installer required
 
 8. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
 
-## Installing Azure CLI on Linux
+### Installing Azure CLI on Linux
 1. Open terminal
 2. Run the following command `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
 
@@ -40,7 +40,7 @@ installer required
 
 5. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
 
-## Summary
+### Summary
 
 In this lab we have learned how to install Azure CLI on either Windows or Linux
 
