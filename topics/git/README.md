@@ -50,6 +50,7 @@ Similar to Windows, you can navigate to the Git download page for Mac OS and run
 brew install git
 ```
 
+
 <!--MODULES_START-->
 ## Modules
 - [Basics](./modules/basics)
