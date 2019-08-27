@@ -104,7 +104,7 @@ You can align text in the columns to the left, right, or center by adding a colo
 ## Closing
 By no means is this an extensive Markdown module, but it should give you the tools to create Markdown README.md files to a relatively good standard. Make sure to give the task below a go!
 ## Task
-* Go to the [projects folder](../project)
+* Go to the [projects folder](./project)
 * Create a README.md to explain how to get the simple python application up and running
 * The formatting is for you to be creative with, but you must highlight to the user that they need to:
   * Install python3 (including a link to the website)
