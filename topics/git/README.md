@@ -26,8 +26,10 @@ Git is the underlying tool for quite a few very popular services such as GitHub,
 These services add more features for managing project source code such as security, access control, pull requests and other project documentation and planning tools depending on the service.
 ## Installation
 ### Windows
-1. Navigate to the Git download for Windows in your preferred web browser (the download should automatically start when you go to the link below)
+1. Navigate to the Git download for Windows in your preferred web browser (the download should automatically start when you go to the link below):
+
 https://git-scm.com/download/win
+
 2. Click on next for every option and finally click install
 3. The installer adds the Git program to your PATH environment variable, so it can be accessed either in the Windows command prompt or by using the Git Bash terminal that was also installed.
 ### Linux
@@ -47,14 +49,6 @@ Similar to Windows, you can navigate to the Git download page for Mac OS and run
 ```bash
 brew install git
 ```
-
-
-
-
-
-
-
-
 <!--MODULES_START-->
 ## Modules
 - [Basics](./modules/basics)
