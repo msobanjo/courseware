@@ -9,6 +9,7 @@ installer required
 ![alt text](https://imgur.com/mq4ifPX.png)
 3. Click on *Run*
 4. Accept the license agreement and click *Install*
+
 ![alt text](https://imgur.com/bCxkRBt.png)
 5. Wait until the files are copied over and click *Finish*
 ![alt text](https://imgur.com/M7FpuLz.png)
