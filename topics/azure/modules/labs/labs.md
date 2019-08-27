@@ -6,26 +6,26 @@ In this lab you will go through the steps required to install the Azure CLI.
 1. Go to the following [URL](https://aka.ms/installazurecliwindows) this will automatically start downloading the 
 installer required
 2. Open the downloaded file, you will most likely see an image like this:
-<img align="right" src="https://imgur.com/kZHgpv0.png">
+    <img align="right" src="https://imgur.com/mq4ifPX.png">
 3. Click on *Run*
 4. Accept the license agreement and click *Install*
-<img align="right" src="https://i.imgur.com/JzvLEly.png">
+    <img align="right" src="https://imgur.com/bCxkRBt.png">
 5. Wait until the files are copied over and click *Finish*
-<img align="right" src="https://i.imgur.com/202pRTj.png">
+    <img align="right" src="https://imgur.com/M7FpuLz.png">
 6. Open *Command Prompt*
 7. Let's check that the Azure CLI has been successfully installed by running the following command
 `az --help` and press enter
-<img align="right" src="https://i.imgur.com/Tin9wVj.png">
+    <img align="right" src="https://imgur.com/wMIcO7n.png">
 8. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
 
 ## Installing Azure CLI on Linux
 1. Open terminal
 2. Run the following command `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
-<img align="right" src="https://i.imgur.com/tz3TFl3.png">
+    <img align="right" src="https://imgur.com/unsKxs0.png">
 3. You will most likely be asked to enter password, enter it
 4. Once the installation has been completed run the following command to make sure installation was successful
 `az --help`
-<img align="right" src="https://i.imgur.com/psk6aWq.png">
+    <img align="right" src="https://imgur.com/4dwOni0.png">
 5. If you got the help output the installation was successful, if you didn't get the help output ask your trainer for help
 
 ## Summary
