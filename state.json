@@ -1,6 +1,104 @@
 {
     "topics": [
         {
+            "path": "./topics/git",
+            "readme": "./topics/git/README.md",
+            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "name": "Git",
+            "modules": [
+                {
+                    "path": "./topics/git/modules/branching",
+                    "readme": "./topics/git/modules/branching/README.md",
+                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+                    "name": "Branching"
+                },
+                {
+                    "name": "Basics",
+                    "est_time": 15,
+                    "path": "./topics/git/modules/basics",
+                    "readme": "./topics/git/modules/basics/README.md",
+                    "overview": ""
+                },
+                {
+                    "path": "./topics/git/modules/reverting",
+                    "readme": "./topics/git/modules/reverting/README.md",
+                    "overview": "",
+                    "name": "Reverting"
+                }
+            ]
+        },
+        {
+            "path": "./topics/groovy",
+            "readme": "./topics/groovy/README.md",
+            "overview": "",
+            "name": "Groovy Programming Language ",
+            "modules": [
+                {
+                    "path": "./topics/groovy/modules/functions",
+                    "readme": "./topics/groovy/modules/functions/README.md",
+                    "overview": "",
+                    "name": "Functions"
+                },
+                {
+                    "path": "./topics/groovy/modules/closures",
+                    "readme": "./topics/groovy/modules/closures/README.md",
+                    "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
+                    "name": "Closures"
+                },
+                {
+                    "path": "./topics/groovy/modules/syntax",
+                    "readme": "./topics/groovy/modules/syntax/README.md",
+                    "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
+                    "name": "Syntax"
+                },
+                {
+                    "path": "./topics/groovy/modules/variables",
+                    "readme": "./topics/groovy/modules/variables/README.md",
+                    "overview": "Variables are of course very commonly used, across all programming languages.",
+                    "name": "Variables"
+                }
+            ]
+        },
+        {
+            "path": "./topics/jenkins",
+            "readme": "./topics/jenkins/README.md",
+            "overview": "Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.",
+            "name": "Jenkins",
+            "modules": [
+                {
+                    "path": "./topics/jenkins/modules/jobs",
+                    "readme": "./topics/jenkins/modules/jobs/README.md",
+                    "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
+                    "name": "Jobs"
+                },
+                {
+                    "path": "./topics/jenkins/modules/freestyle-project",
+                    "readme": "./topics/jenkins/modules/freestyle-project/README.md",
+                    "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
+                    "name": "Freestyle Project"
+                },
+                {
+                    "path": "./topics/jenkins/modules/web-setup",
+                    "readme": "./topics/jenkins/modules/web-setup/README.md",
+                    "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
+                    "name": "Jenkins Setup from the Portal"
+                },
+                {
+                    "prereqs": [
+                        "jenkins/web-setup",
+                        "jenkins/jobs",
+                        "jenkins/freestyle-project",
+                        "linux/systemd",
+                        "linux/sudo"
+                    ],
+                    "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
+                    "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
+                    "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
+                    "name": "Basic Python Flask Freestyle Project Deployment with systemd"
+                }
+            ]
+        },
+        {
             "path": "./topics/linux",
             "readme": "./topics/linux/README.md",
             "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
@@ -41,104 +139,6 @@
                     "readme": "./topics/aws/modules/ec2/README.md",
                     "overview": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.",
                     "name": "Elastic Cloud Compute (EC2)"
-                }
-            ]
-        },
-        {
-            "path": "./topics/git",
-            "readme": "./topics/git/README.md",
-            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
-            "name": "Git",
-            "modules": [
-                {
-                    "path": "./topics/git/modules/reverting",
-                    "readme": "./topics/git/modules/reverting/README.md",
-                    "overview": "",
-                    "name": "Reverting"
-                },
-                {
-                    "name": "Basics",
-                    "est_time": 15,
-                    "path": "./topics/git/modules/basics",
-                    "readme": "./topics/git/modules/basics/README.md",
-                    "overview": ""
-                },
-                {
-                    "path": "./topics/git/modules/branching",
-                    "readme": "./topics/git/modules/branching/README.md",
-                    "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-                    "name": "Branching"
-                }
-            ]
-        },
-        {
-            "path": "./topics/groovy",
-            "readme": "./topics/groovy/README.md",
-            "overview": "",
-            "name": "Groovy Programming Language ",
-            "modules": [
-                {
-                    "path": "./topics/groovy/modules/functions",
-                    "readme": "./topics/groovy/modules/functions/README.md",
-                    "overview": "",
-                    "name": "Functions"
-                },
-                {
-                    "path": "./topics/groovy/modules/closures",
-                    "readme": "./topics/groovy/modules/closures/README.md",
-                    "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
-                    "name": "Closures"
-                },
-                {
-                    "path": "./topics/groovy/modules/variables",
-                    "readme": "./topics/groovy/modules/variables/README.md",
-                    "overview": "Variables are of course very commonly used, across all programming languages.",
-                    "name": "Variables"
-                },
-                {
-                    "path": "./topics/groovy/modules/syntax",
-                    "readme": "./topics/groovy/modules/syntax/README.md",
-                    "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
-                    "name": "Syntax"
-                }
-            ]
-        },
-        {
-            "path": "./topics/jenkins",
-            "readme": "./topics/jenkins/README.md",
-            "overview": "Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.",
-            "name": "Jenkins",
-            "modules": [
-                {
-                    "path": "./topics/jenkins/modules/jobs",
-                    "readme": "./topics/jenkins/modules/jobs/README.md",
-                    "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
-                    "name": "Jobs"
-                },
-                {
-                    "path": "./topics/jenkins/modules/web-setup",
-                    "readme": "./topics/jenkins/modules/web-setup/README.md",
-                    "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
-                    "name": "Jenkins Setup from the Portal"
-                },
-                {
-                    "prereqs": [
-                        "jenkins/web-setup",
-                        "jenkins/jobs",
-                        "jenkins/freestyle-project",
-                        "linux/systemd",
-                        "linux/sudo"
-                    ],
-                    "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
-                    "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
-                    "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
-                    "name": "Basic Python Flask Freestyle Project Deployment with systemd"
-                },
-                {
-                    "path": "./topics/jenkins/modules/freestyle-project",
-                    "readme": "./topics/jenkins/modules/freestyle-project/README.md",
-                    "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
-                    "name": "Freestyle Project"
                 }
             ]
         }
