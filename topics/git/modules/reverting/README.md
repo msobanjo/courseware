@@ -60,7 +60,7 @@ If we want to revert back to the third commit, which has the SHA-1 of ``483856a`
 After this command is executed, the repository would go into the ``detached HEAD`` state, and we wouldn't be on a branch any more. Because we aren't working on a branch any more, any new commits you make would be 'orphaned' once we changed branches (for example, if we wanted to change branches to make a new branch). Orphaned commits get deleted by Git's garbage collector, which runs in specific intervals and destroys all orphaned commits.
 
 In order to avoid orphaned commits being destroyed, we need to make sure we are on a branch. This can be done from
-the ``detached HEAD`` state, by executing ``git branch -b newbranchname``. 
+the ``detached HEAD`` state, by executing ``git checkout -b newbranchname``. 
 
 Now there would be a new history for the repository's timeline, without the ``fourth commit``.
 
@@ -144,14 +144,8 @@ Reverting local work:
 * Now check the git log history for the branch you are on (try out the additional flags for viewing the git log history)
 * Pick one of the previous commits to revert to and keep note of the SHA-1
 * Now use the ``reset`` command and do a hard reset to your chosen commit
-* You will get a conflict for the file test.txt
-* Open the test.txt in a text editor
-* Resolve the conflict by selecting which parts of the code you want to keep
-* Create a new branch with your chosen name
 * Stage the file
 * Commit the file
-* Delete the previous branch
-* Check all the current branches - ``master`` shouldn't be there
 * Once you're done with the task, remove the tmp folder and all of the files inside it
 
 ### Task 3
