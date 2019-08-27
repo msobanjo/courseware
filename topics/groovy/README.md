@@ -43,40 +43,6 @@ sudo apt install -y groovy
 ```bash
 sudo yum install -y groovy
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--MODULES_START-->
 ## Modules
 - [Closures](./modules/closures)
