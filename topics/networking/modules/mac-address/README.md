@@ -12,6 +12,7 @@
 	- [OEM & Unique ID](#oem--unique-id)
 - [Spoofing](#spoofing)
 	- [Why?](#why)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
