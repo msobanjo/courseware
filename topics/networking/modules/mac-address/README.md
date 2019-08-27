@@ -2,12 +2,16 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
+- [Relevence & Day to Day Application](#relevence--day-to-day-application)
+	- [Public Wifi](#public-wifi)
 - [Viewing Your MAC Address](#viewing-your-mac-address)
 	- [Windows](#windows)
 	- [Linux](#linux)
-- [MAC Address Format](#mac-address-format)
+- [Format](#format)
 	- [Hexadecimals](#hexadecimals)
 	- [OEM & Unique ID](#oem--unique-id)
+- [Spoofing](#spoofing)
+	- [Why?](#why)
 
 <!--TOC_END-->
 ## Overview
