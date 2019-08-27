@@ -46,7 +46,7 @@ def build_readme(topic, module_links, readme_file):
 					readme = readme + line
 				else:
 					readme = readme + "\n" + line
-	readme = readme + "\n" + module_links
+	readme = readme.strip() + "\n" + module_links
 	return readme
 
 # function 3 - writes staged README.md to existing README.md
