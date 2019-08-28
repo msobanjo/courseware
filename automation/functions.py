@@ -44,12 +44,13 @@ def get_props(module):
     return props
 
 def get_all_modules_for_topic(topic):
-    items = Path(topic).glob("modules/*")
-    module_paths = filter(lambda item: os.path.isdir(item), items)
-    module_paths = map(lambda module: str(module), module_paths)
     modules = []
-    for module in module_paths:
-        modules.append(get_props("./" + module))
+    if os.path.isdir(topic + "modules"):
+        items = Path(topic).glob("modules/*")
+        module_paths = filter(lambda item: os.path.isdir(item), items)
+        module_paths = map(lambda module: str(module), module_paths)
+        for module in module_paths:
+            modules.append(get_props("./" + module))
     return modules
 
 def get_all_topics():

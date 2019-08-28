@@ -2,6 +2,7 @@
 # generate modules list for every topic
 
 import os
+from functions import get_all_modules_for_topic
 
 #set global variables
 start = "<!--MODULES_START-->"
@@ -16,7 +17,7 @@ def get_folders(dir):
 def get_module_links(topic):
 	module_links = "## Modules"
 	module_name = ""
-	modules = get_folders("./topics/" + topic + "/modules")
+        modules = get_all_modules_for_topic(topic)
 	modules.sort()
 	for module in modules:
 		# get the module name from the module's readme
