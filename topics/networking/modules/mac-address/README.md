@@ -7,12 +7,18 @@
 - [Viewing Your MAC Address](#viewing-your-mac-address)
 	- [Windows](#windows)
 	- [Linux](#linux)
+		- [Using ifconfig](#using-ifconfig)
+		- [Using ip](#using-ip)
 - [Format](#format)
 	- [Hexadecimals](#hexadecimals)
 	- [OEM & Unique ID](#oem--unique-id)
 - [Spoofing](#spoofing)
+	- [Linux](#linux-1)
+	- [Windows](#windows-1)
 	- [Why?](#why)
 - [Tasks](#tasks)
+	- [Find Out About Your Current MAC Address](#find-out-about-your-current-mac-address)
+	- [Spoof Your MAC Address](#spoof-your-mac-address)
 
 <!--TOC_END-->
 ## Overview
