@@ -161,3 +161,59 @@ instead of all the previously seen information.
 `az group delete --name my-first-vm`
 Agree yes to the prompt.
 ![alt text](https://imgur.com/WNm2Mn4.png)
+
+## Lab-4 Interacting with blobs using the Azure CLI
+
+In this lab you will learn how to use Azure blobs and some basic operations on them.
+
+1. Create a resource group by running the following command 
+`az group create -n my-resource-group -l ukwest`
+![alt text](https://imgur.com/yWh0V5O.png)
+2. Create a storage account by running the following command, but replace "myqastorageaccount" with a unique name for yourself
+`az storage account create -n myqastorageaccount -g my-gesource-group -l ukwest --sku Standard_LRS --encryption blob`
+3. Now you need to save your name and key for the storage account. You already know the name of the storage account from the previous step.
+Now to get the key, run the following command. Remember to change the storage account name in the command with your one.
+`az storage account keys list --account-name myqastorageaccount -g my-resource-group -o table`
+![alt text](https://imgur.com/DfX1sAP.png)
+Once you get the key value we can now save them, although as the key value is long we'll just save it as an environment variable.
+At the end of this step you should be able to save two values
+`storage_account=myqastorageaccount` 
+and
+`storage_key=ZI8e8MdTZlIUHDygtjnpwKSqOCspOF7CMYi0xf/mFIVRKFhVJ4rFFg930BP69raiPV78gDjJBegPWBJejgzdiw==`
+Before moving to the next step make sure you have these saved, otherwise you will need to go back to this step and get them again.
+4. You require a container as that is where the blobs are saved to. It can then be used to manage them just like a file system.
+Create a container with the following command
+`az storage container create --name myqastoragecontainer` 
+You should get an output `create: true`.
+5. Next you'll be uploading a blob, but before that happens you need to understand about different types of blobs.
+There are three types of blobs: block, append, page. Majority of the blobs will be block blobs. Append blobs are needed
+when we don't want to override existing content, but to add it to the existing information, this would be useful with logs.
+Page blobs are using the VHD files by VMs. Next we'll create a file and upload it. Create a text file with the name "HelloWorld" and extension of ".txt".
+Place some text like "Hello World!" inside it and save it. Now you will use the following command to upload the file, 
+make sure you provide the correct path to the files location, also replace the container name with yours.
+You might need to do out outside the interactive mode.
+`az storage blob upload --container-name myqastoragecontainer --name blobName --file /tmp/HelloWorld.txt`
+![alt text](https://imgur.com/l6e3Ime.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
