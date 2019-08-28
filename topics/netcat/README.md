@@ -16,15 +16,15 @@ netcat (often abbreviated to nc) is a computer networking utility for reading fr
 This tool is a feature-rich network debugging and investigation tool, since it can produce almost any kind of connection its user could need and has a number of built-in capabilities.
 Its list of features includes port scanning, transferring files, and port listening, and it can be used as a backdoor.
 ## Versions
-There are a few different version of netcat, they are all similiar but some of the features differ depending on the version.
+There are a few different version of netcat, they are all similar but some of the features differ depending on the version.
 For most part though, you shouldn't need to worry about which of these versions are installed; it only really matters if require a specific feature.
 - GNU Netcat; GNU rewrite of netcat, the network piping application.
 - openbsd-netcat; TCP/IP swiss army knife. OpenBSD variant.
 - libressl-netcat; Low level UDP/TCP connection tool with support for TLS protocol.
 ## Installation
 ### Dependencies
-To the installtion here consistent across Linux distributions, this will show you how to install the GNU netcat, building it from the source code.
-The only thing that differs is how the dependencies for building it are installed:
+To keep the installation here consistent across Linux distributions; this guide will show you how to install the GNU netcat by building it from the source code.
+The only thing that differs is how the dependencies for building it are installed beforehand:
 #### Ubuntu/Debian
 ```bash
 sudo apt install -y make gcc
