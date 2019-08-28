@@ -11,3 +11,5 @@ Jenkins is a self-contained, open source automation server that can be used to a
 The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix.
 ## Markdown [&xrarr;](./markdown)
 Markdown is a way to write content for the web.
+## netstat [&xrarr;](./netstat)
+In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables, and a number of network interface (network interface controller or software-defined network interface) and network protocol statistics.
