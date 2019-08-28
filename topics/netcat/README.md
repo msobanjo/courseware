@@ -1,4 +1,16 @@
 # netcat
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Versions](#versions)
+- [Installation](#installation)
+	- [Dependencies](#dependencies)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+	- [Download & Install](#download--install)
+- [Modules](#modules)
+
+<!--TOC_END-->
 ## Overview
 netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.
 This tool is a feature-rich network debugging and investigation tool, since it can produce almost any kind of connection its user could need and has a number of built-in capabilities.
@@ -37,3 +49,7 @@ We can now confirm if netcat is installed by checking the version:
 ```bash
 nc --version
 ```
+<!--MODULES_START-->
+## Modules
+- [Port Scanning](./modules/port-scanning)
+<!--MODULES_END-->
