@@ -9,6 +9,8 @@ In this lab you will go through the steps required to install the Azure CLI.
 	- [Summary](#summary)
 - [Lab-2 Connecting to Azure and using interactive mode](#lab2-connecting-to-azure-and-using-interactive-mode)
 	- [Summary](#summary-1)
+- [Lab-3 Creating a VM through CLI](#lab3-creating-a-vm-through-cli)
+- [Lab-4 Interacting with blobs using the Azure CLI](#lab4-interacting-with-blobs-using-the-azure-cli)
 
 <!--TOC_END-->
 ### Installing Azure CLI on Windows
@@ -194,26 +196,3 @@ make sure you provide the correct path to the files location, also replace the c
 You might need to do out outside the interactive mode.
 `az storage blob upload --container-name myqastoragecontainer --name blobName --file /tmp/HelloWorld.txt`
 ![alt text](https://imgur.com/l6e3Ime.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
