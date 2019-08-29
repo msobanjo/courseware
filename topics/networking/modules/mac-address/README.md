@@ -59,7 +59,9 @@ Wireless LAN adapter Wi-Fi:
                                        9.9.9.9
    NetBIOS over Tcpip. . . . . . . . : Enabled
 ```
-### Linux Depending on what tools are installed on your system there are several ways that you can get your MAC address: #### Using ifconfig
+### Linux
+Depending on what tools are installed on your system there are several ways that you can get your MAC address:
+#### Using ifconfig
 Here's an example using `ifconfig` to find out what your MAC address is, the command used here is `ifconfig -a`.
 The MAC address in this exmaple is `60:57:18:31:ab:5a` shown after the `ether` property.
 ```bash
