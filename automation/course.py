@@ -9,7 +9,7 @@ for course in state["courses"]:
     for module in modules:
         for state_module in state["modules"]:
             if state_module["path"] == module:
-                module_links = module_links + "\n#### [" + state_module["name"] + "](" + state_module["path"] + ") <pre>(" + str(state_module["estTime"]) + "~ mins) </pre>" + "\n" + state_module["overview"]
+                module_links = module_links + "\n#### [" + state_module["name"] + "](" + state_module["path"] + ") (" + str(state_module["estTime"]) + "~ mins)" + "\n" + state_module["overview"]
     course_readme = open(course["readme"], "r")
     contents = course_readme.read()
     course_readme.close()
