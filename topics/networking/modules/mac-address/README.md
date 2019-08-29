@@ -6,19 +6,18 @@
 	- [Public Wifi](#public-wifi)
 - [Viewing Your MAC Address](#viewing-your-mac-address)
 	- [Windows](#windows)
-	- [Linux](#linux)
-		- [Using ifconfig](#using-ifconfig)
+	- [Linux Depending on what tools are installed on your system there are several ways that you can get your MAC address:  Using ifconfig](#linux-depending-on-what-tools-are-installed-on-your-system-there-are-several-ways-that-you-can-get-your-mac-address--using-ifconfig)
 		- [Using ip](#using-ip)
 - [Format](#format)
 	- [Hexadecimals](#hexadecimals)
 	- [OEM & Unique ID](#oem--unique-id)
 - [Spoofing](#spoofing)
-	- [Linux](#linux-1)
+	- [Linux](#linux)
 	- [Windows](#windows-1)
 	- [Why?](#why)
 - [Tasks](#tasks)
 	- [Find Out About Your Current MAC Address](#find-out-about-your-current-mac-address)
-	- [Spoof Your MAC Address](#spoof-your-mac-address)
+	- [Change Your MAC Address](#change-your-mac-address)
 
 <!--TOC_END-->
 ## Overview
