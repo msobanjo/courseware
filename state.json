@@ -7,16 +7,16 @@
             "name": "Groovy Programming Language "
         },
         {
+            "path": "./topics/linux",
+            "readme": "./topics/linux/README.md",
+            "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
+            "name": "Linux"
+        },
+        {
             "path": "./topics/netcat",
             "readme": "./topics/netcat/README.md",
             "overview": "netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.",
             "name": "netcat"
-        },
-        {
-            "path": "./topics/markdown",
-            "readme": "./topics/markdown/README.md",
-            "overview": "Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symboles (such as `*` and `#`).",
-            "name": "Markdown"
         },
         {
             "path": "./topics/git",
@@ -25,10 +25,10 @@
             "name": "Git"
         },
         {
-            "path": "./topics/networking",
-            "readme": "./topics/networking/README.md",
-            "overview": "A computer network is a digital telecommunications network which allows nodes to share resources.",
-            "name": "Networking"
+            "path": "./topics/markdown",
+            "readme": "./topics/markdown/README.md",
+            "overview": "Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symboles (such as `*` and `#`).",
+            "name": "Markdown"
         },
         {
             "path": "./topics/jenkins",
@@ -37,10 +37,10 @@
             "name": "Jenkins"
         },
         {
-            "path": "./topics/linux",
-            "readme": "./topics/linux/README.md",
-            "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
-            "name": "Linux"
+            "path": "./topics/networking",
+            "readme": "./topics/networking/README.md",
+            "overview": "A computer network is a digital telecommunications network which allows nodes to share resources.",
+            "name": "Networking"
         },
         {
             "path": "./topics/aws",
@@ -51,22 +51,10 @@
     ],
     "modules": [
         {
-            "path": "./topics/groovy/modules/functions",
-            "readme": "./topics/groovy/modules/functions/README.md",
-            "overview": "",
-            "name": "Functions"
-        },
-        {
             "path": "./topics/groovy/modules/closures",
             "readme": "./topics/groovy/modules/closures/README.md",
             "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
             "name": "Closures"
-        },
-        {
-            "path": "./topics/groovy/modules/variables",
-            "readme": "./topics/groovy/modules/variables/README.md",
-            "overview": "Variables are of course very commonly used, across all programming languages.",
-            "name": "Variables"
         },
         {
             "path": "./topics/groovy/modules/syntax",
@@ -75,11 +63,64 @@
             "name": "Syntax"
         },
         {
+            "path": "./topics/groovy/modules/functions",
+            "readme": "./topics/groovy/modules/functions/README.md",
+            "overview": "",
+            "name": "Functions"
+        },
+        {
+            "path": "./topics/groovy/modules/variables",
+            "readme": "./topics/groovy/modules/variables/README.md",
+            "overview": "Variables are of course very commonly used, across all programming languages.",
+            "name": "Variables"
+        },
+        {
+            "prereqs": [
+                "linux/nano",
+                "linux/vi"
+            ],
+            "path": "./topics/linux/modules/sudoers",
+            "readme": "./topics/linux/modules/sudoers/README.md",
+            "overview": "The sudo tool allows a user to act as a superuser for a command.",
+            "name": "Sudoers"
+        },
+        {
+            "path": "./topics/linux/modules/managing-systemd-services",
+            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
+            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
+            "name": "Managing systemd Services"
+        },
+        {
             "estTime": 20,
             "path": "./topics/netcat/modules/port-scanning",
             "readme": "./topics/netcat/modules/port-scanning/README.md",
             "overview": "Port Scanning with netcat",
             "name": "Port Scanning"
+        },
+        {
+            "path": "./topics/git/modules/reverting",
+            "readme": "./topics/git/modules/reverting/README.md",
+            "overview": "",
+            "name": "Reverting"
+        },
+        {
+            "name": "Basics",
+            "est_time": 15,
+            "path": "./topics/git/modules/basics",
+            "readme": "./topics/git/modules/basics/README.md",
+            "overview": ""
+        },
+        {
+            "path": "./topics/git/modules/branching",
+            "readme": "./topics/git/modules/branching/README.md",
+            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+            "name": "Branching"
+        },
+        {
+            "path": "./topics/markdown/modules/links_images",
+            "readme": "./topics/markdown/modules/links_images/README.md",
+            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
+            "name": "Links and Images"
         },
         {
             "path": "./topics/markdown/modules/advanced",
@@ -94,29 +135,35 @@
             "name": "Basics"
         },
         {
-            "path": "./topics/markdown/modules/links_images",
-            "readme": "./topics/markdown/modules/links_images/README.md",
-            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
-            "name": "Links and Images"
+            "prereqs": [
+                "jenkins/web-setup",
+                "jenkins/jobs",
+                "jenkins/freestyle-project",
+                "linux/systemd",
+                "linux/sudo"
+            ],
+            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
+            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
+            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
+            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
         },
         {
-            "name": "Basics",
-            "est_time": 15,
-            "path": "./topics/git/modules/basics",
-            "readme": "./topics/git/modules/basics/README.md",
-            "overview": ""
+            "path": "./topics/jenkins/modules/web-setup",
+            "readme": "./topics/jenkins/modules/web-setup/README.md",
+            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
+            "name": "Jenkins Setup from the Portal"
         },
         {
-            "path": "./topics/git/modules/reverting",
-            "readme": "./topics/git/modules/reverting/README.md",
-            "overview": "",
-            "name": "Reverting"
+            "path": "./topics/jenkins/modules/jobs",
+            "readme": "./topics/jenkins/modules/jobs/README.md",
+            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
+            "name": "Jobs"
         },
         {
-            "path": "./topics/git/modules/branching",
-            "readme": "./topics/git/modules/branching/README.md",
-            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-            "name": "Branching"
+            "path": "./topics/jenkins/modules/freestyle-project",
+            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
+            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
+            "name": "Freestyle Project"
         },
         {
             "estTime": 30,
@@ -140,53 +187,6 @@
             "readme": "./topics/networking/modules/mac-address/README.md",
             "overview": "A Media Access Control (MAC) address of a device is a unique identifier assigned to a Network Interface Controller (NIC).",
             "name": "MAC Address"
-        },
-        {
-            "path": "./topics/jenkins/modules/jobs",
-            "readme": "./topics/jenkins/modules/jobs/README.md",
-            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
-            "name": "Jobs"
-        },
-        {
-            "path": "./topics/jenkins/modules/freestyle-project",
-            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
-            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
-            "name": "Freestyle Project"
-        },
-        {
-            "prereqs": [
-                "jenkins/web-setup",
-                "jenkins/jobs",
-                "jenkins/freestyle-project",
-                "linux/systemd",
-                "linux/sudo"
-            ],
-            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
-            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
-            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
-            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
-        },
-        {
-            "path": "./topics/jenkins/modules/web-setup",
-            "readme": "./topics/jenkins/modules/web-setup/README.md",
-            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
-            "name": "Jenkins Setup from the Portal"
-        },
-        {
-            "path": "./topics/linux/modules/managing-systemd-services",
-            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
-            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
-            "name": "Managing systemd Services"
-        },
-        {
-            "prereqs": [
-                "linux/nano",
-                "linux/vi"
-            ],
-            "path": "./topics/linux/modules/sudoers",
-            "readme": "./topics/linux/modules/sudoers/README.md",
-            "overview": "The sudo tool allows a user to act as a superuser for a command.",
-            "name": "Sudoers"
         },
         {
             "path": "./topics/aws/modules/ec2",
