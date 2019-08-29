@@ -13,3 +13,5 @@ The Linux open-source operating system, or Linux OS, is a freely distributable, 
 Markdown is a way to write content for the web.
 ## Networking [&xrarr;](./networking)
 A computer network is a digital telecommunications network which allows nodes to share resources.
+## netcat [&xrarr;](./netcat)
+netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.
