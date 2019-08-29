@@ -1,7 +1,8 @@
 <!--PROPS
 {
     "modules": [
-        "./topics/networking/modules/mac-address"
+        "./topics/networking/modules/mac-address",
+        "./topics/netcat/modules/port-scanning"
     ]
 }
 -->
