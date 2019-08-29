@@ -11,7 +11,7 @@ Jenkins is a self-contained, open source automation server that can be used to a
 The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix.
 ## Markdown [&xrarr;](./markdown)
 Markdown is a way to write content for the web.
-## Networking [&xrarr;](./networking)
-A computer network is a digital telecommunications network which allows nodes to share resources.
 ## netcat [&xrarr;](./netcat)
 netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.
+## Networking [&xrarr;](./networking)
+A computer network is a digital telecommunications network which allows nodes to share resources.
