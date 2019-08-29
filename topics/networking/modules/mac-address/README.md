@@ -59,9 +59,7 @@ Wireless LAN adapter Wi-Fi:
                                        9.9.9.9
    NetBIOS over Tcpip. . . . . . . . : Enabled
 ```
-### Linux
-Depending on what tools are installed on your system there are several ways that you can get your MAC address:
-#### Using ifconfig
+### Linux Depending on what tools are installed on your system there are several ways that you can get your MAC address: #### Using ifconfig
 Here's an example using `ifconfig` to find out what your MAC address is, the command used here is `ifconfig -a`.
 The MAC address in this exmaple is `60:57:18:31:ab:5a` shown after the `ether` property.
 ```bash
@@ -76,16 +74,10 @@ wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 #### Using ip
 Below is the output from running `ip link show`.
-The MAC address in this case is `60:57:18:31:ab:5a`
+The MAC address in this case is `60:57:18:31:ab:5a`, under the `link/ether` property:
 ```text
 3: wlp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DORMANT group default qlen 1000
     link/ether 60:57:18:31:ab:5a brd ff:ff:ff:ff:ff:ff
-```
-```bash
-# using ifconfig
-ifconfig -a
-# using ip
-ip link show
 ```
 ## Format
 ### Hexadecimals
@@ -112,8 +104,10 @@ ip link set dev [INTERFACE] address [MAC_ADDRESS]
 # bring the interface back up
 ip link set dev [INTERFACE] up
 ```
+You can go through the same process to reset your MAC address to its original value, otherwise you can just restart the system.
 ### Windows
 PowerShell is a great tool for modifying your MAC address temporarily.
+Be sure to take note of your current MAC address before changing it, or else you will have to restart your computer to reset it.
 First we can find what network adapters are available and then change the MAC address accordingly:
 ```powershell
 # find available network adapters
@@ -121,12 +115,15 @@ get-netadapter
 # update the network adapter, refferring to it by its Name property
 set-netadapter -Name "[ADAPTER_NAME]" -MacAddress "[MAC_ADDRESS]"
 ```
+To reset your MAC address on Windows to its original value, you can use the same method as above, or by restarting your computer.
 ### Why?
 Changing a devices MAC address can be used for bypassing or "tricking" access control in place by disguising itself as another device.
 This is typically a technique used for malicious purposes but can be used for penetration testing and ensuring your services are robust enough to not be susceptible to this.
 ## Tasks
 ### Find Out About Your Current MAC Address
-- Find the MAC address of the current device that you are using, remember you can use `ipconfig /all` on Windows an `ip link show` on Linux.
+- Find the MAC address of the current device that you are using, remember you can use `ipconfig /all` on Windows and `ip link show` on Linux.
 - Use the first 3 bytes of your MAC to find out who manufactured your network interface card (NIC), usually just putting it in a Google search will show you this.
-### Spoof Your MAC Address
+### Change Your MAC Address
+- Make a note of your current MAC address.
 - Change your MAC address to the following: `00-10-18-57-1B-0D`
+- Reset your MAC address back to its original value.
