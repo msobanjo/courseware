@@ -1,3 +1,20 @@
+<!--PROPS
+{
+   "estTime": 30,
+   "questions": [
+        {
+            "value": "What does MAC stand for?",
+            "answer": "Media Access Control.",
+            "choices": [""]
+        },
+        {
+            "value": "What is a MAC Address?",
+            "answer": "A unique identifier assigned to a Network Interface Controller (NIC).",
+            "choices": [""]
+        }
+   ]
+}
+-->
 # MAC Address
 <!--TOC_START-->
 ### Contents
