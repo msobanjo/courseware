@@ -4,7 +4,6 @@ from pathlib import Path
 import os
 import re
 import json
-
 def get_overview(contents):
     overview_list = re.findall(r"(?<=## Overview\n).*", contents)
     overview = ""
@@ -21,14 +20,15 @@ def get_title(contents):
         print("no title in given contents")
         exit(1)
     return title
-
 def get_enclosed_contents(start, end, content):
     sub_content_list = re.findall(r"(?<=" + start + ")((.*\n)*)(?=" + end + ")", content)
     if len(sub_content_list) > 0:
         return sub_content_list[0][0].strip()
     else:
         return ""
-
+def remove_enclosed_contents(start, end, content):
+    sub_content = re.sub(r""+ start + "((.*\n)*)" + end, "", content)
+    return sub_content.strip() + "\n"
 def get_props(module):
     module_readme = open(module + "/README.md", "r")
     contents = module_readme.read()
@@ -61,12 +61,36 @@ def get_all_topics():
         new_topics.append(get_props("./" + topic))
     return new_topics
 
+def get_all_courses():
+    items = list(Path("./courses").glob("*"))
+    courses = filter(lambda item: os.path.isdir(item), items)
+    courses = map(lambda course: str(course), courses)
+    new_courses = []
+    for course in courses:
+        new_courses.append(get_props("./" + course))
+    return new_courses
+
 def get_state():
     state = {
-        "topics": []
+        "topics": [],
+        "modules": [],
+        "courses": []
     }
+    # topics & modules
     for topic in get_all_topics():
-        topic["modules"] = get_all_modules_for_topic(topic["path"])
+        modules = get_all_modules_for_topic(topic["path"])
+        for module in modules:
+            state["modules"].append(module)
         state["topics"].append(topic)
+    # courses
+    for course in get_all_courses():
+        est_time = 0
+        if "modules" in course:
+            for module in course["modules"]:
+                props = get_props(module)
+                if "estTime" in props:
+                    est_time += props["estTime"]
+        course["estTime"] = est_time
+        state["courses"].append(course)
     return state
 

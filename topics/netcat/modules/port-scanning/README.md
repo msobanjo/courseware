@@ -1,3 +1,8 @@
+<!--PROPS
+{
+    "estTime": 20
+}
+-->
 # Port Scanning
 <!--TOC_START-->
 ### Contents
