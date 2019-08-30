@@ -2,12 +2,14 @@
 {
     "estTime": 10,
     "questions": [
-        "value": "What can port scanning be used for?",
-        "answer": "Finding out what ports are available on a host.",
-        "choices": [
-            "Load testing.",
-            "Monitoring TCP traffic going through the given ports."
-        ]
+        {
+            "value": "What can port scanning be used for?",
+            "answer": "Finding out what ports are available on a host.",
+            "choices": [
+                "Load testing.",
+                "Monitoring TCP traffic going through the given ports."
+            ]
+        }
     ]
 }
 -->
