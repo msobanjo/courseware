@@ -43,9 +43,6 @@ jobs:
           name: Generate Table of Contents for README Files
           command: ./automation/toc.py
       - run:
-          name: Create Topics List of Links
-          command: ./automation/topics.py
-      - run:
           name: Create Module Links for Courses
           command: ./automation/course.py
       - run:
