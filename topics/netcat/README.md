@@ -51,5 +51,5 @@ nc --version
 ```
 <!--MODULES_START-->
 ## Modules
-- [Port Scanning](./modules/port-scanning)
+- [Port Scanning with netcat](./modules/port-scanning)
 <!--MODULES_END-->
