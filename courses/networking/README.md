@@ -2,6 +2,7 @@
 {
     "modules": [
         "./topics/networking/modules/mac-address",
+        "./topics/netcat",
         "./topics/netcat/modules/port-scanning"
     ]
 }
