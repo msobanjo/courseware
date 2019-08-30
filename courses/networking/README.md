@@ -13,6 +13,6 @@ This course discusses how computer networks operate.
 ## Modules
 #### [MAC Address](./topics/networking/modules/mac-address) (30~ mins)
 A Media Access Control (MAC) address of a device is a unique identifier assigned to a Network Interface Controller (NIC).
-#### [Port Scanning](./topics/netcat/modules/port-scanning) (20~ mins)
-Port Scanning with netcat
+#### [Port Scanning with netcat](./topics/netcat/modules/port-scanning) (10~ mins)
+Port scanning is a technique used for finding out what ports are available and have an application running on a host.
 <!--MODULES_END-->

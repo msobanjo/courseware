@@ -17,6 +17,17 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
+- [Usage](#usage)
+- [Tasks](#tasks)
+	- [Run a Basic Scan](#run-a-basic-scan)
+	- [Run a Scan Again After Installing an Application](#run-a-scan-again-after-installing-an-application)
+		- [Installing on Ubuntu/Debian](#installing-on-ubuntudebian)
+		- [Installing on CentOS/RHEL](#installing-on-centosrhel)
+		- [Run the Scan Again](#run-the-scan-again)
+	- [Cleanup](#cleanup)
+		- [Removing on Ubuntu/Debian](#removing-on-ubuntudebian)
+		- [Removing on CentOS/RHEL](#removing-on-centosrhel)
+
 <!--TOC_END-->
 ## Overview
 Port scanning is a technique used for finding out what ports are available and have an application running on a host.
