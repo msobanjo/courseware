@@ -106,4 +106,11 @@ If its a private IP address there then that will likely mean that the connection
 This is where the connection is coming from.
 From this property you can determine whether the connection is contained on the same machine or coming from somewhere else.
 #### State
-The current state of the connection.
+The state tells in which state the listed sockets are.
+The TCP protocol defines states, including “LISTEN” (wait for some external computer to contact us) and “ESTABLISHED” (ready for communication).
+The stranger among these is the “CLOSE WAIT” state.
+This means that the foreign or remote machine has already closed the connection, but that the local program somehow hasn’t followed suit.
+#### Recv-Q & Send-Q
+These are properties found on the Linux output.
+These tell us how much data is in the queue for that socket, waiting to be read (Recv-Q) or sent (Send-Q).
+In short: if this is 0, everything’s ok, if there are non-zero values anywhere, there may be trouble.
