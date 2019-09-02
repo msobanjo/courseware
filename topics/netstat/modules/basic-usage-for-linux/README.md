@@ -87,6 +87,10 @@ udp6       0      0 fe80::4001:aff:fe9a:123 :::*                                
 udp6       0      0 ::1:123                 :::*                                644/ntpd            
 udp6       0      0 :::123                  :::*                                644/ntpd 
 ````
+You will now be able to use the PID of NGINX (1665 in this case) to manage that process; most likely to kill it:
+```bash
+sudo kill 1665
+```
 ### Clean Up
 Lets stop and remove NGINX to cleanup:
 ```bash
