@@ -30,7 +30,6 @@ def remove_enclosed_contents(start, end, content):
     sub_content = re.sub(r""+ start + "((.*\n)*)" + end, "", content)
     return sub_content.strip() + "\n"
 def get_props(module):
-    print("getting props for: " + module)
     module_readme = open(module + "/README.md", "r")
     contents = module_readme.read()
     module_readme.close()
