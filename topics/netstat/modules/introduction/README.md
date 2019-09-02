@@ -35,14 +35,9 @@ The netstat tool can be used for the following:
 - Find what application is using a certain port
 - Measure network performance
 - Show current connections to the machine
-
-## Tasks
-Check that netstat is working correctly by opening a command prompt on Windows or a terminal on Linux and run the following command:
-```bash
-netstat
-```
+## Example Outputs
 ### Linux
-After running `netstat` on Linux you should then see an output of the connections to your machine similar to below:
+After running a `netstat` command on Linux you should then see an output of the connections to your machine similar to below:
 ```text
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
 tcp        0      0 work-laptop:46098       ec2-3-9-202-151.e:https ESTABLISHED
@@ -114,3 +109,14 @@ This means that the foreign or remote machine has already closed the connection,
 These are properties found on the Linux output.
 These tell us how much data is in the queue for that socket, waiting to be read (Recv-Q) or sent (Send-Q).
 In short: if this is 0, everything’s ok, if there are non-zero values anywhere, there may be trouble.
+
+## Tasks
+Check that netstat is working correctly by opening a command prompt on Windows or a terminal on Linux and run the following command:
+```bash
+netstat
+```
+Try using `netstat --help` to find out:
+- Which option can be used to show the process ID (PID) of the applications using the sockets.
+- Which option can be used to show only TCP sockets
+- Which option can be used to show the systems route table
+
