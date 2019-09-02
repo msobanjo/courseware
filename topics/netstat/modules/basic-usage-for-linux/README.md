@@ -2,7 +2,7 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-- [Netstat Options on Linux](#netstat-options-on-linux)
+- [Options on Linux](#options-on-linux)
 
 <!--TOC_END-->
 ## Overview
