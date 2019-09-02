@@ -1,4 +1,4 @@
-# Netstat - Basic Usage for Linux
+# Basic Usage for Linux
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
@@ -7,7 +7,7 @@
 <!--TOC_END-->
 ## Overview
 The netstat tool is very important for Linux network administrators as well as system administrators to monitor and troubleshoot their network related problems and determine network traffic performance.
-## Netstat Options on Linux
+## Options on Linux
 |Option|Description|
 |---|--------------|
 |-a |Displays all active connections and the TCP and UDP ports on which the computer is listening|
