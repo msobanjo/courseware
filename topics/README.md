@@ -13,7 +13,7 @@ The Linux open-source operating system, or Linux OS, is a freely distributable, 
 Markdown is a way to write content for the web.
 ## netcat [&xrarr;](./netcat)
 netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.
+## Netstat [&xrarr;](./netstat)
+In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables, and a number of network interface (network interface controller or software-defined network interface) and network protocol statistics.
 ## Networking [&xrarr;](./networking)
 A computer network is a digital telecommunications network which allows nodes to share resources.
-## netstat [&xrarr;](./netstat)
-In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables, and a number of network interface (network interface controller or software-defined network interface) and network protocol statistics.
