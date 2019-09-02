@@ -39,9 +39,9 @@ Check that netstat is working correctly by opening a command prompt on Windows o
 ```bash
 netstat
 ```
-You should then see an output of the connections to your machine similar to below:
+### Linux
+After running `netstat` on Linux you should then see an output of the connections to your machine similar to below:
 ```text
-Active Internet connections (w/o servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
 tcp        0      0 work-laptop:46098       ec2-3-9-202-151.e:https ESTABLISHED
 tcp        0      0 work-laptop:41682       wl-in-f188.1e100.n:5228 ESTABLISHED
@@ -64,3 +64,44 @@ tcp        0      0 work-laptop:56710       101.59.190.35.bc.:https ESTABLISHED
 tcp        0      0 work-laptop:46112       ec2-3-9-202-151.e:https ESTABLISHED
 tcp        0      0 work-laptop:44858       ec2-52-215-192-13:https ESTABLISHED
 ```
+### Windows
+When running `netstat` on Windows you should then see an output similar to below:
+```text
+Proto  Local Address          Foreign Address        State
+ TCP    127.0.0.1:5939         DESKTOP-VJCN58E:50244  ESTABLISHED
+ TCP    127.0.0.1:49938        DESKTOP-VJCN58E:49939  ESTABLISHED
+ TCP    127.0.0.1:49939        DESKTOP-VJCN58E:49938  ESTABLISHED
+ TCP    127.0.0.1:50244        DESKTOP-VJCN58E:5939   ESTABLISHED
+ TCP    127.0.0.1:50248        DESKTOP-VJCN58E:50249  ESTABLISHED
+ TCP    127.0.0.1:50249        DESKTOP-VJCN58E:50248  ESTABLISHED
+ TCP    127.0.0.1:50708        DESKTOP-VJCN58E:50709  ESTABLISHED
+ TCP    127.0.0.1:50709        DESKTOP-VJCN58E:50708  ESTABLISHED
+ TCP    127.0.0.1:52865        DESKTOP-VJCN58E:52866  ESTABLISHED
+ TCP    127.0.0.1:52866        DESKTOP-VJCN58E:52865  ESTABLISHED
+ TCP    127.0.0.1:52867        DESKTOP-VJCN58E:52868  ESTABLISHED
+ TCP    127.0.0.1:52868        DESKTOP-VJCN58E:52867  ESTABLISHED
+ TCP    127.0.0.1:52869        DESKTOP-VJCN58E:52870  ESTABLISHED
+ TCP    127.0.0.1:52870        DESKTOP-VJCN58E:52869  ESTABLISHED
+ TCP    172.17.25.197:52256    ams16s32-in-f10:https  CLOSE_WAIT
+ TCP    172.17.25.197:52259    ams16s32-in-f10:https  CLOSE_WAIT
+ TCP    172.17.25.197:52261    ams16s32-in-f10:https  CLOSE_WAIT
+ TCP    172.17.25.197:52376    AT-VIE-ANX-R008:5938   ESTABLISHED
+ TCP    172.17.25.197:52378    252-57-168-194:https   ESTABLISHED
+ TCP    172.17.25.197:52383    252-57-168-194:https   ESTABLISHED
+ TCP    172.17.25.197:52387    252-57-168-194:https   ESTABLISHED
+ TCP    172.17.25.197:52388    252-57-168-194:https   ESTABLISHED
+ ```
+### Output Meaning
+You should be able to see from the examples above that the outputs on Windows and Linux are very similar.
+Here are the meanings of the different headings shown:
+#### Proto
+This is the type of protocol being used for the connection on that row.
+#### Local Address
+This is the network interface and port being used on the local machine.
+`127.0.0.1` will mean that its an internal connection being made (within the same machine).
+If its a private IP address there then that will likely mean that the connection is being made from outside of the local machine, whether its on the internet or just communicating with another device on the same network.
+#### Foreign Address
+This is where the connection is coming from.
+From this property you can determine whether the connection is contained on the same machine or coming from somewhere else.
+#### State
+The current state of the connection.
