@@ -27,7 +27,7 @@
 In computing, netstat is a command-line network utility that displays network connections for Transmission Control Protocol, routing tables, a number of network interfaces, and network protocol statistics.
 
 Netstat is usually installed on most operating systems, including: Windows, Mac and many popular Linux distributions.
-One thing to take into consideration when using netstat is that the options differ depending on which operating system you are using.
+One thing to take into consideration when using netstat is that the options will differ depending on which operating system you are using.
 
 ## Use Cases
 The netstat tool can be used for the following:
@@ -35,6 +35,7 @@ The netstat tool can be used for the following:
 - Finding what application is using a certain port
 - Measuring network performance
 - Showing current connections to the machine
+
 ## Example Outputs
 ### Linux
 After running a `netstat` command on Linux, you should see an output of the connections to your machine:
