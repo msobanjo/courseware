@@ -24,20 +24,20 @@
 
 <!--TOC_END-->
 ## Overview
-In computing, netstat is a command-line network utility that displays network connections for Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics.
+In computing, netstat is a command-line network utility that displays network connections for Transmission Control Protocol, routing tables, a number of network interfaces, and network protocol statistics.
 
-Netstat is usually installed on most operating systems including Windows, Mac and many popular Linux distributions.
-One thing to take into consideration when using netstat is that the options are different depending on which operating system you are using.
+Netstat is usually installed on most operating systems, including: Windows, Mac and many popular Linux distributions.
+One thing to take into consideration when using netstat is that the options differ depending on which operating system you are using.
 
 ## Use Cases
 The netstat tool can be used for the following:
 - Finding issues in a network
-- Find what application is using a certain port
-- Measure network performance
-- Show current connections to the machine
+- Finding what application is using a certain port
+- Measuring network performance
+- Showing current connections to the machine
 ## Example Outputs
 ### Linux
-After running a `netstat` command on Linux you should then see an output of the connections to your machine similar to below:
+After running a `netstat` command on Linux, you should see an output of the connections to your machine:
 ```text
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
 tcp        0      0 work-laptop:46098       ec2-3-9-202-151.e:https ESTABLISHED
@@ -62,7 +62,7 @@ tcp        0      0 work-laptop:46112       ec2-3-9-202-151.e:https ESTABLISHED
 tcp        0      0 work-laptop:44858       ec2-52-215-192-13:https ESTABLISHED
 ```
 ### Windows
-When running `netstat` on Windows you should then see an output similar to below:
+When running `netstat` on Windows, you should see an output similar to the one below:
 ```text
 Proto  Local Address          Foreign Address        State
  TCP    127.0.0.1:5939         DESKTOP-VJCN58E:50244  ESTABLISHED
@@ -89,33 +89,33 @@ Proto  Local Address          Foreign Address        State
  TCP    172.17.25.197:52388    252-57-168-194:https   ESTABLISHED
  ```
 ### Output Meaning
-You should be able to see from the examples above that the outputs on Windows and Linux are very similar.
+You should be able to see, from the examples above, that the outputs on Windows and Linux are very similar.
 Here are the meanings of the different headings shown:
 #### Proto
 This is the type of protocol being used for the connection on that row.
 #### Local Address
 This is the network interface and port being used on the local machine.
-`127.0.0.1` will mean that its an internal connection being made (within the same machine).
-If its a private IP address there then that will likely mean that the connection is being made from outside of the local machine, whether its on the internet or just communicating with another device on the same network.
+`127.0.0.1` will mean that it's an internal connection being made (within the same machine).
+If it's a private IP address, that will likely mean that the connection is being made from outside of the local machine, whether it's on the internet or just communicating with another device on the same network.
 #### Foreign Address
 This is where the connection is coming from.
-From this property you can determine whether the connection is contained on the same machine or coming from somewhere else.
+From this property, you can determine whether the connection is contained on the same machine or coming from somewhere else.
 #### State
-The state tells in which state the listed sockets are.
+The state tells us which state the listed sockets are in.
 The TCP protocol defines states, including “LISTEN” (wait for some external computer to contact us) and “ESTABLISHED” (ready for communication).
 The stranger among these is the “CLOSE WAIT” state.
 This means that the foreign or remote machine has already closed the connection, but that the local program somehow hasn’t followed suit.
 #### Recv-Q & Send-Q
 These are properties found on the Linux output.
 These tell us how much data is in the queue for that socket, waiting to be read (Recv-Q) or sent (Send-Q).
-In short: if this is 0, everything’s ok, if there are non-zero values anywhere, there may be trouble.
+In short: if this is 0, everything’s okay, but if there are non-zero values anywhere, there may be trouble.
 
 ## Tasks
-Check that netstat is working correctly by opening a command prompt on Windows or a terminal on Linux and run the following command:
+Check that netstat is working correctly by opening a command prompt on Windows, or a terminal on Linux, and running the following command:
 ```bash
 netstat
 ```
 Try using `netstat --help` to find out:
-- Which option can be used to show the process ID (PID) of the applications using the sockets.
+- Which option can be used to show the process ID (PID) of the applications using the sockets
 - Which option can be used to show only TCP sockets
-- Which option can be used to show the systems route table
+- Which option can be used to show the system's route table
