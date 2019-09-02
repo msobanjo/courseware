@@ -7,7 +7,7 @@
             "answer": "Displaying network connections for Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics",
             "choices": [
                 "Provide information about the currently running processes, including their process identification numbers (PIDs)",
-                "Allowing you to run programs with the security privileges of another user",
+                "Allowing you to run programs with the security privileges of another user"
             ]
         }
     ]
