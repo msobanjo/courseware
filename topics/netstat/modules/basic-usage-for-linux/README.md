@@ -15,7 +15,8 @@
 The netstat tool is very important for Linux network administrators as well as system administrators to monitor and troubleshoot their network related problems and determine network traffic performance.
 ## Options on Linux
 |Short and Long Options|Description|
-|----------|--------------| |-a, --all|Displays all active connections and the TCP and UDP ports on which the computer is listening|
+|----------|--------------|
+|-a, --all|Displays all active connections and the TCP and UDP ports on which the computer is listening|
 |-c, --continuous|Continuous listening|
 |-h, --help|Show the available options that can be used|
 |-l, --listening|Display listening server socket|
