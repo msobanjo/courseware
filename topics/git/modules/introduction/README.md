@@ -11,7 +11,6 @@
 		- [Debian/Ubuntu](#debianubuntu)
 	- [Mac OS X](#mac-os-x)
 		- [DMG File](#dmg-file)
-- [Modules](#modules)
 
 <!--TOC_END-->
 ## Overview
