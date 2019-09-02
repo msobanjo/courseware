@@ -12,5 +12,5 @@ The netstat tool typically comes preinstalled on Windows, Linux  and MacOS.
 <!--MODULES_START-->
 ## Modules
 - [Basic Usage for Windows](./modules/basic-usage-for-windows)
-- [Netstat Introduction](./modules/introduction)
+- [Introduction](./modules/introduction)
 <!--MODULES_END-->
