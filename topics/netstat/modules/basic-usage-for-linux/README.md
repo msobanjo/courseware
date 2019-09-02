@@ -10,6 +10,10 @@ The netstat tool is very important for Linux network administrators as well as s
 ## Options on Linux
 |Option|Description|
 |---|--------------|
-|-a |Displays all active connections and the TCP and UDP ports on which the computer is listening|
-|-b |Displays the binary (executable) program's name involved in creating each connection or listening port|
-|-V,--version|Display the version of netstat that's installed|
+|-a, --all|Displays all active connections and the TCP and UDP ports on which the computer is listening|
+|-c, --continuous|Continuous listening|
+|-h, --help|Show the available options that can be used|
+|-n, --numeric|Displays active TCP connections, however, addresses and port numbers are expressed numerically and no attempt is made to determine names|
+|-p, --programs|Display PID/Program name for sockets; this is great for finding what applications are taking up the ports you are trying to use |
+|-v, --verbose|Show more information and statistics|
+|-V, --version|Display the version of netstat that's installed|
