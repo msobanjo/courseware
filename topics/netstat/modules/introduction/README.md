@@ -19,6 +19,8 @@
 - [Overview](#overview)
 - [Use Cases](#use-cases)
 - [Tasks](#tasks)
+	- [Linux](#linux)
+	- [Windows](#windows)
 
 <!--TOC_END-->
 ## Overview
