@@ -41,6 +41,11 @@ def get_props(module):
     props["readme"] = module + "/README.md"
     props["overview"] = get_overview(contents)
     props["name"] = get_title(contents)
+    reference = ""
+    for i, segment in enumerate(module.split("/")):
+        if i % 2 != 0:
+            reference = reference + "/" + segment
+    props["reference"] = reference[1:]
     return props
 
 def get_all_modules_for_topic(topic):
@@ -51,6 +56,14 @@ def get_all_modules_for_topic(topic):
     for module in module_paths:
         modules.append(get_props("./" + module))
     return modules
+
+def get_all_modules():
+    items = Path("./topics").glob("*/modules/*")
+    paths  = filter(lambda item: os.path.isdir(item), items)
+    paths = map(lambda path: str(path), paths)
+    modules = []
+    for path in paths:
+        print(get_props(path))
 
 def get_all_topics():
     items = list(Path("./topics").glob("*"))
