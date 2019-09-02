@@ -1,6 +1,6 @@
 <!--PROPS
 {
-    "estTime": 5,
+    "estTime": 15,
     "questions": [
         {
             "value": "What is the Netstat command used for?",
