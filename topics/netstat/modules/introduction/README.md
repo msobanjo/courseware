@@ -18,7 +18,7 @@
 ### Contents
 - [Overview](#overview)
 - [Use Cases](#use-cases)
-- [Tasks](#tasks)
+- [Example Outputs](#example-outputs)
 	- [Linux](#linux)
 	- [Windows](#windows)
 
@@ -119,4 +119,3 @@ Try using `netstat --help` to find out:
 - Which option can be used to show the process ID (PID) of the applications using the sockets.
 - Which option can be used to show only TCP sockets
 - Which option can be used to show the systems route table
-
