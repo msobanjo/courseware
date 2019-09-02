@@ -3,6 +3,12 @@
 ### Contents
 - [Overview](#overview)
 - [Options on Linux](#options-on-linux)
+- [Tasks](#tasks)
+	- [Install NGINX for Your Operating System](#install-nginx-for-your-operating-system)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+	- [Identify the Process ID of the Application Using a Port Number](#identify-the-process-id-of-the-application-using-a-port-number)
+	- [Clean Up](#clean-up)
 
 <!--TOC_END-->
 ## Overview
