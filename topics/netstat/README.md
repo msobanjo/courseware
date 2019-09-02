@@ -11,6 +11,7 @@ In computing, netstat (network statistics) is a command-line network utility tha
 The netstat tool typically comes preinstalled on Windows, Linux  and MacOS.
 <!--MODULES_START-->
 ## Modules
+- [Netstat - Basic Usage for Linux](./modules/basic-usage-for-linux)
 - [Basic Usage for Windows](./modules/basic-usage-for-windows)
 - [Netstat Introduction](./modules/introduction)
 <!--MODULES_END-->
