@@ -15,3 +15,5 @@ Markdown is a way to write content for the web.
 netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.
 ## Networking [&xrarr;](./networking)
 A computer network is a digital telecommunications network which allows nodes to share resources.
+## netstat [&xrarr;](./netstat)
+In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables, and a number of network interface (network interface controller or software-defined network interface) and network protocol statistics.
