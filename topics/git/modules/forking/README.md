@@ -40,7 +40,6 @@ you can then fork the project and add any additional functionality and it will b
 
 You will now for a remote repository, set up upstream to get updates from the original and propose a change to the owner
 
-1. Ask your trainer to create a repository with some files on it
 3. Make sure you're logged in to your github account
 2. Click on "Fork" at the top right of this page for the `notes` project, this will then create a copy of the repository under your account <br />
 ![Fork >](https://imgur.com/X0bNG7K.png)
