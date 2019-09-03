@@ -2,6 +2,7 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
+- [Options on Windows](#options-on-windows)
 
 <!--TOC_END-->
 ## Overview
