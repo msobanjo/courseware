@@ -43,7 +43,7 @@ You will now for a remote repository, set up upstream to get updates from the or
 1. Ask your trainer to create a repository with some files on it
 2. Navigate to the repository your trainer created
 3. Make sure you're logged in to your github account
-4. Click on "Fork", this will then create a copy of the repository under your account <br />
+2. Click on "Fork" at the top right of this page for the `notes` project, this will then create a copy of the repository under your account <br />
 ![Fork >](https://imgur.com/X0bNG7K.png)
 5. You will be redirected to your accounts version of the repository
 6. Click on the green button "Clone or download" and copy the URL <br />
