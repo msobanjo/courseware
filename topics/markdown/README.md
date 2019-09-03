@@ -9,7 +9,7 @@
 
 <!--TOC_END-->
 ## Overview
-Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symboles (such as `*` and `#`).
+Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symbols (such as `*` and `#`).
 
 Unlike cumbersome word processing applications, text written in Markdown can be easily shared between computers, mobile phones, and people. It’s quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub and reddit use Markdown to style their comments.
 
