@@ -34,7 +34,8 @@ If a project is under public license that allows you to freely use it, you could
 your own take on the project. In a scenario where you find a web application that you like, it's under the public license
 you can then fork the project and add any additional functionality and it will be yours to freely use or distribute.
 
-## Forking a repository
+## Tasks
+### Forking a repository
 
 You will now for a remote repository, set up upstream to get updates from the original and propose a change to the owner
 
@@ -53,7 +54,7 @@ You will now for a remote repository, set up upstream to get updates from the or
 similar output for `fetch` and `push` but the URL will be pointing to your repository <br />
 ![Fork >](https://imgur.com/FOASYQ2.png)
 
-## Updating forked repository from original
+### Updating forked repository from original
 
 Now you will set up your local project to receive updates from the original repository. This is required so that when
 the owner of the original repository add new functionality, bug fixes etc. you would have the ability to get them as well.
