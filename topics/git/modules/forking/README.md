@@ -1,5 +1,15 @@
 # Forking
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Proposing a change](#proposing-a-change)
+- [Your idea](#your-idea)
+- [Forking a repository](#forking-a-repository)
+- [Updating forked repository from original](#updating-forked-repository-from-original)
+- [Summary](#summary)
+
+<!--TOC_END-->
 # Overview
 
 In layman terms forking is creating a copy of an existing repository under your account. 
