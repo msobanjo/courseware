@@ -1,28 +1,16 @@
 {
     "topics": [
         {
-            "path": "./topics/jenkins",
-            "readme": "./topics/jenkins/README.md",
-            "overview": "Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.",
-            "name": "Jenkins"
+            "path": "./topics/netcat",
+            "readme": "./topics/netcat/README.md",
+            "overview": "netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.",
+            "name": "netcat"
         },
         {
             "path": "./topics/aws",
             "readme": "./topics/aws/README.md",
             "overview": "Amazon Web Services (AWS) is the world\u2019s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally. Millions of customers \u2014including the fastest-growing startups, largest enterprises, and leading government agencies\u2014trust AWS to power their infrastructure, become more agile, and lower costs.",
             "name": "Amazon Web Services (AWS)"
-        },
-        {
-            "path": "./topics/git",
-            "readme": "./topics/git/README.md",
-            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
-            "name": "Git"
-        },
-        {
-            "path": "./topics/markdown",
-            "readme": "./topics/markdown/README.md",
-            "overview": "Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symboles (such as `*` and `#`).",
-            "name": "Markdown"
         },
         {
             "path": "./topics/groovy",
@@ -37,49 +25,53 @@
             "name": "Networking"
         },
         {
+            "path": "./topics/jenkins",
+            "readme": "./topics/jenkins/README.md",
+            "overview": "Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.",
+            "name": "Jenkins"
+        },
+        {
             "path": "./topics/linux",
             "readme": "./topics/linux/README.md",
             "overview": "The Linux open-source operating system, or Linux OS, is a freely distributable, cross-platform operating system, based on Unix. It can be installed on PCs, laptops, netbooks, mobile and tablet devices, video game consoles, servers, supercomputers and more.",
             "name": "Linux"
         },
         {
-            "path": "./topics/netcat",
-            "readme": "./topics/netcat/README.md",
-            "overview": "netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP.",
-            "name": "netcat"
+            "path": "./topics/netstat",
+            "readme": "./topics/netstat/README.md",
+            "overview": "In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables, a number of network interfaces (network interface controller or software-defined network interface), and network protocol statistics.",
+            "name": "Netstat"
+        },
+        {
+            "path": "./topics/git",
+            "readme": "./topics/git/README.md",
+            "overview": "Git is a distributed version-control system for tracking changes in source code during software development.",
+            "name": "Git"
+        },
+        {
+            "path": "./topics/markdown",
+            "readme": "./topics/markdown/README.md",
+            "overview": "Markdown is a way to write content for the web. It's written in what people call 'plaintext'; this is just the regular alphabet, with a few symbols (such as `*` and `#`).",
+            "name": "Markdown"
         }
     ],
     "modules": [
         {
-            "path": "./topics/jenkins/modules/freestyle-project",
-            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
-            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
-            "name": "Freestyle Project"
-        },
-        {
-            "path": "./topics/jenkins/modules/web-setup",
-            "readme": "./topics/jenkins/modules/web-setup/README.md",
-            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
-            "name": "Jenkins Setup from the Portal"
-        },
-        {
-            "path": "./topics/jenkins/modules/jobs",
-            "readme": "./topics/jenkins/modules/jobs/README.md",
-            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
-            "name": "Jobs"
-        },
-        {
-            "prereqs": [
-                "jenkins/web-setup",
-                "jenkins/jobs",
-                "jenkins/freestyle-project",
-                "linux/systemd",
-                "linux/sudo"
+            "estTime": 10,
+            "questions": [
+                {
+                    "value": "What can port scanning be used for?",
+                    "answer": "Finding out what ports are available on a host.",
+                    "choices": [
+                        "Load testing.",
+                        "Monitoring TCP traffic going through the given ports."
+                    ]
+                }
             ],
-            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
-            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
-            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
-            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
+            "path": "./topics/netcat/modules/port-scanning",
+            "readme": "./topics/netcat/modules/port-scanning/README.md",
+            "overview": "Port scanning is a technique used for finding out which ports have an application running on them, making them accessible.",
+            "name": "Port Scanning with netcat"
         },
         {
             "path": "./topics/aws/modules/ec2",
@@ -94,47 +86,10 @@
             "name": "Virtual Private Cloud (VPC)"
         },
         {
-            "path": "./topics/git/modules/reverting",
-            "readme": "./topics/git/modules/reverting/README.md",
-            "overview": "",
-            "name": "Reverting"
-        },
-        {
-            "path": "./topics/git/modules/forking",
-            "readme": "./topics/git/modules/forking/README.md",
-            "overview": "",
-            "name": "Forking"
-        },
-        {
-            "name": "Basics",
-            "est_time": 15,
-            "path": "./topics/git/modules/basics",
-            "readme": "./topics/git/modules/basics/README.md",
-            "overview": ""
-        },
-        {
-            "path": "./topics/git/modules/branching",
-            "readme": "./topics/git/modules/branching/README.md",
-            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
-            "name": "Branching"
-        },
-        {
-            "path": "./topics/markdown/modules/links_images",
-            "readme": "./topics/markdown/modules/links_images/README.md",
-            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
-            "name": "Links and Images"
-        },
-        {
-            "path": "./topics/markdown/modules/advanced",
-            "readme": "./topics/markdown/modules/advanced/README.md",
-            "overview": "This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!",
-            "name": "Advanced"
-        },
-        {
-            "path": "./topics/markdown/modules/basics",
-            "readme": "./topics/markdown/modules/basics/README.md",
-            "overview": "",
-            "name": "Basics"
+            "path": "./topics/groovy/modules/closures",
+            "readme": "./topics/groovy/modules/closures/README.md",
+            "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
+            "name": "Closures"
         },
         {
             "path": "./topics/groovy/modules/variables",
@@ -153,12 +108,6 @@
             "readme": "./topics/groovy/modules/syntax/README.md",
             "overview": "This document aims to cover the basics of the Groovy programming language's syntax.",
             "name": "Syntax"
-        },
-        {
-            "path": "./topics/groovy/modules/closures",
-            "readme": "./topics/groovy/modules/closures/README.md",
-            "overview": "A closure in Groovy is an open, anonymous, block of code that can take arguments, return a value and be assigned to a variable.  A closure may reference variables declared in its surrounding scope.  In opposition to the formal definition of a closure, a closure in the Groovy language can also contain free variables that are defined outside of its surrounding scope.",
-            "name": "Closures"
         },
         {
             "estTime": 30,
@@ -184,10 +133,35 @@
             "name": "MAC Address"
         },
         {
-            "path": "./topics/linux/modules/managing-systemd-services",
-            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
-            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
-            "name": "Managing systemd Services"
+            "path": "./topics/jenkins/modules/freestyle-project",
+            "readme": "./topics/jenkins/modules/freestyle-project/README.md",
+            "overview": "Freestyle projects in Jenkins are a type of job you can create for almost any automated task.",
+            "name": "Freestyle Project"
+        },
+        {
+            "path": "./topics/jenkins/modules/jobs",
+            "readme": "./topics/jenkins/modules/jobs/README.md",
+            "overview": "A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.",
+            "name": "Jobs"
+        },
+        {
+            "prereqs": [
+                "jenkins/web-setup",
+                "jenkins/jobs",
+                "jenkins/freestyle-project",
+                "linux/systemd",
+                "linux/sudo"
+            ],
+            "path": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd",
+            "readme": "./topics/jenkins/modules/basic-python-flask-freestyle-project-deployment-with-systemd/README.md",
+            "overview": "Basic deployment of a Python Flask server, using systemd and a Freestyle Project.",
+            "name": "Basic Python Flask Freestyle Project Deployment with systemd"
+        },
+        {
+            "path": "./topics/jenkins/modules/web-setup",
+            "readme": "./topics/jenkins/modules/web-setup/README.md",
+            "overview": "This document aims to guide you through the setup process of Jenkins, through the graphical (web) interface.",
+            "name": "Jenkins Setup from the Portal"
         },
         {
             "prereqs": [
@@ -200,24 +174,90 @@
             "name": "Sudoers"
         },
         {
-            "estTime": 20,
-            "path": "./topics/netcat/modules/port-scanning",
-            "readme": "./topics/netcat/modules/port-scanning/README.md",
-            "overview": "Port Scanning with netcat",
-            "name": "Port Scanning"
+            "path": "./topics/linux/modules/managing-systemd-services",
+            "readme": "./topics/linux/modules/managing-systemd-services/README.md",
+            "overview": "A service, or daemon, is a background application that waits to be used, or carries out essential tasks, rather than being in direct control of an interactive user.",
+            "name": "Managing systemd Services"
+        },
+        {
+            "path": "./topics/netstat/modules/basic-usage-for-linux",
+            "readme": "./topics/netstat/modules/basic-usage-for-linux/README.md",
+            "overview": "The netstat tool is very important for Linux network administrators, as well as system administrators, to monitor and troubleshoot their network related problems and determine network traffic performance.",
+            "name": "Basic Usage for Linux"
+        },
+        {
+            "estTime": 15,
+            "questions": [
+                {
+                    "value": "What is the Netstat command used for?",
+                    "answer": "Displaying network connections for Transmission Control Protocol, routing tables, and a number of network interface and network protocol statistics",
+                    "choices": [
+                        "Provide information about the currently running processes, including their process identification numbers (PIDs)",
+                        "Allowing you to run programs with the security privileges of another user"
+                    ]
+                }
+            ],
+            "path": "./topics/netstat/modules/introduction",
+            "readme": "./topics/netstat/modules/introduction/README.md",
+            "overview": "In computing, netstat is a command-line network utility that displays network connections for Transmission Control Protocol, routing tables, a number of network interfaces, and network protocol statistics.",
+            "name": "Introduction"
+        },
+        {
+            "path": "./topics/netstat/modules/basic-usage-for-windows",
+            "readme": "./topics/netstat/modules/basic-usage-for-windows/README.md",
+            "overview": "Basic Usage for the netstat tool on Windows.",
+            "name": "Basic Usage for Windows"
+        },
+        {
+            "name": "Basics",
+            "est_time": 15,
+            "path": "./topics/git/modules/basics",
+            "readme": "./topics/git/modules/basics/README.md",
+            "overview": ""
+        },
+        {
+            "path": "./topics/git/modules/branching",
+            "readme": "./topics/git/modules/branching/README.md",
+            "overview": "Branching in Git helps us to define workflows that make sure the code that is being delivered is in the best state possible, minimising risks for any errors or crashes.",
+            "name": "Branching"
+        },
+        {
+            "path": "./topics/git/modules/reverting",
+            "readme": "./topics/git/modules/reverting/README.md",
+            "overview": "",
+            "name": "Reverting"
+        },
+        {
+            "path": "./topics/markdown/modules/advanced",
+            "readme": "./topics/markdown/modules/advanced/README.md",
+            "overview": "This topic will go over some of the more advanced Markdown syntax and formatting. There's lots you can do with Markdown, so experiment beyond this brief introduction to it!",
+            "name": "Advanced"
+        },
+        {
+            "path": "./topics/markdown/modules/basics",
+            "readme": "./topics/markdown/modules/basics/README.md",
+            "overview": "",
+            "name": "Basics"
+        },
+        {
+            "path": "./topics/markdown/modules/links_images",
+            "readme": "./topics/markdown/modules/links_images/README.md",
+            "overview": "This module explains how to integrate links and images into your Markdown files. Links and images make your Markdown more interactive and interesting, so it's really useful to learn how to use them.",
+            "name": "Links and Images"
         }
     ],
     "courses": [
         {
             "modules": [
                 "./topics/networking/modules/mac-address",
+                "./topics/netcat",
                 "./topics/netcat/modules/port-scanning"
             ],
             "path": "./courses/networking",
             "readme": "./courses/networking/README.md",
             "overview": "This course discusses how computer networks operate.",
             "name": "Networking",
-            "estTime": 50
+            "estTime": 40
         }
     ]
 }
