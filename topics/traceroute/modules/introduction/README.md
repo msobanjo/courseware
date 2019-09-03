@@ -46,11 +46,13 @@ traceroute to google.com (172.217.169.78), 30 hops max, 60 byte packets
 ```
 ### Output Meaning
 Below is a table showing the meaning of the different columns of the `traceroute` commands output.
-The data in the table is taken from the 1st hop of the example above.
+The data in the table is taken from the 1st 3 hops of the example above.
 
 | Hop Number | Name & IP Address | RTT1 | RTT2 | RTT3 |
 |------------|-------------------|------|------|------|
 | 1 | 192.168.0.254 (192.168.0.254) | 3.141 ms | 3.123 ms | 3.129 ms |
+| 2 | 172.16.25.2 (172.16.25.2) | 3.753 ms | 3.750 ms | 3.738 ms |
+| 3 | no-reverse-dns.metronet-uk.com (164.39.75.105) | 6.859 ms | 6.861 ms | 6.857 ms |
 
 #### Hop Number
 This is the first column and is simply the number of the hop along the route. In this case, it is the first hop.
