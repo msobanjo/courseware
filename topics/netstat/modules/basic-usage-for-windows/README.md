@@ -15,6 +15,10 @@
 ### Contents
 - [Overview](#overview)
 - [Options on Windows](#options-on-windows)
+- [Tasks](#tasks)
+	- [Install NGINX on Windows](#install-nginx-on-windows)
+	- [Identify the Application Using a Port Number](#identify-the-application-using-a-port-number)
+	- [Stop the Application](#stop-the-application)
 
 <!--TOC_END-->
 ## Overview
@@ -75,4 +79,3 @@ Now we know the application name, we can use that to kill the application and ga
 ```powershell
 taskkill /IM nginx.exe /F
 ```
-
