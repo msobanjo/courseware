@@ -54,7 +54,7 @@ To start, we need to install an application to do this - NGINX is a simple rever
 ### Install NGINX on Windows
 - Download NGINX `1.16.1` from [here](http://nginx.org/download/nginx-1.16.1.zip) 
 - Extract the `nginx-1.16.1.zip` file
-- Execute `nginx-1.16.1/nginx.exe`
+- Execute `nginx-1.16.1/nginx.exe` - All you have to do is double click the file; don't expect anything to pop up as it runs in the background
 - Check that NGINX is working by navigating to http://localhost in your browser
 ### Identify the Application Using a Port Number
 NGINX runs on port `80`.
@@ -79,6 +79,7 @@ Active Connections
 We can see from this output that there is an application (`nginx.exe`) using port `80` on the machine and it has a PID number of `4436`.
 ### Stop the Application
 Below are two methods of killing the NGINX process; try identifying and killing the nginx process with both.
+Remember to start NGINX again after killing the process the first time.
 #### Using the Process Name
 Now we know the application name, we can use that to kill the application and gain access back to that port.
 ```powershell
