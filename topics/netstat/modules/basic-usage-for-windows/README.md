@@ -10,6 +10,7 @@ Netstat on Windows displays active TCP connections, ports on which the computer 
 ## Options on Windows
 Used without parameters, netstat displays active TCP connections.
 Here are some of the other available options to use with netstat on Windows:
+
 | Option | Description |
 |--------|-------------|
 | -a      | Displays all active TCP connections and the TCP and UDP ports on which the computer is listening |
