@@ -45,16 +45,16 @@ you can then fork the project and add any additional functionality and it will b
 
 You will now for a remote repository, set up upstream to get updates from the original and propose a change to the owner
 
-3. Make sure you're logged in to your github account
+1. Make sure you're logged in to your github account
 2. Click on "Fork" at the top right of this page for the `notes` project, this will then create a copy of the repository under your account <br />
 ![Fork >](https://imgur.com/X0bNG7K.png)
-5. You will be redirected to your accounts version of the repository
-6. Click on the green button "Clone or download" and copy the URL <br />
+3. You will be redirected to your accounts version of the repository
+4. Click on the green button "Clone or download" and copy the URL <br />
 ![Fork >](https://imgur.com/hkzKOvt.png)
-7. Open a Bash terminal in the location you want to clone your project
-8. Run `git clone URL`, replace the URL with the repository URL you copied in the previous step
-9. Change directory to the project you just cloned
-10. Run the following command to see that you have cloned the correct repository: `git remote -v`. You should get a 
+5. Open a Bash terminal in the location you want to clone your project
+6. Run `git clone URL`, replace the URL with the repository URL you copied in the previous step
+7. Change directory to the project you just cloned
+8. Run the following command to see that you have cloned the correct repository: `git remote -v`. You should get a 
 similar output for `fetch` and `push` but the URL will be pointing to your repository <br />
 ![Fork >](https://imgur.com/FOASYQ2.png)
 
