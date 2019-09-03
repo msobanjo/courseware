@@ -63,7 +63,7 @@ branch. Next you want to execute `git remote -v` to make sure that the upstream 
 You should see similar output to this. 
 ![Fork](https://imgur.com/lqS0EUr.png)
 2. Navigate your browser to the original git repository and copy the repository URL. You can do this by clicking on the
-green button "Clone or download" and copy the URL 
+green button "Clone or download" and copy the URL     
 ![Fork](https://imgur.com/hkzKOvt.png)
 3. In your Bash terminal execute the following command, but replace the URL with the one you just copied
 `git remote add upstream URL` 
