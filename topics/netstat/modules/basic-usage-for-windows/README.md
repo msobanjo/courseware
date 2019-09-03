@@ -72,11 +72,11 @@ This should give you an output which contains the following:
 ```text
 Active Connections
 
-  Proto  Local Address          Foreign Address        State
-  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4436
  [nginx.exe]
 ```
-We can see from this output that there is an application (`nginx.exe`) using port `80` on the machine.
+We can see from this output that there is an application (`nginx.exe`) using port `80` on the machine and it has a PID number of `4436`.
 ### Stop the Application
 Below are two methods of killing the NGINX process; try identifying and killing the nginx process with both.
 #### Using the Process Name
