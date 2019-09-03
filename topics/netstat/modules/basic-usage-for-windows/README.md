@@ -25,6 +25,3 @@ Here are some of the other available options to use with netstat on Windows:
 | `-p` | Shows connections for the protocol specified by Protocol. In this case, the Protocol can be tcp, udp, tcpv6, or udpv6. If this parameter is used with `-s` to display statistics by protocol, Protocol can be tcp, udp, icmp, ip, tcpv6, udpv6, icmpv6, or ipv6. |
 | `-s` | Displays statistics by protocol. By default, statistics are shown for the TCP, UDP, ICMP, and IP protocols. If the IPv6 protocol is installed, statistics are shown for the TCP over IPv6, UDP over IPv6, ICMPv6, and IPv6 protocols. The -p parameter can be used to specify a set of protocols. |
 | `-r` | Displays the contents of the IP routing table. This is equivalent to the `route print` command. |
-
-
-
