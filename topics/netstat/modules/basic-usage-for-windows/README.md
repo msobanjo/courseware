@@ -14,3 +14,4 @@ Here are some of the other available options to use with netstat on Windows:
 | -a      | Displays all active TCP connections and the TCP and UDP ports on which the computer is listening |
 | -e      | 	Displays Ethernet statistics, such as the number of bytes and packets sent and received. This parameter can be combined with `-s.` |
 | -n      | Displays active TCP connections, however, addresses and port numbers are expressed numerically and no attempt is made to determine names. |
+
