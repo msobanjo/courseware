@@ -19,6 +19,8 @@
 	- [Install NGINX on Windows](#install-nginx-on-windows)
 	- [Identify the Application Using a Port Number](#identify-the-application-using-a-port-number)
 	- [Stop the Application](#stop-the-application)
+		- [Using the Process Name](#using-the-process-name)
+		- [Using the Process ID (PID)](#using-the-process-id-pid)
 
 <!--TOC_END-->
 ## Overview
