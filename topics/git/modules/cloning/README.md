@@ -1,5 +1,13 @@
 # Cloning
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+	- [Cloning a repository](#cloning-a-repository)
+- [Tasks](#tasks)
+	- [Task 1](#task-1)
+
+<!--TOC_END-->
 ## Overview
 `git clone` allows the cloning of a repository to a newly created directory. Additionally the command creates remote
 tracking branches for the ones in the repository and checks out the initial branch which is the current active branch.
