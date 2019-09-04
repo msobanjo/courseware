@@ -95,7 +95,7 @@ sudo yum install -y iptables
 Here we'll setup a basic chain for using SSH on a machine.
 Be very careful when following the instructions; **if you are using a remote machine over SSH for this, there is a chance you can block yourself out** if the commands below aren't entered correctly.
 
-In the unlikely case you do get locked out of the machine, you can just restart it to gain access again.
+In the unlikely case you do get locked out of the machine, you can just restart it to gain access again **providing that you have not saved your changes**.
 ### View Current Rules
 Try running `sudo iptables -v -L` to view the current chains and rules in place.
 You should see that there aren't any rules made; a similar output to this:
