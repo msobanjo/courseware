@@ -22,6 +22,11 @@ By executing `git merge issue` would result in adding (E, F, G) changes into mas
 A---B---C---D---H master
 ```
 
+<!--TOC_START-->
+### Contents
+	- [Merge conflicts](#merge-conflicts)
+
+<!--TOC_END-->
 ### Merge conflicts
 Merge conflicts happen when more than one person edited a file and the line numbers that were affected are the same
 . It Can also happen if someone deleted a file another person was working on.
