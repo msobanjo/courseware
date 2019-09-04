@@ -26,6 +26,8 @@
 ## Overview
 Iptables is a command line utility for configuring Linux kernel firewall.
 Iptables is used to inspect, modify, forward, redirect, and/or drop IP packets.
+An IP packet is just a very small fragment of data being transmitted over a network.
+To send a single file over a network it will likely need to be broken down into many packets and sent over the network to be peiced back together on the other end.
 The code for filtering IP packets is already built into the kernel and is organized into a collection of tables, each with a specific purpose. 
 
 When using the `iptables` command you will need to be either prefixing commands with `sudo` or be logged in as the `root` user.
