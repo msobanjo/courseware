@@ -6,6 +6,7 @@
 # Merging
 <!--TOC_START-->
 ### Contents
+- [Overview](#overview)
 	- [Merge conflicts](#merge-conflicts)
 	- [Causing a merge conflict](#causing-a-merge-conflict)
 
