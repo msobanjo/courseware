@@ -68,9 +68,10 @@ You would also have a default policy to `DROP` the packet if none of the conditi
 ----> Packet ----> INPUT (Filter Table Chain) 
                     |
                     TCP Port 22? (INPUT Chain Rule)
-                            |----> True ---> ACCEPT (Target to allow the connection)
-                            |
-                            `----> DROP (Default Policy if no rule conditions are met)
+                    |       |
+                    |       `----> True ---> ACCEPT (Target to allow the connection)
+                    |       
+                    `----> DROP (Default Policy for INPUT Chain)
 ```
 ## Installation
 Iptables actually comes preinstalled on many popular Linux distributions.
