@@ -25,6 +25,7 @@ A---B---C---D---H master
 <!--TOC_START-->
 ### Contents
 	- [Merge conflicts](#merge-conflicts)
+	- [Causing a merge conflict](#causing-a-merge-conflict)
 
 <!--TOC_END-->
 ### Merge conflicts
@@ -47,7 +48,7 @@ You will now go through the steps required to cause a merge conflict.
 6. Add some text like "hello world" to the *hello.txt* file, save and close the file
 7. Now you need to make git track changes for the *hello.txt* file, execute the following command to do this `git add
  hello.txt`
-8. Now you need to create a save point which is known as commit and will have the current state of the *hello.txt file, execute the following command to achieve this `git commit -m "initial commit"` </br>
+8.Now you need to create a save point which is known as commit and will have the current state of the *hello.txt file, execute the following command to achieve this `git commit -m "initial commit"` </br>
 ![Fork >](https://imgur.com/cm8Oky3.png)
 
 Now that you have a repository and a master branch with a file on it the next step is to create a new branch which
