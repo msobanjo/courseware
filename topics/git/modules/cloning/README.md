@@ -41,7 +41,7 @@ checked out. </br>
 
 ## Tasks
 
-### Task 1
+### Cloning a Repository
 
 * Create a new repository
     * Initialise the repository with a README.md file
