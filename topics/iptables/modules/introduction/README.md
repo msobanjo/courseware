@@ -60,6 +60,9 @@ A `target` must also be specified for when these conditions are met which basica
 A Target (also known as a jump) can be a user-defined chain or one that already exists.
 A couple of the built in targets are `ACCEPT`, `DROP`; which are the ones that you will be most likely to use.
 
+For example; to allow an SSH connection to a machine you can add a rule to the `INPUT` chain on the `filter` (default) table that checks if the packet is using TCP port `22`.
+If the condition is met, then send to the packet to the `ACCEPT` target to allow the packet through.
+
 ## Installation
 Iptables actually comes preinstalled on many popular Linux distributions.
 If iptables isn't installed then you can use the following to install it for your operating system:
