@@ -19,3 +19,7 @@ American National Standards Institute (ANSI) | ANSI represents a number of US st
 | International Telecommunications Union (ITU) (previously known as the Comite Consultatif International Telephonique et Telegraphique (CCITT) | The ITU, headquartered in Geneva, Switzerland is an international organization within the United Nations System where governments and the private sector coordinate global telecom networks and services. They are also involved with the allocation of satellite frequencies and orbits. | www.itu.int |
 | Internet Assigned Numbers Authority (IANA) | The global coordination of the DNS Root, IP addressing, and other Internet protocol resources is performed as the Internet Assigned Numbers Authority (IANA) functions. | [iana.org](https://iana.org) |
 | Internet Corporation for Assigned Names and Numbers (ICANN) | The Internet Corporation for Assigned Names and Numbers is a nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation. | [www.icann.org](https://www.icann.org) |
+## Tasks
+Take a look a this YouTube video by Elise Gerich from ICANN explaining IANA functions:
+
+[![The IANA Functions in 180 Seconds](https://img.youtube.com/vi/D__mAX-2sXo/0.jpg)](https://www.youtube.com/watch?v=D__mAX-2sXo)
