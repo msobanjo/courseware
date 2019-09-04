@@ -1,4 +1,20 @@
 # Introduction
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Tracert Output](#tracert-output)
+	- [Example Output](#example-output)
+	- [Output Meaning](#output-meaning)
+		- [Hop Number](#hop-number)
+		- [Name & IP Address](#name--ip-address)
+		- [RTT Columns](#rtt-columns)
+- [Tasks](#tasks)
+	- [Installation](#installation)
+		- [Ubuntu/Debian](#ubuntudebian)
+		- [CentOS/RHEL](#centosrhel)
+	- [Try it Out](#try-it-out)
+
+<!--TOC_END-->
 ## Overview
 In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.
 
@@ -90,4 +106,3 @@ traceroute to google.com (172.217.169.78), 30 hops max, 60 byte packets
 17  172.253.66.101 (172.253.66.101)  10.034 ms 172.253.66.99 (172.253.66.99)  10.873 ms 172.253.66.101 (172.253.66.101)  10.751 ms
 18  lhr48s09-in-f14.1e100.net (172.217.169.78)  9.355 ms  9.113 ms  9.563 ms
 ```
-
