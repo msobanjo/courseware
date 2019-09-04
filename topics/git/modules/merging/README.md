@@ -8,7 +8,12 @@
 ### Contents
 - [Overview](#overview)
 	- [Merge conflicts](#merge-conflicts)
-	- [Causing a merge conflict](#causing-a-merge-conflict)
+- [Tasks](#tasks)
+	- [Handling Merge Conflicts](#handling-merge-conflicts)
+		- [Initialise a Repository for Testing Merge Conflicts](#initialise-a-repository-for-testing-merge-conflicts)
+		- [Create a Branch with a Conflict](#create-a-branch-with-a-conflict)
+		- [Attempt to Merge the New Branch](#attempt-to-merge-the-new-branch)
+		- [Resolving the Conflict](#resolving-the-conflict)
 
 <!--TOC_END-->
 ## Overview
