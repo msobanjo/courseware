@@ -129,6 +129,7 @@ Chain OUTPUT (policy ACCEPT 44 packets, 5184 bytes)
 ```
 ### Default Polices
 It's best practice to have default rules in place to deny all traffic; we can then create rules with a higher priority to allow certain connections.
+Default targets for chains can be specified by using the `-P` option:
 ```bash
 # by default, deny access to all incoming packets
 sudo iptables -P INPUT DROP
