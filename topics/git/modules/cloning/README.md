@@ -26,8 +26,7 @@ In order to clone a repository there are a couple of prerequisites:
 * URL of the repository
 
 To get the URL of the repository you would need to find a repository you would like to have on your machine. Once you 
-you found the repository click on the *Clone or Download* and copy the URL, make sure you copy it with the *.git* 
-ending. </br>
+you found the repository click on the *Clone or Download* and copy the URL. </br>
 ![Fork >](https://imgur.com/hkzKOvt.png)
 ![Fork >](https://imgur.com/hOQZaFu.png)
 
