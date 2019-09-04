@@ -95,4 +95,18 @@ making a change to the file
 >>>>>>> new-branch
 ```
 What is visible is that the first line `hello world` doesn't have a conflict, but there is a conflict between the
- second lines of the *master* and *new-branch* branches.
+ second lines of the *master* and *new-branch* branches version for the second line of the *hello.txt* file.
+8. To resolve the merge conflict there are a couple of steps needed:
+Firstly, decide which second line to keep: `making a bigger change` or `making a change to the file`, similarly you
+ could choose something entirely different.
+Secondly, delete the lines *Git* added to show where the merge conflict is happening `<<<<<<< HEAD
+`, `=======`, `>>>>>>> new-branch`. 
+Let's say you decide to keep the second line that's currently in *master* branch, after cleaning up the file it
+ should look like this.
+```
+hello world
+making a bigger change
+```
+9. Next you need to save the changes made and that can be done by executing two commands: `git add hello.txt` and
+ then `git commit -m "resolved merge conflict"` </br>
+![Fork >](https://imgur.com/IsF5LQK.png)
