@@ -61,4 +61,4 @@ Now that you have a repository and a master branch with a file on it the next st
 hello world
 making a change to the file
 ```
-3. 
+3.
