@@ -3,7 +3,14 @@
     "estTime": 30
 }
 -->
-## Merging
+# Merging
+<!--TOC_START-->
+### Contents
+	- [Merge conflicts](#merge-conflicts)
+	- [Causing a merge conflict](#causing-a-merge-conflict)
+
+<!--TOC_END-->
+## Overview
 Joining two or more branch histories through `git merge` incorporates changes into the current branch. This command is 
 used by `git pull` to incorporate changes from a different repository as well as to merge change from one branch into 
 another.
@@ -21,13 +28,6 @@ By executing `git merge issue` would result in adding (E, F, G) changes into mas
      /         \  
 A---B---C---D---H master
 ```
-
-<!--TOC_START-->
-### Contents
-	- [Merge conflicts](#merge-conflicts)
-	- [Causing a merge conflict](#causing-a-merge-conflict)
-
-<!--TOC_END-->
 ### Merge conflicts
 Merge conflicts happen when more than one person edited a file and the line numbers that were affected are the same
 . It Can also happen if someone deleted a file another person was working on.
