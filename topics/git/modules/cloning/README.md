@@ -10,7 +10,7 @@
 - [Overview](#overview)
 	- [Cloning a repository](#cloning-a-repository)
 - [Tasks](#tasks)
-	- [Task 1](#task-1)
+	- [Cloning a Repository](#cloning-a-repository-1)
 
 <!--TOC_END-->
 ## Overview
