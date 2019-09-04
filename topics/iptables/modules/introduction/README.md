@@ -1,3 +1,8 @@
+<!--PROPS
+{
+    "estTime": 25
+}
+-->
 # Introduction
 <!--TOC_START-->
 ### Contents
