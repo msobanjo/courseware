@@ -35,7 +35,7 @@ Open a terminal and navigate to the directory where you want to have the project
 *projects* or use and existing one. In the example below, a new directory is created. </br>
 ![Fork >](https://imgur.com/3b4KMCR.png)
 
-After the cloning has been completed, change directory and run `git branch` to check that the active branch has been 
+After the cloning has been completed, change to the project directory and run `git branch` to check that the active branch has been 
 checked out. </br>
 ![Fork >](https://imgur.com/UEAW1EN.png)
 
