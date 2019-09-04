@@ -67,13 +67,13 @@ This column has the IP address of the router. If it is available, the domain nam
 #### RTT Columns
 The three `RTT` columns display the round trip time (RTT) for your packet to reach that point and return to your computer.
 This is listed in milliseconds.
-There are three columns because the traceroute sends three separate signal packets.
+There are three columns because the tracert sends three separate signal packets.
 This is to display consistency, or a lack thereof, in the route
 ## Tasks
 ### Try it Out
 Lets see what hops are made just by making a request to `google.com`:
 ```bash
-traceroute google.com
+tracert google.com
 ```
 You should see an output similar to this:
 ```text
