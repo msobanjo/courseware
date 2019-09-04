@@ -14,9 +14,6 @@
 		- [Name & IP Address](#name--ip-address)
 		- [RTT Columns](#rtt-columns)
 - [Tasks](#tasks)
-	- [Installation](#installation)
-		- [Ubuntu/Debian](#ubuntudebian)
-		- [CentOS/RHEL](#centosrhel)
 	- [Try it Out](#try-it-out)
 
 <!--TOC_END-->
