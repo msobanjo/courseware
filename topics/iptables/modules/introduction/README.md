@@ -63,7 +63,17 @@ A couple of the built in targets are `ACCEPT`, `DROP`; which are the ones that y
 
 For example; to allow an SSH connection to a machine you can add a rule to the `INPUT` chain on the `filter` (default) table that checks if the packet is using TCP port `22`.
 If the condition is met, then send to the packet to the `ACCEPT` target to allow the packet through.
-
+You would also have a default policy to `DROP` the packet if none of the conditions are met.
+```text
+                    ,----> DROP
+                    |
+----> Packet ----> INPUT (Filter Table Chain) 
+                    |
+                    TCP Port 22? (INPUT Chain Rule)
+                            |----> True ---> ACCEPT (Target to allow the connection)
+                            |
+                            `----> DROP (Default Policy if no rule conditions are met)
+```
 ## Installation
 Iptables actually comes preinstalled on many popular Linux distributions.
 If iptables isn't installed then you can use the following to install it for your operating system:
