@@ -65,8 +65,6 @@ For example; to allow an SSH connection to a machine you can add a rule to the `
 If the condition is met, then send to the packet to the `ACCEPT` target to allow the packet through.
 You would also have a default policy to `DROP` the packet if none of the conditions are met.
 ```text
-                    ,----> DROP
-                    |
 ----> Packet ----> INPUT (Filter Table Chain) 
                     |
                     TCP Port 22? (INPUT Chain Rule)
