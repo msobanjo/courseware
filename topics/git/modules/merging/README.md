@@ -31,8 +31,17 @@ This conflict only affects the person doing the merge, the rest of the team woul
 If the merge conflict happens, *Git* will automatically halt the merge process and mark the file or files that are
  being conflicted, it is then up to the developer to resolve them.
  
- ### Causing a merge conflict
- 
-   
+### Causing a merge conflict
+You will now go through the steps required to cause a merge conflict.
+
+1. Open a terminal
+2. Create a new directory by executing `mkdir git-merge-conflict`
+3. Change directory by executing `cd git-merge-test`
+4. Initialise this directory as a git repository by executing `git init .`
+5. Create a new text file *hello.txt* in the directory
+6. Add some text like "hello world" to the *hello.txt* file, save and close the file
+7. Now you need to make git track changes for the *hello.txt* file, execute the following command to do this `git add
+ hello.txt`
+8. 
 
 
