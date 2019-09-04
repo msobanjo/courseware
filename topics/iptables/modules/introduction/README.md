@@ -5,6 +5,7 @@
 - [Concepts](#concepts)
 	- [Tables](#tables)
 	- [Chains](#chains)
+		- [Filter Table Chains](#filter-table-chains)
 	- [Rules](#rules)
 		- [Targets](#targets)
 - [Installation](#installation)
