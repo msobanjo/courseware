@@ -20,23 +20,41 @@ The code for filtering IP packets is already built into the kernel and is organi
 When using the `iptables` command you will need to be either prefixing commands with `sudo` or be logged in as the `root` user.
 
 ## Concepts
-Here are three main concepts about iptables:
 ### Tables
 By default there are three tables in the kernel that contain sets of rules:
-- The `filter` table is used for packet filtering.
+- The `filter` table is used for packet filtering; this is the table that you will likely be using the most. Think of this table as the default table.
 - The `nat` table is used for address translation.
 - The `mangle` table can be used for special-purpose processing of packets.
 ### Chains
 Series of rules in each table are called a chain.
 A table can have more than one chain.
+#### Filter Table Chains
+The `filter` table has 3 chains: `INPUT`, `FORWARD` and `OUTPUT`.
+The route table is what decides on which chain incoming packets go to.
+Rules can be added to the different chains to `ACCEPT`, `DROP` packets; more on this in the rules section.
+```text
+                                      Kernal
+    ,-----------------------------------------------------------------------,
+    |                                                                       |
+    |                                                                       |
+    |                       ,------> FORWARD -------------------------------->
+    |                       |                                               |
+------> Incoming Packet --> Route?                                          |
+    |                       |                                               |
+    |                       `------> INPUT --- Local Process ---> OUTPUT ---->
+    |                                                                       |
+    |                                                                       |
+    `-----------------------------------------------------------------------`
+```
 ### Rules
 All of the packet filtering is based on rules.
 Rules are conditions which can match packets; all the conditions must be met for the rule to apply.
 Some of the things that a rule will usually match are what network interface the packet arrived on (`eth0` for example), what type of packet it is (`ICMP`, `UDP`, `TCP` for example) and the destination port (`80` or `9000` for example).
 A `target` must also be specified for when these conditions are met which basically decides what is going to happen to the packet.
 #### Targets
-Targets can be a user-defined chain or one that already exists.
-Some of the built in targets are `ACCEPT`, `DROP`, `QUEUE` and `RETURN`; which are the ones that you will be most likely to use.
+A Target (also known as a jump) can be a user-defined chain or one that already exists.
+A couple of the built in targets are `ACCEPT`, `DROP`; which are the ones that you will be most likely to use.
+
 ## Installation
 Iptables actually comes preinstalled on many popular Linux distributions.
 If iptables isn't installed then you can use the following to install it for your operating system:
