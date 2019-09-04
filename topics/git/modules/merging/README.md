@@ -25,6 +25,7 @@ A---B---C---D---H master
 <!--TOC_START-->
 ### Contents
 	- [Merge conflicts](#merge-conflicts)
+	- [Causing a merge conflict](#causing-a-merge-conflict)
 
 <!--TOC_END-->
 ### Merge conflicts
@@ -47,6 +48,4 @@ You will now go through the steps required to cause a merge conflict.
 6. Add some text like "hello world" to the *hello.txt* file, save and close the file
 7. Now you need to make git track changes for the *hello.txt* file, execute the following command to do this `git add
  hello.txt`
-8. 
-
-
+8.
