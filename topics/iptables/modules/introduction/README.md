@@ -10,6 +10,11 @@
 - [Installation](#installation)
 	- [Ubuntu/Debian](#ubuntudebian)
 	- [CentOS/RHEL](#centosrhel)
+- [Tasks](#tasks)
+	- [View Current Rules](#view-current-rules)
+- [Allow for SSH Connections](#allow-for-ssh-connections)
+	- [Default Polices](#default-polices)
+	- [Saving](#saving)
 
 <!--TOC_END-->
 ## Overview
