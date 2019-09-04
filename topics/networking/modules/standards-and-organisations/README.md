@@ -6,7 +6,9 @@
 
 <!--TOC_END-->
 ## Overview
-
+The internet, as a collection of worldwide networks, requires policies, procedures, standards and protocols to make it work.
+The Internet Society (ISOC) was founded in 1992 by Vint Cerf and Bob Kahn to promote the open development, evolution and use of the internet for the benefit of all people throughout the world.
+The internet has a unique model of shared global ownership that is dependent upon open standards development and freely accessible processes for technology and policy development. 
 ## Organisations Involved
 | Organisation | Roles & Responsibilities | Website |
 |--------------|--------------------------|---------|
