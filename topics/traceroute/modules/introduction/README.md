@@ -23,6 +23,9 @@
 ## Overview
 In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.
 
+Here's an example of a path for going to `google.co.uk` from a computer in London:
+![Traceroute Map](https://i.imgur.com/cE9UPCB.png)
+
 The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop is a measure of the total time spent to establish the connection.
 Traceroute proceeds unless all (three) sent packets are lost more than twice; then the connection is lost and the route cannot be evaluated.
 ## Traceroute Output
