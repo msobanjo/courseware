@@ -61,4 +61,38 @@ Now that you have a repository and a master branch with a file on it the next st
 hello world
 making a change to the file
 ```
-3. 
+3. Let's make Git keep track of the hello.txt file to which we made the change by executing `git add hello.txt`.Now you
+ need to commit again, but this time with a message that reflects the change made `git commit -m "made a change to
+  hello.txt file"`. The change we made will now try to override the changes in master branch for the text file *hello.txt*.
+4. A change to the text file *hello.txt* is required now before we can cause a merge conflict, let's go back to
+ *master* branch by executing the following command `git checkout master`
+5. Open the text file *hello.txt* and add a new line to it with text like "making a bigger change", your
+ text file on master should now look like this:
+```
+hello world
+making a bigger change
+```
+The *hello.txt* on branch *new-branch* should look like this:
+```
+hello world
+making a change to the file
+```
+Let's commit the change we made to the *hello,.txt* file to the master branch, first execute `git add hello.txt` then
+ execute `git commit -m "modified hello.txt file"`. </br>
+![Fork >](https://imgur.com/y6GoKCn.png) 
+Now what we want is to merge changes from *new-branch* to *master* branch, but can Git figure out which version of
+ the second line to use? The answer is that it can't, this will cause a merge conflict and the developer will be responsible for resolving it.
+6. Let's cause the actual merge conflict by executing the following command `git merge new-branch` you should get
+ output about merge conflict similar to this:</br>
+![Fork >](https://imgur.com/yFzxuUD.png)
+7. Let's take a look at the contents of the *hello.txt* file now, it should look similar to this:
+```
+hello world
+<<<<<<< HEAD
+making a bigger change
+=======
+making a change to the file
+>>>>>>> new-branch
+```
+What is visible is that the first line `hello world` doesn't have a conflict, but there is a conflict between the
+ second lines of the *master* and *new-branch* branches.
