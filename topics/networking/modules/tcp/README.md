@@ -73,11 +73,11 @@ Here is a diagram showing a TCP connection being terminated:
 ## Tasks
 For the task below you will need Wireshark installed.
 
-### Viewing TCP PAckets with Wireshark
+### Viewing TCP Packets with Wireshark
 - We can start by running a scan for a moment until some packets come in.
 - Once there are some packets there you can stop the scan and click on one of the packets which have TCP as the protocol.
 - On the middle window frame, select the `Transmission Control Protocol` drop down
 
-You should now be able to see information about the TCP packetl; see how many of the properties shown in TCP Header diagram you can find here:
+You should now be able to see information about the TCP packets; see how many of the properties shown in TCP Header diagram you can find here:
 
 ![TCP Header](https://lh3.googleusercontent.com/no-MmNGJTMlWVjNTEIyLmBatitBWBXCki0IZaqfJT_gl0NnCJwVByUc5YIPJ6BIPt-HDNQb2cbi5OfNdijVBQkHdQ0FqWrUSRvneMl3bHfi7cq7oVyPTHaTfz_Dz5q65RhFQRESPT0LA6WYLMnpMWErNgtWfLzWzIXSssal6fmCOmwf30dNTCTrs1PKiDkuZT4fxgl2cHIp5vwUAV3WsCRpuiMZ-uB-o1v9UArp2Gpt6W9i0rviT4WDZxopN2kiJu1crn7Ha6dFkQr0E0vgfP4xSiX1naMwPkC6fFr8Ck58Dr3zwvMz6NPl6F3vRfFR04jDGatILzDOO6Z56ExTLKf5eUjNx-FvZUIAqnP3Jo5GSypMz1gqq9p_5r14wYC-ATIlZSOJNrXErkH_cAo1oZYq5E02ah-kZu6wg_XBGmt8zM49YRYrQRkOo37oNrD8fx3Egk41qWyQcx639ebPfA8Yn-r_0R8GlCAGdu_JwWajO1KCn8UwFjy0DZ39vWbJ4LbIG3jTNi1_MorC_BspWYPBejjRjBpD3StOpQkNFbNN_6lbeFELN8T8_q_nzikoBPDUJRyb-8jtcffzPo0SEG2CqhytSURS7eH3iV9ucASKscJdAi7afadAVmf0kFRxxSe6MMRTc4USDhS1kaz1lD5Oe8bHntJJeJ3LJQsTdRuP1XBbCQWm-WAiBXXZlXIxLVMsNnR1XqKdHrwQhjyQD1RwLDZDEzEcTE7MUPZ7DIdW1A4bn=w1179-h1287-no)
