@@ -32,3 +32,19 @@ CRCs are a part of the Frame Check Sequences (FCS), all frames that are traversi
 FCS can use CRCs to validate the data that has been transmitted, CRCs work in a similar way to checksums; an algorithm generates a number or string of text from a piece of data, this algorithm can then be calculated in calculated again when the frame is received to confirm its integrity.
 
 ![Cyclic Redundancy Check](https://lh3.googleusercontent.com/UaSVzouzhqyIat8pqoGfH_3mHy1-MBV3Fu0Y6xzC1y4yM8yWMgD8FvFgd2952s3ce1D7nGN-jIEuKms1XjwCB8fVQJRLblrZ2V5vdamEFQzU_SRzS90_ObvigD3QpLlFlGJ0kOTMVyb8ZNMpgzdyF5IUKdqaScshibwT8B8Uu2sT_jNiMcS3HhKUq6M0KUZKim4Dk0vtcmASNzP7DtT4zau4X4tk1mZ9CvxTDqQ9x2qsiCFIoMQtlYsCkxNi_qWXQru0de1y4yeeVmK7obeDYm04kKCTJcznPRk3l0gdn9_xWx6FnrRH7Tkss42Vvit98cB_2kPCPY0G6a1DQaDyGcFEyggbw6K7foxdMNFerr5Rfh_YzYCTmjeAr6xmHClWt5f_U2KXgYaBLU2lrApBrGNU57Wm4_5I0bITzkA-dRCOx4bTG9d1kY5hKT6T8UL0ThMXW9YQL3LdwyDv5hAAOCXUhflEqxytwEM0fp6qOEp5xvZL_JdlNe2P8DjuICTLXBZ3RXCIIrqzUKLAAGHfgb_VaGyYy_GviC0534GQdAIdHTZS-QOy252Gpbn8PxSMDWLCxx6ADpldW7--g8_QtunlerwNV4ILXM9tqyXXPVVla5OKGBd-jLEg1Z3JFkK2gts7OegiM-I1uKKxGdR8A3mvgpZZfL0jxPz1azt6sPj1nBpjBvbfZPSFE_2hqjohLm0zL07OipEOpptUxZSyMdlou-kaAS2ERLkLmGBnfCpgGDvd=w1278-h411-no)
+
+## Tasks
+For the task below you will need Wireshark installed.
+### Viewing Frames with Wireshark
+We can start by running a scan for a moment until some packets come in.
+Once there are some packets there you can stop the scan and click on one of the packets.
+
+![Wireshark Frames](https://lh3.googleusercontent.com/dibVkV243q_w-BgH7Iwv4-55mJ--drOww0I1EQct98MR7l8sOH47hYx-LFpMm2Lm79d6Vsb8sBdvawUzSNf4bZPt1A-fk2lLwwhmVBUzPnnZzlv1rWxqUz0EXwrbaGa5-krA_PPBR9v3EIEzMe4TyRQEB4Zq16-C3ma7znaNSpz1sPlwfTrcY05JQ0U9cLFzBiBkCg0NXuBEvLm3kuDyGcO1A996ZfyNHLDK2Ngck6nLvBw5OGqCNuCINQlQUtwaPgwl13DV_zOUG8aSfHJIoUkHmZee8_7hoiH61d_10Lhgh6DjRhDX0SBbmJ2rqe6IMyJUxnzeewI2zWFzWAS2YGV0OW7xttHgBAlQIzrYdZ7vlHHsYje4Qy3Eli3uiwOCL7LMzPJyKhka8bKRTpKhude50RUYfP2Ymx8haT6jsCxZ_21iiNWafe1vqDA1QOBFT8jxXyUP0DgJCftPqBnJMgWJ5MXZ5ff3RaBn6bfz4X0FdRDUBgcwmtc-nvfBy_XtACdwVC_70tg8D6KB_AuxxBATmgBO-pAI_a4bZzLftfNtj9ZnDaXYFQ_SngdQwiwdDasrXCv115cTAxR2stiZBXWG6Yi6t1dRB4BImBuFWOK35xDNaRRJTQbwjc11ZF7ii0stdKlzywmyPLEn9OFmdmCRBwR_S23sbQcmvWqivM8xwf4WVj3AFeJOCzsY_NjcvwzjEYwjj6ycgax7S34Z_EVTywHFtAfEBgGkE571F_RR8bba=w1102-h430-no)
+
+- In the bottom window pane you will see the frame contents
+- In the middle frame is properties about the frame and protocols being used in that frame.
+- The example above show properties for a TCP packet over IPV4
+- You can expand the `Frame` drop down to see frame properties
+    - The CRC is removed by the network interface before being sent to Wireshark, so this wont be visible
+- Under the Ethernet section is information about the source and destination addresses
+
