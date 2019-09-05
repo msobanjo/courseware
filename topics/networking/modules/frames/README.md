@@ -37,6 +37,7 @@ FCS can use CRCs to validate the data that has been transmitted, CRCs work in a 
 
 ## Tasks
 For the task below you will need Wireshark installed.
+If you are unsure what Wireshark is, how to use or install it please have a look at the [Wireshark Introduction Module](/topics/wireshark/modules/introduction)
 ### Viewing Frames with Wireshark
 We can start by running a scan for a moment until some packets come in.
 Once there are some packets there you can stop the scan and click on one of the packets.
@@ -45,7 +46,7 @@ Once there are some packets there you can stop the scan and click on one of the 
 
 - In the bottom window pane you will see the frame contents
 - In the middle frame is properties about the frame and protocols being used in that frame.
-- The example above show properties for a TCP packet over IPV4
+- The example above shows properties for a TCP packet over IPV4
 - You can expand the `Frame` drop down to see frame properties
     - The CRC is removed by the network interface before being sent to Wireshark, so this wont be visible
 - Under the `Ethernet` section is information about the source and destination addresses.
