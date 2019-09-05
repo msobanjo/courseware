@@ -6,6 +6,7 @@
 - [TCP Operations](#tcp-operations)
 	- [Connection Establishment](#connection-establishment)
 	- [Data Transfer](#data-transfer)
+	- [Connection Termination (Graceful Close)](#connection-termination-graceful-close)
 
 <!--TOC_END-->
 ## Overview
@@ -66,5 +67,3 @@ The window size is important for increasing the overall transfer speed of the da
 Here is a diagram showing a TCP connection being terminated:
 
 ![TCP Connection Termination](https://lh3.googleusercontent.com/wxM7JkZo60NgRtrhwDXIsG0d96F-yEa1xwh4GxqxgISBipDc6zPSghRhDE4GHyHzgxGi5usW-GUFLFJsgiTZ3wuK-Yh4yeeZeN4IUmgFAriuLawjkbcTbJ9y0q6BFOFINDQYS3UbyzkA549Yh-SOHBC6ctd70sPJ9IzxQNW0RmdMV-81I1Len-DKE_bDGfEKZoMimHzcRI6xNqX76Xz44AwaITc92QAmWYkWB1kszZ9x8tNTs6ehofCZGxijAdk4PmTBppf1UHkfdHp9EU-778_X79bkQ388adIbE2HMz6DEkFmTALPLtNUPg0VXRXZD60GSKkI-toN_lhn-6iEnEyvaqa376hHqPyPUCdJyYbSQnf6tBfzFDxq0ZAb4GpNbfQw4MItn8sWa5Oxzx9vCNmQKtNA_R7G27T-jvlwMjeXhcTe8mEsfw5_L0FCeLeQ-ZxfdgG79hmtkXdmTqWZ6FTPxBOqaOTnVoWRzVPNt3k-jyXlFGJlugJoSNZ0weQmXAAQJr1_UeLQrORK7vEiLhvlU3qy0JwbFAuMs765QU6widCv-bRhQhJtmJX88ccFLCnXZVXJ0ykUWbgw-WxCwDtIuF1Z9jy6Ow8xPZNqg7auJeGj9daID0UTS1qLFRyNMZt_KlxcPdujPUv4Tracblb3jnVeYI2q2W0L1NMUFErEATBhQ9TrvUBr45a4iIgZqqRbzlB3VKaxUEBITMvHYtxZk4As2auk7DrQmUyfpyBcHI91v=w884-h685-no)
-
-
