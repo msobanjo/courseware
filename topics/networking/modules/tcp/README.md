@@ -66,12 +66,16 @@ The window size is important for increasing the overall transfer speed of the da
 ![TCP Data Transfer](https://lh3.googleusercontent.com/Oz074lzAMSFv68esdoexOJ4eABpFhUSiR3fqn-Scvv1atC3wrQbY_vey6KAnP4z5wImNwhJlX6jQY_PNHD6fpYvPd7RDt-GCVe28JcalbgUFXHcLs_snA6pzDU6s1dkyNtqRjY9ZEGt7hY552o4LITQVd6bTT5jjh7PJ0I_K8021XQPgMoKuX7s7yqCgZ06fnsiiL6iWtVO40bDeQwKpxuZHaX0x6_4jnclo80X-XMOhniiiUctKieP_gNmBCU4i-APcE-uRK7Zy-6POzMUNiFa1dqZ-pXrEsOCGjb4i0_SkU3G6P76_chDtmgU6GTbdR1_nxvgV0F-tB9GtZXdb8Xld7tUjGyZBlUceEo_FKLlFyxqv28DBUjUezjLDndR0_ZbGAtAjlFDWTIYtJmK-MFgwaoU_gtPQ595U_MkAsUQl_FANeuCt_3pEFEYkXBUWFNtT6tI6R9ykgQ-VsS4GfThe9fCrjkCLJtcf2NxlKrv10spQ3XT89Tvhchvy8WWIhiPinkfkyfgeWCvslRHbXkBQm9CkEXDsOQ8vIrO--4YeYtiKMl0rFSz5cvDHvSB1o7jJENQ3hpCG4pA9PKzRt_eOx2YSrkBWvLMeIbLFWaBRkBR9ACaWS20xKkK-H9sEfrHXCl-HLAwzg5yFiKeP5pF3awq-aAuCEIJmfAP5JZDGM06GE1uB7tT4e3fM5PhKZnDZ0un1hdZXnPO_wHiGu8-WVIljd-h31O-vaN9l4sbFdYLu=w911-h1060-no)
 
 ### Connection Termination (Graceful Close)
-Here is a diagram showing a TCP connection being terminated:
+Here is the process for terminating a TCP connection:
+1. The client, or local machine sends a data packet to the remote server with the `FIN` control flag
+2. Once the server recieves the packet the connection is terminated and a `FIN-ACK` packet is sent back to the client
+3. The client server now *acknoledges* the connection termination by sending an `ACK` packet back to the sever
 
 ![TCP Connection Termination](https://lh3.googleusercontent.com/wxM7JkZo60NgRtrhwDXIsG0d96F-yEa1xwh4GxqxgISBipDc6zPSghRhDE4GHyHzgxGi5usW-GUFLFJsgiTZ3wuK-Yh4yeeZeN4IUmgFAriuLawjkbcTbJ9y0q6BFOFINDQYS3UbyzkA549Yh-SOHBC6ctd70sPJ9IzxQNW0RmdMV-81I1Len-DKE_bDGfEKZoMimHzcRI6xNqX76Xz44AwaITc92QAmWYkWB1kszZ9x8tNTs6ehofCZGxijAdk4PmTBppf1UHkfdHp9EU-778_X79bkQ388adIbE2HMz6DEkFmTALPLtNUPg0VXRXZD60GSKkI-toN_lhn-6iEnEyvaqa376hHqPyPUCdJyYbSQnf6tBfzFDxq0ZAb4GpNbfQw4MItn8sWa5Oxzx9vCNmQKtNA_R7G27T-jvlwMjeXhcTe8mEsfw5_L0FCeLeQ-ZxfdgG79hmtkXdmTqWZ6FTPxBOqaOTnVoWRzVPNt3k-jyXlFGJlugJoSNZ0weQmXAAQJr1_UeLQrORK7vEiLhvlU3qy0JwbFAuMs765QU6widCv-bRhQhJtmJX88ccFLCnXZVXJ0ykUWbgw-WxCwDtIuF1Z9jy6Ow8xPZNqg7auJeGj9daID0UTS1qLFRyNMZt_KlxcPdujPUv4Tracblb3jnVeYI2q2W0L1NMUFErEATBhQ9TrvUBr45a4iIgZqqRbzlB3VKaxUEBITMvHYtxZk4As2auk7DrQmUyfpyBcHI91v=w884-h685-no)
 
 ## Tasks
 For the task below you will need Wireshark installed.
+If you are unsure what Wireshark is, how to use or install it please have a look at the Wireshark [Introduction Module](/topics/wireshark/modules/introduction)
 
 ### Viewing TCP Packets with Wireshark
 - We can start by running a scan for a moment until some packets come in.
