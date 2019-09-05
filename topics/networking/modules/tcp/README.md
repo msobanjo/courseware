@@ -50,7 +50,7 @@ The three-way handshake for a TCP connection establishment is as follows:
 
 ### Data Transfer
 Once a TCP connection has been established, data can then be transferred in sequences.
-The three main parts to take in to consideration with TCP data transfers is the sequence number, acknowledgment number and the window size.
+The three main parts to take in to consideration with TCP data transfers is the *sequence number*, *acknowledgment number* and the *window size*.
 The sequence and acknowledgement numbers are essential for both devices on the connection to be able to transfer the data in order and reliably.
 The window size is important for increasing the overall transfer speed of the data, the server will increase the window size as the connection continues so that it does not have to keep replying with acknowledgements as often.
 1. The client and server first connect using the 3-way handshake as shown above.
