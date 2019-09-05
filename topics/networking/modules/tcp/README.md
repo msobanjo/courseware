@@ -28,3 +28,18 @@ This many fields are needed in a TCP header because TCP has quite a few capabili
 11. Optional Data – Optional data for TCP allow more features such as support for special types of acknowledgement and window scaling algorithms
 
 ![TCP Header](https://lh3.googleusercontent.com/o9ex3p3QMp5ONvsl-rZFnJ7g6K0wdI-CdxgT5qj1Zs-H56gPK3x26p4ijnaxaPn0OcLmBl9MUZkgHzsHNCgtW0YxZ8zB8Pn9APiyNnsfB61HlQq8W3Xicx5pOiXzxRAcHBiXFD0YFa56pr9dJAsyWrgV3otXqjtgomSGOt0gmkGAC7eVnAPmX1cH1WyW3p6nn-lY-UR_WMdkMxyRXaRvr3wBRd5VDnTdSHYU48xHZuAAOmeiIc84zccP2r8axDjPuNIvJ56ge5tOIh3gASN1v5_A9c-N5UAAyjPBuBeFe0obju3hbC0U5tTNNrMBQmgt_brDZzOh2yF3RGYH-9K8Bd0nuJi2ufyv9Unb_bF9MdM-hRTNYPIbSOceSziLGOBwGSyrd1nVtnzDVrlIADcYSg9Lvv4EJePZITkUmrXR3QxKLXU_r69UAj_S3nEBpAKi3KddFxDsuDLN-UCbg0mN5LmhRvnx2nCbIeUkYOvyeQbPE36b4b07xcdY3XQaeVqw-BlTEtV3Ix0wQW3HXUyOfFhhBY-JnaHlmOaU0DLjuPf4n1qidj4zY3ZFgyXuYm1zdWRY2QkYUABa4cQow9yLEv3LU__zmbFTA2D_JUoaoeNlR5OSgcDfcDWLlGZ5Xq4msVvNL_knd5FwM1itrZCKc33eIUhBmOgDofoh4PPz-kdTDG1QFvo4__NOCBJGKLBlO4V5ikqg8d1tNVgNSe94nlmtkp_qkJknOVdTAt7n2ZmAO20n=w1084-h628-no)
+
+## TCP Operations
+Connection Establishment
+There is a **three-way handshake** when establishing a new connection with TCP, the control flags are used to communicate which stage the connection establishment is at. There are two control flags used for establishing a new connection:
+- `SYN` – The Synchronisation flag is used in the first request to the remote device, this flag is only ever used in the first packet from the sender and the receiver.
+- `ACK` – The Acknowledgement flag is used for acknowledging when a packet has been received successfully.
+`SYN-ACK` are used together on the **connection accepted** response from the remote machine to inform the initial sender that the first packet has been received.
+The three-way handshake for a TCP connection establishment is as follows:
+1. The client, or local machine sends a data packet to the remote server with the `SYN` control flag
+2. If the packet reaches the remote server (routing and firewalls correctly configured) then the server will respond with a confirmation receipt with the control flags `SYN`/`ACK`.
+3. When the client machine receives the confirmation receipt from the server, it will then respond with an `ACK` packet, upon the server receiving this, a connection is created and the two machines can now communicate.
+
+![TCP Connection Establishment](https://lh3.googleusercontent.com/6SDc57fgBkSq3s_pbKu-bVXXwDzvGLFxsHObJqr84rlwHvtN3aBEWFeQF3cc3ew3-j2YLICS46THZ1_n8nSYvdSLhDchCt52gGYf4lPEDk5aAeEqMAKLZQrDvpEoOUMthJSfpJupMykh2gC_PES_2vUN2f372qzKOADLDULE3i5kx82Vnc34IbxtpzeBwwtVi1s-cU9KZoqjfhRHgClN78wMVufIUHbeS0KssDOVHJWTgtIM2acrlKkSpSBm3Km5C47c71zwkenaNzPALUA1b48lz1sxQ58iYtLb0bpjkFs5arT1_xz0UDgY0vAtpgs1oE_vHykyHJqKLW3SgBLpYXN6aFlfL24-bdHL7vqg8gwSnWcjDnGEs5ro1gXOQwGpeAhs2UfCzDhwUz4ao5e9yDGc4PhZCW4QQSaiYe3sMKrwAIEGA1gLWL_5zQuHLdca6PPNu0MT5NG2CXo0wBHHjG_LnBJP9DYfP_WaxG_jc2AM1r9e1Nq6ls-rxAnF6Mo2YSN9PQsIuf7mBHeCqmY9KllaIwNtHnfnDo6d0tDLdUp4qQROk2p8Efr3eaXnjl7j7TaCLy42gqKIEca2J7r_P6QvCONDHazKxnv54HGKFudlFpgwaFtvszkm44oPs-eVnQqSeDQQr9UfG1g60BNRWBaFMkQoX9726U40RAMdRQlHDMz5rnjuS_YskTwnMBwIdDos4bhWeIZ1jAlMYz3Un-4aECzMWOzqfwdavYTWn1-IX0Gn=w835-h685-no)
+
+
