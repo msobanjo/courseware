@@ -1,4 +1,12 @@
 # Frames
+<!--TOC_START-->
+### Contents
+- [Overiew](#overiew)
+- [Incoming and Outgoing Frames](#incoming-and-outgoing-frames)
+- [Frames Traversing the Network](#frames-traversing-the-network)
+- [Cyclic Redundancy Check (CRC)](#cyclic-redundancy-check-crc)
+
+<!--TOC_END-->
 ## Overiew
 Devices on a network send and receive Packetized Data in discrete chunks called frames.
 Frames can hold a maximum of 1500 bytes, or 12000 bits, while it won’t be necessary to remember this number exactly, it is important to understand that frames cannot hold a lot of data.
@@ -24,4 +32,3 @@ CRCs are a part of the Frame Check Sequences (FCS), all frames that are traversi
 FCS can use CRCs to validate the data that has been transmitted, CRCs work in a similar way to checksums; an algorithm generates a number or string of text from a piece of data, this algorithm can then be calculated in calculated again when the frame is received to confirm its integrity.
 
 ![Cyclic Redundancy Check](https://lh3.googleusercontent.com/UaSVzouzhqyIat8pqoGfH_3mHy1-MBV3Fu0Y6xzC1y4yM8yWMgD8FvFgd2952s3ce1D7nGN-jIEuKms1XjwCB8fVQJRLblrZ2V5vdamEFQzU_SRzS90_ObvigD3QpLlFlGJ0kOTMVyb8ZNMpgzdyF5IUKdqaScshibwT8B8Uu2sT_jNiMcS3HhKUq6M0KUZKim4Dk0vtcmASNzP7DtT4zau4X4tk1mZ9CvxTDqQ9x2qsiCFIoMQtlYsCkxNi_qWXQru0de1y4yeeVmK7obeDYm04kKCTJcznPRk3l0gdn9_xWx6FnrRH7Tkss42Vvit98cB_2kPCPY0G6a1DQaDyGcFEyggbw6K7foxdMNFerr5Rfh_YzYCTmjeAr6xmHClWt5f_U2KXgYaBLU2lrApBrGNU57Wm4_5I0bITzkA-dRCOx4bTG9d1kY5hKT6T8UL0ThMXW9YQL3LdwyDv5hAAOCXUhflEqxytwEM0fp6qOEp5xvZL_JdlNe2P8DjuICTLXBZ3RXCIIrqzUKLAAGHfgb_VaGyYy_GviC0534GQdAIdHTZS-QOy252Gpbn8PxSMDWLCxx6ADpldW7--g8_QtunlerwNV4ILXM9tqyXXPVVla5OKGBd-jLEg1Z3JFkK2gts7OegiM-I1uKKxGdR8A3mvgpZZfL0jxPz1azt6sPj1nBpjBvbfZPSFE_2hqjohLm0zL07OipEOpptUxZSyMdlou-kaAS2ERLkLmGBnfCpgGDvd=w1278-h411-no)
-
