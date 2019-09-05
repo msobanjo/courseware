@@ -83,13 +83,13 @@ Lets now look at packets that have been transmitted over HTTPS and see what diff
 - Stop Wireshark from scanning by clicking the red stop button.
 - Find out the IPV6 address of `example.com` by using `ping`. You can use `ping -n 1 -6 example.com` on Windows and `ping -c 1 -6 example.com` on Linux. The IPV6 address can then be taken from the output, in this case its value is `2606:2800:220:1:248:1893:25c8:1946`:
     ```text
-Pinging example.com [2606:2800:220:1:248:1893:25c8:1946] with 32 bytes of data:
-Reply from 2606:2800:220:1:248:1893:25c8:1946: time=89ms
-
-Ping statistics for 2606:2800:220:1:248:1893:25c8:1946:
-    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 89ms, Maximum = 89ms, Average = 89ms
+    Pinging example.com [2606:2800:220:1:248:1893:25c8:1946] with 32 bytes of data:
+    Reply from 2606:2800:220:1:248:1893:25c8:1946: time=89ms
+    
+    Ping statistics for 2606:2800:220:1:248:1893:25c8:1946:
+        Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+        Minimum = 89ms, Maximum = 89ms, Average = 89ms
     ```
 - Enter `ipv6.addr==2606:2800:220:1:248:1893:25c8:1946` into the display filter on Wireshark, changing `2606:2800:220:1:248:1893:25c8:1946` to the IPV6 address you just got from runnig the `ping` command.
     ![IPV6 Address Display Filter](https://lh3.googleusercontent.com/JwQQm8tcKqO7O9W5XhHUomKQgl59fbQpa5_MtT6d-jklXfGO1Go5uikSU82a5NOIDamYdea_yBsRDSk6CXLyJHevarWOxb2LewhlScB52hBTvh3XykJNzGU9_VDAtCMPChpgovnbqbcZtE-aprfJWZ_vqmW11TJE7bspKRaDcNsyXQ8invnL8VO99WC3sYAX3vYagUBSY7AqB32tjNu_OBgUEkIq9BaPRnVK4heppD0ORpdMQieOK_lHnCmS0wM3rI7tNI4K5PGDIZAK9dlE5i_REbbR1U7_r_mN8fQJ89gUu-JYFMR5rEOWQ81KGOpwKG98If2JMvjO8Kfedu3RCKfZ1F07fehlI19V_zhm47U8LzUI8okSpcfoGb1WWQPsAQNklV9slZuD6qZN4Fvqjc1KliB0LBf0QAZWfGMTyEkqnht73azX4HFVjITt-RDAEbKExyVLVYTylnkKHkDkN72ggCG8ux-mP5G3gNr4GlzhsT1nIO2La7oxZflOKG37MHqvFiXPsvEKwZjX4lVD72iIwygYl9zrgC-rD9stv0RO5T9Zoe1twB6PZ6uKneZcedkr2lBfiapDZhlaRVjaO3FVmha9tGDyTAEntQVOxXaNacC5p5ibfsxavOEMRxLWq3HEd_Cn2NXqXptKnGXCyD8ow1dQrnRMKgHJJ9gqP51fYZm5DQBfs6b2KM5eio__thqSL4pzDiTa4BxZWfi8NAU7hN8TD50bXTCGWYc8AgMSlAxL=w810-h22-no)
