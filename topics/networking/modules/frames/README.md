@@ -48,4 +48,4 @@ Once there are some packets there you can stop the scan and click on one of the 
 - The example above show properties for a TCP packet over IPV4
 - You can expand the `Frame` drop down to see frame properties
     - The CRC is removed by the network interface before being sent to Wireshark, so this wont be visible
-- Under the Ethernet section is information about the source and destination addresses
+- Under the `Ethernet` section is information about the source and destination addresses.
