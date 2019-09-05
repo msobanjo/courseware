@@ -5,6 +5,8 @@
 - [Incoming and Outgoing Frames](#incoming-and-outgoing-frames)
 - [Frames Traversing the Network](#frames-traversing-the-network)
 - [Cyclic Redundancy Check (CRC)](#cyclic-redundancy-check-crc)
+- [Tasks](#tasks)
+	- [Viewing Frames with Wireshark](#viewing-frames-with-wireshark)
 
 <!--TOC_END-->
 ## Overiew
@@ -47,4 +49,3 @@ Once there are some packets there you can stop the scan and click on one of the 
 - You can expand the `Frame` drop down to see frame properties
     - The CRC is removed by the network interface before being sent to Wireshark, so this wont be visible
 - Under the Ethernet section is information about the source and destination addresses
-
