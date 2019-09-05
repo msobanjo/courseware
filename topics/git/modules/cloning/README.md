@@ -14,16 +14,16 @@
 
 <!--TOC_END-->
 ## Overview
-`git clone` allows the cloning of a repository to a newly created directory. Additionally the command creates remote
-tracking branches for the ones in the repository and checks out the initial branch which is the current active branch.
+`git clone` allows the cloning of a repository to a newly created directory. Additionally, the command creates remote
+tracking branches for the ones in the repository and checks out the initial branch (which becomes the current active branch).
 
-Once the cloning is done `git fetch` can be executed without additional arguments to get updates for the remote 
-branches. Similarly a `git pull` without arguments would merge the remote branch into the current branch.
+Once the clone is created, `git fetch` can be executed, without additional arguments, to get updates for the remote 
+branches. Similarly, a `git pull`, without arguments, would merge the remote branch into the current branch.
 
 ### Cloning a repository
-In order to clone a repository there are a couple of prerequisites:
-* Git installed on the machine
-* URL of the repository
+In order to clone a repository, there are a couple of things you need to do first:
+* Install Git on your machine
+* Find the URL of the repository you want to clone
 
 To get the URL of the repository you would need to find a repository you would like to have on your machine. Once you 
 you found the repository click on the *Clone or Download* and copy the URL. </br>
