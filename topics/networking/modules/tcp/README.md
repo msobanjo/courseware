@@ -4,6 +4,8 @@
 - [Overview](#overview)
 - [TCP Header Format](#tcp-header-format)
 - [TCP Operations](#tcp-operations)
+	- [Connection Establishment](#connection-establishment)
+	- [Data Transfer](#data-transfer)
 
 <!--TOC_END-->
 ## Overview
@@ -59,5 +61,3 @@ The window size is important for increasing the overall transfer speed of the da
 9. This pattern of sending, acknowledging and increasing the window size continues until there is a connection termination.
 
 ![TCP Data Transfer](https://lh3.googleusercontent.com/Oz074lzAMSFv68esdoexOJ4eABpFhUSiR3fqn-Scvv1atC3wrQbY_vey6KAnP4z5wImNwhJlX6jQY_PNHD6fpYvPd7RDt-GCVe28JcalbgUFXHcLs_snA6pzDU6s1dkyNtqRjY9ZEGt7hY552o4LITQVd6bTT5jjh7PJ0I_K8021XQPgMoKuX7s7yqCgZ06fnsiiL6iWtVO40bDeQwKpxuZHaX0x6_4jnclo80X-XMOhniiiUctKieP_gNmBCU4i-APcE-uRK7Zy-6POzMUNiFa1dqZ-pXrEsOCGjb4i0_SkU3G6P76_chDtmgU6GTbdR1_nxvgV0F-tB9GtZXdb8Xld7tUjGyZBlUceEo_FKLlFyxqv28DBUjUezjLDndR0_ZbGAtAjlFDWTIYtJmK-MFgwaoU_gtPQ595U_MkAsUQl_FANeuCt_3pEFEYkXBUWFNtT6tI6R9ykgQ-VsS4GfThe9fCrjkCLJtcf2NxlKrv10spQ3XT89Tvhchvy8WWIhiPinkfkyfgeWCvslRHbXkBQm9CkEXDsOQ8vIrO--4YeYtiKMl0rFSz5cvDHvSB1o7jJENQ3hpCG4pA9PKzRt_eOx2YSrkBWvLMeIbLFWaBRkBR9ACaWS20xKkK-H9sEfrHXCl-HLAwzg5yFiKeP5pF3awq-aAuCEIJmfAP5JZDGM06GE1uB7tT4e3fM5PhKZnDZ0un1hdZXnPO_wHiGu8-WVIljd-h31O-vaN9l4sbFdYLu=w911-h1060-no)
-
-
