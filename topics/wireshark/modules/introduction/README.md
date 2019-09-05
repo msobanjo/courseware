@@ -35,7 +35,7 @@ It is used for network troubleshooting, analysis, software and communications pr
 ## Purpose
 - Network administrators use it to troubleshoot network problems
 - Network security engineers use it to examine security problems
-- QA engineers use it to verify network applications
+- Quality Assurance (QA) engineers use it to verify network applications
 - Developers use it to debug protocol implementations
 - People use it to learn network protocol internals
 ## Installation
