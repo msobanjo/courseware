@@ -3,6 +3,7 @@
 ### Contents
 - [Overview](#overview)
 - [TCP Header Format](#tcp-header-format)
+- [TCP Operations](#tcp-operations)
 
 <!--TOC_END-->
 ## Overview
@@ -41,5 +42,3 @@ The three-way handshake for a TCP connection establishment is as follows:
 3. When the client machine receives the confirmation receipt from the server, it will then respond with an `ACK` packet, upon the server receiving this, a connection is created and the two machines can now communicate.
 
 ![TCP Connection Establishment](https://lh3.googleusercontent.com/6SDc57fgBkSq3s_pbKu-bVXXwDzvGLFxsHObJqr84rlwHvtN3aBEWFeQF3cc3ew3-j2YLICS46THZ1_n8nSYvdSLhDchCt52gGYf4lPEDk5aAeEqMAKLZQrDvpEoOUMthJSfpJupMykh2gC_PES_2vUN2f372qzKOADLDULE3i5kx82Vnc34IbxtpzeBwwtVi1s-cU9KZoqjfhRHgClN78wMVufIUHbeS0KssDOVHJWTgtIM2acrlKkSpSBm3Km5C47c71zwkenaNzPALUA1b48lz1sxQ58iYtLb0bpjkFs5arT1_xz0UDgY0vAtpgs1oE_vHykyHJqKLW3SgBLpYXN6aFlfL24-bdHL7vqg8gwSnWcjDnGEs5ro1gXOQwGpeAhs2UfCzDhwUz4ao5e9yDGc4PhZCW4QQSaiYe3sMKrwAIEGA1gLWL_5zQuHLdca6PPNu0MT5NG2CXo0wBHHjG_LnBJP9DYfP_WaxG_jc2AM1r9e1Nq6ls-rxAnF6Mo2YSN9PQsIuf7mBHeCqmY9KllaIwNtHnfnDo6d0tDLdUp4qQROk2p8Efr3eaXnjl7j7TaCLy42gqKIEca2J7r_P6QvCONDHazKxnv54HGKFudlFpgwaFtvszkm44oPs-eVnQqSeDQQr9UfG1g60BNRWBaFMkQoX9726U40RAMdRQlHDMz5rnjuS_YskTwnMBwIdDos4bhWeIZ1jAlMYz3Un-4aECzMWOzqfwdavYTWn1-IX0Gn=w835-h685-no)
-
-
