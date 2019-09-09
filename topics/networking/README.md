@@ -11,5 +11,10 @@ In computer networks, computing devices exchange data with each other using conn
 These data links are established over cable media such as wires or optic cables, or wireless media such as Wi-Fi.
 <!--MODULES_START-->
 ## Modules
+- [Frames](./modules/frames)
 - [MAC Address](./modules/mac-address)
+- [Models](./modules/models)
+- [Standards and Organisations](./modules/standards-and-organisations)
+- [TCP](./modules/tcp)
+- [UDP](./modules/udp)
 <!--MODULES_END-->
