@@ -24,7 +24,7 @@
 
 <!--TOC_END-->
 ## Overview
-In computing, netstat is a command-line network utility that displays network connections for Transmission Control Protocol, routing tables, a number of network interfaces, and network protocol statistics.
+In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables and network protocol statistics, and uses a number of network interfaces (network interface controller or software-defined network interface).
 
 Netstat is usually installed on most operating systems, including: Windows, Mac and many popular Linux distributions.
 One thing to take into consideration when using netstat is that the options will differ depending on which operating system you are using.
