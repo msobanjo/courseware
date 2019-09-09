@@ -84,10 +84,3 @@ by executing the `git merge upstream/master` command. Keep in mind that there ma
  *origin/master* branch. <br />
 ![Fork >](https://imgur.com/OYejtWC.png)
 
-## Summary
-
-In this module you have learned: 
-* What is *forking*
-* What are the use cases for *forking*
-* How to fork a repository
-* How to pull the changes into forked repository from the original repository
