@@ -49,7 +49,7 @@ You will now: fork a remote repository, configure upstream (to get updates from 
 2. Click on "Fork", in the top right of this page, for the `notes` project. This will create a copy of the repository under your account <br />
 ![Fork >](https://imgur.com/X0bNG7K.png)
 3. You will be redirected to your account's version of the repository
-4. Click on the green button "Clone or download" and copy the URL <br />
+4. Click on the green "Clone or download" button, and copy the URL <br />
 ![Fork >](https://imgur.com/hkzKOvt.png)
 5. Open a Bash terminal in the location you want to clone your project
 6. Run the command `git clone [URL]`, but replace [URL] with the repository URL you copied in the previous step

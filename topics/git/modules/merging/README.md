@@ -87,12 +87,12 @@ Let's commit the change we made to the *hello.txt* file to the master branch, by
  `git commit -m "modified hello.txt file"`. </br>
 ![Fork >](https://imgur.com/y6GoKCn.png) 
 #### Attempt to Merge the New Branch
-Now what we want is to merge changes from *new-branch* to *master* branch, but can Git figure out which version of
- the second line to use? The answer is that it can't, this will cause a merge conflict and the developer will be responsible for resolving it.
-1. Let's cause the actual merge conflict by executing the following command `git merge new-branch` you should get
- output about merge conflict similar to this:</br>
+Now, we want to merge changes from the *new-branch* branch to the *master* branch. However, Git won't be able to figure out which version of
+ the second line to use - it will create a merge conflict, which the developer will be responsible for resolving.
+1. Let's go ahead and actually cause the merge conflict, by executing the `git merge new-branch` command. You should get an output
+ similar to this:</br>
 ![Fork >](https://imgur.com/yFzxuUD.png)
-2. Let's take a look at the contents of the *hello.txt* file now, it should look similar to this:
+2. Let's take a look at the contents of the *hello.txt* file now, which should look similar to this:
 ```
 hello world
 <<<<<<< HEAD
@@ -101,21 +101,21 @@ making a bigger change
 making a change to the file
 >>>>>>> new-branch
 ```
-What is visible is that the first line `hello world` doesn't have a conflict, but there is a conflict between the
- second lines of the *master* and *new-branch* branches version for the second line of the *hello.txt* file.
+The main thing to recognise is that the first line (`hello world`) doesn't have a conflict, but there is a conflict between the
+ second line of the *master* and *new-branch* branches.
 #### Resolving the Conflict
-To resolve the merge conflict there are a couple of steps needed:
-Firstly, decide which second line to keep: `making a bigger change` or `making a change to the file`, similarly you
- could choose something entirely different such as keeping or deleting both lines.
-Secondly, delete the lines *Git* added to show where the merge conflict is happening `<<<<<<< HEAD
+To resolve the merge conflict, there are a couple of steps needed:
+Firstly, decide which second line to keep out of `making a bigger change` or `making a change to the file`. You could also
+ choose something entirely different, such as keeping or deleting both lines.
+Secondly, delete the lines *Git* added, to show where the merge conflict is happening `<<<<<<< HEAD
 `, `=======`, `>>>>>>> new-branch`. 
-Let's say you decide to keep the second line that's currently in *master* branch, after cleaning up the file it
- should look like this.
+Let's say you decide to keep the second line that's currently in *master* branch. After cleaning up the file, it
+ should look like this:
 ```
 hello world
 making a bigger change
 ```
-Next you need to save the changes made and that can be done by executing two commands: `git add hello.txt` and
- then `git commit -m "resolved merge conflict"` </br>
+Next, you need to save the changes made. This can be done by executing the `git add hello.txt` command, followed by
+ the `git commit -m "resolved merge conflict"` command. </br>
 ![Fork >](https://imgur.com/IsF5LQK.png)
 Running `git status` should now indicate that there are no longer any conflicts to resolve.
