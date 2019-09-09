@@ -13,7 +13,6 @@
 - [Tasks](#tasks)
 	- [Forking a repository](#forking-a-repository)
 	- [Updating forked repository from original](#updating-forked-repository-from-original)
-- [Summary](#summary)
 
 <!--TOC_END-->
 # Overview
@@ -83,4 +82,3 @@ by executing the `git merge upstream/master` command. Keep in mind that there ma
  need to resolve. If you have resolved the merge conflicts, or if there were none, you should *push* to update your 
  *origin/master* branch. <br />
 ![Fork >](https://imgur.com/OYejtWC.png)
-
