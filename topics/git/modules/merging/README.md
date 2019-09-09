@@ -67,7 +67,7 @@ Now that you have a repository and a master branch with a file on it, the next s
 hello world
 making a change to the file
 ```
-3. Let's make Git keep track of the hello.txt file to which we made the change by executing `git add hello.txt`.Now you
+3. Let's ensure Git keeps track of the hello.txt file that we made a change to. This can be done by executing the `git add hello.txt` command. Now you
  need to commit again, but this time with a message that reflects the change made - `git commit -m "made a change to
   hello.txt file"`. The change we made will now try to override the changes in master branch, for the text file *hello.txt*.
 4. A change to the text file *hello.txt* is now required before we can cause a merge conflict. Let's go back to

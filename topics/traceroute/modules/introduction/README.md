@@ -27,7 +27,7 @@ Here's an example of a path for going to `google.co.uk` from a computer in Londo
 ![Traceroute Map](https://i.imgur.com/cE9UPCB.png)
 
 The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop is a measure of the total time spent to establish the connection.
-Traceroute proceeds unless all (three) sent packets are lost more than twice; then the connection is lost and the route cannot be evaluated.
+Traceroute proceeds unless all (three) sent packets are lost more than twice. If this happens, the connection is lost and the route cannot be evaluated.
 ## Traceroute Output
 ### Example Output
 Below is an example output from a basic `traceroute` command to `google.com`:
@@ -54,7 +54,7 @@ traceroute to google.com (172.217.169.78), 30 hops max, 60 byte packets
 ```
 ### Output Meaning
 Below is a table showing the meaning of the different columns of the `traceroute` commands output.
-The data in the table is taken from the 1st 3 hops of the example above.
+The data in the table is taken from the first 3 hops of the example above.
 
 | Hop Number | Name & IP Address | RTT1 | RTT2 | RTT3 |
 |------------|-------------------|------|------|------|
@@ -70,11 +70,11 @@ This column has the IP address of the router. If it is available, the domain nam
 The three `RTT` columns display the round trip time (RTT) for your packet to reach that point and return to your computer.
 This is listed in milliseconds.
 There are three columns because the traceroute sends three separate signal packets.
-This is to display consistency, or a lack thereof, in the route
+This is to display consistency, or a lack thereof, in the route.
 ## Tasks
 ### Installation
-Traceroute is a tool used on Linux systems typically.
-Windows uses a very similar tool called `tracert` that comes pre installed.
+Traceroute is a tool that is typically used on Linux systems.
+Windows uses a very similar tool, called `tracert`, that comes pre-installed.
 #### Ubuntu/Debian
 ```bash
 sudo apt install -y traceroute
