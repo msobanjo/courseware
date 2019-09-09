@@ -27,9 +27,9 @@
 Netstat on Windows displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols).
 ## Options on Windows
 Used without parameters, `netstat` displays active TCP connections.
-Typically on Windows CLI tools options are prefixed with `/`.
-For instance to use the `a` option you would put `/a`.
-This is not the case with netstat; you can use `-`.
+Typically on Windows CLI tools options when running commands are prefixed with `/`.
+For instance, to use the `a` option you would put `/a`.
+This is not the case with netstat, where you can use `-`.
 An example of using the `a` option would be `-a`.
 Here are some of the other available options to use with netstat on Windows:
 

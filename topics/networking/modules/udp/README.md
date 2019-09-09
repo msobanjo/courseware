@@ -30,14 +30,14 @@ the incoming data for any corrupted parts of the message.
 Regarding the illustration below:
 
 - Segment 1, 2, 4 and 6 are successfully received by the server and processed
-- Segment 3, was lost in a connection interruption, there is no way of the remote server or local machine knowing that it should have received that lost packet. If this were TCP, this packet would have been resent to the server after a time-out period.
+- Segment 3 was lost in a connection interruption. There is no way of the remote server, or local machine, knowing that it should have received that lost packet. If this were TCP, the packet would have been resent to the server after a time-out period.
 - The packet from segment 5 has been corrupted and the checksum validation fails when it reaches the server. The local machine does not know about this and will not resend the packet; it will simply discard it.
 
 ![UDP Operation](https://lh3.googleusercontent.com/kskI1eWHh67F2Nbh1raZeNNllsbIPdl9bh6bqC9_XKkRx3VHkE34ToBYZNsEjtlrfRog7vXYhrrJ5JEkDdfgEbgvp4V95F7f1PbbO3rxAiF8SC-d0zfv27lu5WJ-KGk-wQrDdXPiv9paqM5pnvONDSfOlwfmWSOzEdLJRx4vsG9oyQ6kxu3tEbhEy4ktU4DtGfhvohTSMx5hpVab4tP618_eacN8ji-8PpD3A6BIXIfZruxAus8prZyak0aTeChW2KeLoVL35PzH3_NRiH0d23ZrOaT-eZF7yD5Rf8pqyP4C4UAJRLP_HTu-a8z13NRSOaMezE7bB42GMImQA2GOnrjOvXaNhJEzAMuouVTg98NxFLJc4-0o-RkHjf1yqpDjVFahC6-lx7jxYhu_OTXsE5MnQQs7t8NVwOmCzEgRkvKAViRH4xNUgCe_IKO_L5Ys8CGEmiqZ7d9sUE81zRcE_tnHaK5sNneVxaIiXZLIp6KFeRkcCOQ4qZ1CkXGgXj70L-ZF6O79m22mjQmwvaewNu62LTNJRiNoDjQUou3Kf-wMK95vtQZd9Sm19x66RdZA32QonJPU_49rFaZccn4OaK3qcE5Q8vCek4-OlBglnokzcwL3keTP9qi1NYZpT1X9Z8nwmrsrG6k4uOQ9GKDZ1yx3oUwbvGyp18GbqddhXgFkHnUuJBD0Fd7gEnI4XgteKOuLIMvT-TyeEjHzNX3zP-ppwED-tkTR1Xxw8s46dXw3Fkt4=w725-h685-no)
 
 ## Tasks
 For the task below you will need Wireshark installed.
-If you are unsure what Wireshark is, how to use or install it please have a look at the Wireshark [Introduction Module](/topics/wireshark/modules/introduction)
+If you are unsure what Wireshark is, or how to use or install it, please have a look at the Wireshark [Introduction Module](/topics/wireshark/modules/introduction)
 
 ### Viewing UDP Packets with Wireshark
 - We can start by running a brief scan, until some packets come in.
