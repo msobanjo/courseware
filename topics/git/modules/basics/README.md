@@ -7,6 +7,7 @@
 # Basics
 <!--TOC_START-->
 ### Contents
+- [Overview](#overview)
 - [Basic Workflow](#basic-workflow)
 - [Common Commands and Concepts](#common-commands-and-concepts)
 	- [Cloning a Repository (`git clone`)](#cloning-a-repository-git-clone)
@@ -21,6 +22,9 @@
 - [Tasks](#tasks)
 
 <!--TOC_END-->
+## Overview
+Git is used for tracking changes in source code during software development.
+It is designed for coordinating work amongst programmers, but it can be used to track changes in any set of files.
 ## Basic Workflow
 The basic workflow for using Git includes staging, committing and pushing changes.
 Before a change can be committed it must be staged and to apply your changes for everyone else on the team, the changes must be pushed to the remote repository.
