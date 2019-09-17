@@ -19,6 +19,8 @@ netcat (often abbreviated to nc) is a computer networking utility for reading fr
 In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables and network protocol statistics, and uses a number of network interfaces (network interface controller or software-defined network interface).
 ## Networking [&xrarr;](./networking)
 A computer network is a digital telecommunications network which allows nodes to share resources.
+## PowerShell [&xrarr;](./powershell)
+PowerShell is a task-based command-line shell and scripting language built on .NET.
 ## Traceroute [&xrarr;](./traceroute)
 In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.
 ## Tracert [&xrarr;](./tracert)
