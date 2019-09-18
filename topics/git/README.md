@@ -56,5 +56,6 @@ brew install git
 - [Cloning](./modules/cloning)
 - [Forking](./modules/forking)
 - [Merging](./modules/merging)
+- [Pull Requests](./modules/pull-requests)
 - [Reverting](./modules/reverting)
 <!--MODULES_END-->
