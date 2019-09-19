@@ -100,12 +100,14 @@ Package an application and its dependencies as a unit.
 **List all the cloud enabling technologies you have learned about in this module**
 <details>
 <summary>Show Solution</summary>
-* Fast wide area networks
-* Disaster recovery
-* Powerful, inexpensive server computers
-* Benefits of virtualization
-* Virtualization VS Multi-Tenanting
-* Containers
+<ul>
+  <li>Fast wide area networks</li>
+  <li>Disaster recovery</li>
+  <li>Powerful, inexpensive server computers</li>
+  <li>Benefits of virtualization</li>
+  <li>Virtualization VS Multi-Tenanting</li>
+  <li>Containers</li>
+</ul>
 </details>
 
 **Can you implement disaster recovery for on-premises hosting?**
