@@ -89,7 +89,7 @@ echo "Hi, my name is $name"
 ```
 You should then see an output like this but with your name:
 ```text
-echo "Hi, my name is bob"
+Hi, my name is bob
 ```
 ### Create an Integer Variable
 We can create another variable for your age, you can replace `23` here with your age:
@@ -99,9 +99,9 @@ $age = 23
 ### Access both the `name` and `age` Variables
 Both variables that have been created can be accessed in an `echo` command at the same time:
 ```powershell
-echo "$Hi, my name is $name and I am $age years old"
+echo "Hi, my name is $name and I am $age years old"
 ```
 You should then see an output like this with your name and age:
 ```text
-echo "$Hi, my name is bob and I am 23 years old"
+Hi, my name is bob and I am 23 years old
 ```
