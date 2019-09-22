@@ -11,7 +11,7 @@
 
 <!--TOC_END-->
 ## Overview
-In this module you will learn about what benefits Cloud technologies offer.
+In this module, you will learn about the benefits that are presented through cloud technologies.
 
 ### Scaling in/out
 

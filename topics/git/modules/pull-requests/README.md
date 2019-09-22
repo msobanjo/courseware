@@ -42,7 +42,7 @@ There are 2 main flows when dealing with pull requests:
 5. You new branch should now be reflected in your VCS
 
 #### Create a Pull Request
-This is done on your VCS GUI (in this example, we are using GitHUb):
+This is done on your VCS GUI (in this example, we are using GitHub):
 
 1. Go to the repository you're working with and click on the 'Compare and pull request' button:
 

@@ -32,10 +32,10 @@ echo $myVariable
 
 ## Data Types
 PowerShell variables use data types, similar to programming languages like C#, Java and Python.
-Data types can be explicitly applied to variables, however if you don’t, then PowerShell will, implicitly, apply one for you.
+Data types can be explicitly applied to variables. In the event that you don't give a variable a data type, PowerShell will implicitly apply one for you.
 
 ### Implicitly Applied Data Types
-It’s useful when PowerShell can figure out the data type of a variable for you because it means less code, for example if we would like a variable of type `String`, then it could be accomplished by surrounding the value with quotes `“”`:
+PowerShell being able to understand a variable's data type implicitly provides the value of less code. For example, if we want a variable of type `String`, then it could be accomplished by surrounding the value with quotes `“”`:
 ```powershell
 $myStringVariable = "powershell will understand that this is a string"
 ```
@@ -44,9 +44,9 @@ Variables of type `Integer` can be applied by omitting the quotes and setting th
 $myIntegerVariable = 2
 ```
 ### Explicitly Applied Data Types
-There are often occasions where we need to set the data type for a variable because we want to be able to use some functionality which only a specific type has, or to improve the readability of the code.
-For example a variable with a type of `DateTime` will have a lot for functionality built in as opposed to using just a `String`.
-Take this string `“February 26, 2015”` for instance, we can see it is a date but PowerShell doesn’t know that you want it to be of type `DateTime`, so for an occasion where we want to compare two dates, PowerShell won't be able to do it:
+There are often times where we should set the data type for a variable as it allows for functionality which only a specific type has. It also improves the readability of the code.
+For example, a variable with a type of `DateTime` will have more functionality built-in to work with dates as opposed to using a `String`.
+Take this string `“February 26, 2015”` for instance - we can see it is a date but PowerShell doesn’t know that you want it to be of type `DateTime`, so for an occasion where we want to compare two dates, PowerShell won't be able to do it:
 ```text
 PS C:\Users\bob> $differenceBetweenTwoDates = (“February 26, 2015” - “February 15, 2015”)
 Cannot convert value "February 26, 2015" to type "System.Int32". Error: "Input string was not in a correct format."

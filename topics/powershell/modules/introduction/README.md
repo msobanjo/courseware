@@ -18,23 +18,23 @@
 
 <!--TOC_END-->
 ## Overview
-PowerShell allows us to manage machines from the command-line and create scripts to automate tasks on Windows, Linux and MacOS operating systems.
+PowerShell is a tool that allows us to manage machines from the command-line, as well as create scripts to automate tasks on Windows, Linux and MacOS operating systems.
 Below are some notable characteristics about PowerShell:
 - **Command-line shell**
     - Single commands can be run in an interactive shell
 - **Scripting language**
     - Multiple commands, logic and control flow can be implemented in scripts to automate complex tasks
 - **Open Source**
-    - The source code for the application is open to the public to view and request to make contributions to
+    - The source code for the application is open to the public, meaning everyone can view the code and everyone can request to make contributions to the code
 - **Available on Windows, Linux and MacOS**
-    - Preinstalled on Windows and ready to use
+    - Pre-installed and configured on Windows 
     - Built on the .NET Framework
-    - Object oriented scripting is available because of the underlying and popular .NET framework that PowerShell has been developed on
+    - Object oriented scripting is available through the .NET framework that PowerShell has been developed on
 ## Installation
 ### Windows
-PowerShell is compatible with all of the popular operating systems,  however on Windows it is pre-installed so no initial installation or configuration is required to get started with it.
+PowerShell is compatible with all of the popular operating systems. PowerShell is already pre-installed on Windows, so there is no need for initial installation or further configuration to get started with it.
 ### Linux
-PowerShell is available on the popular package managers for Linux, you must however configure the relevant package manager to do so which will depend on your version of Linux.
+PowerShell is available through most popular package managers for Linux. However, you must configure the relevant package manager to work with PowerShell, which is entirely dependent on your Linux version.
 Please refer to the [Microsoft documentation](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-6) to configure and install PowerShell correctly for your operating system.
 ### MacOS
 PowerShell can be installed on Mac by using the brew package manager:
@@ -47,7 +47,7 @@ Here are some basic commands and concepts to try out in PowerShell.
 On Windows you can simply search for `powershell` in the start menu.
 With MacOS and Linux, open a terminal and execute `pwsh`.
 ### Make a Variable
-Variables of course have all sorts of uses and will be important for most PowerShell scripts:
+Variables have all sorts of uses within programming, and will be important for most PowerShell scripts:
 ```powershell
 $myVariable = “Hello World”
 ```
@@ -63,7 +63,7 @@ Test-Connection google.co.uk
 ```
 ### Conditionals
 All commands that are executed either succeed or fail; we can use this to change how scripts behave or react to failed commands.
-Run examples below, they will print out a different message to the console depending on whether the `Test-Connection` commands succeeds.
+If you run the examples below, they will print out a different message to the console depending on whether the `Test-Connection` commands succeeds.
 #### Connection Test to a Host that doesn't exist
 ```powershell
 if (Test-Connection goasd1le.co2.rq.r.q2r) {

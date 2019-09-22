@@ -32,7 +32,7 @@ Using an interactive console is the easiest way to start learning navigation in 
 Whenever you are in an interactive console or running a script with PowerShell, each session has something called a working directory.
 
 Knowing what the working directory can be very important, especially when accessing files.
-The current working directory is usually shown before the cursor in a console, if this is not the case or you are running a script, you may view your current working directory by running the Print Working Directory command:
+The current working directory is usually shown before the cursor in a console. If you cannot see this and you aren't running a script, you may view your current working directory by running the Print Working Directory command:
 ```powershell
 pwd
 ```
@@ -80,7 +80,7 @@ The working directory can be changed by using the Change Directory (`cd`) comman
 cd folder_name
 ```
 ## Path Names
-A path is an ordered list of directories on on a file system which describe the location of a file or folder. This list of directories is delimited with a slash, a backslash (`\`) on Windows and a forward slash (`/`) on Linux.
+A path is an ordered list of directories on on a file system which describe the location of a file or folder. This list of directories is delimited with a backslash (`\`) on Windows and a forward slash (`/`) on Linux.
 ### Path Ending with a Folder
 ```text
 C:\Users\bob
@@ -90,9 +90,9 @@ C:\Users\bob
 C:\Users\bob\readme.txt
 ```
 ### Absolute Path
-An absolute path specifies the location of a file or folder by providing the **full path** which is every directory from the top of the filesystem to get to the item.
-On Windows you must specify the drive letter (Default primary drive is `C:`) at the start of the path.
-Linux has a very different file system to Windows, you will only need to start the path with a forward slash (`/`) to get to the root of the file system.
+An absolute path specifies the location of a file or folder by providing the **full path** i.e. every directory from the top of the filesystem down to the object in question.
+On Windows, you must specify the drive letter (Default primary drive is `C:`) at the start of the path.
+Linux has a very different file system to Windows - you only need to start the path with a forward slash (`/`) to get to the root of the file system.
 Below are examples of absolute paths to the hosts file on both Windows and Linux.
 #### Windows
 ```text
@@ -103,12 +103,12 @@ C:\Windows\System32\drivers\etc\hosts
 /etc/hosts
 ```
 ### Relative Paths
-Accessing the absolute path for all files can be tedious work, relative paths make it possible to access files and folders that are relative to your current location in the file system (your working directory).
+Accessing the absolute path for all files can be tedious work. Relative paths make it possible to access files and folders that are relative to your current location in the file system (your working directory).
 For example, if you were in the `C:\Windows\System32\drivers` folder on Windows, we would only need to execute the following command to get into the `C:\Windows\System32\drivers\etc folder`:
 ```powershell
 cd etc
 ```
-This works because the current working directory that you are in and the relative path that is specified in the command are added together; resloving to the abosolute path of the file or folder.
+The current working directory that you are in and the relative path that is specified in the command are added together; resolving to the absolute path of the file or folder.
 
 Relative paths are especially useful if you are needing to reference a directory that is “backwards” in the filesystem.
 You can accomplish this by using `..` as the relative path:
@@ -116,7 +116,7 @@ You can accomplish this by using `..` as the relative path:
 cd ..
 ```
 
-Because `..` really just means “one directory up”, we can use it mixed in with other folders as well.
+`..` just means “one directory up”, and we can use it alongside other folders as well.
 For instance if there were two folders:
 - `C:\Users\bob\folder_1`
 - `C:\Users\bob\folder_2`

@@ -15,10 +15,9 @@
 ## Overview
 In this module you will learn what technologies allow cloud services to work.
 
-### Fast wide area networks
+### Fast wide-area networks
 
 *Wide Area Network* (WAN) is a telecommunication network that is spread over a large area. 
-The purpose of this area is to establish computer network.
 The most commonly known WAN is the internet.
 Houses, villages, cities, countries and continents are all connected together.
 
@@ -44,14 +43,14 @@ You could implement these strategies, but before implementation there are a few 
 ### Powerful, inexpensive server computers
 
 In order to get the pool of interchangeable resources required by a cloud, we need to be able to buy lots of servers 
-and configurable them, and they need to be reasonably powerful.
+that are configurable, and they need to be reasonably powerful.
 
 Building a data centre is a specialist skill, and there are standards and bodies of knowledge related to it.
 
 Data centres are becoming increasingly efficient and cheap, to the extent that it is possible to get a containerised 
 `modular data centre` shipped to you.
 
-When choosing a cloud provider, they will probably be able to document the standards to which their data centre adheres.
+When choosing a cloud provider, they should be able to document the standards to which their data center adheres.
 
 TIA-942 and Uptime Institute are the two best-known examples.
 

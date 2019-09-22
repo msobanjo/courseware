@@ -8,7 +8,7 @@
 <!--TOC_END-->
 ## Overview
 
-Biggest players in the cloud services are:
+Three of the biggest cloud vendors in the tech industry today are:
 - Amazon Web Services (AWS)
 - Google Cloud Platform (GCP)
 - Microsoft Azure (AZ).

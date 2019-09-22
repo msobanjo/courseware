@@ -22,7 +22,7 @@
 ## Overview
 In this module you will learn about the concepts of cloud. These concepts are shared among all the cloud providers.
 
-### What is the cloud
+### What is the Cloud?
 
 The terms ‘cloud computing’ and ‘the cloud’ have been used to describe all kinds of different technology. Are we
 talking about Distributed computing? Networked Services? Virtualized Servers or Hosted services? The actual
@@ -31,7 +31,7 @@ is a model for enabling ubiquitous, convenient, on-demand network access to a sh
 resources (e.g. networks, servers, storage, applications, and services) that can be rapidly provisioned and released 
 with minimal management effort or service provider interaction`
 
-### On demand self service
+### On-demand self service
 
 All cloud providers have a dashboard through which the customers can control the services that the provider offers. 
 Hence the name `on demand self service`.
@@ -42,7 +42,7 @@ This is how it looks for Google Cloud:
 #### Amazon Web Services (AWS)
 This is how it looks for AWS:
 ![Fork >](https://imgur.com/cnqjq2M.png)
-#### Microsoft Azure
+#### Microsoft Azure (AZ)
 This is how it looks for Azure:
 ![Fork >](https://imgur.com/cK3lnGv.png)
 
@@ -148,7 +148,7 @@ What the CapEx can tell you is how much a company is investing in new or existin
 Try to answer the following questions in order to check your knowledge.
  If you have trouble answering the question, you can check the answer below.
 
-**Who uses similar consumption based pricing model in real life?**
+**Which industries use a similar consumption-based pricing models?**
 <details>
 <summary>Show Solution</summary>
 Utilities companies that provide services like: water, electricity, gas.
