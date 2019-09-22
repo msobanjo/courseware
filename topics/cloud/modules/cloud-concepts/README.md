@@ -3,11 +3,11 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-	- [What is the cloud](#what-is-the-cloud)
-	- [On demand self service](#on-demand-self-service)
+	- [What is the Cloud?](#what-is-the-cloud)
+	- [On-demand self service](#ondemand-self-service)
 		- [Google Cloud Platform (GCP)](#google-cloud-platform-gcp)
 		- [Amazon Web Services (AWS)](#amazon-web-services-aws)
-		- [Microsoft Azure](#microsoft-azure)
+		- [Microsoft Azure (AZ)](#microsoft-azure-az)
 	- [Consumption based pricing](#consumption-based-pricing)
 	- [Broad network access](#broad-network-access)
 	- [Resource pooling](#resource-pooling)

@@ -3,7 +3,7 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-	- [Fast wide area networks](#fast-wide-area-networks)
+	- [Fast wide-area networks](#fast-widearea-networks)
 	- [Disaster recovery](#disaster-recovery)
 	- [Powerful, inexpensive server computers](#powerful-inexpensive-server-computers)
 	- [Benefits of virtualization](#benefits-of-virtualization)
