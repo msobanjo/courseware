@@ -73,4 +73,5 @@ Using the cloud tends to increase agility.
 ### Task
 
 Watch the video below about the types of scaling.
+
 [![Cloud scaling types](https://img.youtube.com/vi/RMThQbolgZs/0.jpg)](https://www.youtube.com/watch?v=RMThQbolgZs)
