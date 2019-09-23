@@ -24,7 +24,7 @@ A computer network is a digital telecommunications network which allows nodes to
 ## PowerShell [&xrarr;](./powershell)
 PowerShell is a task-based command-line shell and scripting language built on .NET.
 ## Traceroute [&xrarr;](./traceroute)
-In computing, `traceroute` and `tracert` are computer network diagnostic commands for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network.
+`traceroute` and `tracert` are network diagnostic commands used to display the route (path) and measure transit delays of packets across an Internet Protocol (IP) network.
 ## Tracert [&xrarr;](./tracert)
 In computing, traceroute and tracert are computer network diagnostic commands for displaying the route and measuring transit delays of packets across an Internet Protocol network.
 ## Wireshark [&xrarr;](./wireshark)
