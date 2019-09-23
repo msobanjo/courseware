@@ -11,7 +11,8 @@
 Three of the biggest cloud vendors in the tech industry today are:
 - Amazon Web Services (AWS)
 - Google Cloud Platform (GCP)
-- Microsoft Azure (AZ).
+- Microsoft Azure (AZ)
+
  Although they all are different companies, some ideas on which the services are based are common between them all. In 
  this topic you will learn about various concepts that make up cloud services.
 <!--MODULES_START-->
