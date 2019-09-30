@@ -21,6 +21,8 @@ netcat (often abbreviated to nc) is a computer networking utility for reading fr
 In computing, netstat (network statistics) is a command-line network utility that displays network connections for Transmission Control Protocol (both incoming and outgoing), routing tables and network protocol statistics, and uses a number of network interfaces (network interface controller or software-defined network interface).
 ## Networking [&xrarr;](./networking)
 A computer network is a digital telecommunications network which allows nodes to share resources.
+## NGINX [&xrarr;](./nginx)
+Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
 ## PowerShell [&xrarr;](./powershell)
 PowerShell is a task-based command-line shell and scripting language built on .NET.
 ## Traceroute [&xrarr;](./traceroute)
