@@ -9,5 +9,6 @@
 Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
 <!--MODULES_START-->
 ## Modules
+- [Configuration](./modules/configuration)
 - [Introduction](./modules/introduction)
 <!--MODULES_END-->
