@@ -9,6 +9,7 @@ toc_end = "<!--TOC_END-->"
 # get every readme file
 readme_files = list(Path("topics").glob("**/README.md"))
 readme_files.append("./README.md")
+readme_files.append("./CONTRIBUTING.md")
 for readme in readme_files:
     print(readme)
     headings = []
