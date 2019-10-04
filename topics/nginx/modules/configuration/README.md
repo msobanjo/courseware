@@ -19,7 +19,7 @@
 <!--TOC_END-->
 ## Overview
 NGINX uses a text-based configuration file written in a specific format.
-The default file used to configure NGINX is the `nginx.conf` file which can be found in `/etc/nginx` on Linux systems and on Windows it can be found in `[INSTALL_PATH]/conf/nginx.conf` - `[INSTALL_PATH]` will be wherever you unzipped the NGINX folder to.
+The default file used to configure NGINX is the `nginx.conf` file. This can be found in `/etc/nginx` on Linux systems, and in `[INSTALL_PATH]/conf/nginx.conf` - `[INSTALL_PATH]` on Windows machines (based on the location that you unzipped the NGINX folder to).
 
 ## Directives 
 When configuring the `nginx.conf` file it will contain *directives* and their parameters.
@@ -36,7 +36,7 @@ location / {
 ```
 
 ## Include Directive
-NGINX configurations can get quite long and much harder to maintain due to the file getting larger.
+NGINX configurations can become difficult to maintain due to the size and length of the file getting larger.
 The `include` directive can be used to effectively "import" other configurations from other files.
 You can use this for feature-specific configuration files; conventionally you would store these extra files in `/etc/nginx/conf.d` on Linux systems and `[INSTALL_FOLDER]/conf` on Windows.
 Here is an example for the `conf.d/http` and `conf.d/stream` files being included:
@@ -49,8 +49,8 @@ include conf.d/stream;
 There are a few top-level contexts that are used to group together directives for handling different traffic types:
 - **events**: Genereal connection processing
 - **http**: HTTP Traffic, which can be used for things like web applications
-- **mail**: Mail Traffic, this is if you are using NGINX with an SMTP (Mail) server
-- **stream**: TCP and UDP traffic, if your application is using TCP to communicate then this one would be used, as opposed to something like HTTP
+- **mail**: Mail Traffic, for when you are using NGINX with an SMTP (Mail) server
+- **stream**: TCP and UDP traffic, for when your application is using TCP to communicate, as opposed to something like HTTP
 Any directives that get place outside of these contexts are said to be in the *main* context.
 ```text
 # this directive is included in the main context
@@ -69,11 +69,11 @@ http {
 One or more server blocks can be included in each of the traffic handling contexts.
 
 ### HTTP
-When using virtual servers for HTTP, these are used for handling traffic for resources depending on what IP address or domain is used.
+HTTP virtual servers are used for handling traffic for resources depending on what IP address or domain is used.
 Furthermore, a location context can be included to handle a specific Universal Resource Identifier (URI).
 
 Here is an example configuration for using 2 virtual servers and 4 location contexts.
-To avoid collisions with port mappings; each virtual server has been set to listen on a different port using the `listen` directive under the `server` contexts.
+To avoid collisions with port mappings, each virtual server has been set to listen on a different port using the `listen` directive under the `server` contexts.
 By default, the HTTP virtual server will listen on port `80`.
 ```text
 events {}
@@ -100,7 +100,7 @@ http {
     }
 }
 ```
-If you were to make requests to and NGINX server with this configuration (assuming you are accessing NGINX using `localhost`) you would see the following responses depending on the URI and ports used:
+If you were to make requests to an NGINX server with this configuration (assuming you are accessing NGINX using `localhost`), you would see the following responses depending on the URI and ports used:
 
 |Request|Response|
 |-------|--------|
@@ -124,7 +124,7 @@ stream {
 ```
 
 ## Reloading configurations
-Once you have made a change to the NGINX config you will likely notice that nothing has actually happened, this is because the NGINX configurations must be reloaded.
+Once you have made a change to the NGINX configuration, you will likely notice that nothing has actually happened. This is because the NGINX configurations must be reloaded.
 
 We can send the `reload` signal to NGINX using the `-s`option:
 ```bash
@@ -170,7 +170,7 @@ Otherwise use the `nginx` binary:
 nginx -s reload
 ```
 ### View the New Changes
-Use a web browser to see the changes by putting the different resources in the URL bar (`/`, `/one`, `/two`).
+We can then use a web browser to see the changes by putting the different resources in the URL bar (`/`, `/one`, `/two`).
 If you are on a Linux machine with no GUI, the `curl` command can be used to make HTTP requests to NGINX.
 
 Depending on the URI request that you made, you should get the relevant response from NGINX for how you configured it above.

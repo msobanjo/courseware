@@ -14,9 +14,9 @@
 <!--TOC_END-->
 ## Overview
 Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
-The goal behind NGINX was to create a very fast web server for handling many concurrent connections.
+The goal behind NGINX was to create a fast web server for handling a large amount of concurrent connections.
 NGINX has a few common use cases:
-- NGINX can serve static files (such as HTML, CSS and JavaScript)
+- Static files: NGINX can serve static files, such as HTML, CSS and JavaScript.
 - Act as a reverse proxy: handle and process all requests before sending them to another application server.
 - Be used as a load balancer: requests can be distrubed over multiple instances of your application to allow for high availability should one of you application servers fail.
 ## Installation
@@ -42,7 +42,7 @@ If you have Docker configured then you can get NGINX running using the `nginx` i
 docker run -d --rm -p 80:80 --name nginx nginx
 ```
 
-Once you have installed NGINX for your relevant Operating System, you can then navigate to `http://localhost` in your web browser to see if NGINX is running, if you are on Linux and don't have a GUI, then you can run `curl http://localhost` to see if you can get a response from the NGINX service.
+Once you have installed NGINX for your relevant Operating System, you can navigate to `http://localhost` in your web browser to see if NGINX is running. If you are on Linux and don't have a GUI, then you can run `curl http://localhost` to see if you can get a response from the NGINX service.
 
 Once you have put `http://localhost` in your web browser you should see a page like the following:
 ![NGINX Default Page](https://lh3.googleusercontent.com/G4w7DJI6YST8allYA8rBpnrySbB0N4sundqXZQbux85RgFtHC08kb6-MsvHgO2dICdlecfvU5D1UEim1LGTNwZFRJLASopmASoGeCV2lnICpJz84jI_XU-Y-TjBs4u-m8lP8wYe-ziKv0ZR3K4UZ_j0tVMcfrdckNo7lL_OGyUa9wE2ZgZecS9otx7zVNusXgYphtI2PGzA6F0d6QJEDIE5wrbsZzFHSmtNLwzDkY3ILGaJTEGfkfCT7QHT82-d3ck_6nnO_IHfCGw80yAyBznUHa7RBEv_h5i1Nq8ePQLd9rwcKV7-LZyHcQJG1P4CSy3sZYtcsOaSzlr67QMIZMj_OnfaULmcLnZICk5JXGzRYqvjuG8SPMRYjdzGR3n6fBAL_G6s6lFuROuT4EtaMoiJN0YkibJw_RjPKkKbUjJYvon8G9KzvSlonY8mvm0Cdt_UQu9B1jKy-2A0CgTxDmp56mfKo4yEDlwl4l2oejvIdQ-w26RacR1C625xc3ffEGsUf9fppfwQgKkWVps_Nd5z86xmCm4kZysluOYHohTihokpiMU6YN6L2oHhyHj8xbC0MRywEbL-sUmtBTv6rOZF770c3NeO0RGu5axeAsho0t_1ANO0gdk35oMlYfG38ikreb9_il6UHXK8v5SWsQur5foFgFskX_Ti-3uC2fS-5V56lqzBRlNDPZ08VZlrEpN3XHu-pVgTaH3OXrU6RiYWPT6vNtDy5nvf1dgUQko97-TH6=w748-h295-no)

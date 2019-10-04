@@ -26,7 +26,7 @@ Anyone is welcome to collaborate on this project, but please adhere to the conve
 ## Concepts
 All courseware on this project is in small and digestable modules.
 These modules are then organised into topics.
-Going forward Courses and Pathways will be introduced.
+Moving forward, we will be introducing courses and pathways into the project.
 - Topics
     - This is a subject, which could be a programming language or tool. For example, Java, Jenkins, Kubernetes and Google Cloud Platform would all be considered subjects.
 - Modules
@@ -82,26 +82,26 @@ So it would looke something like this:
 ```
 
 Some modules will be very difficult to include a task because there might not be an easy way to implement what has been discussed in the module.
-To get around this quizzes, Google Form questionnaires and links to videos can be included as a task.
+To alleviate this, tasks can include quizzes, Google Form questionnaires and links to videos where needed.
 Quizzes can be made by using hidden drop downs for the answers.
 
 ## Review Process
 Modules will go through 2 sets of reviewing before being released into the main branch.
 
 The first review is for technical and implementation purposes, therefore they would be reviewed ideally by someone with some knowledge in the area:
-- Do the tasks work and are clear?
+- Are the tasks clear and solvable?
 - Are the statements and explained concepts correct throughout the module?
 - Does it serve its purpose well, as a piece of material for learning?
 - Does it make sense grammatically, are there any spelling errors etc.
 
-The second set of reviewing is more for grammatical purposes and general looks of the material:
+The second set of reviewing is more for grammatical purposes and general look of the material:
 - Any spelling mistakes.
-- Grammatical improvements to ensure it makes sense and for readability.
-- Formatting improvements to improve readability, this could be things like heading sizes and line breaks.
+- Grammatical improvements to ensure content is readable and makes sense.
+- Formatting improvements to improve readability - this could be things like heading sizes and line breaks.
 - Are acronyms expanded to avoid confusion?
 
 ## Weekly Process
-Internally a weekly process is being formed for this project which allows modules to be implemented on a weekly basis.
+A weekly process is being formed internally for this project to allow modules to be implemented on a weekly basis.
 This process only really concerns internal contributors of the project.
 
 ### Roles
@@ -113,18 +113,18 @@ Project admins are responsible for managing the automation and overall direction
 #### Courseware Developers & Maintainers (Internal)
 Courseware developers and maintainers create courseware and pull requests for the current ongoing release.
 ### Breakdown
-Throughout the week pull requests are reviewed and merged to the `dev` branch, after Wednesday no more pull requests will be merged.
+Throughout the week pull requests are reviewed and merged to the `dev` branch. No more pull requests will be merged after Wednesday PM.
 #### Monday (am)
 A project admin, courseware admin and available internal contributors have a meeting to discuss and establish he following:
 - What upcoming training requirements are there for material
 - What modules need to be created
 - Prioritise the modules and issues that need to be implemented
-- Created a milestone for the next version, typically just incrementing the revision
+- Create a milestone for the next version, which is typically just an increment of the revision
 - Decide who (internally) is responsible for completing those modules by **Wednesday**
 #### Tuesday (pm)
 - Stand-up meeting to check internal progress
 #### Wednesday (pm)
-- Cut off for merging to the `dev` branch.
+- Cut off for merging into the `dev` branch.
 - Any modules not reviewed and merged into the `dev` branch are taken from the release.
 - Release candidate branch and a pull request to the `master` branch is created with a name of `R-[VERSION]`, `R-0.0.3` for instance.
 #### Thursday (pm)

@@ -20,16 +20,16 @@ NGINX can be configured as a web server to serve content such as HTML, CSS, Java
 This allows us to deploy our web applications so that they can be accessed efficiently.
 
 ## Web Servers
-A web server can be referring to a hardware or software or both of them working together, although you could refer to the software counterpart as a HTTP server.
+A web server could be referring to hardware, software, or a combination of both, although you could refer to the software counterpart as a HTTP server.
 
 ### Hardware
 From a hardware perspective, a web server would be a computer that has web server software installed on it and is connected to the internet.
-This computer would also have installed the files that are going to be served (HTML documents, CSS, images and JavaScript files).
+This computer would also have all files that are going to be served (HTML documents, CSS, images and JavaScript files).
 
 ### Software
-The software side of things is the part that allows users to connect and access the files stored on the computer.
+The software will allow users to connect and access the files stored on the computer.
 This will most often be a HTTP server.
-HTTP servers are a type of software that can understand Universal Resource Locators (URLs) allowing applications like web browsers to download and utilise their resources for things like web applications that we use everyday.
+HTTP servers are a type of software that can understand Universal Resource Locators (URLs), allowing applications like web browsers to download and utilise their resources for things like web applications that we use everyday.
 
 Web servers, software and hardware combined, allow us to access content over the internet - most commonly in our web browser:
 ![Web Server](https://lh3.googleusercontent.com/jjIKwaFUdtPFK4785VQbd67_F0g_t3Q2FoAwWp6A7-jBwIel3r8nlRh5sWVzIu50TVIVJCcC6AkQDC5_KH2RrbQbEGDnhEcF8-Ebs_bZX_eadZS_40GrXdgN5WqhEhvM07H8wGuVU1UpcJ9tHmwYrIiLFlhGdZLl8H1gLnf8KA_FJVz_EE4quNo-jnU3a-fCTI5pgh6BocULmrQBqbxkDLVKN0cpUlACuPqrUf9i0zcWus8SCat3fHrX8TV1lwrYkKQ4rIT0hh-MyhSNL94NC8iXr_x1XQoOCZD422eQBIMVXtMkY_QbkkKf8VqHNLm5QA1L8-u1XjIGoUmVmINQm1w73EZARbgcHX2BQ02WCS83COehpZybXSp3mdRp3V59-qeuygR2uhpkhJnCyhTk5iWW4AEU8YPAugtcN1b4EjWVq9V2xRnav6WvElo-J486ZUKK0ygxDY-blBVLxZcqOTwxhdUW1LzwxhtVZeYLdO3P62QjUYKgSjDzyJlEpSMXxLVCTiCff1ARNd32Z2zPmBWMmiyj7qWOxMl9p31aaLscvZEHg1uTs0hY7D9cj9jFk4oQqHhcrrrJbRhIxHUO0bYJBfD2ntPSMUJdlr6y0ylcKP1Q63FdPDTw9_zpJdyVCjMLy0H4JrKpU4oxuwyjf20iO1mYbgcp-9Pyds8ikUamkxYTRnKL2HdhC0p0B_BB2TBIemY1QOO5h83Lp336h67RWM5CLfzBgGbRaDzwnSUHkI0m=w1254-h620-no)
@@ -38,7 +38,7 @@ Web servers, software and hardware combined, allow us to access content over the
 This section discusses how you can configure an NGINX server to serve a web application over HTTP.
 
 ### Top-Level Contexts
-Before anything else the top-level contexts must be in place; this includes `events`, `http` and `server`.
+We first need to ensure the top-level contexts are in place; this includes `events`, `http` and `server`.
 - The `events` context must be included, even if it doesn't have anything configured inside it.
 - The `http` context is going to be added so that we are able to access the web application over HTTP.
 - The `server` context is going to be used to create a virtual server, which will serve the web application files.
@@ -54,7 +54,7 @@ The virtual server must be configured to understand a few important things.
 All the points discussed below are configured in the virtual `server` context.
 - Where are the web application files?
     - The installation folder of your web application files can be set with the `root` directive.
-- Whats the default index file?
+- What's the default index file?
     - Conventionally, the default page for a web application is the `index.html` file; this can be specified with the `index` directive.
 - Multipurpose Internet Mail Extensions (MIME) Types
     - MIME Types are a way of providing more information about the files being served, so that your web browser can handle them correctly.
@@ -88,7 +88,7 @@ http {
 
 ## Tasks
 This section will walkthrough configuring an NGINX server to host the web application included on this module, using the above information as a reference.
-If possible, its advised to have a Linux virtual machine for this task with a public IP address and firewall port `80` open so that it can be easily deleted afterwards, as opposed to cluttering your work machine.
+If possible, it's advised to have a Linux virtual machine for this task with a public IP address and firewall port `80` open so that it can be easily deleted afterwards, as opposed to cluttering your work machine.
 
 ### Prerequisites
 Make sure that you have the following installed for this:
