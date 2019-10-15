@@ -3,6 +3,8 @@
 Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally.
 ## Common Cloud Concepts [&xrarr;](./cloud)
 
+## Configuration Management [&xrarr;](./configuration-management)
+Configuration management is a systems engineering process for establishing and maintaining consistency of a product's performance, functional, and physical attributes with its requirements, design, and operational information throughout its life.
 ## Git [&xrarr;](./git)
 Git is a distributed version-control system for tracking changes in source code during software development.
 ## Groovy Programming Language  [&xrarr;](./groovy)
