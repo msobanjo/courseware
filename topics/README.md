@@ -10,7 +10,7 @@ Git is a distributed version-control system for tracking changes in source code 
 ## Iptables [&xrarr;](./iptables)
 Iptables is a command line utility for configuring Linux kernel firewall.
 ## Java [&xrarr;](./java)
-Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible. Wat a bloody weapon
+Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.
 ## Jenkins [&xrarr;](./jenkins)
 Jenkins is a self-contained, open source automation server that can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 ## Linux [&xrarr;](./linux)
