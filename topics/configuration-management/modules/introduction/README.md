@@ -4,6 +4,7 @@
 - [Overview](#overview)
 - [Use Case](#use-case)
 - [Available Tools](#available-tools)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
@@ -33,4 +34,3 @@ So we find ourselves needing a way of managing configurations for multiple hosts
 - Chef
 
 ## Tasks
-
