@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: wait for ssh connection
+    wait_for_connection:
+  - name: Test
+    shell: hostname
+
+     

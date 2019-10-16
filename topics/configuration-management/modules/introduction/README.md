@@ -24,3 +24,6 @@ So we find ourselves needing a way of managing configurations for multiple hosts
 - Ansible
 - Puppet
 - Chef
+
+## Tasks
+
