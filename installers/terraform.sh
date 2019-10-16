@@ -4,4 +4,4 @@ latest_version=$(curl -Ls https://releases.hashicorp.com/terraform | grep -E -o 
 zip="terraform_${latest_version}_linux_amd64.zip"
 wget "https://releases.hashicorp.com/terraform/${latest_version}/${zip}" -O /tmp/${zip}
 mkdir -p ~/.local/bin
-unzip /tmp/${zip} -d ~/.local/bin/terraform
+unzip /tmp/${zip} -d ~/.local/bin
