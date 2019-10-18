@@ -127,3 +127,8 @@ A version can be deleted by providing the *application name* and *version label*
 # aws elasticbeanstalk delete-application-version --application-name my-application --version-label [VERSION_LABEL]
 aws elasticbeanstalk delete-application-version --application-name my-application --version-label v1
 ```
+## Environments
+Environments are completely different instances of the application that are running.
+This is of course ideal for testing new features and bug fixes before deploying the version to a production instance of the application that is in service.
+
+## Tasks
