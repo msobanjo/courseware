@@ -4,7 +4,9 @@
 - [Overview](#overview)
 - [CLI Commands](#cli-commands)
 - [Applications](#applications)
-	- [Creating Applications](#creating-applications)
+	- [Create](#create)
+	- [Show Existing](#show-existing)
+	- [Delete](#delete)
 
 <!--TOC_END-->
 ## Overview
