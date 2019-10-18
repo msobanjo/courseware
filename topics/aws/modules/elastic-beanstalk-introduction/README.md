@@ -22,6 +22,8 @@
 		- [Show All Versions](#show-all-versions)
 		- [Show Versions for an Application](#show-versions-for-an-application)
 		- [Delete](#delete-1)
+- [Environments](#environments)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
