@@ -71,6 +71,31 @@ aws elasticbeanstalk describe-applications --application-names "app-1" "app-2"
 ### Delete
 The application can be deleted by providing the unique name of it to the `delete-application` command:
 ```bash
-# aws elasticbeanstalk delete-application --aplication-name [APPLICATION_NAME]
-aws elasticbeanstalk delete-application --aplication-name my-first-application
+# aws elasticbeanstalk delete-application --application-name [APPLICATION_NAME]
+aws elasticbeanstalk delete-application --application-name my-first-application
+```
+
+## Versions
+The way that deployments can be managed in EB is through versions of your applications.
+### Create
+There are some required and preffered options to include when creating an application version:
+- `--application-name` (required): the name of the application that you are creating a version for
+- `--description` (optional): description for the version
+- `--source-bundle` (optional): the code to deploy, if ommited, a sample application will be set by AWS. The source bundle can be either from an AWS CodeCommit Git repository or a ZIP or WAR file stored in S3. 
+- `--auto-create-application` (optional): if you haven't created an application yet then one will be created if you use this option and the application doesn't exist
+#### Sample Version
+Here a sample version will be created because a source bundle has not been configured:
+```bash
+# aws elasticbeanstalk create-application-version --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL]
+aws elasticbeanstalk delete-application --application-name my-first-application --version-label v1
+```
+#### Version Using ZIP or WAR File
+The AWS sample applications are good for seeing how EB work however we will of course need to be able to deploy our own code to EB, which can be done using the `--source-bundle` option.
+Details on configuring these source bundles can be found in another module.
+
+We will be looking at using a ZIP file for a source bundle in this case which can be retrieved from and S3 bucket.
+Note that the S3 bucket that you are using must be in the same region as the EB application.
+```bash
+# aws elasticbeanstalk create-application-version --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL] --source-bundle S3Bucket="[BUCKET_NAME]",S3Key="[S3_KEY]"
+aws elasticbeanstalk delete-application --application-name my-first-application --version-label v1 --source-bundle S3Bucket="my-bucket",S3Key="my-app-v1.zip"
 ```
