@@ -22,6 +22,7 @@ Applications developed with any of the following are supported:
 - Ruby
 - Go
 - Docker
+
 Common web servers can be also configure in EB:
 - Apache
 - Nginx
