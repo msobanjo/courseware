@@ -1,4 +1,11 @@
-# ELastic Beanstalk Introducion
+<!--PROPS
+{
+    "prerequisites": [
+        "aws/introduction"
+    ]
+}
+-->
+# Elastic Beanstalk Introducion
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
