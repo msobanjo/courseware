@@ -47,6 +47,8 @@ EB can be easily used through the AWS console; a guided setup is provided.
 Using the CLI will allow you gain a better understanding of how the different EB components work and the necessary configurations that you need to make.
 Understanding the CLI commands will also allow you to script solutions for EB and any other resources in AWS for that matter.
 
+More information for the commands that can be used for Elastic Beanstalk can be found [here](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/create-application.html).
+
 ## Applications
 An application is the highest level of configurtation for EB.
 You may have more than one application in EB if you would like to.
@@ -57,8 +59,6 @@ You will need to have a name for your application that isn't the same as any ano
 # aws elasticbeanstalk create-application --application-name [APPLICATION_NAME] --description "[DESCRIPTION]"
 aws elasticbeanstalk create-application --application-name my-first-application --description "My first EB Application"
 ```
-
-More options for the `create-application` command can be found [here](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/create-application.html)
 
 ### Show Existing
 Existing applications and information about them can be shown by using the `describe-applications` command.
@@ -102,4 +102,24 @@ Note that the S3 bucket that you are using must be in the same region as the EB 
 ```bash
 # aws elasticbeanstalk create-application-version --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL] --source-bundle S3Bucket="[BUCKET_NAME]",S3Key="[S3_KEY]"
 aws elasticbeanstalk delete-application --application-name my-first-application --version-label v1 --source-bundle S3Bucket="my-bucket",S3Key="my-app-v1.zip"
+```
+### Show Existing Versions
+Versions of the application that already existing can be viewed by using the `describe-application-versions` command.
+#### Show All Versions
+If you provide no arguments then all the versions for every application that you have will be shown.
+```bash
+# aws elasticbeanstalk describe-application-versions
+aws elasticbeanstalk describe-application-versions
+```
+#### Show Versions for an Application
+If there is a specific aplpication that you want to see the versions for the `--application-name` option can be provided to filter them out:
+```bash
+# aws elasticbeanstalk describe-application-versions --application-name my-application
+aws elasticbeanstalk describe-application-versions --application-name my-application
+```
+#### Delete
+A version can be deleted by providing the *application name* and *version label*:
+```bash
+# aws elasticbeanstalk delete-application-version --application-name my-application --version-label [VERSION_LABEL]
+aws elasticbeanstalk delete-application-version --application-name my-application --version-label v1
 ```
