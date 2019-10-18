@@ -14,6 +14,10 @@
 	- [Create](#create)
 	- [Show Existing](#show-existing)
 	- [Delete](#delete)
+- [Versions](#versions)
+	- [Create](#create-1)
+		- [Sample Version](#sample-version)
+		- [Version Using ZIP or WAR File](#version-using-zip-or-war-file)
 
 <!--TOC_END-->
 ## Overview
