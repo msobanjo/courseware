@@ -1,4 +1,12 @@
 # ELastic Beanstalk Introducion
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [CLI Commands](#cli-commands)
+- [Applications](#applications)
+	- [Creating Applications](#creating-applications)
+
+<!--TOC_END-->
 ## Overview
 Elastic Beanstalk (EB) on AWS is Platform as a Service (PaaS) solution for deploying web applications and workloads.
 EB can be used with little knowledge of infrastructure, allowing you to focus more on development.
