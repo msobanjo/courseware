@@ -30,9 +30,8 @@ You may have more than one application in EB if you would like to.
 ### Creating Applications
 You will need to have a name for your application that isn't the same as any another applications in your EB, you may also provide a description for you application.
 
-||
-|-|
 |`aws elasticbeanstalk create-application --application-name [APPLICATION_NAME] --description [DESCRIPTION]`|
+|-|
 |`aws elasticbeanstalk create-application --application-name my-first-application --description "My first EB Application"`|
 
 More options for the `create-application` command can be found [here](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/create-application.html)
