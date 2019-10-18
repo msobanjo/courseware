@@ -18,6 +18,10 @@
 	- [Create](#create-1)
 		- [Sample Version](#sample-version)
 		- [Version Using ZIP or WAR File](#version-using-zip-or-war-file)
+	- [Show Existing Versions](#show-existing-versions)
+		- [Show All Versions](#show-all-versions)
+		- [Show Versions for an Application](#show-versions-for-an-application)
+		- [Delete](#delete-1)
 
 <!--TOC_END-->
 ## Overview
