@@ -9,6 +9,8 @@
 PowerShell is a task-based command-line shell and scripting language built on .NET.
 <!--MODULES_START-->
 ## Modules
+- [Conditional Statements](./modules/conditional-statements)
+- [Functions](./modules/functions)
 - [Introduction](./modules/introduction)
 - [Navigation](./modules/navigation)
 - [Variables](./modules/variables)
