@@ -16,6 +16,6 @@ With just one tool to download and configure, you can control multiple AWS servi
 <!--MODULES_START-->
 ## Modules
 - [Elastic Cloud Compute (EC2)](./modules/ec2)
-- [ELastic Beanstalk Introducion](./modules/elastic-beanstalk-introduction)
+- [Elastic Beanstalk Introducion](./modules/elastic-beanstalk-introduction)
 - [Virtual Private Cloud (VPC)](./modules/vpc)
 <!--MODULES_END-->
