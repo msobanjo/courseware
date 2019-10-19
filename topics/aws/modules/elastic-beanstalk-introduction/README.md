@@ -2,6 +2,7 @@
 {
     "prerequisites": [
         "aws/introduction"
+		"aws/cli"
     ]
 }
 -->
@@ -150,5 +151,108 @@ To create a new environment the following information is required:
 # aws elasticbeanstalk create-environment --environment-name [ENVIRONMENT_NAME] --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL]
 aws elasticbeanstalk create-environment --environment-name my-env --application-name my-app --version-label v1
 ```
-
+### View Existing 
+Existing environments can be viewed using the `describe-environments` command, providing no options will return all envinronments:
+```bash
+# aws elasticbeanstalk describe-environments
+aws elasticbeanstalk describe-environments
+```
+#### For an Application
+You may want to only see the environments for a specific application, this can be done by passing the application name into the `--application-name` argument.
+```bash
+# aws elasticbeanstalk descibe-environments --application-name [APPLICATION_NAME]
+aws elasticbeanstalk descibe-environments --application-name my-app
+```
+### Terminate Environment
+Terminating an environment is effectively deleting it which is done by using the `terminate-environment` commmand.
+When terminating an environment all you will need to provide is the *environment name*:
+```bash
+# aws elasticbeanstalk terminate-environment --environment-name [ENVIRONMENT_NAME]
+aws elasticbeanstalk terminate-environment --environment-name [ENVIRONMENT_NAME]
+```
 ## Tasks
+Here we are going to deploy an Elastic Beanstalk sample application, which will entail creating:
+- An *Application*
+- A *Version* of the application to deploy
+- An *Environment* to deploy the version of the application in
+#### Prerequisites
+- AWS CLI configured
+### Create the Application
+First off we are going to need an application, create one by runnig the command below:
+```bash
+aws elasticbeanstalk create-application --application-name sample-eb-app --description "Sample Elastic Beanstalk Application"
+```
+Now at anytime we can see details about the application:
+```bash
+aws elasticbeanstalk describe-applications
+```
+You should see an output like this:
+```json
+{
+    "Applications": [
+        {
+            "ApplicationName": "sample-eb-app",
+            "Description": "Sample Elastic Beanstalk Application",
+            "DateCreated": "2019-10-19T10:05:53.895Z",
+            "ConfigurationTemplates": [],
+            "DateUpdated": "2019-10-19T10:05:53.895Z",
+            "ResourceLifecycleConfig": {
+                "VersionLifecycleConfig": {
+                    "MaxCountRule": {
+                        "DeleteSourceFromS3": false,
+                        "Enabled": false,
+                        "MaxCount": 200
+                    },
+                    "MaxAgeRule": {
+                        "DeleteSourceFromS3": false,
+                        "Enabled": false, 
+                        "MaxAgeInDays": 180
+                    }
+                }
+            },
+            "ApplicationArn": "arn:aws:elasticbeanstalk:eu-west-2:847151757780:application/sample-eb-app"
+        }
+    ]
+}
+```
+### Create an Application Version
+The next thing that is needed is a version of the application which can be deployed, lets create one with a label of `v1` without a source bundle specified so that AWS deploys a sample application for us:
+```bash
+aws elasticbeanstalk create-application-version --application-name sample-eb-app --version-label v1
+```
+You should now be able to view information about your new application version at any point:
+```bash
+aws elasticbeanstalk describe-application-versions
+```
+You should see something like this:
+```json
+{
+    "ApplicationVersions": [
+        {
+            "ApplicationName": "sample-eb-app",
+            "Status": "UNPROCESSED",
+            "VersionLabel": "v1",
+            "ApplicationVersionArn": "arn:aws:elasticbeanstalk:eu-west-2:847151757780:applicationversion/sample-eb-app/v1",
+            "DateCreated": "2019-10-19T10:11:07.826Z",
+            "DateUpdated": "2019-10-19T10:11:07.826Z",
+            "SourceBundle": {
+                "S3Bucket": "elasticbeanstalk-eu-west-2",
+                "S3Key": "GenericSampleApplication"
+            }
+        }
+    ]
+}
+```
+### Create an Environment
+So this is the last step really, now that we have an application and an application version we can make an environment with the version deployed on it.
+We'll call the environment `development` and provide the *application name* and *version label*:
+```bash
+aws elasticbeanstalk create-environment --environment-name development --application-name sample-eb-app --version-label v1
+```
+Great, now lets see information about our new environment:
+```bash
+aws elasticbeanstalk describe-environments
+```
+```json
+
+```
