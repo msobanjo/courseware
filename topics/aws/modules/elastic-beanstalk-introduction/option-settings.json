@@ -1,0 +1,8 @@
+[
+    {
+        "OptionName": "IamInstanceProfile",
+        "ResourceName": "AWSEBAutoScalingLaunchConfiguration",
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "Value": "aws-elasticbeanstalk-ec2-role"
+    }
+]

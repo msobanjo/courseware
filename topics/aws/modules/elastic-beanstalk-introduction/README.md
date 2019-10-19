@@ -86,6 +86,8 @@ The application can be deleted by providing the unique name of it to the `delete
 # aws elasticbeanstalk delete-application --application-name [APPLICATION_NAME]
 aws elasticbeanstalk delete-application --application-name my-first-application
 ```
+**Note before an application can be deleted, there can't be any environments with running code on them.**
+The easiet way to solve this would be to terminate all the environments beforehand.
 
 ## Versions
 The way that deployments can be managed in EB is through versions of your applications.
@@ -140,16 +142,20 @@ An environment can be created with the `create-environment` command.
 To create a new environment the following information is required:
 - Environment Name (`--environment-name`)  
   The name for your environment has the following contraints:
-  - 4-40 characters in length
-  - Only container letters, numbers and hyphens
-  - Unique within a region in your account - you can't have two environments called `dev` in London for example
+  - 4-40 characters in length.
+  - Only container letters, numbers and hyphens.
+  - Unique within a region in your account - you can't have two environments called `dev` in London for example.
 - Application Name (`--application-name`)  
   This is the name of the application which has the version that you are wanting to deploy.
 - Version Label (`--version-label`)  
-  This is the specific version that is going to be deployed to the environment
+  This is the specific version that is going to be deployed to the environment.
+- Solution Stack (`--solution-stack-name`)  
+  This is going to be the type of environment that you would like to deploy to - Python, Java etc. Available solution stack names can be found by running `aws elasticbeanstalk list-available-solution-stacks`.
+- You must have a default VPC configured in the same region for this application environment, this can be done with `aws ec2 create-default-vpc`
+- Some extra options must also be passed in using `--option-settings`, don't worry about the specifics for this for now.
 ```bash
-# aws elasticbeanstalk create-environment --environment-name [ENVIRONMENT_NAME] --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL]
-aws elasticbeanstalk create-environment --environment-name my-env --application-name my-app --version-label v1
+# aws elasticbeanstalk create-environment --environment-name [ENVIRONMENT_NAME] --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL] --solution-stack-name "[SOLUTION_STACK_NAME]"
+aws elasticbeanstalk create-environment --environment-name my-env --application-name my-app --version-label v1 --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.4"
 ```
 ### View Existing 
 Existing environments can be viewed using the `describe-environments` command, providing no options will return all envinronments:
@@ -245,14 +251,79 @@ You should see something like this:
 ```
 ### Create an Environment
 So this is the last step really, now that we have an application and an application version we can make an environment with the version deployed on it.
-We'll call the environment `development` and provide the *application name* and *version label*:
+
+#### Create a Default VPC
+Make sure that you have a default VPC available in the same region:
 ```bash
-aws elasticbeanstalk create-environment --environment-name development --application-name sample-eb-app --version-label v1
+aws ec2 create-default-vpc
+```
+#### Find a Solution Stack
+We will want to know the solution stack name, this can be done by listing the available solution stacks:
+```bash
+aws elasticbeanstalk list-available-solution-stacks
+```
+You will see an output much larger than the example shown below, this has been reduced for the sake of this guide.
+Once you have listed the available solution stacks, choose any one of them for your solution stack when we create the environment in the next step.
+```json
+{
+    "SolutionStacks": [
+        "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.6",
+        "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.4",
+        "64bit Amazon Linux 2018.03 v2.9.3 running Python",
+        "64bit Amazon Linux 2018.03 v2.9.3 running Python 2.7",
+        "64bit Amazon Linux 2018.03 v2.11.0 running Ruby 2.6 (Puma)",
+        "64bit Debian jessie v2.13.0 running Go 1.3 (Preconfigured - Docker)",
+        "64bit Windows Server Core 2012 R2 running IIS 8.5"
+	]
+}
+```
+#### Create the Environment
+We'll call the environment `development` and provide the *application name* and *version label*.
+The solution stack name here may not be valid for you so be sure to copy one from when you listed the available solution stacks before.
+We will also be passing in a options file for the ennvironment that can be found in this module folder, don't worry about was this does for now:
+```bash
+aws elasticbeanstalk create-environment --environment-name development --application-name sample-eb-app --version-label v1 --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.6" --option-settings file://option-settings.json
 ```
 Great, now lets see information about our new environment:
 ```bash
 aws elasticbeanstalk describe-environments
 ```
+After a few minutes this command should output something liek the example below, indicating that the `Status` is `Ready` and there should also be an `EndpointURL` property that you can copy and put in a web browser to access:
 ```json
+{
+    "Environments": [
+        {
+            "ApplicationName": "sample-eb-app",
+            "EnvironmentName": "development",
+            "VersionLabel": "v1",
+            "Status": "Ready",
+            "EnvironmentArn": "arn:aws:elasticbeanstalk:eu-west-2:847151757780:environment/sample-eb-app/development",
+            "EnvironmentLinks": [],
+            "PlatformArn": "arn:aws:elasticbeanstalk:eu-west-2::platform/Python 3.6 running on 64bit Amazon Linux/2.9.3",
+            "EndpointURL": "awseb-e-f-AWSEBLoa-1BMV14EFTZCSR-1174490699.eu-west-2.elb.amazonaws.com",
+            "SolutionStackName": "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.6",
+            "EnvironmentId": "e-f9cfpunm2q",
+            "CNAME": "development.bdyha2nm2d.eu-west-2.elasticbeanstalk.com",
+            "AbortableOperationInProgress": false,
+            "Tier": {
+                "Version": "1.0",
+                "Type": "Standard",
+                "Name": "WebServer"
+            },
+            "Health": "Green",
+            "DateUpdated": "2019-10-19T12:14:00.547Z",
+            "DateCreated": "2019-10-19T12:11:37.728Z"
+        }
+    ]
+}
+```
+For this example, once the `EndpointURL` was put in a browser, the sample application can be seen:
 
+![AWS EB Sample Application](https://lh3.googleusercontent.com/3F0FKnWJBO6tKDEKXrU1W_pJl1gE3Twg91p-i0HYo8FQNcXOuKF1oTaiy0lAmQOD2EHeI1jKTCflIe7NOC5OKOMLWAcKDStw0u2oCTzyEZdwlvz3UvxipcnXXmA8iU9IIvi9gDudBAI0OcY3DcXI3819Ri63i9F8zRQ-hES50RfK11PLlD7_GTHJvL6K_ApDt_vy6oYz-GyUtNgt3FfB974W-Y2Hn7T2BJg_p0dc3f0WLcABi-42HLs_W_aEjb5nijR012MUFFRZp8vYHWJLk2XuMkwHoST10JXnq-f6mmp6-oHIYlC3BOb5TJkZvOJgpbwQGqm57Qtfe0n02RBGCS4oFEWS0-d7fGKCm6s5Eylm_809MGwUhU_BHrugzj8ixjOUJ8kGsyrnWGWOKNVQRc6DeHz0rLexvajnxzmfO9WgMWfkKPAEMXllT4erzKBbMBpOcuh7IF-mS8mHKsAakGh_gJfX_H8qDOi1Tvc6rq79rh4WNhLQ8qOl3vSXJ95qD8wcFVcsxDCklkJKFi5YnTpL3Gg6-5zpcat_V6JNeBgePVFb0uLHKbznsa0dODLXw-BzgaE5eBLrT0xbRt5X0vvQC_Di1z7FbS7_QA6eV4vDwnJ3HySH6RucAFCt_uqTLNP6YI-QSVhJjEk6_k3MvfxYIsaN4t8cHkEfQa76Nb80NXX5JaRFOYevjSZU4dJoYhFgGfln7mxlmY-26AH_DZ-mCBrXsbFmjGIsSSulwl63x4ih=w1280-h700-no)
+
+### Clean Up
+We can clean up the resources used in this tutorial by first deleting all the environments and finally the application itself:
+```bash
+aws elasticbeanstalk  terminate-environment --environment-name development --application-name sample-eb-app
+aws elasticbeanstalk  delete-application --application-name sample-eb-app
 ```
