@@ -1,7 +1,7 @@
 <!--PROPS
 {
     "prerequisites": [
-        "aws/introduction"
+        "aws/introduction",
 		"aws/cli"
     ]
 }
