@@ -131,6 +131,23 @@ aws elasticbeanstalk delete-application-version --application-name my-applicatio
 ```
 ## Environments
 Environments are completely different instances of the application that are running.
-This is of course ideal for testing new features and bug fixes before deploying the version to a production instance of the application that is in service.
+This is of course ideal for testing new features and bug fixes before deploying any new versions to a production instance of the application that is in service.
+
+### Create
+An environment can be created with the `create-environment` command.
+To create a new environment the following information is required:
+- Environment Name (`--environment-name`)  
+  The name for your environment has the following contraints:
+  - 4-40 characters in length
+  - Only container letters, numbers and hyphens
+  - Unique within a region in your account - you can't have two environments called `dev` in London for example
+- Application Name (`--application-name`)  
+  This is the name of the application which has the version that you are wanting to deploy.
+- Version Label (`--version-label`)  
+  This is the specific version that is going to be deployed to the environment
+```bash
+# aws elasticbeanstalk create-environment --environment-name [ENVIRONMENT_NAME] --application-name [APPLICATION_NAME] --version-label [VERSION_LABEL]
+aws elasticbeanstalk create-environment --environment-name my-env --application-name my-app --version-label v1
+```
 
 ## Tasks
