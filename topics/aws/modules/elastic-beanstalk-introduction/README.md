@@ -6,7 +6,7 @@
     ]
 }
 -->
-# Elastic Beanstalk Introducion
+# Elastic Beanstalk Introduction
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
