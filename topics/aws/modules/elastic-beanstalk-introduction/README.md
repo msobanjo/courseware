@@ -23,6 +23,7 @@
 		- [Show Versions for an Application](#show-versions-for-an-application)
 		- [Delete](#delete-1)
 - [Environments](#environments)
+	- [Create](#create-2)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
