@@ -25,7 +25,18 @@
 		- [Delete](#delete-1)
 - [Environments](#environments)
 	- [Create](#create-2)
+	- [View Existing](#view-existing)
+		- [For an Application](#for-an-application)
+	- [Terminate Environment](#terminate-environment)
 - [Tasks](#tasks)
+		- [Prerequisites](#prerequisites)
+	- [Create the Application](#create-the-application)
+	- [Create an Application Version](#create-an-application-version)
+	- [Create an Environment](#create-an-environment)
+		- [Create a Default VPC](#create-a-default-vpc)
+		- [Find a Solution Stack](#find-a-solution-stack)
+		- [Create the Environment](#create-the-environment)
+	- [Clean Up](#clean-up)
 
 <!--TOC_END-->
 ## Overview
