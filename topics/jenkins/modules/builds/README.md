@@ -24,7 +24,7 @@ Here is a very simple console output example:
 ![Console Output](https://lh3.googleusercontent.com/EFczWADmtwqLjlr0XEd4iTNjDM4asKOhaeyhB_cQSFqGmK8vwxuFyY9AOXZVU-O_lHDHfaL1f8b7TCcIRze8-A9Svgb_F4ozuMLJG7qtuOr-jCTe_i2e6MZfEYuUEMPVOCLe269Lxuz0duZLjlV6nHHBBHKaQ7HBBGihUKe-kQ1dQuG2_mb7c1lGaSaVQNwFkwUDYggTYFMp09ypVltK8cUEtw02JsN4aWfbbnK9ze3xHI75LsIq1w3ot8AYB9xjW7gL30audvGa0VCtAQr1-5wk-3bR1QGdX1bBcJS2Jtd-Zur9FI6ZEtna-4cDRAvi-cyssk5tmFVN_GbiejMb-dSAn1r3O5t7Ay7jmEqdkypUqQtbcQhTO2y_5MHUhqaBKaecFgZ9OT3zVk37ArOklrJY_mwJp4f1w2bvfbOw_mKzufNWWt-2x0CgChEfvteOSukiRmyYCJaoYa3AVfhQRHlSZ7WJV2bUQABWtngz-A1r8W40dyZ4UM6AFQqW7uUWfj36iOWkvE4SEd-smcL4L0HUr0kglBdL4PT0YQSTVVADkRI2TQeuR-OhfiwStaKFezGbMIRVNmy1_O5O0dS-HRyo89zTCLzAeM4xS1MZM187f11aaeilzlAKYWmc5bnz1Dd-kZ0WkGv_skyI5cobOSH7v936MlEsa7lhJMsXWm59KXygAkyPhKsSKmUUormqI4CSVmZp8OPs4rqIVsPbYbhZ6Knb4hquwNWMmOfT_mIB58-h=w543-h198-no)
 
 ## Artifacts
-Build artufacts are immutable files that are created as result of the build.
+Build artifacts are immutable files that are created as result of the build.
 You have complete control over which files you would like to store as an artifact, this can be confured in the `Post-build Actions` section of the project configuration.
 
 The example here will archive any files and store them as artifacts for the project:
