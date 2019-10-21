@@ -1,5 +1,19 @@
 # Introduction
 
+<!--TOC_START-->
+### Contents
+- [Overview](#overview)
+- [Containerisation](#containerisation)
+	- [Containerisation Explained](#containerisation-explained)
+	- [Containers vs Virtual Machines](#containers-vs-virtual-machines)
+- [Linux Installation](#linux-installation)
+	- [Using Docker Commands on Linux without `sudo`](#using-docker-commands-on-linux-without-sudo)
+- [Windows & MacOS Installation](#windows--macos-installation)
+- [Demo](#demo)
+	- [Install Docker](#install-docker)
+	- [Try out Docker](#try-out-docker)
+
+<!--TOC_END-->
 ## Overview
 Docker is an open source tool that benefits both developers and system administrators, which is why it has become so popular as a “DevOps” tool.
 Developers should be able to focus on developing code and not have to worry about environment configuration issues, Docker is a solution for this because it uses containers to keep environments consistent; whether the code is running on production setup or a developer’s laptop.
