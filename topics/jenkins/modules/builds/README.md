@@ -2,6 +2,7 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
+- [Console Output](#console-output)
 
 <!--TOC_END-->
 ## Overview
@@ -15,4 +16,4 @@ Builds are named by the order that they were executed, so the first build ever e
 The console output is likely one of the main parts of a build that you will be checking for information and debugging purposes.
 This section includes the output for any shell scripts and plugins that have been executed in the build step for a project
 
-The console output can be navigated to quickly by selecting the blue or red bulb (<img height="15" src="https://lh3.googleusercontent.com/B5jJbglc5X61XbXAWK_puHwoxjVsVpcTTEToSTGRHN1W_qavtCcVSCYjwZ1k9KcAJb_28ZULWCxN6YhxgkS7B3pSC6XjxHlU2qAAaD2N6z40xjj91UrsNzC_K3qQfwuv6ZsjTA37BdXSE_FIvfjiYBtebgKuxa44MvUbqvN7A8fgbrEICgQhvWkcwb4gsMDq7EY52krPyxjbkkeZODDeJTtc27kon-ZXEfLke1ov57n5TbqedC0wa87xlFoVLw2avme3I2YNlCxfw5b5fJ-YJ_YN1QDOwpUFOMVh8tOxM6YBqtD-dVIMzGNvI3irTpFUrBXPSzCnd9WP4uNUR5v2B-5BIM1w6JdIPaObPmm89pXrqLy0UYsGctfUqd4Y6SN372rEv8ZiIVt8mYqZmg6d3D-MU3xMf32nSmR2UFkaG6IYwGT2w-y-zuLJU179iiHRsXF9NQzNL5cUfkjgWc1VL3s81wfZGBO81WwzAcXx1Tgiw4hLaGw9xUV2at0NZksfOJHdzOGqcIV5sEzFlL3sYU6xftnINZxUDR4vaPaF1xuegUZWHQxFg3bp5Sag7VQ-b2OqoO2j1I46f-ikzqkX4GzYvORjLgceAJ4mLuXURt9A5QdzrvdC7LBo43bwctj3UckEllx89iwcNTURkOE6a6DDcVXu7LRWt-tikGoKgE1lB0SyHlcF2teB9qhIawT7bguRn1fUckUAiDnF-eYa_Js1oCzNf2bRaeVIBrWlXCSvtZd2=w22-h20-no">) on the build history. 
+The console output can be navigated to quickly by selecting the blue or red bulb (<img height="15" src="https://lh3.googleusercontent.com/B5jJbglc5X61XbXAWK_puHwoxjVsVpcTTEToSTGRHN1W_qavtCcVSCYjwZ1k9KcAJb_28ZULWCxN6YhxgkS7B3pSC6XjxHlU2qAAaD2N6z40xjj91UrsNzC_K3qQfwuv6ZsjTA37BdXSE_FIvfjiYBtebgKuxa44MvUbqvN7A8fgbrEICgQhvWkcwb4gsMDq7EY52krPyxjbkkeZODDeJTtc27kon-ZXEfLke1ov57n5TbqedC0wa87xlFoVLw2avme3I2YNlCxfw5b5fJ-YJ_YN1QDOwpUFOMVh8tOxM6YBqtD-dVIMzGNvI3irTpFUrBXPSzCnd9WP4uNUR5v2B-5BIM1w6JdIPaObPmm89pXrqLy0UYsGctfUqd4Y6SN372rEv8ZiIVt8mYqZmg6d3D-MU3xMf32nSmR2UFkaG6IYwGT2w-y-zuLJU179iiHRsXF9NQzNL5cUfkjgWc1VL3s81wfZGBO81WwzAcXx1Tgiw4hLaGw9xUV2at0NZksfOJHdzOGqcIV5sEzFlL3sYU6xftnINZxUDR4vaPaF1xuegUZWHQxFg3bp5Sag7VQ-b2OqoO2j1I46f-ikzqkX4GzYvORjLgceAJ4mLuXURt9A5QdzrvdC7LBo43bwctj3UckEllx89iwcNTURkOE6a6DDcVXu7LRWt-tikGoKgE1lB0SyHlcF2teB9qhIawT7bguRn1fUckUAiDnF-eYa_Js1oCzNf2bRaeVIBrWlXCSvtZd2=w22-h20-no">) on the build history.
