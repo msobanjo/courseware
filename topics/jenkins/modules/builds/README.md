@@ -3,6 +3,8 @@
 ### Contents
 - [Overview](#overview)
 - [Console Output](#console-output)
+- [Artifacts](#artifacts)
+- [Accessing Artifacts](#accessing-artifacts)
 
 <!--TOC_END-->
 ## Overview
