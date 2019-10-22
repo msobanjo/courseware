@@ -34,4 +34,5 @@ Simply run this script on the machine you wish to install it on, and execute it 
 - [Freestyle Project](./modules/freestyle-project)
 - [Installation Wizard](./modules/installation-wizrd)
 - [Jobs](./modules/jobs)
+- [Source Code Management (SCM)](./modules/scm)
 <!--MODULES_END-->
