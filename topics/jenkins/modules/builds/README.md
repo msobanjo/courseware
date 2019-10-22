@@ -11,6 +11,10 @@
 - [Demo](#demo)
 	- [Create a Job](#create-a-job)
 	- [Add a Build Step](#add-a-build-step)
+	- [Run the Job](#run-the-job)
+	- [Make the Build Fail](#make-the-build-fail)
+	- [Fix the Build and Create Artifacts](#fix-the-build-and-create-artifacts)
+	- [Finish Up](#finish-up)
 
 <!--TOC_END-->
 ## Overview
