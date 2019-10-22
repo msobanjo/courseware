@@ -2,9 +2,12 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
+- [Build Status](#build-status)
+- [Build Steps](#build-steps)
 - [Console Output](#console-output)
-- [Artifacts](#artifacts)
-- [Accessing Artifacts](#accessing-artifacts)
+- [Post-build Actions](#postbuild-actions)
+	- [Artifacts](#artifacts)
+		- [Accessing Artifacts](#accessing-artifacts)
 
 <!--TOC_END-->
 ## Overview
@@ -78,4 +81,3 @@ The example here will archive any files and store them as artifacts for the proj
 Once the job has executed, the artifacts are then available on the job dashboard:
 
 ![Build Artifacts](https://lh3.googleusercontent.com/Petsj_ebr2qS3OZXyPfCwg79KEn7kfX8MtINz8Wg2asgJUfgNADgcR0HSmBdVRi3Qo_NIm9CQQBn8hzDtK2cpywJqyP6Gu6EoMjne6vkBBAT3O34bKYuPC64l44jQqIiHEJ73T3oi6CeVsUnvkABw_2O0m9q2wS13zVulXCnEVg2tKYPXZPQyFbtgxBriH-Ls94v-hvCBQl4_oWCIZbiqDbBh8Qnhek3W5X3F81baUMXX2mF2IRxUKagOcN2DC_on10bWjKmwCkiBcqk5eSwz-igaF1Gu8n_O1buVFy-xKnf2gMdKskjjl3PrkrqPyD1kq4W_1LOCpuY08Wa7BXT2CE6qgMfRsiBvyiwvr0_QmhyH8JxKAQjyJkfdTYlziBbte9ayPe9hqvu-H8BylON0YKDC3qvcgC6P5npgqZLbK9iXeittZMfE4lF4WWIJUggMxXViELa_ehI9-D0cDPYV7cM5h4Pq67AGO4R8mD4J5baGE7OoXs6DVBvfjPLAh8YGvV2TAhb7aRgU1DFGjzBv1uwQm9zQ7BM0N-51aRjSW6lthX2glngNXSWYbmbPW71itdBehgETOGZiH9agydzkASB4xi0tCAmaMwTTTNbI8BW8yh-zGPvZDumX8nZHL4Pch6UXdFeKhI8oUq-S5WiF1LQ0k8xy3oc_PLRlVsCyohckB_RzYd5XjdGJNRIlOzXov_cDHJqhybLJFJedgpkg7G4_Dxw3EKOn4qHfr9aKNmNRhmp=w443-h355-no)
-
