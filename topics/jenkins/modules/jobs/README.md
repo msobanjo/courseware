@@ -7,12 +7,6 @@
 - [Help!](#help)
 - [Job Configuration](#job-configuration)
 	- [General Settings](#general-settings)
-		- [Description](#description)
-		- [Discard Old Builds](#discard-old-builds)
-		- [GitHub Project](#github-project)
-		- [Parameters](#parameters)
-		- [Disable Project](#disable-project)
-		- [Concurrent Builds](#concurrent-builds)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
@@ -36,23 +30,16 @@ This is where you can set up what your job is going to do.
 There are many options, but this module will just focus on the General Settings.
 ### General Settings
 The settings and options throughout all job configurations will depend on what plugins are installed; this module aims to explain the ones that are suggested when you go through the Jenkins setup.
-#### Description
-This is just an open text field to fill in information about the job.
-You'll likely want to put some instructions about your job here, or some information about its current state; for example, if it's a work in progress.
-#### Discard Old Builds
-Disk space doesn't grow on trees.
-If your job uses up quite a bit of space, then, after you have built it many times, considerable disk space might be used by old builds that no longer serve any purpose.
-#### GitHub Project
-Jenkins jobs are commonly associated with some kind of source code repository, like GitHub.
-You can add a link to that repository here, so it's easier to navigate to from the job's page.
-#### Parameters
-To make your job more generic and able to accept different configurations, you can pass it parameters.
-#### Disable Project
-Prevention is better than cure.
-If there are issues with the job's current configuration and you would like to make sure that it doesn't get executed, then you can check this option.
-#### Concurrent Builds
-Use this option carefully.
-There are many cases where your job will not be able to run at the same time as another instance of it, which is why this is diabled by default.
+
+|Setting Name|Description|
+|------------|-----------|
+|Description| This is just an open text field to fill in information about the job. You'll likely want to put some instructions about your job here, or some information about its current state; for example, if it's a work in progress.|
+|Discard Old Builds| Disk space doesn't grow on trees. If your job uses up quite a bit of space, then, after you have built it many times, considerable disk space might be used by old builds that no longer serve any purpose.|
+|GitHub Project| Jenkins jobs are commonly associated with some kind of source code repository, like GitHub. You can add a link to that repository here, so it's easier to navigate to from the job's page.|
+|Parameters| To make your job more generic and able to accept different configurations, you can pass it parameters.|
+|Disable Project| Prevention is better than cure. If there are issues with the job's current configuration and you would like to make sure that it doesn't get executed, then you can check this option.|
+|Concurrent Builds| Use this option carefully. There are many cases where your job will not be able to run at the same time as another instance of it, which is why this is disabled by default.|
+
 ## Tasks
 Have a go at entering some simple configurations into your first job:
 - Choose any project from [GitHub](github.com)
