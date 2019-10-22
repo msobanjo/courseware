@@ -32,6 +32,6 @@ Simply run this script on the machine you wish to install it on, and execute it 
 ## Modules
 - [Basic Python Flask Freestyle Project Deployment with systemd](./modules/basic-python-flask-freestyle-project-deployment-with-systemd)
 - [Freestyle Project](./modules/freestyle-project)
+- [Installation Wizard](./modules/installation-wizrd)
 - [Jobs](./modules/jobs)
-- [Jenkins Setup from the Portal](./modules/web-setup)
 <!--MODULES_END-->

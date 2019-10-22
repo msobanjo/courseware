@@ -1,4 +1,4 @@
-# Jenkins Setup from the Portal
+# Installation Wizard
 Configuring Jenkins using a graphical interface.
 <!--TOC_START-->
 ### Contents
@@ -10,13 +10,6 @@ Configuring Jenkins using a graphical interface.
 - [Instance Configuration](#instance-configuration)
 - [Dashboard](#dashboard)
 	- [Dashboard Links](#dashboard-links)
-		- [New Item](#new-item)
-		- [People](#people)
-		- [Build History](#build-history)
-		- [Manage Jenkins](#manage-jenkins)
-		- [My Views](#my-views)
-		- [Credentials](#credentials)
-		- [Lockable Resources](#lockable-resources)
 
 <!--TOC_END-->
 ## Overview
@@ -46,20 +39,13 @@ All you will need to for this step is to select `Save and Finish`.
 You should now have Jenkins setup and have the following dashboard on your screen:
 ![Dashboard](https://i.imgur.com/JsVUo3x.png)
 ### Dashboard Links
-#### New Item
-This is for creating new jobs in Jenkins. Jobs are essentially scripts that can be triggered.
-#### People
-The users that are registered to this instance of Jenkins.
-#### Build History
-A graph displaying the jobs that have been executed over time, through this instance of Jenkins.
-#### Manage Jenkins
-This is where to go for setting up plugins and other administrative settings for Jenkins.
-#### My Views
-You can customise how the jobs, and what jobs, are listed on the dashboard here.
-#### Credentials
-In the Jenkins jobs that you create, you may need to authenticate with external services, such as GitHub.
-Credentials for these external services can be stored securely here, and accessed by jobs and plugins when they need them.
-#### Lockable Resources
-This plugin allows defining lockable resources (such as printers, phones, computers, etc.) that can be used by builds.
-If a build requires a resource that is already locked, it will wait for the resource to be free.
-You can define a lock-priority globally or on a per-job basis.
+
+|Link|Description|
+|----|-----------|
+|New Item| This is for creating new jobs in Jenkins. Jobs are essentially scripts that can be triggered.|
+|People| The users that are registered to this instance of Jenkins.|
+|Build History|A graph displaying the jobs that have been executed over time, through this instance of Jenkins.|
+|Manage Jenkins|This is where to go for setting up plugins and other administrative settings for Jenkins.|
+|My Views|You can customise how the jobs, and what jobs, are listed on the dashboard here.|
+|Credentials|In the Jenkins jobs that you create, you may need to authenticate with external services, such as GitHub. Credentials for these external services can be stored securely here, and accessed by jobs and plugins when they need them.
+|Lockable Resources|This plugin allows defining lockable resources (such as printers, phones, computers, etc.) that can be used by builds. If a build requires a resource that is already locked, it will wait for the resource to be free. You can define a lock-priority globally or on a per-job basis.|
