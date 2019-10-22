@@ -98,4 +98,39 @@ Add the following script into the `Command` field:
 #! /usr/bin/env bash
 echo "Hello from the Jenkins job named: ${JOB_NAME}"
 ```
+
+### Run the Job
 Save the job and then build it, you should then have one successful build in your history for that job.
+Once you navigate to the console output you should see an output like this:
+
+![Jenkins Build Output](https://lh3.googleusercontent.com/on72Ii9CCkQQTuiFmNWmvH61TpBvYY9DfNVnfQXTv7iYMd_MpdSDtB2PGlkUhyt95dW8Z3WxcaVu9VjGHpEB_x5YamliFBhLNJaUtJXY8YY4RoiZxOyOzRSMpwUSW9sm1s-pY7SoP0DreTJ7oNbXw3USXP9zL0tXLr-WEdNdjs66c_RrZ_TJDEWHiccdCoenU9ciMquW44xQUpMjnfOg96CHEcsu2kBezWlTNlFU_mgNt7J2kysgLqU1eE1ehzwfDxgDBOwKEji6dXatbjasXK8ZtPpYOPydrfV0QdBV4vZSLvBWTeHf7Y4x4deUOQ1oCILJrRqLQ7l0SYX9WNl838HlYMDs9-UN950CDCXLWN1x9yxTdPlOfQtcr-5Bzj_H8IMPGqI-Tp0p3Kp-MEXFV5tlZkrst32bCb1s1pBnbmH4RqG78AvtWmJmNJ-iovJTJG2ExDoNRpR-MK0odJu2iEqWRI3YUrBxdfkdM364kKrkEfbfW7wPYZP3lJeowDLmrdszAjNrdXUacseTmQh4V5NvKufZC6ejDKO8zw5DV6AOtNoE7Xd8nGF53OMUEb9C-0fzhVZ2cfRWTcbrHMTSlV7JJlR6EHtXguoiH0BnDcMq-NzY0V0Hux47TCmANOf3-zpUohQfasMsA7SooPaISghRh30M_awTPdgOvN8nPtyQZSCUwbgC4OO3pLqgR0J6-mNaA-S7t9pm1WY8Wue3b_0FWLh426cwfXzs_7AK4kjmR2Dc=w613-h311-no)
+
+### Make the Build Fail
+Now that the last build succeeded, let's see what a failed build looks like!
+All we have to do is make it so that the script we added to the command box "fails".
+Jenkins will treat any script or application exiting with a non-zero status as a failure.
+
+So to create a failed build, let's add `exit 1` to the script box, which will make the script exit with a code of `1`:
+
+```bash
+#! /usr/bin/env bash
+echo "Hello from the Jenkins job named: ${JOB_NAME}"
+exit 1
+```
+![Jenkins Failed Build Output](https://lh3.googleusercontent.com/5rPAcgdY778iHOfaNey8PqLVOesYfu3ZqDMZfuNgAnsbJFrQqbYHEqBpFIsv2HtDLJ7qT3mqAbldXj3mlx33B5tKaaw4dJz7NWbS8NqIp8LeWRmAl7TMX3wQDjEBDkKCLkrbIlM9lv71fMFccRXNzfvK5Oo3U6Gb7uoxbUZlSiHE-pIFPdsdn8vCQOuBsa4NSzJBxa1254SlMCgyaa79p0zdmdfHT44q8uanIavA4Hc3aX-tw1IP66AfiVDlhBUfSbmHRYtRIZ-oR3j9FJkauzoZ_qR81J8eKW8ifNCQifA4MEQHIdRVTykaW6hJBbjMguXOwWyUL17nG3sKjZYPGKfRLQKdsaw1Q6AohSTRmcyBAt8biSd7sC_aDmEePf66-QH2KAZLjkgOovFTzqwwgj6gF7dsYGhNC1TSKZ_S07X-xU9DCD1Jkgume5hR-zFm2HtFXFQY48PgvLEVdaZPuswxcGtchQUCxSF7zyO4wHYfNzDgpd4aBs0zOeqmlYIqGTy6WeEgimy8xLAXJme-hMO2pJ_QpKepbqMlA3hft2cfIqQNJ90skfMx0TMi31hC02sX4LYZgt7MvyvhIFYU3eBz5VtEM5B1qUKSPcHvZqSW99EZT3UxMXjDsTeZFDMUp2dUhZVAEc5VAmox7aG4YazJIDnp9g835xhddqHoi_19OohuUMdR81o8Mbzj4SzusKG4j7AWuFjrgP4aeul-QGhJ_yLaGYrCAKI3Sfx3ipG9zeMM=w617-h356-no)
+
+### Fix the Build and Create Artifacts 
+We can of course remove the `exit 1` from the build step to unbreak it.
+After that, lets change the script to create several files and then put them in a zip archive called `archive.zip`:
+
+```bash
+#! /usr/bin/env bash
+echo "Hello from the Jenkins job named: ${JOB_NAME}"
+touch 1.txt 2.txt 3.txt 4.txt 5.txt
+zip archive.zip *.txt
+```
+
+Next, a `Post-build Action` must be configured to archive the zip files,please refer to the [Artifacts](#artifacts) section for configuring this.
+
+### Finish Up
+Now try to run the job, you should see artifacts on the project dashboard; try refreshing the page if they don't show up.
