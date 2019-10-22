@@ -11,7 +11,6 @@
 - [Overview](#overview)
 - [Configuration](#configuration)
 	- [Multiple Repositories](#multiple-repositories)
-		- [Working with Multiple Repositories](#working-with-multiple-repositories)
 
 <!--TOC_END-->
 ## Overview
