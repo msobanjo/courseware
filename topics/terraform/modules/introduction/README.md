@@ -64,3 +64,6 @@ Follow the steps below, entering the commands into a terminal.
 9. Extract the Terraform zip archive: `unzip terraform_*_linux_*.zip`
 10. Move the Terraform binary to the /usr/local/bin folder: `sudo mv terraform /usr/local/bin`
 11. Remove the downloaded zip file: `rm terraform_*_linux_*.zip`
+
+### Verify the Installation
+You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
