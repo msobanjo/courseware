@@ -8,6 +8,9 @@
 - [Post-build Actions](#postbuild-actions)
 	- [Artifacts](#artifacts)
 		- [Accessing Artifacts](#accessing-artifacts)
+- [Demo](#demo)
+	- [Create a Job](#create-a-job)
+	- [Add a Build Step](#add-a-build-step)
 
 <!--TOC_END-->
 ## Overview
