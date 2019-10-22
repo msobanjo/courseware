@@ -81,3 +81,18 @@ The example here will archive any files and store them as artifacts for the proj
 Once the job has executed, the artifacts are then available on the job dashboard:
 
 ![Build Artifacts](https://lh3.googleusercontent.com/Petsj_ebr2qS3OZXyPfCwg79KEn7kfX8MtINz8Wg2asgJUfgNADgcR0HSmBdVRi3Qo_NIm9CQQBn8hzDtK2cpywJqyP6Gu6EoMjne6vkBBAT3O34bKYuPC64l44jQqIiHEJ73T3oi6CeVsUnvkABw_2O0m9q2wS13zVulXCnEVg2tKYPXZPQyFbtgxBriH-Ls94v-hvCBQl4_oWCIZbiqDbBh8Qnhek3W5X3F81baUMXX2mF2IRxUKagOcN2DC_on10bWjKmwCkiBcqk5eSwz-igaF1Gu8n_O1buVFy-xKnf2gMdKskjjl3PrkrqPyD1kq4W_1LOCpuY08Wa7BXT2CE6qgMfRsiBvyiwvr0_QmhyH8JxKAQjyJkfdTYlziBbte9ayPe9hqvu-H8BylON0YKDC3qvcgC6P5npgqZLbK9iXeittZMfE4lF4WWIJUggMxXViELa_ehI9-D0cDPYV7cM5h4Pq67AGO4R8mD4J5baGE7OoXs6DVBvfjPLAh8YGvV2TAhb7aRgU1DFGjzBv1uwQm9zQ7BM0N-51aRjSW6lthX2glngNXSWYbmbPW71itdBehgETOGZiH9agydzkASB4xi0tCAmaMwTTTNbI8BW8yh-zGPvZDumX8nZHL4Pch6UXdFeKhI8oUq-S5WiF1LQ0k8xy3oc_PLRlVsCyohckB_RzYd5XjdGJNRIlOzXov_cDHJqhybLJFJedgpkg7G4_Dxw3EKOn4qHfr9aKNmNRhmp=w443-h355-no)
+
+## Demo
+We'll have a look at creating some builds here, focusing on build step configuration, statuses and storing artifacts.
+
+### Create a Job
+First we will need a new Jenkins job to work on, create one called anything that you like.
+
+### Add a Build Step
+Lets add a build step we know will succeed, select the `Add build step` button and add an `Execute shell` build step.
+Add the following script into the `Command` field:
+```bash
+#! /usr/bin/env bash
+echo "Hello from the Jenkins job named: ${JOB_NAME}"
+```
+Save the job and then build it, you should then have one successful build in your history for that job.
