@@ -1,7 +1,7 @@
 <!--
 {
     "prerequisites": [
-        "git/"
+        "git/remotes"
     ]
 }
 -->
@@ -36,5 +36,3 @@ The first repository will have a remote set as `origin`, then for every resposit
 For example, if you had 3 repositories being downloaded, the remotes would be named `origin`, `origin1`, `origin2`.
 
 This default behaviour isn't ideal, so it's recommended that you configure the name of the remotes yourself under the `Advanced...` option and in the `Name` field for each repository that you add.
-
-#### Working with Multiple Repositories
