@@ -10,7 +10,9 @@
 ### Contents
 - [Overview](#overview)
 - [Configuration](#configuration)
-	- [Multiple Repositories](#multiple-repositories)
+- [Multiple Repositories](#multiple-repositories)
+- [Branches to Build](#branches-to-build)
+	- [Build the `master` Branch on all Repositories](#build-the-master-branch-on-all-repositories)
 
 <!--TOC_END-->
 ## Overview
