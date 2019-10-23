@@ -67,3 +67,22 @@ Follow the steps below, entering the commands into a terminal.
 
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
+
+### Creating a resource in AWS
+
+We will now create a resource in AWS using Terraform.
+First you need to find your `access_key` and `secret_key` in order to give terraform access to manage resources on AWS.
+You can find them by following these steps:
+1. Log in to your *AWS Management Console*
+2. Click on your user name at the top right of the page
+3. Click on the *Security Credentials* link from the drop-down menu
+4. Find the *Access Credentials* section, and copy the latest *Access Key ID*, this is the `access_key` 
+5. Click on the Show link in the same row, and copy the Secret Access Key, this is the `secret_key` 
+    6. If there is no Secret Access Key, create a new one
+7. Copy and save both in some text file but make sure to note down which is which. 
+After saving both of them you should have them looking like this in your text file.
+`
+access_key = "AKIBIWX7DKIDGMCHPG4A"
+secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
+`
+
