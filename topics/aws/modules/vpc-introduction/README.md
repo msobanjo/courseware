@@ -1,6 +1,9 @@
 # Virtual Private Cloud (VPC)
+
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Creating a VPC](#creating-a-vpc)
 	- [Basic Usage](#basic-usage)
@@ -31,6 +34,7 @@ For example, you can create a public-facing subnet for your web servers that has
 You can leverage multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
 
 ## Creating a VPC
+
 ### Basic Usage
 VPCs can be created very easily - you should only have to provide the CIDR block, which defines the address range for your subnet:
 ```bash
@@ -43,11 +47,13 @@ The CIDR block is what defines the size of your network.
 The smallest CIDR block you can have is /28, with 16 hosts, or /16, which can have up to 65,536 hosts.
 
 ## View Existing VPCs
+
 ### Basic Usage
 You may want to view the existing VPCs to view the properties of them:
 ```bash
 aws ec2 describe-vpcs
 ```
+
 ### Getting the ID Property Using Queries
 To manage a VPC, such as when you want to delete it, you will need to be able to reference that VPC by its ID.
 If you have several VPCs then the output can be a little overwhelming, considering that you just want to see the IDs.
@@ -58,6 +64,7 @@ aws ec2 describe-vpcs --output text --query "Vpcs[].VpcId"
 ```
 
 ## Delete VPCs
+
 ### Basic Usage
 The VPC ID must be provided when deleting a VPC:
 ```bash
@@ -75,28 +82,34 @@ aws ec2 create-default-vpc
 ```
 
 ## Tasks
+
 ### Managing a Simple VPC
 Try to complete the following tasks, using the commands you learned above:
+
 #### Create a new VPC with a CIDR block of `10.0.0.0/16`
 This example creates a VPC network that can have up to 65,536 hosts:
 ```bash
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 ```
+
 #### Delete a VPC using ID
 We can then delete the VPC using its ID; just replace `[VPC_ID]` in the command below with the ID of your VPC you just created:
 ```bash
 aws ec2 delete-vpc --vpc-id [VPC_ID]
 ```
+
 #### Storing a VPC's ID in a Bash Variable
 ```bash
 vpc_id=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query Vpc.VpcId --output text)
 echo ${vpc_id}
 ```
 You wil now be able to access the `vpc_id` variable in other parts of the script you are writing.
+
 #### Using a Bash Variable to Delete a VPC
 ```bash
 aws ec2 delete-vpc --vpc-id ${vpc_id}
 ```
+
 #### Make sure that there are none of the VPCs we created here are left and move on to the next section:
 ```bash
 aws ec2 describe-vpcs

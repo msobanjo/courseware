@@ -1,6 +1,7 @@
 # Environment Variables
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Access Types](#access-types)
 	- [Which Access Type and When?](#which-access-type-and-when)
@@ -28,6 +29,7 @@
 PowerShell has the ability to set and access system environment variables.
 Environment variables are just like normal variables, except they are configured outside of applications.
 This gives us the ability to program applications more generically, as opposed to hard-coding the values that we want into the program itself.
+
 ## Access Types
 Environment variables differ from regular variables, because they are not subjected to scope like regular variables are.
 However, there are different access types that you can set on an environment variable, which affects access to it.
@@ -64,21 +66,26 @@ All the types of environment variables we have discussed are accessed in the sam
 The access level will only change whether they are accessible or not.
 
 When setting an environment variable that is either for `User` or `System` level, you will need to restart the PowerShell session before you will be able to access it.
+
 ## Assigning Environment Variables
 There are a couple of ways to assign an environment variable, depending on what access type is going to be needed.
+
 ### Process Level Assignment
 You can use `$env` to assign a process level environment variable:
 ```powershell
 $env:TEST_VARIABLE = “test variable value”
 ```
+
 ### User & System Level Assignment
 User and System level environment variable assigment will need to be configured by leveraging the .NET framework that PowerShell has access to.
 This works by accessing the `SetEnvironmentVariable` method from the `System.Environment` class.
 We can pass this method the variable `name`, `value` and the `type`.
+
 #### User Level Example
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_VARIABLE", "test variable", "User")
 ```
+
 #### System Level Example
 System-wide environment variables can be provided by using the `Machine` type, which seems a bit ambiguous considering it's for a System environment variable.
 Remember, when you are setting a System environment variable, you will need have a PowerShell session opened as an administrator on Windows.
@@ -86,23 +93,26 @@ You could try running the example shown here in a non-administritive PowerShell 
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_VARIABLE", "test variable", "Machine")
 ```
+
 ## Unassign Environment Variables
 Variables can be unassigned by setting them to be `$null`.
 So, to unassign a variable, you just assign `$null` to it.
 Some examples have been included in this section for extra clarification.
+
 ### Unassign Process Level Environment Variable
 ```powershell
 $env:TEST_VARIABLE = $null
 ```
+
 ### Unassign User Level Environment Variable
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_VARIABLE", $null, "User")
 ```
+
 ### Unassign System Level Environment Variable
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_VARIABLE", $null, "Machine")
 ```
-
 
 ## Tasks
 Although PowerShell can be used on other systems like Linux, these exercises are best suited on a Windows machine. This is so that you can see the the different access types working correctly.
@@ -117,20 +127,24 @@ We can now check that the variable has been assigned correctly by accessing it:
 ```powershell
 echo $env:TEST_PROCESS_VARIABLE
 ```
+
 ### User & System Level Assignment
 Now we can assign simliar variables, but on a `User` and `System` level, by using PowerShell's .NET capabilities.
+
 #### User Level
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_USER_VARIABLE", "test user variable", "User")
 # restart your powershell session
 echo $env:TEST_USER_VARIABLE
 ```
+
 #### System Level
 ```powershell
 [System.Environment]::SetEnvironmentVariable("TEST_SYSTEM_VARIABLE", "test system variable", "Machine")
 # restart your powershell session
 echo $env:TEST_SYSTEM_VARIABLE
 ```
+
 ### Viewing System & User Level Environment Variables on Windows
 Specifically for Windows, we are able to view the System and User environment variables that have been assigned.
 

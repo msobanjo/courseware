@@ -6,8 +6,9 @@
 	]
 }
 -->
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Reviewing the history of a repository](#reviewing-the-history-of-a-repository)
 - [Reverting to a previous commit with revert](#reverting-to-a-previous-commit-with-revert)
 
@@ -85,7 +86,6 @@ git reset --hard
 ```
 
 ## Tasks
-
 1. Create a folder called "tmp"
 2. Initialise the folder as a git repository
 3. Create a new file called `test.txt`

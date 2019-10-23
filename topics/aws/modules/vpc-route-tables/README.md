@@ -1,7 +1,9 @@
 # AWS Route Tables
 
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Creating Route Tables](#creating-route-tables)
 - [Deleting Route Tables](#deleting-route-tables)
@@ -34,7 +36,9 @@ When creating a route table, you will need a VPC to attach it to. This is then r
 # aws ec2 create-route-table --vpc-id [VPC_ID]
 aws ec2 create-route-table --vpc-id vpc-a01106c2
 ```
+
 ## Deleting Route Tables
+
 ### Basic Usage
 Like most resources, a Route Table can be deleted by referencing its ID.
 Make sure that the Route Table isn't being used by any VPCs or Subnets:
@@ -44,6 +48,7 @@ aws ec2 delete-route-table --route-table-id rtb-22574640
 ```
 
 ## Creating Routes
+
 ### Route for Internet Access
 A very common reason for needing to create routes is for Internet access; we can create a route for all requests from instances in a VPC going to the `0.0.0.0/0` address range to get routed to an Internet Gateway, allowing internet access for that instance:
 ```bash
@@ -52,6 +57,7 @@ aws ec2 create-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.
 ```
 
 ## Deleting Routes
+
 ### Basic Usage
 When deleting a Route from a Route Table, you must reference the Route Table ID and the destination CIDR block (the address range) that the Route has configured - for example: `0.0.0.0/0`:
 ```bash
@@ -64,6 +70,5 @@ aws ec2 delete-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.
 - Create a Route Table for the new VPC.
 - Add a Route that allows Internet Access for the VPC.
 - Delete the Route Table, detach the Internet Gateway from the VPC and delete the it, Delete the VPC
-
 
 [Go Back](../README.md#tasks)
