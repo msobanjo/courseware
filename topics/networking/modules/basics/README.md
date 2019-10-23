@@ -1,7 +1,9 @@
 # Basics
 
 <!--TOC_START-->
-<!--TOC_END-->
+### Contents
+- [Overview](#overview)
+<!-- TOC_END-->
 
 ## Overview
 A network is essentially a web of distributed communication between entities. At the lowest level, networks facilitate the sharing of information. The internal and external transfer of information is crucial for this task.
