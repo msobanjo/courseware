@@ -23,7 +23,7 @@ This will download any dependencies necessary for the cloud provider.
 4. **Plan** - execute `terraform plan` in the project directory where the configuration file lies. 
 this will verify the creation process and scan the configuration file for any detectable faults.
 5. **Apply** - execute `terraform apply` in the project directory where the configuration file lies. 
-This will create the actual resource as well as the state file which terraform will use to check for changes in the configuration file to what is actually deployed.  
+This will create the actual resource as well as the state file which terraform will use to check for changes in the configuration file to what is actually deployed.
 
 ### Common use cases
 
