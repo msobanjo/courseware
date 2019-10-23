@@ -148,3 +148,20 @@ resource "aws_instance" "example" {
 }
 ```
 
+1. Open a terminal in the directory where the `main.tf` file is located.
+2. Run the following command for terraform to get any required dependencies based on the cloud provider being used:
+    `terraform init`
+3. Run the following command to scan the `main.tf` for any issues:
+    `terraform plan`
+4. Run the following command to create the real resource:
+    `terraform apply`
+5. Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created.
+    Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+    
+### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+    `terraform destroy` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
