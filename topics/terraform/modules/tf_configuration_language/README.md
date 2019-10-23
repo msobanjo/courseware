@@ -78,3 +78,29 @@ Formatting tool converts the `//` into `#` comments, the reason for this is that
 
 ### Tasks
 
+You will now create a resource on AWS, using some functionality from this module.
+
+### Prerequisites
+
+1. Have **aws cli** installed
+    2. You can install it by running the following python command, keep in mind you need to have python installed:
+    `pip install awscli`
+3. Know your `access` and `secret` keys
+
+First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
+`aws configure`
+You will be asked to provide the following things:
+* **AWS Access Key ID** this is where you would need to provide your *access* key
+* **AWS Secret Access Key ID** this is the *secret* key
+* **Default region name** would be **eu-west-2**
+You might get asked additionally to specify what formatting you want to use, enter **json**.
+
+
+# TODO
+create folder
+create file
+place the contents of the file one bit at a time and explain them
+run it
+check it worked
+clean up
+
