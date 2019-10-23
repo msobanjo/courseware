@@ -66,3 +66,12 @@ There is only one exception to this rule which is the `provisioner` block.
 Resources will be automatically processed in the correct order based on what are the relationships between the resources. 
 Hence, it's up to the implementer to decide on how to structure the files and how many to have.
 
+### Comments
+
+There are three types of comments supported:
+* `#` used for single line comments
+* `//` also used for single line comments, an alternative way to `#`
+* `/*` start of the multi line comment where `*/` ends the multi line comment
+
+`#` is the preferred way of leaving comments in the configuration files. 
+Formatting tool converts the `//` into `#` comments, the reason for this is that the `//` style is not idiomatic.
