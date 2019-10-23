@@ -12,6 +12,19 @@ There is a known issues with pipelines and that is environment drift, which mean
 When environments become inconsistent, deployments can be affected and testing can be made invalid. 
 With infrastructure as code, the infrastructure configurations can be versioned and maintained, so if another environment needs to be created, you can be sure that you are using up to date configurations.
 
+### Workflows
+
+There are a few steps that should be followed for a deployment, don't worry if you don't understand the concepts immediately, they will make more sense later on.
+
+1. **Scope** - check resources that need to be created for a given project
+2. **Author** - create the configuration file
+3. **Initialise** - execute `terraform init` in the project directory where the configuration file lies. 
+This will download any dependencies necessary for the cloud provider.
+4. **Plan** - execute `terraform plan` in the project directory where the configuration file lies. 
+this will verify the creation process and scan the configuration file for any detectable faults.
+5. **Apply** - execute `terraform apply` in the project directory where the configuration file lies. 
+This will create the actual resource as well as the state file which terraform will use to check for changes in the configuration file to what is actually deployed.  
+
 ### Common use cases
 
 * **Multi-Tier Applications** - It is very common to have applications with multiple tiers, each tier having different requirements and dependencies. 
