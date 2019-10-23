@@ -58,4 +58,11 @@ Other child modules can be referenced from child directories.
 In it's simplest form the root module would contain a single file of `.tf` or `.tf.json` extension. 
 Configuration can expand by adding new configuration files within the root module, or by organising resources through child modules.
 
- 
+### Order of configuration
+
+The order of blocks is not significant as the language is declarative. 
+There is only one exception to this rule which is the `provisioner` block.
+
+Resources will be automatically processed in the correct order based on what are the relationships between the resources. 
+Hence, it's up to the implementer to decide on how to structure the files and how many to have.
+
