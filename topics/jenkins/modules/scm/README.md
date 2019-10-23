@@ -40,5 +40,7 @@ This default behaviour isn't ideal, so it's recommended that you configure the n
 
 ## Branches to Build 
 After specifying which repositories that you want to fetch, you can also choose which branches that you would like to build.
+There are some quite complex different ways of checking out code that you can do here but usually being simple is better; there isn't a great deal of reasons to use anything other than the default value here (`*/master`) on simple projects.
 
-### Build the `master` Branch on all Repositories
+If you would like to be able to build different branches easily then you could use a string parameter by entering something like `*/${BRANCH}` into the `Branch Specifier` field.
+
