@@ -75,3 +75,6 @@ There are three types of comments supported:
 
 `#` is the preferred way of leaving comments in the configuration files. 
 Formatting tool converts the `//` into `#` comments, the reason for this is that the `//` style is not idiomatic.
+
+### Tasks
+
