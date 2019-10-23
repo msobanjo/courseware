@@ -70,8 +70,15 @@ You can verify that you have installed Terraform correctly by opening a command 
 
 ### Creating a resource in AWS
 
+Before going forward with this task there are a couple of pre-requisites:
+1. Your terraform installation has to be working.
+2. You will need an AWS account
+    3. If you don't have one, you can create a free account by going to: [AWS free account](https://aws.amazon.com/free)
+    
 We will now create a resource in AWS using Terraform.
+
 First you need to find your `access_key` and `secret_key` in order to give terraform access to manage resources on AWS.
+
 You can find them by following these steps:
 1. Log in to your *AWS Management Console*
 2. Click on your user name at the top right of the page
@@ -81,8 +88,63 @@ You can find them by following these steps:
     6. If there is no Secret Access Key, create a new one
 7. Copy and save both in some text file but make sure to note down which is which. 
 After saving both of them you should have them looking like this in your text file.
-`
+```
 access_key = "AKIBIWX7DKIDGMCHPG4A"
 secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
-`
+```
+
+For the next step create a new folder, you can pick any name for it but a suggested one would be `example_1`.
+
+Within the newly created folder, create a new file called `main.tf`.
+
+Open the `main.tf` with a text editor of your choosing.
+
+We will now declare in terraform syntax what provider we'll be using, as well as the `access_key`, `secret_key` and region where the resource will be created.
+
+Place the following into your `main.tf` file:
+
+```
+provider "aws" {
+	access_key = "AKIBIWX7DKIDGMCHPG4A"
+	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
+	region = "eu-west-2"
+}
+```
+
+First line tells terraform that the cloud provider will be `aws`.
+
+Second and third lines are required to authenticate with `aws` and give terraform access to manage the resources.
+
+Fourth line is specifying which region the resource will be created.
+
+For the next step we need to tell terraform what resource to create.
+
+Place the following into your `main.tf` file below the `provider`:
+
+```
+resource "aws_instance" "example" {
+	ami = "ami-2757f631"
+	instance_type = "t2.micro"
+}
+```
+
+The first line is telling terraform to create a new resource, in this case a virtual machine instance, with the name of `example`.
+
+Second line is declaring what *Amazon Machine Image* to use for the operating system.
+
+Third line is declaring what instance type to use, this will determine how many virtual CPUs and Memory it will have.
+
+`main.tf` should look similar to this once you have place the two pieces of text into it:
+```
+provider "aws" {
+	access_key = "AKIBIWX7DKIDGMCHPG4A"
+	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
+	region = "eu-west-2"
+}
+
+resource "aws_instance" "example" {
+	ami = "ami-2757f631"
+	instance_type = "t2.micro"
+}
+```
 
