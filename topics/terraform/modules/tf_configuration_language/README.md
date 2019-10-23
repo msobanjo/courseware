@@ -41,3 +41,21 @@ resource "aws_instance" "example" {
 }
 ```
 
+### Configuration files
+
+Terraform language configuration files uses an extension of `.tf`, an example file name would be `main.tf`. 
+Although, that isn't the only supported file extension, there is also the JSON syntax where the files have the extension of `.tf.json`, an example file name would be `main.tf.json`. 
+
+Configuration files need to use the `UTF-8` encoding. 
+Even though both windows and unix style line endings are supported you should use the unix style ones. 
+Windows line endings are represented as `\r\n` where unix are `\n`.
+
+*Module* is a one or more configuration files in the same directory where the configuration files are either with `.tf` or `.tf.json` extension. 
+
+The root directory would be built from the files and in the in the current working directory. 
+Other child modules can be referenced from child directories.
+
+In it's simplest form the root module would contain a single file of `.tf` or `.tf.json` extension. 
+Configuration can expand by adding new configuration files within the root module, or by organising resources through child modules.
+
+ 
