@@ -55,6 +55,7 @@ brew install git
 - [Branching](./modules/branching)
 - [Cloning](./modules/cloning)
 - [Forking](./modules/forking)
+- [GitHub Project Boards](./modules/github-project-boards)
 - [Merging](./modules/merging)
 - [Pull Requests](./modules/pull-requests)
 - [Reverting](./modules/reverting)
