@@ -90,6 +90,7 @@ example_2
     backend.tf
     frontend.tf
 ```
+Where each file would be a separate configuration file for a resource.
 
 ## Order of configuration
 
