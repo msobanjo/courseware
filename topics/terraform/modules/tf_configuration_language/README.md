@@ -13,14 +13,14 @@
 	- [Clean up](#clean-up)
 
 <!--TOC_END-->
-### Overview
+## Overview
 Terraform uses it's own configuration language. 
 
 It's designed to describe infrastructure in a concise way. 
 
 The language is declarative meaning it describes an intended goal rather than the steps of how to reach that goal.
 
-### Modules and resources
+## Modules and Resources
 
 Main purpose of Terraform language is to declare resources. 
 
@@ -28,7 +28,7 @@ Any additional features that the language has are meant to aid the primary purpo
 
 A *resource* describes a single object of infrastructure, but multiple resources can be combined into a *module* where relationships between them could be defined.
 
-### Basic syntax
+## Basic syntax
 
 There are three main building blocks to Terraform syntax they are: Arguments, Blocks and Expressions.
 
@@ -57,11 +57,12 @@ resource "aws_instance" "example" {
 }
 ```
 
-### Configuration files
+## Configuration files
 
 Terraform language configuration files uses an extension of `.tf`, an example file name would be `main.tf`. 
 
 Although, that isn't the only supported file extension, there is also the JSON syntax where the files have the extension of `.tf.json`, an example file name would be `main.tf.json`. 
+Terraform allows for JSON to be used because it is machine-readable, meaning that Terraform configurations themselves could be automated.
 
 Configuration files need to use the `UTF-8` encoding. 
 
@@ -79,7 +80,7 @@ In it's simplest form the root module would contain a single file of `.tf` or `.
 
 Configuration can expand by adding new configuration files within the root module, or by organising resources through child modules.
 
-### Order of configuration
+## Order of configuration
 
 The order of blocks is not significant as the language is declarative. 
 
@@ -89,7 +90,7 @@ Resources will be automatically processed in the correct order based on what are
 
 Hence, it's up to the implementer to decide on how to structure the files and how many to have.
 
-### Comments
+## Comments
 
 There are three types of comments supported:
 - `#` used for single line comments
@@ -100,7 +101,7 @@ There are three types of comments supported:
 
 Formatting tool converts the `//` into `#` comments, the reason for this is that the `//` style is not idiomatic.
 
-### Tasks
+## Tasks
 
 You will now create a resource on AWS, using some functionality from this module.
 
