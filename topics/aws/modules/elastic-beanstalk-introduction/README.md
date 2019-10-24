@@ -40,7 +40,7 @@
 
 <!--TOC_END-->
 ## Overview
-Elastic Beanstalk (EB) on AWS is Platform as a Service (PaaS) solution for deploying web applications and workloads.
+Elastic Beanstalk (EB) on AWS is a Platform as a Service (PaaS) solution for deploying web applications and workloads.
 EB can be used with little knowledge of infrastructure, allowing you to focus more on development.
 
 EB has the potential to be used as a quick way to provision a test environment or be used for production solutions with the ability to create different versions to deploy and roll back versions of deployments.
@@ -69,10 +69,10 @@ Understanding the CLI commands will also allow you to script solutions for EB an
 More information for the commands that can be used for Elastic Beanstalk can be found [here](https://docs.aws.amazon.com/cli/latest/reference/elasticbeanstalk/create-application.html).
 
 ## Applications
-An application is the highest level of configurtation for EB.
+An application is the highest level of configuration for EB.
 You may have more than one application in EB if you would like to.
 ### Create
-You will need to have a name for your application that isn't the same as any another applications in your EB, you may also provide a description for you application.
+You will need to have a name for your application that isn't the same as any other applications in your EB, you may also provide a description for you application.
 
 ```bash
 # aws elasticbeanstalk create-application --application-name [APPLICATION_NAME] --description "[DESCRIPTION]"
@@ -98,12 +98,12 @@ The application can be deleted by providing the unique name of it to the `delete
 aws elasticbeanstalk delete-application --application-name my-first-application
 ```
 **Note before an application can be deleted, there can't be any environments with running code on them.**
-The easiet way to solve this would be to terminate all the environments beforehand.
+The easiest way to solve this would be to terminate all the environments beforehand.
 
 ## Versions
 The way that deployments can be managed in EB is through versions of your applications.
 ### Create
-There are some required and preffered options to include when creating an application version:
+There are some required and preferred options to include when creating an application version:
 - `--application-name` (required): the name of the application that you are creating a version for
 - `--description` (optional): description for the version
 - `--source-bundle` (optional): the code to deploy, if ommited, a sample application will be set by AWS. The source bundle can be either from an AWS CodeCommit Git repository or a ZIP or WAR file stored in S3. 
@@ -133,7 +133,7 @@ If you provide no arguments then all the versions for every application that you
 aws elasticbeanstalk describe-application-versions
 ```
 #### Show Versions for an Application
-If there is a specific aplpication that you want to see the versions for the `--application-name` option can be provided to filter them out:
+If there is a specific application that you want to see the versions for the `--application-name` option can be provided to filter them out:
 ```bash
 # aws elasticbeanstalk describe-application-versions --application-name my-application
 aws elasticbeanstalk describe-application-versions --application-name my-application
@@ -169,7 +169,7 @@ To create a new environment the following information is required:
 aws elasticbeanstalk create-environment --environment-name my-env --application-name my-app --version-label v1 --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.4"
 ```
 ### View Existing 
-Existing environments can be viewed using the `describe-environments` command, providing no options will return all envinronments:
+Existing environments can be viewed using the `describe-environments` command, providing no options will return all environments:
 ```bash
 # aws elasticbeanstalk describe-environments
 aws elasticbeanstalk describe-environments
@@ -195,7 +195,7 @@ Here we are going to deploy an Elastic Beanstalk sample application, which will 
 #### Prerequisites
 - AWS CLI configured
 ### Create the Application
-First off we are going to need an application, create one by runnig the command below:
+First off we are going to need an application, create one by running the command below:
 ```bash
 aws elasticbeanstalk create-application --application-name sample-eb-app --description "Sample Elastic Beanstalk Application"
 ```
