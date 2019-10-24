@@ -3,6 +3,7 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Network Architecture](#network-architecture)
 - [Network Characteristics](#network-characteristics)
 	- [LAN vs WAN](#lan-vs-wan)
 	- [Network Spatial Scope](#network-spatial-scope)
@@ -16,9 +17,12 @@
 	- [IP Addresses](#ip-addresses)
 		- [IPv4](#ipv4)
 		- [IPv6](#ipv6)
+- [Networking Tools](#networking-tools)
+	- [`nslookup`](#nslookup)
+	- [`ping`](#ping)
+	- [Network Failures](#network-failures)
 
 <!--TOC_END-->
-
 ## Overview
 A network is essentially a web of distributed communication between entities. At the lowest level, networks facilitate the sharing of information. The internal and external transfer of information is crucial for this task.
 
@@ -122,6 +126,7 @@ Web services mostly use Hypertext Transfer Protocol (HTTP) to transmit data betw
 Browsers help to facilitate that data transfer, but the Web itself is one of many vehicles which use the Internet as its basis.
 
 ### Web access
+
 #### URLs vs URIs
 Accessing data through the Web is facilitated by using a (**U**niform **R**esource **I**ndicator). URI is used for all information which flows across the Web: every Web resource must have a specific string of characters which unambiguously define where that particular object is.
 
@@ -244,7 +249,6 @@ The first output is a response to each ping we send to `example.com` (a standard
 ```
 
 The second output counts the packets successfully sent and received, and counts any that might be lost.
-
 
 The output of a successful `ping` request typically looks like this:
 ```cmd
