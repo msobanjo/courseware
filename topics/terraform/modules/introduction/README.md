@@ -66,19 +66,19 @@ We will now install terraform and check that the installation was successful.
     
     <img align="left" src="https://imgur.com/6y4t3MX.jpg">
     
-    * Select **Environment Variables** button
+    * Select **Environment Variables...** button
     
     <img align="left" src="https://imgur.com/XihMpT9.jpg">
     
-    * Under *User Variables* for <your-username>, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
+    * Under *User Variables for <your-username>*, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
     
     <img align="left" src="https://imgur.com/EaIt6Jv.jpg">
     
-    * Under *User Variables* for <your-username>, select the variable called **Path** then click **Edit…** then enter **%TERRAFORM_HOME%**
+    * Under *System Variables*, select the variable called **Path** then click **Edit…** then in the next window click **New** and enter **%TERRAFORM_HOME%**
     
     <img align="left" src="https://imgur.com/bkXxBsK.jpg">
     
-    * Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window
+    * Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window.
     
 ### Linux
 
