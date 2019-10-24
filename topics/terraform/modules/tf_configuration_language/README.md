@@ -1,6 +1,6 @@
 # Configuration language
 
-### Overview
+## Overview
 Terraform uses it's own configuration language. 
 
 It's designed to describe infrastructure in a concise way. 
@@ -79,9 +79,9 @@ Hence, it's up to the implementer to decide on how to structure the files and ho
 ### Comments
 
 There are three types of comments supported:
-* `#` used for single line comments
-* `//` also used for single line comments, an alternative way to `#`
-* `/*` start of the multi line comment where `*/` ends the multi line comment
+- `#` used for single line comments
+- `//` also used for single line comments, an alternative way to `#`
+- `/*` start of the multi line comment where `*/` ends the multi line comment
 
 `#` is the preferred way of leaving comments in the configuration files. 
 
