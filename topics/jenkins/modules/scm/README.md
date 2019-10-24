@@ -79,6 +79,22 @@ To configure Web Hooks to work you will need to check the `GitHub hook trigger f
 You will then need to configure your Git service provider (such as GitHub) to send Webhooks to `[JENKINS_ADDRESS]/github-webhook/`.
 
 ## Demo
+In this demo we'll be automating the deployment of a simple website.
+There are two main components to this application:
+- Frontend
+    A HTML and JavaScript website that makes calls to the Backend service.
+    This website is hosted with NGINX as a webserver
+- Backend
+    A NodeJS server which can send JSON data over HTTP.
+
+## Setup Git Repositories
+For this example we are going to need couple of Git repositories.
+Go ahead and create two repositories on GitHub called the following:
+- `jenkins-scm-frontend`
+- `jenkins-scm-backend`
+
+### Upload the Provided Code
+In this module there are 2 folders for you to download and then upload the contents to the two repositories that you created beforehand.
 
 ## Webhook Configuration
 To configure Web Hooks to work you will need to check the `GitHub hook trigger for GITScm polling` option under the `Build Triggers` section on your Jenkins job that you are wanting to automatically trigger.
@@ -91,4 +107,5 @@ For this example we will be discussing how you can use GitHub to send Web Hooks 
 4. Set the `Content type` to be `application/json`
 5. Select `Add Webhook`
 
-Now try pushing a change to your GitHub repository, your Jenkins should start building very shortly afterwards.
+### Push a New Change
+Now try pushing a change to your GitHub repository, your Jenkins job should start building very shortly afterwards.
