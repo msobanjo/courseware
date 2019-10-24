@@ -1,6 +1,8 @@
 # Builds
+
 <!--TOC_START-->
-### Contents
+## Contents
+	- [Contents](#contents)
 - [Overview](#overview)
 - [Build Status](#build-status)
 - [Build Steps](#build-steps)
