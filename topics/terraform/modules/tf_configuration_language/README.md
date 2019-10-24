@@ -13,7 +13,6 @@
 	- [Clean up](#clean-up)
 
 <!--TOC_END-->
-
 ### Overview
 Terraform uses it's own configuration language. 
 
