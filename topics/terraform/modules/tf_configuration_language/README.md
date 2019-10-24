@@ -68,6 +68,8 @@ Configuration files need to use the `UTF-8` encoding.
 
 Even though both windows and unix style line endings are supported you should use the unix style ones. 
 
+This is to make sure that Terraform is reading the configuration file that you made correctly.
+
 Windows line endings are represented as `\r\n` where unix are `\n`.
 
 *Module* is a one or more configuration files in the same directory where the configuration files are either with `.tf` or `.tf.json` extension. 
