@@ -85,10 +85,10 @@ Configuration can expand by adding new configuration files within the root modul
 e.g If you required 3 VM's on AWS but you wanted to have separate configuration files, your projects root directory file structure could look like this:
 ```
 example_2
-    main.tf
-    db.tf
-    backend.tf
-    frontend.tf
+|---main.tf
+|---db.tf
+|---backend.tf
+|---frontend.tf
 ```
 Where each file would be a separate configuration file for a resource.
 
