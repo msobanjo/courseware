@@ -1,5 +1,18 @@
 # Configuration language
 
+<!--TOC_START-->
+## Contents
+	- [Overview](#overview)
+	- [Modules and resources](#modules-and-resources)
+	- [Basic syntax](#basic-syntax)
+	- [Configuration files](#configuration-files)
+	- [Order of configuration](#order-of-configuration)
+	- [Comments](#comments)
+	- [Tasks](#tasks)
+	- [Prerequisites](#prerequisites)
+	- [Clean up](#clean-up)
+
+<!--TOC_END-->
 ### Overview
 Terraform uses it's own configuration language. 
 
