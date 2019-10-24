@@ -1,8 +1,4 @@
 # Basics
-<!--TOC_START-->
-### Contents
-- [Overview](#overview)
-<!-- TOC_END-->
 ## Overview
 A network is essentially a web of distributed communication between entities. At the lowest level, networks facilitate the sharing of information. The internal and external transfer of information is crucial for this task.
 The most well-known network is, of course, the **Internet**, which, though well-known, is often poorly-understood. It arose out of a need for institutions to be accessible to, communicate with, and share information with each other.
