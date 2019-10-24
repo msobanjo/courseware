@@ -2,7 +2,13 @@
 
 ### Overview
 
-Terraform allows you to control your infrastructure on the cloud service provider the big providers like: AWS, GCP, Azure are supported. 
+Terraform allows you to control your infrastructure on the cloud service provider. 
+
+The big providers are: 
+* AWS
+* GCP
+* Azure 
+
 Your infrastructure can be described as code, allowing you to have a blueprint of your data-center that can be versioned like any other piece of code.
 
 ### Infrastructure as Code
