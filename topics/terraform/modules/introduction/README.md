@@ -107,22 +107,22 @@ We will now create a resource in AWS and check that it has been successfully cre
 ### Creating a resource in AWS
 
 Before going forward with this task there are a couple of pre-requisites:
-1. Your terraform installation has to be working.
-2. You will need an AWS account
-    3. If you don't have one, you can create a free account by going to: [AWS free account](https://aws.amazon.com/free)
+* Your terraform installation has to be working
+* You will need an AWS account
+    * If you don't have one, you can create a free account by going to: [AWS free account](https://aws.amazon.com/free)
     
 We will now create a resource in AWS using Terraform.
 
 First you need to find your `access_key` and `secret_key` in order to give terraform access to manage resources on AWS.
 
 You can find them by following these steps:
-1. Log in to your *AWS Management Console*
-2. Click on your user name at the top right of the page
-3. Click on the *Security Credentials* link from the drop-down menu
-4. Find the *Access Credentials* section, and copy the latest *Access Key ID*, this is the `access_key` 
-5. Click on the Show link in the same row, and copy the Secret Access Key, this is the `secret_key` 
-    6. If there is no Secret Access Key, create a new one
-7. Copy and save both in some text file but make sure to note down which is which. 
+* Log in to your *AWS Management Console*
+* Click on your user name at the top right of the page
+* Click on the *Security Credentials* link from the drop-down menu
+* Find the *Access Credentials* section, and copy the latest *Access Key ID*, this is the `access_key` 
+* Click on the Show link in the same row, and copy the Secret Access Key, this is the `secret_key` 
+    * If there is no Secret Access Key, create a new one
+* Copy and save both in some text file but make sure to note down which is which. 
 After saving both of them you should have them looking like this in your text file.
 ```
 access_key = "AKIBIWX7DKIDGMCHPG4A"
@@ -184,15 +184,15 @@ resource "aws_instance" "example" {
 }
 ```
 
-1. Open a terminal in the directory where the `main.tf` file is located.
-2. Run the following command for terraform to get any required dependencies based on the cloud provider being used:
+* Open a terminal in the directory where the `main.tf` file is located.
+* Run the following command for terraform to get any required dependencies based on the cloud provider being used:
     `terraform init`
-3. Run the following command to scan the `main.tf` for any issues:
+* Run the following command to scan the `main.tf` for any issues:
     `terraform plan`
-4. Run the following command to create the real resource:
+* Run the following command to create the real resource:
     `terraform apply`
-5. Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created.
-    Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+* Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
     
 ### Clean up
 
