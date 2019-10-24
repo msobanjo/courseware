@@ -28,9 +28,9 @@ There are a few steps that should be followed for a deployment, don't worry if y
 1. **Scope** - check resources that need to be created for a given project
 2. **Author** - create the configuration file
 3. **Initialise** - execute `terraform init` in the project directory where the configuration file lies. 
-This will download any dependencies necessary for the cloud provider.
+This will download any dependencies necessary for the selected cloud provider.
 4. **Plan** - execute `terraform plan` in the project directory where the configuration file lies. 
-this will verify the creation process and scan the configuration file for any detectable faults.
+This will verify the creation process and scan the configuration file for any detectable faults.
 5. **Apply** - execute `terraform apply` in the project directory where the configuration file lies. 
 This will create the actual resource as well as the state file which terraform will use to check for changes in the configuration file to what is actually deployed.
 
@@ -50,6 +50,8 @@ Spinning up and disposing environments this easily means that costs can also sav
 Another reason for multi-cloud deployments could be for extra fault tolerance.
 
 ### Tasks
+
+### First task
 
 We will now install terraform and check that the installation was successful.
 
@@ -89,6 +91,10 @@ Follow the steps below, entering the commands into a terminal.
 
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
+
+### Second task
+
+We will now create a resource in AWS and check that it has been successfully created.
 
 ### Creating a resource in AWS
 
