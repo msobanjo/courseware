@@ -146,7 +146,6 @@ For instance `%3F`may appear in certain sections of a URL for a `?`.
 
 Occasionally, `&` may also appear as `&amp` for similar reasons.
 
-
 #### URLs
 On the other hand, a URL is more specific, and usually conforms a much more varied specification:
 ```
