@@ -83,19 +83,19 @@ We will now install terraform and check that the installation was successful.
 ### Linux
 
 Follow the steps below, entering the commands into a terminal. 
-1. Make sure your system is up to date:
-    2. If you are using Debian/Ubuntu OS: `sudo apt update && sudo apt upgrade -y`
-    3. If you are using CentOS/RHEL/Fedora: `sudo yum update -y`
-4. Ensure the unzip and wget tools are installed:
-    5. If you are using Debian/Ubuntu OS: `sudo apt install -y unzip wget`
-    6. If you are using CentOS/RHEL/Fedora: `sudo yum install -y unzip wget`
-7. Download the Terraform zip:
-    8. Please not the version here will likely not be the latest, so please use the official download page to find out what the latest download link is: https://www.terraform.io/downloads.html. 
+* Make sure your system is up to date:
+    * If you are using Debian/Ubuntu OS: `sudo apt update && sudo apt upgrade -y`
+    * If you are using CentOS/RHEL/Fedora: `sudo yum update -y`
+* Ensure the unzip and wget tools are installed:
+    * If you are using Debian/Ubuntu OS: `sudo apt install -y unzip wget`
+    * If you are using CentOS/RHEL/Fedora: `sudo yum install -y unzip wget`
+* Download the Terraform zip:
+    * Please not the version here will likely not be the latest, so please use the official download page to find out what the latest download link is: https://www.terraform.io/downloads.html. 
      You will likely need to download the 64-bit version.
     `wget https://releases.hashicorp.com/terraform/0.12.12/terraform_0.12.12_linux_amd64.zip`
-9. Extract the Terraform zip archive: `unzip terraform_*_linux_*.zip`
-10. Move the Terraform binary to the /usr/local/bin folder: `sudo mv terraform /usr/local/bin`
-11. Remove the downloaded zip file: `rm terraform_*_linux_*.zip`
+* Extract the Terraform zip archive: `unzip terraform_*_linux_*.zip`
+* Move the Terraform binary to the /usr/local/bin folder: `sudo mv terraform /usr/local/bin`
+* Remove the downloaded zip file: `rm terraform_*_linux_*.zip`
 
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
