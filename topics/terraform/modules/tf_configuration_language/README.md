@@ -95,12 +95,74 @@ You will be asked to provide the following things:
 * **Default region name** would be **eu-west-2**
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
+For the next step create a new folder, you can pick any name for it but a suggested one would be `example_2`.
 
-# TODO
-create folder
-create file
-place the contents of the file one bit at a time and explain them
-run it
-check it worked
-clean up
+Within the newly created folder, create a new file called `main.tf`.
 
+Open the `main.tf` with a text editor of your choosing.
+
+Now paste the following contents into the `main.tf` file:
+```
+provider "aws" {
+	region = "eu-west-2"
+}
+``` 
+You may have noticed that there is only the region declared and no `access_key` or `secret_key` declared, this is done on purpose. 
+We're doing it in this way so that when you will be uploading these configuration files to GitHub you wouldn't accidentally expose them.
+In later steps we will configure the *access* and *secret* keys using *aws cli* which is the more secure way of doing it.
+
+Now let's declare two variables that we'll use for the resource declaration. 
+Paste the following below the *provider* block:
+```
+variable "ami" {
+	description = "machine image"
+	default = "ami-f976839e"
+}
+
+variable "type" {
+	# instance type
+	/*
+		This will determine how many CPU and RAM will be assigned
+	*/
+	default = "t2.micro"
+}
+``` 
+We're declaring two variables, the first variable is called **ami**, and the value it holds is under the **default** argument. 
+It also holds a description about this variable.
+
+The second variable is **type**, we can see that it has two types of comments, a single line comment and a multi line comment.
+The default argument is holding the value of what will be the type of instance we'll be creating.
+
+Paste the following below the variables:
+```
+resource "aws_instance" "example" {
+	ami = var.ami
+	instance_type = var.type
+}
+```
+
+In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var*, it allows us to get a specific variables value by referring to it's name. 
+In this case when we want to use the value of the **ami** variable we need to make a reference to it like this: `var.ami`.
+
+The second argument is **instance_type** which specifies which machine configuration to use, it will determine how many vCPU's will be assigned as well as the amount of RAM. 
+Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
+
+Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
+First let's execute the following command:
+
+`terraform init`
+
+Next let's execute:
+
+`terraform plan`
+
+Lastly let's create the resource by executing:
+
+`terraform apply`
+
+Once terraform will give you the prompt that the resource has been created successfully, check it on the *Amazon Console*.
+
+### Clean up
+
+To clean up execute:
+`terraform destroy`
