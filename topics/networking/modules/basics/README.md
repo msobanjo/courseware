@@ -18,13 +18,47 @@
 		- [IPv6](#ipv6)
 
 <!--TOC_END-->
+
 ## Overview
 A network is essentially a web of distributed communication between entities. At the lowest level, networks facilitate the sharing of information. The internal and external transfer of information is crucial for this task.
 
 The most well-known network is the **Internet**, which, though well-known, is often poorly-understood. It arose out of a need for institutions to be accessible to, communicate with, and share information with each other.
 
+## Network Architecture
+An example of typical network architecture is shown below:
+
+```text
+             ┌────────[Router]────────┐
+          [Switch]                 [Switch]
+       ┌─────┴─────┐            ┌─────┴─────┐
+     [Node]      [Node]       [Node]      [Node]
+```
+
+The functions of these basic network components are listed below:
+
+| Component | Function |
+|-|-|
+| Router | Forwards data and directs network traffic |
+| Switch | Connects devices; receives and processes packets from a router to send to a device |
+| Node | A device; sends packets to a switch to forward to a router; receives and processes packets from a switch |
+
+There are also several other components that might be commonly found in a network:
+
+| Component | Function |
+|-|-|
+| Cable | Direct connectivity between any network components |
+| Signal |  Wireless connectivity between any network components |
+| Network Interface Controller (NIC )| Physically receives data from a network |
+| Host adapter | Connects a host system to other network/storage devices |
+| Gateway | Allows for data transfer between networks |
+| Network bridge | Aggregates mutliple networks together |
+| Hub | Connects multiple devices together onto a single network |
+
+There are a myriad of other physical, wireless, and hybrid network devices.
+
 ## Network Characteristics
-There are a number of characteristics by which all networks operate in some capacity:
+Networks always operate on the basis of providing seamless interconnectivity between devices. Therefore, there are a number of characteristics by which all networks must adhere to, in some capacity. The most important six ways are listed below: 
+
 | Characteristic | |
 |-|-|
 | High capacity | Can the network support significant amounts of data transfer? |
@@ -88,7 +122,6 @@ Web services mostly use Hypertext Transfer Protocol (HTTP) to transmit data betw
 Browsers help to facilitate that data transfer, but the Web itself is one of many vehicles which use the Internet as its basis.
 
 ### Web access
-
 #### URLs vs URIs
 Accessing data through the Web is facilitated by using a (**U**niform **R**esource **I**ndicator). URI is used for all information which flows across the Web: every Web resource must have a specific string of characters which unambiguously define where that particular object is.
 
@@ -161,3 +194,79 @@ On the other hand, a URL is more specific, and usually conforms a much more vari
 #### IPv4
 
 #### IPv6
+
+## Networking Tools
+Two of the most basic tools for seeing networking in action are `nslookup` and `ping`.
+
+Both are lookup tools which check the availability of a host.
+
+### `nslookup`
+Here, we can check for the **IP address** of a particular site using `nslookup`:
+
+```cmd
+  C:\Windows\system32>nslookup example.com
+  Server:  dns.google
+  Address:  8.8.8.8
+
+  Non-authoritative answer:
+  Name:    example.com
+  Addresses:  2606:2800:220:1:248:1893:25c8:1946
+            93.184.216.34
+```
+
+This gives us quite a few bits of information.
+
+One of these is the IP address for `example.com`, which is `93.184.216.34`.
+
+### `ping`
+If we wanted to, we can now `ping` this IP address for availability:
+
+```cmd
+  C:\Windows\system32>ping 93.184.216.34
+```
+
+We could also indirectly ping the URL `example.com`:
+
+```cmd
+  C:\Windows\system32>ping example.com
+```
+
+We receive two outputs.
+
+The first output is a response to each ping we send to `example.com` (a standard `ping` request pings the server 4 times) in the form of a small **packet** of data:
+
+```cmd
+  Pinging 93.184.216.34 with 32 bytes of data:
+  Reply from 93.184.216.34: bytes=32 time=81ms TTL=51
+  Reply from 93.184.216.34: bytes=32 time=79ms TTL=51
+  Reply from 93.184.216.34: bytes=32 time=78ms TTL=51
+  Reply from 93.184.216.34: bytes=32 time=78ms TTL=51
+```
+
+The second output counts the packets successfully sent and received, and counts any that might be lost.
+
+
+The output of a successful `ping` request typically looks like this:
+```cmd
+  Ping statistics for 93.184.216.34:
+      Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+  Approximate round trip times in milli-seconds:
+      Minimum = 78ms, Maximum = 81ms, Average = 79ms
+```
+
+### Network Failures
+Occasionally, due to network failures or other connectivity issues, requests may simply fail to be sent from a node or received by a server. A failed `ping` request typically looks like this:
+```cmd
+C:\Windows\system32>ping en.wikipedia.org
+
+Pinging dyna.wikimedia.org [91.198.174.192] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 91.198.174.192:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+```
+
+This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
