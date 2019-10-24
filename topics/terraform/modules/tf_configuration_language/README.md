@@ -160,9 +160,14 @@ Lastly let's create the resource by executing:
 
 `terraform apply`
 
-Once terraform will give you the prompt that the resource has been created successfully, check it on the *Amazon Console*.
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
 ### Clean up
 
-To clean up execute:
-`terraform destroy`
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+    `terraform destroy` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
