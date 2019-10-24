@@ -1,6 +1,6 @@
 # Jenkins
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Installation](#installation)
 	- [Docker (Any Platform)](#docker-any-platform)
@@ -33,6 +33,6 @@ Simply run this script on the machine you wish to install it on, and execute it 
 - [Basic Python Flask Freestyle Project Deployment with systemd](./modules/basic-python-flask-freestyle-project-deployment-with-systemd)
 - [Builds](./modules/builds)
 - [Freestyle Project](./modules/freestyle-project)
+- [Installation Wizard](./modules/installation-wizard)
 - [Jobs](./modules/jobs)
-- [Jenkins Setup from the Portal](./modules/web-setup)
 <!--MODULES_END-->
