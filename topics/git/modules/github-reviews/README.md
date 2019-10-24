@@ -10,7 +10,6 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Contents](#contents)
 - [Overview](#overview)
 - [Requesting a Review](#requesting-a-review)
 - [Reviewing a PR](#reviewing-a-pr)
