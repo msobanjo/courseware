@@ -7,8 +7,10 @@ Availability Zones are distinct locations that are engineered to be isolated fro
 By launching instances in separate Availability Zones, you can protect your applications from the failure of a single location.
 We assign a unique ID to each subnet.
 
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Creating Subnets](#creating-subnets)
 	- [Basic Usage](#basic-usage)
 - [View Existing Subnets](#view-existing-subnets)
@@ -20,6 +22,7 @@ We assign a unique ID to each subnet.
 
 <!--TOC_END-->
 ## Creating Subnets
+
 ### Basic Usage
 After you create a subnet, you can't change its CIDR block.
 The size of the subnet's IPv4 CIDR block can be the same as a VPC's IPv4 CIDR block, or a subset of a VPC's IPv4 CIDR block.
@@ -33,11 +36,13 @@ aws ec2 create-subnet --vpc-id vpc-081ec835f3EXAMPLE --cidr-block 10.0.1.0/24
 ```
 
 ## View Existing Subnets
+
 ### Basic Usage
 You may want to view the existing Subnets to view the properties of them:
 ```bash
 aws ec2 describe-subnets
 ```
+
 ### Getting the ID Property Using Queries
 To manage a Subnet, such as when you want to delete it, you will need to be able to reference that Subnet by its ID.
 If you have several Subnets, the output can be a little overwhelming, considering that you just want to see the IDs.
@@ -48,6 +53,7 @@ aws ec2 describe-subnets --output text --query Subnets[].SubnetId
 ```
 
 ## Delete Subnets
+
 ### Basic Usage
 The Subnet ID must be provided when deleting a Subnet:
 ```bash

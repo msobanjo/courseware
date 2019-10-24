@@ -1,6 +1,28 @@
 # Introduction
 
-### Overview
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Infrastructure as Code](#infrastructure-as-code)
+	- [Workflows](#workflows)
+	- [Common use cases](#common-use-cases)
+- [Tasks](#tasks)
+	- [Installation](#installation)
+	- [Windows](#windows)
+		- [Configuring the Terraform on your `PATH`](#configuring-the-terraform-on-your-path)
+	- [Linux](#linux)
+	- [Verify the Installation](#verify-the-installation)
+	- [Creating a Simple Resource in AWS](#creating-a-simple-resource-in-aws)
+	- [Creating a resource in AWS](#creating-a-resource-in-aws)
+	- [Create an Access Key](#create-an-access-key)
+	- [Create Some Basic Terraform Files](#create-some-basic-terraform-files)
+		- [Configure the Provider](#configure-the-provider)
+		- [Create a Basic Resource](#create-a-basic-resource)
+		- [Use the Configurations That You Created](#use-the-configurations-that-you-created)
+	- [Clean up](#clean-up)
+
+<!--TOC_END-->
+## Overview
 
 Terraform allows you to control your infrastructure on the cloud service provider. 
 
@@ -8,8 +30,6 @@ The big providers are:
 * AWS
 * GCP
 * Azure 
-
-Your infrastructure can be described as code, allowing you to have a blueprint of your data-center that can be versioned like any other piece of code.
 
 ### Infrastructure as Code
 
@@ -38,8 +58,9 @@ This will create the actual resource as well as the state file which terraform w
 
 * **Multi-Tier Applications** - It is very common to have applications with multiple tiers, each tier having different requirements and dependencies. 
 With Terraform we are able to describe each tier of the application as a collection of resources so that the dependencies for each tier can be handled automatically.
-* **Software Demos** - Although tools like Vagrant can be used to create environments for demos, vagrant can’t completely mimic production environments additionally depending on how large the infrastructure for the application is, it might be a challenging to run it on a laptop.
- Because configurations for vagrant can be distributed, demos can be run against the end user’s infrastructure with ease. 
+* **Software Demos** - Although tools like Vagrant can be used to create environments for demos, vagrant can’t completely mimic production environments.
+Additionally, depending on how large the infrastructure for the application is, it might be challenging to run it on something like a laptop.
+ Because configurations for Terraform can be distributed, demos can be run against the end user’s infrastructure with ease. 
  Parameters for the Terraform configurations can also be tweaked so that the software can be demoed at any scale.
 * **Disposable Environments** - It is common to have a staging environment before deploying to production, which is a smaller clone of the production environment. 
 Production environments over time can become more complex and require more effort to mimic on a smaller scale. 
@@ -49,9 +70,9 @@ Spinning up and disposing environments this easily means that costs can also sav
  This hybrid solution might be due to a customer wanting to take advantage of the features available on different cloud provider solutions. 
 Another reason for multi-cloud deployments could be for extra fault tolerance.
 
-### Tasks
+## Tasks
 
-### First task
+### Installation
 
 We will now install terraform and check that the installation was successful.
 
@@ -60,26 +81,29 @@ We will now install terraform and check that the installation was successful.
 * Navigate to https://www.terraform.io/downloads.html in a web browser and download Terraform for 64-bit windows
 * Extract the .zip file
 * Copy the terraform.exe file from where you decided to extract it to a new folder: `C:\tools\terraform\`
-* We now need to configure the PATH environment variable so that Terraform can be used easily on the command line.
-    * Press **Windows key + R** to open the **Run program**
-    * Type **SystemPropertiesAdvanced** and click **OK**
+
+#### Configuring the Terraform on your `PATH`
+We now need to configure the `PATH` environment variable so that Terraform can be used easily on the command line.
+- Press **Windows key + R** to open the **Run program**
+- Type **SystemPropertiesAdvanced** and click **OK**
     
-    <img align="left" src="https://imgur.com/6y4t3MX.jpg">
+![Windows Configure Environment Variables](https://imgur.com/6y4t3MX.jpg)
     
-    * Select **Environment Variables...** button
+- Select **Environment Variables...** button
     
-    <img align="left" src="https://imgur.com/XihMpT9.jpg">
+![Select Environment Variables](https://imgur.com/XihMpT9.jpg)
     
-    * Under *User Variables for <your-username>*, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
+- Under *User Variables for <your-username>*, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
     
-    <img align="left" src="https://imgur.com/EaIt6Jv.jpg">
+![Environment Variables](https://imgur.com/EaIt6Jv.jpg)
     
-    * Under *System Variables*, select the variable called **Path** then click **Edit…** then in the next window click **New** and enter **%TERRAFORM_HOME%**
+- Under *System Variables*, select the variable called **Path** then click **Edit…** then in the next window click **New** and enter **%TERRAFORM_HOME%**
     
-    <img align="left" src="https://imgur.com/bkXxBsK.jpg">
+![System Variables](https://imgur.com/bkXxBsK.jpg)
     
-    * Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window.
+- Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window.
     
+
 ### Linux
 
 Follow the steps below, entering the commands into a terminal. 
@@ -100,7 +124,7 @@ Follow the steps below, entering the commands into a terminal.
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
 
-### Second task
+### Creating a Simple Resource in AWS
 
 We will now create a resource in AWS and check that it has been successfully created.
 
@@ -113,6 +137,7 @@ Before going forward with this task there are a couple of pre-requisites:
     
 We will now create a resource in AWS using Terraform.
 
+### Create an Access Key
 First you need to find your `access_key` and `secret_key` in order to give terraform access to manage resources on AWS.
 
 You can find them by following these steps:
@@ -129,12 +154,14 @@ access_key = "AKIBIWX7DKIDGMCHPG4A"
 secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
 ```
 
+### Create Some Basic Terraform Files
 For the next step create a new folder, you can pick any name for it but a suggested one would be `example_1`.
 
 Within the newly created folder, create a new file called `main.tf`.
 
 Open the `main.tf` with a text editor of your choosing.
 
+#### Configure the Provider
 We will now declare in terraform syntax what provider we'll be using, as well as the `access_key`, `secret_key` and region where the resource will be created.
 
 Place the following into your `main.tf` file:
@@ -153,6 +180,7 @@ Second and third lines are required to authenticate with `aws` and give terrafor
 
 Fourth line is specifying which region the resource will be created.
 
+#### Create a Basic Resource
 For the next step we need to tell terraform what resource to create.
 
 Place the following into your `main.tf` file below the `provider`:
@@ -184,6 +212,7 @@ resource "aws_instance" "example" {
 }
 ```
 
+#### Use the Configurations That You Created
 * Open a terminal in the directory where the `main.tf` file is located.
 * Run the following command for terraform to get any required dependencies based on the cloud provider being used:
     `terraform init`
@@ -194,6 +223,7 @@ resource "aws_instance" "example" {
 * Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
     
+
 ### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:

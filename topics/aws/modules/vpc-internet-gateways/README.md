@@ -1,6 +1,9 @@
 # EC2 VPC Internet Gateways
+
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Allowing Your EC2 Instances Internet Access](#allowing-your-ec2-instances-internet-access)
 - [Creating an Internet Gateway](#creating-an-internet-gateway)
@@ -38,6 +41,7 @@ The internet gateway logically provides the one-to-one NAT on behalf of your ins
 Conversely, traffic that's destined for the public IPv4 address or Elastic IP address of your instance has its destination address translated into the instance's private IPv4 address before the traffic is delivered to the VPC.
 
 ## Creating an Internet Gateway
+
 ### Basic Usage
 Creating an Internet Gateway is very simple, as no parameters are required:
 ```bash
@@ -45,6 +49,7 @@ aws ec2 create-internet-gateway
 ```
 
 ## Attaching an Internet Gateway to a VPC
+
 ### Basic Usage
 You must have an existing VPC to attach the internet gateway to.
 To attach an Internet Gateway to a VPC, you must provide the IDs for both the VPC and the Internet Gateway:
