@@ -9,9 +9,15 @@
 <!--TOC_START-->
 ### Contents
 - [Overview](#overview)
-- [Configuration](#configuration)
-- [Multiple Repositories](#multiple-repositories)
-- [Branches to Build](#branches-to-build)
+- [Repositories](#repositories)
+	- [Multiple Repositories](#multiple-repositories)
+	- [Branches to Build](#branches-to-build)
+- [Triggering Builds from SCM Changes](#triggering-builds-from-scm-changes)
+	- [Poll SCM](#poll-scm)
+		- [CRON](#cron)
+	- [Web Hooks](#web-hooks)
+- [Demo](#demo)
+- [Webhook Configuration](#webhook-configuration)
 
 <!--TOC_END-->
 ## Overview
