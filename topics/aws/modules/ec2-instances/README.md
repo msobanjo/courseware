@@ -1,6 +1,9 @@
 # AWS EC2 Instances
+
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Amazon Machine Images (AMIs)](#amazon-machine-images-amis)
 	- [Overview](#overview-1)
@@ -24,6 +27,7 @@ Amazon provides a variety of types of instances with different configurations of
 Instance types are grouped into families based on target application profiles. These groups include: general purpose, compute-optimized, GPU instances, memory optimized, storage optimized and micro instances.
 
 ## Amazon Machine Images (AMIs)
+
 ### Overview
 Instances are created from Amazon Machine Images (AMI).
 The machine images are like templates that are configured with an operating system and other software, which determine the user’s operating environment.
@@ -38,6 +42,7 @@ aws ec2 describe-images --owners 099720109477 --filters 'Name=name,Values=ubuntu
 ```
 
 ## Running an Instance
+
 ### Basic Usage
 Running an instance requires quite a few options:
 - **Image ID:**
@@ -56,6 +61,7 @@ aws ec2 run-instances --image-id ami-0ee246e709782b1be --count 1 --instance-type
 ```
 
 ## View Running Instances
+
 ### Basic Usage
 To check what existing instances there are, we can use the `describe-instances` command:
 ```bash
@@ -63,6 +69,7 @@ aws ec2 describe-instances
 ```
 
 ## Terminate a Running Instance
+
 ### Basic Usage
 We can terminate instances by providing their IDs to the `terminate-instances` command:
 ```bash

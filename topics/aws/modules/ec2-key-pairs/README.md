@@ -3,8 +3,10 @@ Key Pairs in EC2 can be used for securely connecting to EC2 instances in AWS.
 Connections are usually over SSH, which uses public and private keys.
 This handout discusses how to manage these Key Pairs, and how to locally store the private keys that are generated.
 
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Creating Key Pairs](#creating-key-pairs)
 	- [Basic Usage](#basic-usage)
 	- [The Private Key](#the-private-key)
@@ -16,12 +18,14 @@ This handout discusses how to manage these Key Pairs, and how to locally store t
 
 <!--TOC_END-->
 ## Creating Key Pairs
+
 ### Basic Usage
 The create-key-pair command can be used to create our key pair. We specify the name of the Key Pair so that it can be easily referenced later on, such as when we want to add a key pair to an EC2 instance:
 ```bash
 # aws ec2 create-key-pair --key-name [KEY_PAIR_NAME]
 aws ec2 create-key-pair --key-name MyKeyPair
 ```
+
 ### The Private Key
 Once a new Key Pair has been created, the AWS CLI will print out the private key, along with some other information about the Key Pair.
 The private key is what we can use on the client side, to authenticate with an EC2 instance.
@@ -52,6 +56,7 @@ chmod 400 ~/.ssh/MyKeyPair.pem
 ```
 
 ## Deleting Key Pairs
+
 #### Basic Usage
 Deleting key pairs is very easy - just be 100% sure that you want to delete them!
 
