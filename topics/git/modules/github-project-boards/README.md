@@ -9,7 +9,6 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Contents](#contents)
 - [Overview](#overview)
 - [Project Board Make-up](#project-board-makeup)
 - [Cards](#cards)
