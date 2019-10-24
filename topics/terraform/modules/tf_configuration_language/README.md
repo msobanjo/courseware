@@ -28,6 +28,21 @@ Any additional features that the language has are meant to aid the primary purpo
 
 A *resource* describes a single object of infrastructure, but multiple resources can be combined into a *module* where relationships between them could be defined.
 
+Here is an example project structure where reusable module would be within a project.
+```
+.
+|---main.tf
+|---db.tf
+|---backend.tf
+|---frontend.tf
+|---modules
+|---|---fullStackModule
+|---|---|---main.tf
+|---|---|---frontend.tf
+|---|---|---db.tf
+|---|---|---backend.tf
+```
+
 ## Basic syntax
 
 There are three main building blocks to Terraform syntax they are: Arguments, Blocks and Expressions.
