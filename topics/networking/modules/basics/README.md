@@ -14,9 +14,6 @@
 		- [URIs](#uris)
 		- [A side note on character-encoding](#a-side-note-on-characterencoding)
 		- [URLs](#urls)
-	- [IP Addresses](#ip-addresses)
-		- [IPv4](#ipv4)
-		- [IPv6](#ipv6)
 - [Networking Tools](#networking-tools)
 	- [`nslookup`](#nslookup)
 	- [`ping`](#ping)
@@ -72,7 +69,7 @@ Networks always operate on the basis of providing seamless interconnectivity bet
 | Redundancy | How many backup nodes are there in the case of network failure? |
 | Security | How safe is the network's data? Is the architecture secure from attack? |
 
-### LAN vs WAN
+## Network Types
 Networks are broadly classified into two types: **LAN** (**L**ocal **A**rea **N**etwork) and **WAN** (**W**ide **A**rea **N**etworks).
 
 The key characteristics by which we can differentiate between them are as follows:
@@ -91,10 +88,6 @@ These differences show the difference in scale between LAN and WAN - while LAN i
 ### Network Spatial Scope
 There are a number of other network types, according to specific circumstances.
 
-The hierarchy of networks might look something like this:
-
-<!--big noice diagram here-->
-
 The following table gives brief explanations of each network type in practice:
 
 | Name | Acronym | Function | e.g. |
@@ -111,7 +104,7 @@ The following table gives brief explanations of each network type in practice:
 | Internet Area | `IAN` | Direct Cloud-based endpoint connection over IP | (conceptual) |
 | Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
 
-## The Internet
+### The Internet
 As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme. It early form was commissioned by the United States as a way of building robust, fault-tolerant communication between networks, and has exponentially expanded ever since.
 
 As the decentralised and distributed global system of interconnected networks, it uses a series of protocols, most notably the Transmission Control Protcol (TCP) and Internet Protocol (IP), to provide end-to-end data communication to every node which connects to it.
@@ -126,67 +119,46 @@ Web services mostly use Hypertext Transfer Protocol (HTTP) to transmit data betw
 Browsers help to facilitate that data transfer, but the Web itself is one of many vehicles which use the Internet as its basis.
 
 ### Web access
-
-#### URLs vs URIs
 Accessing data through the Web is facilitated by using a (**U**niform **R**esource **I**ndicator). URI is used for all information which flows across the Web: every Web resource must have a specific string of characters which unambiguously define where that particular object is.
 
 For specific Web pages, a Web address, or URL (**U**niform **R**esource **L**ocator) specifies its location on a computer network and mechanism for retrieving it.
 
 Thus, a URL is simply a more specific type of URI.
 
-#### URIs
+#### URI
 The URI generic syntax consists of a hierarchical sequence of five components:
-```
+```text
   URI = scheme:[//authority]path[?query][#fragment]
 ```
 where the authority component divides into three subcomponents:
-```
+```text
   authority = [userinfo@]host[:port]
 ```
 As each URI begins with a scheme name that refers to a specification for assigning identifiers within that scheme, URIs can take multiple forms:
-```
-  ldap://[2001:db8::7]/c=GB?objectClass?one
-  └┬─┘   └─────┬─────┘└─┬─┘ └──────┬──────┘
-  scheme   authority   path      query
-```
-```
+```text
   mailto:John.Doe@example.com
   └─┬──┘ └────┬─────────────┘
   scheme     path
 ```
-```
-  news:comp.infosystems.www.servers.unix
-  └┬─┘ └─────────────┬─────────────────┘
-  scheme            path
-```
-```
+```text
   tel:+1-816-555-1212
   └┬┘ └──────┬──────┘
   scheme    path
 ```
-```
+```text
   telnet://192.0.2.16:80/
   └─┬──┘   └─────┬─────┘│
   scheme     authority  path
 ```
-```
+```text
   urn:oasis:names:specification:docbook:dtd:xml:4.1.2
   └┬┘ └──────────────────────┬──────────────────────┘
   scheme                    path
 ```
 
-#### A side note on character-encoding
-Of the ASCII character set, the characters `: / ? # [ ] @` are reserved for use as delimiters of the generic URI components.
-
-If you wanted to use any of these in the 'plaintext' areas of a URI, such as by appending an email address to a URI, they would need to be percent-encoded.
-
-For instance `%3F`may appear in certain sections of a URL for a `?`.
-
-Occasionally, `&` may also appear as `&amp` for similar reasons.
-
-#### URLs
+#### URL
 On the other hand, a URL is more specific, and usually conforms a much more varied specification:
-```
+```text
           userinfo       host      port
           ┌──┴───┐ ┌──────┴──────┐ ┌┴┐
   https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
@@ -194,11 +166,14 @@ On the other hand, a URL is more specific, and usually conforms a much more vari
   scheme          authority                  path                 query           fragment
 ```
 
-### IP Addresses
+#### Encoding
+Of the ASCII character set, the characters `: / ? # [ ] @` are reserved for use as delimiters of the generic URI components.
 
-#### IPv4
+If you wanted to use any of these in the 'plaintext' areas of a URI, such as by appending an email address to a URI, they would need to be percent-encoded.
 
-#### IPv6
+For instance `%3F`may appear in certain sections of a URL for a `?`.
+
+Occasionally, `&` may also appear as `&amp` for similar reasons.
 
 ## Networking Tools
 Two of the most basic tools for seeing networking in action are `nslookup` and `ping`.
@@ -224,7 +199,7 @@ This gives us quite a few bits of information.
 One of these is the IP address for `example.com`, which is `93.184.216.34`.
 
 ### `ping`
-If we wanted to, we can now `ping` this IP address for availability:
+We use `ping` to query an IP address so as to check its availability:
 
 ```cmd
   C:\Windows\system32>ping 93.184.216.34
@@ -258,7 +233,6 @@ The output of a successful `ping` request typically looks like this:
       Minimum = 78ms, Maximum = 81ms, Average = 79ms
 ```
 
-### Network Failures
 Occasionally, due to network failures or other connectivity issues, requests may simply fail to be sent from a node or received by a server. A failed `ping` request typically looks like this:
 ```cmd
 C:\Windows\system32>ping en.wikipedia.org
@@ -274,3 +248,6 @@ Ping statistics for 91.198.174.192:
 ```
 
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
+
+## Tasks
+<!--tba, not sure what to give as an intro task-->
