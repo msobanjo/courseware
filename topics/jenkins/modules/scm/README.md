@@ -12,7 +12,6 @@
 - [Configuration](#configuration)
 - [Multiple Repositories](#multiple-repositories)
 - [Branches to Build](#branches-to-build)
-	- [Build the `master` Branch on all Repositories](#build-the-master-branch-on-all-repositories)
 
 <!--TOC_END-->
 ## Overview
@@ -43,4 +42,3 @@ After specifying which repositories that you want to fetch, you can also choose 
 There are some quite complex different ways of checking out code that you can do here but usually being simple is better; there isn't a great deal of reasons to use anything other than the default value here (`*/master`) on simple projects.
 
 If you would like to be able to build different branches easily then you could use a string parameter by entering something like `*/${BRANCH}` into the `Branch Specifier` field.
-
