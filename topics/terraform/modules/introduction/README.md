@@ -57,28 +57,28 @@ We will now install terraform and check that the installation was successful.
 
 ### Windows
 
-1. Navigate to https://www.terraform.io/downloads.html in a web browser and download Terraform for 64-bit windows
-2. Extract the .zip file
-3. Copy the terraform.exe file from where you decided to extract it to a new folder: `C:\tools\terraform\`
-4. We now need to configure the PATH environment variable so that Terraform can be used easily on the command line.
-    5. Press **Windows key + R** to open the **Run program**
-    6. Type **SystemPropertiesAdvanced** and click **OK**
+* Navigate to https://www.terraform.io/downloads.html in a web browser and download Terraform for 64-bit windows
+* Extract the .zip file
+* Copy the terraform.exe file from where you decided to extract it to a new folder: `C:\tools\terraform\`
+* We now need to configure the PATH environment variable so that Terraform can be used easily on the command line.
+    * Press **Windows key + R** to open the **Run program**
+    * Type **SystemPropertiesAdvanced** and click **OK**
     
     <img align="left" src="https://imgur.com/6y4t3MX.jpg">
     
-    7. Select **Environment Variables** button
+    * Select **Environment Variables** button
     
     <img align="left" src="https://imgur.com/XihMpT9.jpg">
     
-    8. Under *User Variables* for <your-username>, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
+    * Under *User Variables* for <your-username>, select **New…** and enter the Variable name: **TERRAFORM_HOME** and the Variable value: `C:\tools\terraform`, then click **OK** button
     
     <img align="left" src="https://imgur.com/EaIt6Jv.jpg">
     
-    9. Under *User Variables* for <your-username>, select the variable called **Path** then click **Edit…** then enter **%TERRAFORM_HOME%**
+    * Under *User Variables* for <your-username>, select the variable called **Path** then click **Edit…** then enter **%TERRAFORM_HOME%**
     
     <img align="left" src="https://imgur.com/bkXxBsK.jpg">
     
-    10. Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window
+    * Click **OK** button on the *Environment Variable Windows* and close the *System Properties* window
     
 ### Linux
 
