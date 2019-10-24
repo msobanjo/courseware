@@ -82,6 +82,15 @@ In it's simplest form the root module would contain a single file of `.tf` or `.
 
 Configuration can expand by adding new configuration files within the root module, or by organising resources through child modules.
 
+e.g If you required 3 VM's on AWS but you wanted to have separate configuration files, your projects root directory file structure could look like this:
+```
+example_2
+    main.tf
+    db.tf
+    backend.tf
+    frontend.tf
+```
+
 ## Order of configuration
 
 The order of blocks is not significant as the language is declarative. 
