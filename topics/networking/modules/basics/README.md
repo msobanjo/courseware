@@ -34,10 +34,10 @@ It arose out of a need for institutions to be accessible to, communicate with, a
 An example of typical network architecture is shown below:
 
 ```text
-             ┌────────[Router]────────┐
-          [Switch]                 [Switch]
-       ┌─────┴─────┐            ┌─────┴─────┐
-     [Node]      [Node]       [Node]      [Node]
+          ┌────────[Router]────────┐
+       [Switch]                 [Switch]
+    ┌─────┴─────┐            ┌─────┴─────┐
+  [Node]      [Node]       [Node]      [Node]
 ```
 
 The functions of these basic network components are listed below:
@@ -61,6 +61,55 @@ There are also several other components that might be commonly found in a networ
 | Hub | Connects multiple devices together onto a single network |
 
 There are a myriad of other physical, wireless, and hybrid network devices.
+
+### Network topology
+Topology refers to the way a network is organised, both physically and logically.
+
+Originally, all networks were wired, and therefore usually adhered to one of a few specific network topologies due to limitations on physical hardware.
+
+**Bus**
+```text
+    ┌─────┬─────┐
+  [Node][Node][Node]
+```
+**Ring**
+```text
+  ┌[Node]─[Node]┐
+  |             |
+  |             |
+  |             |
+  └[Node]─[Node]┘
+```
+**Star**
+```text
+  [Node] [Node]
+      \   /
+      [Hub]
+      /   \
+  [Node] [Node]
+```
+**Mesh**
+```text
+  ┌[Node]─[Node]┐
+  |    \   /    |
+  |     ───     |
+  |    /   \    |
+  └[Node]─[Node]┘
+```
+**Tree**
+```text
+          ┌────────[Node]────────┐
+        [Node]                 [Node]
+    ┌─────┴─────┐          ┌─────┴─────┐
+  [Node]      [Node]     [Node]      [Node]
+```
+
+### P2P
+Most **Hybrid** topologies combine several of these styles together.
+
+Wireless technology is heavily-hybridised by design: most Internet-enabled devices are so interconnected to each other that network topology has deprecated to the level of describing much smaller, wired, or home/office network architecture.
+
+These are **peer-to-peer** (P2P) networks: every node can exchange data with any other node, with each node acting both as a client (receiving information) and a server (sending information).
 
 ## Network Characteristics
 Networks always operate on the basis of providing seamless interconnectivity between devices.
@@ -277,3 +326,5 @@ This is an excellent way to check whether a server is 'up' or 'down', as well as
 
 ## Tasks
 <!--tba, not sure what to give as an intro task-->
+
+<!--this is a thicc boi so we might have to split it-->
