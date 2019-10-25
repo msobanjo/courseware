@@ -17,9 +17,9 @@
 		- [CRON](#cron)
 	- [Web Hooks](#web-hooks)
 - [Demo](#demo)
-- [Setup Git Repositories](#setup-git-repositories)
+	- [Setup Git Repositories](#setup-git-repositories)
 	- [Upload the Provided Code](#upload-the-provided-code)
-- [Webhook Configuration](#webhook-configuration)
+	- [Webhook Configuration](#webhook-configuration)
 	- [Push a New Change](#push-a-new-change)
 
 <!--TOC_END-->
