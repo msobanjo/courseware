@@ -4,7 +4,7 @@ Description=Jenkins SCM Module Backend Server
 [Service]
 User=jenkins-scm-backend
 WorkingDirectory=/opt/bookshelve-server
-ExecStart=/opt/bookshelve-server/app.py
+ExecStart=/opt/bookshelve-server/venv/bin/python /opt/bookshelve-server/app.py
 
 [Install]
 WantedBy=multi-user.target

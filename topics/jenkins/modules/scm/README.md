@@ -96,7 +96,7 @@ There are two main components to this application:
 - Backend
     A NodeJS server which can send JSON data over HTTP.
 
-## Setup Git Repositories
+### Setup Git Repositories
 For this example we are going to need couple of Git repositories.
 Go ahead and create two repositories on GitHub called the following:
 - `jenkins-scm-frontend`
@@ -105,7 +105,7 @@ Go ahead and create two repositories on GitHub called the following:
 ### Upload the Provided Code
 In this module there are 2 folders for you to download and then upload the contents to the two repositories that you created beforehand.
 
-## Webhook Configuration
+### Webhook Configuration
 To configure Web Hooks to work you will need to check the `GitHub hook trigger for GITScm polling` option under the `Build Triggers` section on your Jenkins job that you are wanting to automatically trigger.
 
 Next, you need to setup the Webhook on a Git service provider like GitHub etc.
