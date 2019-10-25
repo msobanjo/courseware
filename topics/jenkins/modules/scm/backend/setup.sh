@@ -4,7 +4,7 @@
 app_name=jenkins-scm-backend
 
 # create server user if they don't exist
-if cat /etc/passwd | awk -F: '{ print $1}' | grep ${app_name}; then
+if ! cat /etc/passwd | awk -F: '{ print $1}' | grep ${app_name}; then
     sudo useradd -m -s /bin/bash ${app_name}
 fi
 
@@ -31,5 +31,9 @@ sudo chown -R ${app_name}:${app_name} ${install_folder}
 cd ${install_folder}
 sudo su ${app_name} << EOF
 virtualenv venv
-pip install -r requirements.txt
+source venv/bin/activate
+pip3 install -r requirements.txt
 EOF
+
+sudo systemctl daemon-reload
+sudo systemctl restart ${app_name}
