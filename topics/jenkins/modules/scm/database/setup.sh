@@ -1,6 +1,10 @@
 #! /usr/bin/env bash
 # setup a mysql db in a docker container
-curl https://get.docker.com | sudo bash
+
+# install docker if it isn't already
+if ! docker --version; then
+    curl https://get.docker.com | sudo bash
+fi
 
 create_container() {
     sudo docker run -d \
