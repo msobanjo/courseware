@@ -1,6 +1,9 @@
 # EC2 VPC Security Groups
+
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Security Group basics](#security-group-basics)
 - [Creating Security Groups](#creating-security-groups)
@@ -50,6 +53,7 @@ aws ec2 create-security-group --group-name my-sg --description "My security grou
 ```
 
 ## Listing Security Groups
+
 ### Basic Usage
 The Security Groups that you have can be listed:
 ```bash
@@ -65,6 +69,7 @@ aws ec2 describe-security-groups --group-names my-sg
 ```
 
 ## Security Group Rules
+
 ### Overview
 You can add or remove rules for a security group (also referred to as authorizing or revoking inbound or outbound access). A rule applies either to inbound traffic (ingress) or outbound traffic (egress). You can grant access to a specific CIDR range, or to another security group in your VPC or in a peer VPC (requires a VPC peering connection).
 
@@ -88,6 +93,7 @@ To make a rule allowing incoming traffic, we must provide the Security Group ID,
 # aws ec2 authorize-security-group-ingress --group-id [SECURITY_GROUP_ID] --protocol [PROTOCOL] --port [PORT] --cidr [ADDRESS_RANGE]
 aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp --port 443 --cidr 0.0.0.0/0
 ```
+
 ### Example for Allowing SSH from Anywhere
 Here is an example that will allow anyone in the world to attempt an SSH connection to your machine:
 ```bash
@@ -114,6 +120,7 @@ aws ec2 authorize-security-group-ingress --group-id sg-903004f8 --protocol tcp -
 ```
 
 ## Deleting a Security Group
+
 ### Basic Usage
 You must provide the ID of the Security Group when you are deleting it:
 ```bash

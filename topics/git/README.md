@@ -1,6 +1,6 @@
 # Git
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 	- [Software and Version Control](#software-and-version-control)
 	- [Online Services That Use Git](#online-services-that-use-git)
