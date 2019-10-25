@@ -27,7 +27,7 @@ run_sql_scripts() {
 if [ -z "$(docker ps -q -f name=mysql)" ]; then
     create_container
 # if the container is stopped
-elif [ -n "$(docker ps -q -f status=stopped name=mysql)" ]; then
+elif [ -n "$(docker ps -q -f status=exited -f name=mysql)" ]; then
     docker start mysql
     run_sql_scripts
 # the container must be running, so just execute the scripts
