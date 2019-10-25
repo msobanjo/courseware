@@ -6,6 +6,8 @@ if ! docker --version > /dev/null; then
     curl https://get.docker.com | sudo bash
 fi
 
+echo "${MYSQL_ROOT_PASSWORD} ${MYSQL_PASSWORD}"
+
 create_container() {
     sudo docker run -d \
         --name mysql \
@@ -19,12 +21,11 @@ create_container() {
 
 run_sql_scripts() {
     docker exec -i mysql mysql bookshelve \
-        -ubookshelve-api \
-        -p${MYSQL_PASSWORD} < setup.sql 
+        -uroot -p${MYSQL_ROOT_PASSWORD} < setup.sql 
 }
 
 # if the container doesn't exist
-if [ -z "$(docker ps -q -f name=mysql)" ]; then
+if [ -z "$(docker ps -qa -f name=mysql)" ]; then
     create_container
 # if the container is stopped
 elif [ -n "$(docker ps -q -f status=exited -f name=mysql)" ]; then

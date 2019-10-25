@@ -16,7 +16,7 @@ sudo cp ${app_name}.service /etc/systemd/system/
 
 # install folder
 install_folder=/opt/bookshelve-server
-for file in app.py books.json requirements.txt; do
+for file in app.py wsgi.py requirements.txt; do
     cp ${file} ${install_folder}
 done
 
