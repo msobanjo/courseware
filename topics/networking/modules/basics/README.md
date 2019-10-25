@@ -4,6 +4,8 @@
 ## Contents
 - [Overview](#overview)
 - [Network Architecture](#network-architecture)
+	- [Network topology](#network-topology)
+	- [P2P](#p2p)
 - [Network Characteristics](#network-characteristics)
 - [Network Types](#network-types)
 	- [Network Spatial Scope](#network-spatial-scope)
