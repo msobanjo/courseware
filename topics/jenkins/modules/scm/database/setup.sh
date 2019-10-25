@@ -2,7 +2,7 @@
 # setup a mysql db in a docker container
 
 # install docker if it isn't already
-if ! docker --version > /dev/null; then
+if ! sudo docker --version > /dev/null; then
     curl https://get.docker.com | sudo bash
 fi
 
@@ -20,7 +20,7 @@ create_container() {
 }
 
 run_sql_scripts() {
-    docker exec -i mysql mysql bookshelve \
+    sudo docker exec -i mysql mysql bookshelve \
         -uroot -p${MYSQL_ROOT_PASSWORD} < setup.sql 
 }
 
@@ -29,7 +29,7 @@ if [ -z "$(docker ps -qa -f name=mysql)" ]; then
     create_container
 # if the container is stopped
 elif [ -n "$(docker ps -q -f status=exited -f name=mysql)" ]; then
-    docker start mysql
+    sudo docker start mysql
     run_sql_scripts
 # the container must be running, so just execute the scripts
 else
