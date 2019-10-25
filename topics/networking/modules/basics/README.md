@@ -20,9 +20,15 @@
 
 <!--TOC_END-->
 ## Overview
-A network is essentially a web of distributed communication between entities. At the lowest level, networks facilitate the sharing of information. The internal and external transfer of information is crucial for this task.
+A network is essentially a web of distributed communication between entities.
 
-The most well-known network is the **Internet**, which, though well-known, is often poorly-understood. It arose out of a need for institutions to be accessible to, communicate with, and share information with each other.
+At the lowest level, networks facilitate the sharing of information.
+
+The internal and external transfer of information is crucial for this task.
+
+The most well-known network is the **Internet**, which, though well-known, is often poorly-understood.
+
+It arose out of a need for institutions to be accessible to, communicate with, and share information with each other.
 
 ## Network Architecture
 An example of typical network architecture is shown below:
@@ -57,7 +63,11 @@ There are also several other components that might be commonly found in a networ
 There are a myriad of other physical, wireless, and hybrid network devices.
 
 ## Network Characteristics
-Networks always operate on the basis of providing seamless interconnectivity between devices. Therefore, there are a number of characteristics by which all networks must adhere to, in some capacity. The most important six ways are listed below: 
+Networks always operate on the basis of providing seamless interconnectivity between devices.
+
+Therefore, there are a number of characteristics by which all networks must adhere to, in some capacity.
+
+The most important six ways are listed below: 
 
 | Characteristic | |
 |-|-|
@@ -104,7 +114,9 @@ The following table gives brief explanations of each network type in practice:
 | Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
 
 ### The Internet
-As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme. It early form was commissioned by the United States as a way of building robust, fault-tolerant communication between networks, and has exponentially expanded ever since.
+As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme.
+
+Its early form was commissioned by the United States as a way of building robust, fault-tolerant communication between networks, and has exponentially expanded ever since.
 
 As the decentralised and distributed global system of interconnected networks, it uses a series of protocols, most notably the Transmission Control Protcol (TCP) and Internet Protocol (IP), to provide end-to-end data communication to every node which connects to it.
 
@@ -118,7 +130,9 @@ Web services mostly use Hypertext Transfer Protocol (HTTP) to transmit data betw
 Browsers help to facilitate that data transfer, but the Web itself is one of many vehicles which use the Internet as its basis.
 
 ### Web access
-Accessing data through the Web is facilitated by using a (**U**niform **R**esource **I**ndicator). URI is used for all information which flows across the Web: every Web resource must have a specific string of characters which unambiguously define where that particular object is.
+Accessing data through the Web is facilitated by using a (**U**niform **R**esource **I**ndicator).
+
+URI is used for all information which flows across the Web: every Web resource must have a specific string of characters which unambiguously define where that particular object is.
 
 For specific Web pages, a Web address, or URL (**U**niform **R**esource **L**ocator) specifies its location on a computer network and mechanism for retrieving it.
 
@@ -180,7 +194,9 @@ Two of the most basic tools for seeing networking in action are `nslookup` and `
 Both are lookup tools which check the availability of a host.
 
 ### `nslookup`
-Here, we can check for the **IP address** of a particular site using `nslookup`:
+`nslookup` (name server lookup) is a network administration tool on the command-line, which directly queries the Domain Name System (DNS) to obtain domain name or IP address mapping.
+
+Here, we can check for the **IP address** of a particular Web site using `nslookup`:
 
 ```cmd
   C:\Windows\system32>nslookup example.com
@@ -193,9 +209,18 @@ Here, we can check for the **IP address** of a particular site using `nslookup`:
             93.184.216.34
 ```
 
-This gives us quite a few bits of information.
+This gives us some useful information about `example.com`:
 
-One of these is the IP address for `example.com`, which is `93.184.216.34`.
+- The server which `example.com` is hosted on, which is under Google's DNS jurisdiction at `dns.google`.
+- Its IPv4 address, which is `93.184.216.34`.
+- Its IPv6 address, which is `2606:2800:220:1:248:1893:25c8:1946`.
+
+The `non-authoritative answer` we see just tells us that `nslookup` is querying DNS records kept on external servers, rather than pinging the entire global DNS system directly.
+
+The two IP addresses refer to the Internet Protocol we mentioned earlier, and just shows us the unique location of a resource (in this case, the `example.com` Web site) across the entire Internet.
+
+More information on IP addresses can be found in the [IP Module](../ip/README.md).
+<!--issue-415-->
 
 ### `ping`
 We use `ping` to query an IP address so as to check its availability:
@@ -232,18 +257,20 @@ The output of a successful `ping` request typically looks like this:
       Minimum = 78ms, Maximum = 81ms, Average = 79ms
 ```
 
-Occasionally, due to network failures or other connectivity issues, requests may simply fail to be sent from a node or received by a server. A failed `ping` request typically looks like this:
+Occasionally, due to network failures or other connectivity issues, requests may simply fail to be sent from a node or received by a server.
+
+A failed `ping` request typically looks like this:
 ```cmd
-C:\Windows\system32>ping en.wikipedia.org
+  C:\Windows\system32>ping en.wikipedia.org
 
-Pinging dyna.wikimedia.org [91.198.174.192] with 32 bytes of data:
-Request timed out.
-Request timed out.
-Request timed out.
-Request timed out.
+  Pinging dyna.wikimedia.org [91.198.174.192] with 32 bytes of data:
+  Request timed out.
+  Request timed out.
+  Request timed out.
+  Request timed out.
 
-Ping statistics for 91.198.174.192:
-    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+  Ping statistics for 91.198.174.192:
+      Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
 ```
 
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
