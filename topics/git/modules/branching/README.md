@@ -8,7 +8,7 @@
 -->
 
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Git Branching Workflow Example](#git-branching-workflow-example)
 	- [New Application Features](#new-application-features)

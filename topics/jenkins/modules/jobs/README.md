@@ -1,6 +1,9 @@
 # Jobs
+
+
+
 <!--TOC_START-->
-### Contents
+## Contents
 - [Overview](#overview)
 - [Create a Job](#create-a-job)
 - [Workspaces](#workspaces)
@@ -14,20 +17,25 @@
 A Jenkins project (job) is a repeatable build job, which contains steps and post-build actions.
 A job can really do anything, it just depends what you configure it to do.
 An example of what a job can be used to do is - automatically build a project and deploy it on a server, to be accessed over the internet.
+
 ## Create a Job
 To create a new job, you can navigate to the `New Item` link on the Jenkins dashboard.
 This will then present you with some options for what type of job to create.
 Go ahead and name your job `first-job`, select `Freestyle Project` and then select `OK`.
 ![First Job](https://i.imgur.com/qd2OW5N.png)
+
 ## Workspaces
 A workspace in Jenkins is basically just a folder that is on the host machine.
 Jenkins will run every single job in its own workspace.
 This is to keep jobs seperate from each other, which avoids conflicts with files and configurations that the jobs may be using.
+
 ## Help!
 There are many configurations to choose from when setting up a Jenkins job; however, there is usually a `?` symbol on the right side of the page, which gives a comprehensive explanation of what the option does.
+
 ## Job Configuration
 This is where you can set up what your job is going to do.
 There are many options, but this module will just focus on the General Settings.
+
 ### General Settings
 The settings and options throughout all job configurations will depend on what plugins are installed; this module aims to explain the ones that are suggested when you go through the Jenkins setup.
 
