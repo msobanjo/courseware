@@ -16,15 +16,15 @@ axios.get("/api/books").then((response) => {
         newBook.className = "book"
 
         let image = document.createElement("IMG")
-        image.src = book.image
+        image.src = book.Image
         newBook.appendChild(image)
 
         let bookName = document.createElement("H2")
-        bookName.innerHTML = book.name
+        bookName.innerHTML = book.Name
         newBook.appendChild(bookName)
 
         let bookAuthor = document.createElement("P")
-        bookAuthor.innerHTML = "by " + book.author
+        bookAuthor.innerHTML = "by " + book.Author
         newBook.appendChild(bookAuthor)
 
         bookShelve.appendChild(newBook)
