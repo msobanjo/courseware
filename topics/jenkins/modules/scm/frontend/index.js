@@ -8,7 +8,7 @@ function sortByName(items) {
 }
 
 
-axios.get("/temp-books.json").then((response) => {
+axios.get("/api/books").then((response) => {
     let books = sortByName(response.data)
     let bookShelve = document.getElementById("bookshelve")
     books.forEach(book => {
