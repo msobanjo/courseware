@@ -4,6 +4,8 @@ from pathlib import Path
 import os
 import re
 import json
+import markdown 
+
 def get_overview(contents):
     overview_list = re.findall(r"(?<=## Overview\n).*", contents)
     overview = ""
@@ -69,11 +71,17 @@ def get_state():
     state = {
         "topics": []
     }
+    extensions = [
+        ""
+    ]
     # topics & modules
     for topic in get_all_topics():
         modules = get_all_modules_for_topic(topic["gitUri"])
         topic["modules"] = []
         for module in modules:
+            with open(module["gitUri"] + "/README.md", mode="r", encoding="utf-8") as file:
+                module["content"] = markdown.markdown(file.read(), extensions=["extra", "toc"])
             topic["modules"].append(module)
+
         state["topics"].append(topic)
     return state
