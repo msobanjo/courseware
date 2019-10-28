@@ -37,14 +37,17 @@ This example will download the `master` branch from this repostory in the projec
 ### Multiple Repositories
 You may have noticed the `Add Repository` button which will allow us to download more than one repository at a time.
 
+You would want to use this feature when more than one repository must be downloaded and built at the same time, for instance if one repository had a build dependency on another.
+Otherwise it would be best to just have each repository built in another jenkins job so that each application component that you have can be built separately.
+
 These are all downloaded into the same workspace but with different remotes setup for Git.
 The last repository specified will be the one that is checked out to in the project workspace.
 
-The first repository will have a remote set as `origin`, then for every respository added, a number will be appended.
+The first repository will have a remote set as `origin`, then for every repository added, a number will be appended.
 
 For example, if you had 3 repositories being downloaded, the remotes would be named `origin`, `origin1`, `origin2`.
 
-This default behaviour isn't ideal, so it's recommended that you configure the name of the remotes yourself under the `Advanced...` option and in the `Name` field for each repository that you add.
+This default behavior isn't ideal, so it's recommended that you configure the name of the remotes yourself under the `Advanced...` option and in the `Name` field for each repository that you add.
 
 ### Branches to Build 
 After specifying which repositories that you want to fetch, you can also choose which branches that you would like to build.
@@ -64,7 +67,7 @@ There are two main ways to trigger builds in this way, depending on your situati
 
 ### Poll SCM
 Poll SCM works by checking for changes on a schedule.
-For the given schedule, Jenkins will make a request to your Git respository to check if there has been any changes.
+For the given schedule, Jenkins will make a request to your Git repository to check if there has been any changes.
 
 This can be configured by selecting `Poll SCM` in the `Build Triggers` section.
 A `Schedule` text box will then appear for you to configure the schedule.
@@ -98,18 +101,42 @@ There are two main components to this application:
 
 ### Setup Git Repositories
 For this example we are going to need couple of Git repositories.
-Go ahead and create two repositories on GitHub called the following:
+Go ahead and create these repositories on GitHub:
 - `jenkins-scm-frontend`
 - `jenkins-scm-backend`
+- `jenkins-scm-database`
 
 ### Upload the Provided Code
-In this module there are 2 folders for you to download and then upload the contents to the two repositories that you created beforehand.
+Upload the code found in the `frontend`, `backend` and `database` folders in this module to these repositories that you created.
+
+### Create the Jenkins Jobs
+You will need a Jenkins job for each GitHub repository; `frontend` `backend` and `database`.
+
+Lets create the database job first.
+- Configure the source code management section to download the master branch from database repository.
+
+	![SCM Database Configuration]()
+
+- Check the `GitHub hook trigger for GITScm polling` option under the `Build Triggers` section.
+- Under `Build Environment`, select `Use secret text(s) or file(s)`. Add a `Username and Password (separated)` and a `Secret text` binding. Use the add button to create credentials for these and name the variables as shown below:
+
+	![Credential Bindings]()
+
+- Add an `Execute shell` build step with the following configured as the command:
+
+	```bash
+	export MYSQL_USER
+	export MYSQL_PASSWORD
+	export MYSQL_ROOT_PASSWORD
+	export MYSQL_HOST="localhost"
+	export MYSQL_DATABASE="bookshelve"
+	./setup.sh
+	```
+- Build the job to make sure that it succeeds
 
 ### Webhook Configuration
-To configure Web Hooks to work you will need to check the `GitHub hook trigger for GITScm polling` option under the `Build Triggers` section on your Jenkins job that you are wanting to automatically trigger.
-
-Next, you need to setup the Webhook on a Git service provider like GitHub etc.
-For this example we will be discussing how you can use GitHub to send Web Hooks to your instance of Jenkins:
+We have already configured the Jenkins jobs to accept Webhooks as triggers so now we just need to setup the Webhook on a Git service provider like GitHub etc.
+For this example we will be discussing how you can use GitHub to send Web Hooks to your instance of Jenkins, do the following for each of the GitHub projects that you have created:
 1. On your GitHub project navigate to the `Settings` tab.
 2. Click on `Webhooks`
 3. Set the `Payload URL` to be `[JENKINS_ADDRESS]/github-webhook/`; **Don't miss the trailing `/` on the end of the Payload URL!**
