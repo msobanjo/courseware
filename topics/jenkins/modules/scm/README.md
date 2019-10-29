@@ -10,7 +10,6 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Contents](#contents)
 - [Overview](#overview)
 - [Repositories](#repositories)
 	- [Multiple Repositories](#multiple-repositories)
@@ -20,11 +19,16 @@
 		- [CRON](#cron)
 	- [Web Hooks](#web-hooks)
 - [Demo](#demo)
+		- [Prerequisites](#prerequisites)
 	- [Setup Git Repositories](#setup-git-repositories)
 	- [Upload the Provided Code](#upload-the-provided-code)
 	- [Create the Jenkins Jobs](#create-the-jenkins-jobs)
+	- [See the Application Working](#see-the-application-working)
 	- [Webhook Configuration](#webhook-configuration)
 	- [Push a New Change](#push-a-new-change)
+		- [Frontend](#frontend)
+		- [Database](#database)
+	- [Clean Up](#clean-up)
 
 <!--TOC_END-->
 ## Overview
