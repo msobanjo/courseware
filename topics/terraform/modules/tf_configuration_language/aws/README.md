@@ -14,7 +14,7 @@
 
 <!--TOC_END-->
 ## Overview
-Terraform uses it's own configuration language. 
+Terraform uses it's own configuration language called *Hashicorp Configuration Language (HCL)*. 
 
 It's designed to describe infrastructure in a concise way. 
 
@@ -26,7 +26,17 @@ Main purpose of Terraform language is to declare resources.
 
 Any additional features that the language has are meant to aid the primary purpose. 
 
-A *resource* describes a single object of infrastructure, but multiple resources can be combined into a *module* where relationships between them could be defined.
+A *resource* describes a single object of infrastructure, but multiple resources can be combined into a *module* where relationships between them could be defined. 
+
+In short a *resource* is a component of your infrastructure.
+
+Here is an example of a *virtual machine instance* resource in AWS:
+```
+resource "aws_instance" "example" {
+	ami = "ami-2757f631"
+	instance_type = "t2.micro"
+}
+```
 
 Here is an example project structure where reusable module would be within a project.
 ```
@@ -41,6 +51,21 @@ Here is an example project structure where reusable module would be within a pro
 |---|---|---frontend.tf
 |---|---|---db.tf
 |---|---|---backend.tf
+```
+
+## Provider
+
+Resources become available through providers. 
+
+When working with providers, there is always a form of credentials required to authenticate with the provider.
+
+Here's an example of how you would configure a provider within configuration file:
+```
+provider "aws" {
+	access_key = "AKIBIWX7DKIDGMCHPG4A"
+	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
+	region = "eu-west-2"
+}
 ```
 
 ## Basic syntax
@@ -71,6 +96,68 @@ resource "aws_instance" "example" {
 	instance_type = "t2.micro"
 }
 ```
+
+Here is an example of a variable:
+```
+variable "version_number" {
+    type        = "string"
+    default     = "0.0.1"
+    description = "version number" 
+}
+```
+This example declares a string variable with a description and a default value, if the user wouldn't provide a value then the default value would be used and you wouldn't get an error thrown.
+
+## Outputs
+
+Outputs are infrastructure values you want to easily access. 
+
+For example, the DNS name of a load balancer, the ssh command used to connect to an instance created by the configuration, etc. 
+
+When you apply changes in your configuration Terraform displays the outputs that you configure. 
+
+You can also access outputs at any time using the Terraform output command. 
+
+The output command is useful for integrating Terraform with scripting environments. 
+
+In the example, the IP address of the Google Kubernetes Engine Kubernetes master node is declared as an output.
+
+Here's an example output:
+```
+output "instance_ip_addr" {
+  value = aws_instance.server.private_ip
+}
+```
+
+This output would tell you the private IP of the instance created.
+
+## Data source
+
+Data allow the sources to fetch information that is defined outside of the current Terraform configuration. 
+
+For example, if you have divided your infrastructure into separate projects, you can retrieve information from other Terraform projects using data sources. 
+
+The information can be retrieved using data sources made available via providers. 
+
+There is no requirement that the data being retrieved is managed by Terraform. 
+
+Here's an example data source:
+```
+data "aws_ami" "web" {
+  filter {
+    name   = "state"
+    values = ["available"]
+  }
+
+  filter {
+    name   = "tag:Component"
+    values = ["db"]
+  }
+
+  most_recent = true
+}
+```
+
+This data source would look for the latest AMI, which is tagged "db". 
 
 ## Configuration files
 
@@ -128,6 +215,25 @@ There are three types of comments supported:
 
 Formatting tool converts the `//` into `#` comments, the reason for this is that the `//` style is not idiomatic.
 
+## Formatting
+
+Although the amount of whitespace before or after the = sign doesn't have an effect on the configuration file, it's recommended to align them.
+
+Here's an example of aligned = signs:
+```
+variable "version_number" {
+    type        = "string"
+    default     = "0.0.1"
+    description = "version number" 
+}
+```
+As you can see the equal signs are in one line, the amount of whitespace before the sign depends on the length of the word, there is also a whitespace after it, although this may seem needles it helps out with readability. 
+
+There's no need to do this manually as there is a command which formats the file automatically:
+```
+terraform fmt
+```
+
 ## Tasks
 
 You will now create a resource on AWS, using some functionality from this module.
@@ -139,6 +245,7 @@ You will now create a resource on AWS, using some functionality from this module
     `pip install awscli`
 3. Know your AWS `access` and `secret` keys
 
+### Authenticating
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
 `aws configure`
 You will be asked to provide the following things:
@@ -147,11 +254,14 @@ You will be asked to provide the following things:
 * **Default region name** would be **eu-west-2**
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
+### Creating the directory and configuration file
 For the next step create a new folder, you can pick any name for it but a suggested one would be `example_2`.
 
 Within the newly created folder, create a new file called `main.tf`.
 
 Open the `main.tf` with a text editor of your choosing.
+
+### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
 ```
@@ -166,6 +276,8 @@ We're doing it in this way so that when you will be uploading these configuratio
 In later steps we will configure the *access* and *secret* keys using *aws cli* which is the more secure way of doing it.
 
 Now let's declare two variables that we'll use for the resource declaration. 
+
+### Adding variables
 
 Paste the following below the *provider* block:
 ```
@@ -190,6 +302,8 @@ The second variable is **type**, we can see that it has two types of comments, a
 
 The default argument is holding the value of what will be the type of instance we'll be creating.
 
+### Adding resource
+
 Paste the following below the variables:
 ```
 resource "aws_instance" "example" {
@@ -205,6 +319,15 @@ In this case when we want to use the value of the **ami** variable we need to ma
 The second argument is **instance_type** which specifies which machine configuration to use, it will determine how many vCPU's will be assigned as well as the amount of RAM. 
 
 Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
+
+### Formatting
+
+Format the configuration file by running the command:
+```
+terraform fmt
+```
+
+### Running the configuration file
 
 Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
 
