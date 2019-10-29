@@ -124,6 +124,10 @@ Follow the steps below, entering the commands into a terminal.
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
 
+<details>
+
+<summary>AWS task</summary>
+
 ### Creating a Simple Resource in AWS
 
 We will now create a resource in AWS and check that it has been successfully created.
@@ -232,3 +236,4 @@ To delete the created resource run the following command in the terminal, make s
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+</details>
