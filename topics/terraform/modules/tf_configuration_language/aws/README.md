@@ -327,6 +327,33 @@ Format the configuration file by running the command:
 terraform fmt
 ```
 
+### Final configuration file state
+
+Your configuration file at the end of all steps should look similar to this:
+```
+provider "aws" {
+  region     = "eu-west-2"
+}
+
+resource "aws_instance" "example" {
+  ami           = var.ami
+  instance_type = var.type
+}
+
+variable "ami" {
+  description = "machine image"
+  default     = "ami-f976839e"
+}
+
+variable "type" {
+  # instance type
+  /*
+		This will determine how many CPU and RAM will be assigned
+	*/
+  default = "t2.micro"
+}
+```
+
 ### Running the configuration file
 
 Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
