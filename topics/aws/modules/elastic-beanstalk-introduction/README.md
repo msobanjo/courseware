@@ -268,6 +268,9 @@ Make sure that you have a default VPC available in the same region:
 ```bash
 aws ec2 create-default-vpc
 ```
+This command might fail, why might that be?
+If it does fail that's ok, when it fails its usually because a default VPC exists.
+
 #### Find a Solution Stack
 We will want to know the solution stack name, this can be done by listing the available solution stacks:
 ```bash
