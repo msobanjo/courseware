@@ -291,9 +291,9 @@ Once you have listed the available solution stacks, choose any one of them for y
 #### Create the Environment
 We'll call the environment `development` and provide the *application name* and *version label*.
 The solution stack name here may not be valid for you so be sure to copy one from when you listed the available solution stacks before.
-We will also be passing in a options file for the ennvironment that can be found in this module folder, don't worry about was this does for now:
+We will also be passing in options settings for the environment, don't worry about was this does for now, they will be necessary to get this example working however:
 ```bash
-aws elasticbeanstalk create-environment --environment-name development --application-name sample-eb-app --version-label v1 --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.6" --option-settings file://option-settings.json
+aws elasticbeanstalk create-environment --environment-name development --application-name sample-eb-app --version-label v1 --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.3 running Python 3.6" --option-settings OptionName="IamInstanceProfile",ResourceName="AWSEBAutoScalingLaunchConfiguration",Namespace="aws:autoscaling:launchconfiguration",Value="aws-elasticbeanstalk-ec2-role"
 ```
 Great, now lets see information about our new environment:
 ```bash
