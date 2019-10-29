@@ -61,7 +61,7 @@ If you would like to be able to build different branches easily then you could u
 
 ## Triggering Builds from SCM Changes
 Jenkins jobs can be automatically triggered by changes in SCM.
-When some changes have been push to a repositorym, the job can be triggered automatically by this.
+When some changes have been push to a repository, the job can be triggered automatically by this.
 
 There are two main ways to trigger builds in this way, depending on your situation:
 - Poll SCM:
@@ -101,7 +101,15 @@ There are two main components to this application:
     A HTML and JavaScript website that makes calls to the Backend service.
     This website is hosted with NGINX as a webserver
 - Backend
-    A NodeJS server which can send JSON data over HTTP.
+    A Python Flask server which can connect to a database
+- Database
+	MySQL Database.
+
+#### Prerequisites
+- Jenkins installed on a Ubuntu/Debian machine, ideally a virtual machine so that it can be deleted afterwards.
+- Full sudo access for the `jenkins` user with no password required.
+- Jenkins must not be installed in a Docker container for this demo
+- Ports `8080` and `80` accessible to the machine
 
 ### Setup Git Repositories
 For this example we are going to need couple of Git repositories.
@@ -114,17 +122,19 @@ Go ahead and create these repositories on GitHub:
 Upload the code found in the `frontend`, `backend` and `database` folders in this module to these repositories that you created.
 
 ### Create the Jenkins Jobs
-You will need a Jenkins job for each GitHub repository; `frontend` `backend` and `database`.
+You will need a Jenkins job for each GitHub repository; `frontend`, `backend` and `database`.
 
 Lets create the database job first.
 - Configure the source code management section to download the master branch from database repository.
 
-	![SCM Database Configuration]()
+	![SCM Database Configuration](https://lh3.googleusercontent.com/jDpha-CZud0YiduYDoSGzwT5xJWwiXFxBAc32yHbcL1ndp5HJtd5XdeyEDlZA3EFnTgiBEleYhqdaOuPz0uIZ-Egm1LO7Wq3Z7h10_79MMiP2AI_T3i01I1yzyA27aIjOpIo2PuYUy2_abpeswg6Op-p1LnYkj-J_0I6M9TCxkaB9-vgeOpSlEfCu6bzJnawJaqZZAkqlY6WBXAeitjlsJv04gGm_HW-nzqESxel1bXQL-26InaDA3Epknuna7oiMFswAEUxkFXd_h7XYA509rApIpUIMf2-RRyKMeCONEmIu0vxgz0l2iZey-097m9uhSTpLZOyIetJgcsfQan9WDlcnZI9LXrh9VkkxRq33Ge7qHPKcyPcC8Mod9fNI8guppk795huU1n0b7h8BZtz7vXjbi5vvvPG7Vh1KH_qz81eapBY8LdUbN6U0mrxMbh6Ddf8kEXiHZaRf-06uGlMQxwT8Z1RcD3SUh3-YQRnYpR5GExU-VW0Y0mBMhvpsU2lZDPEDJGEYhG8KkTqsFgt_rzomcBYMoa5RhbquE810Cg1WSmR2e_1eLENXuJcUlPAA00dL86NQkTqtFpBQX5WDZftLpvF3hsQWj0S-6jEDwwCYSZG7Gtui3aqnyIEaL829tTO9XnIz2g8ld27PFsjnx-EUf6a61G--NPsgidAK90AeCfJvJhE5Jf5J2OislkozkbsLBgi3AIZAMPZNPuK0JNATqV1gpy3Ilq_kSU75JzUZUNA=w1423-h556-no)
 
 - Check the `GitHub hook trigger for GITScm polling` option under the `Build Triggers` section.
 - Under `Build Environment`, select `Use secret text(s) or file(s)`. Add a `Username and Password (separated)` and a `Secret text` binding. Use the add button to create credentials for these and name the variables as shown below:
 
-	![Credential Bindings]()
+	![Credential Bindings](https://lh3.googleusercontent.com/YPbkikXksHPdkplrXt3WV4hAGWLNhdcn7lmoGPC3X-ryb8ZEuDxbm4_o5Of19tmLlNhoWJxAPicYD4g9ZGq_8c7AivsAIY-ytjGIq0ohpeYMiKyEcKRQPJbQd1Tqg_-S5ektGoBVIvVmE0Keo63bTebH6ZmR7lbk9wwK1isbsHNynZSoj0Tn0jnyEUwCjEBGpURdPl2dtN0ll7EWpWpbqd5sm5FC06dM2lVZix4-mJOqf09LoCr3y9pwK6xvDgj6MGbxW1jT24AC38AbUe6Vyrx-gb8ebTwW0gx-UPQlGFJNBDG1hHr4lkrdiJtNyV1wGutOgU4_PFTO9Jy5f1WBbTagUJzS8SoNnoBWWaz0ypET7AFlnWEgghKJdK2CNaumVh73qJaqyJ88kFqlTm0XKISbCmB7mMiQEkwMgLvOQ5Jz5-39y7iBFi-OPwbM1BEnn1uv1cnw496WrmJtg_HpvNjQQ2DGZY67nXpuw-gNbntrpO5wp4Aa5yzyaHzI8YWcYoEkA6Fo127oI_i-5tq6bdFt0Uy4LvUBOHPkM2GTdk5rYb9jSsiHVZmlEw30e7zzNX5FnErSiF2vgXho3XFOOWUeY9BN6cjO1sBMKxAf8FOQoOtyGGmKj2Sh_mkfRCgPwLIB1WtCDvi7IKxABIdovtNNVuucU6r-19iRC0WhIB13VRsfHs7-LPyQxwkILQHeaJf4H-11ERxgx4bXiAEWLmLMuOeTh6NmFb_Wp2jabUpWEeA5=w1428-h456-no)
+
+	The actual value of the credentials (password contents etc) can be whatever you like.
 
 - Add an `Execute shell` build step with the following configured as the command:
 
@@ -138,6 +148,12 @@ Lets create the database job first.
 	```
 - Build the job to make sure that it succeeds
 
+Now that you have a working Job for the database, complete the same steps as above for the, backend and frontend.
+Make sure to reuse any credentials that you made previously, don't create new ones.
+
+### See the Application Working
+You should now be able to navigate to your machine's address on port `80`to see the application working.
+
 ### Webhook Configuration
 We have already configured the Jenkins jobs to accept Webhooks as triggers so now we just need to setup the Webhook on a Git service provider like GitHub etc.
 For this example we will be discussing how you can use GitHub to send Web Hooks to your instance of Jenkins, do the following for each of the GitHub projects that you have created:
@@ -149,3 +165,27 @@ For this example we will be discussing how you can use GitHub to send Web Hooks 
 
 ### Push a New Change
 Now try pushing a change to your GitHub repository, your Jenkins job should start building very shortly afterwards.
+
+#### Frontend
+Add `<h1>UPDATE</h1>` after line `9` in the `frontend/index.html` file.
+Push the new changes to the GitHub repository, then then you should see the frontend Job automatically build.
+
+Now try navigating to the site to see your changes.
+
+#### Database
+We can add a new item into the database to see the changes.
+In the `database/setup.sql` append the statement shown below, then push the changes to the database repository:
+```sql
+INSERT INTO Books (
+        Name, Author, Image
+) VALUES (
+        "Harry Potter and the Philosopher's Stone",
+        "J.K. Rowling",
+        "https://books.google.com/books/content/images/frontcover/39iYWTb6n6cC?fife=w200-h300"
+);
+```
+
+The changes that you made should then be reflected on the running site.
+
+### Clean Up
+To finish up here the virtual machine being used can be deleted.

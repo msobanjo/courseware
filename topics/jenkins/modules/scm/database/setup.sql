@@ -30,5 +30,3 @@ INSERT INTO Books (
         "J. R. R. Tolkien",
         "https://books.google.com/books/content/images/frontcover/FKziXsnqLTEC?fife=w200-h300"
 );
-
-SELECT * FROM Books;
