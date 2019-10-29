@@ -299,7 +299,7 @@ Great, now lets see information about our new environment:
 ```bash
 aws elasticbeanstalk describe-environments
 ```
-After a few minutes this command should output something liek the example below, indicating that the `Status` is `Ready` and there should also be an `EndpointURL` property that you can copy and put in a web browser to access:
+After a few minutes this command should output something like the example below, indicating that the `Status` is `Ready` and there should also be an `EndpointURL` property that you can copy and put in a web browser to access:
 ```json
 {
     "Environments": [
