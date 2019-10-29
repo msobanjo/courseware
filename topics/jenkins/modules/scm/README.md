@@ -120,6 +120,7 @@ Go ahead and create these repositories on GitHub:
 
 ### Upload the Provided Code
 Upload the code found in the `frontend`, `backend` and `database` folders in this module to these repositories that you created.
+You can do this by initializing the folders as Git repositories and then configuring your GitHub repositories as remotes.
 
 ### Create the Jenkins Jobs
 You will need a Jenkins job for each GitHub repository; `frontend`, `backend` and `database`.
@@ -164,7 +165,7 @@ For this example we will be discussing how you can use GitHub to send Web Hooks 
 5. Select `Add Webhook`
 
 ### Push a New Change
-Now try pushing a change to your GitHub repository, your Jenkins job should start building very shortly afterwards.
+We can now have a look at making some changes on the remote repositories to trigger automatic deployments of our new changes.
 
 #### Frontend
 Add `<h1>UPDATE</h1>` after line `9` in the `frontend/index.html` file.
