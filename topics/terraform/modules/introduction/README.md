@@ -12,6 +12,7 @@
 		- [Configuring the Terraform on your `PATH`](#configuring-the-terraform-on-your-path)
 	- [Linux](#linux)
 	- [Verify the Installation](#verify-the-installation)
+	- [Provider tasks](#provider-tasks)
 	- [Creating a Simple Resource in AWS](#creating-a-simple-resource-in-aws)
 	- [Creating a resource in AWS](#creating-a-resource-in-aws)
 	- [Create an Access Key](#create-an-access-key)
