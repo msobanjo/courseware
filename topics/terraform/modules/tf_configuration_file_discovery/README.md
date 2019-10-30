@@ -57,8 +57,6 @@ For the next step create a new folder, you can pick any name for it but a sugges
 
 Within the newly created folder, create a new file called `main.tf`.
 
-Open the `main.tf` with a text editor of your choosing.
-
 ### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
