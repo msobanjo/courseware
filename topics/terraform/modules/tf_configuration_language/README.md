@@ -78,7 +78,7 @@ When working with providers, there is always a form of credentials required to a
 
 <details>
 
-<summary>Here's an example of how you would configure a provider within configuration file:</summary>
+<summary>Configure AWS as a provider example</summary>
 
 ```
 provider "aws" {
