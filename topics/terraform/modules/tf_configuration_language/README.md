@@ -76,7 +76,10 @@ Resources become available through providers.
 
 When working with providers, there is always a form of credentials required to authenticate with the provider.
 
-Here's an example of how you would configure a provider within configuration file:
+<details>
+
+<summary>Here's an example of how you would configure a provider within configuration file:</summary>
+
 ```
 provider "aws" {
 	access_key = "AKIBIWX7DKIDGMCHPG4A"
@@ -84,6 +87,8 @@ provider "aws" {
 	region = "eu-west-2"
 }
 ```
+
+</details>
 
 ## Basic syntax
 
