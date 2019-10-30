@@ -124,6 +124,7 @@ Follow the steps below, entering the commands into a terminal.
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
 
+### Provider tasks
 <details>
 
 <summary>AWS task</summary>
