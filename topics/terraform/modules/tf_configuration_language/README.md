@@ -151,12 +151,17 @@ The output command is useful for integrating Terraform with scripting environmen
 
 In the example, the IP address of the Google Kubernetes Engine Kubernetes master node is declared as an output.
 
-Here's an example output:
+<details>
+
+<summary>Here's an AWS example output:</summary>
+
 ```
 output "instance_ip_addr" {
   value = aws_instance.server.private_ip
 }
 ```
+
+</details>
 
 This output would tell you the private IP of the instance created.
 
