@@ -45,12 +45,14 @@ In short a *resource* is a component of your infrastructure.
 <details>
 
 <summary>Here is an example of a *virtual machine instance* resource in AWS:</summary>
+
 ```
 resource "aws_instance" "example" {
 	ami = "ami-2757f631"
 	instance_type = "t2.micro"
 }
 ```
+
 </details>
 
 Here is an example project structure where reusable module would be within a project.
