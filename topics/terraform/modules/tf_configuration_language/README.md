@@ -276,6 +276,12 @@ terraform fmt
 
 ## Tasks
 
+### AWS task
+
+<details>
+
+<summary>Deploying a resource with comments and variables in AWS</summary>
+
 You will now create a resource on AWS, using some functionality from this module.
 
 ### Prerequisites
@@ -422,3 +428,5 @@ To delete the created resource run the following command in the terminal, make s
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+</details>
