@@ -1,5 +1,24 @@
 # Configuration file discovery
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Loading order](#loading-order)
+- [Task](#task)
+	- [AWS task](#aws-task)
+	- [Prerequisites](#prerequisites)
+	- [Authenticating](#authenticating)
+	- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
+	- [Adding the provider](#adding-the-provider)
+	- [Adding resource](#adding-resource)
+	- [Adding variables](#adding-variables)
+	- [Formatting](#formatting)
+	- [Final configuration file states](#final-configuration-file-states)
+	- [Running the configuration file](#running-the-configuration-file)
+	- [Overview](#overview-1)
+	- [Clean up](#clean-up)
+
+<!--TOC_END-->
 ## Overview
 
 There is a specific order in how your configuration files are discovered by TF. 
