@@ -112,12 +112,20 @@ Now let's take a look at how they would look like in use:
   # Block body
   <IDENTIFIER> = <EXPRESSION> # Argument
 }
+```
 
+<details>
+
+<summary>Block resource example with AWS</summary>
+
+```
 resource "aws_instance" "example" {
 	ami = "ami-2757f631"
 	instance_type = "t2.micro"
 }
 ```
+
+</details>
 
 Here is an example of a variable:
 ```
