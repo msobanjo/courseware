@@ -259,7 +259,7 @@ Formatting tool converts the `//` into `#` comments, the reason for this is that
 
 Although the amount of whitespace before or after the = sign doesn't have an effect on the configuration file, it's recommended to align them.
 
-Here's an example of aligned = signs:
+Here's an example of = symbols aligned in one line:
 ```
 variable "version_number" {
     type        = "string"
