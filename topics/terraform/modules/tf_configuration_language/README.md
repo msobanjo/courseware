@@ -175,7 +175,10 @@ The information can be retrieved using data sources made available via providers
 
 There is no requirement that the data being retrieved is managed by Terraform. 
 
-Here's an example data source:
+<details>
+
+<summary>Here's an example data source in AWS:</summary>
+
 ```
 data "aws_ami" "web" {
   filter {
@@ -193,6 +196,8 @@ data "aws_ami" "web" {
 ```
 
 This data source would look for the latest AMI, which is tagged "db". 
+
+</details>
 
 ## Configuration files
 
