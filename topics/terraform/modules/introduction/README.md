@@ -128,7 +128,7 @@ You can verify that you have installed Terraform correctly by opening a command 
 ### Provider tasks
 <details>
 
-<summary>**AWS**</summary>
+<summary>AWS</summary>
 
 ### Creating a Simple Resource in AWS
 
