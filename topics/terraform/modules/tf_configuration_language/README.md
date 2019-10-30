@@ -13,6 +13,7 @@
 - [Comments](#comments)
 - [Formatting](#formatting)
 - [Tasks](#tasks)
+	- [AWS task](#aws-task)
 	- [Prerequisites](#prerequisites)
 	- [Authenticating](#authenticating)
 	- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
