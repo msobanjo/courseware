@@ -1,5 +1,12 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Lifecycle Policies](#lifecycle-policies)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
