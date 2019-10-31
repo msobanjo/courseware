@@ -18,6 +18,7 @@ With just one tool to download and configure, you can control multiple AWS servi
 - [AWS EC2 Instances](./modules/ec2-instances)
 - [Elastic Cloud Compute (EC2)](./modules/ec2-introduction)
 - [Overview](./modules/ec2-key-pairs)
+- [Relational Database Service (RDS)](./modules/rds-introduction)
 - [EC2 VPC Internet Gateways](./modules/vpc-internet-gateways)
 - [Virtual Private Cloud (VPC)](./modules/vpc-introduction)
 - [AWS Route Tables](./modules/vpc-route-tables)
