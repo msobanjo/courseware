@@ -1,5 +1,17 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Storage Options](#storage-options)
+	- [Storage Options](#storage-options-1)
+	- [Standard](#standard)
+	- [IA - Infrequently Accessed](#ia--infrequently-accessed)
+	- [IA - One Zone](#ia--one-zone)
+	- [Intelligent Tiering](#intelligent-tiering)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -35,7 +47,6 @@ Optimises storage costs by moving an object between 2 different storage classes 
 Intelligent Tiering is ideal when you have data you need to store but you don't know what the access patterns for the data may be, for example with a new application or website when you are not yet sure how popular the data will be.
 
 ## Tasks
-
 
 
 Click the blue **Upload** button.
