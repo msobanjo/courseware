@@ -96,17 +96,20 @@ provider "aws" {
 
 There are three main building blocks to Terraform syntax they are: Arguments, Blocks and Expressions.
 
-**Blocks** - block is like a container that holds the configuration for an object like a resource. 
-Blocks have a type. 
-Can contain zero or more labels.
-Body can contain zero or more arguments or nested blocks.
-Majority or Terraform features are controlled from configuration files by top level blocks.
+**Blocks** 
+- block is like a container that holds the configuration for an object like a resource. 
+- Blocks have a type. 
+- Can contain zero or more labels.
+- Body can contain zero or more arguments or nested blocks.
+- Majority or Terraform features are controlled from configuration files by top level blocks.
 
-**Arguments** - allows to assign a value to a name. 
-They appear within blocks.
+**Arguments** 
+- allows to assign a value to a name. 
+- They appear within blocks.
 
-**Expressions** - are like variables, their purpose is to represent a value, either literally, referencing or combining with other values. 
-Expressions appear like values for arguments as well as within other expressions. 
+**Expressions** 
+- are like variables, their purpose is to represent a value, either literally, referencing or combining with other values. 
+- Expressions appear like values for arguments as well as within other expressions. 
 
 Now let's take a look at how they would look like in use:
 ```
@@ -151,8 +154,6 @@ You can also access outputs at any time using the Terraform output command.
 
 The output command is useful for integrating Terraform with scripting environments. 
 
-In the example, the IP address of the Google Kubernetes Engine Kubernetes master node is declared as an output.
-
 <details>
 
 <summary>Here's an AWS example output:</summary>
@@ -174,8 +175,6 @@ Data sources allow Terraform to fetch information that is defined outside of the
 For example, if you have divided your infrastructure into separate projects, you can retrieve information from other Terraform projects using data sources. 
 
 The information retrieved using data sources can be made available via providers. 
-
-There is no requirement that the data being retrieved is managed by Terraform. 
 
 <details>
 
