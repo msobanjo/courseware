@@ -1,5 +1,23 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [S3](#s3)
+	- [What is it?](#what-is-it)
+	- [Comparison of Block and Object Storage](#comparison-of-block-and-object-storage)
+	- [Buckets](#buckets)
+	- [Redundancy](#redundancy)
+	- [Events](#events)
+	- [S3 Use Cases 1](#s3-use-cases-1)
+	- [S3 Use Cases 2](#s3-use-cases-2)
+	- [S3 Use Cases 3](#s3-use-cases-3)
+	- [Good uses cases](#good-uses-cases)
+	- [Bad use cases](#bad-use-cases)
+	- [S3 Costing](#s3-costing)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -27,13 +45,11 @@ This is why we use Block Storage as boot devices for our EC2 instances (EBS), S3
 ### Buckets
 When we work with S3, the first thing we need to do is create a bucket.  These buckets are where the files that we upload to S3 reside as objects.  Each S3 bucket must have a **globally** unique name that adheres to certain rules.
 
-
 ### Redundancy
 By default, data in S3 is stored redundantly across multiple facilities and multiple devices in each facility, this is a Managed service meaning that AWS handles this entirely for the user.  When using S3 to store files, you will lose approximately 1 file from every 10 million files you store every 10,000 years or so.  This equates to 99.999999999% reliability (11 9's).
 
 ### Events
 S3 includes event notifications that allow you to set up automatic notifications when certain events occur, such as an object being uploaded to or deleted from a specific bucket. Those notifications can be sent to you, or they can be used to trigger other processes, such as AWS Lambda scripts.
-
 
 ### S3 Use Cases 1
 A popular use of S3 is to store and distribute static web content or media. These files can then be delivered directly from Amazon S3.
@@ -43,6 +59,7 @@ This works because each S3 bucket has a globally unique name, each object can th
 ```
 https://aws-intro-bucket.s3-eu-west-1.amazonaws.com/001.mp3
 ```
+
 ### S3 Use Cases 2
 A popular use of S3 is to host **entire** static websites. The files that you upload to the Bucket will include the html, css and js files you need to serve static web content, as well as any images or videos you may need for your site.  These files can then be delivered directly from Amazon S3.
 
@@ -99,4 +116,3 @@ You should see that your bucket now contains the file that you uploaded.  Select
 Scroll to the bottom the the files details and you should see an Object URL, click the link.
 
 We have tried to navigate directly to the file to download it via the internet, however you will find that you do not have the right permissions to access this file.  In later steps we will be looking at how we can control access to the Objects stored in our buckets.
-
