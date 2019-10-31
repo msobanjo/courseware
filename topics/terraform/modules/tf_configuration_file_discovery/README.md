@@ -79,7 +79,7 @@ Within the newly created folder, create a new file called `main.tf`.
 ### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
-```
+```hcl
 provider "aws" {
 	region = "eu-west-2"
 }
@@ -93,7 +93,7 @@ In later steps we will configure the *access* and *secret* keys using *aws cli* 
 ### Adding resource
 
 Paste the following below the variable in the `main.tf` file:
-```
+```hcl
 resource "aws_instance" "example" {
 	ami = var.ami
 	instance_type = var.type
@@ -114,7 +114,7 @@ Create a new file called `variables.tf` in the `example_3` directory.
 
 Paste the following into the `variables.tf` file:
 
-```
+```hcl
 variable "ami" {
   description = "machine image"
   default     = "ami-f976839e"
@@ -128,7 +128,7 @@ variable "type" {
 ### Formatting
 
 Format the configuration files by running the command:
-```
+```shell script
 terraform fmt
 ```
 
@@ -138,7 +138,7 @@ Let's check that you have configuration files ready.
 
 `main.tf` configuration file should look like this:
 
-```
+```hcl
 provider "aws" {
   region     = "eu-west-2"
 }
@@ -151,7 +151,7 @@ resource "aws_instance" "example" {
 
 `variables.tf` configuration file should look like this:
 
-```
+```hcl
 variable "ami" {
   description = "machine image"
   default     = "ami-f976839e"
