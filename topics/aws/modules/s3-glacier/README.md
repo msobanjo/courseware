@@ -1,5 +1,14 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Glacier](#glacier)
+	- [Vaults and Archives](#vaults-and-archives)
+	- [Retrieval Options](#retrieval-options)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -10,13 +19,11 @@ Glacier is a storage choice for long-term low cost storage when the data rarely 
 
 A typical use case for Glacier is creating archives for data that needs to be stored for compliance reasons.  For example a business keeping records of their financial transactions, they likely wont need access to this data, however they need to store it long-term for legislative reasons.
 
-
 ### Vaults and Archives
 
 A vault is a container for storing Archives (Objects stored in Vaults), when a vault is created you specify a name and a Region.  You can use the Vault Lock feature in order to enforce compliance for storing your data.
 
 ### Retrieval Options
-
 
 There are 3 options for retrieving data from Glacier.
 
@@ -120,4 +127,3 @@ Assuming there were no errors in any of the steps above, well done, you have suc
 Due to the nature of Glacier and its long term storage it will not immediately allow us to check the contents of our vaults.  If you were to try to check now, either using the management console or an AWSCLI command you would see that there are no archives stored in your vault.
 
 Glacier will check the contents of your vaults once every 24 hours or so, and update that vaults 'inventory' try checking back in 24 hours to see what the contents of your vault are!
-
