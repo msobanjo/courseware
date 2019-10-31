@@ -1,5 +1,17 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [AWSCLI commands with S3](#awscli-commands-with-s3)
+	- [Help](#help)
+	- [Listing your buckets](#listing-your-buckets)
+	- [Creating a bucket](#creating-a-bucket)
+	- [Deleting a bucket](#deleting-a-bucket)
+	- [Working with Objects](#working-with-objects)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -53,6 +65,7 @@ To programmatically create an S3 bucket is quite straightforward, we use the 'mb
 ```
 aws s3 mb s3://<bucket-name>
 ```
+
 ### Deleting a bucket
 
 To delete a bucket using the CLI we should first ensure that the bucket is empty, you could do this using the list command discussed above.
