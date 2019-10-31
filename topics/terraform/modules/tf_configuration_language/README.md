@@ -45,9 +45,9 @@ In short a *resource* is a component of your infrastructure.
 
 <details>
 
-<summary>Here is an example of a *virtual machine instance* resource in AWS:</summary>
+<summary>Here is an example of a <i>virtual machine instance</i> resource in AWS:</summary>
 
-```
+```hcl
 resource "aws_instance" "example" {
 	ami = "ami-2757f631"
 	instance_type = "t2.micro"
@@ -56,8 +56,8 @@ resource "aws_instance" "example" {
 
 </details>
 
-Here is an example project structure where reusable module would be within a project.
-```
+Here is an example project structure where reusable module would be within a project:
+```text
 .
 |---main.tf
 |---db.tf
@@ -76,12 +76,13 @@ Here is an example project structure where reusable module would be within a pro
 Resources become available through providers. 
 
 When working with providers, there is always a form of credentials required to authenticate with the provider.
+This can usually be done by creating an access key on the provider and then using it in a provider configuration in Terraform.
 
 <details>
 
 <summary>Configure AWS as a provider example</summary>
 
-```
+```hcl
 provider "aws" {
 	access_key = "AKIBIWX7DKIDGMCHPG4A"
 	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
@@ -119,7 +120,7 @@ Now let's take a look at how they would look like in use:
 
 <summary>Block resource example with AWS</summary>
 
-```
+```hcl
 resource "aws_instance" "example" {
 	ami = "ami-2757f631"
 	instance_type = "t2.micro"
@@ -129,7 +130,7 @@ resource "aws_instance" "example" {
 </details>
 
 Here is an example of a variable:
-```
+```hcl
 variable "version_number" {
     type        = "string"
     default     = "0.0.1"
@@ -156,7 +157,7 @@ In the example, the IP address of the Google Kubernetes Engine Kubernetes master
 
 <summary>Here's an AWS example output:</summary>
 
-```
+```hcl
 output "instance_ip_addr" {
   value = aws_instance.server.private_ip
 }
@@ -168,11 +169,11 @@ This output would tell you the private IP of the instance created.
 
 ## Data source
 
-Data allow the sources to fetch information that is defined outside of the current Terraform configuration. 
+Data sources allow Terraform to fetch information that is defined outside of the current Terraform configuration. 
 
 For example, if you have divided your infrastructure into separate projects, you can retrieve information from other Terraform projects using data sources. 
 
-The information can be retrieved using data sources made available via providers. 
+The information retrieved using data sources can be made available via providers. 
 
 There is no requirement that the data being retrieved is managed by Terraform. 
 
@@ -180,7 +181,7 @@ There is no requirement that the data being retrieved is managed by Terraform.
 
 <summary>Here's an example data source in AWS:</summary>
 
-```
+```hcl
 data "aws_ami" "web" {
   filter {
     name   = "state"
@@ -261,7 +262,7 @@ Formatting tool converts the `//` into `#` comments, the reason for this is that
 Although the amount of whitespace before or after the = sign doesn't have an effect on the configuration file, it's recommended to align them.
 
 Here's an example of = symbols aligned in one line:
-```
+```hcl
 variable "version_number" {
     type        = "string"
     default     = "0.0.1"
@@ -276,6 +277,7 @@ terraform fmt
 ```
 
 ## Tasks
+Please complete the task below that is most convenient for you.
 
 ### AWS task
 
@@ -311,7 +313,7 @@ Open the `main.tf` with a text editor of your choosing.
 ### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
-```
+```hcl
 provider "aws" {
 	region = "eu-west-2"
 }
@@ -327,7 +329,7 @@ Now let's declare two variables that we'll use for the resource declaration.
 ### Adding variables
 
 Paste the following below the *provider* block:
-```
+```hcl
 variable "ami" {
 	description = "machine image"
 	default = "ami-f976839e"
@@ -352,14 +354,14 @@ The default argument is holding the value of what will be the type of instance w
 ### Adding resource
 
 Paste the following below the variables:
-```
+```hcl
 resource "aws_instance" "example" {
 	ami = var.ami
 	instance_type = var.type
 }
 ```
 
-In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var*, it allows us to get a specific variables value by referring to it's name. 
+In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var**, it allows us to get a specific variables value by referring to it's name. 
 
 In this case when we want to use the value of the **ami** variable we need to make a reference to it like this: `var.ami`.
 
@@ -370,14 +372,14 @@ Similarly in order to get the value of the variable we need to make a reference 
 ### Formatting
 
 Format the configuration file by running the command:
-```
+```bash
 terraform fmt
 ```
 
 ### Final configuration file state
 
 Your configuration file at the end of all steps should look similar to this:
-```
+```hcl
 provider "aws" {
   region     = "eu-west-2"
 }
@@ -405,15 +407,15 @@ variable "type" {
 
 Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
 
-First let's execute the following command:
+First let's execute the following command to download the AWS provider plugin so that Terraform can communicate with AWS:
 
 `terraform init`
 
-Next let's execute:
+Next let's execute this to see what Terraform plans on doing:
 
 `terraform plan`
 
-Lastly let's create the resource by executing:
+Finally, let's apply the configured resources by executing:
 
 `terraform apply`
 
@@ -428,6 +430,6 @@ To delete the created resource run the following command in the terminal, make s
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
-Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+Make sure that you are within the correct region, otherwise you won't be able to see the resource - even if it wasn't deleted!
 
 </details>
