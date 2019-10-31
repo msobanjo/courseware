@@ -1,5 +1,16 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Bucket Creation](#bucket-creation)
+	- [Configure Options](#configure-options)
+	- [Versioning](#versioning)
+	- [Set Permissions](#set-permissions)
+	- [Review](#review)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -29,7 +40,6 @@ By default *versioning* is not enabled on S3 buckets and once you enable it, you
 Versioning helps protect objects from accidental deletion, when an object is deleted, S3 inserts a *delete marker* instead of removing the object, you can then use this delete marker to restore the object as that particular version.
 
 Versioning also helps to protect against over writing, if you try to overwrite an object, it results in a new object version in the bucket.  You can then decide to restore the object to this previous version.
-
 
 ### Set Permissions
 
