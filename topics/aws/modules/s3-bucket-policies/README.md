@@ -1,9 +1,17 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Policies](#policies)
+	- [Bucket Privacy](#bucket-privacy)
+	- [Security](#security)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
-
 
 ## Policies
 
@@ -17,6 +25,7 @@ You can also control access to your Bucket, using these means you can set who ha
 ```
 aws_s3_intro_1.png
 ```
+
 ### Security
 
 A bucket policy is where we can define explicit access or denial of access to our data at a bucket level.  These polices are written using JSON, meaning that we have very configurable policies with granular access.
@@ -58,7 +67,6 @@ Now click the **Bucket Policy** button.
 Copy the code below into the Bucket policy editor, ensure that you change the name of the bucket to reflect the current bucket you are working with.
 
 
-
 ```
  {
    "Version": "2012-10-17",
@@ -78,12 +86,3 @@ Click the blue **Save** button.
 Again navigate to the **Object URL** Link you tried earlier, you should see now that the file is rendered by your browser.
 
 The last step is to undo everything we have done, you can delete the bucket policy, Block all Public Access or simply delete the bucket.  Ensure that the contents of your bucket are once again private before moving on.
-
-
-
-
-
-
-
-
-
