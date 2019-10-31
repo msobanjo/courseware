@@ -1,5 +1,14 @@
 # S3
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [File Upload](#file-upload)
+	- [Moving Data](#moving-data)
+	- [Multipart Upload](#multipart-upload)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
@@ -44,4 +53,3 @@ aws s3 cp <path to file> s3://<name-of-bucket>
 ```
 
 You should see a single line returned stating that the file has been uploaded, use one of the commands you have learnt above to ensure that the object does indeed now exist in your bucket.
-
