@@ -1,6 +1,14 @@
 # Relational Database Service (RDS)
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [SQL vs NoSQL](#sql-vs-nosql)
+- [Managed vs Unmanaged](#managed-vs-unmanaged)
+- [RDS Use Cases](#rds-use-cases)
+- [Tasks](#tasks)
 
+<!--TOC_END-->
 ## Overview
 Amazon Relational Database Service (Amazon RDS) is a fully managed relational database service, it can be used to provision new database instances in a matter of minutes that can easily be vertically scaled.
 
@@ -39,6 +47,7 @@ A Relational database solution such as RDS works well for applications that have
 RDS as a managed solution works well as a solution when you do not want to handle the tasks of provisioning and maintaining the database that your application requires.
 
 ## Tasks
+<<<<<<< HEAD
 
 For this task we will be creating a simple managed database using the management console.
 
@@ -72,3 +81,5 @@ After a few moments you database will be ready to use!
 
 To access your navigate, ensure you are using the RDS console and click the Databases link in the left pane.
 
+=======
+>>>>>>> ea4a5acc7464527c2675527869698db358e43836
