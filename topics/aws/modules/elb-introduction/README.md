@@ -2,8 +2,13 @@
 
 ELB is cool
 
-## Elastic Load Balancer
+<!--TOC_START-->
+## Contents
+- [Elastic Load Balancer](#elastic-load-balancer)
+- [Tasks](#tasks)
 
+<!--TOC_END-->
+## Elastic Load Balancer
 
 
 ## Tasks
@@ -122,5 +127,3 @@ Our final step in this Task is to stop one of the instances to see how the ELB r
 When you access the DNS name of the ELB now (via your browser) you will see that you are always directed to the one surviving instance.
 
 If you restart the stopped instance, traffic is once again balanced.
-
-
