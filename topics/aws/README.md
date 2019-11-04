@@ -15,6 +15,7 @@ The AWS Command Line Interface (CLI) is a unified tool to manage your AWS servic
 With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
 <!--MODULES_START-->
 ## Modules
+- [Overview](./modules/ec2-auto-scaling)
 - [AWS EC2 Instances](./modules/ec2-instances)
 - [Elastic Cloud Compute (EC2)](./modules/ec2-introduction)
 - [Overview](./modules/ec2-key-pairs)

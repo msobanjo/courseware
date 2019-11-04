@@ -2,6 +2,12 @@
 
 Auto-scaling is cool
 
+<!--TOC_START-->
+## Contents
+- [EC2 Auto-Scaling](#ec2-autoscaling)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## EC2 Auto-Scaling
 
 ## Tasks
