@@ -10,7 +10,6 @@ ELB is cool
 <!--TOC_END-->
 ## Elastic Load Balancer
 
-
 ## Tasks
 
 This task will guide us through creating and configuring a Classic Load Balancer.  We want to create a system where the users can only access the application through the ELB.
