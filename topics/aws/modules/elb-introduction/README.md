@@ -19,7 +19,7 @@ You need to first create 2 EC2 instances in the same region, this guide will not
 
 When you have created these machines run the following commands on each one, you do not need to know what they are doing for this task.
 
-```
+```bash
 sudo apt update
 
 sudo apt install nginx -y
