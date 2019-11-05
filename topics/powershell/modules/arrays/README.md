@@ -27,20 +27,20 @@
 
 <!--TOC_END-->
 ## Overview
-Arrays hold a list of data, in PowerShell they don't need to be the same type of data.
-Arrays can come in useful whenever we need to store lots of information to process one at a time, for instance:
+Arrays hold a list of data, and in PowerShell, they don't even need to be the same type of data.
+Arrays are useful when we need to store a collection of information to process one at a time, for instance:
 - Servers to connect to and configure
 - Application folders to build and upload
 - Log files to analyse
 
 ## Create
-To create an array the easiest way to do it is just list the data, seperated by commas:
+The easiest way to create an array is to list the data, separated by commas:
 ```powershell
 $myArray = 1,"two",3,"four",5
 ```
 
 ### One or Less Elements
-Sometimes you will need to explicitly cast to array, for instance if there is only 1 or no elements in the array to start with:
+Sometimes you will need to explicitly cast to an array, e.g. if there is 0 or 1 elements in the array to start with:
 ```powershell
 # array with 1 element
 $myArray = @(1)
@@ -49,8 +49,8 @@ $myArray = @()
 ```
 
 ### Multi Dimentional Arrays
-A multi dimentional array is basically just storing arrays within an array, this comes in useful when processing grid or table information such as CSV files.
-The multi dimentional arrays can be created by nesting brackets `()` in the assignment:
+A multi-dimensional array an array that stores other arrays. This comes in useful when processing grid or table information such as CSV files.
+A multi-dimensional array can be created by nesting brackets `()` in the assignment:
 ```powershell
 $multiDimentionalArray = @((1,2,3),(1,2,3))
 # same assignment but over multiple lines
@@ -61,11 +61,11 @@ $multiDimentionalArray = @(
 ```
 
 ## Access Array Elements
-There wouldn't be much point storing data in arrays unless we can access them later, so that's what we'll be looking at here in this section.
+There wouldn't be much point storing data in arrays unless we can access them later; that's what we'll be looking at in this section.
 
 ### By Index
 A very common way to access some data in an array is by its index.
-Just like many other languages index start at `0`, so the first element in the list is at index `0`.
+Just like many other languages, the index start at `0`, so the first element in the list is at index `0`.
 ```powershell
 # access the 1st element in an array
 $myArray[0]
@@ -125,7 +125,7 @@ $people[1][1]
 # San Franciso
 $people[1][2]
 ```
-The easiest way to think of this is like you are accessing an array inside of another array.
+An easy way to think of this is that we are accessing an array inside of another array.
 You specify which array with the first index and then which element inside of that sub array that you want.
 Based on the example above here is a table showing which indexes get which elements in the array:
 
@@ -190,7 +190,7 @@ ForEach ($logFile in $logFiles[0..2]) {
 ```
 
 #### Compress the Log Files
-Now we know which files to compress we can compress them into an archive using the `Compress-Archive` command.
+Now we know which files to compress, we can compress them into an archive using the `Compress-Archive` command.
 A zip file called `logs.zip` will now be created:
 ```powershell
 $logFiles = Get-ChildItem "logs" -Filter *.log
@@ -209,7 +209,7 @@ Compress-Archive @compress
 
 ### CSV Table
 There is a file called `scores.csv` which contains some results for test takers.
-This section includes some heavy use of loops in PowerShell, don't worry if you don't quite understand these at this point, just know that we are using loops to traverse through the arrays, processing each element one at a time.
+This section includes some heavy use of loops in PowerShell; don't worry if you don't quite understand these at this point, just know that we are using loops to traverse through the arrays, processing each element one at a time.
 
 Start this section by creating a file in this module folder called `csv-scores-table.ps1`.
 
@@ -220,7 +220,7 @@ $contents = Get-Content scores.csv
 ```
 
 #### Create a Multi Dimensional Array from the CSV
-To create a multi dimensional array from the contents we can read the contents line by line and seperate them into columns and rows:
+To create a multi-dimensional array from the contents we can read the contents line by line and separate them into columns and rows:
 ```powershell
 $contents = Get-Content scores.csv
 $rows = @()
@@ -235,7 +235,7 @@ $rows += , $columns
 ```
 
 #### Iterate the Multi Dimentional Array
-Now the information is sorted in a multi dimensional array, a loop can be used to iterate through it and print out the values in a basic format for a table:
+Now the information is sorted in a multi-dimensional array, a loop can be used to iterate through and print out the values in a basic format for a table:
 ```powershell
 $contents = Get-Content scores.csv
 $rows = @()
