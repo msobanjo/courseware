@@ -33,7 +33,7 @@ The big providers are:
 
 ### Infrastructure as Code
 
-Infrastructure as code means that we can use a high level or descriptive programming language to describe and manage infrastructure.
+Infrastructure as Code allows us to use a high level or descriptive programming language to describe and manage infrastructure.
  
 There is a known issue with pipelines called **environment drift**, which means that over time, an environment can end up in unique configuration that cannot be automatically recreated.
  
@@ -43,7 +43,7 @@ With infrastructure as code, the infrastructure configurations can be versioned 
 
 ### Workflows
 
-There are a few steps that should be followed for a deployment, don't worry if you don't understand the concepts immediately, they will make more sense later on.
+There are a few steps that should be followed for a deployment - don't worry if you don't understand the concepts immediately, as they will make more sense as we continue through the module.
 
 1. **Scope** - check resources that need to be created for a given project
 2. **Author** - create the configuration file
@@ -52,7 +52,7 @@ This will download any dependencies necessary for the selected cloud provider.
 4. **Plan** - execute `terraform plan` in the project directory where the configuration file lies. 
 This will verify the creation process and scan the configuration file for any detectable faults.
 5. **Apply** - execute `terraform apply` in the project directory where the configuration file lies. 
-This will create the actual resource as well as the state file which terraform will use to check for changes in the configuration file to what is actually deployed.
+This will create the actual resource as well as the state file which Terraform will use to check for changes in the configuration file to what is actually deployed.
 
 ### Common use cases
 
@@ -74,7 +74,7 @@ Another reason for multi-cloud deployments could be for extra fault tolerance.
 
 ### Installation
 
-We will now install terraform and check that the installation was successful.
+We will now install Terraform and check that the installation was successful.
 
 ### Windows
 
@@ -131,14 +131,14 @@ We will now create a resource in AWS and check that it has been successfully cre
 ### Creating a resource in AWS
 
 Before going forward with this task there are a couple of pre-requisites:
-* Your terraform installation has to be working
+* Your Terraform installation has to be working
 * You will need an AWS account
     * If you don't have one, you can create a free account by going to: [AWS free account](https://aws.amazon.com/free)
     
 We will now create a resource in AWS using Terraform.
 
 ### Create an Access Key
-First you need to find your `access_key` and `secret_key` in order to give terraform access to manage resources on AWS.
+First you need to find your `access_key` and `secret_key` in order to give Terraform access to manage resources on AWS.
 
 You can find them by following these steps:
 * Log in to your *AWS Management Console*
@@ -162,7 +162,7 @@ Within the newly created folder, create a new file called `main.tf`.
 Open the `main.tf` with a text editor of your choosing.
 
 #### Configure the Provider
-We will now declare in terraform syntax what provider we'll be using, as well as the `access_key`, `secret_key` and region where the resource will be created.
+We will now declare in Terraform syntax what provider we'll be using, as well as the `access_key`, `secret_key` and region where the resource will be created.
 
 Place the following into your `main.tf` file:
 
@@ -174,14 +174,14 @@ provider "aws" {
 }
 ```
 
-First line tells terraform that the cloud provider will be `aws`.
+The first line tells Terraform that the cloud provider will be `aws`.
 
-Second and third lines are required to authenticate with `aws` and give terraform access to manage the resources.
+The second and third lines are required to authenticate with `aws` and give Terraform access to manage the resources.
 
-Fourth line is specifying which region the resource will be created.
+Finally, the fourth line is specifying which region the resource will be created.
 
 #### Create a Basic Resource
-For the next step we need to tell terraform what resource to create.
+For the next step we need to tell Terraform what resource to create.
 
 Place the following into your `main.tf` file below the `provider`:
 
@@ -192,11 +192,11 @@ resource "aws_instance" "example" {
 }
 ```
 
-The first line is telling terraform to create a new resource, in this case a virtual machine instance, with the name of `example`.
+The first line is telling Terraform to create a new resource, in this case a virtual machine instance, with the name of `example`.
 
-Second line is declaring what *Amazon Machine Image* to use for the operating system.
+The second line is declaring what *Amazon Machine Image* to use for the operating system.
 
-Third line is declaring what instance type to use, this will determine how many virtual CPUs and Memory it will have.
+The third line is declaring what instance type to use. This will determine how many virtual CPUs and how much Memory it will have.
 
 `main.tf` should look similar to this once you have place the two pieces of text into it:
 ```
@@ -214,13 +214,13 @@ resource "aws_instance" "example" {
 
 #### Use the Configurations That You Created
 * Open a terminal in the directory where the `main.tf` file is located.
-* Run the following command for terraform to get any required dependencies based on the cloud provider being used:
+* Run the following command for Terraform to get any required dependencies based on the cloud provider being used:
     `terraform init`
 * Run the following command to scan the `main.tf` for any issues:
     `terraform plan`
 * Run the following command to create the real resource:
     `terraform apply`
-* Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+* Once Terraform gives you a prompt about the successful operation, check that the resource has been created in the *AWS console* under *Compute* > *EC2*. 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
     
 

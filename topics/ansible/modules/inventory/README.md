@@ -28,7 +28,7 @@
 
 <!--TOC_END-->
 ## Overview
-The Ansible inventory is used for defining hosts in your infrastructure to connect to and configure.
+The Ansible inventory is used for defining hosts in your infrastructure to connect with and configure.
 A host can be a domain name or IP address.
 The default location for the inventory configurations are in the `/etc/ansible/hosts` file however, a different inventory file or hosts can be specified at any time when using the `-i` option on the command line:
 ```bash
@@ -54,16 +54,16 @@ one.example.com
 two.example.com
 216.58.205.46
 ```
-When we are configuring ansible playbooks to run tasks we get the option to say which hosts to run the tasks on.
+When we are configuring Ansible playbooks to run tasks we get the option to say which hosts to run the tasks on.
 Either a single host or group of hosts can be specified.
 When a group is specified, the tasks will be executed on all of the hosts in that particular group.
 This feature makes Ansible great for configuring many hosts simultaneously.
 
-You may want to specify the inventory file for most of the tasks that you are running, to edit `/etc/ansible/hosts` you will likely need root access on the machine.
+You may want to specify the inventory file for most of the tasks that you are running. To edit `/etc/ansible/hosts`, you will likely need root access on the machine.
 
 ### Inventory Files for Different Environments
 Another reason for using the inventory file in a custom location is for running tasks on different environments.
-You may have several environments for different development and testing purposes.
+You may have several environments, each for different purposes (development, testing, release, etc.).
 
 These files can then be accessed by passing them as an argument to the inventory option `-i`:
 ```bash
@@ -72,14 +72,14 @@ ansible-playbook -i development playbook.yaml
 ```
 
 ## Inventory Parameters
-Inventory parameters are additional properties which can be configured in the inventory file which can change things like:
+Inventory parameters are additional properties which can be configured in the inventory file. It can change things like:
 - The user to connect to the machine as
 - Which private SSH key to use
 - The port to connect on, if you aren't using SSH on port 22
 - The connection type - maybe you aren't using SSH at all and want to run the tasks locally or in a Docker container
 
 ### Applying to a Host
-Inventory parameters can be applied on per-host basis, in the example shown here `inventory_parameter` would be replaced with whatever parameter you would like to use:
+Inventory parameters can be applied on a per-host basis. In the example, `inventory_parameter` would be replaced with whatever parameter you would like to use:
 ```ini
 foo.example.com inventory_parameter=value
 bar.example.com inventory_parameter=value
@@ -99,13 +99,13 @@ inventory_parameter=value
 ```
 
 ### Ansible User
-The `ansible_user` parameter can be used to change which user to connect as, here Ansible would try to connect to the `bar.example.com` host as the user `bob`:
+The `ansible_user` parameter can be used to change which user to connect as. In this example, Ansible would try to connect to the `bar.example.com` host as the user `bob`:
 ```ini
 bar.example.com ansible_user=bob
 ```
 
 ### SSH Private Key File
-One of Ansible's main use cases is for connecting to multiple hosts and multiple envinronments to configure many machines so naturally there are going to be different private SSH key files to access these many different hosts.
+One of Ansible's main use cases is for connecting to multiple hosts and environments to configure many machines. Naturally, there are going to be different private SSH key files to access these many different hosts!
 
 A path to a private key file can be specified with `ansible_ssh_private_key_file`.
 In the example shown below Ansible will try to connect to the `foo.example.com`, authenticating with the `~/.ssh/development_id_rsa` private key file:
@@ -138,7 +138,7 @@ There is a file in this module folder called `inventory`, use this as a template
 - `IP_ADDRESS_1` and `IP_ADDRESS_2` with the public IP addresses of you machines.
 - `USER` with the user you configured SSH access for on the machines
 
-It should then look something like this, but with different IP addresses and a different user, well unless you're called Bob I guess:
+It should then look something like this, but with different IP addresses and a different user (unless you're called Bob!):
 ```ini
 [test]
 IP_ADDRESS_1
