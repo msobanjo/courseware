@@ -253,3 +253,15 @@ Make sure that you are within the correct region, otherwise you won't be able to
 </details>
 
 ### AWS task 2
+
+<details>
+
+<summary>In this task you will attempt to provide variable values in a different way.</summary>
+
+#### Prerequisites
+
+In order to do this task you need to have *Task 1* completed and have the `main.tf` file.
+
+
+
+</details>
