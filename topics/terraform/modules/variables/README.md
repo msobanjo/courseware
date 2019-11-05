@@ -7,6 +7,20 @@
 - [Providing a value](#providing-a-value)
 - [Variable Precedence](#variable-precedence)
 - [Tasks](#tasks)
+	- [AWS task 1](#aws-task-1)
+	- [Prerequisites](#prerequisites)
+	- [Authenticating](#authenticating)
+	- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
+	- [Adding the provider](#adding-the-provider)
+	- [Adding resource](#adding-resource)
+	- [Adding variables](#adding-variables)
+- [Adding variable values in variableValues file](#adding-variable-values-in-variablevalues-file)
+	- [Formatting](#formatting)
+	- [Final configuration file states](#final-configuration-file-states)
+	- [Running the configuration file](#running-the-configuration-file)
+	- [Overview](#overview-1)
+	- [Clean up](#clean-up)
+	- [AWS task 2](#aws-task-2)
 
 <!--TOC_END-->
 ## Overview
@@ -239,4 +253,3 @@ Make sure that you are within the correct region, otherwise you won't be able to
 </details>
 
 ### AWS task 2
-
