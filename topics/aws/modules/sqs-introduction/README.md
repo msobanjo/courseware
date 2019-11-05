@@ -54,7 +54,6 @@ Here we can add some text to the message that we need to send, add some sample t
 
 If you click the **Message Attributes** tab at the top of the screen you will see that you can add some attributes to the message.
 
-<<<<<<< HEAD
 We can give each Attribute a Name, a Type and a Value.  For this Task please create a numerical attribute with the name 'Price' and give it a value of 100.
 
 Click the blue **Send Message** button, you will then see that the queue you have created on the dashboard will have 1 message available.
@@ -68,6 +67,3 @@ The process should return the message that appears on your queue, however becaus
 If you click the **message details** button you will be able to see the body of the message and the attributes that we have set for it.
 
 You can delete your message by selecting the tick box on the left of the message.  Then by using the red **Delete x Message** button.
-=======
-We can give each Attribute a Name, a Type and a Value.  For this Task please create a numerical attribute with the name 'Price'.
->>>>>>> e956aa587381af0504cbf6496feb8434a5c95e88
