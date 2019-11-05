@@ -206,13 +206,14 @@ First let's execute the following command to get the plugins for AWS:
 
 `terraform init`
 
-Next let's execute to see what changes will be made:
+Next let's execute to see what changes will be made, we will need to tell TF where the variable values are defined, it's done through `-var-file` flag and then providing a value to where the file is located.
+We placed `variableValues.tfvars` in the same directory, therefore we can make a reference to it directly.
 
-`terraform plan`
+`terraform plan -var-file="variableValues.tfvars"`
 
 Lastly let's create the resource by executing:
 
-`terraform apply`
+`terraform apply -var-file="variableValues.tfvars"`
 
 Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
 
