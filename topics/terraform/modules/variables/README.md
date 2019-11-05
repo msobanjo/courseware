@@ -119,10 +119,12 @@ provider "aws" {
 Paste the following below the variable in the `main.tf` file:
 ```hcl
 resource "aws_instance" "example" {
-	ami = var.ami
-	instance_type = var.type
+	ami = ami
+	instance_type = type
 }
 ```
+
+Notice that there's no need to use `var.` in order to point to the variables value, you can make a direct reference to it.
 
 ### Adding variables
 
@@ -170,8 +172,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami
-  instance_type = var.type
+  ami           = ami
+  instance_type = type
 }
 ```
 
