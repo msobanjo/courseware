@@ -1,5 +1,13 @@
 # SQS Introduction
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Coupling](#coupling)
+- [Queues](#queues)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 Amazon Simple Queue Service (Amazon SQS) offers fast, reliable and scalable queues for storing messages. By using Amazon SQS, you can move data between distributed components of your applications that perform different tasks without losing messages or requiring each component to be always available.
@@ -43,12 +51,3 @@ Here we can add some text to the message that we need to send, add some sample t
 If you click the **Message Attributes** tab at the top of the screen you will see that you can add some attributes to the message.
 
 We can give each Attribute a Name, a Type and a Value.  For this Task please create a numerical attribute with the name 'Price'.
-
-
-
-
-
-
-
-
-
