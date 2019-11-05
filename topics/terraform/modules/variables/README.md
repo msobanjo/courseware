@@ -93,14 +93,14 @@ For example, if you define a variable in a var-file and a -var option, the one t
 
 <summary>In this task you will use a *variablesValues* file to give values to your *variables* while creating a resource on AWS.</summary>
 
-### Prerequisites
+#### Prerequisites
 
 1. Have **aws cli** installed
     2. You can install it by running the following python command, keep in mind you need to have python installed:
     `pip install awscli`
 3. Know your AWS `access` and `secret` keys
 
-### Authenticating
+#### Authenticating
 
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
 `aws configure`
@@ -110,7 +110,7 @@ You will be asked to provide the following things:
 * **Default region name** would be **eu-west-2**
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
-### Creating the directory and configuration file
+#### Creating the directory and configuration file
 
 For the next step create a new folder, you can pick any name for it but a suggested one would be `example_4`.
 
@@ -119,7 +119,7 @@ Within the newly created folder, create the following new files within the direc
 - `variables.tf`
 - `variableValues.tfvars`
 
-### Adding the provider
+#### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
 ```hcl
@@ -128,7 +128,7 @@ provider "aws" {
 }
 ``` 
 
-### Adding resource
+#### Adding resource
 
 Paste the following below the variable in the `main.tf` file:
 ```hcl
@@ -140,7 +140,7 @@ resource "aws_instance" "example" {
 
 Notice that there's no need to use `var.` in order to point to the variables value, you can make a direct reference to it.
 
-### Adding variables
+#### Adding variables
 
 Paste the following into the `variables.tf` file:
 
@@ -156,7 +156,7 @@ variable "type" {
 
 As you can see there are no set default values, they will be set in the `variableValues.tfvars` file.
 
-## Adding variable values in variableValues file
+#### Adding variable values in variableValues file
 
 Open `variableValues.tfvars` file and place the following text in the file:
 
@@ -167,14 +167,14 @@ type = "t2.micro"
 
 Now the variables defined in the `variables.tf` file will have the values set once TF starts running.
 
-### Formatting
+#### Formatting
 
 Format the configuration files by running the command:
 ```shell script
 terraform fmt
 ```
 
-### Final configuration file states
+#### Final configuration file states
 
 Let's check that you have all the configuration files ready.
 
@@ -214,7 +214,7 @@ If the configuration files are like this, continue with the task.
 
 If the configuration files you have are different, update them to match them.
 
-### Running the configuration file
+#### Running the configuration file
 
 Next, open a the terminal in the directory where the configuration files are.
 
@@ -235,13 +235,13 @@ Once terraform will give you a prompt about the successful operation in the *AWS
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
-### Overview
+#### Overview
 
 In this task you used three configuration files to deploy a resource in AWS.
 
 Additionally the variable values were defined in a different file from where the variables were declared.
 
-### Clean up
+#### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
 `terraform destroy` 
@@ -260,8 +260,47 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 #### Prerequisites
 
-In order to do this task you need to have *Task 1* completed and have the `main.tf` file.
+In order to do this task you need to have *Task 1* completed and have the `main.tf`, `variables.tf` files.
 
+#### Providing values through the terminal
 
+Create a new directory like `example_5`.
+
+Copy the `main.tf`, `variables.tf` files into the directory.
+
+#### Running the configuration file
+
+Next, open a the terminal in the directory where the configuration files are.
+
+First let's execute the following command to get the plugins for AWS:
+
+`terraform init`
+
+Next let's execute to see what changes will be made, as there's no `variablesValues.tfvars` file those values do need to come from somewhere. 
+Once you're going to execute the following command, you will be prompted to provide values for the variables. 
+A name of the variable will be displayed, similarly if there is a `description` it will be printed to you as well in order to give some context.
+
+`terraform plan`
+
+Lastly let's create the resource by executing, you will be prompted to provide variable values as well once you execute the following command:
+
+`terraform apply`
+
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+#### Overview
+
+In this task you provided variable values directly in the terminal when you were prompted for them.
+
+#### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+`terraform destroy` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
 </details>
