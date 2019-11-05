@@ -1,4 +1,4 @@
-# Configuration language
+# HashiCorp Configuration language
 
 <!--TOC_START-->
 ## Contents
@@ -286,14 +286,14 @@ Please complete the task below that is most convenient for you.
 
 You will now create a resource on AWS, using some functionality from this module.
 
-### Prerequisites
+#### Prerequisites
 
 1. Have **aws cli** installed
     2. You can install it by running the following python command, keep in mind you need to have python installed:
     `pip install awscli`
 3. Know your AWS `access` and `secret` keys
 
-### Authenticating
+#### Authenticating
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
 `aws configure`
 You will be asked to provide the following things:
@@ -302,14 +302,14 @@ You will be asked to provide the following things:
 * **Default region name** would be **eu-west-2**
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
-### Creating the directory and configuration file
+#### Creating the directory and configuration file
 For the next step create a new folder, you can pick any name for it but a suggested one would be `example_2`.
 
 Within the newly created folder, create a new file called `main.tf`.
 
 Open the `main.tf` with a text editor of your choosing.
 
-### Adding the provider
+#### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
 ```hcl
@@ -325,7 +325,7 @@ In later steps we will configure the *access* and *secret* keys using *aws cli* 
 
 Now let's declare two variables that we'll use for the resource declaration. 
 
-### Adding variables
+#### Adding variables
 
 Paste the following below the *provider* block:
 ```hcl
@@ -350,7 +350,7 @@ The second variable is **type**, we can see that it has two types of comments, a
 
 The default argument is holding the value of what will be the type of instance we'll be creating.
 
-### Adding resource
+#### Adding resource
 
 Paste the following below the variables:
 ```hcl
@@ -368,14 +368,14 @@ The second argument is **instance_type** which specifies which machine configura
 
 Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
 
-### Formatting
+#### Formatting
 
 Format the configuration file by running the command:
 ```bash
 terraform fmt
 ```
 
-### Final configuration file state
+#### Final configuration file state
 
 Your configuration file at the end of all steps should look similar to this:
 ```hcl
@@ -402,7 +402,7 @@ variable "type" {
 }
 ```
 
-### Running the configuration file
+#### Running the configuration file
 
 Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
 
@@ -422,7 +422,7 @@ Once terraform will give you a prompt about the successful operation in the *AWS
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
-### Clean up
+#### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
     `terraform destroy` 
