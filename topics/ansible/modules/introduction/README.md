@@ -54,7 +54,7 @@ Start by making sure that Python installed on your machine, then go ahead and in
 ### Configure a Playbook to Install a Web Server
 Ansible configures its hosts through playbooks; the intricacies of Ansible configurations will be discussed in another module.
 
-Of course you would commonly use Ansible to install applications and configurations on other remote hosts but for this example to keep things simple we will just install a web server on the same host.
+Ansible is more commonly used to install applications and configurations on other remote hosts, but for this example, we will just install a web server on the same host to simply demonstrate how a playbook works.
 
 Here we have a playbook which installs a basic NGINX web server so that we can use Ansible, so go ahead and create a file called `playbook.yml` which contains the following:
 ```yaml
