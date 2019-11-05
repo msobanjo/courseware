@@ -1,5 +1,14 @@
 # Variables
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Default](#default)
+- [Providing a value](#providing-a-value)
+- [Variable Precedence](#variable-precedence)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 Variables are a key part of the TF syntax, we will now take a deeper look at them and try to understand them better.
@@ -65,4 +74,3 @@ When variables are defined within the same precedence level, the last value is u
 For example, if you define a variable in a var-file and a -var option, the one that you specify last on the command-line will take precedence.
 
 ## Tasks
-
