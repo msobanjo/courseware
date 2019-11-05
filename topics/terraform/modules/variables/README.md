@@ -11,7 +11,7 @@
 <!--TOC_END-->
 ## Overview
 
-Variables are a key part of the TF syntax, we will now take a deeper look at them and try to understand them better.
+Variables are a key part of the TF syntax, we will now take a deeper look at them in order to understand them better.
 
 ## Default
 
