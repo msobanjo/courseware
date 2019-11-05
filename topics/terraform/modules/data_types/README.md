@@ -8,6 +8,12 @@
 	- [Boolean](#boolean)
 	- [Lists](#lists)
 	- [Maps](#maps)
+	- [Task](#task)
+		- [Knowledge check](#knowledge-check)
+			- [Question 1](#question-1)
+			- [Question 2](#question-2)
+			- [Question 3](#question-3)
+			- [Question 3](#question-3-1)
 
 <!--TOC_END-->
 ## Overview
