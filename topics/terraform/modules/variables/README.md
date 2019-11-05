@@ -15,20 +15,19 @@ Variables are a key part of the TF syntax, we will now take a deeper look at the
 
 ## Default
 
-The default key for a variable specifies what value to use if no other value is assigned.
+The **default** key for a variable specifies what value to use if no other value is assigned.
 
 In this example you can see that we're providing a default value for the variable.
 
 ```hcl
 variable "ami" {
-  description = "machine image"
   default     = "ami-f976839e"
 }
 ```
 
-The default value is used by Terraform to infer the type of the variable. 
+The **default** value is used by Terraform to infer the type of the variable. 
 
-When no default is given and no type is specified, the default type of string is used. 
+When no default is given and no type is specified, the default type of **string** is used. 
 
 ## Providing a value
 
