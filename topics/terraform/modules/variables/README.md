@@ -311,7 +311,57 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 </details>
 
-### Additional tasks
+### Passing variable values with -var option
 
-- pass the variable values by using the `-var` flag
-- pass the variable value through environment variables
+<details>
+
+<summary>In this task you will pass in variable values directly by using the `-var` flag option.</summary>
+
+#### Prerequisites
+
+In order to do this task you need to have the *AWS Variables with TFVARS File* (previous) task completed and have the `main.tf`, `variables.tf` files.
+
+#### Providing values through the terminal
+
+Create a new directory like `terraform-variables-aws-using-cli-continuation`.
+
+Copy the `main.tf`, `variables.tf` files into the directory.
+
+#### Running the configuration file
+
+Next, open a the terminal in the directory where the configuration files are.
+
+First let's execute the following command to get the plugins for AWS:
+
+`terraform init`
+
+Next let's execute to see what changes will be made, as there's no `variablesValues.tfvars` file those values do need to come from somewhere. 
+Once you're going to execute the following command, you will be prompted to provide values for the variables. 
+A name of the variable will be displayed, similarly if there is a `description` it will be printed to you as well in order to give some context.
+
+`terraform plan -var='ami=ami-f976839e' -var='type=t2.micro'`
+
+Lastly let's create the resource by executing, you will be prompted to provide variable values as well once you execute the following command:
+
+`terraform apply -var='ami=ami-f976839e' -var='type=t2.micro'`
+
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+#### Summary
+
+In this task you provided variable values directly in the terminal when you were prompted for them.
+
+#### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+`terraform destroy -var='ami=ami-f976839e' -var='type=t2.micro'` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+</details>
+
+### Passing value through environment variable
