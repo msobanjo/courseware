@@ -73,11 +73,11 @@ For example, if you define a variable in a var-file and a -var option, the one t
 
 ## Tasks
 
-### AWS task
+### AWS task 1
 
 <details>
 
-<summary>In this task you will use a variables file to give values to your variables while creating a resource on AWS.</summary>
+<summary>In this task you will use a *variablesValues* file to give values to your *variables* while creating a resource on AWS.</summary>
 
 ### Prerequisites
 
@@ -100,9 +100,10 @@ You might get asked additionally to specify what formatting you want to use, ent
 
 For the next step create a new folder, you can pick any name for it but a suggested one would be `example_4`.
 
-Within the newly created folder, create a new file called `main.tf`.
-
-Additionally create a file called `variableValues.tfvars`.
+Within the newly created folder, create the following new files within the directory:
+- `main.tf`
+- `variables.tf`
+- `variableValues.tfvars`
 
 ### Adding the provider
 
@@ -112,11 +113,6 @@ provider "aws" {
 	region = "eu-west-2"
 }
 ``` 
-You may have noticed that there is only the region declared and no `access_key` or `secret_key` declared, this is done on purpose. 
-
-We're doing it in this way so that when you will be uploading these configuration files to GitHub you wouldn't accidentally expose them.
-
-In later steps we will configure the *access* and *secret* keys using *aws cli* which is the more secure way of doing it.
 
 ### Adding resource
 
@@ -128,17 +124,7 @@ resource "aws_instance" "example" {
 }
 ```
 
-In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var*, it allows us to get a specific variables value by referring to it's name. 
-
-In this case when we want to use the value of the **ami** variable we need to make a reference to it like this: `var.ami`.
-
-The second argument is **instance_type** which specifies which machine configuration to use, it will determine how many vCPU's will be assigned as well as the amount of RAM. 
-
-Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
-
 ### Adding variables
-
-Create a new file called `variables.tf` in the `example_4` directory.
 
 Paste the following into the `variables.tf` file:
 
@@ -174,7 +160,7 @@ terraform fmt
 
 ### Final configuration file states
 
-Let's check that you have configuration files ready.
+Let's check that you have all the configuration files ready.
 
 `main.tf` configuration file should look like this:
 
@@ -236,11 +222,7 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 In this task you used three configuration files to deploy a resource in AWS.
 
-You may have noticed that there was no need in making a reference to the variables configuration file in order to get the variables value.
-
-This is because terraform appends configuration files and the variables would end up in the same scope.
-
-Additionally the variable values were defined in a different file from where the variables are declared.
+Additionally the variable values were defined in a different file from where the variables were declared.
 
 ### Clean up
 
@@ -252,3 +234,6 @@ Check in the *AWS console* under *Compute* and then *EC2* check that the resourc
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
 </details>
+
+### AWS task 2
+
