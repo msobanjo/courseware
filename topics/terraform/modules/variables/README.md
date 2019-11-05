@@ -26,6 +26,7 @@
 		- [Running the configuration file](#running-the-configuration-file-1)
 		- [Overview](#overview-2)
 		- [Clean up](#clean-up-1)
+	- [Additional tasks](#additional-tasks)
 
 <!--TOC_END-->
 ## Overview
