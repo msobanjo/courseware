@@ -1,5 +1,11 @@
 # SQS CLI
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 SQS is cool
@@ -25,10 +31,3 @@ You should notice that even though you've requested and successfully received yo
 ```
 aws sqs delete-message --queue-url $queue_url --receipt-handle YOUR_RECEIPT_HANDLE
 ```
-
-
-
-
-
-
-
