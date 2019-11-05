@@ -21,5 +21,5 @@ This means that your infrastructure can be described as code, allowing you to ha
 ## Modules
 - [Introduction](./modules/introduction)
 - [Configuration file discovery](./modules/tf_configuration_file_discovery)
-- [Configuration language](./modules/tf_configuration_language)
+- [HashiCorp Configuration language](./modules/tf_configuration_language)
 <!--MODULES_END-->
