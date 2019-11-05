@@ -31,16 +31,15 @@ When no default is given and no type is specified, the default type of **string*
 
 ## Providing a value
 
-The default value can’t use interpolations.
+The **default** value can’t use interpolations, you will learn about interpolations in a separate module.
  
-When no default is provided, you must specify a value. 
+When no **default** is provided, you must specify a value. 
 
 You have several options for specifying the value of a variable.
  
-If you specify a value when a default is provided, the specified value is used overriding the default.
+If you specify a value when a **default** is provided, the specified value is used overriding the **default**.
 
 Other ways to provide a value include:
-
 - having Terraform interactively prompt you to enter values for missing variables. 
 This may work for small exercises but is painful to re-enter the values every time you issue a plan or apply. 
 It is also not applicable for automation.
