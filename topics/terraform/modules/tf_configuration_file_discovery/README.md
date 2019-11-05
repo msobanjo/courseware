@@ -6,17 +6,17 @@
 - [Loading order](#loading-order)
 - [Task](#task)
 	- [AWS task](#aws-task)
-	- [Prerequisites](#prerequisites)
-	- [Authenticating](#authenticating)
-	- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
-	- [Adding the provider](#adding-the-provider)
-	- [Adding resource](#adding-resource)
-	- [Adding variables](#adding-variables)
-	- [Formatting](#formatting)
+		- [Prerequisites](#prerequisites)
+		- [Authenticating](#authenticating)
+		- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
+		- [Adding the provider](#adding-the-provider)
+		- [Adding resource](#adding-resource)
+		- [Adding variables](#adding-variables)
+		- [Formatting](#formatting)
 	- [Final configuration file states](#final-configuration-file-states)
 	- [Running the configuration file](#running-the-configuration-file)
 	- [Overview](#overview-1)
-	- [Clean up](#clean-up)
+		- [Clean up](#clean-up)
 
 <!--TOC_END-->
 ## Overview
@@ -87,7 +87,6 @@ provider "aws" {
 You may have noticed that there is only the region declared and no `access_key` or `secret_key` declared, this is done on purpose. 
 
 We're doing it in this way so that when you will be uploading these configuration files to GitHub you wouldn't accidentally expose them.
-
 
 #### Adding resource
 
