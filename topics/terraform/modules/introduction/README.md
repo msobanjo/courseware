@@ -12,6 +12,7 @@
 		- [Configuring the Terraform on your `PATH`](#configuring-the-terraform-on-your-path)
 	- [Linux](#linux)
 	- [Verify the Installation](#verify-the-installation)
+	- [Provider tasks](#provider-tasks)
 	- [Creating a Simple Resource in AWS](#creating-a-simple-resource-in-aws)
 	- [Creating a resource in AWS](#creating-a-resource-in-aws)
 	- [Create an Access Key](#create-an-access-key)
@@ -124,6 +125,11 @@ Follow the steps below, entering the commands into a terminal.
 ### Verify the Installation
 You can verify that you have installed Terraform correctly by opening a command line or terminal and run the command below, the version of Terraform that you installed should be shown: `terraform --version`
 
+### Provider tasks
+<details>
+
+<summary>AWS</summary>
+
 ### Creating a Simple Resource in AWS
 
 We will now create a resource in AWS and check that it has been successfully created.
@@ -149,7 +155,7 @@ You can find them by following these steps:
     * If there is no Secret Access Key, create a new one
 * Copy and save both in some text file but make sure to note down which is which. 
 After saving both of them you should have them looking like this in your text file.
-```
+```text
 access_key = "AKIBIWX7DKIDGMCHPG4A"
 secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
 ```
@@ -166,7 +172,7 @@ We will now declare in terraform syntax what provider we'll be using, as well as
 
 Place the following into your `main.tf` file:
 
-```
+```hcl
 provider "aws" {
 	access_key = "AKIBIWX7DKIDGMCHPG4A"
 	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
@@ -185,7 +191,7 @@ For the next step we need to tell terraform what resource to create.
 
 Place the following into your `main.tf` file below the `provider`:
 
-```
+```hcl
 resource "aws_instance" "example" {
 	ami = "ami-2757f631"
 	instance_type = "t2.micro"
@@ -199,7 +205,7 @@ Second line is declaring what *Amazon Machine Image* to use for the operating sy
 Third line is declaring what instance type to use, this will determine how many virtual CPUs and Memory it will have.
 
 `main.tf` should look similar to this once you have place the two pieces of text into it:
-```
+```hcl
 provider "aws" {
 	access_key = "AKIBIWX7DKIDGMCHPG4A"
 	secret_key = "3gSerUT5rreC989K5l4f3WcGZ0yUNaltaw4C8r/1"
@@ -232,3 +238,4 @@ To delete the created resource run the following command in the terminal, make s
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+</details>
