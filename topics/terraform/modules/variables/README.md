@@ -26,7 +26,13 @@
 		- [Running the configuration file](#running-the-configuration-file-1)
 		- [Summary](#summary-1)
 		- [Clean up](#clean-up-1)
-	- [Additional tasks](#additional-tasks)
+	- [Passing variable values with -var option](#passing-variable-values-with-var-option)
+		- [Prerequisites](#prerequisites-2)
+		- [Providing values through the terminal](#providing-values-through-the-terminal-1)
+		- [Running the configuration file](#running-the-configuration-file-2)
+		- [Summary](#summary-2)
+		- [Clean up](#clean-up-2)
+	- [Passing value through environment variable](#passing-value-through-environment-variable)
 
 <!--TOC_END-->
 ## Overview
