@@ -33,6 +33,12 @@
 		- [Summary](#summary-2)
 		- [Clean up](#clean-up-2)
 	- [Passing value through environment variable](#passing-value-through-environment-variable)
+		- [Prerequisites](#prerequisites-3)
+		- [Providing values through the terminal](#providing-values-through-the-terminal-2)
+		- [Adding environment variables](#adding-environment-variables)
+		- [Running the configuration file](#running-the-configuration-file-3)
+		- [Summary](#summary-3)
+		- [Clean up](#clean-up-3)
 
 <!--TOC_END-->
 ## Overview
