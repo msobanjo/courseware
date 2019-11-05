@@ -12,13 +12,17 @@ If you have never come across the concept of Coupling before, you need to be ful
 We need a module here that describes coupling.
 ```
 
-Simply 
+Simply put when we are creating a diverse system using a MicroServices Architecture, we aim for each of these services to be reliant on as small a number of other services as possible, this limits the impact to the overall system if a single service fails.
 
 ## Queues
 
-A queue is a temporary repository for messages that are awaiting processing. The queue acts as a buffer between the component producing and saving data, and the component receiving the data for processing. This means the queue resolves issues that arise if the producer is producing work faster than the consumer can process it, or if the producer or consumer are only intermittently connected to the network. SQS ensures delivery of each message at least once, and supports multiple readers and writers interacting with the same queue. A single queue can be used simultaneously by many distributed application components, with no need for those components to coordinate with each other to share the queue.
+A queue is a temporary repository for messages that are awaiting processing. The queue acts as a buffer between the service producing the data and the service consuming (or using) the data. This means the queue resolves issues that arise if the producer is producing work faster than the consumer can process it, or if the producer or consumer are only intermittently connected to the network. 
+
+A single queue can be used simultaneously by many distributed services, with no need for those services to coordinate with each other to share the queue, hence we have achieved low coupling.
 
 ## Tasks
+
+For this task we will be creating a simple SQS Queue, we will be pushing messages to the queue, reading them from the queue, and finally deleting messages from the queue.
 
 Navigate to the **SQS Dashboard** to the using the Service drop down menu.
 
@@ -42,13 +46,16 @@ Here we can add some text to the message that we need to send, add some sample t
 
 If you click the **Message Attributes** tab at the top of the screen you will see that you can add some attributes to the message.
 
-We can give each Attribute a Name, a Type and a Value.  For this Task please create a numerical attribute with the name 'Price'.
+We can give each Attribute a Name, a Type and a Value.  For this Task please create a numerical attribute with the name 'Price' and give it a value of 100.
 
+Click the blue **Send Message** button, you will then see that the queue you have created on the dashboard will have 1 message available.
 
+With the queue still highlighted, click the **Queue Actions** drop down menu, then click the **View/Delete Messages**.
 
+Here we have a screen where we will be able to interact with the messages that are on the queue, click the blue **Start Polling for Messages** button.
 
+The process should return the message that appears on your queue, however because SQS is a distributed managed service, one poll may not find all of your messages on the queue.
 
+If you click the **message details** button you will be able to see the body of the message and the attributes that we have set for it.
 
-
-
-
+You can delete your message by selecting the tick box on the left of the message.  Then by using the red **Delete x Message** button.
