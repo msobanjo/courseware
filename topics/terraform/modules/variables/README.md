@@ -46,3 +46,23 @@ You can use multiple variable files.
 Variables defined using the -var-file option override variables defined using automatic variable files.
 - using environment variables. 
 When setting Terraform variables using environment variables the name of the environment variable must begin with TF_VAR_ and be followed by the name of the Terraform variable. 
+
+## Variable Precedence
+
+When a variable is defined multiple times, the value of the variable is usually set to the highest precedent definition. 
+One thing to note is that map variables are set to the highest precedent definition. 
+Instead the values of the map variable definitions are merged. 
+All other variables are overridden by the highest precedent value.
+
+The order of precedence from lowest to highest is as follows:
+
+- default values have the lowest precedence
+- then environment variables
+- followed by automatic variable files
+- and -var and -var-files share the highest precedence level
+
+When variables are defined within the same precedence level, the last value is used. 
+For example, if you define a variable in a var-file and a -var option, the one that you specify last on the command-line will take precedence.
+
+## Tasks
+
