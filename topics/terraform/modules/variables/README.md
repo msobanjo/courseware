@@ -60,18 +60,18 @@ You have several options for specifying the value of a variable.
 If you specify a value when a **default** is provided, the specified value is used overriding the **default**.
 
 Other ways to provide a value include:
-- having Terraform interactively prompt you to enter values for missing variables. 
+- **Have Terraform interactively prompt you to enter values for missing variables.**
 This may work for small exercises but is painful to re-enter the values every time you issue a plan or apply. 
 It is also not applicable for automation.
-- using the `-var` command line option for both plan and apply commands. 
+- **Using the `-var` command line option for both plan and apply commands.**
 You specify the variable name followed by an equal sign and the value you want to use for the variable. 
 You can use any many `-var` options as required, but the commands can get very long if you have more than a few variables.
-- using variable files. 
+- **Using variable files.**
 Variable files use HCL syntax for defining the variable values. 
 Variable files can be included using the var-file option or they can be automatically included if they are in your current working directory and are either named *terraform.tfvars* or have a file extension of *.auto.tfvars*. 
 You can use multiple variable files. 
 Variables defined using the `-var-file` option override variables defined using automatic variable files.
-- using environment variables. 
+- **Using environment variables.**
 When setting Terraform variables using environment variables the name of the environment variable must begin with **TF_VAR_** and be followed by the name of the Terraform variable. 
 
 ## Variable Precedence
@@ -93,11 +93,11 @@ For example, if you define a variable in a var-file and a -var option, the one t
 
 ## Tasks
 
-### AWS task 1
+### AWS Variables with TFVARS File
 
 <details>
 
-<summary>In this task you will use a *variablesValues* file to give values to your *variables* while creating a resource on AWS.</summary>
+<summary>In this task you will use a <i>variablesValues</i> file to give values to your <i>variables</i> while creating a resource on AWS.</summary>
 
 #### Prerequisites
 
@@ -118,7 +118,7 @@ You might get asked additionally to specify what formatting you want to use, ent
 
 #### Creating the directory and configuration file
 
-For the next step create a new folder, you can pick any name for it but a suggested one would be `example_4`.
+For the next step create a new folder, you can pick any name for it but a suggested one would be `terraform-variables`.
 
 Within the newly created folder, create the following new files within the directory:
 - `main.tf`
@@ -139,8 +139,8 @@ provider "aws" {
 Paste the following below the variable in the `main.tf` file:
 ```hcl
 resource "aws_instance" "example" {
-	ami = ami
-	instance_type = type
+	ami = var.ami
+	instance_type = var.type
 }
 ```
 
@@ -192,8 +192,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = ami
-  instance_type = type
+  ami           = var.ami
+  instance_type = var.type
 }
 ```
 
@@ -241,7 +241,7 @@ Once terraform will give you a prompt about the successful operation in the *AWS
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
-#### Overview
+#### Summary
 
 In this task you used three configuration files to deploy a resource in AWS.
 
@@ -250,7 +250,7 @@ Additionally the variable values were defined in a different file from where the
 #### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
-`terraform destroy` 
+`terraform destroy -var-file="variableValues.tfvars"` 
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
@@ -258,7 +258,7 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 </details>
 
-### AWS task 2
+### AWS Variables with CLI Option
 
 <details>
 
@@ -266,11 +266,11 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 #### Prerequisites
 
-In order to do this task you need to have *Task 1* completed and have the `main.tf`, `variables.tf` files.
+In order to do this task you need to have the *AWS Variables with TFVARS File* (previous) task completed and have the `main.tf`, `variables.tf` files.
 
 #### Providing values through the terminal
 
-Create a new directory like `example_5`.
+Create a new directory like `terraform-variables-aws-using-cli`.
 
 Copy the `main.tf`, `variables.tf` files into the directory.
 
@@ -296,7 +296,7 @@ Once terraform will give you a prompt about the successful operation in the *AWS
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
 
-#### Overview
+#### Summary
 
 In this task you provided variable values directly in the terminal when you were prompted for them.
 
