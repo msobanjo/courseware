@@ -335,13 +335,11 @@ First let's execute the following command to get the plugins for AWS:
 
 `terraform init`
 
-Next let's execute to see what changes will be made, as there's no `variablesValues.tfvars` file those values do need to come from somewhere. 
-Once you're going to execute the following command, you will be prompted to provide values for the variables. 
-A name of the variable will be displayed, similarly if there is a `description` it will be printed to you as well in order to give some context.
+Next let's execute the following command to see what changes will be made, observe that the variable values are passed directly:
 
 `terraform plan -var='ami=ami-f976839e' -var='type=t2.micro'`
 
-Lastly let's create the resource by executing, you will be prompted to provide variable values as well once you execute the following command:
+Lastly let's create the resource by executing:
 
 `terraform apply -var='ami=ami-f976839e' -var='type=t2.micro'`
 
@@ -365,3 +363,60 @@ Make sure that you are within the correct region, otherwise you won't be able to
 </details>
 
 ### Passing value through environment variable
+
+<details>
+
+<summary>In this task you will provide variable values through environment variables.</summary>
+
+#### Prerequisites
+
+In order to do this task you need to have the *AWS Variables with TFVARS File* (previous) task completed and have the `main.tf`, `variables.tf` files.
+
+#### Providing values through the terminal
+
+Create a new directory like `terraform-variables-aws-environment-variables`.
+
+Copy the `main.tf`, `variables.tf` files into the directory.
+
+#### Adding environment variables
+
+Remember that the environment variables have to start with `TF_VAR`.
+
+The first environment variables name will be `TF_VAR_ami` and the value associated with it should be `ami-f976839e`.
+
+The second environment variables name should be `TF_VAR_type` and the value associated with it should be `t2.micro`. 
+
+#### Running the configuration file
+
+Next, open a the terminal in the directory where the configuration files are.
+
+First let's execute the following command to get the plugins for AWS:
+
+`terraform init`
+
+Next let's execute the following command to see what changes will be made.
+
+`terraform plan`
+
+Lastly let's create the resource by executing:
+
+`terraform apply`
+
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+#### Summary
+
+In this task you provided variable values through the environment variables.
+
+#### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+`terraform destroy` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+</details>
