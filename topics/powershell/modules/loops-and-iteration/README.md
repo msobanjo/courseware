@@ -24,9 +24,9 @@
 <!--TOC_END-->
 ## Overview
 Arrays and iteration can be used in PowerShell for solving extensive, repetitive, procedural tasks.
-One of PowerShells main purpose is to automate tasks on Windows, often for multiple machines.
+One of PowerShell's main purposes is to automate tasks on Windows, often for multiple machines.
 
-The way that arrays can be iterated is by using loops.
+We primarily iterate through arrays in PowerShell with loops.
 There are a few different types of loops which can be utilised depending on the situation.
 
 ## For Loop
@@ -43,7 +43,7 @@ For([VARIABLE];[CONDITION];[VARIABLE_ACTION]) {
 ```
 
 ### Iterating an Array
-For loops are commonly used to step through arrays, here's the logic used and an example to follow:
+For loops are commonly used to step through arrays. Here's the logic used and an example to follow:
 - Variable `i` equals `0` at the start
 - For the condiiton, if the value of `i` is less than the value of the array's length then continue, otherwise exit the loop
 - Execute the code block in the loop which just prints an element at the index for the value of `i`, so this would be `$colours[0]` the first time round
@@ -106,8 +106,8 @@ While (Test-Path "$filePath" -and ($counter -lt 10)) {
 ```
 
 ## Do While Loops
-These are very similar to the while loop with one exception, the loops command block is executed before the condition is evaluated.
-So this is a great option if you are needing the command to execute at least once, even if the condition is never met.
+These are very similar to the while loop with one exception; the loops command block is executed before the condition is evaluated.
+This is a great option if you are needing the command to execute at least once, even if the condition is never met.
 ```powershell
 Do {
     # commands
@@ -135,7 +135,7 @@ Do {
 ```
 
 ## Do Until Loops
-Do until loops are almost identical to the Do While loops except for the condition is effectively inverted.
+Do Until loops are almost identical to the Do While loops except for the condition is effectively inverted.
 So as long as the condition **is not met**, the loop will continue to  execute **until** the condition is met.
 
 The syntax of a Do Until loop is strucured the same as a Do While loop:
@@ -199,7 +199,7 @@ Give the script a go:
 ```
 
 ### Do While Loop
-Converting to a Do While loop from the While loop example above is very simple, just the condition needs to be moved.
+Converting to a Do While loop from the While loop example above is very simple. The condition simply needs to be moved.
 Try creating a file called `error-check-do-while-loop.ps1` and enter the following:
 ```powershell
 $content = Get-Content "log.txt"
