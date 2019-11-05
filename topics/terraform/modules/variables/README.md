@@ -305,7 +305,7 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 </details>
 
-## Additional tasks
+### Additional tasks
 
 - pass the variable values by using the `-var` flag
 - pass the variable value through environment variables
