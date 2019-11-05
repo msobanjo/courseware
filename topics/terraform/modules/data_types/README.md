@@ -1,5 +1,15 @@
 # Data types
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Strings](#strings)
+	- [Numbers](#numbers)
+	- [Boolean](#boolean)
+	- [Lists](#lists)
+	- [Maps](#maps)
+
+<!--TOC_END-->
 ## Overview
 
 In this module you will learn about the various data types that are available in HCL. 
