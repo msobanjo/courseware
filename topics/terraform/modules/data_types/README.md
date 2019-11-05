@@ -1,5 +1,15 @@
 # Data types
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+	- [Strings](#strings)
+	- [Numbers](#numbers)
+	- [Boolean](#boolean)
+	- [Lists](#lists)
+	- [Maps](#maps)
+
+<!--TOC_END-->
 ## Overview
 
 In this module you will learn about the various data types that are available in HCL. 
@@ -45,6 +55,5 @@ You can see that in this example the value of **false** is used as the default v
 ### Lists
 
 **List** is a complex data type which is enclosed in brackets and separate items of primitive types with a comma.
-
 
 ### Maps
