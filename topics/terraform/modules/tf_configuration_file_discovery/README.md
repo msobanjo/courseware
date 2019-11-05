@@ -1,4 +1,4 @@
-# Configuration file discovery
+# Configuration File Discovery
 
 <!--TOC_START-->
 ## Contents
@@ -53,14 +53,14 @@ Beyond splitting your configuration across multiple files, there is another feat
 
 <summary>Deploying an AWS resource with multiple configuration files</summary>
 
-### Prerequisites
+#### Prerequisites
 
 1. Have **aws cli** installed
     2. You can install it by running the following python command, keep in mind you need to have python installed:
     `pip install awscli`
 3. Know your AWS `access` and `secret` keys
 
-### Authenticating
+#### Authenticating
 
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
 `aws configure`
@@ -70,13 +70,13 @@ You will be asked to provide the following things:
 * **Default region name** would be **eu-west-2**
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
-### Creating the directory and configuration file
+#### Creating the directory and configuration file
 
-For the next step create a new folder, you can pick any name for it but a suggested one would be `example_3`.
+For the next step create a new folder, you can pick any name for it but a suggested one would be `configuration_file_discovery`.
 
 Within the newly created folder, create a new file called `main.tf`.
 
-### Adding the provider
+#### Adding the provider
 
 Now paste the following contents into the `main.tf` file:
 ```hcl
@@ -88,9 +88,8 @@ You may have noticed that there is only the region declared and no `access_key` 
 
 We're doing it in this way so that when you will be uploading these configuration files to GitHub you wouldn't accidentally expose them.
 
-In later steps we will configure the *access* and *secret* keys using *aws cli* which is the more secure way of doing it.
 
-### Adding resource
+#### Adding resource
 
 Paste the following below the variable in the `main.tf` file:
 ```hcl
@@ -100,7 +99,7 @@ resource "aws_instance" "example" {
 }
 ```
 
-In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var*, it allows us to get a specific variables value by referring to it's name. 
+In this resource block we're specifying what amazon machine image to use for the operating system, it's value is held by **ami** argument where the value is received by making a reference to **var**, it allows us to get a specific variables value by referring to it's name. 
 
 In this case when we want to use the value of the **ami** variable we need to make a reference to it like this: `var.ami`.
 
@@ -108,7 +107,7 @@ The second argument is **instance_type** which specifies which machine configura
 
 Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
 
-### Adding variables
+#### Adding variables
 
 Create a new file called `variables.tf` in the `example_3` directory.
 
@@ -125,10 +124,10 @@ variable "type" {
 }
 ```
 
-### Formatting
+#### Formatting
 
 Format the configuration files by running the command:
-```shell script
+```bash
 terraform fmt
 ```
 
@@ -194,7 +193,7 @@ You may have noticed that there was no need in making a reference to the variabl
 
 This is because terraform appends configuration files and the variables would end up in the same scope.
 
-### Clean up
+#### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
 `terraform destroy` 
