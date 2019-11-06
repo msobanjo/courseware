@@ -11,11 +11,9 @@
 <!--TOC_END-->
 ## Overview
 
-S3 is a Foundation Tool in the AWS Eco-System, it is a Highly Available Object Store that allows 'infinite' storage, you will never run out of space to store your files.
 
-## Policies
 
-### Bucket Privacy
+## Bucket Privacy
 By default, S3 buckets are private, this means that only the root user has access to the bucket.  For the majority of use cases this is sufficient, as the buckets will normally be used to save data from other applications.
 
 Giving an S3 public access means that anybody with the URL for the bucket can access its contents, for hosting a static website this is ideal, however when you need to keep data private you need to keep your bucket private!
