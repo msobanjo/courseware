@@ -1,9 +1,9 @@
 # S3
 
+
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [AWSCLI commands with S3](#awscli-commands-with-s3)
 	- [Help](#help)
 	- [Listing your buckets](#listing-your-buckets)
 	- [Creating a bucket](#creating-a-bucket)
@@ -12,8 +12,6 @@
 - [Tasks](#tasks)
 
 <!--TOC_END-->
-
-
 ## Overview
 
 We have mainly been looking at working with S3 using the Management Console, however, we can also use the AWS CLI to complete the same tasks, as well as others, in a more programmatic way.
@@ -23,7 +21,6 @@ This module will take you through some of the basic commands when working with S
 
 ### Help
 The first command you should always be familiar with is the `help` command and how to access it:
-
 
 ```bash
 aws s3 help
