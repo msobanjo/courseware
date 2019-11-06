@@ -8,8 +8,14 @@
 	- [Custom providers](#custom-providers)
 	- [Provider versioning](#provider-versioning)
 	- [Provider aliases](#provider-aliases)
-	- [Task](#task)
+- [Tasks](#tasks)
 		- [Prerequisites](#prerequisites)
+		- [Authenticating](#authenticating)
+		- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
+		- [Adding the provider](#adding-the-provider)
+		- [Formatting](#formatting)
+		- [Running the configuration file](#running-the-configuration-file)
+		- [Clean up](#clean-up)
 
 <!--TOC_END-->
 # Overview
