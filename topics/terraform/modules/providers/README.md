@@ -178,7 +178,6 @@ Here is an example of giving provider an alias:
 
 ```hcl
 provider "aws" {
-description = "this provider is set in UK region"
 region  = "eu-west-2"
 alias   = "aws-uk"
 }
