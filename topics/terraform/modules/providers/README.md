@@ -5,7 +5,7 @@
 - [Overview](#overview)
 	- [Provider](#provider)
 	- [Provider plugin architecture](#provider-plugin-architecture)
-	- [Custom Providers](#custom-providers)
+	- [Custom providers](#custom-providers)
 	- [Provider versioning](#provider-versioning)
 	- [Provider aliases](#provider-aliases)
 
@@ -203,4 +203,3 @@ As this example is about aws provider in order to refer to the alias you would n
 If there was no provider specified in the resource, the default provider would be used and in this example the resource would have been deployed in the `eu-west-1` region.
 
 </details>
-
