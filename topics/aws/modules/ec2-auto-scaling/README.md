@@ -4,7 +4,7 @@ Auto-scaling is cool
 
 <!--TOC_START-->
 ## Contents
-- [Overview](#overview)
+- [EC2 Auto-Scaling](#ec2-autoscaling)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
@@ -13,6 +13,8 @@ Auto-scaling is cool
 ## Tasks
 
 The aim of this task is to create a simple auto-scaling group that contains one instance, we will then be terminating the instance to represent an Application failing and watch as the system 'self-heals',
+
+# Create Launch Configuration
 
 Navigate to the EC2 console from services.
 
@@ -38,7 +40,8 @@ Click the blue **Create launch configuration**.
 
 You do not need to worry about having a key pair to connect to this instance as we will not be interacting with the instance once it has been provisioned.
 
-**Create an Auto Scaling group using this launch configuration**
+
+# Create an Auto Scaling Group
 
 The previous steps were setting the *template* our group will use, we next need to configure the Auto Scaling group itself, continue following the  wizard.
 
@@ -63,6 +66,8 @@ Click **Close**.
 You are returned to the **Auto Scaling Group** Dashboard, here you can view information about the group you have just created.  For now however, click **Instances** in the menu to the left.
 
 You will see that a new instance has appeared and will be *intialising*, wait until it has completed the Status Checks.
+
+# Simulating an instance failing
 
 We do not need to interact with this instance at the moment, actually what we want to do is **terminate** this instance, this is to represent the instance failing.
 
