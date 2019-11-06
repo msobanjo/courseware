@@ -6,6 +6,7 @@
 	- [Provider](#provider)
 	- [Provider plugin architecture](#provider-plugin-architecture)
 	- [Custom Providers](#custom-providers)
+	- [Provider versioning](#provider-versioning)
 
 <!--TOC_END-->
 # Overview
