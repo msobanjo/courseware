@@ -47,8 +47,8 @@ In this example `version` value is a number data type.
 
 **Boolean** belongs to primitive data types. 
 It has two possible values:
-- true
-- false
+- `true`
+- `false`
 
 Here is an example of a boolean:
 ```hcl
@@ -114,7 +114,7 @@ Here's example of retrieving a value from a map:
 lookup({password="supersecure", username="accountant"}, "username", "not found")
 ```
 
-### Task
+## Task
 
 #### Knowledge check
 
