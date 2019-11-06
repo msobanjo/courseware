@@ -204,3 +204,19 @@ If there was no provider specified in the resource, the default provider would b
 
 </details>
 
+### Task
+
+<details>
+
+<summary>AWS task</summary>
+
+#### Prerequisites
+
+- Have **aws cli** installed
+    - You can install it by running the following python command, keep in mind you need to have python installed:
+    `pip install awscli`
+- Know your AWS `access` and `secret` keys
+
+
+
+</details>
