@@ -10,7 +10,6 @@
 <!--TOC_END-->
 ## Overview
 
-
 ## Bucket Privacy
 By default, S3 buckets are private, this means that only the root user has access to the bucket.  For the majority of use cases this is sufficient, as the buckets will normally be used to save data from other applications.
 
