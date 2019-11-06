@@ -6,6 +6,7 @@
 	- [Provider](#provider)
 	- [Provider plugin architecture](#provider-plugin-architecture)
 	- [Custom Providers](#custom-providers)
+	- [Provider versioning](#provider-versioning)
 
 <!--TOC_END-->
 # Overview
@@ -154,4 +155,3 @@ If your current version of the *aws* plugin is lesser than 2.8 then run the foll
 `terraform init -upgrade`
 
 </details>
-
