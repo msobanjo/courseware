@@ -51,7 +51,7 @@ We can use the command below to list the objects that exist within a particular 
 # aws s3 ls s3://<bucket-name>
 aws s3 ls s3://my-bucket
 ```
-Technically we do not need to use the `s3://[URI]` schema, as AWS S3 ls does not interact with our local file system.  However it is good to help avoid ambiguity with what a command is doing.
+Technically we do not need to use the `s3://[URI]` schema, as AWS S3 `ls` does not interact with our local file system.  However it is good to help avoid ambiguity with what a command is doing.
 
 If we had a bucket with a large number of objects within it, we may want to list the contents of the bucket, along with a summary of the bucket (number of objects and size) in an easy to read way.
 
