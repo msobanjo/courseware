@@ -1,4 +1,4 @@
-# S3
+# S3 Lifecycle Policies
 
 <!--TOC_START-->
 ## Contents
@@ -42,7 +42,7 @@ You will see that there is no lifecycle rule applied to this bucket.  To create 
 
 Create a name for your rule, for example:
 
-```
+```text
 qa-s3-bucket-lifecycle-rule
 ```
 
