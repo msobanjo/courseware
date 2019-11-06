@@ -85,9 +85,6 @@ provider "aws" {
 	region = "eu-west-2"
 }
 ``` 
-You may have noticed that there is only the region declared and no `access_key` or `secret_key` declared, this is done on purpose. 
-
-We're doing it in this way so that when you will be uploading these configuration files to GitHub you wouldn't accidentally expose them.
 
 #### Adding resource
 
@@ -105,11 +102,11 @@ In this case when we want to use the value of the **ami** variable we need to ma
 
 The second argument is **instance_type** which specifies which machine configuration to use, it will determine how many vCPU's will be assigned as well as the amount of RAM. 
 
-Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`.
+Similarly in order to get the value of the variable we need to make a reference to it like this: `var.type`
 
 #### Adding variables
 
-Create a new file called `variables.tf` in the `example_3` directory.
+Create a new file called `variables.tf` in the `configuration_file_discovery` directory.
 
 Paste the following into the `variables.tf` file:
 
@@ -196,6 +193,7 @@ This is because terraform appends configuration files and the variables would en
 #### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+
 `terraform destroy` 
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
