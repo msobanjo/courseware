@@ -5,6 +5,9 @@
 - [Overview](#overview)
 - [Lifecycle Policies](#lifecycle-policies)
 - [Tasks](#tasks)
+- [Pre-requisites](#prerequisites)
+- [Creating a Lifecycle rule](#creating-a-lifecycle-rule)
+- [Adding the Transisition](#adding-the-transisition)
 
 <!--TOC_END-->
 ## Overview
