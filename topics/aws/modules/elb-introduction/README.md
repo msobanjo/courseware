@@ -14,9 +14,9 @@ ELB is cool
 
 This task will guide us through creating and configuring a Classic Load Balancer.  We want to create a system where the users can only access the application through the ELB.
 
-You need to first create 2 EC2 instances in the same region, this guide will not take you through that.  Please apply the same Security Gorup to both of these instances, which should allow communication over port 80 from all sources.
+Your first task is to create 2 EC2 instances in the same region, this guide will not take you through that.  Please apply the same Security Group to both of these instances, which should allow communication over port 80 from all sources.
 
-When you have created these machines run the following commands on each one, you do not need to know what they are doing for this task.
+When you have created these machines run the following commands on each one.  We are installing and setting up a **Nginx** server on each machine, Nginx is a simple proxy service that has many interesting uses, for the purpose of this task however we are using its default functionality of serving out an index.html file.  We will be changing the index.html that each machine serves out so that we can differentiate which of the 2 machines are serving us our content. 
 
 ```bash
 sudo apt update
@@ -33,10 +33,26 @@ sudo nano index.nginx-debian.html
 
 ```
 
-For the last step you need to edit one instance so that it displays the number 1 in the header, and for the other the number 2.  An example can be seen below.
+For the last step you need to edit one instance so that it displays the number 1 in the <h1> tags, and for the other the number 2.  An example of how one of the final .html files should look can be seen below.
 
-```
-example index.html
+```text
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>2</h1>
+</body>
+</html>
+
 
 ```
 
@@ -61,7 +77,7 @@ Click the **Next select security groups** button.
 
 create new security group, give it a name, for example.
 
-```
+```text
 elb-sg
 ```
 
@@ -85,7 +101,7 @@ ensure that both instances are correctly attached to the Load Balancer and their
 
 When both of the instances are InService select the DNS name from the Description tab of the Load Balancer.  It will look something like this;
 
-```
+```text
 classic-test-elb-844687033.eu-west-1.elb.amazonaws.com
 ```
 
