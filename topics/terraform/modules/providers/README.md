@@ -155,3 +155,44 @@ If your current version of the *aws* plugin is lesser than 2.8 then run the foll
 
 </details>
 
+### Provider aliases
+
+You can declare multiple blocks for the same provider in your configuration. 
+One scenario where you may want or need to do this is when you have resources with the same cloud provider but in multiple regions. 
+You can configure one provider for each region to accommodate this scenario.
+
+To identify multiple instances of a single provider, you must add an alias. 
+The alias is used by resources to indicate which instance of the provider to use.
+
+One default provider is allowed. 
+The default instance doesn’t specify an alias and is used by default when resources don’t specify a specific provider.
+
+To refer to a specific instance inside of a resource block, you add a provider key. 
+The value of the provider is a string beginning with the provider type followed by dot and the assigned alias.
+
+Here is an example of giving provider an alias:
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+description = "this provider is set in UK region"
+region  = "eu-west-2"
+alias   = "aws-uk"
+}
+
+resource "aws_instance" "example" {
+  provider = "aws.aws-uk"
+  ami           = var.ami
+  instance_type = var.type
+}
+
+```
+
+In this example you can see a provider declaration where an alias is used. 
+Additionally the resource will now be using this specific provider through the alias. 
+As this example is about aws provider in order to refere to the alias you would need to do it through `aws.` notation.
+
+</details>
+
