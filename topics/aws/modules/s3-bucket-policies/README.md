@@ -3,14 +3,12 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [Policies](#policies)
-	- [Bucket Privacy](#bucket-privacy)
+- [Bucket Privacy](#bucket-privacy)
 	- [Security](#security)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
-
 
 
 ## Bucket Privacy
@@ -63,7 +61,6 @@ Click the **Permissions** tab.
 Now click the **Bucket Policy** button.
 
 Copy the code below into the Bucket policy editor, ensure that you change the name of the bucket to reflect the current bucket you are working with.
-
 
 ```
  {
