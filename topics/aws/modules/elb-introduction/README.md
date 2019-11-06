@@ -53,7 +53,6 @@ For the last step you need to edit one instance so that it displays the number 1
 </body>
 </html>
 
-
 ```
 
 Navigate to the EC2 Console.
