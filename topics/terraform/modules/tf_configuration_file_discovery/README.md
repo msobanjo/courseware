@@ -56,8 +56,7 @@ Beyond splitting your configuration across multiple files, there is another feat
 #### Prerequisites
 
 1. Have **aws cli** installed
-    2. You can install it by running the following python command, keep in mind you need to have python installed:
-    `pip install awscli`
+    2. You can install it by running the following python command, keep in mind you need to have python installed: `pip install awscli`
 3. Know your AWS `access` and `secret` keys
 
 #### Authenticating
