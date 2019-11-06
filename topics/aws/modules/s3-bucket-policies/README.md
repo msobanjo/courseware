@@ -93,4 +93,6 @@ Click the blue **Save** button.
 
 Again navigate to the **Object URL** Link you tried earlier, you should see now that the file is rendered by your browser.
 
+## Clean-up
+
 The last step is to undo everything we have done, you can delete the bucket policy, Block all Public Access or simply delete the bucket.  Ensure that the contents of your bucket are once again private before moving on.
