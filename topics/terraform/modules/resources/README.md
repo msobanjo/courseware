@@ -78,3 +78,39 @@ resource "aws_instance" "example-instance" {
 
 In this example `example_instance` has a dependency on the `example-admin-role`.
 
+#### count
+
+By default, terraform configures only one real infrastructure object. 
+
+Although, in some cases you want to manage several similar objects. 
+
+Terraform has two ways to do this: **count** and **for_each**, first we'll look at *count*.
+
+*Count* accepts a whole number, it then creates that number of instances of the resource. 
+
+Here's an example of creating four instances through the use of count:
+
+```hcl
+resource "aws_instance" "server" {
+  count = 4
+  ami           = "ami-2757f631"
+  instance_type = "t2.micro"
+}
+```
+
+After creating these four resources if we wanted to do something with one of the instances we could get access to it through it's index. 
+
+In the resource block where the count is used, an additional object for `count` is created and it has an attribute `index`. 
+This allow to access the index of which resource you would be using. 
+It's zero based index.  
+In order to get access to the index the syntax would be: 
+`count.index`
+
+Here's an example of using the first instance:
+`aws_instance.server[0]`
+
+If your resource instances are identical or close to being identical, count is appropriate to use. 
+If some of the instance arguments need distinct values that can't be directly derived from an integer number, it's would be easier to achiebe by using **for_each**.
+
+#### for_each
+
