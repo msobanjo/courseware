@@ -245,7 +245,7 @@ Now paste the following contents into the `main.tf` file:
 
 provider "aws" {
   region = "us-east-1"
-  version = "~> 2.8"
+  version = "2.8"
 }
 
 resource "aws_instance" "example-us" {
