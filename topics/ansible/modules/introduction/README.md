@@ -26,7 +26,7 @@
 <!--TOC_END-->
 ## Overview
 Ansible is an open-source software provisioning, configuration management, and application-deployment tool.
-It runs on many Unix-like systems, and can configure both Unix-like systems as well as Microsoft Windows. 
+It runs on and can configure many Unix-like systems, as well as Microsoft Windows. 
 
 ## Installation
 
@@ -49,14 +49,14 @@ ansible --version
 ## Task
 
 ### Install Ansible
-Start by making sure that Python installed on you machine, then go ahead and install Ansible using Pip.
+Start by making sure that Python installed on your machine, then go ahead and install Ansible using Pip.
 
 ### Configure a Playbook to Install a Web Server
-We can use something called playbooks in Ansible to configure hosts, more on the configuration of this in another module.
+Ansible configures its hosts through playbooks; the intricacies of Ansible configurations will be discussed in another module.
 
-Of course you would commonly use Ansible to install applications and configurations on other remote hosts but for this example to keep things simple we will just install a web server on the same host.
+Ansible is more commonly used to install applications and configurations on other remote hosts, but for this example, we will just install a web server on the same host to simply demonstrate how a playbook works.
 
-Here we have a playbook which installs a basic NGINX web server so that we can give Ansible a go, so go ahead and create a file called `playbook.yml` which contains the following:
+Here we have a playbook which installs a basic NGINX web server so that we can use Ansible, so go ahead and create a file called `playbook.yml` which contains the following:
 ```yaml
 ---
 - hosts: 127.0.0.1
