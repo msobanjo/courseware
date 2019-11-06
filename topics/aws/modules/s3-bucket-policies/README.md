@@ -21,7 +21,7 @@ You can also control access to your Bucket, using these means you can set who ha
 aws_s3_intro_1.png
 ```
 
-### Security
+## Security
 
 A bucket policy is where we can define explicit access or denial of access to our data at a bucket level.  These polices are written using JSON, meaning that we have very configurable policies with granular access.
 
