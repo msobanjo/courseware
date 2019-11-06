@@ -60,4 +60,98 @@ Although there are over one hundred public Terraform providers available, if the
 
 Custom providers are written in *Golang*.
 
-HasiCorp provides guides on writing custom providers but this is not a part of this module.
+HashiCorp provides guides on writing custom providers but this is not a part of this module.
+
+### Provider versioning
+
+Providers are released on their own schedule and have their own versions separate from Terraform.
+
+Within a provider block, you can omit a version and have the latest version downloaded automatically. 
+
+Here is an example of omitting provider plugin version:
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+  region = "eu-west-2"
+}
+``` 
+
+</details>
+
+However, this can become problematic. For example, if the same configuration is applied on separate machines before and after a new provider version is released, potentially resulting in different behaviors. 
+
+To avoid these issues, it is a best practice to constrain the provider version in your configurations. 
+
+The string you assign to the **version** key constrains the version of the provider Terraform will use. 
+You can either specify a specific version or a range. 
+
+When you specify a range, you can use the less than, less than or equal to, greater than, or greater than or equal to operators. 
+If you specify a lower and an upper bound, you separate the constraints using a comma.
+
+You also use the tilde arrow or pessimistic operator as a short hand for certain ranges. The version number you specify acts as a lower bound of the version and the upper bound is set as the second last version digit specified.
+
+If you have previously downloaded provider plugins satisfying the version constraints, running the init command again won’t result in newer versions being downloaded, even if there are newer versions satisfying the constraints. 
+To upgrade to the latest provider plugin versions that satisfy your version constraints, you use the **init -upgrade** option of the init command.
+
+You can check the current provider versions by executing the following command:
+
+`terraform providers`
+
+Here's an example of specifying a specific version for the provider plugin:
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+  region  = "eu-west-2"
+  version = 2.8
+}
+```
+
+If your current version of the *aws* plugin is lesser than 2.8 then run the following command to download the plugin version 2.8:
+`terraform init -upgrade`
+
+</details>
+
+Here's an example of specifying the version by using the greater than operator, this example will tell Terraform to use the provider plugin of higher version than the set value:
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+region  = "eu-west-2"
+version = "> 2.8"
+}
+```
+
+If your current version of the *aws* plugin is lesser than 2.8 then run the following command to download the plugin version 2.8:
+`terraform init -upgrade`
+
+</details>
+
+Here's an example of using the `~>`, the number provided on the right of the arrow acts as the lower boundary when selecting the version number to download:
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+region  = "eu-west-2"
+version = "~> 2.8"
+}
+```
+
+In this example the version specified translates that the provider plugin version to be used should be no lower than `2.8.0` but not greater than `3.0.0`. 
+In the declaration the zero is omitted as it would be inferred by terraform. 
+The first digit `2` means that only major releases of `2` should be used.  
+
+If your current version of the *aws* plugin is lesser than 2.8 then run the following command to download the plugin version 2.8:
+`terraform init -upgrade`
+
+</details>
+
