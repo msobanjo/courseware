@@ -62,7 +62,9 @@ Beyond splitting your configuration across multiple files, there is another feat
 #### Authenticating
 
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
+
 `aws configure`
+
 You will be asked to provide the following things:
 * **AWS Access Key ID** this is where you would need to provide your *access* key
 * **AWS Secret Access Key ID** this is the *secret* key
