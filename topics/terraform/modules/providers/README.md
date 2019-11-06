@@ -56,7 +56,7 @@ The plugins are downloaded to a plugins directory inside of the hidden .terrafor
 
 As an aside, the init command follows the same process for any modules your configuration specifies as well.
 
-### Custom Providers
+### Custom providers
 
 Although there are over one hundred public Terraform providers available, if there isn’t a plugin available for what you need, perhaps for an internal private cloud implementation or internal tool you want to integrate, you are able to write your own provider plugins.
 
@@ -178,6 +178,12 @@ Here is an example of giving provider an alias:
 <summary>AWS example</summary>
 
 ```hcl
+
+provider "aws" {
+  region  = "eu-west-1"
+  alias   = "aws-uk"
+}
+
 provider "aws" {
 region  = "eu-west-2"
 alias   = "aws-uk"
@@ -193,6 +199,8 @@ resource "aws_instance" "example" {
 
 In this example you can see a provider declaration where an alias is used. 
 Additionally the resource will now be using this specific provider through the alias. 
-As this example is about aws provider in order to refere to the alias you would need to do it through `aws.` notation.
+As this example is about aws provider in order to refer to the alias you would need to do it through `aws.` notation. 
+If there was no provider specified in the resource, the default provider would be used and in this example the resource would have been deployed in the `eu-west-1` region.
 
 </details>
+
