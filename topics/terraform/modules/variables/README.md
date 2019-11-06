@@ -157,7 +157,7 @@ Paste the following below the variable in the `main.tf` file:
 ```hcl
 resource "aws_instance" "example" {
 	ami = var.ami
-	instance_type = var.type
+	instance_type = type
 }
 ```
 
@@ -209,8 +209,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami
-  instance_type = var.type
+  ami           = ami
+  instance_type = type
 }
 ```
 
@@ -239,13 +239,14 @@ If the configuration files you have are different, update them to match them.
 
 #### Running the configuration file
 
-Next, open a the terminal in the directory where the configuration files are.
+Next, open a terminal in the directory where the configuration files are.
 
 First let's execute the following command to get the plugins for AWS:
 
 `terraform init`
 
 Next let's execute to see what changes will be made, we will need to tell TF where the variable values are defined, it's done through `-var-file` flag and then providing a value to where the file is located.
+
 We placed `variableValues.tfvars` in the same directory, therefore we can make a reference to it directly.
 
 `terraform plan -var-file="variableValues.tfvars"`
