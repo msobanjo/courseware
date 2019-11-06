@@ -1,4 +1,4 @@
-# Overview
+# EC2 Auto-Scaling
 
 Auto-scaling is cool
 
@@ -8,7 +8,7 @@ Auto-scaling is cool
 - [Tasks](#tasks)
 
 <!--TOC_END-->
-## EC2 Auto-Scaling
+## Overview
 
 ## Tasks
 
