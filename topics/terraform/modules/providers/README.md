@@ -1,5 +1,11 @@
 # Providers
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+
+<!--TOC_END-->
+# Overview
 ## Overview
 
 Providers must be configured to manage any infrastructure in Terraform, this module will cover them and how to set it up.
