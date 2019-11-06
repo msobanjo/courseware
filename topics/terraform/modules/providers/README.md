@@ -3,9 +3,13 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Overview](#overview-1)
+	- [Provider](#provider)
+	- [Provider plugin architecture](#provider-plugin-architecture)
 
 <!--TOC_END-->
 # Overview
+
 ## Overview
 
 Providers must be configured to manage any infrastructure in Terraform, this module will cover them and how to set it up.
@@ -33,4 +37,3 @@ provider "aws" {
 </details>
 
 ### Provider plugin architecture
-
