@@ -3,14 +3,12 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [File Upload](#file-upload)
-	- [Moving Data](#moving-data)
-	- [Multipart Upload](#multipart-upload)
+- [Moving Data](#moving-data)
+- [Multipart Upload](#multipart-upload)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
-
 
 
 ## Moving Data
