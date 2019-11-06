@@ -206,11 +206,14 @@ If there was no provider specified in the resource, the default provider would b
 
 </details>
 
-### Task
+## Tasks
 
 <details>
 
 <summary>AWS task</summary>
+
+In this task you will create a resource in AWS. 
+This will be done by using a specific version of provider plugin as well as with the declaration of multiple providers.
 
 #### Prerequisites
 
@@ -219,5 +222,109 @@ If there was no provider specified in the resource, the default provider would b
     `pip install awscli`
 - Know your AWS `access` and `secret` keys
 
+#### Authenticating
+First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
+`aws configure`
+You will be asked to provide the following things:
+* **AWS Access Key ID** this is where you would need to provide your *access* key
+* **AWS Secret Access Key ID** this is the *secret* key
+* **Default region name** would be **eu-west-2**
+You might get asked additionally to specify what formatting you want to use, enter **json**.
+
+#### Creating the directory and configuration file
+For the next step create a new folder, you can pick any name for it but a suggested one would be `terraform-providers-aws`.
+
+Within the newly created folder, create a new file called `main.tf`.
+
+Open the `main.tf` with a text editor of your choosing.
+
+#### Adding the provider
+
+Now paste the following contents into the `main.tf` file:
+```hcl
+
+provider "aws" {
+  region = "us-east-1"
+  version = "~> 2.8"
+}
+
+resource "aws_instance" "example-us" {
+  ami           = var.ami-us
+  instance_type = var.type
+}
+
+variable "ami-us" {
+  description = "machine image us"
+  default     = "ami-00dc79254d0461090"
+}
+
+provider "aws" {
+  region = "eu-west-2"
+  alias  = "aws-uk"
+}
+
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = var.ami-uk
+  instance_type = var.type
+}
+
+variable "ami-uk" {
+  description = "machine image uk"
+  default     = "ami-f976839e"
+}
+
+variable "type" {
+  default = "t2.micro"
+}
+
+``` 
+
+In this example there are two providers declared. 
+
+The first provider is the default one and the default resources would be created in the region `us-east-1`. 
+Additionally, there's a specific version set to be used for the provider plugin. 
+
+The second provider has an alias, and it's resources will be created in the region `eu-west-2`.
+
+There are two resources, one for the *us* region through the default provider and one for the *uk* region with the alias provider.
+
+Additionally there are three variables, where two of them declare the *ami* for *us* and *uk* respectively, as well as the variable for the machine type.
+
+#### Formatting
+
+Format the configuration file by running the command:
+```bash
+terraform fmt
+```
+
+#### Running the configuration file
+
+Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
+
+First let's execute the following command to download the AWS provider plugin so that Terraform can communicate with AWS:
+
+`terraform init`
+
+Next let's execute this to see what Terraform plans on doing:
+
+`terraform plan`
+
+Finally, let's apply the configured resources by executing:
+
+`terraform apply`
+
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+#### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+    `terraform destroy` 
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource - even if it wasn't deleted! 
 
 </details>
