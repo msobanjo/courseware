@@ -5,6 +5,8 @@
 - [Overview](#overview)
 	- [Meta-parameters](#metaparameters)
 		- [depends_on](#dependson)
+		- [count](#count)
+		- [for_each](#foreach)
 
 <!--TOC_END-->
 ## Overview
@@ -114,4 +116,3 @@ If your resource instances are identical or close to being identical, count is a
 If some of the instance arguments need distinct values that can't be directly derived from an integer number, it's would be easier to achiebe by using **for_each**.
 
 #### for_each
-
