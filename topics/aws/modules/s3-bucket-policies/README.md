@@ -26,7 +26,8 @@ aws_s3_intro_1.png
 
 A bucket policy is where we can define explicit access or denial of access to our data at a bucket level.  These polices are written using JSON, meaning that we have very configurable policies with granular access.
 
-An ACL is how we can give explicit access or denial of access to our data for users from outside of our own AWS Accounts.  The permissions we can add are quite broad for example 'Write Objects'.
+An Access Control List (ACL) is how we can give explicit access or denial of access to our data for users from outside of our own AWS Accounts.
+The permissions we can add are quite broad for example `Write Objects`.
 
 ## Tasks
 
@@ -62,7 +63,7 @@ Now click the **Bucket Policy** button.
 
 Copy the code below into the Bucket policy editor, ensure that you change the name of the bucket to reflect the current bucket you are working with.
 
-```
+```JSON
  {
    "Version": "2012-10-17",
    "Statement": [
