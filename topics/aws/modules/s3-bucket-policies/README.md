@@ -6,6 +6,11 @@
 - [Bucket Privacy](#bucket-privacy)
 - [Security](#security)
 - [Tasks](#tasks)
+- [Pre-Requisites](#prerequisites)
+- [Changing access](#changing-access)
+- [Checking the object](#checking-the-object)
+- [Rectifying the issue](#rectifying-the-issue)
+- [Clean-up](#cleanup)
 
 <!--TOC_END-->
 ## Overview
