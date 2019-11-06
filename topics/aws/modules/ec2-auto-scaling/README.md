@@ -4,7 +4,7 @@ Auto-scaling is cool
 
 <!--TOC_START-->
 ## Contents
-- [EC2 Auto-Scaling](#ec2-autoscaling)
+- [Overview](#overview)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
