@@ -5,7 +5,7 @@
 - [Overview](#overview)
 	- [Provider](#provider)
 	- [Provider plugin architecture](#provider-plugin-architecture)
-	- [Custom Providers](#custom-providers)
+	- [Custom providers](#custom-providers)
 	- [Provider versioning](#provider-versioning)
 	- [Provider aliases](#provider-aliases)
 
