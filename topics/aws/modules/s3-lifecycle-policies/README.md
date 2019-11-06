@@ -21,9 +21,15 @@ This reduces your overall cost, because you are paying less for data as it becom
 
 ## Tasks
 
+# Pre-requisites
+
+- An S3 Bucket
+
 For this task we will be modifying the lifecycle policies on an existing bucket.
 
-Using the Management Console select an existing bucket or create a new one.  
+# Creating a Lifecycle rule
+
+Using the Management Console select an existing bucket. 
 
 Click the **Management** tab across the top.
 
@@ -44,6 +50,8 @@ The next screen asks whether you want to set the lifecycle rules for just the cu
 We will be setting lifecycle rules for just the current version of our files, so select this checkbox.
 
 Some text will appear, click the blue **+ Add transition** label.
+
+# Adding the Transisition
 
 This is where we can select the Transitioning rules that apply, for instance we can declare that an object should be moved into Standard-IA storage 90 days after it has been created.
 
