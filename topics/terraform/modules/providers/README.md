@@ -7,6 +7,7 @@
 	- [Provider plugin architecture](#provider-plugin-architecture)
 	- [Custom Providers](#custom-providers)
 	- [Provider versioning](#provider-versioning)
+	- [Provider aliases](#provider-aliases)
 
 <!--TOC_END-->
 # Overview
@@ -196,4 +197,3 @@ Additionally the resource will now be using this specific provider through the a
 As this example is about aws provider in order to refere to the alias you would need to do it through `aws.` notation.
 
 </details>
-
