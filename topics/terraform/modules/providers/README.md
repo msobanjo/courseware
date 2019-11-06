@@ -8,6 +8,8 @@
 	- [Custom providers](#custom-providers)
 	- [Provider versioning](#provider-versioning)
 	- [Provider aliases](#provider-aliases)
+	- [Task](#task)
+		- [Prerequisites](#prerequisites)
 
 <!--TOC_END-->
 # Overview
@@ -216,7 +218,6 @@ If there was no provider specified in the resource, the default provider would b
     - You can install it by running the following python command, keep in mind you need to have python installed:
     `pip install awscli`
 - Know your AWS `access` and `secret` keys
-
 
 
 </details>
