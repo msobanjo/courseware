@@ -4,8 +4,11 @@ Auto-scaling is cool
 
 <!--TOC_START-->
 ## Contents
-- [EC2 Auto-Scaling](#ec2-autoscaling)
+- [Overview](#overview)
 - [Tasks](#tasks)
+- [Create Launch Configuration](#create-launch-configuration)
+- [Create an Auto Scaling Group](#create-an-auto-scaling-group)
+- [Simulating an instance failing](#simulating-an-instance-failing)
 
 <!--TOC_END-->
 ## Overview
@@ -39,7 +42,6 @@ Click **Skip to review**
 Click the blue **Create launch configuration**.
 
 You do not need to worry about having a key pair to connect to this instance as we will not be interacting with the instance once it has been provisioned.
-
 
 # Create an Auto Scaling Group
 
