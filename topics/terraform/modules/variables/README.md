@@ -300,13 +300,13 @@ First let's execute the following command to get the plugins for AWS:
 
 `terraform init`
 
-Next let's execute to see what changes will be made, as there's no `variablesValues.tfvars` file those values do need to come from somewhere. 
+Next let's execute the following command in order to see what changes will be made, as in this task there is no `variablesValues.tfvars` file to provide the variable values. 
 Once you're going to execute the following command, you will be prompted to provide values for the variables. 
 A name of the variable will be displayed, similarly if there is a `description` it will be printed to you as well in order to give some context.
 
 `terraform plan`
 
-Lastly let's create the resource by executing, you will be prompted to provide variable values as well once you execute the following command:
+Lastly let's create the resource by executing, you will be prompted to provide variable values again as you execute the following command:
 
 `terraform apply`
 
@@ -333,7 +333,7 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 <details>
 
-<summary>In this task you will pass in variable values directly by using the `-var` flag option.</summary>
+<summary>In this task you will pass in variable values directly by using the <b>-var</b> flag option.</summary>
 
 #### Prerequisites
 
