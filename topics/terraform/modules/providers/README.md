@@ -3,6 +3,8 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+	- [Provider](#provider)
+	- [Provider plugin architecture](#provider-plugin-architecture)
 
 <!--TOC_END-->
 # Overview
@@ -32,4 +34,3 @@ provider "aws" {
 </details>
 
 ### Provider plugin architecture
-
