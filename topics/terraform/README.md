@@ -20,5 +20,6 @@ This means that your infrastructure can be described as code, allowing you to ha
 <!--MODULES_START-->
 ## Modules
 - [Introduction](./modules/introduction)
+- [Resources](./modules/resources)
 - [HashiCorp Configuration language](./modules/tf_configuration_language)
 <!--MODULES_END-->
