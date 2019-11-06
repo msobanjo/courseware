@@ -4,6 +4,7 @@
 ## Contents
 - [Overview](#overview)
 	- [Meta-parameters](#metaparameters)
+		- [depends_on](#dependson)
 
 <!--TOC_END-->
 ## Overview
@@ -77,4 +78,3 @@ resource "aws_instance" "example-instance" {
 ```
 
 In this example `example_instance` has a dependency on the `example-admin-role`.
-
