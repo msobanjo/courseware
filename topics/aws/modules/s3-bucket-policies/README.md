@@ -4,7 +4,7 @@
 ## Contents
 - [Overview](#overview)
 - [Bucket Privacy](#bucket-privacy)
-	- [Security](#security)
+- [Security](#security)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
