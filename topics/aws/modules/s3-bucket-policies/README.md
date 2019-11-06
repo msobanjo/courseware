@@ -26,13 +26,22 @@ aws_s3_intro_1.png
 A bucket policy is where we can define explicit access or denial of access to our data at a bucket level.  These polices are written using JSON, meaning that we have very configurable policies with granular access.
 
 An Access Control List (ACL) is how we can give explicit access or denial of access to our data for users from outside of our own AWS Accounts.
+
 The permissions we can add are quite broad for example `Write Objects`.
+
+Amazon recommends that you use Bucket Policies to apply permission to a bucket as ACL's are a legacy access control mechanism.  If you are concerned with controlling who can access a bucket then make use of bucket policies to explicitly describe **who** has access, and **what** they can do.
 
 ## Tasks
 
 For this task we will be modifying the bucket policy of an existing bucket.
 
-Using the Management Console select an existing bucket or create a new one.  Either way ensure you have a file uploaded to the bucket.
+# Pre-Requisites
+
+- An S3 Bucket with a file already uploaded.
+
+## Changing access
+
+Using the Management Console select an existing bucket, ensure you have a file uploaded to the bucket.
 
 Click the **Permissions** tab across the top.
 
@@ -46,6 +55,8 @@ Click the blue **Save** button.
 
 You will need to type **confirm** into the box in order to apply this change, remember AWS recommends that you never make the contents of a bucket public.
 
+## Checking the object
+
 Navigate back to the **Overview** tab.
 
 Select the check box next to one of you objects.
@@ -53,6 +64,8 @@ Select the check box next to one of you objects.
 In the pop-out window on the right hand side, click the **Object URL** Link.
 
 **Access Denied!**, but you just enabled public access? The public access was provided to the **bucket**, not the objects in the bucket.  To rectify this need to set the bucket policy.
+
+## Rectifying the issue
 
 Navigate back to the **Overview** tab of the bucket.
 
