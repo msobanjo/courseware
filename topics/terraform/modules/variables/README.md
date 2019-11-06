@@ -89,8 +89,11 @@ When setting Terraform variables using environment variables the name of the env
 ## Variable Precedence
 
 When a variable is defined multiple times, the value of the variable is usually set to the highest precedent definition. 
+
 One thing to note is that map variables are set to the highest precedent definition. 
+
 Instead the values of the map variable definitions are merged. 
+
 All other variables are overridden by the highest precedent value.
 
 The order of precedence from lowest to highest is as follows:
