@@ -341,7 +341,7 @@ In order to do this task you need to have the *AWS Variables with TFVARS File* (
 
 #### Providing values through the terminal
 
-Create a new directory like `terraform-variables-aws-using-cli-continuation`.
+Create a new directory like `terraform-variables-aws-using-cli-continuation`
 
 Copy the `main.tf`, `variables.tf` files into the directory.
 
@@ -400,9 +400,9 @@ Copy the `main.tf`, `variables.tf` files into the directory.
 
 Remember that the environment variables have to start with `TF_VAR`.
 
-The first environment variables name will be `TF_VAR_ami` and the value associated with it should be `ami-f976839e`.
+The first environment variable name will be `TF_VAR_ami` and the value associated with it should be `ami-f976839e`.
 
-The second environment variables name should be `TF_VAR_type` and the value associated with it should be `t2.micro`. 
+The second environment variable name will be `TF_VAR_type` and the value associated with it should be `t2.micro`. 
 
 #### Running the configuration file
 
@@ -431,7 +431,9 @@ In this task you provided variable values through the environment variables.
 #### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
-`terraform destroy` 
+`terraform destroy`
+
+Additionally, delete the environment variables.
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
