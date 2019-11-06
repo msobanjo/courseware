@@ -5,6 +5,7 @@
 - [Overview](#overview)
 	- [Provider](#provider)
 	- [Provider plugin architecture](#provider-plugin-architecture)
+	- [Custom Providers](#custom-providers)
 
 <!--TOC_END-->
 # Overview
@@ -60,4 +61,3 @@ Although there are over one hundred public Terraform providers available, if the
 Custom providers are written in *Golang*.
 
 HasiCorp provides guides on writing custom providers but this is not a part of this module.
-
