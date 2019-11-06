@@ -3,6 +3,7 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+	- [Meta-parameters](#metaparameters)
 
 <!--TOC_END-->
 ## Overview
@@ -47,4 +48,3 @@ In total there are six meta-parameters:
 - **provider**
 - **lifecycle**
 - **provisioner and connect**
-
