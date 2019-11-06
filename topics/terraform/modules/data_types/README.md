@@ -8,7 +8,7 @@
 	- [Boolean](#boolean)
 	- [Lists](#lists)
 	- [Maps](#maps)
-	- [Task](#task)
+- [Task](#task)
 		- [Knowledge check](#knowledge-check)
 			- [Question 1](#question-1)
 			- [Question 2](#question-2)
