@@ -19,6 +19,12 @@
 	- [`nslookup`](#nslookup)
 	- [`ping`](#ping)
 - [Tasks](#tasks)
+	- [See how NFC works with NFC Tools](#see-how-nfc-works-with-nfc-tools)
+	- [See how PAN works with Bluetooth tethering](#see-how-pan-works-with-bluetooth-tethering)
+	- [Categorise each section of a long URL](#categorise-each-section-of-a-long-url)
+	- [Use `nslookup` to find the IP of a website](#use-nslookup-to-find-the-ip-of-a-website)
+	- [Use `ping` to query a site using its IP address](#use-ping-to-query-a-site-using-its-ip-address)
+	- [Disconnect your machine during a `ping` request](#disconnect-your-machine-during-a-ping-request)
 
 <!--TOC_END-->
 ## Overview
@@ -327,6 +333,7 @@ A failed `ping` request typically looks like this:
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
 
 ## Tasks
+
 ### See how NFC works with NFC Tools
 *NB: this task will only work on NFC-enabled phones - if you can use contactless with your phone then you can try this Task.*
 
