@@ -327,6 +327,88 @@ A failed `ping` request typically looks like this:
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
 
 ## Tasks
-<!--tba, not sure what to give as an intro task-->
+### See how NFC works with NFC Tools
+*NB: this task will only work on NFC-enabled phones - if you can use contactless with your phone then you can try this Task.*
 
-<!--this is a thicc boi so we might have to split it-->
+Here, we can see an example of NFC in-action using the *NFC Tools* app ([Apple](https://apps.apple.com/us/app/nfc-tools/id1252962749) / [Android](https://play.google.com/store/apps/details?id=com.wakdev.wdnfc&hl=en_US)).
+
+Once it's installed, try holding your tag to your phone's reader.
+
+You should see some pretty cool info pop up in the app - your tag's info should be very similar:
+
+![NFCTools tag response](https://i.imgur.com/0G2z7SP.jpg)
+
+When you raise your tag to an NFC reader, like the reader on the door to the academy, it creates a small, but very specific network connection which allows the door to open.
+
+This tag's network protocol is `ISO-14443-3A`, and follows these steps every time it comes into contact with an NFC reader:
+
+![ISO-14443-3A activation](https://www.dummies.com/wp-content/uploads/tag-activation.jpg)
+
+The door reader is a **Proximity Coupling Device (PCD)**, while the tag is a **Proximity Inductive Coupling Card (PICC)**.
+
+1. The door reader sends a radio signal to its immediate proximity, using a 7-bit command called a **Request (REQA)**.
+2. The chip embedded within the card is given the tiny amount of energy needed from that Request to send back its own signal - an **Answer to Request (ATQA)** block. Our ATQA block contains a single command: `0x0002`, and the tag's **Unique Identifier (UID)**.
+3. A collision - where two or more tags respond to the door reader - may occur if there is more than one card in range. If a collision happens, the door reader will send out a **SELECT** request which includes a portion (**prefix**) of one of the tags' specific UIDs.
+4. If collisions still happen, the door reader will send out more and more specific SELECT signals, using longer UID prefixes, until only one tag responds.
+5. The selected tag will then respond with a **Select Acknowledgement (SAK)**, which activates the door reader. Our SAK contains the command `0x18`, which in this case will deactivate the electromagnets holding the door closed.
+6. The door reader will continue to be activated until it receives a **HALT** command from the tag. In our case, this happens within a second of the SAK being transmitted. 
+
+### See how PAN works with Bluetooth tethering
+*NB: this task will only work with Bluetooth-enabled phones and desktops.*
+
+PAN is essentially a short-wave, low-power radio frequency. It reaches further than NFC does, but only to a range of ~10m.
+
+Bluetooth is the most well-known form of PAN - it was developed as a way of bringing together multiple wireless technologies under a single communication protocol. [This video explains how Bluetooth got its name.](https://www.youtube.com/watch?v=VdmQp9M9jUo)
+
+For this task, turn on Bluetooth discovery on your device, and see how many devices in the room it picks up.
+
+Connect to another device in the room - ideally another delegate's phone - and try to send [this image](https://yt3.ggpht.com/a/AGF-l79R65oC-kUKQQii1-zvefpjRvrSYbITqYgD-w=s900-mo-c-c0xffffffff-rj-k-no) to them.
+
+(Depending on your device, there may be a specific option to send files via Bluetooth on your phone).
+
+Even though everybody else is trying to do this at the same time, there shouldn't be much interference.
+
+What's happening under the hood is very similar to what we've already seen for NFC.
+
+Bluetooth transmission works in essentially the same way as NFC, but transmits its signals along the **ISM** frequency band set aside for **i**ndustrial, **s**cientific and **m**edical devices, which operates between 2.402 and 2.480 GHz.
+
+Bluetooth devices avoid interfering with any other devices operating on this frequency band by using **spread-spectrum frequency hopping**. Each device will randomly select 79 different frequencies from a designated range within the ISM band, swapping around which one it uses 1600 times per second.
+
+Bluetooth devices work through addresses, much in the same way as NFC.
+
+When two Blueooth devices connect, they share a fraction of the ISM band to communicate on, with both devices allowing for incoming connections from a particular address. When you turn on your device, it will send radio signals asking for a response from any units with an address in a particular range.
+
+Since other devices around have addresses in the range, it responds, and a PAN is formed.
+
+Even if one of these devices should receive a signal from another system, it will ignore it since it's not from within the network.
+
+Combining this method with an extremely weak transmission signal allows for multiple Bluetooth devices to operate in tandem without major interference.
+
+Any two devices which happen to attempt using the same frequency to communicate would only experience issues for a fraction of a second.
+
+Since each PAN hops randomly through the available frequencies, all of the PANs we create within this room are completely separated from one another.
+
+However, if a multitude of Bluetooth devices are operating at the same time in a packed space, the interferences become more obvious when they do arise.
+
+This is why on a packed tram, everybody's Bluetooth earbuds will crackle more than usual - though the PANs are prevented from accepting incoming connections from outside the network, the ISM band itself is full of devices with overlapping frequency ranges.
+
+### Categorise each section of a long URL
+
+For this task, navigate to [this](https://smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1) Amazon item listing.
+
+Categorise the URL you are directed to into its constituent parts. What is each section of the URL doing?  
+
+### Use `nslookup` to find the IP of a website
+*This task requires the use of `nslookup` inside your machine's command line interface (CLI).*
+
+Use this to find the IP addresses for Amazon, Google, Facebook and Outlook.
+
+### Use `ping` to query a site using its IP address
+*This task requires the use of `ping` inside your machine's CLI.*
+
+Use the IP addresses you gained from the previous task to find the DNS which each of the four sites are using. What do you notice? 
+
+### Disconnect your machine during a `ping` request
+*This task requires the use of `ping` inside your machine's CLI.*
+
+Try to `ping` any of the IP addresses from the previous tasks, but either remove your Ethernet cable or deactivate your WiFi during the process. What happens?
