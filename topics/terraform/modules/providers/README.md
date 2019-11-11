@@ -54,7 +54,7 @@ Instead it uses a plugin architecture to download the provider plugins required 
 
 Each required plugin corresponds to a provider block in your configuration. 
 
-If you try to run, plan or apply <Something?> without having Terraform download the plugins you will get a nasty error message telling you to initialize the plugins.
+If you try to run, **plan** or **apply** stages without having the provider plugins, you will get an error message telling you to initialize the plugins.
 
 You initialize Terraform by running the `terraform init` command. 
 
