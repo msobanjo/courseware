@@ -327,7 +327,8 @@ Make sure that you are within the correct region, otherwise you won't be able to
 #### Clean up
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
-    `terraform destroy` 
+
+`terraform destroy` 
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
