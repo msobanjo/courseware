@@ -323,6 +323,8 @@ Finally, let's apply the configured resources by executing:
 
 `terraform apply`
 
+Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
+
 Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
@@ -332,6 +334,8 @@ Make sure that you are within the correct region, otherwise you won't be able to
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
 
 `terraform destroy` 
+
+Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
