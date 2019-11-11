@@ -225,6 +225,7 @@ This will be done by using a specific version of provider plugin as well as with
 
 - Have **aws cli** installed
     - You can install it by running the following python command, keep in mind you need to have python installed:
+    
     `pip install awscli`
 - Know your AWS `access` and `secret` keys
 
