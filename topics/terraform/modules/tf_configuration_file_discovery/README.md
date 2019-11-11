@@ -21,9 +21,9 @@
 <!--TOC_END-->
 ## Overview
 
-There is a specific order in how your configuration files are discovered by TF. 
+There is a specific order in how your configuration files are discovered by Terraform. 
 
-When you run a Terraform command, it will inspect the current directory for files ending with *.tf* to discover any configuration files written in HCL.
+When you run a Terraform command, it will inspect the current directory for files ending with *.tf* to discover any configuration files written in HashiCorp Configuration Language (HCL).
 
 If you are using *JSON*, the file extension should be *.tf.json* 
 
