@@ -78,7 +78,7 @@ Providers are released on their own schedule and have their own versions separat
 
 Within a provider block, you can omit a version and have the latest version downloaded automatically. 
 
-Here is an example of omitting provider plugin version:
+Here is an example of omitting provider plugin version, which has been used in previous examples:
 
 <details>
 <summary>AWS example</summary>
