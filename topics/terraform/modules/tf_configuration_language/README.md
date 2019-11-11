@@ -432,7 +432,6 @@ To delete the created resource run the following command in the terminal, make s
 
 Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
 
-
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource - even if it wasn't deleted!
