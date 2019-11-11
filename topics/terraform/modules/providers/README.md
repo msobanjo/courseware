@@ -188,8 +188,8 @@ Here is an example of giving provider an alias:
 ```hcl
 
 provider "aws" {
-  region  = "eu-west-1"
-  alias   = "aws-uk"
+  region  = "us-west-1"
+  alias   = "aws-us"
 }
 
 provider "aws" {
