@@ -70,7 +70,7 @@ Although there are over one hundred public Terraform providers available, if the
 
 Custom providers are written in *Golang*.
 
-HashiCorp provides guides on writing custom providers but this is not a part of this module.
+HashiCorp provides guides on writing custom providers, however this is not a part of this module.
 
 ### Provider versioning
 
