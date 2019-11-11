@@ -20,7 +20,7 @@
 <!--TOC_END-->
 # Overview
 
-Providers must be configured to manage any infrastructure in Terraform, this module will cover them and how to set it up.
+Providers must be configured to manage any infrastructure in Terraform, this module will cover them and how to set them up.
 
 ### Provider
 
