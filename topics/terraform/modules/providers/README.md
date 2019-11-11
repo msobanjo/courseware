@@ -98,10 +98,28 @@ To avoid these issues, it is a best practice to constrain the provider version i
 The string you assign to the **version** key constrains the version of the provider Terraform will use. 
 You can either specify a specific version or a range. 
 
+Here's an example of using the `~>` *pessimistic operator*, the number provided on the right of the arrow acts as the lower boundary when selecting the version number to download:
+
 When you specify a range, you can use the less than, less than or equal to, greater than, or greater than or equal to operators. 
 If you specify a lower and an upper bound, you separate the constraints using a comma.
 
 You also use the tilde arrow or pessimistic operator as a short hand for certain ranges. The version number you specify acts as a lower bound of the version and the upper bound is set as the second last version digit specified.
+
+<details>
+<summary>AWS example</summary>
+
+```hcl
+provider "aws" {
+region  = "eu-west-2"
+version = "~> 2.8"
+}
+```
+
+In this example the version specified translates that the provider plugin version to be used should be no lower than `2.8.0` but not greater than `3.0.0`. 
+In the declaration the zero is omitted as it would be inferred by terraform. 
+The first digit `2` means that only major releases of `2` should be used.  
+
+</details>
 
 If you have previously downloaded provider plugins satisfying the version constraints, running the init command again won’t result in newer versions being downloaded, even if there are newer versions satisfying the constraints. 
 To upgrade to the latest provider plugin versions that satisfy your version constraints, you use the **init -upgrade** option of the init command.
@@ -144,26 +162,8 @@ If your current version of the *aws* plugin is lesser than 2.8 then run the foll
 
 </details>
 
-Here's an example of using the `~>`, the number provided on the right of the arrow acts as the lower boundary when selecting the version number to download:
-
-<details>
-<summary>AWS example</summary>
-
-```hcl
-provider "aws" {
-region  = "eu-west-2"
-version = "~> 2.8"
-}
-```
-
-In this example the version specified translates that the provider plugin version to be used should be no lower than `2.8.0` but not greater than `3.0.0`. 
-In the declaration the zero is omitted as it would be inferred by terraform. 
-The first digit `2` means that only major releases of `2` should be used.  
-
-If your current version of the *aws* plugin is lesser than 2.8 then run the following command to download the plugin version 2.8:
+If your current version of the *aws* plugin is different from the specified in the provider block, you can update the plugin to the correct version by using the following command:
 `terraform init -upgrade`
-
-</details>
 
 ### Provider aliases
 
