@@ -111,7 +111,7 @@ You also use the tilde arrow or pessimistic operator as a short hand for certain
 ```hcl
 provider "aws" {
 region  = "eu-west-2"
-version = "~> 2.8"
+version = "~> 2.8" # the version has been changed from the previous example where it was ommited to the current
 }
 ```
 
@@ -136,7 +136,7 @@ Here's an example of specifying a specific version for the provider plugin:
 ```hcl
 provider "aws" {
   region  = "eu-west-2"
-  version = 2.8
+  version = 2.8 # the version has been changed from the previous example "~> 2.8" to the current
 }
 ```
 
@@ -153,7 +153,7 @@ Here's an example of specifying the version by using the greater than operator, 
 ```hcl
 provider "aws" {
 region  = "eu-west-2"
-version = "> 2.8"
+version = "> 2.8" # the version has been changed from the previous example "2.8" to the current
 }
 ```
 
