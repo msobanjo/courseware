@@ -175,3 +175,44 @@ resource "aws_instance" "example" {
 
 </details>
 
+When *for_each* is used, Terraform is able to distinguish between the resource block and the resources associated with the resource block. 
+
+This allows to make a reference to a specific instance. 
+
+Instances are identified by the *map* or *set* key that was provided to the *for_each*.
+
+Here is an example of making a reference to the first instance which has the key of `1` within another resource and re-using the *ami* and *instance_type*:
+
+<details>
+
+<summary>AWS example</summary>
+
+```hcl
+resource "aws_instance" "example" {
+  provider = "aws.aws-uk"
+
+  for_each = var.zone
+
+  availability_zone = each.value
+  ami           = var.ami-uk
+  instance_type = var.type
+}
+
+resource "aws_instance" "example2" {
+  ami = aws_instance.example[1].ami
+  instance_type = aws_instance.example[1].instance_type
+}
+```
+
+</details>
+
+##### each
+
+When *for_each* is used, an additional object is created under the name of **each**. 
+
+This object gives the ability to make a reference to the current object and configure it like setting an instance to a particular availability zone.
+
+There are two attributes to **each** object: 
+- **value** - this is the value associated with the map or set for this instance
+- **key** - this is the key associated with the map or set for this instance
+
