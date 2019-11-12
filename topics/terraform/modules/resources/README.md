@@ -13,6 +13,9 @@
 			- [create_before_destroy](#createbeforedestroy)
 			- [prevent_destroy](#preventdestroy)
 			- [ignore_changes](#ignorechanges)
+		- [provisioner and connection](#provisioner-and-connection)
+	- [Operation timeouts](#operation-timeouts)
+	- [Local only resources](#local-only-resources)
 
 <!--TOC_END-->
 ## Overview
