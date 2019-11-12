@@ -355,3 +355,55 @@ resource "aws_instance" "example-uk" {
 ```
 
 </details>
+
+#### provisioner and connection
+
+There are certain cases where infrastructure object require additional actions to be taken before they're fully usable, for example an instance might require some file uploaded to it with credentials.
+
+Resource provisioners are what allow these additional actions to be implemented.
+
+Provisioner actions like copying a file to an instance should be used sparingly, the reason for it is that this action and the state of the file cannot be represented as declarative action, hence making it not possible for Terraform to manage it after the action took place.
+
+Additional actions can also be done when resources are getting destroyed.
+
+Provisioners will be covered more in depth within a different module.
+
+### Operation timeouts
+
+Certain resource types allow to define how long they can take for operations to take place, this is defined within the *resource* block.
+
+For example *aws_instance*, allows to define **timeouts** for *create* (default 10min), *update* (default 10min), *destroy* (default 20min).
+
+<details>
+
+<summary>AWS example</summary>
+
+In this example the allowed time it takes for the creation of resource is overridden to five minutes and the destruction of it is overridden to two hours.
+ 
+```hcl
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = "ami-f976839e"
+  instance_type = "t2.micro"
+  timeouts {
+    create = "5m"
+    destroy = "2h"
+  } 
+}
+```
+
+</details>
+
+### Local only resources
+
+While majority of the resources managed by Terraform are remote, where the management is done via an API, there are some resources that are local only to Terraform.
+
+Things like: 
+
+- private keys
+- TLS certificates
+- ids that were randomly generated
+
+Local only resources share the same bahaviour as any other resources on Terraform, difference being that the data is local to Terraforms state.
+
+Destroying such a resource would only mean to remove it's state as well as discarding the data.
