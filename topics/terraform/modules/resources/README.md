@@ -8,6 +8,11 @@
 		- [count](#count)
 		- [for_each](#foreach)
 			- [each](#each)
+	- [provider](#provider)
+		- [lifecycle](#lifecycle)
+			- [create_before_destroy](#createbeforedestroy)
+			- [prevent_destroy](#preventdestroy)
+			- [ignore_changes](#ignorechanges)
 
 <!--TOC_END-->
 ## Overview
