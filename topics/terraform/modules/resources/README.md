@@ -216,3 +216,136 @@ There are two attributes to **each** object:
 - **value** - this is the value associated with the map or set for this instance
 - **key** - this is the key associated with the map or set for this instance
 
+### provider
+
+Terraform allows multiple providers, there can be a default provider and multiple others as long as they will have aliases.
+
+Multiple providers could be used when managing resources in different regions, or different cloud providers altogether.
+
+**provider** meta-tag overrides the default provider with the one that is specified.
+
+Here is an example of two providers and the *provider* meta-tag being used:
+
+<details>
+
+<summary>AWS example</summary>
+
+In this example there are two providers defined, the first provider going from top to bottom will be the *default* one.
+
+The second provider has an alias, this will be used to make a reference that this provider should be used when interacting with the resource in the resource block.
+ 
+```hcl
+provider "aws" {
+  region = "us-east-1"
+  version = "2.8"
+}
+
+provider "aws" {
+  region = "eu-west-2"
+  alias  = "aws-uk"
+}
+
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = "ami-f976839e"
+  instance_type = "t2.micro"
+}
+```
+
+</details>
+
+#### lifecycle
+
+Additional details about the resource lifecycle can be provided in the *resource* block by the use of **lifecycle** meta-tag.
+
+**lifecycle** has additional meta-arguments like:
+- **create_before_destroy**
+- **prevent_destroy**
+- **ignore_changes**
+
+##### create_before_destroy
+
+**create_before_destroy** requires a boolean value to be set.
+
+Terraforms default behaviour is to destroy the resource if the requested change cannot be applied due to some limitations. 
+
+After destroying the resource a new one will be created in it's place with the applied change and it will replace the initial resource.
+
+**create_before_destroy** allows to change this behaviour. 
+
+When *create_before_destroy* is set, a new resource will be created first with the applied change, and only then will the previous resource will be destroyed.
+
+<details>
+
+<summary>AWS example</summary>
+ 
+```hcl
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = "ami-f976839e"
+  instance_type = "t2.micro"
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+```
+
+</details>
+
+##### prevent_destroy
+
+**prevent_destroy** requires a boolean value to be set.
+
+When this meta-argument is set to *true* any attempt to destroy the resource will be rejected with an error message, as long as this meta-argument is still present in the configuration file for the resource.
+
+One of the use cases could be to prevent precious resources like a database from being destroyed. 
+
+The only downside is that by having this enabled could be harder to make changes to the resource, additionally calling *destroy* command once the resource was created wouldn't actually destroy this resource.
+
+<details>
+
+<summary>AWS example</summary>
+ 
+```hcl
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = "ami-f976839e"
+  instance_type = "t2.micro"
+  lifecycle {
+    prevent_destroy = true
+  }
+}
+```
+
+</details>
+
+##### ignore_changes
+
+**ignore_changes** take a list of attribute names.
+
+Terraforms default behaviour is to check whether there are new changes to the current configuration files comparing it to the previous version.
+
+There may be some cases outside of Terraform where a resource will be modified, then Terraform would attempt to fix that by setting the values back to the ones that are defined in the configuration file.
+
+You might not always want this sort of behaviour and the **ignore_changes** allows to ignore changes happening to some attributes.
+
+<details>
+
+<summary>AWS example</summary>
+
+In this example *tags* is passed in the list.
+
+This example would make any changes happening outside of Terraform to the *tags* attribute to be ignored by Terraform.
+ 
+```hcl
+resource "aws_instance" "example-uk" {
+  provider = "aws.aws-uk"
+  ami           = "ami-f976839e"
+  instance_type = "t2.micro"
+  lifecycle {
+    ignore_changes = [tags]
+  }
+}
+```
+
+</details>
