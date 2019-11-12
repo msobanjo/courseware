@@ -7,6 +7,7 @@
 		- [depends_on](#dependson)
 		- [count](#count)
 		- [for_each](#foreach)
+			- [each](#each)
 
 <!--TOC_END-->
 ## Overview
@@ -215,4 +216,3 @@ This object gives the ability to make a reference to the current object and conf
 There are two attributes to **each** object: 
 - **value** - this is the value associated with the map or set for this instance
 - **key** - this is the key associated with the map or set for this instance
-
