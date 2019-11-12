@@ -7,6 +7,7 @@
 		- [depends_on](#dependson)
 		- [count](#count)
 		- [for_each](#foreach)
+			- [each](#each)
 
 <!--TOC_END-->
 ## Overview
