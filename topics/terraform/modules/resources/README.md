@@ -116,3 +116,62 @@ If your resource instances are identical or close to being identical, count is a
 If some of the instance arguments need distinct values that can't be directly derived from an integer number, it's would be easier to achiebe by using **for_each**.
 
 #### for_each
+
+The default behaviour of a resource block is that it only creates a single infrastructure object. 
+
+There may be a case where you would require multiple similar resources, then there are two options of how to implement it: 
+- **for_each**
+- **count**
+
+**for_each** requires either a **map** or a **set** of string arguments. 
+
+For every provided argument an infrastructure object will be created. 
+
+Each infrastructure object is distinct, what this entails is that every object is created, updated, destroyed separately when the configuration is applied.
+
+<details>
+
+<summary>AWS example</summary>
+
+In this example, there are two instances being created. 
+
+Iteration is done with for_each where the the value in the map are the two availability zones. 
+ 
+Within the resource *example* the value of current iteration is used as the value for the *availability_zone*.
+
+```hcl
+provider "aws" {
+  region = "eu-west-2"
+  alias  = "aws-uk"
+}
+
+variable "ami-uk" {
+  description = "machine image uk"
+  default     = "ami-f976839e"
+}
+
+variable "type" {
+  default = "t2.micro"
+}
+
+variable "zone" {
+  description = "map of availability zones for eu-west-2"
+  default     = {
+    1 = "eu-west-2a"
+    2 = "eu-west-2b"
+  }
+}
+
+resource "aws_instance" "example" {
+  provider = "aws.aws-uk"
+
+  for_each = var.zone
+
+  availability_zone = each.value # each is covered in the section below
+  ami           = var.ami-uk
+  instance_type = var.type
+}
+```
+
+</details>
+
