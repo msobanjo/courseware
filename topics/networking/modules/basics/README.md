@@ -112,8 +112,8 @@ Originally, all networks were wired, and therefore usually adhered to one of a f
   [Node]      [Node]     [Node]      [Node]
 ```
 
-### P2P
-Most **Hybrid** topologies combine several of these styles together.
+### Peer-to-peer (P2P)
+Most **Hybrid** topologies combine several of these network topology styles together.
 
 Wireless technology is heavily-hybridised by design: most Internet-enabled devices are so interconnected to each other that network topology has deprecated to the level of describing much smaller, wired, or home/office network architecture.
 
@@ -128,28 +128,30 @@ The most important six ways are listed below:
 
 | Characteristic | |
 |-|-|
-| High capacity | Can the network support significant amounts of data transfer? |
-| Fast speeds | How quickly does data move between nodes? |
-| Low latency | How long does data take to move between nodes? |
-| High availability | How many nodes can supply the same data? |
-| Redundancy | How many backup nodes are there in the case of network failure? |
-| Security | How safe is the network's data? Is the architecture secure from attack? |
+| **High capacity** | Can the network support significant amounts of data transfer? |
+| **Fast speeds** | How quickly does data move between nodes? |
+| **Low latency** | How long does data take to move between nodes? |
+| **High availability** | How many nodes can supply the same data? |
+| **Redundancy** | How many backup nodes are there in the case of network failure? |
+| **Security** | How safe is the network's data? Is the architecture secure from attack? |
 
 ## Network Types
-Networks are broadly classified into two types: **LAN** (**L**ocal **A**rea **N**etwork) and **WAN** (**W**ide **A**rea **N**etworks).
+Networks are broadly classified into two types: 
+- **L**ocal **A**rea **N**etwork (**LAN**) 
+- **W**ide **A**rea **N**etworks (**WAN**) 
 
 The key characteristics by which we can differentiate between them are as follows:
 
 | Characteristic | LAN | WAN |
 |-|-|-|
-| Geographic distribution | Small; used for e.g. university campuses | Large; used for e.g. cities |
-| Data transmission rate | Fast; gigabits | Slow; megabits |
-| Error rate | Lower; due to local connectivity | Higher; as a result of distribution |
-| Communication link | 'In-house'; e.g. coaxial cables, fibre-optics, ethernet | External; e.g. phone lines, microwave links, satellite channels |
-| Ownership | Single; usually a single organisation or individual | Multiple; essentially several interconnecting LANs |
-| Communication cost | Lower; simpler operation allows for reliability | Higher; some aspects of operation may be leased or unreliable |
+| **Geographic distribution** | Small; used for e.g. university campuses | Large; used for e.g. cities |
+| **Data transmission rate** | Fast; gigabits | Slow; megabits |
+| **Error rate** | Lower; due to local connectivity | Higher; as a result of distribution |
+| **Communication link** | 'In-house'; e.g. coaxial cables, fibre-optics, ethernet | External; e.g. phone lines, microwave links, satellite channels |
+| **Ownership** | Single; usually a single organisation or individual | Multiple; essentially several interconnecting LANs |
+| **Communication cost** | Lower; simpler operation allows for reliability | Higher; some aspects of operation may be leased or unreliable |
 
-These differences show the difference in scale between LAN and WAN - while LAN is a small, interconnected collection of nodes usually operated by a single entity across a small area, WAN connects several LAN together to allow for wider, though less reliable, communication across multiple entities.
+These differences show the difference in scale between *LAN* and *WAN* - while LAN is a small, interconnected collection of nodes usually operated by a single entity across a small area, WAN connects several LAN together to allow for wider, though less reliable, communication across multiple entities.
 
 ### Network Spatial Scope
 There are a number of other network types, according to specific circumstances.
@@ -158,17 +160,17 @@ The following table gives brief explanations of each network type in practice:
 
 | Name | Acronym | Function | e.g. |
 |-|:-:|-|-|
-| Nanoscale | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
-| Near-Field Communication | `NFC` | Portable dual-device communication | contactless payment |
-| Body Sensor Network | `BSN` | Wearable computing devices | smartwatches, implants |
-| Personal | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
-| Near-me | `NAN` | Proximity-based connections | mobile technology - masts serve multiple carriers |
-| (Wireless) Local | `(W)LAN` | Some institution or individual usage | Ethernet, WiFi |
-| Metropolitan | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
-| Wide | `WAN` | Region-spanning network transmitting data between multiple entities | frame relays |
-| Cloud | `Cloud` | Massively distributed, using mutliple data centres in multiple geographic regions as a secure connector of endpoints | GCP, AWS, Azure |
-| Internet Area | `IAN` | Direct Cloud-based endpoint connection over IP | (conceptual) |
-| Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
+| **Nanoscale** | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
+| **Near-Field Communication** | `NFC` | Portable dual-device communication | contactless payment |
+| **Body Sensor Network** | `BSN` | Wearable computing devices | smartwatches, implants |
+| **Personal** | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
+| **Near-me** | `NAN` | Proximity-based connections | mobile technology - masts serve multiple carriers |
+| **(Wireless) Local** | `(W)LAN` | Some institution or individual usage | Ethernet, WiFi |
+| **Metropolitan** | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
+| **Wide** | `WAN` | Region-spanning network transmitting data between multiple entities | frame relays |
+| **Cloud** | `Cloud` | Massively distributed, using mutliple data centres in multiple geographic regions as a secure connector of endpoints | GCP, AWS, Azure |
+| **Internet Area** | `IAN` | Direct Cloud-based endpoint connection over IP | (conceptual) |
+| **Interconnected Network** | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
 
 ### The Internet
 As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme.
