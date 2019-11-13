@@ -71,7 +71,7 @@ In total there are six meta-parameters:
 
 #### depends_on
 
-**depends_on** meta-argument is used to handle hidden resource dependencies when Terraform can't automatically infer them.
+*depends_on* meta-argument is used to handle hidden resource dependencies when Terraform can't automatically infer them.
 
 You would need to explicitly specify a dependency when a resource relies on another resources behaviour, but doesn't access the resources data.
 
