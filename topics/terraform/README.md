@@ -23,4 +23,5 @@ This means that your infrastructure can be described as code, allowing you to ha
 - [Introduction](./modules/introduction)
 - [Configuration File Discovery](./modules/tf_configuration_file_discovery)
 - [HashiCorp Configuration language](./modules/tf_configuration_language)
+- [Variables](./modules/variables)
 <!--MODULES_END-->
