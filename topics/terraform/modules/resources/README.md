@@ -91,7 +91,7 @@ resource "aws_instance" "example-instance" {
   ami           = "ami-2757f631"
   instance_type = "t2.micro"
   depends_on = [
-    aws_iam_role_policy.example,
+    aws_iam_role_policy.example
   ]
 }
 ```
