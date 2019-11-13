@@ -403,10 +403,11 @@ While majority of the resources managed by Terraform are remote, where the manag
 
 Things like: 
 
-- private keys
-- TLS certificates
-- ids that were randomly generated
+- **private keys**
+- **TLS certificates**
+- **ids that were randomly generated**
 
 Local only resources share the same behaviour as any other resources on Terraform, difference being that the data is local to Terraforms state.
 
 Destroying such a resource would only mean to remove it's state as well as discarding the data.
+
