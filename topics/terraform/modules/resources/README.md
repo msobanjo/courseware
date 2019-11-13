@@ -46,9 +46,7 @@ An example of a resource meta-parameter could be provider aliases.
 
 A resource can explicitly declare a provider to use with the provider key.
 
-This is an example configuration file to better visualise what meta-parameter is.
- 
-In this example meta-parameters would be: provider. 
+This configuration file shows an example meta-parameter **alias** 
 
 ```hcl
 provider "aws" {
