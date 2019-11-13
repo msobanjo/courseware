@@ -96,19 +96,19 @@ resource "aws_instance" "example-instance" {
 }
 ```
 
-In this example `example_instance` has a dependency on the `example-admin-role`.
+In this example `example_instance` has a dependency on the `example-admin-role`
 
 #### count
 
-By default, terraform configures only one real infrastructure object. 
+By default, terraform configures only one infrastructure object. 
 
-Although, in some cases you want to manage several similar objects. 
+If you wanted to configure several similar infrastructure objects that is possible as well. 
 
 Terraform has two ways to do this: **count** and **for_each**, first we'll look at *count*.
 
-*Count* accepts a whole number, it then creates that number of instances of the resource. 
+*Count* accepts a whole number, it then creates that number of instances of the resource where it is declared. 
 
-Here's an example of creating four instances through the use of count:
+Here's an example of creating four instances by using count:
 
 ```hcl
 resource "aws_instance" "server" {
@@ -120,11 +120,11 @@ resource "aws_instance" "server" {
 
 After creating these four resources if we wanted to do something with one of the instances we could get access to it through it's index. 
 
-In the resource block where the count is used, an additional object for `count` is created and it has an attribute `index`. 
+In the resource block where the count is used, an additional object for `count` is created and it has an attribute `index` 
 
 This allow to access the index of which resource you would be using. 
 
-It's zero based index.  
+Index is zero based meaning that the first instance will be at the index of zero ([0]).
 
 In order to get access to the index the syntax would be: 
 
@@ -140,17 +140,11 @@ If some of the instance arguments need distinct values that can't be directly de
 
 #### for_each
 
-The default behaviour of a resource block is that it only creates a single infrastructure object. 
-
-There may be a case where you would require multiple similar resources, then there are two options of how to implement it: 
-- **for_each**
-- **count**
-
 **for_each** requires either a **map** or a **set** of string arguments. 
 
 For every provided argument an infrastructure object will be created. 
 
-Each infrastructure object is distinct, what this entails is that every object is created, updated, destroyed separately when the configuration is applied.
+Each infrastructure object is *distinct*, what this entails is that every object is *created*, *updated*, *deleted* separately when the configuration is applied.
 
 <details>
 
@@ -158,7 +152,7 @@ Each infrastructure object is distinct, what this entails is that every object i
 
 In this example, there are two instances being created. 
 
-Iteration is done with for_each where the the value in the map are the two availability zones. 
+Iteration is done with *for_each* where the the value in the map are the two availability zones. 
  
 Within the resource *example* the value of current iteration is used as the value for the *availability_zone*.
 
@@ -236,8 +230,8 @@ When *for_each* is used, an additional object is created under the name of **eac
 This object gives the ability to make a reference to the current object and configure it like setting an instance to a particular availability zone.
 
 There are two attributes to **each** object: 
-- **value** - this is the value associated with the map or set for this instance
 - **key** - this is the key associated with the map or set for this instance
+- **value** - this is the value associated with the map or set for this instance
 
 ### provider
 
