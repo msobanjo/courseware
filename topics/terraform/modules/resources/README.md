@@ -375,7 +375,7 @@ Provisioners will be covered more in depth within a different module.
 
 Certain resource types allow to define how long they can take for operations to take place, this is defined within the *resource* block.
 
-For example *aws_instance*, allows to define **timeouts** for *create* (default 10min), *update* (default 10min), *destroy* (default 20min).
+For example *aws_instance*, allows to define **timeouts** for *create* (default 10min), *update* (default 10min), *delete* (default 20min).
 
 <details>
 
@@ -390,7 +390,7 @@ resource "aws_instance" "example-uk" {
   instance_type = "t2.micro"
   timeouts {
     create = "5m"
-    destroy = "2h"
+    delete = "2h"
   } 
 }
 ```
@@ -411,3 +411,135 @@ Local only resources share the same behaviour as any other resources on Terrafor
 
 Destroying such a resource would only mean to remove it's state as well as discarding the data.
 
+### Tasks
+
+<details>
+
+<summary>AWS task</summary>
+
+This task will combine a couple of things that were covered in this module:
+- two *aws_instance* will be created through *for_each*
+- destruction of the instances will be prevented with the *lifecycle*
+- timeouts will be set for the creation and deletion operations
+
+#### Prerequisites
+
+1. Have **aws cli** installed
+    2. You can install it by running the following python command, keep in mind you need to have python installed:
+    `pip install awscli`
+3. Know your AWS `access` and `secret` keys
+
+#### Authenticating
+First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
+`aws configure`
+You will be asked to provide the following things:
+* **AWS Access Key ID** this is where you would need to provide your *access* key
+* **AWS Secret Access Key ID** this is the *secret* key
+* **Default region name** would be **eu-west-2**
+You might get asked additionally to specify what formatting you want to use, enter **json**.
+
+#### Creating the directory and configuration file
+For the next step create a new folder, you can pick any name for it but a suggested one would be `terraform_resources_example`.
+
+Within the newly created folder, create a new file called `main.tf`.
+
+Open the `main.tf` with a text editor of your choosing.
+
+#### Populating the configuration file
+
+Paste the following into the `main.tf` file.
+
+```hcl
+provider "aws" {
+  region = "eu-west-2"
+  alias  = "aws-uk"
+}
+
+variable "ami-uk" {
+  description = "machine image uk"
+  default     = "ami-f976839e"
+}
+
+variable "type" {
+  default = "t2.micro"
+}
+
+variable "zone" {
+  description = "map of availability zones for eu-west-2"
+  default     = {
+    1 = "eu-west-2a"
+    2 = "eu-west-2b"
+  }
+}
+
+resource "aws_instance" "example" {
+  provider = "aws.aws-uk"
+  for_each = var.zone
+  availability_zone = each.value
+  ami           = var.ami-uk
+  instance_type = var.type
+
+  lifecycle {
+    prevent_destroy = true
+  }
+
+  timeouts {
+    create = "5m"
+    delete = "2h"
+  }
+
+}
+```
+
+In this example you should notice a combination of things that make up the whole:
+- instead of using a *default provider* an *alias* is given and used
+- *variables* are used and declared in the same configuration file
+- a *map variable* is used to define availability zones
+- *for_each* is used to create two instances where the keys are coming from the map variable
+- *each* is used to set a value of the *availability_zone* where the value for the availability zone is coming from the map variable
+- *lifecycle* is used with the meta argument of *prevent_destroy* enabled
+- *timeout* is used with meta arguments to set timeout times for the *create* and *delete* operations
+
+#### Formatting
+
+Format the configuration file by running the command:
+```bash
+terraform fmt
+```
+
+#### Running the configuration file
+
+Next switch to the terminal, if you have closed it already, re-open it in the directory where the `main.tf` file is located at. 
+
+First let's execute the following command to download the AWS provider plugin so that Terraform can communicate with AWS:
+
+`terraform init`
+
+Next let's execute this to see what Terraform plans on doing:
+
+`terraform plan`
+
+Finally, let's apply the configured resources by executing:
+
+`terraform apply`
+
+Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
+
+Once terraform will give you a prompt about the successful operation in the *AWS console* under *Compute* and then *EC2* check that the resource has been created. 
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource.
+
+#### Clean up
+
+To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
+
+`terraform destroy` 
+
+Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
+
+Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
+
+Make sure that you are within the correct region, otherwise you won't be able to see the resource - even if it wasn't deleted!
+
+
+</details>
