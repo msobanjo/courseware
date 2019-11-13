@@ -75,11 +75,11 @@ In total there are six meta-parameters:
 
 You would need to explicitly specify a dependency when a resource relies on another resources behaviour, but doesn't access the resources data.
 
-If **depends_on** is present, it must be a list of references to other resources of the same module.
+If *depends_on* is present, it must be a list of references to other resources of the same module.
 
-The **depends_on** argument should be used only as a last resort mean, additionally it would be a good practice to leave a comment explaining why is it used.
+The *depends_on* argument should be used only as a last resort mean, additionally it would be a good practice to leave a comment explaining why is it used.
 
-Here is an example of **depends_on** being used:
+Here is an example of *depends_on*:
 
 ```hcl
 resource "aws_iam_role_policy" "example-admin-role" {
