@@ -30,7 +30,7 @@
 
 This module will cover *resources* more in depth.
 
-A resource in Terraform is simply a component of your infrastructure.
+A **resource** in Terraform is simply a component of your infrastructure.
 
 Terraform resources can be anything from cloud virtual machine instances, to GitHub repositories and DNS records. 
 
@@ -43,9 +43,11 @@ All resources do have several things in common, starting with meta-parameters.
 Meta-parameters are configuration keys available to all resources.
 
 An example of a resource meta-parameter could be provider aliases. 
+
 A resource can explicitly declare a provider to use with the provider key.
 
-This is an example configuration file to better visualise what meta-parameter is. 
+This is an example configuration file to better visualise what meta-parameter is.
+ 
 In this example meta-parameters would be: provider. 
 
 ```hcl
@@ -121,15 +123,21 @@ resource "aws_instance" "server" {
 After creating these four resources if we wanted to do something with one of the instances we could get access to it through it's index. 
 
 In the resource block where the count is used, an additional object for `count` is created and it has an attribute `index`. 
+
 This allow to access the index of which resource you would be using. 
+
 It's zero based index.  
+
 In order to get access to the index the syntax would be: 
+
 `count.index`
 
 Here's an example of using the first instance:
+
 `aws_instance.server[0]`
 
 If your resource instances are identical or close to being identical, count is appropriate to use. 
+
 If some of the instance arguments need distinct values that can't be directly derived from an integer number, it's would be easier to achiebe by using **for_each**.
 
 #### for_each
@@ -432,21 +440,28 @@ This task will combine a couple of things that were covered in this module:
 
 #### Prerequisites
 
-1. Have **aws cli** installed
-    2. You can install it by running the following python command, keep in mind you need to have python installed:
+- Have **aws cli** installed
+    - You can install it by running the following python command, keep in mind you need to have python installed:
+    
     `pip install awscli`
-3. Know your AWS `access` and `secret` keys
+
+- Know your AWS `access` and `secret` keys
 
 #### Authenticating
+
 First let's authenticate with aws so that terraform could execute the configuration file, run the following command:
+
 `aws configure`
+
 You will be asked to provide the following things:
 * **AWS Access Key ID** this is where you would need to provide your *access* key
 * **AWS Secret Access Key ID** this is the *secret* key
 * **Default region name** would be **eu-west-2**
+
 You might get asked additionally to specify what formatting you want to use, enter **json**.
 
 #### Creating the directory and configuration file
+
 For the next step create a new folder, you can pick any name for it but a suggested one would be `terraform_resources_example`.
 
 Within the newly created folder, create a new file called `main.tf`.
