@@ -140,7 +140,7 @@ If some of the instance arguments need distinct values that can't be directly de
 
 #### for_each
 
-**for_each** requires either a **map** or a **set** of string arguments. 
+*for_each* requires either a **map** or a **set** of string arguments. 
 
 For every provided argument an infrastructure object will be created. 
 
@@ -235,13 +235,11 @@ There are two attributes to **each** object:
 
 ### provider
 
-Terraform allows multiple providers, there can be a default provider and multiple others as long as they will have aliases.
+Terraform allows to have multiple providers defined in a configuration file, although there can only be one default provider and others will have to use aliases.
 
-Multiple providers could be used when managing resources in different regions, or different cloud providers altogether.
+One of the potential use cases for having multiple providers could be to manage resources in different regions, or use different cloud providers altogether.
 
-**provider** meta-tag overrides the default provider with the one that is specified.
-
-Here is an example of two providers and the *provider* meta-tag being used:
+**provider** meta-tag within the resource block overrides the usage of default provider.
 
 <details>
 
@@ -275,14 +273,14 @@ resource "aws_instance" "example-uk" {
 
 Additional details about the resource lifecycle can be provided in the *resource* block by the use of **lifecycle** meta-tag.
 
-**lifecycle** has additional meta-arguments like:
+**lifecycle** additional meta-arguments are:
 - **create_before_destroy**
 - **prevent_destroy**
 - **ignore_changes**
 
 ##### create_before_destroy
 
-**create_before_destroy** requires a boolean value to be set.
+**create_before_destroy** requires a *boolean* value to be set.
 
 Terraforms default behaviour is to destroy the resource if the requested change cannot be applied due to some limitations. 
 
@@ -311,7 +309,7 @@ resource "aws_instance" "example-uk" {
 
 ##### prevent_destroy
 
-**prevent_destroy** requires a boolean value to be set.
+**prevent_destroy** requires a *boolean* value to be set.
 
 When this meta-argument is set to *true* any attempt to destroy the resource will be rejected with an error message, as long as this meta-argument is still present in the configuration file for the resource.
 
@@ -373,7 +371,7 @@ There are certain cases where infrastructure object require additional actions t
 
 Resource provisioners are what allow these additional actions to be implemented.
 
-Provisioner actions like copying a file to an instance should be used sparingly, the reason for it is that this action and the state of the file cannot be represented as declarative action, hence making it not possible for Terraform to manage it after the action took place.
+Provisioner actions like: copying a file to an instance; should be used sparingly, the reason for it is that this action and the state of the file cannot be represented as declarative action, hence making it not possible for Terraform to manage it after the action took place.
 
 Additional actions can also be done when resources are getting destroyed.
 
@@ -410,7 +408,6 @@ resource "aws_instance" "example-uk" {
 While majority of the resources managed by Terraform are remote, where the management is done via an API, there are some resources that are local only to Terraform.
 
 Things like: 
-
 - **private keys**
 - **TLS certificates**
 - **ids that were randomly generated**
@@ -549,6 +546,10 @@ Make sure that you are within the correct region, otherwise you won't be able to
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
 
 `terraform destroy` 
+
+You should get an error message saying that it's not possible, this is expected behaviour.
+
+Within the `main.tf` file remove the `prevent_destroy` meta argument, and re-run the *destroy* command.
 
 Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
 
