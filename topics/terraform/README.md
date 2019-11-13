@@ -19,6 +19,7 @@ The plan can be executed to build the described infrastructure.
 This means that your infrastructure can be described as code, allowing you to have a blueprint of your data-center that can be versioned like any other piece of code.
 <!--MODULES_START-->
 ## Modules
+- [Data types](./modules/data_types)
 - [Introduction](./modules/introduction)
 - [Configuration File Discovery](./modules/tf_configuration_file_discovery)
 - [HashiCorp Configuration language](./modules/tf_configuration_language)
