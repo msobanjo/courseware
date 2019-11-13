@@ -16,6 +16,14 @@
 		- [provisioner and connection](#provisioner-and-connection)
 	- [Operation timeouts](#operation-timeouts)
 	- [Local only resources](#local-only-resources)
+	- [Tasks](#tasks)
+		- [Prerequisites](#prerequisites)
+		- [Authenticating](#authenticating)
+		- [Creating the directory and configuration file](#creating-the-directory-and-configuration-file)
+		- [Populating the configuration file](#populating-the-configuration-file)
+		- [Formatting](#formatting)
+		- [Running the configuration file](#running-the-configuration-file)
+		- [Clean up](#clean-up)
 
 <!--TOC_END-->
 ## Overview
@@ -540,6 +548,5 @@ Ensure that you check the changes that this action will make to your infrastruct
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource - even if it wasn't deleted!
-
 
 </details>
