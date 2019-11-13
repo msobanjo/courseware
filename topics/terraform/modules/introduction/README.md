@@ -226,6 +226,9 @@ resource "aws_instance" "example" {
     `terraform plan`
 * Run the following command to create the real resource:
     `terraform apply`
+    
+    Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
+
 * Once Terraform gives you a prompt about the successful operation, check that the resource has been created in the *AWS console* under *Compute* > *EC2*. 
 Make sure that you are within the correct region, otherwise you won't be able to see the resource.
     
@@ -234,6 +237,8 @@ Make sure that you are within the correct region, otherwise you won't be able to
 
 To delete the created resource run the following command in the terminal, make sure that the terminal is in the directory where `main.tf` is located:
     `terraform destroy` 
+    
+Ensure that you check the changes that this action will make to your infrastructure and type `yes` to agree.
 
 Check in the *AWS console* under *Compute* and then *EC2* check that the resource has been deleted.
 
