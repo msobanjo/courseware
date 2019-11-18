@@ -157,7 +157,7 @@ Paste the following below the variable in the `main.tf` file:
 ```hcl
 resource "aws_instance" "example" {
 	ami = var.ami
-	instance_type = type
+	instance_type = va.type
 }
 ```
 
@@ -222,7 +222,7 @@ variable "ami" {
 }
 
 variable "type" {
-  description = "t2.micro"
+  description = "machine size"
 }
 ```
 
@@ -230,7 +230,7 @@ variable "type" {
 
 ```hcl
 ami = "ami-f976839e"
-type = "machine size"
+type = "t2.micro"
 ```
 
 If the configuration files are like this, continue with the task. 
