@@ -56,7 +56,7 @@ There are also several other components that might be commonly found in a networ
 |-|-|
 | Cable | Direct connectivity between any network components |
 | Signal |  Wireless connectivity between any network components |
-| Network Interface Controller (NIC )| Physically receives data from a network |
+| Network Interface Controller (NIC)| Physically receives data from a network |
 | Host adapter | Connects a host system to other network/storage devices |
 | Gateway | Allows for data transfer between networks |
 | Network bridge | Aggregates mutliple networks together |
@@ -65,16 +65,24 @@ There are also several other components that might be commonly found in a networ
 There are a myriad of other physical, wireless, and hybrid network devices.
 
 ### Network topology
-Topology refers to the way a network is organised, both physically and logically.
+Topology refers to the way a network is organised.
 
-Originally, all networks were wired, and therefore usually adhered to one of a few specific network topologies due to limitations on physical hardware.
+Physical topology refers to the actual hardware - wires, computers, routers - of a network, such as those linking computers together in an office builidng.
 
-**Bus**
+Logical topology, on the other hand, describes how networks without an obvious physical topology - such as in wireless systems like Bluetooth and contactless - link devices together, such as the WiFi in your home. 
+
+Originally, all networks were wired, and therefore usually adhered to one of a few specific network topologies due to limitations on physical hardware:
+
+#### Bus
 ```text
     ┌─────┬─────┐
   [Node][Node][Node]
 ```
-**Ring**
+Information passing along a network which uses Bus topology would be received quicker by nodes which are close to the node sending that information.
+
+For instance, if a node on one 'end' sends information intended for the node on the other end, it will take a while for that information to pass through all the wires connecting every node together, while nodes in the 'middle' of the network might receive data slightly quicker on average. 
+
+#### Ring
 ```text
   ┌[Node]─[Node]┐
   |             |
@@ -82,7 +90,9 @@ Originally, all networks were wired, and therefore usually adhered to one of a f
   |             |
   └[Node]─[Node]┘
 ```
-**Star**
+Ring topology allows for information to circulate through a network in a more even spread than by using a Bus-based system, as each node is connected to two other nodes in the setup.
+
+#### Star
 ```text
   [Node] [Node]
       \   /
@@ -90,7 +100,12 @@ Originally, all networks were wired, and therefore usually adhered to one of a f
       /   \
   [Node] [Node]
 ```
-**Mesh**
+Star topology makes use of a 'middle' Hub node, which serves to re-transmit information sent from one node to another which is intended to receive that information.
+
+As information is only sent between each node and the Hub, this theoretically stops information from spreading through the network 'in search' of the node it needs to get to.
+
+Instead, the Hub takes control of where information is headed, which allows for greater network speed.
+#### Mesh
 ```text
   ┌[Node]─[Node]┐
   |    \   /    |
@@ -98,20 +113,62 @@ Originally, all networks were wired, and therefore usually adhered to one of a f
   |    /   \    |
   └[Node]─[Node]┘
 ```
-**Tree**
+Mesh topology connects every node, where possible, to every other node in the network, without using a Hub to redirect information.
+
+By connecting every node together, a Hub becomes unnecessary; information will be received just as quickly at any node irrespective of which node it is sent from.
+
+However, larger wired networks of this type may suffer due to the greater number of wires required to connect every node to every other node - for instance, if one wire stops working, it may take a significant amount of time to diagnose which wire it is. 
+#### Tree 
 ```text
           ┌────────[Node]────────┐
         [Node]                 [Node]
     ┌─────┴─────┐          ┌─────┴─────┐
   [Node]      [Node]     [Node]      [Node]
 ```
+Tree topology essentially organises several Star-based networks into a hierarchy.
 
-### P2P
-Most **Hybrid** topologies combine several of these styles together.
+By doing this, the 'leaves' of the Tree - the peripheral nodes - are only required to send and receive information to the node directly above it.
 
-Wireless technology is heavily-hybridised by design: most Internet-enabled devices are so interconnected to each other that network topology has deprecated to the level of describing much smaller, wired, or home/office network architecture.
+As a result, rather than have a single Hub node, there are muiltiple nodes which share responsibility for re-transmitting information.
 
-These are **peer-to-peer** (P2P) networks: every node can exchange data with any other node, with each node acting both as a client (receiving information) and a server (sending information).
+#### Hybrid P2P (Peer-to-Peer)
+As networks have expanded (and become more wireless) over time, most network architectures employ a **Hybrid** system, most commonly based on Tree architecure.
+
+Wireless technology is Hybrid by design: most Internet-enabled devices are so interconnected that both physical and logical network topology has become less relevant.
+
+Instead, topology is now more used to describe much smaller, wired, or home/office network architecture - though it is still useful for describing the larger, integrated, wired networks of the pre-wireless age.
+
+Generally, wireless networks are both Hybrid networks, as well as interconnected  **peer-to-peer** (P2P) networks.
+
+Every node can exchange data with any other node, with each node acting both as a client (receiving information) and a server (sending information).
+
+## Network Types
+Networks come in many forms, depending on the situation in which you'd want to use them.
+
+Some networks require the usage of specific hardware or transmission standards.
+
+However, they all adhere to a general scale, or **Area** - a smaller **Local Area Network** may be useful for a home, but a larger **Wide Area Network** might be more useful for connecting a city.
+
+As such, the difference between one type of network and another relies, usually, on how far the network can physically reach.
+
+The smallest networks area may only extend for a few nanometres, while the largest network, the Internet, encompasses the entire planet.
+
+From smallest to largest, the following table gives brief descriptions and examples for some common network types:
+
+| Area | Acronym | Function | e.g. |
+|-|:-:|-|-|
+| Nanoscale | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
+| Near-Field Communication | `NFC` | Portable dual-device communication | contactless payment |
+| Body Sensor | `BSN` | Wearable computing devices | smartwatches, implants |
+| Personal | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
+| Near-me | `NAN` | Proximity-based connections | mobile technology, cell towers |
+| (Wireless) Local | `(W)LAN` | Institutional or home usage | Ethernet, WiFi |
+| Metropolitan | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
+| Wide | `WAN` | Region-spanning network transmitting data between multiple entities | "the Cloud" |
+| Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
+| Global Positioning System | `GPS` | Globe-encompassing geolocation through satellites | satellite navigation, Google Maps |
+
+Technically, as GPS uses far less information than the Internet, and uses satellites in Earth's orbit for geolocation, it technically reaches wider than the Internet - many places on Earth do not have access to the Internet, while the entire planet is continually being mapped and rendered by satellites.
 
 ## Network Characteristics
 Networks always operate on the basis of providing seamless interconnectivity between devices.
@@ -129,10 +186,12 @@ The most important six ways are listed below:
 | Redundancy | How many backup nodes are there in the case of network failure? |
 | Security | How safe is the network's data? Is the architecture secure from attack? |
 
-## Network Types
-Networks are broadly classified into two types: **LAN** (**L**ocal **A**rea **N**etwork) and **WAN** (**W**ide **A**rea **N**etworks).
+### LAN vs WAN
+Given the size differences between networks, we can categorise a network as either **local** (small-scale) or **wide** (large-scale).
 
-The key characteristics by which we can differentiate between them are as follows:
+Thus, networks are, generally, condensed into two types: **LAN** (**L**ocal **A**rea **N**etworks) and **WAN** (**W**ide **A**rea **N**etworks).
+
+There are a number of differences between them, which we can differentiate:
 
 | Characteristic | LAN | WAN |
 |-|-|-|
@@ -145,26 +204,7 @@ The key characteristics by which we can differentiate between them are as follow
 
 These differences show the difference in scale between LAN and WAN - while LAN is a small, interconnected collection of nodes usually operated by a single entity across a small area, WAN connects several LAN together to allow for wider, though less reliable, communication across multiple entities.
 
-### Network Spatial Scope
-There are a number of other network types, according to specific circumstances.
-
-The following table gives brief explanations of each network type in practice:
-
-| Name | Acronym | Function | e.g. |
-|-|:-:|-|-|
-| Nanoscale | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
-| Near-Field Communication | `NFC` | Portable dual-device communication | contactless payment |
-| Body Sensor Network | `BSN` | Wearable computing devices | smartwatches, implants |
-| Personal | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
-| Near-me | `NAN` | Proximity-based connections | mobile technology - masts serve multiple carriers |
-| (Wireless) Local | `(W)LAN` | Some institution or individual usage | Ethernet, WiFi |
-| Metropolitan | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
-| Wide | `WAN` | Region-spanning network transmitting data between multiple entities | frame relays |
-| Cloud | `Cloud` | Massively distributed, using mutliple data centres in multiple geographic regions as a secure connector of endpoints | GCP, AWS, Azure |
-| Internet Area | `IAN` | Direct Cloud-based endpoint connection over IP | (conceptual) |
-| Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
-
-### The Internet
+## The Internet
 As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme.
 
 Its early form was commissioned by the United States as a way of building robust, fault-tolerant communication between networks, and has exponentially expanded ever since.
@@ -390,11 +430,14 @@ Since each PAN hops randomly through the available frequencies, all of the PANs 
 
 However, if a multitude of Bluetooth devices are operating at the same time in a packed space, the interferences become more obvious when they do arise.
 
-This is why on a packed tram, everybody's Bluetooth earbuds will crackle more than usual - though the PANs are prevented from accepting incoming connections from outside the network, the ISM band itself is full of devices with overlapping frequency ranges.
+This is why on a packed train, everybody's Bluetooth earbuds will crackle more than usual - though the PANs are prevented from accepting incoming connections from outside the network, the ISM band itself is full of devices with overlapping frequency ranges.
 
 ### Categorise each section of a long URL
-
-For this task, navigate to [this](https://smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1) Amazon item listing.
+For this task, navigate to [this](https://www.smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1) Amazon item listing. The URL looks like this:
+```text
+https://www.smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1
+```
+When you open this link in your browser, some of it will change. Why do you think this is?
 
 Categorise the URL you are directed to into its constituent parts. What is each section of the URL doing?  
 
