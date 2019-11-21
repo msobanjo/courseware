@@ -57,21 +57,21 @@ The functions of these basic network components are listed below:
 
 | Component | Function |
 |-|-|
-| Router | Forwards data and directs network traffic |
-| Switch | Connects devices; receives and processes packets from a router to send to a device |
-| Node | A device; sends packets to a switch to forward to a router; receives and processes packets from a switch |
+| **Router** | Forwards data and directs network traffic |
+| **Switch** | Connects devices; receives and processes packets from a router to send to a device |
+| **Node** | A device; sends packets to a switch to forward to a router; receives and processes packets from a switch |
 
 There are also several other components that might be commonly found in a network:
 
 | Component | Function |
 |-|-|
-| Cable | Direct connectivity between any network components |
-| Signal |  Wireless connectivity between any network components |
-| Network Interface Controller (NIC)| Physically receives data from a network |
-| Host adapter | Connects a host system to other network/storage devices |
-| Gateway | Allows for data transfer between networks |
-| Network bridge | Aggregates mutliple networks together |
-| Hub | Connects multiple devices together onto a single network |
+| **Cable** | Direct connectivity between any network components |
+| **Signal** |  Wireless connectivity between any network components |
+| **Network Interface Controller (NIC)** | Physically receives data from a network |
+| **Host adapter** | Connects a host system to other network/storage devices |
+| **Gateway** | Allows for data transfer between networks |
+| **Network bridge** | Aggregates mutliple networks together |
+| **Hub** | Connects multiple devices together onto a single network |
 
 There are a myriad of other physical, wireless, and hybrid network devices.
 
