@@ -5,11 +5,16 @@
 - [Overview](#overview)
 - [Network Architecture](#network-architecture)
 	- [Network topology](#network-topology)
-	- [Peer-to-peer (P2P)](#peertopeer-p2p)
-- [Network Characteristics](#network-characteristics)
+		- [Bus](#bus)
+		- [Ring](#ring)
+		- [Star](#star)
+		- [Mesh](#mesh)
+		- [Tree](#tree)
+		- [Hybrid P2P (Peer-to-Peer)](#hybrid-p2p-peertopeer)
 - [Network Types](#network-types)
-	- [Network Spatial Scope](#network-spatial-scope)
-	- [The Internet](#the-internet)
+- [Network Characteristics](#network-characteristics)
+	- [LAN vs WAN](#lan-vs-wan)
+- [The Internet](#the-internet)
 	- [The World Wide Web](#the-world-wide-web)
 	- [Web access](#web-access)
 		- [URI](#uri)
@@ -111,6 +116,7 @@ Star topology makes use of a 'middle' Hub node, which serves to re-transmit info
 As information is only sent between each node and the Hub, this theoretically stops information from spreading through the network 'in search' of the node it needs to get to.
 
 Instead, the Hub takes control of where information is headed, which allows for greater network speed.
+
 #### Mesh
 ```text
   ┌[Node]─[Node]┐
@@ -124,6 +130,7 @@ Mesh topology connects every node, where possible, to every other node in the ne
 By connecting every node together, a Hub becomes unnecessary; information will be received just as quickly at any node irrespective of which node it is sent from.
 
 However, larger wired networks of this type may suffer due to the greater number of wires required to connect every node to every other node - for instance, if one wire stops working, it may take a significant amount of time to diagnose which wire it is. 
+
 #### Tree 
 ```text
           ┌────────[Node]────────┐
