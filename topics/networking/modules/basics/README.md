@@ -5,7 +5,7 @@
 - [Overview](#overview)
 - [Network Architecture](#network-architecture)
 	- [Network topology](#network-topology)
-	- [P2P](#p2p)
+	- [Peer-to-peer (P2P)](#peertopeer-p2p)
 - [Network Characteristics](#network-characteristics)
 - [Network Types](#network-types)
 	- [Network Spatial Scope](#network-spatial-scope)
@@ -19,6 +19,12 @@
 	- [`nslookup`](#nslookup)
 	- [`ping`](#ping)
 - [Tasks](#tasks)
+	- [See how NFC works with NFC Tools](#see-how-nfc-works-with-nfc-tools)
+	- [See how PAN works with Bluetooth tethering](#see-how-pan-works-with-bluetooth-tethering)
+	- [Categorise each section of a long URL](#categorise-each-section-of-a-long-url)
+	- [Use `nslookup` to find the IP of a website](#use-nslookup-to-find-the-ip-of-a-website)
+	- [Use `ping` to query a site using its IP address](#use-ping-to-query-a-site-using-its-ip-address)
+	- [Disconnect your machine during a `ping` request](#disconnect-your-machine-during-a-ping-request)
 
 <!--TOC_END-->
 ## Overview
@@ -155,18 +161,18 @@ The smallest networks area may only extend for a few nanometres, while the large
 
 From smallest to largest, the following table gives brief descriptions and examples for some common network types:
 
-| Area | Acronym | Function | e.g. |
+| Name | Acronym | Function | e.g. |
 |-|:-:|-|-|
-| Nanoscale | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
-| Near-Field Communication | `NFC` | Portable dual-device communication | contactless payment |
-| Body Sensor | `BSN` | Wearable computing devices | smartwatches, implants |
-| Personal | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
-| Near-me | `NAN` | Proximity-based connections | mobile technology, cell towers |
-| (Wireless) Local | `(W)LAN` | Institutional or home usage | Ethernet, WiFi |
-| Metropolitan | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
-| Wide | `WAN` | Region-spanning network transmitting data between multiple entities | "the Cloud" |
-| Interconnected Network | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
-| Global Positioning System | `GPS` | Globe-encompassing geolocation through satellites | satellite navigation, Google Maps |
+| **Nanoscale** | `nano` | Electromagnetic and molecular data transmission | medical nanotechnology |
+| **Near-Field Communication** | `NFC` | Portable dual-device communication | contactless payment |
+| **Body Sensor Network** | `BSN` | Wearable computing devices | smartwatches, implants |
+| **Personal** | `PAN` | Individual workspace connections | Bluetooth, wireless USB |
+| **Near-me** | `NAN` | Proximity-based connections | mobile technology - masts serve multiple carriers |
+| **(Wireless) Local** | `(W)LAN` | Some institution or individual usage | Ethernet, WiFi |
+| **Metropolitan** | `MAN` | Interconnected LANs in a geographical area via endpoint connections | Silicon Valley |
+| **Wide** | `WAN` | Region-spanning network transmitting data between multiple entities | "the Cloud", frame relays |
+| **Interconnected Network** | `Internet` | Global system of interconnected networks | TCP/IP, World Wide Web |
+| **Global Positioning System** | `GPS` | Globe-encompassing geolocation through satellites | satellite navigation, Google Maps |
 
 Technically, as GPS uses far less information than the Internet, and uses satellites in Earth's orbit for geolocation, it technically reaches wider than the Internet - many places on Earth do not have access to the Internet, while the entire planet is continually being mapped and rendered by satellites.
 
@@ -179,30 +185,28 @@ The most important six ways are listed below:
 
 | Characteristic | |
 |-|-|
-| High capacity | Can the network support significant amounts of data transfer? |
-| Fast speeds | How quickly does data move between nodes? |
-| Low latency | How long does data take to move between nodes? |
-| High availability | How many nodes can supply the same data? |
-| Redundancy | How many backup nodes are there in the case of network failure? |
-| Security | How safe is the network's data? Is the architecture secure from attack? |
+| **High capacity** | Can the network support significant amounts of data transfer? |
+| **Fast speeds** | How quickly does data move between nodes? |
+| **Low latency** | How long does data take to move between nodes? |
+| **High availability** | How many nodes can supply the same data? |
+| **Redundancy** | How many backup nodes are there in the case of network failure? |
+| **Security** | How safe is the network's data? Is the architecture secure from attack? |
 
 ### LAN vs WAN
 Given the size differences between networks, we can categorise a network as either **local** (small-scale) or **wide** (large-scale).
-
-Thus, networks are, generally, condensed into two types: **LAN** (**L**ocal **A**rea **N**etworks) and **WAN** (**W**ide **A**rea **N**etworks).
 
 There are a number of differences between them, which we can differentiate:
 
 | Characteristic | LAN | WAN |
 |-|-|-|
-| Geographic distribution | Small; used for e.g. university campuses | Large; used for e.g. cities |
-| Data transmission rate | Fast; gigabits | Slow; megabits |
-| Error rate | Lower; due to local connectivity | Higher; as a result of distribution |
-| Communication link | 'In-house'; e.g. coaxial cables, fibre-optics, ethernet | External; e.g. phone lines, microwave links, satellite channels |
-| Ownership | Single; usually a single organisation or individual | Multiple; essentially several interconnecting LANs |
-| Communication cost | Lower; simpler operation allows for reliability | Higher; some aspects of operation may be leased or unreliable |
+| **Geographic distribution** | Small; used for e.g. university campuses | Large; used for e.g. cities |
+| **Data transmission rate** | Fast; gigabits | Slow; megabits |
+| **Error rate** | Lower; due to local connectivity | Higher; as a result of distribution |
+| **Communication link** | 'In-house'; e.g. coaxial cables, fibre-optics, ethernet | External; e.g. phone lines, microwave links, satellite channels |
+| **Ownership** | Single; usually a single organisation or individual | Multiple; essentially several interconnecting LANs |
+| **Communication cost** | Lower; simpler operation allows for reliability | Higher; some aspects of operation may be leased or unreliable |
 
-These differences show the difference in scale between LAN and WAN - while LAN is a small, interconnected collection of nodes usually operated by a single entity across a small area, WAN connects several LAN together to allow for wider, though less reliable, communication across multiple entities.
+These differences show the difference in scale between *LAN* and *WAN* - while LAN is a small, interconnected collection of nodes usually operated by a single entity across a small area, WAN connects several LAN together to allow for wider, though less reliable, communication across multiple entities.
 
 ## The Internet
 As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme.
@@ -367,6 +371,7 @@ A failed `ping` request typically looks like this:
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
 
 ## Tasks
+
 ### See how NFC works with NFC Tools
 *NB: this task will only work on NFC-enabled phones - if you can use contactless with your phone then you can try this Task.*
 
