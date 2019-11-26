@@ -1,5 +1,4 @@
 # Ansible
-
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
