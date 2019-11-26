@@ -12,10 +12,10 @@ These data links are established over cable media such as wires or optic cables,
 <!--MODULES_START-->
 ## Modules
 - [Frames](./modules/frames)
+- [The Internet & The Web](./modules/internet-and-web)
 - [MAC Address](./modules/mac-address)
 - [Models](./modules/models)
 - [Standards and Organisations](./modules/standards-and-organisations)
 - [TCP](./modules/tcp)
-- [The Internet](./modules/the-internet)
 - [UDP](./modules/udp)
 <!--MODULES_END-->
