@@ -1,5 +1,20 @@
 # The Internet
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [The Interconnected Network](#the-interconnected-network)
+	- [The World Wide Web](#the-world-wide-web)
+	- [Web access](#web-access)
+		- [URI](#uri)
+		- [URL](#url)
+		- [Encoding](#encoding)
+- [Tasks](#tasks)
+	- [Categorise each section of a long URL](#categorise-each-section-of-a-long-url)
+	- [Exploring why URL identifiers change](#exploring-why-url-identifiers-change)
+	- [Try sending a text to an email address](#try-sending-a-text-to-an-email-address)
+
+<!--TOC_END-->
 ## Overview
 A network is essentially a web of distributed communication between entities.
 
@@ -109,7 +124,6 @@ https://en.wikipedia.org/wiki/Romeo_%2B_Juliet
 
 ### Categorise each section of a long URL
 For this task, navigate to [this](https://www.smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1) Amazon item listing.
-
 
 ### Exploring why URL identifiers change 
 The URL in the previous exercise looks like this:
