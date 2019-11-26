@@ -11,7 +11,7 @@
 		- [Encoding](#encoding)
 - [Tasks](#tasks)
 	- [Categorise each section of a long URL](#categorise-each-section-of-a-long-url)
-	- [Exploring why URL identifiers change](#exploring-why-url-identifiers-change)
+	- [Explain why URL identifiers might change](#explain-why-url-identifiers-might-change)
 	- [Try sending a text to an email address](#try-sending-a-text-to-an-email-address)
 
 <!--TOC_END-->
