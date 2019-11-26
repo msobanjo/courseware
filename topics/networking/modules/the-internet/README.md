@@ -125,7 +125,7 @@ https://en.wikipedia.org/wiki/Romeo_%2B_Juliet
 ### Categorise each section of a long URL
 For this task, navigate to [this](https://www.smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1) Amazon item listing.
 
-### Exploring why URL identifiers change 
+### Explain why URL identifiers might change 
 The URL in the previous exercise looks like this:
 ```text
 https://www.smile.amazon.co.uk/gp/product/B07HRHM8F3/ref=ox_sc_saved_title_1?smid=A3P5ROKL5A1OLE&psc=1
