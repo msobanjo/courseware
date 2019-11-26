@@ -1,5 +1,17 @@
 # Network Types and Characteristics
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Network Types](#network-types)
+	- [Network Characteristics](#network-characteristics)
+	- [LAN vs WAN](#lan-vs-wan)
+- [Tasks](#tasks)
+	- [Characteristics - good practice](#characteristics--good-practice)
+	- [Characteristics - bad practice](#characteristics--bad-practice)
+	- [LAN and WAN use cases](#lan-and-wan-use-cases)
+
+<!--TOC_END-->
 ## Overview
 Networks come in many forms, depending on the situation in which you'd want to use them.
 
@@ -71,6 +83,7 @@ These differences help to explain the difference in scale between *LAN* and *WAN
  - *WAN* connects several *LAN* together to allow for wider, though less reliable, communication across multiple entities
 
 ## Tasks
+
 ### Characteristics - good practice
 Think about the six characteristics which a network should be able to exemplify.
 

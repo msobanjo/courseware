@@ -18,5 +18,6 @@ These data links are established over cable media such as wires or optic cables,
 - [Models](./modules/models)
 - [Standards and Organisations](./modules/standards-and-organisations)
 - [TCP](./modules/tcp)
+- [Network Types and Characteristics](./modules/types-&-characteristics)
 - [UDP](./modules/udp)
 <!--MODULES_END-->
