@@ -60,7 +60,7 @@ On *Linux*, to be able to run *Docker* commands without having to prefix them al
 
 Once you have added your user to the *docker* group, ensure that you restart your shell session so that the change takes effect:
 
-```shell script
+```shell
 # add yourself to the docker group, the remote script suggested above will
 # have already created the docker group for you
 sudo usermod -aG docker $(whoami)
@@ -83,7 +83,7 @@ Use a `docker run` command to start the *container*.
   The script in the *hello-world container* will create an output which describes what just happened.
 
 Run the following *docker* command (ignore the comment that starts with `#`):
-```shell script
+```shell
 # --rm flag removes the container when it exits or when the daemon exits, whichever happens first
 docker run --rm hello-world
 ```
