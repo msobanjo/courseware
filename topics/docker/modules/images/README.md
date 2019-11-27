@@ -3,6 +3,18 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Image layers](#image-layers)
+	- [Practical benefits](#practical-benefits)
+- [Image properties](#image-properties)
+	- [Repository](#repository)
+	- [Tag](#tag)
+	- [ID](#id)
+- [Managing images](#managing-images)
+	- [Searching](#searching)
+	- [Downloading](#downloading)
+	- [Uploading](#uploading)
+	- [Deleting](#deleting)
+	- [Renaming](#renaming)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
