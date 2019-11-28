@@ -102,6 +102,18 @@ If you wanted to download the image to have it in the *local repository* the com
 
 `docker pull java:8`
 
+### Renaming
+
+**Name** of the image effects where it will be uploaded and how it will be referenced, there are many reasons you might want to do this, the *docker tag* command effectively *renames* the *image*.
+
+This is an example of command signature:
+
+**docker tag <old-image>:<old-tag> <new-image>:<new-tag>**
+
+If you wanted to rename the Java 8 image and prepend it with your username then the command would look like:
+
+`docker tag java:8 apples1992/java:8`
+
 ### Uploading
 
 *Docker images* that you have created can also be **uploaded** using the `docker push` command, just provide the *image name*.
@@ -139,18 +151,6 @@ If you wanted to delete the Java 8 image then the command for it would be:
 
 `docker rmi java:8`
 
-### Renaming
-
-**Name** of the image effects where it will be uploaded and how it will be referenced, there are many reasons you might want to do this, the *docker tag* command effectively *renames* the *image*.
-
-This is an example of command signature:
-
-**docker tag <old-image>:<old-tag> <new-image>:<new-tag>**
-
-If you wanted to rename the Java 8 image and prepend it with your username then the command would look like:
-
-`docker tag java:8 apples1992/java:8`
-
 ## Tasks
 
 Try completing the following tasks, there will be solutions provided, although you might need to change some of the values to make them work for you.
@@ -170,5 +170,21 @@ Additionally, there is a *column* called **OFFICIAL** and **java** has a status 
 This means that this is the official *java* version you are looking for.
 
 ![docker search](https://imgur.com/MtTvXAe.jpg)
+
+</details>
+
+**Download the latest official *Java* image**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+`docker pull java`
+
+To check that you have downloaded the image, execute the following command:
+
+`docker images`
+
+![docker search](https://imgur.com/NWAu1Fx.jpg)
 
 </details>
