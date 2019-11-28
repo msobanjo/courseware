@@ -1,4 +1,13 @@
 # PAN & Bluetooth
+
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Bluetooth](#bluetooth)
+- [Tasks](#tasks)
+	- [Case Study: See how PAN works with Bluetooth tethering](#case-study-see-how-pan-works-with-bluetooth-tethering)
+
+<!--TOC_END-->
 ## Overview
 A **Personal Area Network (PAN)** is a network type based on a relatively short-wave, low-power radio frequency.
 
@@ -18,6 +27,7 @@ The network is so specific that both devices will **blacklist** everything for i
 The following **Case Study** will use your device's Bluetooth capabilities to show how it works.
 
 ## Tasks
+
 ### Case Study: See how PAN works with Bluetooth tethering
 *NB: this task will only work with Bluetooth-enabled phones and desktops.*
 

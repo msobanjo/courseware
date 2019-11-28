@@ -13,6 +13,7 @@ These data links are established over cable media such as wires or optic cables,
 ## Modules
 - [Network Architecture](./modules/architecture)
 - [Basic Networking Tools](./modules/basic-tools)
+- [PAN & Bluetooth](./modules/bluetooth)
 - [Frames](./modules/frames)
 - [MAC Address](./modules/mac-address)
 - [Models](./modules/models)
