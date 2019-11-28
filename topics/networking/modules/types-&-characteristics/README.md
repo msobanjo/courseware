@@ -10,6 +10,7 @@
 	- [How can a network exhibit good characteristics?](#how-can-a-network-exhibit-good-characteristics)
 	- [How might a network be inefficient?](#how-might-a-network-be-inefficient)
 	- [Think about LAN and WAN use cases](#think-about-lan-and-wan-use-cases)
+	- [Find your machine's GPS location](#find-your-machines-gps-location)
 
 <!--TOC_END-->
 ## Overview
