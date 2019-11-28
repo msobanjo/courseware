@@ -1,5 +1,12 @@
 # NFC
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+	- [Case Study: See how NFC works with NFC Tools](#case-study-see-how-nfc-works-with-nfc-tools)
+
+<!--TOC_END-->
 ## Overview
 **Near-Field Communication (NFC)** is a type of network designed for very small scenarios.
 
@@ -8,6 +15,7 @@ NFC utilises a small chip - usually embedded within something like a card, a mob
 The following **Case Study** uses an identity tag to see how this works in practice.
 
 ## Tasks
+
 ### Case Study: See how NFC works with NFC Tools
 *NB: this task will only work on NFC-enabled phones - if you can use contactless with your phone, then you can try this Task.*
 
@@ -32,4 +40,4 @@ The door reader is a **Proximity Coupling Device (PCD)**, while the tag is a **P
 3. A collision - where two or more tags respond to the door reader - may occur if there is more than one card in range. If a collision happens, the door reader will send out a **SELECT** request which includes a portion (**prefix**) of one of the tags' specific UIDs.
 4. If collisions still happen, the door reader will send out more and more specific SELECT signals, using longer UID prefixes, until only one tag responds.
 5. The selected tag will then respond with a **Select Acknowledgement (SAK)**, which activates the door reader. Our SAK contains the command `0x18`, which in this case will deactivate the electromagnets holding the door closed.
-6. The door reader will continue to be activated until it receives a **HALT** command from the tag. In our case, this happens within a second of the SAK being transmitted. 
+6. The door reader will continue to be activated until it receives a **HALT** command from the tag. In our case, this happens within a second of the SAK being transmitted.
