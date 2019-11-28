@@ -152,3 +152,18 @@ If you wanted to rename the Java 8 image and prepend it with your username then 
 `docker tag java:8 apples1992/java:8`
 
 ## Tasks
+
+Try completing the following tasks, there will be solutions provided, although you might need to change some of the values to make them work for you.
+
+**Find the latest official *Java* image **
+<details>
+
+<summary><b>Show solution</b></summary>
+
+`docker search java`
+
+Notice that there is a *column* called **OFFICIAL** and there is a **java** that has a status **OK** under the **OFFICIAL** column.  
+
+</details>
+
+
