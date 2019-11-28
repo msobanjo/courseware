@@ -305,7 +305,7 @@ To check that you have removed the images, execute the following command:
 
 </details>
 
-**Download the *Java* image from your *Docker hub* account **
+**Download the *Java* image from your *Docker hub* account**
 
 <details>
 
