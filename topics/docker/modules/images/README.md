@@ -201,6 +201,6 @@ To check that you have removed the image, execute the following command:
 
 `docker images`
 
-![docker search](https://imgur.com/AJ8Iye9.jpg)
+![docker search](https://imgur.com/tdXHSgB.jpg)
 
 </details>
