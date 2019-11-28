@@ -105,7 +105,7 @@ When choosing between the tweo network types, you will need to consider:
  - the *logical* size of the network
  - the *geographical* area the network will cover
 
- ### Find your machine's GPS location
+### Find your machine's GPS location
 Navigate to [this IP geolocation finder](https://www.iplocation.net/find-ip-address).
 
 Which address, for which node, is this service using to locate your machine?
