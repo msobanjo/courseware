@@ -155,6 +155,8 @@ If you wanted to delete the Java 8 image then the command for it would be:
 
 Try completing the following tasks, there will be solutions provided, although you might need to change some of the values to make them work for you.
 
+**NOTE**: the tasks are designed to be completed in the order they appear.
+
 **Find the latest official *Java* image**
 
 <details>
@@ -300,5 +302,25 @@ To check that you have removed the images, execute the following command:
 `docker images`
 
 ![docker check on images](https://imgur.com/3zPXvXY.jpg)
+
+</details>
+
+**Download the *Java* image from your *Docker hub* account **
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+To download the *java 8* image from your *Docker hub* replace the *tvaidotas* with your *username* and execute the following command:
+
+`docker pull tvaidotas:java:8`
+
+![docker hub download java](https://imgur.com/Aob9wet.jpg)
+
+To check that you have downloaded the image, execute the following command:
+
+`docker images`
+
+![docker hub image check](https://imgur.com/GTF19Sn.jpg)
 
 </details>
