@@ -112,5 +112,6 @@ For more examples and ideas, visit:
 ```
 <!--MODULES_START-->
 ## Modules
+- [Containers](./modules/containers)
 - [Images](./modules/images)
 <!--MODULES_END-->
