@@ -165,5 +165,3 @@ Try completing the following tasks, there will be solutions provided, although y
 Notice that there is a *column* called **OFFICIAL** and there is a **java** that has a status **OK** under the **OFFICIAL** column.  
 
 </details>
-
-
