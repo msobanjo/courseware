@@ -277,4 +277,28 @@ To check that you have pushed the image
 
 </details>
 
+**Delete the local images**
 
+<details>
+
+<summary><b>Show solution</b></summary>
+
+First, check what images are local by executing the following command:
+
+`docker images`
+
+![docker local images](https://imgur.com/UkYJ4pW.jpg)
+
+Remove the two images by executing the following command, change *tvaidotas* to your *Docker hub* username:
+
+`docker rmi java:8 tvaidotas/java:8`
+
+![docker delete both images](https://imgur.com/xtZEAWF.jpg)
+
+To check that you have removed the images, execute the following command:
+
+`docker images`
+
+![docker check on images](https://imgur.com/3zPXvXY.jpg)
+
+</details>
