@@ -12,9 +12,9 @@
 - [Managing images](#managing-images)
 	- [Searching](#searching)
 	- [Downloading](#downloading)
+	- [Renaming](#renaming)
 	- [Uploading](#uploading)
 	- [Deleting](#deleting)
-	- [Renaming](#renaming)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
