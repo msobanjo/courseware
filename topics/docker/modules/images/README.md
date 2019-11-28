@@ -204,3 +204,19 @@ To check that you have removed the image, execute the following command:
 ![docker search](https://imgur.com/tdXHSgB.jpg)
 
 </details>
+
+**Download the *java 8* image**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+`docker pull java:8`
+
+To check that you have downloaded the image, execute the following command:
+
+`docker images`
+
+![docker search](https://imgur.com/RQXTrQ1.jpg)
+
+</details>
