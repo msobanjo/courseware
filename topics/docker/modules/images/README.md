@@ -276,5 +276,3 @@ To check that you have pushed the image
 ![docker tag](https://imgur.com/iK60VEa.jpg)
 
 </details>
-
-
