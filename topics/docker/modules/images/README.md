@@ -236,3 +236,25 @@ To check that you have renamed the image, execute the following command:
 ![docker tag](https://imgur.com/zrGPuK5.jpg)
 
 </details>
+
+**Log in to *Docker hub* with your username**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+**REPLACE *tvaidotas* with your username**
+
+`docker login --username=tvaidotas`
+
+**You will be prompted for your password, make sure you enter it correctly**
+
+You will get a message saying that you're logged in successfully if you entered correct **username** and **password**.
+
+![docker login](https://imgur.com/boDz2Fq.jpg)
+
+</details>
+
+
+
+
