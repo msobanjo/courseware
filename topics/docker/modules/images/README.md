@@ -163,6 +163,12 @@ Try completing the following tasks, there will be solutions provided, although y
 
 `docker search java`
 
-Notice that there is a *column* called **OFFICIAL** and there is a **java** that has a status **OK** under the **OFFICIAL** column.  
+Notice in the image below, **java** is on line four. 
+
+Additionally, there is a *column* called **OFFICIAL** and **java** has a status **OK** under it.
+
+This means that this is the official *java* version you are looking for.
+
+![docker search](https://imgur.com/MtTvXAe.jpg)
 
 </details>
