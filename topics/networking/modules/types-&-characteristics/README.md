@@ -83,20 +83,19 @@ These differences help to explain the difference in scale between *LAN* and *WAN
  - *WAN* connects several *LAN* together to allow for wider, though less reliable, communication across multiple entities
 
 ## Tasks
-
-### Characteristics - good practice
+### How can a network exhibit good characteristics?
 Think about the six characteristics which a network should be able to exemplify.
 
 What do you think each characteristic would look like within a network which used *good practice*?
 
 In other words, how can a network be very good at displaying each characteristic?
 
-### Characteristics - bad practice
+### How might a network be inefficient?
 How can a network fail to exemplify each characteristic?
 
 What makes a network difficult to use for an end user, and how is this *bad practice*?
 
-### LAN and WAN use cases
+### Think about LAN and WAN use cases
 Think of a few cases where it would be better to use LAN and WAN.
 
 When choosing between the tweo network types, you will need to consider:
@@ -104,3 +103,8 @@ When choosing between the tweo network types, you will need to consider:
  - the *physical* size of the network
  - the *logical* size of the network
  - the *geographical* area the network will cover
+
+ ### Find your machine's GPS location
+Navigate to [this IP geolocation finder](https://www.iplocation.net/find-ip-address).
+
+Which address, for which node, is this service using to locate your machine?
