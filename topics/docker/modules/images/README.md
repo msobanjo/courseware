@@ -188,3 +188,19 @@ To check that you have downloaded the image, execute the following command:
 ![docker search](https://imgur.com/NWAu1Fx.jpg)
 
 </details>
+
+**Delete the *java* image**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+`docker rmi java`
+
+To check that you have removed the image, execute the following command:
+
+`docker images`
+
+![docker search](https://imgur.com/AJ8Iye9.jpg)
+
+</details>
