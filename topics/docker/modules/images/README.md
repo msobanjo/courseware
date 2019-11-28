@@ -254,7 +254,3 @@ You will get a message saying that you're logged in successfully if you entered 
 ![docker login](https://imgur.com/boDz2Fq.jpg)
 
 </details>
-
-
-
-
