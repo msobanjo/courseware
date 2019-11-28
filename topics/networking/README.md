@@ -12,6 +12,7 @@ These data links are established over cable media such as wires or optic cables,
 <!--MODULES_START-->
 ## Modules
 - [Network Architecture](./modules/architecture)
+- [ARP](./modules/arp)
 - [Basic Networking Tools](./modules/basic-tools)
 - [Frames](./modules/frames)
 - [MAC Address](./modules/mac-address)

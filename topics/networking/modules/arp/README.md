@@ -1,5 +1,17 @@
 # ARP
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [NIC and MAC](#nic-and-mac)
+- [Usage](#usage)
+- [Tasks](#tasks)
+	- [View the ARP table](#view-the-arp-table)
+		- [macOS, Linux, or Windows Subsystem for Linux](#macos-linux-or-windows-subsystem-for-linux)
+		- [Windows](#windows)
+	- [Use ARP spoofing to launch a MITM attack](#use-arp-spoofing-to-launch-a-mitm-attack)
+
+<!--TOC_END-->
 ## Overview
 The **Address Resolution Protocol (ARP)** is used to resolve **Media Access Control (MAC)** addresses to IP addresses.
 
@@ -61,7 +73,9 @@ Once **Node 2** receives this request, it will send an **ARP response** if the T
 ```
 
 ## Tasks
+
 ### View the ARP table
+
 #### macOS, Linux, or Windows Subsystem for Linux
 Open a terminal, then enter the following command:
 ```text
