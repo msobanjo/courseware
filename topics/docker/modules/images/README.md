@@ -255,6 +255,26 @@ You will get a message saying that you're logged in successfully if you entered 
 
 </details>
 
+**Push the java image to your Docker Hub**
 
+<details>
+
+<summary><b>Show solution</b></summary>
+
+First check that there is no image for *java* on your *Docker hub* account.
+
+![docker hub empty](https://imgur.com/QMnXUI0.jpg)
+
+Then push the image using the following command, but replace *tvaidotas* with your username:
+
+`docker push tvaidotas/java:8`
+
+![docker pushing java](https://imgur.com/AsNIcIY.jpg)
+
+To check that you have pushed the image
+
+![docker tag](https://imgur.com/iK60VEa.jpg)
+
+</details>
 
 
