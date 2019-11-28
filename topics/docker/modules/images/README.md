@@ -185,7 +185,7 @@ To check that you have downloaded the image, execute the following command:
 
 `docker images`
 
-![docker search](https://imgur.com/NWAu1Fx.jpg)
+![docker download java](https://imgur.com/NWAu1Fx.jpg)
 
 </details>
 
@@ -201,7 +201,7 @@ To check that you have removed the image, execute the following command:
 
 `docker images`
 
-![docker search](https://imgur.com/tdXHSgB.jpg)
+![docker delete](https://imgur.com/tdXHSgB.jpg)
 
 </details>
 
@@ -217,6 +217,22 @@ To check that you have downloaded the image, execute the following command:
 
 `docker images`
 
-![docker search](https://imgur.com/RQXTrQ1.jpg)
+![docker download java 8](https://imgur.com/RQXTrQ1.jpg)
+
+</details>
+
+**Rename the Java 8 Docker image so that it is prefixed with your *Docker hub* name**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+`docker tag java:8 tvaidotas/java:8`
+
+To check that you have renamed the image, execute the following command:
+
+`docker images`
+
+![docker tag](https://imgur.com/zrGPuK5.jpg)
 
 </details>
