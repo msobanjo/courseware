@@ -7,9 +7,9 @@
 	- [Network Characteristics](#network-characteristics)
 	- [LAN vs WAN](#lan-vs-wan)
 - [Tasks](#tasks)
-	- [Characteristics - good practice](#characteristics--good-practice)
-	- [Characteristics - bad practice](#characteristics--bad-practice)
-	- [LAN and WAN use cases](#lan-and-wan-use-cases)
+	- [How can a network exhibit good characteristics?](#how-can-a-network-exhibit-good-characteristics)
+	- [How might a network be inefficient?](#how-might-a-network-be-inefficient)
+	- [Think about LAN and WAN use cases](#think-about-lan-and-wan-use-cases)
 
 <!--TOC_END-->
 ## Overview
@@ -83,6 +83,7 @@ These differences help to explain the difference in scale between *LAN* and *WAN
  - *WAN* connects several *LAN* together to allow for wider, though less reliable, communication across multiple entities
 
 ## Tasks
+
 ### How can a network exhibit good characteristics?
 Think about the six characteristics which a network should be able to exemplify.
 
