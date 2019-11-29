@@ -16,22 +16,22 @@
 
 <!--TOC_END-->
 ## Overview
-A network is essentially a web of distributed communication between entities.
+A **network** is essentially a web of distributed communication between entities.
 
 At the lowest level, networks facilitate the sharing of information.
 
-So far, we have looked at the **internal** transfer for information across a single network.
+So far, previous modules covered **internal** transfer of information across a *single network*.
 
-However, communication also happens between entirely separate networks.
+However, information can be exchanged between entirely separate networks.
 
-These networks have to connect to each other to share information, too.
+There is a requirement for the networks to be connected with each other, before they can share the information.
 
 Therefore, the **external** transfer of information is just as crucial for allowing communication between entities.
 
 ## The Interconnected Network
-The most well-known network is the **Internet**, which, though well-known, is often poorly-understood.
+The most well-known *network* is the **Internet**, which, though well-known, is often poorly-understood.
 
-As the largest telecommunications network (its name is literally shortened from **inter**connected **net**work), the Internet is the best example of a WAN taken to its logical extreme.
+As the largest telecommunications network *internet* (name is an abbreviation of **inter**connected **net**work), the *internet* is the best example of a WAN taken to its logical extreme.
 
 It arose out of a need for institutions to be accessible to, communicate with, and share information with each other.
 
@@ -45,8 +45,8 @@ As the decentralised and distributed global system of interconnected networks, i
 
 ### The World Wide Web
 Contrary to popular belief, the Internet and the **World Wide Web** are not the same thing:
- - The Internet is a *networking infrastructure* - a 'network of networks' in which any computer can communicate with another computer.
- - The Web is an *information-sharing system* which uses the Internet as its base.
+ - The **internet** is a *networking infrastructure* - a 'network of networks' in which any computer can communicate with another computer.
+ - The **WWW web** is an *information-sharing system* which uses the *internet* as its base.
 
 Web services mostly use **H**yper**T**ext **T**ransfer **P**rotocol **(HTTP)** to transmit data.
 
@@ -54,25 +54,27 @@ Web services mostly use **H**yper**T**ext **T**ransfer **P**rotocol **(HTTP)** t
 
 Web pages are nearly always written in **H**yper**T**ext **M**arkup **L**anguage **(HTML)**.
 
-However, the Web itself is only one of many vehicles which use the Internet as its basis.
+However, the Web itself is only one of many vehicles which use the *internet* as its basis.
 
 ### Web access
-Everything on the Web has its own unique address. In order to access that data, you will need that address to do it.
+Everything on the *Web* has its own unique address. 
 
-Every web address adheres to the same standard: **U**niform **R**esource **I**ndicators **(URI)**.
+In order to access that data, you will need that address to do it.
 
-Just like postal addresses, every Web resource must have a specific string of characters which unambiguously define where that particular object is.
+Every *web address* adheres to the same standard: **U**niform **R**esource **I**ndicators **(URI)**.
+
+Just like postal addresses, every *Web* resource must have a specific string of characters which unambiguously define where that particular object is.
 
 #### URI
-URI syntax consists of a hierarchical sequence of five components:
+*URI* syntax consists of a hierarchical sequence of five components:
 ```text
   scheme :// [authority] path ? [query] # [fragment]
 ```
-where the authority component divides into three subcomponents:
+Where the authority component divides into three sub-components:
 ```text
   [userinfo] @ host : [port]
 ```
-Each URI begins with a **scheme**, and is followed by any **identifiers** which can be within that scheme.
+Each *URI* begins with a **scheme**, and is followed by any **identifiers** which can be within that scheme.
 
 Depending on the **scheme**, a URI can take multiple forms:
 ```text
