@@ -3,8 +3,7 @@
     "prerequisites": [
         "package-managers/pip-introduction",
         "linux/path-environment-variable"
-    ],
-    "supportedPlatforms": [
+    ], "supportedPlatforms": [
         "ubuntu-18"
     ]
 }
@@ -77,7 +76,7 @@ Here we have a playbook which installs a basic NGINX web server so that we can u
 ### Run the Playbook
 The `ansible-playbook` command can be used to run our playbook and install NGINX on the server:
 ```bash
-ansible-playbook playbok.yml
+ansible-playbook playbook.yml
 ```
 
 ### Check NGINX has been Installed Correctly
