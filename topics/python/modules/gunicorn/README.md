@@ -47,7 +47,8 @@ gunicorn app:app
 The amount of workers can be specified with the `-w` or `--workers` options.
 The Gunicorn documentation reccommends that you use 2-4 workers per core the server you are using has:
 ```bash
-gunicorn -w 4 app:app
+# gunicorn --workers [NUMBER]  app:app
+gunicorn --workers 4 app:app
 ```
 
 ### Specify Server Socket to Bind to
@@ -63,6 +64,7 @@ gunicorn --bind=0.0.0.0:8001 app:app
 ### Working Directory
 Gunicorn can operate in a specified directory using the `--chdir` option, this would typically be the application root:
 ```bash
+# gunicorn --chdir=[DIRECTORY] app:app
 gunicorn --chdir=/opt/project app:app
 ```
 
@@ -72,3 +74,6 @@ The Gunicorn server can be configured to use certificates by providing the `--ce
 # gunicorn --certifile=[CERT_FILE] --keyfile=[KEY_FILE]
 gunicorn --certifile=~/server.crt --keyfile=~/server.key
 ```
+
+### SystemD Service Configuration
+
