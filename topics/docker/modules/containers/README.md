@@ -13,10 +13,12 @@ This module discusses common properties for containers and how to manage them.
 
 ## Container properties
 
-Each container is created from an *image*, once created it contains properties, the most important ones are:
+Each container is created from an *image*, once created it contains the following properties:
 - **container id**
 - **image**
 - **command**
+- **created**
+- **status**
 - **ports**
 - **names**
 
@@ -34,6 +36,14 @@ This goes back to the *images* you worked with in the *Images* module.
 
 Every *container* needs to have a *main process* running, the **command** property shows which *script*, *command* or *executable* was run to create this *main process*.
 
+### Created
+
+This column have the time of when the container was ran.
+
+### Status
+
+Status signifies whether the container is still running, or that is has already stopped.
+
 ### Ports
 
 **Ports** column displays what *ports* have been *published* or *exposed*. 
@@ -48,3 +58,212 @@ Unlike *published ports*, *exposed ports* don’t alter anything as far as the n
 
 By *default*, *Docker* will assign a *generated name* if one is not provided.
 
+## Managing containers
+
+In order to manage the containers there are a couple of commands that are crucial to know.
+
+### View running containers
+
+The ps command can give us an  overview of the running containers.
+
+The full command would be:
+
+`docker ps`
+
+### View all containers
+
+Only the containers that are running are shown with the **ps** command alone, we can view all of the containers, even the stopped ones as well by passing the **-a** option. 
+
+The full command would be:
+
+`docker ps -a`
+
+### Show only the container IDs
+
+If we want to reference multiple containers, the IDs can be displayed with the -q (quiet) option
+
+The full command would be:
+
+`docker ps -q`
+
+### Running a container
+
+Containers can be created from images by using the run command. 
+
+Keep in mind, if the image your trying to run doesn’t exist on your machine locally, Docker will attempt to download it from Docker Hub (docker.io).
+
+Command signature looks like this:
+
+**docker run <image>:<tag>**
+
+Here is an example command:
+
+`docker run nginx`
+
+### Detach the Container Logs
+
+In many cases we don’t want the container logs being outputted once a run command has been issued, mainly because we can’t access the terminal when they do.
+
+In order to do this **-d** flag needs to be used, here's an example of it in use:
+
+`docker run -d nginx`
+
+### Publish a Port
+
+Publishing a port maps a port inside of the container to a port on the host so that it is accessible from outside of the Docker engine.
+
+Command signature looks like this:
+
+**-p <host-port>:<container-port>**
+
+Here is an example command:
+
+`docker run -d -p 80:80 nginx`
+
+### Set the name of a container
+
+To avoid Docker generating a name for you, a name can be specified. Giving a custom name for a container can make it much easier to reference in other commands.
+
+Command signature looks like this:
+
+**--name <container-name>**
+
+Here is an example command:
+
+`docker run -d -p 80:80 --name nginx nginx`
+
+### Execute a Command on a Running Container
+
+Executing commands on a container can be useful for completing simple tasks, anything that is a single, short command.
+
+Command signature looks like this:
+
+**exec <container-name> <command>**
+
+Here is an example command:
+
+`docker exec nginx echo hi`
+
+### Interactive Shell on a Container
+
+For more in depth debugging or for development, gaining shell access to a container is very useful. 
+
+The executable that you will want to run on the container will need to be a shell interpreter, most of the time this is **bash**. 
+
+However some containers do not have bash installed so you will have to use shell instead **(sh)**.
+
+Command signature looks like this:
+
+**exec -it <container-name> bash**
+
+Here is an example command:
+
+`docker exec -it nginx bash` 
+
+Or
+
+`docker exec -it nginx sh`
+
+### Stop a Container
+
+Containers can be in a stopped or running state.
+
+Command signature looks like this:
+
+**stop <container-name>**
+
+Here is an example command:
+
+`docker stop nginx` 
+
+### Remove a Container
+
+Once a container has been stopped it still exists, it’s good housekeeping to remove the containers that you no longer need. 
+
+A container needs to be stopped before it can be removed. 
+
+If you can’t remember the containers name, you can look up all the running containers or all containers in general with the previously used **docker ps** or **docker ps -a** commands.
+
+Command signature looks like this:
+
+**rm <container-name>**
+
+Here is an example command:
+
+`docker rm nginx` 
+
+### Start a Container
+
+Keep in mind if the main process for the container fails then it will automatically stop, no matter how many times you keep starting it. 
+
+If you forgot the name of the container you can always check with the **docker ps** command.
+
+Command signature looks like this:
+
+**start <container-name>**
+
+Here is an example command:
+
+`docker start nginx`
+
+### Rename a Container
+
+If you made a typo or simply forgot to provide a name for you container then you can still rename it.
+
+Command signature looks like this:
+
+**rename <old-container-name> <new-container-name>**
+
+Here is an example command:
+
+`docker rename naughty_dubinsky nginx`
+
+### Copy Files Between the Host and the Container
+
+When developing and debugging being able to copy files between the container and host can be very useful. 
+
+For example copying a log file from the container, or copying configurations into the container.
+
+#### Copy from the host
+
+Command signature looks like this:
+
+**cp <host-location> <container-name>:<container-location>**
+
+Here is an example command:
+
+`cp /etc/passwd nginx:/tmp/test`
+
+#### Copy from the container
+
+Command signature looks like this:
+
+**cp <container-name>:<container-location> <host-location>**
+
+Here is an example command:
+
+`cp nginx:/etc/passwd /tmp/test`
+
+### View Container Logs
+
+To get a better understanding why a service is being unresponsive or a container is failing you can view the logs.
+
+Command signature looks like this:
+
+**logs <container-name>**
+
+Here is an example command:
+
+`docker logs nginx`
+
+### Stopping and Removing all Containers (in bash)
+
+Sometimes you might need to start from a clean slate with all the containers that are running, we can use command substitution in bash for this:
+
+#### Stop all Containers
+
+`docker stop $(docker ps -qa)`
+
+#### Remove all Containers
+
+`docker rm $(docker ps -qa)`
