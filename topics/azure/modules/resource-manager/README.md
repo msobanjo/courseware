@@ -80,7 +80,7 @@ and much more!
 
 ## Task
 
-In this task, you are going to leverage a publicly available ARM template to create a web app:
+In this task, you are going to leverage a publicly available ARM template to create the infrastructure needed for a web app:
 
 1. Create a new Resource Group in the Azure Portal:
 
@@ -96,6 +96,6 @@ In this task, you are going to leverage a publicly available ARM template to cre
 
 6. Agree to the terms and conditions and click "Purchase".
 
-7. After a few minutes, you should see that, inside your resource group, a web application has been deployed just from one template!
+7. After a few minutes, you should see that, inside your resource group, the infrastructure needed to deploy a Windows web application has been created just from one template!
 
 8. To clean up, click "Delete resource group" from inside the resource group screen.
