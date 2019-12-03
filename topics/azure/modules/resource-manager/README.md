@@ -3,9 +3,9 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Benefits](#benefits)
 
 <!--TOC_END-->
-
 ## Overview
 
 Azure Resource Manager is the deployment and management service in Azure.
