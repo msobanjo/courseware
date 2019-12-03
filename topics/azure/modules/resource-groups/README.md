@@ -98,6 +98,16 @@ When you delete a resource group, everything inside it will be deleted!
 
 This is a great way of cleaning up, but make sure you want to delete every resource inside the group before deleting it.
 
+## Other Considerations
+
+* Each resource can only exist in **one** resource group
+
+* You can add or remove a resource to a group at any time
+
+* You can move a resource from one group to another
+
+* A resource group can contain resources located in different regions
+
 ## Task
 
 It's time for you to create your own resource group from the Azure Portal:
