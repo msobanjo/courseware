@@ -77,7 +77,8 @@ gunicorn --certifile=~/server.crt --keyfile=~/server.key
 ```
 
 ### SystemD Service Configuration
-A service script can be configured like this:
+A service script can be configured like below, the application in this case is called `flask-practice` and is installed the service users home folder (`/home/bob`).
+There is an `application` subdirectory with the application defined as `app` in the `application/__init__.py` file.
 ```service
 [Unit]
 Description=Flask Practice Server
