@@ -9,6 +9,7 @@
 	- [Portal](#portal)
 	- [CLI](#cli)
 - [Remember](#remember)
+- [Other Considerations](#other-considerations)
 - [Task](#task)
 
 <!--TOC_END-->
