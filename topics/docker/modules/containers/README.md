@@ -302,6 +302,8 @@ Sometimes you might need to start from a clean slate with all the containers tha
 
 These tasks are meant to be done in the order they appear, otherwise the solutions wouldn't work.
 
+Please use a bash terminal for the tasks.
+
 **Run a jenkins container**
 
 <details>
