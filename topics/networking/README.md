@@ -14,6 +14,7 @@ These data links are established over cable media such as wires or optic cables,
 - [Network Architecture](./modules/architecture)
 - [Basic Networking Tools](./modules/basic-tools)
 - [Frames](./modules/frames)
+- [IP](./modules/ip)
 - [MAC Address](./modules/mac-address)
 - [Models](./modules/models)
 - [Standards and Organisations](./modules/standards-and-organisations)
