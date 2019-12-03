@@ -296,3 +296,52 @@ Sometimes you might need to start from a clean slate with all the containers tha
 #### Remove all Containers
 
 `docker rm $(docker ps -qa)`
+
+## Tasks
+
+These tasks are meant to be done in the order they appear, otherwise the solutions wouldn't work.
+
+**Run a jenkins container**
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker run -d -p 8080:8080 jenkins`
+
+This command will run a jenkins container with a default name, map port 8080 to 8080 and return the terminal control.
+
+To check that the container is running execute:
+
+`docker ps`
+
+</details>
+
+**Name jenkins container jenkins**
+
+<details>
+
+<summary>Expand solution</summary>
+
+Find the default name of your container by executing:
+
+`docker ps`
+
+Change the name of the docker container to jenkins (replace the  to the default name of your container)
+
+`docker rename youthful_pare jenkins`
+
+To check that renaming was completed, execute the following command:
+
+`docker ps`
+
+Additionally, within your browser navigate to the following address:
+
+`localhost:8080`
+
+You should get the jenkins welcoming page.
+
+![jenkins welcome page](https://imgur.com/2ZPIKvd.jpg)
+
+</details>
+
