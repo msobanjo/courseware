@@ -32,6 +32,7 @@
 	- [Stopping and Removing all Containers (in bash)](#stopping-and-removing-all-containers-in-bash)
 		- [Stop all Containers](#stop-all-containers)
 		- [Remove all Containers](#remove-all-containers)
+- [Tasks](#tasks)
 
 <!--TOC_END-->
 ## Overview
@@ -344,4 +345,3 @@ You should get the jenkins welcoming page.
 ![jenkins welcome page](https://imgur.com/2ZPIKvd.jpg)
 
 </details>
-
