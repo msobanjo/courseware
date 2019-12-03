@@ -3,6 +3,13 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Resource Groups on the Portal](#resource-groups-on-the-portal)
+- [Resource Groups on the CLI](#resource-groups-on-the-cli)
+- [Cleaning Up](#cleaning-up)
+	- [Portal](#portal)
+	- [CLI](#cli)
+- [Remember](#remember)
+- [Task](#task)
 
 <!--TOC_END-->
 ## Overview
@@ -104,4 +111,3 @@ It's time for you to create your own resource group from the Azure Portal:
 7. Review and create the group
 8. Check it is created in the resource group page
 9. Delete the resource group
-
