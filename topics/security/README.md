@@ -1,5 +1,13 @@
 # Security
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Attacks](#attacks)
+- [Access](#access)
+- [Modules](#modules)
+
+<!--TOC_END-->
 ## Overview
 When we refer to **security** in modern computing, we tend to think about two things:
  - how secure information is against **attacks**
@@ -25,8 +33,6 @@ Attacks on information can be classified by *origin point*:
   - **constructive** - an attack is made with the intent of exposing holes within a security system, such as when stress-testing
 
 ## Access
-
-
 <!--MODULES_START-->
 ## Modules
 - [Basics](./modules/basics)
