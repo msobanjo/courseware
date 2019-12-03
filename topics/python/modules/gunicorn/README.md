@@ -76,4 +76,19 @@ gunicorn --certifile=~/server.crt --keyfile=~/server.key
 ```
 
 ### SystemD Service Configuration
-
+A service script can be configured like this:
+```service
+[Unit]
+Description=Flask Practice Server
+[Service]
+User=bob
+ExecStart=/bin/bash -c 'cd ${HOME}/flask-practice && \
+	source ./venv/bin/activate && \
+	source ${HOME}/.env && \
+	gunicorn \
+	--bind=0.0.0.0:8001 \
+	--workers=4 \
+	application:app'
+[Install]
+WantedBy=multi-user.target
+```
