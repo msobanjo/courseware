@@ -3,6 +3,15 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Images](#images)
+- [Why VMs?](#why-vms)
+- [Demo](#demo)
+	- [Linux VM](#linux-vm)
+	- [Windows VM](#windows-vm)
+- [Connecting to the VMs](#connecting-to-the-vms)
+	- [Linux](#linux)
+	- [Windows](#windows)
+- [Task](#task)
 
 <!--TOC_END-->
 ## Overview
