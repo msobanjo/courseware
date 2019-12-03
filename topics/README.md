@@ -31,6 +31,8 @@ A computer network is a digital telecommunications network which allows nodes to
 Nginx is a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.
 ## PowerShell [&xrarr;](./powershell)
 PowerShell is a task-based command-line shell and scripting language built on .NET.
+## Python [&xrarr;](./python)
+Python is an interpreted language, implemented at a high-level and for general-purpose programming.
 ## Terraform [&xrarr;](./terraform)
 
 ## Traceroute [&xrarr;](./traceroute)
