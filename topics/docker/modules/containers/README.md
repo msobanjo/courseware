@@ -431,7 +431,6 @@ It should look like this:
 
 ![nginx main](https://imgur.com/10M4zLe.jpg)
 
-
 If you're working from a terminal, you can use the following command:
 
 `curl http://localhost:80`
