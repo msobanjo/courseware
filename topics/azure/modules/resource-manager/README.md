@@ -3,7 +3,11 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [Benefits](#benefits)
+- [The Portal](#the-portal)
+- [Benefits of ARM](#benefits-of-arm)
+- [Working with ARM to manage resources](#working-with-arm-to-manage-resources)
+- [Other Features](#other-features)
+- [Task](#task)
 
 <!--TOC_END-->
 ## Overview
@@ -95,4 +99,3 @@ In this task, you are going to leverage a publicly available ARM template to cre
 7. After a few minutes, you should see that, inside your resource group, a web application has been deployed just from one template!
 
 8. To clean up, click "Delete resource group" from inside the resource group screen.
-
