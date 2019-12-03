@@ -345,3 +345,118 @@ You should get the jenkins welcoming page.
 
 </details>
 
+**View jenkins container logs**
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker logs jenkins`
+
+</details>
+
+**View jenkins initial administrator password**
+
+Show the contents of the **/var/jenkins_home/secrets/initialAdminPassword** file in the Jenkins container
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`
+
+The password that was printed back for you is the one that has to be used the first time you will log in to jenkins.
+
+</details>
+
+**Copy jenkins initial administrator password**
+
+Copy the **/var/jenkins_home/secrets/initialAdminPassword** file to your machine
+
+<details>
+
+<summary>Expand solution</summary>
+
+**Linux solution**
+
+You might need to use `sudo` to elevate your privileges, assuming you're on a linux machine to execute the next command:
+ 
+`sudo docker cp jenkins:/var/jenkins_home/secrets/initialAdminPassword /`
+
+To check that the file was copied execute the following command:
+
+`ls /`
+
+**Windows solution**
+
+If you're running docker on windows, make sure you're using a bash terminal.
+
+Additionally run Linux docker containers.
+
+Replace `tadas` with your windows user name in the following command:
+
+`docker cp jenkins:/var/jenkins_home/secrets/initialAdminPassword C:\Users\tadas\Desktop\`
+
+</details>
+
+**Run an NGINX container**
+
+Run an NGINX container, forward port 80 on the container to 80 on the host machine
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker run -d -p 80:80 --name nginx nginx`
+
+This command returns the terminal back, maps port 80 to 80, gives a name to the container.
+
+To check that the container is running execute the following command:
+
+`docker ps`
+
+</details>
+
+**Access the NGINX service through a browser**
+
+<details>
+
+<summary>Expand solution</summary>
+
+1. Open your browser
+2. Go to the http://localhost:80
+
+It should look like this:
+
+![nginx main](https://imgur.com/10M4zLe.jpg)
+
+
+If you're working from a terminal, you can use the following command:
+
+`curl http://localhost:80`
+
+It should look like this:
+
+![nginx main](https://imgur.com/uPrTWC6.jpg)
+
+</details>
+
+**Stop all of the containers with one command**
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker stop $(docker ps -qa)`
+
+</details>
+
+**Remove all of the containers with one command**
+
+<details>
+
+<summary>Expand solution</summary>
+
+`docker rm $(docker ps -qa)`
+
+</details>
