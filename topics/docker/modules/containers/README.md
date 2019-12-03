@@ -123,7 +123,7 @@ Keep in mind, if the image your trying to run doesn’t exist on your machine lo
 
 Command signature looks like this:
 
-**docker run <image>:<tag>**
+`docker run <image>:<tag>`
 
 Here is an example command:
 
@@ -143,7 +143,7 @@ Publishing a port maps a port inside of the container to a port on the host so t
 
 Command signature looks like this:
 
-**-p <host-port>:<container-port>**
+`-p <host-port>:<container-port>`
 
 Here is an example command:
 
@@ -155,7 +155,7 @@ To avoid Docker generating a name for you, a name can be specified. Giving a cus
 
 Command signature looks like this:
 
-**--name <container-name>**
+`--name <container-name>`
 
 Here is an example command:
 
@@ -167,7 +167,7 @@ Executing commands on a container can be useful for completing simple tasks, any
 
 Command signature looks like this:
 
-**exec <container-name> <command>**
+`exec <container-name> <command>`
 
 Here is an example command:
 
@@ -183,7 +183,7 @@ However some containers do not have bash installed so you will have to use shell
 
 Command signature looks like this:
 
-**exec -it <container-name> bash**
+`exec -it <container-name> bash`
 
 Here is an example command:
 
@@ -199,7 +199,7 @@ Containers can be in a stopped or running state.
 
 Command signature looks like this:
 
-**stop <container-name>**
+`stop <container-name>`
 
 Here is an example command:
 
@@ -215,7 +215,7 @@ If you can’t remember the containers name, you can look up all the running con
 
 Command signature looks like this:
 
-**rm <container-name>**
+`rm <container-name>`
 
 Here is an example command:
 
@@ -229,7 +229,7 @@ If you forgot the name of the container you can always check with the **docker p
 
 Command signature looks like this:
 
-**start <container-name>**
+`start <container-name>`
 
 Here is an example command:
 
@@ -241,7 +241,7 @@ If you made a typo or simply forgot to provide a name for you container then you
 
 Command signature looks like this:
 
-**rename <old-container-name> <new-container-name>**
+`rename <old-container-name> <new-container-name>`
 
 Here is an example command:
 
@@ -257,7 +257,7 @@ For example copying a log file from the container, or copying configurations int
 
 Command signature looks like this:
 
-**cp <host-location> <container-name>:<container-location>**
+`cp <host-location> <container-name>:<container-location>`
 
 Here is an example command:
 
@@ -267,7 +267,7 @@ Here is an example command:
 
 Command signature looks like this:
 
-**cp <container-name>:<container-location> <host-location>**
+`cp <container-name>:<container-location> <host-location>`
 
 Here is an example command:
 
@@ -279,7 +279,7 @@ To get a better understanding why a service is being unresponsive or a container
 
 Command signature looks like this:
 
-**logs <container-name>**
+`logs <container-name>`
 
 Here is an example command:
 
