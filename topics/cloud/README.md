@@ -20,6 +20,7 @@ Three of the biggest cloud vendors in the tech industry today are:
 - [Cloud Benefits](./modules/cloud-benefits)
 - [Cloud Concepts](./modules/cloud-concepts)
 - [Cloud Enabling Technologies](./modules/cloud-enabling-technologies)
+- [Comparing Cloud service models: IaaS, PaaS, SaaS](./modules/iaas-paas-saas)
 - [Infrastructure As A Service (IaaS)](./modules/infrastructure-as-a-service)
 - [Platform as a Service (PaaS)](./modules/platform-as-a-service)
 - [Software-as-a-Service (SaaS)](./modules/software-as-a-service)
