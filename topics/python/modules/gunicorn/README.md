@@ -11,6 +11,7 @@
 	- [Specify Server Socket to Bind to](#specify-server-socket-to-bind-to)
 	- [Working Directory](#working-directory)
 	- [TLS](#tls)
+	- [SystemD Service Configuration](#systemd-service-configuration)
 
 <!--TOC_END-->
 ## Overview
