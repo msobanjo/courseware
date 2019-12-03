@@ -2,7 +2,6 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Contents](#contents)
 	- [Description](#description)
 	- [Business scenarios](#business-scenarios)
 	- [Advantages](#advantages)
