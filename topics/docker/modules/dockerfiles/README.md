@@ -111,7 +111,7 @@ We'll give the new image name `ournginx`, and the command to build from *Dockerf
 
 </details>
 
-**Run *ourimage* image on port 80 **
+**Run *ournginx* image on port 80 **
 
 <details>
 
@@ -119,7 +119,7 @@ We'll give the new image name `ournginx`, and the command to build from *Dockerf
 
 The command to run the image and map the port 80 is:
 
-`docker run -d -p 80:80 --name nginx ourimage`
+`docker run -d -p 80:80 --name nginx ournginx`
 
 </details>
 
@@ -133,7 +133,7 @@ In order to test the image is running correctly, navigate your browser to `local
 
 You should see the following:
 
-![nginx page](https://imgur.com/10M4zLe.jpg)
+![nginx page](https://imgur.com/BV4buK0.jpg)
 
 If you're using a VM in the cloud, execute the following command:
 
@@ -141,7 +141,7 @@ If you're using a VM in the cloud, execute the following command:
 
 You should see the following image:
 
-![nginx page](https://imgur.com/uPrTWC6.jpg)
+![nginx page](https://imgur.com/zOswi3z.jpg)
 
 </details>
 
