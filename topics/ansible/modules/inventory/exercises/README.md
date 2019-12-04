@@ -11,8 +11,13 @@ To start working with the fundamental concepts of Ansible when building Playbook
 ## Task
 ### Look at Modules that exist and what we can do with them.
 - You will need to use one of these modules in order to complete the next task, navigate to the Ansible Module Documentation and look at the selection that is available
+<<<<<<< HEAD
 
 ### Writing simple YAML Playbooks
 - Create a simple Playbook that makes use of the Git module to download the following project:
+=======
+### Writing simple YAML Playbooks
+Create a simple Playbook that makes use of the Git module to download the following project:
+>>>>>>> 2aef3f76a4ada808ee46ff231d66b1501db850b8
 
 https://github.com/Matt25969/SelfReflection
