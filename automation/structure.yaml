@@ -1,0 +1,19 @@
+- match: 'README.md'
+  type: file
+- match: '[a-zA-Z0-9-]*'
+  type: folder
+  children:
+  - match: 'README.md'
+    type: file
+  - match: 'modules'
+    type: folder
+    children:
+    - match: 'README.md'
+    - match: '[a-zA-Z0-9-]*'
+      type: folder
+      children:
+      - match: 'README.md'
+        type: file
+      - match: 'resources'
+        type: folder
+
