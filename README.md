@@ -1,5 +1,5 @@
 # Notes
-Centralised project for learning Cloud and DevOps Topics (just getting started).
+Centralised project for learning Cloud and DevOps Topics.
 <!--TOC_START-->
 ## Contents
 - [Repository Forking & Rebasing](#repository-forking--rebasing)
@@ -9,6 +9,52 @@ Centralised project for learning Cloud and DevOps Topics (just getting started).
 		- [Local Setup](#local-setup)
 
 <!--TOC_END-->
+## Where to start?
+To start using this Project to develop your knowledge, you need to know how best to use this Project.
+What you need to understand starting out is that the majority of the content is described in README.md files, you can read these easily directly on GitHub.
+
+Above this README.md is a list of the files included in the Repository, your main focus should be the **topics** folder.
+Select this now.
+
+Here you will see the topics that exist within the project.
+Each Topic has its own directory, some are very broad (aws) whilst some are more focused (wireshark).
+When you are looking for material to learn from you should be looking at **all** the topics that are available here.
+Select one of these topics, for our example now we will be using the **powershell** topic.
+
+The README.md in this directory will describe various things, however there is a common high level-structure.
+
+### Contents
+
+This will describe all the sections in this document, including those that might exist which we won't cover here.
+
+### Overview
+
+A simple overview of the tool or service you will be looking at.
+
+### Modules
+
+A list of all the modules on offer within this topic.
+**This is where you will find most of the content on offer.**
+
+Select one of these Modules, for our example we will be selecting the **Introduction** module.
+
+In most cases you will find a single README.md, this is where you will find the information for this module.  As a general rule the module README.md will follow the structure below.
+ 
+### Contents
+
+This will describe all the sections in this document, including those that might exist which we won't cover here.
+
+### Overview
+
+A simple overview of the the specific module, usually detailing what you can expect to learn from this module.
+
+### Tasks
+
+For most of the modules there will be a task for you to perform, this can be a short guided tutorial, or a more problem-solving driven exercise.
+
+In summary there is a vast wealth of information available in this project, please take the time to look through the topics that might apply to you.
+
+
 ## Repository Forking & Rebasing
 It's recommended to fork this repository to benefit from the examples and exercises.
 To handle updates from this main repository on your forked one, you can rebase to update any changes:
