@@ -47,3 +47,88 @@ You can also specify an *Image Name*, *Tag* & *Repository*, here's an example of
 `docker build -t myapp:latest .`
 
 ## Tasks
+
+This exercise will get you to take the *NGINX Docker Image* and change the default *index.html* file that is served. 
+
+This change will be packed into your own *Docker Image* that you can run and view the changes for yourself.
+
+Please complete the tasks in the order they appear, otherwise will not work.
+
+Additionally, please use a bash terminal.
+
+**Create a new directory *dockerfile_exercises***
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+In order to create a new folder with the name `dockerfile_exercises` execute the following command:
+
+`mkdir dockerfile_exercises`
+
+After creating the directory, change your current directory to the new one by executing:
+
+`cd dockerfile_exercises`
+
+</details>
+
+**Make a Dockerfile**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+Set your terminals working directory to the newly created `dockerfile_exercises`
+
+Then execute the following command to create a new file:
+
+`touch Dockerfile` 
+
+To make sure file is there, run the following command:
+
+`ls`
+
+Place the following contents within the `Dockerfile`:
+
+```dockerfile
+FROM nginx:latest
+RUN printf "My Custom NGINX Image\n" > /usr/share/nginx/html/index.html
+```
+
+</details>
+
+**Build the image from Dockerfile**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+Make sure your terminals working directory is set to `dockerfile_exercises`
+
+We'll give the new image name `ournginx`, and the command to build from *Dockerfile* and give it a suitable name is:
+
+`docker build -t ournginx .`
+
+</details>
+
+**Run *ourimage* image on port 80 **
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+The command to run the image and map the port 80 is:
+
+`docker run -d -p 80:80 --name nginx ourimage`
+
+</details>
+
+
+
+
+
+
+
+
+
+
