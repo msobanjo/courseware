@@ -173,5 +173,64 @@ To remove image execute:
 
 </details>
 
+**Your own web page**
 
+Try to create an image that will deploy your own static website, create an **index.html** file of your website in the same folder as the *Dockerfile*:
 
+<details>
+
+<summary><b>Show solution</b></summary>
+
+Create a new directory by executing:
+
+`mkdir new_dockerfile`
+
+Change to the new directory by executing:
+
+`cd new_dockerfile`
+
+Create your *index.html* file by executing:
+
+`touch index.html`
+
+Place the following contents within the *index.html*:
+
+```html
+<html>
+    <body>
+        <h3>My very own website!</h3>
+    </body>
+</html>
+```
+
+Create *Dockerfile* by executing:
+
+`touch Dockerfile`
+
+Place the following contents into the *Dockerfile*:
+```dockerfile
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/
+``` 
+
+Build the image by executing:
+
+`docker build -t myimage .`
+
+Run the image by executing:
+
+`docker run -d -p 80:80 --name mycontainer myimage`
+
+Stop the container by executing:
+
+`docker stop mycontainer`
+
+Remove the container by executing:
+
+`docker rm mycontainer`
+
+Remove the images by executing:
+
+`docker rmi myimage nginx`
+
+</details>
