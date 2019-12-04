@@ -1,5 +1,10 @@
 # Dockerfiles
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+
+<!--TOC_END-->
 ## Overview
 
 We can build our own *Docker Images* by using *Dockerfiles*. 
@@ -13,4 +18,3 @@ For instance, if there are four instructions in a *Dockerfile* and your build fa
 An easier way to think of intermediate images is like a layer of a cake. 
 
 You don't just end up making a cake in one go, you make it layer by layer, similarly *Dockerfiles* allow you to make a final image by doing it in a similar way where you will have multiple layers until the final image is ready.
-
