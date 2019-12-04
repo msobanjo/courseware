@@ -46,7 +46,7 @@ gunicorn app:app
 
 ### Workers
 The amount of workers can be specified with the `-w` or `--workers` options.
-The Gunicorn documentation reccommends that you use 2-4 workers per core the server you are using has:
+The Gunicorn documentation recommends that you use 2-4 workers per core the server you are using has:
 ```bash
 # gunicorn --workers [NUMBER]  app:app
 gunicorn --workers 4 app:app
@@ -76,21 +76,78 @@ The Gunicorn server can be configured to use certificates by providing the `--ce
 gunicorn --certifile=~/server.crt --keyfile=~/server.key
 ```
 
-### SystemD Service Configuration
-A service script can be configured like below, the application in this case is called `flask-practice` and is installed the service users home folder (`/home/bob`).
-There is an `application` subdirectory with the application defined as `app` in the `application/__init__.py` file.
+### Systemd Service Configuration
+A service script can be configured like below, the application in this case:
+- being executed by a user called `bob`
+- installed the `/opt/gunicorn-test` folder
+- is in a file called `app.py`
 ```service
 [Unit]
-Description=Flask Practice Server
+Description=Gunicorn Test
 [Service]
 User=bob
-ExecStart=/bin/bash -c 'cd ${HOME}/flask-practice && \
-	source ./venv/bin/activate && \
-	source ${HOME}/.env && \
-	gunicorn \
-	--bind=0.0.0.0:8001 \
-	--workers=4 \
-	application:app'
-[Install]
-WantedBy=multi-user.target
+Environment='VIRTUAL_ENV=/opt/gunicorn-test/venv'
+WorkingDirectory=/opt/gunicorn-test
+ExecStart=/opt/gunicorn-test/venv/bin/gunicorn --bind=0.0.0.0:5000 --workers=4 app:app
 ```
+
+## Tutorial
+
+### Run a Simple Flask Application with Gunicorn
+
+#### Prerequisites
+- Linux Operating System
+- Python 3
+- `virtualenv`
+
+#### Create an Application Folder
+Create a folder for the test application and change to it
+```bash
+mkdir gunicorn-test && cd $_
+```
+
+#### Create the Application
+This is going to be a very simple application which uses the Flask framework.
+Enter the following into a file called `app.py` and save it:
+```python
+#! /usr/bin/env python
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello():
+    return "Hello from Flask App\n"
+
+if __name__ == '__main__':
+    app.run()
+```
+
+#### Create a Virtual Environment and Install the Dependencies
+We will be needing the `flask` and `gunicorn` dependencies for this.
+A virtual environment can be created and loaded:
+```bash
+virtualenv -p python3 venv
+source ./venv/bin/activate
+```
+And then the required dependencies can be installed in the aforementioned virtual environment:
+```bash
+pip install flask gunicorn
+```
+
+#### Run the Application
+The application can now be started using a gunicorn command:
+```bash
+gunicorn --workers=4 --bind=0.0.0.0:5000 app:app
+```
+Something similar to this should be outputted:
+```text
+[2019-12-04 15:58:37 +0000] [3006] [INFO] Starting gunicorn 20.0.4
+[2019-12-04 15:58:37 +0000] [3006] [INFO] Listening at: http://0.0.0.0:5000 (3006)
+[2019-12-04 15:58:37 +0000] [3006] [INFO] Using worker: sync
+[2019-12-04 15:58:37 +0000] [3009] [INFO] Booting worker with pid: 3009
+[2019-12-04 15:58:37 +0000] [3010] [INFO] Booting worker with pid: 3010
+[2019-12-04 15:58:37 +0000] [3011] [INFO] Booting worker with pid: 3011
+[2019-12-04 15:58:37 +0000] [3012] [INFO] Booting worker with pid: 3012
+```
+
