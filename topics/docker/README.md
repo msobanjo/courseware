@@ -112,5 +112,6 @@ For more examples and ideas, visit:
 ```
 <!--MODULES_START-->
 ## Modules
+- [Dockerfile instructions](./modules/dockerfile-instructions)
 - [Images](./modules/images)
 <!--MODULES_END-->
