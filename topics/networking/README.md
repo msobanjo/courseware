@@ -16,6 +16,7 @@ These data links are established over cable media such as wires or optic cables,
 - [Frames](./modules/frames)
 - [Network Gateways](./modules/gateways)
 - [IP](./modules/ip)
+- [IP Routing](./modules/ip-routing)
 - [`localhost` and Ports](./modules/localhost-and-ports)
 - [MAC Address](./modules/mac-address)
 - [Models](./modules/models)
