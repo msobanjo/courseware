@@ -61,8 +61,6 @@ gunicorn --workers 4 app:app
 
 ### Specify Server Socket to Bind to
 You may provide a server socket in the form of `[HOST]` or `[HOST]:[PORT]` with the `-b` or `--bind` options.
-There are other protocols you can bind to such as `unix` sockets as well.
-
 To allow traffic from anywhere on port `8001` you can use the following:
 ```bash
 # gunicorn --bind=[HOST]:[PORT] app:app
@@ -74,28 +72,6 @@ Gunicorn can operate in a specified directory using the `--chdir` option, this w
 ```bash
 # gunicorn --chdir=[DIRECTORY] app:app
 gunicorn --chdir=/opt/project app:app
-```
-
-### TLS
-The Gunicorn server can be configured to use certificates by providing the `--certfile` and `--keyfile` options:
-```bash
-# gunicorn --certifile=[CERT_FILE] --keyfile=[KEY_FILE]
-gunicorn --certifile=~/server.crt --keyfile=~/server.key
-```
-
-### Systemd Service Configuration
-A service script can be configured like below, the application in this case:
-- being executed by a user called `bob`
-- installed the `/opt/gunicorn-test` folder
-- is in a file called `app.py`
-```service
-[Unit]
-Description=Gunicorn Test
-[Service]
-User=bob
-Environment='VIRTUAL_ENV=/opt/gunicorn-test/venv'
-WorkingDirectory=/opt/gunicorn-test
-ExecStart=/opt/gunicorn-test/venv/bin/gunicorn --bind=0.0.0.0:5000 --workers=4 app:app
 ```
 
 ## Tutorial
@@ -110,7 +86,7 @@ ExecStart=/opt/gunicorn-test/venv/bin/gunicorn --bind=0.0.0.0:5000 --workers=4 a
 #### Create an Application Folder
 Create a folder for the test application and change to it
 ```bash
-mkdir gunicorn-test && cd $_
+mkdir -p gunicorn-test && cd $_
 ```
 
 #### Create the Application
@@ -156,3 +132,4 @@ Something similar to this should be outputted:
 [2019-12-04 15:58:37 +0000] [3011] [INFO] Booting worker with pid: 3011
 [2019-12-04 15:58:37 +0000] [3012] [INFO] Booting worker with pid: 3012
 ```
+
