@@ -145,8 +145,33 @@ You should see the following image:
 
 </details>
 
+**Stop and remove the container**
 
+<details>
 
+<summary><b>Show solution</b></summary>
+
+To stop the container execute:
+
+`docker stop nginx`
+
+To remove container execute:
+
+`docker rm nginx`
+
+</details>
+
+**Remove the *ournginx* image**
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+To remove image execute:
+
+`docker rmi ournginx`
+
+</details>
 
 
 
