@@ -10,8 +10,6 @@
 	- [Workers](#workers)
 	- [Specify Server Socket to Bind to](#specify-server-socket-to-bind-to)
 	- [Working Directory](#working-directory)
-	- [TLS](#tls)
-	- [Systemd Service Configuration](#systemd-service-configuration)
 - [Tutorial](#tutorial)
 	- [Run a Simple Flask Application with Gunicorn](#run-a-simple-flask-application-with-gunicorn)
 		- [Prerequisites](#prerequisites)
@@ -132,4 +130,3 @@ Something similar to this should be outputted:
 [2019-12-04 15:58:37 +0000] [3011] [INFO] Booting worker with pid: 3011
 [2019-12-04 15:58:37 +0000] [3012] [INFO] Booting worker with pid: 3012
 ```
-
