@@ -27,5 +27,6 @@ Three of the biggest cloud vendors in the tech industry today are:
 - [Platform as a Service (PaaS)](./modules/platform-as-a-service)
 - [Private Cloud](./modules/private-cloud)
 - [Public cloud](./modules/public-cloud)
+- [Regions and Availability zones](./modules/regions-and-availability-zone)
 - [Software-as-a-Service (SaaS)](./modules/software-as-a-service)
 <!--MODULES_END-->
