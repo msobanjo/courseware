@@ -123,9 +123,27 @@ The command to run the image and map the port 80 is:
 
 </details>
 
+**Test the image is running correctly**
 
+<details>
 
+<summary><b>Show solution</b></summary>
 
+In order to test the image is running correctly, navigate your browser to `localhost:80` if you're using docker on your machine.
+
+You should see the following:
+
+![nginx page](https://imgur.com/10M4zLe.jpg)
+
+If you're using a VM in the cloud, execute the following command:
+
+`curl localhost:80`
+
+You should see the following image:
+
+![nginx page](https://imgur.com/uPrTWC6.jpg)
+
+</details>
 
 
 
