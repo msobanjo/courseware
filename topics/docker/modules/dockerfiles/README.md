@@ -18,3 +18,29 @@ For instance, if there are four instructions in a *Dockerfile* and your build fa
 An easier way to think of intermediate images is like a layer of a cake. 
 
 You don't just end up making a cake in one go, you make it layer by layer, similarly *Dockerfiles* allow you to make a final image by doing it in a similar way where you will have multiple layers until the final image is ready.
+
+## Creating Dockerfile
+
+*Dockerfile* is a file with the name of `Dockerfile` with no extension.
+
+It doesn't require specific permissions, but depending on your systems configuration it might require you to elevate it's privileges.
+
+## Executing Dockerfile 
+
+In order to execute the *Dockerfile* the command for this is:
+
+`docker build .`
+
+This command needs to be executed when the terminals working directory is the same as where the *Dockerfile* is.
+
+Additionally if you want to execute a *Dockerfile* from a directory that is not your terminals working directory you can do it through the `-f` flag.
+
+The command for it would be:
+
+`docker build -f /path/to/file .`
+
+You can also specify an *Image Name*, *Tag* & *Repository*, here's an example of it:
+
+`docker build -t myapp:latest .`
+
+## Tasks
