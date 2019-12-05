@@ -6,7 +6,8 @@ from pathlib import Path
 import glob
 
 root_dir = "./topics"
-broken = []
+broken_list= []
+good_list = []
 
 with open('./automation/structure.yaml') as file:
     yaml_file = yaml.load(file, Loader=yaml.FullLoader)
@@ -24,18 +25,16 @@ for item in yaml_file:
             
             split_item = globbed_item.split("/")[-1]
             
-            
-            folder_match = re.compile(get_property(item, 'spec')[1]['match'])
-            file_match = get_property(item, 'spec')[0]['match']
-            
-            if folder_match.search(split_item) is not None or file_match == split_item:
-                continue
-            else:
-                broken.append(globbed_item)
-
+            for i in get_property(item, 'spec'):
+                match = re.compile(i['match'])
+                if match.search(split_item) != None:
+                    good_list.append(globbed_item)
+                
+            if globbed_item not in good_list:
+                broken_list.append(globbed_item)
     
-    for i in broken:
-        print(i)
+    for error in broken_list:
+        print(error)
 
             
  
