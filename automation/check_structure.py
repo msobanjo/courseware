@@ -3,40 +3,39 @@ import yaml
 import os
 import re
 from pathlib import Path
+import glob
+
+root_dir = "./topics"
+broken = []
 
 with open('./automation/structure.yaml') as file:
     yaml_file = yaml.load(file, Loader=yaml.FullLoader)
 
 def get_property(item, prop):
-    if 'type' not in item:
-        raise Exception('child does not have "{0}" field set: {1}'.format(prop,str(item)))
+    if prop not in item:
+        raise Exception('yaml item does not have "{0}" field set: {1}'.format(prop,str(item)))
     else:
         return item[prop]
 
-def iterate(children, depth=0):
-    for child in children:
-        print(get_property(child, 'type'))
-        if 'children' in child:
-            iterate(child['children'], depth + 1)
 
+for item in yaml_file:
+    globbed_list = (glob.glob(get_property(item, 'path')))
+    for globbed_item in globbed_list:
+            
+            split_item = globbed_item.split("/")[-1]
+            
+            
+            folder_match = re.compile(get_property(item, 'spec')[1]['match'])
+            file_match = get_property(item, 'spec')[0]['match']
+            
+            if folder_match.search(split_item) is not None or file_match == split_item:
+                continue
+            else:
+                broken.append(globbed_item)
 
+    
+    for i in broken:
+        print(i)
 
-root_dir = "./topics"
-folder_pattern = re.compile("^[a-z0-9_\-]+$")
-file_pattern = "README.md"
-
-def iterate(directory, depth=0):
-    broken = []
-    for root, dirs, files in os.walk(directory):
-        for name in dirs:
-            if folder_pattern.search(name) ==  None:
-                broken.append(root + name)
-        for name in files:
-            if name != file_pattern:
-                broken.append(root + name)
-    for item in broken:
-        print(item)
-
-iterate(root_dir)
-
-
+            
+ 
