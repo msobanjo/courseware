@@ -26,20 +26,16 @@ folder_pattern = re.compile("^[a-z0-9_\-]+$")
 file_pattern = "README.md"
 
 def iterate(directory, depth=0):
-    folders = []
     broken = []
     for root, dirs, files in os.walk(directory):
         for name in dirs:
-            if folder_pattern.search(name) is not None:
-                folders.append(root + name)
-            else:
-                broken.append(name)
+            if folder_pattern.search(name) ==  None:
+                broken.append(root + name)
         for name in files:
             if name != file_pattern:
                 broken.append(root + name)
     for item in broken:
         print(item)
-    #print(folders)
 
 iterate(root_dir)
 
