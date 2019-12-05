@@ -2,6 +2,7 @@
 import yaml
 import os
 import re
+from pathlib import Path
 
 with open('./automation/structure.yaml') as file:
     yaml_file = yaml.load(file, Loader=yaml.FullLoader)
@@ -30,13 +31,14 @@ def iterate(directory, depth=0):
     for root, dirs, files in os.walk(directory):
         for name in dirs:
             if folder_pattern.search(name) is not None:
-                folders.append(name)
+                folders.append(root + name)
             else:
                 broken.append(name)
         for name in files:
             if name != file_pattern:
-                broken.append(name)
-    print(broken)
+                broken.append(root + name)
+    for item in broken:
+        print(item)
     #print(folders)
 
 iterate(root_dir)
