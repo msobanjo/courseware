@@ -370,7 +370,7 @@ This is a Python script that serves the contents of the folder that it is runnin
 
 You can use the following command to create the file:
 
-`python-server-2.7.15.py`
+`touch python-server-2.7.15.py`
 
 Place the following contents to the `python-server-2.7.15.py` file:
 
@@ -393,7 +393,7 @@ This script does the same thing as the first one but notice how the imports are 
 
 You can use the following command to create the file:
 
-`python-server-3.6.8.py`
+`touch python-server-3.6.8.py`
 
 Place the following contents to the `python-server-3.6.8.py` file:
 
