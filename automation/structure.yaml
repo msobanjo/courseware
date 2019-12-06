@@ -4,24 +4,28 @@
     type: file
   - match: '^[a-z0-9_\-]+$'
     type: folder
+  desc: 'The only file allowed in this directory is a README.md. Folders must conform to a naming structure of lowercase letters and/or hyphens and/or numbers'
 - path: './topics/*/*'
   spec:
   - match: '^README.md$'
     type: file
   - match: '^modules$'
     type: folder
+  desc: 'The only file allowed in this directory is a README.md. Folders must be named modules'
 - path: './topics/*/modules/*'
   spec:
   - match: '^README.md$'
     type: file
   - match: '^[a-z0-9_\-]+$'
     type: folder
+  desc: 'The only file allowed in this directory is a README.md. Folders must conform to a naming structure of lowercase letters and/or hyphens and/or numbers'
 - path: './topics/*/modules/*/*'
   spec:
   - match: '^README.md$'
     type: file
   - match: '^resources$'
     type: folder
+  desc: 'The only file allowed in this directory is a README.md. Folders must be named resources'
     #- path: './topics/*/modules/*/*/resources/*'
     #  spec:
     #  - match: '(.*?)'

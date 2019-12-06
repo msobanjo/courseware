@@ -31,16 +31,22 @@ def regex_check(item, path):
     return good_list
 
 def validate():    
-    broken_list= []
+    broken = []
     for item in yaml_file:
         file_list = get_files(item)
         for file_path in file_list:
             correct_format = regex_check(item, file_path)
             if file_path not in correct_format:
-                broken_list.append(file_path)
-    return broken_list
+                broken.append({'source':file_path, 'error':get_property(item, 'desc')})
+    return broken
 
             
-broken = validate()
-for i in broken:
-    print (i)
+def errormsg(broken_items):
+    msg = ""
+    for item in broken_items:
+        msg += "\n" + "source: " + item['source'] + "\n" + "error: " + item['error'] + "\n" + "---------------------------------------------------------------" + "\n"
+    if msg:
+        raise Exception(msg)
+
+errormsg(validate())
+
