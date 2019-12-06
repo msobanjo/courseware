@@ -160,6 +160,32 @@ ADD ./application.tar.gz /opt/application
 
 A common use case for needing to add a file to the images file system is for the application itself that you are going to want to run in the container. 
 
-*ADD* is very similar to the *COPY* command, 
+*ADD* is very similar to the *COPY* command.
+
+## COPY
+
+Files and Directories can be copied into the image file system with this instruction, sounds familiar right? 
+
+So which one to use, *ADD* or *COPY*? 
+
+The answer is fairly subjective however most of the time you will want to be using *COPY* just because it is more explicit about what it is doing, copying a file or directory.
+
+The main difference between *ADD* and *COPY* is that *ADD* can add files from two more sources, a URL and a extracting a TAR file to a destination. 
+
+Unless you want to extract a TAR file you may as well use *COPY*.
+
+*COPY* works just the same as *ADD*, by providing a source and a destination for copying files.
+
+Here's an example of *COPY*:
+
+```dockerfile
+# copy a local file such as an application, relative to the context
+COPY ./app.py /opt/application/app.py
+
+# copy an entire folder
+COPY . /opt/application/
+```
+
+
 
 ## Tasks
