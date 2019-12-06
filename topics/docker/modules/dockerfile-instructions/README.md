@@ -138,5 +138,28 @@ ENV JENKINS_HOME /jenkins-home
 
 After creating the image, *environment variables* can be viewed with `docker inspect` command.
 
+## ADD
+
+New Files, Directories and even remote file URLs can be added into the filesystem of the *Docker Image* by providing the source and destination.
+
+Here are some examples of using add:
+
+```dockerfile
+# add a local file such as an application, relative to the context
+ADD ./app.py /opt/application/app.py
+
+# add an entire folder
+ADD . /opt/application/
+
+# add a remote file from a URL
+ADD https://remote-server/file.txt /remote-file.txt
+
+# add a tar file (relative to the context) and extract the contents to a folder
+ADD ./application.tar.gz /opt/application
+```
+
+A common use case for needing to add a file to the images file system is for the application itself that you are going to want to run in the container. 
+
+*ADD* is very similar to the *COPY* command, 
 
 ## Tasks
