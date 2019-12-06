@@ -55,6 +55,21 @@ RUN apt update
 
 This instruction lends itself well to how *Docker Images* are built because the build progress of the image after each command you run is effectively saved, so if one fails then the build can start where it was last successful.
 
+## CMD
+
+To provide a default execution for a container, or main process, we use the *CMD* instruction. 
+
+There can only be one of these in a *Dockerfile*, if there is more than one then the last one in the *Dockerfile* will be the only one that takes effect.
+
+Here's an example of *CMD*:
+```dockerfile
+CMD ["/bin/ping", "google.com"]
+```
+
+*CMD* can be used in conjunction with the *ENTRYPOINT* (will be covered later) instruction to set the arguments for a command. 
+
+This is ideal if you plan on running the same executable every time you run a container, as it allows you to have default arguments which can be altered by the *docker run* command if necessary.
+
 
 
 ## Tasks
