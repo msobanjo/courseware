@@ -11,7 +11,7 @@
     type: file
   - match: '^modules$'
     type: folder
-  desc: 'The only file allowed in this directory is a README.md. Folders must be named "modules"'
+  desc: 'The only file allowed in this directory is a README.md. One folder is allowed, but must be named "modules"'
 - path: './topics/*/modules/*'
   spec:
   - match: '^README.md$'
@@ -25,7 +25,7 @@
     type: file
   - match: '^resources$'
     type: folder
-  desc: 'The only file allowed in this directory is a README.md. Folders must be named "resources"'
+  desc: 'The only file allowed in this directory is a README.md. One folder is allowed, but must be named "resources"'
     #- path: './topics/*/modules/*/*/resources/*'
     #  spec:
     #  - match: '(.*?)'
