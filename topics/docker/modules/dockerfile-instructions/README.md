@@ -186,6 +186,36 @@ COPY ./app.py /opt/application/app.py
 COPY . /opt/application/
 ```
 
+## ENTRYPOINT
+
+This instruction is more for running a binary on the container that isn’t going to change, effectively running a container as an executable, you can use it in a similar way to *CMD*.
+
+Here's an example of using *ENTRYPOINT*:
+
+```dockerfile
+ENTRYPOINT ["/bin/echo", "Hello"]
+```
+
+You provide additional arguments to the *ENTRYPOINT* instruction by utilising *CMD*, the idea is that the *CMD* default arguments are intended to be changed whereas the *ENTRYPOINT* stays the same. 
+
+*CMD* parameters will be appended to the *ENTRYPOINT*.
+
+Here's another example of using *ENTRYPOINT*:
+
+```dockerfile
+# produces: Hello World
+ENTRYPOINT ["/bin/echo", "Hello"]
+CMD ["World"]
+```
+
+The *CMD* parameters can be overridden by appending them to the end of the `docker run` command.
+
+Here's an example of it:
+
+```dockerfile
+# produces: Hello from docker run command
+docker run test from docker run command
+```
 
 
 ## Tasks
