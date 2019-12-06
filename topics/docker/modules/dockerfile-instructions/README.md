@@ -249,6 +249,20 @@ Here's an example:
 USER jenkins
 ```
 
+## WORKDIR
+
+When running a *Dockerfile*, all instructions that interact with the filesystem in the container such as *ADD*, *COPY*, *ENTRYPOINT*, *CMD* and *RUN*, have a working directory of */* by default. 
+
+If you are going to to be running multiple instructions in the same directory on the container then you can use this to make things easier for yourself.
+
+Here's an example of it:
+
+```dockerfile
+WORKDIR /opt/application
+```
+
+## ARG
+
 
 
 ## Tasks
