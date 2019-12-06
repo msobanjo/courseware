@@ -41,4 +41,20 @@ This can be for creating multiple images or for using previous build stages as d
 
 For instance, one image can be created for compiling the application and creating an executable, the other image for running the application.
 
+## RUN
+
+We use the RUN instruction to run shell commands on the intermediate containers. 
+
+The default shell that’s used is /bin/sh.
+
+Here's an example of *RUN*:
+
+```dockerfile
+RUN apt update
+```
+
+This instruction lends itself well to how *Docker Images* are built because the build progress of the image after each command you run is effectively saved, so if one fails then the build can start where it was last successful.
+
+
+
 ## Tasks
