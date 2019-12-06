@@ -122,4 +122,21 @@ EXPOSE 80/tcp
 EXPOSE 80/udp
 ```
 
+## ENV
+
+Setting *environment variables* can be done with **ENV**. 
+
+Once you have created an *environment variable* in the *Dockerfile*, subsequent commands afterwards will be running in the same environment so they will be able to access it. 
+
+The whole string beyond the space after the key will be taken as the value.
+
+Here's an example of using *ENV*:
+
+```dockerfile
+ENV JENKINS_HOME /jenkins-home
+```
+
+After creating the image, *environment variables* can be viewed with `docker inspect` command.
+
+
 ## Tasks
