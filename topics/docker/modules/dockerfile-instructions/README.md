@@ -323,14 +323,6 @@ Change to the new directory:
 
 `cd python_docker_exercise`
 
-**Create Dockerfile**
- 
-In the *python_docker_exercise* directory create an empty *Dockerfile* and continue the rest of this exercise in that folder.
-
-You can use the following command to create the file:
-
-`touch Dockerfile`
-
 **Create index.html file**
 
 Create a file `index.html`.
@@ -353,5 +345,108 @@ Place the following contents to the `index.html` file:
    <p>Running on Python Version: {{PYTHON_VERSION}}</p>
 </body>
 </html>
+```
+
+**Create first python file**
+
+Create a `python-server-2.7.15.py` file. 
+
+This is a Python script that serves the contents of the folder that it is running on port 9000.
+
+You can use the following command to create the file:
+
+`python-server-2.7.15.py`
+
+Place the following contents to the `python-server-2.7.15.py` file:
+
+```python
+# only works with Python 2
+import SimpleHTTPServer
+import SocketServer
+
+PORT = 9000
+Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+httpd = SocketServer.TCPServer(("", PORT), Handler)
+httpd.serve_forever()
+```
+
+**Create second python file**
+
+Create a `python-server-3.6.8.py` file. 
+
+This script does the same thing as the first one but notice how the imports are different at the top of the script compared to the other script because it is only compatible with Python 3.
+
+You can use the following command to create the file:
+
+`python-server-3.6.8.py`
+
+Place the following contents to the `python-server-3.6.8.py` file:
+
+```python
+# only works with Python 3
+import http.server
+import socketserver
+
+PORT = 9000
+Handler = http.server.SimpleHTTPRequestHandler
+httpd = socketserver.TCPServer(("", PORT), Handler)
+print("serving at port", PORT)
+httpd.serve_forever()
+```
+
+**Create Dockerfile**
+ 
+In the *python_docker_exercise* directory create an empty *Dockerfile* and continue the rest of this exercise in that folder.
+
+You can use the following command to create the file:
+
+`touch Dockerfile`
+
+Place the following contents into the *Dockerfile*:
+
+```dockerfile
+#   an argument for the python version
+#   by default this is for version 3.6.8, but it can be modified
+ARG PYTHON_VERSION=3.6.8
+
+# the base image to build from which is ready to run
+# Python code immediately
+FROM python:${PYTHON_VERSION}
+
+# the working directory for docker instructions has
+# been changed to where our application is going
+# to be installed
+WORKDIR /opt/python-server
+
+# copy the correct python script to the current working directory
+COPY ./python-server-${PYTHON_VERSION}.py app.py
+
+# copy the index.html to the install folder
+# the install folder is where the python application will be running
+# all content from the install will be served because of this
+# when a request is made to the server, the index.html will
+# be served by default
+COPY index.html .
+
+# this executes a shell command to alter the contents of the index.html
+# the webpage will have different content depending on the
+# version of Python that is running
+RUN sed -i "s/{{PYTHON_VERSION}}/${PYTHON_VERSION}/g" index.html
+
+# the application runs on port 9000
+# port 9000 on TCP has been exposed here for documentation purposes
+EXPOSE 9000
+
+# an entrypoint has been set here
+# the Python binary is executed, with the correct script as an argument
+ENTRYPOINT ["/usr/local/bin/python", "app.py"]
+```
+
+**Build the image**
+
+Build the image by executing the following command:
+
+```shell
+docker build -t python-server --build-arg PYTHON_VERSION=2.7.15 .
 ```
 
