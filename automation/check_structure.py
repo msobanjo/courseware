@@ -19,7 +19,11 @@ def check():
     good_list = []
     broken_list= []
     for item in yaml_file:
-        globbed_list = (glob.glob(get_property(item, 'path')))
+        globbed_list = []
+        all_files = Path(".").glob(get_property(item, 'path'))
+        for f in all_files:
+            globbed_list.append(str(f))
+        
         for globbed_item in globbed_list:
             
             split_item = globbed_item.split("/")[-1]
