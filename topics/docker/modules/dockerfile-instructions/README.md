@@ -346,6 +346,8 @@ You can use the following command to create the file:
 
 Place the following contents to the `index.html` file:
 
+**NOTE: if when pasting the contents you the formatting is lost try SHIFT+INSERT**
+
 ```html
 <!DOCTYPE html>
 <html>
