@@ -18,6 +18,16 @@ Rather than the *shell* form which looks like this:
 CMD java -jar app.jar
 ```
 
+## Reasoning
+
+When using the **shell** form, *Docker* will run this as a *shell command* when the container starts up, like this:
+
+`/bin/sh -c "java -jar app.jar"`
+
+The first process of the container when it starts running will be a shell **/bin/sh**, which will then start the *java process*. 
+
+The *shell* in this is unnecessary, when you run the `docker ps` command, you will be able to see under the *COMMAND* column how the initial process has been started.
+
 
 
 ## Tasks
