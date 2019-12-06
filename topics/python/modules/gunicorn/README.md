@@ -17,6 +17,8 @@
 		- [Create the Application](#create-the-application)
 		- [Create a Virtual Environment and Install the Dependencies](#create-a-virtual-environment-and-install-the-dependencies)
 		- [Run the Application](#run-the-application)
+- [Exercises](#exercises)
+	- [Try this on Another Project](#try-this-on-another-project)
 
 <!--TOC_END-->
 ## Overview
@@ -132,7 +134,7 @@ Something similar to this should be outputted:
 ```
 
 ## Exercises
+
 ### Try this on Another Project
 Use another Python Flask application and run it using Gunicorn just like in the tutorial above.
 If you don't have a Flask app available to you then feel free to use this provided example: https://github.com/qac-devops/python-flask-example
-
