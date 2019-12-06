@@ -10,9 +10,18 @@
     type: file
   - match: '^modules$'
     type: folder
-  #- path: './topics/*/modules/*'
-  #filematch: 'README.md'
-  #foldermatch: 'resources'
-  #- path: './topics/*/modules/*/resources/*'
-  #filematch: "*"
-
+- path: './topics/*/modules/*'
+  spec:
+  - match: '^README.md$'
+    type: file
+  - match: '^[a-z0-9_\-]+$'
+    type: folder
+- path: './topics/*/modules/*/*'
+  spec:
+  - match: '^README.md$'
+    type: file
+  - match: '^resources$'
+    type: folder
+    #- path: './topics/*/modules/*/*/resources/*'
+    #  spec:
+    #  - match: '(.*?)'

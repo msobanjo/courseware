@@ -14,31 +14,33 @@ def get_property(item, prop):
     else:
         return item[prop]
 
+def get_files(item):
+    files = []
+    all_files = Path(".").glob(get_property(item, 'path'))
+    for f in all_files:
+        files.append(str(f))
+    return files       
 
-def check():    
+def regex_check(item, path):
     good_list = []
+    split_item = path.split("/")[-1]
+    for i in get_property(item, 'spec'):
+        match = re.compile(i['match'])
+        if match.search(split_item) != None:
+            good_list.append(path)
+    return good_list
+
+def validate():    
     broken_list= []
     for item in yaml_file:
-        globbed_list = []
-        all_files = Path(".").glob(get_property(item, 'path'))
-        for f in all_files:
-            globbed_list.append(str(f))
-        
-        for globbed_item in globbed_list:
-            
-            split_item = globbed_item.split("/")[-1]
-
-            for i in get_property(item, 'spec'):
-                match = re.compile(i['match'])
-                if match.search(split_item) != None:
-                    good_list.append(globbed_item)
-
-            if globbed_item not in good_list:
-                broken_list.append(globbed_item)
-    
+        file_list = get_files(item)
+        for file_path in file_list:
+            correct_format = regex_check(item, file_path)
+            if file_path not in correct_format:
+                broken_list.append(file_path)
     return broken_list
 
             
-broken = check()
+broken = validate()
 for i in broken:
     print (i)
