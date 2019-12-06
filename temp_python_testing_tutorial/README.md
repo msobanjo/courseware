@@ -1,7 +1,7 @@
 # Flask App Unit Testing Tutorial
 ## Overview
 In this tutorial we will set up a flask app for unit testing and then add one unit test. We will also save a unique report for each time we carry out the test.
-## Preqequsities
+## Prerequisites
 You will need the example flask blog app you have created in your lessons. It must be working with a database. 
 ## Testing Layout
 For Pytest to work we need an \__init__.py file inside a tests directory along with out testing files.
