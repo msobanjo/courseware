@@ -130,3 +130,9 @@ Something similar to this should be outputted:
 [2019-12-04 15:58:37 +0000] [3011] [INFO] Booting worker with pid: 3011
 [2019-12-04 15:58:37 +0000] [3012] [INFO] Booting worker with pid: 3012
 ```
+
+## Exercises
+### Try this on Another Project
+Use another Python Flask application and run it using Gunicorn just like in the tutorial above.
+If you don't have a Flask app available to you then feel free to use this provided example: https://github.com/qac-devops/python-flask-example
+
