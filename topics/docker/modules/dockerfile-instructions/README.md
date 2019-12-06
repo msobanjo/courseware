@@ -300,3 +300,58 @@ ENTRYPOINT ["/bin/ping", "google.com"]
 ```
 
 ## Tasks
+
+The aim of this exercise is to get you more familiar with Dockerfile instructions, utilising most of the instructions listed in this handout. 
+
+You will be creating two very basic python HTTP servers for applications to run in our Docker containers. 
+
+There will be a server for versions 2 and 3 of Python that serve a simple static website. 
+
+Our *Dockerfile* will be configured to handle both versions.
+
+Please follow the steps in the order they are in, additionally, please use a bash terminal.
+
+**Create a new directory** 
+
+Start by creating a new directory called `python_docker_exercise`
+ 
+This can be done by hand, or by executing a command:
+
+`mkdir python_docker_exercise`
+
+Change to the new directory:
+
+`cd python_docker_exercise`
+
+**Create Dockerfile**
+ 
+In the *python_docker_exercise* directory create an empty *Dockerfile* and continue the rest of this exercise in that folder.
+
+You can use the following command to create the file:
+
+`touch Dockerfile`
+
+**Create index.html file**
+
+Create a file `index.html`.
+
+You can use the following command to create the file:
+
+`touch index.html`
+
+Place the following contents to the `index.html` file:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Python: Simple HTTP Server</title>
+</head>
+<body>
+       <h3>Python HTTP Server</h3>
+   <p>Running on Python Version: {{PYTHON_VERSION}}</p>
+</body>
+</html>
+```
+
