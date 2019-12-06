@@ -1,5 +1,11 @@
 # Shell vs Exec
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 Instructions, such as *RUN*, *CMD* and *ENTRYPOINT* allow you to either use the **shell** or **exec** forms for running commands when building a *Docker image*. 
@@ -27,7 +33,6 @@ When using the **shell** form, *Docker* will run this as a *shell command* when 
 The first process of the container when it starts running will be a shell **/bin/sh**, which will then start the *java process*. 
 
 The *shell* in this is unnecessary, when you run the `docker ps` command, you will be able to see under the *COMMAND* column how the initial process has been started.
-
 
 
 ## Tasks
