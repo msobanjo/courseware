@@ -523,6 +523,6 @@ Remove the stopped containers:
 
 **Remove the images**
 
-Remove the images that were built:
+Remove the images that were built as well as the initial images that were used for it:
 
-`docker rmi python-server-2 python-server-3`
+`docker rmi python-server-2 python-server-3 python:3.6.8 python:2.7.15`
