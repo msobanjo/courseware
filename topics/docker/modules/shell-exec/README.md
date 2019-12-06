@@ -3,6 +3,8 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Reasoning](#reasoning)
+- [Environment variables limitation](#environment-variables-limitation)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
