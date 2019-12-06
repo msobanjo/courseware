@@ -70,6 +70,33 @@ CMD ["/bin/ping", "google.com"]
 
 This is ideal if you plan on running the same executable every time you run a container, as it allows you to have default arguments which can be altered by the *docker run* command if necessary.
 
+## LABEL
+
+**Metadata** can be added to a *Docker image* by using this instruction. 
+
+*Metadata* for *Docker Images* follows a key-value pair format.
+
+Here's an example of *LABEL*:
+
+```dockerfile
+LABEL version="1.0"
+LABEL description="A Docker Image."
+```
+
+*Images* can have more than one *LABEL*, you can view the labels for an image by using the `docker inspect` command. 
+
+Keep in mind that you will need to have the image in your local registry to be able to inspect it.
+
+Here's an example of inspecting labels for an image:
+
+```dockerfile
+docker inspect nginx
+```
+
+*Metadata* can have many uses cases, such as setting versions, descriptions etc for access by other tools. 
+
+If you ever feel the need to add some extra information to a *Docker Image* that isn’t already available then labels are good solution for it.
+
 
 
 ## Tasks
