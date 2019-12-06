@@ -3,6 +3,19 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [FROM](#from)
+- [RUN](#run)
+- [CMD](#cmd)
+- [LABEL](#label)
+- [EXPOSE](#expose)
+- [ENV](#env)
+- [ADD](#add)
+- [COPY](#copy)
+- [ENTRYPOINT](#entrypoint)
+- [VOLUME](#volume)
+- [USER](#user)
+- [WORKDIR](#workdir)
+- [ARG](#arg)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
