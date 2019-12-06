@@ -217,5 +217,24 @@ Here's an example of it:
 docker run test from docker run command
 ```
 
+## VOLUME
+
+You can create mount points in the containers with a given name using this instruction, so that the data can be stored outside the container. 
+
+There are many reasons for this, such as application logs that need to be accessed by a logging metrics service or any other files that need to be persisted once the container has been stopped and removed.
+
+You can provide more than one volume, separated by spaces.
+
+Here's an example:
+
+```dockerfile
+VOLUME /test
+```
+
+For the example above, any files that are put into */test*, you will be able to find on the host in */var/lib/docker/volumes/[VOLUME_ID]/_data*. 
+
+You can find what the *VOLUME_ID* is by running `docker inspect [CONTAINER_ID]`, the value will be under *Mounts*.
+
+
 
 ## Tasks
