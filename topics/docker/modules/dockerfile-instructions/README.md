@@ -97,6 +97,29 @@ docker inspect nginx
 
 If you ever feel the need to add some extra information to a *Docker Image* that isn’t already available then labels are good solution for it.
 
+## EXPOSE
 
+This is purely an **informative instruction** for Docker to show which port the application is going to be listening on, it doesn’t *expose* or *open* a port from the container to the host, that’s what publishing (**-p**) is for in the `docker run` command. 
+
+By default Docker will assume that the protocol is *TCP*, but *UDP* can be specified if that’s the protocol that your application is going to be using.
+
+Here's an example of exposing port 80 in *TCP* protocol:
+
+```dockerfile
+EXPOSE 80
+```
+
+Here's an example of exposing port 80 in *UDP* protocol:
+
+```dockerfile
+EXPOSE 80/udp
+```
+
+If you want to expose both *TCP* and *UDP* then you can just do that over two lines:
+
+```dockerfile
+EXPOSE 80/tcp
+EXPOSE 80/udp
+```
 
 ## Tasks
