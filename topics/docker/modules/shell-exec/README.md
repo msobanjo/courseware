@@ -1,5 +1,11 @@
 # Shell vs Exec
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 Instructions, such as *RUN*, *CMD* and *ENTRYPOINT* allow you to either use the **shell** or **exec** forms for running commands when building a *Docker image*. 
@@ -17,7 +23,6 @@ Rather than the *shell* form which looks like this:
 ```dockerfile
 CMD java -jar app.jar
 ```
-
 
 
 ## Tasks

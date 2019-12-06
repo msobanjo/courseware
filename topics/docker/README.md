@@ -113,4 +113,5 @@ For more examples and ideas, visit:
 <!--MODULES_START-->
 ## Modules
 - [Images](./modules/images)
+- [Shell vs Exec](./modules/shell-exec)
 <!--MODULES_END-->
