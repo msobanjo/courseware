@@ -34,5 +34,16 @@ The first process of the container when it starts running will be a shell **/bin
 
 The *shell* in this is unnecessary, when you run the `docker ps` command, you will be able to see under the *COMMAND* column how the initial process has been started.
 
+## Environment variables limitation
+
+Environment Variables Will Not Work with [] notation.
+
+Because you are not executing a *shell*, but a process directly, you will not be able to use *environment variables* with double braces (**[]**). 
+
+For example, if you had a *JAR file* that you wanted to run in the *home* folder you could run the example below with the *shell* format, this would not work with brackets though:
+
+```dockerfile
+CMD java -jar $HOME/app.jar
+```
 
 ## Tasks
