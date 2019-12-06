@@ -235,6 +235,20 @@ For the example above, any files that are put into */test*, you will be able to 
 
 You can find what the *VOLUME_ID* is by running `docker inspect [CONTAINER_ID]`, the value will be under *Mounts*.
 
+## USER
+
+Set the user which you are running *Dockerfile& instructions with. 
+
+If you are intending on having a user other than root run your application in the *Docker container* then it will help to run commands as that user where possible to avoid issues with file permissions. 
+
+The user needs to exist before you can use them, so they would be created in a previous instruction.
+
+Here's an example:
+
+```dockerfile
+USER jenkins
+```
+
 
 
 ## Tasks
