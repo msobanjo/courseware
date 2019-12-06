@@ -263,6 +263,40 @@ WORKDIR /opt/application
 
 ## ARG
 
+*Dockerfiles* can be more generic and flexible by using arguments, a common property that changes when you are building software is the version. 
 
+For example, when copying an application file into a *Docker image* it may be named like this: `application-1.0.0.py` 
+
+The next time you build the application it might be at a different version, with the application file named differently also; `application-1.0.1.py` 
+
+We can use *ARG* to copy the file as *application-${VERSION}.py* so that the version can be provided when we build the image.
+
+*ARG* instructions require at least the variable name, here's an example:
+
+```dockerfile
+ARG PYTHON_VERSION
+```
+
+You can set a default value for your argument when you create it, here's an example:
+
+```dockerfile
+ARG PYTHON_VERSION=3.6
+```
+
+Arguments can be overridden with the `docker build` command, when you are creating the image, here's an example:
+
+```dockerfile
+docker build --build-arg PYTHON_VERSION=2.7 .
+```
+
+Throughout the *Dockerfile* after the *ARG* has been declared, the value can be accessed with a dollar sign, optionally surrounded by brackets: **$VARIABLE_NAME** or **${VARIABLE_NAME}**
+
+The example *Dockerfile* below will build from *python:3.6* by default, but another version could be passed as a build-arg, making it build from *python:2.7* for instance.
+
+```dockerfile
+ARG PYTHON_VERSION=3.6
+FROM python:${PYTHON_VERSION}
+ENTRYPOINT ["/bin/ping", "google.com"]
+```
 
 ## Tasks
