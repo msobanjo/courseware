@@ -442,11 +442,72 @@ EXPOSE 9000
 ENTRYPOINT ["/usr/local/bin/python", "app.py"]
 ```
 
-**Build the image**
+**Build the first image**
 
 Build the image by executing the following command:
 
 ```shell
-docker build -t python-server --build-arg PYTHON_VERSION=2.7.15 .
+docker build -t python-server-2 --build-arg PYTHON_VERSION=2.7.15 .
 ```
 
+This command will build the image on what you have defined in the *Dockerfile*.
+
+Pay attention to the command that builds the image, `--build-arg PYTHON_VERSION=2.7.15` will override the `ARG PYTHON_VERSION=3.6.8` within the docker file.
+
+**Run the first image**
+
+`
+docker run -d -p 9000:9000 --name python2 python-server-2
+`
+
+**Test the first image**
+
+Navigate your browser to `localhost:9000`, you should see the contents of the `index.html` file which will also tell you of the current python version used.
+
+**Stop the first container**
+
+Stop the container:
+
+`docker stop python2`
+
+**Build the second image**
+
+Build the image by executing the following command:
+
+```shell
+docker build -t python-server-3 .
+```
+
+This command will build the image on what you have defined in the *Dockerfile*.
+
+Notice that different than the previously built image, there is no argument being passed for the version of python.
+
+The default value from the *Dockerfile* will be used.
+
+**Run the second image**
+
+`
+docker run -d -p 9000:9000 --name python3 python-server-3
+`
+
+**Test the second image**
+
+Navigate your browser to `localhost:9000`, you should see the contents of the `index.html` file which will also tell you of the current python version used.
+
+**Stop the second container**
+
+Stop the container:
+
+`docker stop python3`
+
+**Remove the containers**
+
+Remove the stopped containers:
+
+`docker rm python2 python3`
+
+**Remove the images**
+
+Remove the images that were built:
+
+`docker rmi python-server-2 python-server-3`
