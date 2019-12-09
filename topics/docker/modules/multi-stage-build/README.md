@@ -158,6 +158,61 @@ Place the following contents into the *pom.xml* file:
 
 The Dockerfile is where we are going to be able to implement the Multistage Build, using a Maven image to compile the code and create a JAR file, then a Java image to run the code in.
 
+Make sure you are in the the directory `docker_multi_stage_example` and then run the command:
 
+`touch Dockerfile`
+
+Place the following contents in the *Dockerfile*:
+
+```dockerfile
+# build from the Maven image
+# which has a maven environment configured already
+FROM maven:latest
+
+# copy our application in
+COPY . /build
+
+# change the working directory to where we are building
+# the application
+WORKDIR /build
+
+# use maven to build the application
+RUN mvn clean package
+
+# create a new build stage from the Java image
+# which has java installed already
+FROM java:8
+
+# change the working directory to where the application
+# is going to be installed
+WORKDIR /opt/hello-world
+
+# copy the JAR file that was created in the previous
+# build stage to the application folder in this build stage
+COPY --from=0 /build/target/hello-world-1.0.0.jar app.jar
+
+# create an entrypoint to run the application
+ENTRYPOINT ["/usr/bin/java", "-jar", "app.jar"]
+```
+
+**Create the image**
+
+Create the image by executing:
+
+`docker build -t my-hello-world-app .`
+
+**Start the container**
+
+Start the container by executing:
+
+`docker run -d -p 8080:8080 --name spring-app my-hello-world-app`
+
+**Stop the container**
+
+`docker stop spring-app`
+
+**Remove the images**
+
+`docker rmi java maven my-hello-world-app`
 
 </details>
