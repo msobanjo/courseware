@@ -50,69 +50,89 @@ For this demo, we will be using the **Azure Portal**.
 
 The first thing we need to do is create a **Load Balancer**:
 
-1. In the search box at the top of the home page, search "Load Balancer" and click on it when it pops up
+1. In the search box at the top of the home page, we can search "Load Balancer" and click on it when it pops up
 
-2. Click **+Add** in the top left
+2. We'll click **+Add** in the top left
 
-3. In the **Basics** tab of the **Create a load balancer** page, enter or select the following:
+3. In the **Basics** tab of the **Create a load balancer** page, we can enter or select the following:
 
-* Subscription - your sunscription
+* Subscription - our sunscription
 * Resource Group - we will create a new one called "**scalesetRG**" for this demo
-* Name - type "**myLoadBalancer**"
-* Region - select **uk south**
-* Type - select **Public**
-* SKU - select **Standard**
-* Public IP Address - select **Create new**
-Public IP address name - type "**myPip**"
-* Assignment - Static
-* Availability Zone - select Zone-redundant
+* Name - we'll type "**myLoadBalancer**"
+* Region - we can select **uk south**
+* Type - we will select **Public**
+* SKU - we'll select **Standard**
+* Public IP Address - we'll select **Create new**
+Public IP address name - we can type "**myPip**" for this
+* Assignment - we'll choose **Static**
+* Availability Zone - we will select **Zone-redundant**
 
 ![loadbalancer](https://i.imgur.com/MF2NxHz.png)
 
 ![loadbalancer2](https://i.imgur.com/d1i5df4.png)
 
-4. Select **Review + create**
+4. We will then select **Review + create**
 
-5. After it passes validation, click **Create**
+5. After it passes validation, we can click **Create**
 
 ### VM Scale Set
 
 Now, we can look at creating a Virtual machine scale set:
 
-1. Type "Scale set" in the search bar and select "Virtual machine scale sets"
+1. First, we type "Scale set" in the search bar and select "Virtual machine scale sets"
 
-2. In the **Basics** tab, choose the correct subscription
+2. We click **+Add** in the top left
 
-3. Create a new resource group named "**vmScaleSetRG**"
+3. In the **Basics** tab, we will choose the correct subscription
 
-4. The name of your scale set can be "**myScaleSet**"
+4. We'll create a new resource group named "**vmScaleSetRG**"
 
-5. Leave the default value of **ScaleSet VMs** for **Orchestrator**
+5. The name of our scale set can be "**myScaleSet**", and for the location, we can choose **UK South**.
 
-6. Choose **Ubuntu Server 18.04 LTS** as the image
+6. For **Orchestrator**, we can leave the default value of **ScaleSet VMs**
 
-7. Choose **Password**, and go ahead and create a username and password you want to use
+7. We will choose **Ubuntu Server 18.04 LTS** as the image
 
-8. Select **Next**:
+8. Then we can choose **Password**, and go ahead and create a username and password we want to use
 
-![SSbasics]
+9. We then select **Next**:
 
-9. Select **Next** again, top get to the **Networking** page
+![SSbasics](https://i.imgur.com/mEy3sL0.png)
+![SSbasics2](https://i.imgur.com/OZwj8J6.png)
 
-10. Here, under **Load balancing**, select **Yes**
+10. The we can select **Next** until we get to the **Networking** page
 
-11. In **Load balancing options**, select **Azure Load balancer**
+11. Here, under **Load balancing**, we'll select **Yes**
 
-12. In **Select a load balancer**, choose the load balancer that you created earlier
+12. In **Load balancing options**, we can select **Azure Load balancer**
 
-13. For **Select backend pool**, choose **Create new**, type "myBackendPool" and then click **Create**
+13. In **Select a load balancer**, we'll choose the load balancer that we created earlier
 
-![SSnetworking]
+14. For **Select backend pool**, we'll choose **Create new**, type "myBackendPool" and then click **Create**
 
-14. Select **Review + create**
+![SSnetworking](https://i.imgur.com/IVMvxd5.png)
+![SSnetworking2](https://i.imgur.com/rX1GJFo.png)
 
-15. Once validation is passed, select **Create**
+15. We'll select **Review + create**
 
-Congratulations! You've just deployed a load balanced Azure Virtual Machine Scale Set!
+16. Once validation is passed, we can select **Create**
 
-## Cleaning up
+We've just deployed a load balanced Azure Virtual Machine Scale Set!
+
+## Task
+
+Now, it's your turn!
+
+Use the demo above to:
+
+1. Create a load balancer
+
+2. Create a Virtual Machine Scale Set using the load balancer from step 1
+
+### Cleaning up
+
+To clean up, use the hamburger menu at the top left of the Portal, and choose **Resource groups**.
+
+Here, you will see the resource groups you created.
+
+If you click on each one, and then choose **Delete resource group**, you will be able to delete the resource group and therefore all the resources inside of it.
