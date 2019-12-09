@@ -42,4 +42,122 @@ Build from a Maven image, copy the code and build it, Build from a Java image, c
 
 <summary>Expand Java task</summary>
 
+There will be four files in total that will be required for this task.
+
+Important thing to note is that the structure has to be as as described, otherwise it will lead to exercise not working.
+
+Make sure that the folder and file names are identical. 
+
+Here is an image showing the final structure:
+
+![docker search](https://imgur.com/9BzXcFt.jpg)
+
+Blue represents folders, white represents files.
+
+**Create a new directory**
+
+Create a new directory `docker_multi_stage_example`, command for this is:
+
+`mkdir docker_multi_stage_example`
+
+**Create Java file**
+
+Create the Java application which will run a Spring Boot server, don’t forget to put it in the correct directory.
+
+The filename is `HelloWorldApplication.java`, make sure you are in the the directory `docker_multi_stage_example` and then run the command:
+
+`touch src/main/java/com/example/helloworld/HelloWorldApplication.java`
+
+Place the following contents into the *HelloWorldApplication.java* file:
+
+```java
+package com.example.helloworld;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HelloWorldApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HelloWorldApplication.class, args);
+    }
+}
+```
+
+**Create static web page**
+
+Just a simple static web page for the application to serve, remember not to forget the folders on this one also.
+
+The filename is `index.html`, make sure you are in the the directory `docker_multi_stage_example` and then run the command:
+
+`touch src/main/resources/static/index.html`
+
+Place the following contents into the *index.html* file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Java Spring Boot Server</title>
+</head>
+<body>
+    Hello from Docker
+</body>
+</html>
+```
+
+**Create configuration file**
+
+For Maven to understand what to compile and how to package the application (a JAR file in our case) we need to create a **pom.xml** file at the root of the project.
+
+Make sure you are in the the directory `docker_multi_stage_example` and then run the command:
+
+`touch pom.xml`
+
+Place the following contents into the *pom.xml* file:
+
+```xml
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>hello-world</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <name>hello-world</name>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.0.RELEASE</version>
+    <relativePath/>
+  </parent>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+```
+
+**Creating Dockerfile**
+
+The Dockerfile is where we are going to be able to implement the Multistage Build, using a Maven image to compile the code and create a JAR file, then a Java image to run the code in.
+
+
+
 </details>
