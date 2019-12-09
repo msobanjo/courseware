@@ -6,6 +6,9 @@
 - [Why use them?](#why-use-them)
 - [Monitoring Scale Sets](#monitoring-scale-sets)
 - [Demo](#demo)
+	- [Load Balancer](#load-balancer)
+	- [VM Scale Set](#vm-scale-set)
+- [Cleaning up](#cleaning-up)
 
 <!--TOC_END-->
 ## Overview
