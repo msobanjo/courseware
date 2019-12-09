@@ -14,4 +14,5 @@ It provides **S**oftware as a **s**ervice (**SaaS**), **P**latform as a **S**erv
 <!--MODULES_START-->
 ## Modules
 - [Container Instances](./modules/container-instances)
+- [Virtual Machine Scale Sets](./modules/vm-scale-sets)
 <!--MODULES_END-->
