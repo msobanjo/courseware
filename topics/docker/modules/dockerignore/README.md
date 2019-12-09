@@ -63,3 +63,54 @@ Please complete the tasks in the order they appear, otherwise will not work.
 
 Additionally, please use a bash terminal.
 
+**Create a new folder**
+
+Create a new folder called `ignore_exercise`, the command for this is:
+
+`mkdir ignore_exercise`
+
+Change to the new directory, the command for this is:
+
+`cd ignore_exercise`
+
+**Create Dockerfile**
+
+First we can make the **Dockerfile** which is going to serve as a way to demonstrate how the ignore file is taking effect.
+
+Create a *Dockerfile*, the command for this is:
+
+`touch Dockerfile`
+
+Place the following contents into the *Dockerfile*:
+
+```dockerfile
+# build from the latest alpine image
+# alpine is a very lightweight distribution of Linux
+FROM alpine:latest
+
+# copy everything from the context to the container
+COPY . /context
+
+# display everything that has been copied to the container
+RUN ls -al /context
+```
+
+**Create .dockerignore file**
+
+Next we'll create a **.dockerignore** file, the command for this is:
+
+`touch .dockerignore`
+
+Place the following contents into the *.dockerignore* file:
+
+```dockerfile
+# ignore the docs folder
+docs
+
+# ignore all markdown files
+*.md
+
+# in this case, we can make an exception for the README
+!README.md
+```
+
