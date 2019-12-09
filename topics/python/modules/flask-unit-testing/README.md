@@ -3,10 +3,11 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Testing Layout](#testing-layout)
-- [Creating, Setting up and Tearing down environments](#creating-setting-up-and-tearing-down-environments)
-- [Adding the First Test](#adding-the-first-test)
+- [Tutorial](#tutorial)
+	- [Prerequisites](#prerequisites)
+	- [Testing Layout](#testing-layout)
+	- [Creating, Setting up and Tearing down environments](#creating-setting-up-and-tearing-down-environments)
+	- [Adding the First Test](#adding-the-first-test)
 
 <!--TOC_END-->
 ## Overview
