@@ -41,7 +41,7 @@ Build from a Maven image, copy the code and build it, Build from a Java image, c
 
 <details>
 
-<summary>Expand Java task</summary>
+<summary><b>Expand Java task</b></summary>
 
 There will be four files in total that will be required for this task.
 
