@@ -1,4 +1,4 @@
-## Multi-stage build
+# Multi-stage build
 
 ## Overview
 
