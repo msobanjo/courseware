@@ -52,9 +52,6 @@ jobs:
           name: Remove Extra Newlines
           command: ./automation/remove_whitespace.py
       - run:
-          name: Create State
-          command: ./automation/state.py > state.json
-      - run:
           name: Push Changes Made from Scripts
           command: |
             git status
