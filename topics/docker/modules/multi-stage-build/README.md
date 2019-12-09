@@ -229,3 +229,12 @@ When prompted for confirmation type `y` and hit enter:
 `docker system prune -a`
 
 </details>
+
+<details>
+
+<summary>Expand Java Solution</summary>
+
+You can find the working solution [here](https://github.com/tvaidotas/docker-multi-stage-build).
+
+Once you cloned the repository and have the terminal in the root directory, start at the `Create the image` step of the Java task.
+</details>
