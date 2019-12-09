@@ -224,6 +224,8 @@ Start the container by executing:
 
 **Remove the images**
 
-`docker rmi java maven my-hello-world-app`
+When prompted for confirmation type `y` and hit enter:
+
+`docker system prune -a`
 
 </details>
