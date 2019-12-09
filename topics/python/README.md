@@ -10,4 +10,5 @@ Python is an interpreted language, implemented at a high-level and for general-p
 <!--MODULES_START-->
 ## Modules
 - [Gunicorn](./modules/gunicorn)
+- [Flask App Unit Testing Tutorial](./modules/unit-testing)
 <!--MODULES_END-->
