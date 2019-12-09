@@ -130,17 +130,15 @@ Build the image by executing:
 
 `docker build -t my-image:latest .`
 
-**Run the image**
+You should see a similar output, which shows the contents of `context` directory within the image:
 
-Run the image by executing:
+![docker copying files](https://imgur.com/SXvvIMv.jpg)
 
-`docker run -d --name my-image my-image:latest`
+Pay attention that there was no line in the *.dockerignore* file, hence the *.dockerignore* file got copied over as well.
 
-**Remove the container**
+Similarly, in the *.dockerignore* file it was set that the *README.md* will be excluded from being ignored and it got copied over as well.
 
-Remove the container by executing:
-
-`docker rm my-image`
+This should show how the `COPY . /context` would copy all the contents of the current directory into the images `/context` directory, but it would take into account what are the contents of the *.dockerignore* file.
 
 **Remove the image**
 
