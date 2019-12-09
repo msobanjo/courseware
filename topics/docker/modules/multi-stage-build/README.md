@@ -61,6 +61,10 @@ Create a new directory `docker_multi_stage_example`, command for this is:
 
 `mkdir docker_multi_stage_example`
 
+Change to the new directory:
+
+`cd docker_multi_stage_example`
+
 **Create Java file**
 
 Create the Java application which will run a Spring Boot server, don’t forget to put it in the correct directory.
