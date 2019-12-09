@@ -53,3 +53,12 @@ secrets/passwords
 ```
 
 ## Tasks
+
+We’ll be looking at how to utilise a *.dockerignore* file in this exercise. 
+
+We can use a *Dockerfile* to test how the ignore file is behaving and see which files are not being sent to the Docker daemon.
+
+Please complete the tasks in the order they appear, otherwise will not work.
+
+Additionally, please use a bash terminal.
+
