@@ -3,6 +3,9 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Why use them?](#why-use-them)
+- [Monitoring Scale Sets](#monitoring-scale-sets)
+- [Demo](#demo)
 
 <!--TOC_END-->
 ## Overview
@@ -39,4 +42,3 @@ You can also configure an **availability test** to simulate user traffic and fur
 ## Demo
 
 For this demo, we will be using the **Azure Portal**.
-
