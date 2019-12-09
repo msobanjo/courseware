@@ -1,12 +1,28 @@
 #! /usr/bin/env python
 import pandas as pd
 import json
-from pandas.io.json import json_normalize
 
 with open("./state.json", "r") as file:
     state = json.load(file)
 
-#df = json_normalize(state)
-for i in state:
-    print(state[i])
-#print(df.head)
+topics = []
+modules = []
+all_items = []
+count = 0
+
+for i in state["topics"]:
+    all_items.append(i["modules"])
+
+for i in all_items:
+    while count < len(i):
+        item = (i[count]['resourceName'])
+        split_item = item.split("/")
+        topics.append(split_item[0])
+        modules.append(split_item[1])
+        count += 1
+    count = 0
+
+
+df = pd.DataFrame(list(zip(topics, modules)), columns=['topics', 'modules'])
+path = '/tmp/'
+df.to_csv(path + 'state.csv')
