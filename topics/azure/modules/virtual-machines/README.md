@@ -150,6 +150,12 @@ If prompted, we need to click "yes" to start up the VMs Graphical User Interface
 
 ![VM15](https://i.imgur.com/kOHxlud.png)
 
+## Cleaning Up
+
+To clean up, go back to the Resource Group page, click your resource group you used for this module, and then choose "Delete".
+
+Once you type the name of the resource group to confirm deletion, this will be deleted along with everything inside of it.
+
 ## Task
 
 Now it is your turn to create and connect to a Linux and Windows VM:
