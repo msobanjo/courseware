@@ -113,5 +113,5 @@ For more examples and ideas, visit:
 <!--MODULES_START-->
 ## Modules
 - [Images](./modules/images)
-- [Multistage build](./modules/multistage-build)
+- [Multi-stage build](./modules/multi-stage-build)
 <!--MODULES_END-->
