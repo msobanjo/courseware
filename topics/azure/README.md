@@ -13,5 +13,6 @@ Microsoft Azure is a cloud computing service created by Microsoft for building, 
 It provides **S**oftware as a **S**ervice (**SaaS**), **P**latform as a **S**ervice (**PaaS**) and **I**nfrastructure as a **S**ervice (IaaS), and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
 <!--MODULES_START-->
 ## Modules
+- [Blob Storage](./modules/blob-storage)
 - [Container Instances](./modules/container-instances)
 <!--MODULES_END-->
