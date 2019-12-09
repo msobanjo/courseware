@@ -8,6 +8,7 @@ with open("./state.json", "r") as file:
 topics = []
 modules = []
 all_items = []
+all_topics = []
 count = 0
 
 for i in state["topics"]:
@@ -17,11 +18,16 @@ for i in all_items:
     while count < len(i):
         item = (i[count]['resourceName'])
         split_item = item.split("/")
-        topics.append(split_item[0])
+        all_topics.append(split_item[0])
         modules.append(split_item[1])
         count += 1
     count = 0
 
+for topic in all_topics:
+    if topic not in topics:
+        topics.append(topic)
+    else:
+        topics.append("-")
 
 df = pd.DataFrame(list(zip(topics, modules)), columns=['topics', 'modules'])
 df.to_csv('/tmp/state.csv')
