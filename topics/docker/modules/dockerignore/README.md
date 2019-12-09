@@ -114,3 +114,24 @@ docs
 !README.md
 ```
 
+**Create project files**
+
+Create a directory called `docs`, the command for it is:
+
+`mkdir docs`
+
+Create the following files `app.py`, `Dockerfile`, `my-notes.md`, `README.md` the command for this is:
+
+`touch app.py Dockerfile my-notes.md README.md`
+
+**Build the image**
+
+Build the image by executing:
+
+`docker build -t my-image:latest .`
+
+**Run the image**
+
+Run the image by executing:
+
+`docker run -d --name my-image my-image:latest`
