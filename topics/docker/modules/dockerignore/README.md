@@ -26,6 +26,30 @@ The entries listed in this file will be taken into account before the files are 
 
 All files in the context that match any of the expressions in the ignore file, **will be ignored** and not sent to the Docker daemon.
 
+## Usage
 
+All entries will need to be put in a file called **.dockerignore** at the root of the context. 
+
+You can usually ignore the files that you need to by either providing the file itself or by using wildcards.
+
+Here's an example:
+
+```dockerfile
+# this is a dockerignore file
+# comments can be made with conventional '#'
+
+# ignore a sensitive file:
+secrets/passwords
+
+# ignore all markdown files:
+*.md
+
+# ignore any text files in a sub directory:
+*/*.txt
+
+# all markdown files have been ignored,
+# but make an exception for the README.md:
+!README.md
+```
 
 ## Tasks
