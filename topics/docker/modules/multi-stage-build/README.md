@@ -45,7 +45,7 @@ Build from a Maven image, copy the code and build it, Build from a Java image, c
 
 There will be four files in total that will be required for this task.
 
-Important thing to note is that the structure has to be as as described, otherwise it will lead to exercise not working.
+**Important** thing to note is that the structure has to be as as described, otherwise it will lead to exercise not working.
 
 Make sure that the folder and file names are identical. 
 
@@ -54,6 +54,8 @@ Here is an image showing the final structure:
 ![docker search](https://imgur.com/9BzXcFt.jpg)
 
 Blue represents folders, white represents files.
+
+**Note** - if you want to retain the formatting when pasting, try **CTRL+Insert**
 
 **Create a new directory**
 
