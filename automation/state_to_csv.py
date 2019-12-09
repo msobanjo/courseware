@@ -24,5 +24,4 @@ for i in all_items:
 
 
 df = pd.DataFrame(list(zip(topics, modules)), columns=['topics', 'modules'])
-path = '/tmp/'
-df.to_csv(path + 'state.csv')
+df.to_csv('/tmp/state.csv')
