@@ -3,6 +3,7 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Multistage Build with Java & Maven](#multistage-build-with-java--maven)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
