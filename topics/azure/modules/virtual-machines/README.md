@@ -11,6 +11,7 @@
 - [Connecting to the VMs](#connecting-to-the-vms)
 	- [Linux](#linux)
 	- [Windows](#windows)
+- [Cleaning Up](#cleaning-up)
 - [Task](#task)
 
 <!--TOC_END-->
