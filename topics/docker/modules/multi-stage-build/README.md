@@ -71,7 +71,7 @@ Create the Java application which will run a Spring Boot server, don’t forget 
 
 The filename is `HelloWorldApplication.java`, make sure you are in the the directory `docker_multi_stage_example` and then run the command:
 
-`touch src/main/java/com/example/helloworld/HelloWorldApplication.java`
+`mkdir src && mkdir src/main && mkdir src/main/java && mkdir src/main/java/org && mkdir src/main/java/org/example && touch src/main/java/org/example/HelloWorldApplication.java`
 
 Place the following contents into the *HelloWorldApplication.java* file:
 
@@ -95,6 +95,8 @@ public class HelloWorldApplication {
 Just a simple static web page for the application to serve, remember not to forget the folders on this one also.
 
 The filename is `index.html`, make sure you are in the the directory `docker_multi_stage_example` and then run the command:
+
+`mkdir src/main/resources && mkdir src/main/resources/static && touch src/main/resources/static/index.html`
 
 `touch src/main/resources/static/index.html`
 
