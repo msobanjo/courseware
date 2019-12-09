@@ -8,7 +8,8 @@
 - [Demo](#demo)
 	- [Load Balancer](#load-balancer)
 	- [VM Scale Set](#vm-scale-set)
-- [Cleaning up](#cleaning-up)
+- [Task](#task)
+	- [Cleaning up](#cleaning-up)
 
 <!--TOC_END-->
 ## Overview
