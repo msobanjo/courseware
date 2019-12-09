@@ -232,7 +232,7 @@ When prompted for confirmation type `y` and hit enter:
 
 <details>
 
-<summary>Expand Java Solution</summary>
+<summary><b>Expand Java Solution</b></summary>
 
 You can find the working solution [here](https://github.com/tvaidotas/docker-multi-stage-build).
 
