@@ -135,3 +135,15 @@ Build the image by executing:
 Run the image by executing:
 
 `docker run -d --name my-image my-image:latest`
+
+**Remove the container**
+
+Remove the container by executing:
+
+`docker rm my-image`
+
+**Remove the image**
+
+Remove the image by executing:
+
+`docker rmi my-image alpine`
