@@ -1,5 +1,11 @@
 # Dockerignore
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 When we are building *Docker Images* it’s convenient that we can copy files like applications or configuration files by referring to the relative location, this is thanks to how the context works. 
@@ -22,6 +28,4 @@ All files in the context that match any of the expressions in the ignore file, *
 
 
 
-
 ## Tasks
-

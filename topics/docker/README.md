@@ -112,5 +112,6 @@ For more examples and ideas, visit:
 ```
 <!--MODULES_START-->
 ## Modules
+- [Dockerignore](./modules/dockerignore)
 - [Images](./modules/images)
 <!--MODULES_END-->
