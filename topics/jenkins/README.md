@@ -30,8 +30,8 @@ Simply run this script on the machine you wish to install it on, and execute it 
 ```
 <!--MODULES_START-->
 ## Modules
-- [Basic Python Flask Freestyle Project Deployment with systemd](./modules/basic-python-flask-freestyle-project-deployment-with-systemd)
 - [Freestyle Project](./modules/freestyle-project)
 - [Installation Wizard](./modules/installation-wizard)
 - [Jobs](./modules/jobs)
+- [Python Flask Freestyle Project](./modules/python-flask-freestyle-project)
 <!--MODULES_END-->
