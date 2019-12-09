@@ -1,5 +1,5 @@
 ## Objective
-To install and configure Ansible, connect two machines (one master, one node) together and perform ad-hoc Ansible commands between them.
+To have been able to setup Ansible yourself and hook 2 machines (Master and Node) together.  Also to start performing ad-hoc Ansible commands between them.
 
 <!--TOC_START-->
 ## Contents
@@ -11,4 +11,4 @@ To install and configure Ansible, connect two machines (one master, one node) to
 
 ### Install Ansible on a Linux VM
 - Ensure you use 2 VM’s, one for the master and one for the node
-- Set up the inventory. When you have set up the machines, use the ansible ping module to communicate between them.
+- Set up the inventory, when you have setup the machines use the ansible ping module to communicate between them.

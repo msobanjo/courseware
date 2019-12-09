@@ -3,8 +3,7 @@
     "prerequisites": [
         "package-managers/pip-introduction",
         "linux/path-environment-variable"
-    ],
-    "supportedPlatforms": [
+    ], "supportedPlatforms": [
         "ubuntu-18"
     ]
 }
@@ -32,7 +31,7 @@ It runs on and can configure many Unix-like systems, as well as Microsoft Window
 
 ### Using Pip
 A good way to install Ansible is by using the Pip package manager.
-Ansible requires Python to be installed to run on any machine. With Python installed, we can then use the Pip package manager to install Ansible on any machine consistently.
+This is because to run Ansible on any machine you are going to need Python installed, with Python installed the Pip package manager is a consistent way to install Ansible on any machine.
 
 We can also use Pip to install Ansible into the current user's home directory too, avoiding any need for elevated permissions on the machine.
 ```bash
@@ -77,7 +76,7 @@ Here we have a playbook which installs a basic NGINX web server so that we can u
 ### Run the Playbook
 The `ansible-playbook` command can be used to run our playbook and install NGINX on the server:
 ```bash
-ansible-playbook playbok.yml
+ansible-playbook playbook.yml
 ```
 
 ### Check NGINX has been Installed Correctly

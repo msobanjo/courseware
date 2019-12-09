@@ -3,6 +3,8 @@
 Ansible is an open-source software provisioning, configuration management, and application-deployment tool.
 ## Amazon Web Services (AWS) [&xrarr;](./aws)
 Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 165 fully featured services from data centers globally.
+## Microsoft Azure [&xrarr;](./azure)
+
 ## Common Cloud Concepts [&xrarr;](./cloud)
 
 ## Docker [&xrarr;](./docker)
