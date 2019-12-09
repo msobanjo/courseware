@@ -98,8 +98,6 @@ The filename is `index.html`, make sure you are in the the directory `docker_mul
 
 `mkdir src/main/resources && mkdir src/main/resources/static && touch src/main/resources/static/index.html`
 
-`touch src/main/resources/static/index.html`
-
 Place the following contents into the *index.html* file:
 
 ```html
