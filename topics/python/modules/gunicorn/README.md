@@ -79,9 +79,15 @@ gunicorn --chdir=/opt/project app:app
 ### Run a Simple Flask Application with Gunicorn
 
 #### Prerequisites
-- Linux Operating System
+- Linux Operating System (Debian 9/Ubuntu 18)
 - Python 3
 - `virtualenv`
+
+These prerequisites can be setup using the following commands:
+```bash
+sudo apt update
+sudo apt install -y python3 virtualenv
+```
 
 #### Create an Application Folder
 Create a folder for the test application and change to it
