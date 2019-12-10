@@ -35,7 +35,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip3 install -r pip_dependencies
+            pip install -r pip_dependencies
       - run:
           name: Format all Headings
           command: ./automation/newline_headings.py
