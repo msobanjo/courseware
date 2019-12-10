@@ -14,4 +14,5 @@ It provides **S**oftware as a **S**ervice (**SaaS**), **P**latform as a **S**erv
 <!--MODULES_START-->
 ## Modules
 - [Container Instances](./modules/container-instances)
+- [Serverless Computing](./modules/serverless-computing)
 <!--MODULES_END-->
