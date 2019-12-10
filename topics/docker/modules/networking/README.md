@@ -125,3 +125,81 @@ You can only delete a network if there are not containers connected to it otherw
 `docker network rm my-network`
   
 ## Tasks
+
+**Bridge network exercise**
+
+This exercise is for demonstrating how bridge and host network drivers in Docker behave. 
+
+For the host driver we will see how we can access our deployed application on the host without needing to publish any ports. 
+
+With the bridge driver we will configure an NGINX reverse proxy for an application, which will require two containers to communicate with each other.
+
+<details>
+
+<summary><b>Show solution</b></summary>
+
+**Create a new directory**
+
+Create a new directory called `networking_exercise`, the command to do it is:
+
+`mkdir networking_exercise`
+
+Change to new directory:
+
+`cd networking_exercise`
+
+**Create a New Bridged Network**
+
+`docker network create my-network`
+
+**Create an Application Container**
+
+For this example we can use Jenkins which is a very popular CI tool that is web based, you may deploy your own application if you wish. 
+
+Create the application container and attach it to the new bridge network.
+
+`docker run -d --network my-network --name jenkins jenkins`
+
+**Create an NGINX Configuration**
+
+NGINX is another very popular tool that can address many networking issues, we’ll be using it for it’s primary purpose here, as a reverse proxy. 
+
+We’ll need create our own config file for this **nginx.conf**.
+
+To create the file execute:
+
+`touch nginx.conf`
+
+Place the following contents into the file:
+
+```nginx
+events {}
+http {
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://jenkins:8080;
+        }
+    }
+}
+```
+
+**Create an NGINX Container**
+
+We are going to pass in the configuration that we made as volume to the container, this module doesn’t explain what this is, however all you need to know at this point is that it gives the container access to the configuration file that we just created. 
+
+The NGINX container that we create must also be attached to the network we made earlier we’ll also publish port 80 we can access NGINX from outside of the bridge network.
+
+Here's the command to do it:
+
+`docker run -d --network my-network -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf -p 80:80 --name nginx nginx`
+
+**Accessing Application**
+
+You should now be able to access your application from the host, http://localhost, or if it a remote server with port 80 opened on the firewall you can just access your application via the public IP address.
+
+When you connect to your application, traffic is going through NGINX first, it is then routed to you deployed application even though they are in separate containers. 
+
+This made possible because both the containers are on the same bridge network.
+
+</details>
