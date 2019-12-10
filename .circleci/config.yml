@@ -35,7 +35,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install -r pip_dependencies
+            pip3 install -r pip_dependencies
       - run:
           name: Format all Headings
           command: ./automation/newline_headings.py
@@ -55,6 +55,12 @@ jobs:
           name: Create State
           command: ./automation/state.py > state.json
       - run:
+          name: Create State CSV
+          command: ./automation/state_to_csv.py
+      - run:
+          name: Check Directory Structure
+          command: ./automation/check_structure.py
+      - run:
           name: Push Changes Made from Scripts
           command: |
             git status
@@ -66,12 +72,6 @@ jobs:
             else
               echo "nothing has been changed after running the scripts, cancelling push"
             fi
-      - run:
-          name: Create State CSV
-          command: ./automation/state_to_csv.py
-      - run:
-          name: Check Directory Structure
-          command: ./automation/check_structure.py
       - save_cache:
           paths:
             - ./venv
