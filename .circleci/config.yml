@@ -66,6 +66,12 @@ jobs:
             else
               echo "nothing has been changed after running the scripts, cancelling push"
             fi
+      - run:
+          name: Create State CSV
+          command: ./automation/state_to_csv.py
+      - run:
+          name: Check Directory Structure
+          command: ./automation/check_structure.py
       - save_cache:
           paths:
             - ./venv
