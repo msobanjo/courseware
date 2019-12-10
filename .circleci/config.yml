@@ -31,9 +31,9 @@ jobs:
             - v1-dependencies-
 
       - run:
-          name: install dependencies
+          name: Install dependencies
           command: |
-            python3 -m venv venv
+            python3 -m virtualenv venv
             . venv/bin/activate
             pip install -r pip_dependencies
       - run:
