@@ -4,7 +4,6 @@
 
 <!--TOC_START-->
 ## Contents
-	- [Contents](#contents)
 - [Overview](#overview)
 - [Usage](#usage)
 - [IP addresses](#ip-addresses)
