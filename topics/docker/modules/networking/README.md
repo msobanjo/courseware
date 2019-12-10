@@ -212,14 +212,42 @@ Here's the command to do it:
 
 You should now be able to access your application from the host, http://localhost, or if it a remote server with port 80 opened on the firewall you can just access your application via the public IP address.
 
+You should see something like this:
+
+![docker jenkins browser](https://imgur.com/91R2bQg.jpg)
+
+You can also check it through the terminal by executing the following command:
+
+`curl localhost:80`
+
+You should see something like this:
+
+![docker jenkins CLI](https://imgur.com/Zkc01Yg.jpg)
+
 When you connect to your application, traffic is going through NGINX first, it is then routed to you deployed application even though they are in separate containers. 
 
 This made possible because both the containers are on the same bridge network.
 
-**Stop and remove containers/images**
+**Stop containers**
 
-Execute the following command to stop and remove all the containers, as well as images.
+Stop the containers by executing:
 
-`docker system prune -a`
+`docker stop jenkins nginx`
+
+**Remove containers**
+
+Remove containers by executing:
+
+`docker rm jenkins nginx`
+
+**Remove images**
+
+Remove images by executing:
+
+`docker rmi nginx:latest jenkins:latest`
 
 </details>
+
+**Individual task**
+
+Try to get one of your projects to work now, for instance a server that connects to a database, or a frontend application that connects to a server using Docker networks.
