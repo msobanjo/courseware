@@ -14,4 +14,5 @@ It provides **S**oftware as a **S**ervice (**SaaS**), **P**latform as a **S**erv
 <!--MODULES_START-->
 ## Modules
 - [Container Instances](./modules/container-instances)
+- [Microsoft Privacy Statement](./modules/privacy-statement)
 <!--MODULES_END-->
