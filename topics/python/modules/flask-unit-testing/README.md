@@ -8,7 +8,7 @@
 	- [Testing Layout](#testing-layout)
 	- [Creating, Setting up and Tearing down environments](#creating-setting-up-and-tearing-down-environments)
 	- [Adding the First Test](#adding-the-first-test)
-	- [Exercises](#exercises)
+- [Exercises](#exercises)
 
 <!--TOC_END-->
 ## Overview
@@ -160,5 +160,5 @@ mv ./htmlcov/index.html ./test_results/test-at-$(date "+%h-%m")-on-$(date "+%y-%
 rm -rf htmlcov
 ```
 
-### Exercises
+## Exercises
 Now set up your project for unit testing and prepare your app to be tested several times with reports.
