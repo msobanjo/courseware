@@ -3,7 +3,8 @@
 # IP
 
 <!--TOC_START-->
-### Contents
+## Contents
+	- [Contents](#contents)
 - [Overview](#overview)
 - [Usage](#usage)
 - [IP addresses](#ip-addresses)
@@ -164,6 +165,7 @@ IPv4 addresses can also be expressed in IPv6 format - the IPv4 address `10.12.56
 ```
 
 ## Tasks
+
 ### Convert binary IP addresses to decimal
 Without using an online tool, convert the following binary *IP addresses* to decimal:
 ```text
@@ -217,7 +219,6 @@ Without using an online tool, convert the following binary *IP addresses* to dec
 01001010.01111101.00101011.01100011
 ```
 
-
 <details>
 
 <summary><b>Answer</b></summary>
@@ -226,8 +227,8 @@ Without using an online tool, convert the following binary *IP addresses* to dec
 
 </details>
 
-
 ### Find your IP address
+
 #### macOS, Linux, or Windows Subsystem for Linux
 Open a terminal and enter the following command (if on an *Ethernet* network):
 ```text
@@ -300,6 +301,7 @@ Wireless LAN adapter WiFi:
 ```
 
 ### Change your IP address
+
 #### macOS, Linux, or Windows Subsystem for Linux
 **You will need to make a note of your current IP address before attempting this Task.**
 

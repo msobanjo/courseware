@@ -6,6 +6,7 @@ To start working with the fundamental concepts of Ansible when building Playbook
 - [Task](#task)
 	- [Look at Modules that exist and what we can do with them.](#look-at-modules-that-exist-and-what-we-can-do-with-them)
 	- [Writing simple YAML Playbooks](#writing-simple-yaml-playbooks)
+	- [Writing simple YAML Playbooks](#writing-simple-yaml-playbooks-1)
 
 <!--TOC_END-->
 ## Task
