@@ -113,4 +113,5 @@ For more examples and ideas, visit:
 <!--MODULES_START-->
 ## Modules
 - [Images](./modules/images)
+- [Networking](./modules/networking)
 <!--MODULES_END-->
