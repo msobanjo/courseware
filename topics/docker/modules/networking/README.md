@@ -216,4 +216,10 @@ When you connect to your application, traffic is going through NGINX first, it i
 
 This made possible because both the containers are on the same bridge network.
 
+**Stop and remove containers/images**
+
+Execute the following command to stop and remove all the containers, as well as images.
+
+`docker system prune -a`
+
 </details>
