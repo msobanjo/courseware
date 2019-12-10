@@ -2,16 +2,19 @@
 
 <!--TOC_START-->
 ## Contents
-- [Overview](#overview)
-- [Tutorial](#tutorial)
-	- [Prerequisites](#prerequisites)
-	- [Testing Layout](#testing-layout)
-	- [Creating, Setting up and Tearing down environments](#creating-setting-up-and-tearing-down-environments)
-	- [Adding the First Test](#adding-the-first-test)
+- [Flask Unit Testing](#flask-unit-testing)
+  - [Contents](#contents)
+  - [Overview](#overview)
+  - [Tutorial](#tutorial)
+    - [Prerequisites](#prerequisites)
+    - [Testing Layout](#testing-layout)
+    - [Creating, Setting up and Tearing down environments](#creating-setting-up-and-tearing-down-environments)
+    - [Adding the First Test](#adding-the-first-test)
+    - [Generating Test Reports](#generating-test-reports)
 
 <!--TOC_END-->
 ## Overview
-In this tutorial we will set up a flask application for unit testing and then add one unit test.
+In this tutorial we will set up a CRUD flask application for unit testing and then add one unit test.
 We will also save a unique report for each time we carry out the test.
 
 ## Tutorial
@@ -115,6 +118,7 @@ Now if we run this command in the root of your project, the test will run
 ```bash
 pytest
 ```
+### Generating Test Reports
 We need to keep track of our tests and how well they cover every eventuality with our app.
 
 We will do this using pytest coverage.
