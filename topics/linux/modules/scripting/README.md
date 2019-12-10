@@ -28,7 +28,7 @@ Write a script that does the follwing:
     - Make test2.sh a script that prints the working directory
     - Execute that script
 
-Add this script to the PATH, it should now be executable from everywhere.
+Make this script executable from everywhere.
 
 ## Excercise 3
 Write a script that takes a url as user input and then returns whether that website exists.
