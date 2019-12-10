@@ -82,7 +82,7 @@ In the example shown below the following is evaluated:
 ```powershell
 $filePath = "$HOME\file.txt"
 While (Test-Path "$filePath") {
-    "Waiting for $filePath to be deleted exist..."
+    "Waiting for $filePath to be deleted..."
     Start-Sleep 2
 }
 ```
@@ -99,8 +99,8 @@ For the example here, the conditions for the loop to continue running are:
 ```powershell
 $counter = 0
 $filePath = "$HOME\file.txt"
-While (Test-Path "$filePath" -and ($counter -lt 10)) {
-    "Waiting for $filePath to be deleted..."
+While ((Test-Path "$filePath") -and ($counter -lt 10)) {
+    "Waiting for $filePath to exist..."
     Start-Sleep 1
     $counter++
 }
@@ -187,6 +187,7 @@ The For loop example can be converted to the following to allow it work as a Whi
 Create a file called `error-check-while-loop.ps1` and enter the following:
 ```powershell
 $content = Get-Content "log.txt"
+$line = 0
 While ($line -lt $content.Length) {
     if ($content[$line].Contains("[error]")) {
         "Line: $($line+1): $($content[$line])"
@@ -204,6 +205,7 @@ Converting to a Do While loop from the While loop example above is very simple. 
 Try creating a file called `error-check-do-while-loop.ps1` and enter the following:
 ```powershell
 $content = Get-Content "log.txt"
+$line = 0
 Do {
     if ($content[$line].Contains("[error]")) {
         "Line: $($line+1): $($content[$line])"
@@ -221,12 +223,13 @@ The Do Until loop can be based off the Do While loop however the condition must 
 Try creating a file called `error-check-do-until-loop.ps1` and enter the following:
 ```powershell
 $content = Get-Content "log.txt"
+$line = 0
 Do {
     if ($content[$line].Contains("[error]")) {
         "Line: $($line+1): $($content[$line])"
     }
     $line++
-} While ($line -eq $content.Length) 
+} Until ($line -eq $content.Length) 
 ```
 Give the script a go:
 ```powershell
