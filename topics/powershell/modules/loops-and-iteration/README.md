@@ -69,6 +69,7 @@ It would be slightly better to use a For loop to iterate arrays but it can still
 $colours = @("Red", "Blue", "Green", "Orange", "Purple")
 While ($i -ne $colours.length) {
     $colours[$i]
+    $i++
 }
 ```
 
