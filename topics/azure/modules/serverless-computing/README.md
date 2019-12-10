@@ -34,7 +34,7 @@ In summary, the main benefits are:
 * Faster Time to Market
 * More Efficient use of Resources
 
-## Some Serverless Services
+## Azure Serverless Services
 
 Microsoft Azure offers many services that can work in a serverless way. These include:
 
