@@ -5,29 +5,43 @@ import json
 with open("./state.json", "r") as file:
     state = json.load(file)
 
-topics = []
-modules = []
-all_items = []
-all_topics = []
-count = 0
-
+all_module_items = []
 for i in state["topics"]:
-    all_items.append(i["modules"])
+    all_module_items.append(i["modules"])
 
-for i in all_items:
-    while count < len(i):
-        item = (i[count]['resourceName'])
-        split_item = item.split("/")
-        all_topics.append(split_item[0])
-        modules.append(split_item[1])
-        count += 1
+def topics_list(item_list):
     count = 0
+    topics = []
+    for i in item_list:
+        while count < len(i):
+            item = (i[count]['resourceName'])
+            split_item = item.split("/")
+            topics.append(split_item[0])
+            count += 1
+        count = 0
+    return topics
 
-for topic in all_topics:
-    if topic not in topics:
-        topics.append(topic)
-    else:
-        topics.append("-")
+def modules_list(item_list):
+    count = 0
+    modules = []
+    for i in item_list:
+        while count < len(i):
+            item = (i[count]['resourceName'])
+            split_item = item.split("/")
+            modules.append(split_item[1])
+            count += 1
+        count = 0
+    return modules
+    
+def refactor_topics(topics_list):
+    refactored_topics = []
+    for topic in topics_list:
+        if topic not in refactored_topics:
+            refactored_topics.append(topic)
+        else:
+            refactored_topics.append("-")
+    return refactored_topics
 
-df = pd.DataFrame(list(zip(topics, modules)), columns=['topics', 'modules'])
+
+df = pd.DataFrame(list(zip(refactor_topics(topics_list(all_module_items)), modules_list(all_module_items))), columns=['topics', 'modules'])
 df.to_csv('/tmp/state.csv')
