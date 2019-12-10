@@ -1,13 +1,13 @@
 # Scripts Excercises
+
 <!--TOC_START-->
 ## Contents
-- [Scripts Excercises](#scripts-excercises)
-  - [Contents](#contents)
-  - [Overview](#overview)
-  - [Excercise 1](#excercise-1)
-  - [Excercise 2](#excercise-2)
-  - [Excercise 3](#excercise-3)
-  - [Excercise 4](#excercise-4)
+- [Overview](#overview)
+- [Excercise 1](#excercise-1)
+- [Excercise 2](#excercise-2)
+- [Excercise 3](#excercise-3)
+- [Excercise 4](#excercise-4)
+
 <!--TOC_END-->
 ## Overview
 These are some scripting tasks. 
