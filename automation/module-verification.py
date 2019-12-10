@@ -13,6 +13,8 @@ with open(file) as readme_file:
     readme_lines = readme_file.readlines()
 
 
+errors = ""
+
 for spec in specs:
     print("spec: {0}".format(spec))
     matched = []
@@ -21,8 +23,16 @@ for spec in specs:
         match = pattern.search(line)
         if match:
             matched.append(match)
-    if len(matched) == 0:
-        raise Exception("There needs to be at least one {0} in the file: {1}".format(spec['description'], file))
-    else if len(matched > 1):
-        raise Exception("There needs to be at least one {0} in the file: {1}".format(spec['description'], file))
 
+    if 'count' in spec:
+        count = spec['count']
+    else:
+        count = 1
+
+    if len(matched) < count:
+        errors = errors + "There needs to be at least {0} {1} in the file: {2}\n".format(count, spec['description'], file)
+    elif len(matched) > count:
+        errors = errors + "There can be no more than {0} {1} in the file: {2}".format(count, spec['description'], file)
+
+if errors:
+    raise Exception(errors)

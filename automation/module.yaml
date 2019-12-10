@@ -1,5 +1,7 @@
 - heading: '^# .*$'
   description: 'Top Level Heading, for example: "# Module Heading"'
-  count: 1
+  heading: '^### Contents$'
+  description: 'Contents heading, for example: "### Contents". This should be place after the title and before the Overview sections and is genereated by automated scripts.'
 - heading: '## Overview'
+  description: 'Overview section, for example: "## Overview". This should be after the title and before the module content.'
 
