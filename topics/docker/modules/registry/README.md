@@ -25,5 +25,14 @@ Here's the command for it:
 
 `docker run -d -p 5000:5000 --name registry registry`
 
-
 ## Tasks
+
+This exercise will take you through creating your own registry that you can push and pull images to.
+
+<details>
+
+<summary>Show solution</summary>
+
+
+
+</details>
