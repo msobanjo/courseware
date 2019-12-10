@@ -9,30 +9,20 @@ all_module_items = []
 for i in state["topics"]:
     all_module_items.append(i["modules"])
 
-def topics_list(item_list):
+def topics_modules_lists(item_list):
     count = 0
     topics = []
-    for i in item_list:
-        while count < len(i):
-            item = (i[count]['resourceName'])
-            split_item = item.split("/")
-            topics.append(split_item[0])
-            count += 1
-        count = 0
-    return topics
-
-def modules_list(item_list):
-    count = 0
     modules = []
     for i in item_list:
         while count < len(i):
             item = (i[count]['resourceName'])
             split_item = item.split("/")
+            topics.append(split_item[0])
             modules.append(split_item[1])
             count += 1
         count = 0
-    return modules
-    
+    return topics, modules
+
 def refactor_topics(topics_list):
     refactored_topics = []
     for topic in topics_list:
@@ -43,5 +33,5 @@ def refactor_topics(topics_list):
     return refactored_topics
 
 
-df = pd.DataFrame(list(zip(refactor_topics(topics_list(all_module_items)), modules_list(all_module_items))), columns=['topics', 'modules'])
+df = pd.DataFrame(list(zip(refactor_topics(topics_modules_lists(all_module_items)[0]), topics_modules_lists(all_module_items)[1])), columns=['topics', 'modules'])
 df.to_csv('/tmp/state.csv')
