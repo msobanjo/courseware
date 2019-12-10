@@ -3,6 +3,9 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Microsoft Products](#microsoft-products)
+- [The Privacy Statement](#the-privacy-statement)
+- [Task](#task)
 
 <!--TOC_END-->
 ## Overview
