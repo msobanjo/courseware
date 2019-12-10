@@ -3,6 +3,18 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Network types](#network-types)
+	- [Bridged Networks](#bridged-networks)
+	- [Host Networks](#host-networks)
+	- [Overlay Networks](#overlay-networks)
+	- [Macvlan Networks](#macvlan-networks)
+- [Bridged Networks](#bridged-networks-1)
+- [Managing networks](#managing-networks)
+	- [Creating a network](#creating-a-network)
+	- [Viewing your Docker Networks](#viewing-your-docker-networks)
+	- [Connect an Already Existing Container to a Network](#connect-an-already-existing-container-to-a-network)
+	- [Disconnect a Container from a Network](#disconnect-a-container-from-a-network)
+	- [Delete a Network](#delete-a-network)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
@@ -80,6 +92,7 @@ User defined bridged networks provide many benefits:
 * **Connect and Disconnect Containers on the Fly.**
   You can connect and disconnect containers to a bridge network without having to stop the containers.
   
+
 ## Managing networks
 
 ### Creating a network
@@ -124,4 +137,5 @@ You can only delete a network if there are not containers connected to it otherw
 
 `docker network rm my-network`
   
+
 ## Tasks
