@@ -5,7 +5,7 @@
 - [Overview](#overview)
 - [Infrastructure Management](#infrastructure-management)
 - [Benefits](#benefits)
-- [Some Serverless Services](#some-serverless-services)
+- [Azure Serverless Services](#azure-serverless-services)
 - [Task](#task)
 
 <!--TOC_END-->
