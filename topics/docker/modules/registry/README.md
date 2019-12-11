@@ -27,12 +27,62 @@ Here's the command for it:
 
 ## Tasks
 
+<details>
+
+<summary>Expand guided task</summary>
+
 This exercise will take you through creating your own registry that you can push and pull images to.
+
+**Create the registry**
+
+Start by creating the Registry and make sure that the port 5000 has been published. 
+
+The command for it is:
+
+`docker run -d -p 5000:5000 --name registry registry`
+
+**Upload an Image to the Registry**
+
+To upload an image to the Registry, we first need one that has been tagged appropriately.
+ 
+Start by pulling an NGINX down.
+
+`docker pull nginx:latest`
+
+Re-tag it to be **localhost:5000/my/nginx**.
+
+`docker tag nginx:latest localhost:5000/my/nginx`
+
+Use the `docker push` command to push the image to the *Registry* that you have created.
+
+`docker push nginx:latest `
+
+**Download an image from the Registry**
+
+Delete the NGINX images, both yours **localhost:5000/my/nginx** and the official **nginx** image. 
+
+The command for this is:
+
+`docker rmi nginx:latest localhost:5000/my/nginx`
+
+Now we can run a docker pull command to prove that the image has been stored in the Registry that we deployed, remember to pull you docker image as **localhost:5000/my/nginx**.
+
+The command for this is:
+
+`docker pull localhost:5000/my/nginx`
+
+Check that the image has been pulled by executing:
+
+`docker images`
+
+</details>
 
 <details>
 
-<summary>Show solution</summary>
+<summary>Expand individual task</summary>
 
+Stop and remove all containers, remove all the images.
 
+Try to create a shell script that can pull down a project from GitHub, build the Docker image and push it to the registry.
 
 </details>
