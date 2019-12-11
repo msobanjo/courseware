@@ -52,7 +52,6 @@ jobs:
           name: Remove Extra Newlines
           command: ./automation/remove_whitespace.py
       - run:
-<<<<<<< HEAD
           name: Create State
           command: ./automation/state.py > state.json
       - run:
@@ -62,8 +61,6 @@ jobs:
           name: Check Directory Structure
           command: ./automation/check_structure.py
       - run:
-=======
->>>>>>> master
           name: Push Changes Made from Scripts
           command: |
             git status
