@@ -32,6 +32,7 @@ Simply run this script on the machine you wish to install it on, and execute it 
 ## Modules
 - [Freestyle Project](./modules/freestyle-project)
 - [Installation Wizard](./modules/installation-wizard)
+- [Introduction](./modules/introduction)
 - [Jobs](./modules/jobs)
 - [Python Flask Freestyle Project](./modules/python-flask-freestyle-project)
 <!--MODULES_END-->
