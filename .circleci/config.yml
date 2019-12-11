@@ -56,7 +56,7 @@ jobs:
           command: ./automation/state.py > state.json
       - run:
           name: Create State CSV
-          command: python3 ./automation/state_to_csv.py
+          command: ./automation/state_to_csv.py
       - run:
           name: Check Directory Structure
           command: ./automation/check_structure.py
