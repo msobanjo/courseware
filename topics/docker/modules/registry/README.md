@@ -95,7 +95,7 @@ Remove registry container:
 
 Remove images:
 
-`docker rm registry localhost:5000/my/nginx`
+`docker rmi registry localhost:5000/my/nginx`
 
 </details>
 
