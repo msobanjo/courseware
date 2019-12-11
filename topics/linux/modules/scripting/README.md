@@ -3,10 +3,10 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [Exercise 1](#excercise-1)
-- [Exercise 2](#excercise-2)
-- [Exercise 3](#excercise-3)
-- [Exercise 4](#excercise-4)
+- [Exercise 1](#exercise-1)
+- [Exercise 2](#exercise-2)
+- [Exercise 3](#exercise-3)
+- [Exercise 4](#exercise-4)
 
 <!--TOC_END-->
 ## Overview
