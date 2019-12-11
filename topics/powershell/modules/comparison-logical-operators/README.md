@@ -24,7 +24,7 @@ Some of the key comparison operators in PowerShell include:
 * `-gt` : greater than
 * `-ge` : greater than or equal to
 * `-lt` : less than
-* `le` : less than or equal to
+* `-le` : less than or equal to
 
 All comparison operators are case-insensitive by default. To make them case-sensitive, you would precede the operator with a `c` (for example, `-ceq` for equals).
 

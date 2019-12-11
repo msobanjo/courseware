@@ -45,7 +45,7 @@ def get_resource_name(module):
     return module.replace("\\", "/").replace("topics/", "").replace("modules/", "")
 def get_all_modules_for_topic(topic):
     items = Path(topic).glob("modules/*")
-    module_paths = filter(lambda item: os.path.isdir(item), items)
+    module_paths = filter(lambda item: item.is_dir(), items)
     module_paths = map(lambda module: str(module), module_paths)
     modules = []
     for module in module_paths:
@@ -56,7 +56,7 @@ def get_all_modules_for_topic(topic):
 
 def get_all_topics():
     items = list(Path("topics").glob("*"))
-    topics = filter(lambda item: os.path.isdir(item), items)
+    topics = filter(lambda item: item.is_dir(), items)
     topics = map(lambda topic: str(topic), topics)
     new_topics = []
     for topic in topics:
