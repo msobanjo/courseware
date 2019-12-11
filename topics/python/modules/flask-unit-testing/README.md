@@ -154,7 +154,7 @@ Then open the file and you will see its contents.
 To save space after many tests, we will move the index.html and rename it so that each set of test results has a unique name.
 
 Then we will delete the htmlcov directory
-```
+```bash
 mkdir test_results
 mv ./htmlcov/index.html ./test_results/test-at-$(date "+%h-%m")-on-$(date "+%y-%H:%M").html
 rm -rf htmlcov
