@@ -83,7 +83,7 @@ Check that the image has been pulled by executing:
 
 `docker images`
 
-**Clean up*
+**Clean up**
 
 Stop registry container:
 
