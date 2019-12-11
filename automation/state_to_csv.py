@@ -31,4 +31,5 @@ def refactor_topics(topics_list):
             refactored_topics.append("-")
     return refactored_topics
 
-df = pd.DataFrame(list(zip(refactor_topics(topics_modules_lists(all_module_items)[0]), topics_modules_lists(all_module_items)[1])), columns=['topics', 'modules'])
+df = pd.DataFrame(list(zip(refactor_topics(topics_modules_lists(all_module_items)[0]), topics_modules_lists(all_module_items)[1])), columns=['Topics', 'Modules'])
+df.set_index('Topics', inplace=True)
