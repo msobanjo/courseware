@@ -59,7 +59,7 @@ jobs:
           command: ./venv/bin/python ./automation/state_to_csv.py
       - run:
           name: Check Directory Structure
-          command: ./automation/check_structure.py
+          command: ./venv/bin/python ./automation/check_structure.py
       - run:
           name: Push Changes Made from Scripts
           command: |
