@@ -18,7 +18,7 @@ Don't forget to give your script executable permissions.
 Write a script that excepts a username as an input and returns if that username is logged in or not.
 
 ## Exercise 2
-Write a script that does the follwing:
+Write a script that does the following:
 ```text 
     - Creates a new directory inside your home directory
     - Creates 2 .txt files
