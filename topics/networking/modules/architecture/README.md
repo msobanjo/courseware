@@ -33,11 +33,7 @@ Much like letters in a postal system, data is *encapsulated*, or stored, in smal
 Data that is constantly being moved throughout the network is called **traffic**.
 
 ## Network Components
-<<<<<<< HEAD
-Networks do not only contain computers, but several different **components** as well.
-=======
 Networks not only contain computers, but several different **components** as well.
->>>>>>> 2aef3f76a4ada808ee46ff231d66b1501db850b8
 
 Some of these components are visible or usable by an end user, while some simply facilitate the flow of information.
 

@@ -31,11 +31,7 @@ It runs on and can configure many Unix-like systems, as well as Microsoft Window
 
 ### Using Pip
 A good way to install Ansible is by using the Pip package manager.
-<<<<<<< HEAD
-This is because to run Ansible on any machine you are going to need Python installed, with Python installed the Pip package manager is a consistent way to install Ansible on any machine.
-=======
 Ansible requires Python to be installed to run on any machine. With Python installed, we can then use the Pip package manager to install Ansible on any machine consistently.
->>>>>>> 2aef3f76a4ada808ee46ff231d66b1501db850b8
 
 We can also use Pip to install Ansible into the current user's home directory too, avoiding any need for elevated permissions on the machine.
 ```bash
