@@ -19,7 +19,7 @@ Write a script that excepts a username as an input and returns if that username 
 
 ## Exercise 2
 Write a script that does the follwing:
-    
+```text 
     - Creates a new directory inside your home directory
     - Creates 2 .txt files
     - Moves one of the file outside the directory
@@ -27,7 +27,7 @@ Write a script that does the follwing:
     - Renames the second file to test2.sh
     - Make test2.sh a script that prints the working directory
     - Execute that script
-
+```
 Make this script executable from everywhere.
 
 ## Exercise 3
