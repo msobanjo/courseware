@@ -1,5 +1,13 @@
 # Registry
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Image Naming for Registries](#image-naming-for-registries)
+- [Creating Your Own Registry](#creating-your-own-registry)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 In Docker, a **Registry** is a server side application that can store Docker Images for us. 
