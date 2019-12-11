@@ -55,7 +55,7 @@ Re-tag it to be **localhost:5000/my/nginx**.
 
 Use the `docker push` command to push the image to the *Registry* that you have created.
 
-`docker push nginx:latest `
+`docker push localhost:5000/my/nginx`
 
 **Download an image from the Registry**
 
@@ -74,6 +74,20 @@ The command for this is:
 Check that the image has been pulled by executing:
 
 `docker images`
+
+**Clean up*
+
+Stop registry container:
+
+`docker stop registry`
+
+Remove registry container:
+
+`docker rm registry`
+
+Remove images:
+
+`docker rm registry localhost:5000/my/nginx`
 
 </details>
 
