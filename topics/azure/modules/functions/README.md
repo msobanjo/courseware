@@ -40,13 +40,13 @@ This model of scaling based on demand is great for saving on costs. To explain t
 
 ### Scenario
 
->Your app tracks sports players wearing GPS devices.
+>Your app relies on data generated from sports players wearing GPS devices.
 > 
 > These GPS devices generate lots of data at quite a speed. To monitor this data, you have another solution in place on Azure (for example, an IoT solution)
 >
 > The data is only coming in whilst the players are training or playing a game
 
-In this Scenario, we could use a more traiditonal, VM (Virtual Machine) based approach. The other Azure service monitors the data being generated and our code runs on a VM.
+In this scenario, we could use a more traiditonal, VM (Virtual Machine) based approach. The other Azure service monitors the data being generated and our code runs on a VM.
 
 If we use this model, **we will incur costs even when the VM is idle**. This isn't very logical, as our code will only ever need to run when the other service is monitoring data coming in from the players' GPS units (when the players train or play a game).
 
