@@ -3,6 +3,14 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Managing volumes](#managing-volumes)
+	- [Creating a volume](#creating-a-volume)
+	- [List volumes](#list-volumes)
+	- [Remove volume](#remove-volume)
+	- [Inspecting volumes](#inspecting-volumes)
+- [Mounting volumes](#mounting-volumes)
+	- [--volume Flag](#volume-flag)
+	- [--mount Flag](#mount-flag)
 - [Tasks](#tasks)
 
 <!--TOC_END-->
