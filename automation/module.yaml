@@ -1,12 +1,17 @@
 - heading: '^# .*\n$'
+  name: 'Top Level Heading'
   description: 'Top Level Heading, for example: "# Module Heading"'
 - heading: '^## Contents\n$'
+  name: 'Table of Contents'
   description: 'Contents heading, for example: "## Contents". This should be place after the title and before the Overview sections and is genereated by automated scripts.'
 - heading: '^## Overview\n$'
+  name: 'Overview'
   description: 'Overview section, for example: "## Overview". This should be after the title and before the module content.'
 - heading: '^## Tutorial\n$'
+  name: 'Tutorial'
   description: 'Tutorial section, guided tasks providing step by step instructions for a solution.'
 - heading: '^## Exercises\n$'
+  name: 'Exercises'
   description: 'Exercises section, open-ended tasks that require the delegate to create their own solution.'
 
 
