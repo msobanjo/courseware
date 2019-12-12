@@ -86,7 +86,7 @@ When the script encounters `NonsenseString`, it causes a terminating error. The 
 
 The `Finally` block runs every time the script is run, even if the `Try` statement ran without error or an error was caught in a `Catch` block.
 
-## Tasks
+## Tutorial
 
 1. Open a new Powershell Instance
 2. Check the `$error` variable, to see if there is anything inside it

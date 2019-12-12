@@ -42,7 +42,7 @@ If a project is under public license that allows you to freely use it, you could
 your own project. For example, if you found a web application that you liked, and it was under the public license,
 you could fork the project and add any additional functionality. This would then be yours to freely use or distribute.
 
-## Tasks
+## Tutorial
 
 ### Forking a repository
 

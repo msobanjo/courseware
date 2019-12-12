@@ -46,7 +46,7 @@ pip install --user ansible
 ansible --version
 ```
 
-## Task
+## Tutorial
 
 ### Install Ansible
 Start by making sure that Python installed on your machine, then go ahead and install Ansible using Pip.

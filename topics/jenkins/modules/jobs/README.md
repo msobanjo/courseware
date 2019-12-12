@@ -48,7 +48,7 @@ The settings and options throughout all job configurations will depend on what p
 |Disable Project| Prevention is better than cure. If there are issues with the job's current configuration and you would like to make sure that it doesn't get executed, then you can check this option.|
 |Concurrent Builds| Use this option carefully. There are many cases where your job will not be able to run at the same time as another instance of it, which is why this is disabled by default.|
 
-## Tasks
+## Tutorial
 Have a go at entering some simple configurations into your first job:
 - Choose any project from [GitHub](github.com)
 - Enter some information about the project into the `Project url` field, for the `GitHub project` option

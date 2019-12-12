@@ -124,7 +124,7 @@ Inside the curly brackets, we write what is stored in the `$var` variable to the
 
 Once the value of `$var` is no longer less than 5, the condition is false and the code inside the curly braces won't execute.
 
-## Tasks
+## Tutorial
 In the PowerShell console:
 
 1. Create 3 conditions that evaluate to `True`.

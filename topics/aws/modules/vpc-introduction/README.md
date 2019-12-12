@@ -81,7 +81,7 @@ If, for whatever reason, you have deleted your default VPC, it's easy to create 
 aws ec2 create-default-vpc
 ```
 
-## Tasks
+## Tutorial
 
 ### Managing a Simple VPC
 Try to complete the following tasks, using the commands you learned above:

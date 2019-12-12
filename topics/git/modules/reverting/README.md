@@ -85,7 +85,7 @@ If you have made a lot of changes and just want to back to the latest commit tha
 git reset --hard
 ```
 
-## Tasks
+## Tutorial
 1. Create a folder called "tmp"
 2. Initialise the folder as a git repository
 3. Create a new file called `test.txt`

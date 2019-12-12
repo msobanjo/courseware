@@ -17,7 +17,7 @@ Amazon EC2 reduces the time required to obtain and boot new server instances to 
 Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use.
 Amazon EC2 provides developers the tools to build failure resilient applications and isolate them from common failure scenarios.
 
-## Tasks
+## Tutorial
 - To be able to connect securely to our EC2 instances, we need to configure keys. This can be done with  [Key Pairs](./key-pairs)
 - Learn about running [EC2 Instances](./instances)
 

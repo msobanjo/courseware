@@ -90,7 +90,7 @@ http {
 }
 ```
 
-## Tasks
+## Tutorial
 This section will walkthrough configuring an NGINX server to host the web application included on this module, using the above information as a reference.
 If possible, it's advised to have a Linux virtual machine for this task with a public IP address and firewall port `80` open so that it can be easily deleted afterwards, as opposed to cluttering your work machine.
 

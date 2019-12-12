@@ -117,7 +117,7 @@ These are properties found on the Linux output.
 These tell us how much data is in the queue for that socket, waiting to be read (Recv-Q) or sent (Send-Q).
 In short: if this is 0, everything’s okay, but if there are non-zero values anywhere, there may be trouble.
 
-## Tasks
+## Tutorial
 Check that netstat is working correctly by opening a command prompt on Windows, or a terminal on Linux, and running the following command:
 ```bash
 netstat

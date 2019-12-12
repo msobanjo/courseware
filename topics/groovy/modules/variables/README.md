@@ -23,7 +23,7 @@ def myString = "My String"
 myString = ["My", "String", "Variable", "Is", "Now", "An", "Array"]
 ```
 
-## Tasks
+## Tutorial
 
 ### Define and Access Variables
 Here is some Groovy code that stores the current users name in a variable and then prints out "Hello" and the users name:

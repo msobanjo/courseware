@@ -103,7 +103,7 @@ To make sure everything is running well, you can check the status of your servic
 sudo systemctl status my-service
 ```
 
-## Tasks
+## Tutorial
 Here are some tasks that will give you a chance to use the commands shown above.
 NGINX will be used as an example for these commands; you don't need to fully understand what NGINX is, just that it's a web-server and, in this case, is managed as a systemd service.
 For these tasks, its best to have a fresh install of Debian or Ubuntu

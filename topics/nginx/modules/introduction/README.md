@@ -85,7 +85,7 @@ Commercial support is available at
 </html
 ```
 
-## Tasks
+## Tutorial
 
 ### Install NGINX
 Install NGINX for your current Operating System.

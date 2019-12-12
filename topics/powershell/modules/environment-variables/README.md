@@ -114,7 +114,7 @@ $env:TEST_VARIABLE = $null
 [System.Environment]::SetEnvironmentVariable("TEST_VARIABLE", $null, "Machine")
 ```
 
-## Tasks
+## Tutorial
 Although PowerShell can be used on other systems like Linux, these exercises are best suited on a Windows machine. This is so that you can see the the different access types working correctly.
 You will find that only process environment variables seem to work correctly on Linux.
 

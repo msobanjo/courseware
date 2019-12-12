@@ -50,7 +50,7 @@ Here are some of the other available options to use with netstat on Windows:
 | `-s` | Displays statistics by protocol. By default, statistics are shown for the TCP, UDP, ICMP, and IP protocols. If the IPv6 protocol is installed, statistics are shown for the TCP over IPv6, UDP over IPv6, ICMPv6, and IPv6 protocols. The -p parameter can be used to specify a set of protocols. |
 | `-r` | Displays the contents of the IP routing table. This is equivalent to the `route print` command. |
 
-## Tasks
+## Tutorial
 Here, we'll look at how we can find a process using a certain port on a machine.
 It's a common issue where you have an application running (such as a web server) and you are unable to redeploy that application because the old version of it is still running; this means that the port is in use.
 An efficient way to resolve this is to find the process name by the port that it's listening on.

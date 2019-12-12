@@ -93,7 +93,7 @@ String withoutReturnKeyword() {
 }
 ```
 
-## Tasks
+## Tutorial
 Please create any files for these tasks in this folder.
 
 ### Create Some Basic Functions

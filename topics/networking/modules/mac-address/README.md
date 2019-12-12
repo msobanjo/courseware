@@ -157,7 +157,7 @@ To reset your MAC address on Windows to its original value, you can use the same
 Changing a devices MAC address can be used for bypassing or "tricking" access control in place by disguising itself as another device.
 This is typically a technique used for malicious purposes but can be used for penetration testing and ensuring your services are robust enough to not be susceptible to this.
 
-## Tasks
+## Tutorial
 
 ### Find Out About Your Current MAC Address
 - Find the MAC address of the current device that you are using, remember you can use `ipconfig /all` on Windows and `ip link show` on Linux.

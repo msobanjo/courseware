@@ -154,7 +154,7 @@ Do {
 } Until (Test-Path "$filePath") 
 ```
 
-## Tasks
+## Tutorial
 We are going to use the different types of loops explained above to iterate over a log file (`log.txt`) and extract the errors, which can be found in this folder.
 While working through this set of tasks make sure that you are creating and running the scripts in this directory.
 

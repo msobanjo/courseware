@@ -67,7 +67,7 @@ type systemctl
 # /bin/systemctl
 ```
 
-## Tasks
+## Tutorial
 These tasks will take you through configuring a `jenkins` user to manage a systemd service without using a password.
 To manage a systemd service, you must be able to use the `systemctl` command; this requires elevated permissions (sudo).
 

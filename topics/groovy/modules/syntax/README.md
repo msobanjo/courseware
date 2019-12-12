@@ -96,7 +96,7 @@ Named parameters can be used whilst omitting parenthesis:
 myObject.myFunction param1: "First Parameter", param2: "Second Parameter"
 ```
 
-## Tasks
+## Tutorial
 Here are some tasks to try out some of the syntax discussed above.
 For any of the tasks where you are writing code, please add them to a `groovy-syntax.groovy` file in this folder, and create a single line comment to separate each task, using the task name, like this:
 ```groovy

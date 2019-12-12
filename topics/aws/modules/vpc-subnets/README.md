@@ -61,7 +61,7 @@ The Subnet ID must be provided when deleting a Subnet:
 aws ec2 delete-subnet --subnet-id subnet-04c9613a521b24db0
 ```
 
-## Tasks
+## Tutorial
 Try to complete the following tasks using the commands you learned above:
 - Create a new VPC with a CIDR block of 10.0.0.0/16
 - Create a new Subnet inside the VPC you made, with a CIDR block of 10.0.1.0/24

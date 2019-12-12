@@ -143,7 +143,7 @@ We can change into the second folder by using a relative path:
 cd ..\folder_2
 ```
 
-## Tasks
+## Tutorial
 
 ### Change to Your Home Directory
 Make sure that you are in your home directory by running the following command:

@@ -102,7 +102,7 @@ PS > Hello -ErrorAction SilentlyContinue
 
 This effectively ignores the error stream, and carries out the function as if it didn't exist.
 
-## Task
+## Tutorial
 
 1. Create a Basic Function in Powershell that:
 

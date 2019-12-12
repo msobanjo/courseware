@@ -73,7 +73,7 @@ Using the cloud tends to increase agility.
 * In DevOps for example; agile creation, testing and deploying of services
 * Continuous Delivery/Deployment
 
-### Task
+### Tutorial
 
 Watch the video below about the types of scaling.
 

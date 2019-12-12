@@ -114,7 +114,7 @@ Because Git is a collaborative tool, other people could have made changes to cod
 git pull origin master
 ```
 
-## Tasks
+## Tutorial
 - Create a new Git repository
 - Clone the repository to your [USER_HOME]/projects/
 - Configure the user.name and user.email properties globally

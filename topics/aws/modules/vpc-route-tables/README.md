@@ -65,7 +65,7 @@ When deleting a Route from a Route Table, you must reference the Route Table ID 
 aws ec2 delete-route --route-table-id rtb-22574640 --destination-cidr-block 0.0.0.0/0
 ```
 
-## Tasks
+## Tutorial
 - Create VPC and an Internet Gateway that is attached to it.
 - Create a Route Table for the new VPC.
 - Add a Route that allows Internet Access for the VPC.

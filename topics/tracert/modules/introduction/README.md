@@ -79,7 +79,7 @@ This is listed in milliseconds.
 There are three columns because the tracert sends three separate signal packets.
 This is to display consistency, or a lack thereof, in the route.
 
-## Tasks
+## Tutorial
 
 ### Try it Out
 Lets see what hops are made just by making a request to `google.com`:

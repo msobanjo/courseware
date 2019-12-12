@@ -41,7 +41,7 @@ After the cloning has been completed, change to the project directory and run `g
 checked out. </br>
 ![Fork >](https://imgur.com/UEAW1EN.png)
 
-## Tasks
+## Tutorial
 
 ### Cloning a Repository
 

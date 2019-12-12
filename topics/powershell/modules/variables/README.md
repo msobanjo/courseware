@@ -80,7 +80,7 @@ TotalSeconds      : 950400
 TotalMilliseconds : 950400000
 ```
 
-## Tasks
+## Tutorial
 
 ### Create a Simple String Variable
 Create a simple variable which contains your name, for the example below you can replace `bob` with your name:

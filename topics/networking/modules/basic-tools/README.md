@@ -110,7 +110,7 @@ A failed `ping` request typically looks like this:
 
 This is an excellent way to check whether a server is 'up' or 'down', as well as average connection speeds between your machine and the server.
 
-## Tasks
+## Tutorial
 
 ### Use `nslookup` to find the IP of a website
 *This task requires the use of `nslookup` inside your machine's command line interface (CLI).*

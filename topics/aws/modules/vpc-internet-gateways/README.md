@@ -80,7 +80,7 @@ An Internet Gateway can be deleted by providing the ID of the Internet Gateway:
 aws ec2 delete-internet-gateway --internet-gateway-id igw-0a831f55f06387254
 ```
 
-## Tasks
+## Tutorial
 Try to complete the following tasks:
 - Create a VPC
 - Create an Internet Gateway

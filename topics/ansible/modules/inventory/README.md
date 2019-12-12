@@ -122,7 +122,7 @@ Here is an example of the common args option being used to disable strict host k
 foo.example.com ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 ```
 
-## Tasks
+## Tutorial
 In this set of tasks we are going to be configuring Ansible to be able to "ping" a group of servers.
 
 #### Prerequisites

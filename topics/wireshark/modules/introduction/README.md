@@ -56,7 +56,7 @@ Wireshark can be installed via `apt`:
 sudo apt install -y wireshark
 ```
 
-## Tasks
+## Tutorial
 
 ### Open Wireshark
 You can open Wireshark on Linux by running `sudo wireshark`. On Windows, you should be able to find it by searching for `wireshark` in the start menu.

@@ -197,7 +197,7 @@ Every node can both send and receive data from every other node.
 
 This eliminates the need for specific routers, hubs, or switches.
 
-## Tasks
+## Tutorial
 Try to complete the following tasks:
 
 ### Office Network Topology

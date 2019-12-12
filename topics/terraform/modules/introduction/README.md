@@ -71,7 +71,7 @@ Spinning up and disposing environments this easily means that costs can also sav
  This hybrid solution might be due to a customer wanting to take advantage of the features available on different cloud provider solutions. 
 Another reason for multi-cloud deployments could be for extra fault tolerance.
 
-## Tasks
+## Tutorial
 
 ### Installation
 

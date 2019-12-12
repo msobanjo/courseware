@@ -8,7 +8,7 @@ To start working with the fundamental concepts of Ansible when building Playbook
 	- [Writing simple YAML Playbooks](#writing-simple-yaml-playbooks)
 
 <!--TOC_END-->
-## Task
+## Tutorial
 ### Look at Modules that exist and what we can do with them.
 - You will need to use one of these modules in order to complete the next task, navigate to the Ansible Module Documentation and look at the selection that is available
 ### Writing simple YAML Playbooks

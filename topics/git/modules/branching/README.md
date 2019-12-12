@@ -95,7 +95,7 @@ If you aren't closing a Pull Request and find yourself needing to close a branch
 git push --delete origin feature-123
 ```
 
-## Tasks
+## Tutorial
 
 1. Run the command `git clone https://github.com/jordan-grindrod/scripts`
 2. Run the command `cd ./scripts`

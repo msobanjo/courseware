@@ -99,7 +99,7 @@ http {
 }
 ```
 
-## Tasks
+## Tutorial
 This guide will walk you through deploying an application behind an NGINX reverse proxy that has a front end and backend service.
 
 ### Prerequisites

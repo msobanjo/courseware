@@ -52,7 +52,7 @@ Here is a diagram showing how the layers between the OSI and TCP/IP models relat
 
 ![OSI & TCP Comparison](https://lh3.googleusercontent.com/Kk1yl6jxDdDawh4UUEFlxjUyb3NkjI9A39ExIoDriff6cRr2_2noL0zgIz1p6zt1nfrkKcH3mtnIX_6e07g4wIa5StrKMvUO4419CFhjjSML0UQfe4UiW1PMfNPEbHrPNu7DpUD8CkjYNE1BP2jEXa9drRGFaU8133uUH_HhBF9GCMtQBBns-L2t88g8AEGp_KFf49KVLYb59SnPoON7R4jm6ZhQz9BZCX6C9J7omSAeTYYm4hEP-qlJ-XRtd7BwQKe0lSmVSAixeC2gE30s-Eb7EmS_rA9ONGX09lRovj4agv-nDFONhZWputVhSUwlHc-CQo1RLkUz0bq4zls2YNJKw0tkPCgzXNTdjwCozEF5GHcXqe7dF33EAnF3QMs71-RVQQTKiEIMKU_AAkKCL3nY9O9Admiv_KCgyPojUtkQPoXvEAY647nNF4rbNu9siOrnDiJERHopj82Wt9a8pD17UtiG17CJIdLt3V9TWrC8_5qXp_mZdhdO46E3GrzqcgI0epcyRWJGHDsX0rirMUr_6BWb1nTpJQhEy646I01C7Rco7_eXQ0qXNdMyFLEuC1iWi9na4MuuGrdF21_Jwf3MWSVqiE7vM5kz-WTX4OfR_TN5BHb8gKoBXuGhVAe5YzcDFkbU95BxOXgkdM_PDY8QQ90YanfncLoLB8RhdEBHVJB1mDFRmMCGLGhSP4fYjeUsfvJIdIiVlDsCNuBIEa-4AGl4Y_gpzcMTHQ8PQrmjtvtQ=w1208-h752-no)
 
-## Tasks
+## Tutorial
 Have a look at this YouTube video for more information on this:
 
 [![OSI and TCP/IP Model Overview](https://img.youtube.com/vi/i9RL5jD9cTI/0.jpg)](https://www.youtube.com/watch?v=i9RL5jD9cTI)

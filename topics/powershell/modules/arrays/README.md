@@ -153,7 +153,7 @@ $myArray = 1,2,3
 $myArray[0] = 10
 ```
 
-## Tasks
+## Tutorial
 This set of tasks is split up into a couple of sections, managing log files with arrays and the second task is to read in a comma seperated values CSV file and display it as a table using multi dimentional arrays.
 
 ### Log Files

@@ -149,7 +149,7 @@ CapEx is not *Operating Expenses* (OpEx), and should not be treated as such.
 What the CapEx can tell you is how much a company is investing in new or existing assets, for growing or maintaining
  the company.
 
-### Task
+### Tutorial
 
 Try to answer the following questions in order to check your knowledge.
  If you have trouble answering the question, you can check the answer below.

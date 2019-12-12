@@ -97,7 +97,7 @@ Package an application and its dependencies as a unit.
 * Windows support expected soon
 * Integrated into many other cloud products
 
-### Task
+### Tutorial
 
 **List all the cloud enabling technologies you have learned about in this module**
 <details>

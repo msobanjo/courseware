@@ -81,7 +81,7 @@ This is listed in milliseconds.
 There are three columns because the traceroute sends three separate signal packets.
 This is to display consistency, or a lack thereof, in the route.
 
-## Tasks
+## Tutorial
 
 ### Installation
 Traceroute is a tool that is typically used on Linux systems.

@@ -66,7 +66,7 @@ Provide the name of the Key Pair to delete it:
 aws ec2 delete-key-pair --key-name MyKeyPair
 ```
 
-## Tasks
+## Tutorial
 Try to complete the following tasks:
 - Create a new key pair called `MyKeyPair`, and make sure the value of the key gets saved to a file: `~/ssh/MyKeyPair.pem`
 - Verify the key has been saved properly by viewing the contents of the file

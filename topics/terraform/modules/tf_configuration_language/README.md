@@ -275,7 +275,7 @@ There's no need to do this manually as there is a command which formats the file
 terraform fmt
 ```
 
-## Tasks
+## Tutorial
 Please complete the task below that is most convenient for you.
 
 ### AWS task

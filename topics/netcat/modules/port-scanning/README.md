@@ -48,7 +48,7 @@ This example scans the `127.0.0.1` host (the local machine) over ports 1 to 1000
 The `z` option is used here for running netcat in a scanning mode; this means that while it's testing all the ports, it won't attempt to download anything.
 The `v` option is used for verbose mode, which indicates, more clearly, whether netcat was able to find an accessible port.
 
-## Tasks
+## Tutorial
 
 ### Run a Basic Scan
 On a Linux machine with netcat, run a scan to find the accesible ports:

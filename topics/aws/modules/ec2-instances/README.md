@@ -77,7 +77,7 @@ We can terminate instances by providing their IDs to the `terminate-instances` c
 aws ec2 terminate-instances --instance-ids i-1234567890abcdef0
 ```
 
-## Tasks
+## Tutorial
 - Create and configure a VPC with the following:
     - CIDR Block of 10.0.0.0/16
     - Associated Internet Gateway

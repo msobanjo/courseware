@@ -105,7 +105,7 @@ You will be given the option to delete the branch directly at this point, should
 ## After a Pull Request
 Once a pull request has been opened, it can be reviewed by other collaborators and merged into the base branch you dictated earlier.
 
-## Tasks
+## Tutorial
 - Try to create a new feature branch from an existing GitHub project (or create a new project)
 - Create a pull request to have the new feature merged into the project
 - Fork a repository from GitHub - this can be any repository you feel like

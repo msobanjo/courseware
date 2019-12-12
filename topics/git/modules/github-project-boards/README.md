@@ -94,7 +94,7 @@ The process of moving the cards between columns in this example is manual, but i
 
 Project Boards are a great colaborative tool for tracking the different projects that you, or your team, are working on.
 
-## Tasks
+## Tutorial
 
 1. Create a new repository, or use an existing one
 2. Go into your repository, and click `issues`:

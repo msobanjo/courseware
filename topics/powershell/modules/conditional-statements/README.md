@@ -93,7 +93,7 @@ If a match is found, the switch statement will still continue to check the other
 
 Should none of the statements match, the `default` block will be executed.
 
-## Tasks
+## Tutorial
 This set of tasks will show you how `if`, `else`, `elseif` and `switch` statements can be applied to a simple PowerShell script.
 
 The PowerShell script will figure out how much someone weighs on another planet:

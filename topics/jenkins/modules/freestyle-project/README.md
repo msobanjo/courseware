@@ -69,7 +69,7 @@ For instance, you could be notified by email if the job failed.
 You could also publish a report if the job completed successfully.
 Like with most of the options, the sky is the limit; it all depends on what plugins are installed.
 
-## Tasks
+## Tutorial
 These tasks will take you through configuring a very simple Freestyle Project, which will download this repository and execute the `run.sh` script that is in this directory.
 1. If you haven't created a Freestyle Project already, go ahead and create one now
 2. Lets configure it to download this project and checkout to this subdirectory:

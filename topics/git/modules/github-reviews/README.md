@@ -103,7 +103,7 @@ If there is code in the file, try to run it on your machine and make sure that:
 * It is efficient
 * Any instructions given are clear.
 
-## Tasks
+## Tutorial
 
 NB. This task works much better with somebody else. If you really want to do it individually, you will need to make another GitHub account...
 

@@ -31,7 +31,7 @@ The netstat tool is very important for Linux network administrators, as well as 
 |-v, --verbose|Show more information and statistics|
 |-V, --version|Display the version of netstat that's installed|
 
-## Tasks
+## Tutorial
 Here, we'll look at how we can find a process using a certain port on a machine.
 It's a common issue where you have an application running (such as a webserver) and you are unable to redeploy that application because the old version of it is still running; this means that the port is in use.
 An efficient way to resolve this is to find the process ID by the port that it's listening on.

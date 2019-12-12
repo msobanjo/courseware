@@ -49,7 +49,7 @@ PowerShell can be installed on Mac by using the brew package manager:
 brew cask install powershell
 ```
 
-## Tasks
+## Tutorial
 Here are some basic commands and concepts to try out in PowerShell.
 
 ### Open PowerShell

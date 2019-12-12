@@ -138,7 +138,7 @@ Configurations on Linux can also be reloaded by using `systemctl`:
 sudo systemctl reload nginx
 ```
 
-## Tasks
+## Tutorial
 Here we are going to be changing the `nginx.conf` file so that it can return three different values depending on what URI we request.
 
 ### Edit the `nginx.conf` File

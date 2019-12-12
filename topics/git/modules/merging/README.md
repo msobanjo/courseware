@@ -48,7 +48,7 @@ This conflict only affects the person performing the merge, and the rest of the 
 If a merge conflict happens, *Git* will automatically halt the merge process and mark the file, or files, that are
  conflicting. It is then up to the developer to resolve them.
 
-## Tasks
+## Tutorial
 
 ### Handling Merge Conflicts
 You will now go through the steps required to cause a merge conflict.
