@@ -180,3 +180,61 @@ docker run -d -p 80:80 --name nginx --volume webpage:/usr/share/nginx/html nginx
 ```
 
 As you can see the webpage is still the same as it's coming from the volume rather than the default NGINX page like you would have expected.
+
+**Start Another NGINX Container**
+
+Create another NGINX container using the same volume configurations and publish it to a different port on your host, when you connect to that instance of NGINX you will see your index.html there as well.
+
+```shell 
+docker run -d -p 80:80 --name nginx --volume webpage:/usr/share/nginx/html nginx2
+```
+
+**Make a Change to the Webpage**
+
+Connect to the second NGINX container that you created, install a text editor and make a change to the **/usr/share/nginx/html/index.html** file inside the **<h3>** tag. 
+The changes you make should be reflected on both of the containers when you make a HTTP request to them.
+
+Install dependencies for text editor:
+
+`docker exec -it nginx2 apt update`
+
+`docker exec -it nginx2 apt install -y nano`
+
+Open the index.html file with a nano text editor by executing:
+
+`docker exec -it nginx2 nano /usr/share/nginx/html/index.html`
+
+Place the following into the file, use **SHIFT + INSERT**:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NGINX</title>
+</head>
+<body>
+       <h3>Updated file shown on both containers</h3>
+</body>
+</html>
+``` 
+
+**Stop and remove container**
+
+Stop the containers:
+
+```shell 
+docker stop nginx nginx2
+```
+
+Remove containers:
+
+```shell
+docker rm nginx nginx2
+```
+
+**Remove NGINX image**
+
+Remove the NGINX image:
+
+`docker rmi nginx`
