@@ -9,7 +9,7 @@
 - [Data Types](#data-types)
 	- [Implicitly Applied Data Types](#implicitly-applied-data-types)
 	- [Explicitly Applied Data Types](#explicitly-applied-data-types)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Create a Simple String Variable](#create-a-simple-string-variable)
 	- [Access the `name` Variable](#access-the-name-variable)
 	- [Create an Integer Variable](#create-an-integer-variable)

@@ -12,7 +12,7 @@
 ## Contents
 - [Overview](#overview)
 	- [Cloning a repository](#cloning-a-repository)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Cloning a Repository](#cloning-a-repository-1)
 
 <!--TOC_END-->

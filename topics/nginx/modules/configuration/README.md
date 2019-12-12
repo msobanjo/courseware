@@ -12,7 +12,7 @@
 	- [HTTP](#http)
 	- [Mail & Stream](#mail--stream)
 - [Reloading configurations](#reloading-configurations)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Edit the `nginx.conf` File](#edit-the-nginxconf-file)
 	- [Reload the New Configurations](#reload-the-new-configurations)
 	- [View the New Changes](#view-the-new-changes)

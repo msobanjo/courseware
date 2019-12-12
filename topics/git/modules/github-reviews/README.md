@@ -19,7 +19,7 @@
 	- [Keeping Track of Reviewed Files](#keeping-track-of-reviewed-files)
 	- [Finishing the Review](#finishing-the-review)
 - [Good Practice](#good-practice)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

@@ -3,7 +3,7 @@ To install and configure Ansible, connect two machines (one master, one node) to
 
 <!--TOC_START-->
 ## Contents
-- [Task](#task)
+- [Tutorial](#tutorial)
 	- [Install Ansible on a Linux VM](#install-ansible-on-a-linux-vm)
 
 <!--TOC_END-->

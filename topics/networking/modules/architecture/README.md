@@ -12,7 +12,7 @@
 	- [Mesh](#mesh)
 	- [Tree](#tree)
 	- [Hybrid P2P (Peer-to-Peer)](#hybrid-p2p-peertopeer)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Office Network Topology](#office-network-topology)
 	- [Good Network Architecture](#good-network-architecture)
 

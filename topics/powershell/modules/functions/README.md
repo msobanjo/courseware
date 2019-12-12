@@ -9,7 +9,7 @@
 - [Basic Functions](#basic-functions)
 - [Advanced Functions](#advanced-functions)
 	- [Built-in Parameters](#builtin-parameters)
-- [Task](#task)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

@@ -11,7 +11,7 @@
 		- [Debian/Ubuntu](#debianubuntu)
 	- [Windows](#windows)
 	- [Docker](#docker)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Install NGINX](#install-nginx)
 
 <!--TOC_END-->

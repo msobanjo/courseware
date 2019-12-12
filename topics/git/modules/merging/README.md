@@ -12,7 +12,7 @@
 ## Contents
 - [Overview](#overview)
 	- [Merge conflicts](#merge-conflicts)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Handling Merge Conflicts](#handling-merge-conflicts)
 		- [Initialise a Repository for Testing Merge Conflicts](#initialise-a-repository-for-testing-merge-conflicts)
 		- [Create a Branch with a Conflict](#create-a-branch-with-a-conflict)

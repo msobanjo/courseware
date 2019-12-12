@@ -5,7 +5,7 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Define and Access Variables](#define-and-access-variables)
 
 <!--TOC_END-->

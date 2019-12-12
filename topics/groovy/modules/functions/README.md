@@ -13,7 +13,7 @@
 	- [No value (void)](#no-value-void)
 	- [Returning a Type](#returning-a-type)
 	- [Return Keyword](#return-keyword)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Create Some Basic Functions](#create-some-basic-functions)
 		- [Current User Message Function](#current-user-message-function)
 		- [Addition Function](#addition-function)

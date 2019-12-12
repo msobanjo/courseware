@@ -15,7 +15,7 @@
 - [Add Array Elements](#add-array-elements)
 	- [Append to An Array](#append-to-an-array)
 - [Change Array Elements](#change-array-elements)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Log Files](#log-files)
 		- [Getting the Log Files](#getting-the-log-files)
 		- [Last 3 Log File Paths](#last-3-log-file-paths)

@@ -15,7 +15,7 @@
 - [Types of Project Boards](#types-of-project-boards)
 - [Templates for Project Boards](#templates-for-project-boards)
 - [Creating a User-Owned Project Board](#creating-a-userowned-project-board)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

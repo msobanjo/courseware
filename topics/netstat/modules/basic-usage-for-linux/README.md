@@ -6,7 +6,7 @@
 ## Contents
 - [Overview](#overview)
 - [Options on Linux](#options-on-linux)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Install NGINX for Your Operating System](#install-nginx-for-your-operating-system)
 		- [Ubuntu/Debian](#ubuntudebian)
 		- [CentOS/RHEL](#centosrhel)

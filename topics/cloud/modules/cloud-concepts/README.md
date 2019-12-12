@@ -18,7 +18,7 @@
 	- [Fault tolerance](#fault-tolerance)
 	- [Economies of scale](#economies-of-scale)
 	- [Capital expenditure](#capital-expenditure)
-	- [Task](#task)
+	- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

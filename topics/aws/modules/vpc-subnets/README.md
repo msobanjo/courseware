@@ -18,7 +18,7 @@ We assign a unique ID to each subnet.
 	- [Getting the ID Property Using Queries](#getting-the-id-property-using-queries)
 - [Delete Subnets](#delete-subnets)
 	- [Basic Usage](#basic-usage-2)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Creating Subnets

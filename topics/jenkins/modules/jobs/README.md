@@ -10,7 +10,7 @@
 - [Help!](#help)
 - [Job Configuration](#job-configuration)
 	- [General Settings](#general-settings)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

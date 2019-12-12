@@ -8,7 +8,7 @@
 - [Incoming and Outgoing Frames](#incoming-and-outgoing-frames)
 - [Frames Traversing the Network](#frames-traversing-the-network)
 - [Cyclic Redundancy Check (CRC)](#cyclic-redundancy-check-crc)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Viewing Frames with Wireshark](#viewing-frames-with-wireshark)
 
 <!--TOC_END-->

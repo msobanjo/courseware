@@ -13,7 +13,7 @@
 - [View Existing Internet Gateways](#view-existing-internet-gateways)
 - [Detaching Internet Gateways](#detaching-internet-gateways)
 - [Deleting Internet Gateways](#deleting-internet-gateways)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

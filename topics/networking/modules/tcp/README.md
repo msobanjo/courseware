@@ -10,7 +10,7 @@
 	- [Connection Establishment](#connection-establishment)
 	- [Data Transfer](#data-transfer)
 	- [Connection Termination (Graceful Close)](#connection-termination-graceful-close)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Viewing TCP Packets with Wireshark](#viewing-tcp-packets-with-wireshark)
 
 <!--TOC_END-->

@@ -8,7 +8,7 @@
 - [OSI](#osi)
 - [TCP/IP](#tcpip)
 - [TCP/IP and OSI Visual Comparison](#tcpip-and-osi-visual-comparison)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

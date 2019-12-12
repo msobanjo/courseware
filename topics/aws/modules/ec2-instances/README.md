@@ -14,7 +14,7 @@
 	- [Basic Usage](#basic-usage-1)
 - [Terminate a Running Instance](#terminate-a-running-instance)
 	- [Basic Usage](#basic-usage-2)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

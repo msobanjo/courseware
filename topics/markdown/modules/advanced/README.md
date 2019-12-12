@@ -13,7 +13,7 @@
 - [Tables](#tables)
 	- [Table Alignment](#table-alignment)
 - [Closing](#closing)
-- [Task](#task)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview
