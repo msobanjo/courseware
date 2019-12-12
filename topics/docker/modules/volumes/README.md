@@ -187,12 +187,12 @@ As you can see the webpage is still the same as it's coming from the volume rath
 Create another NGINX container using the same volume configurations and publish it to a different port on your host, when you connect to that instance of NGINX you will see your index.html there as well.
 
 ```shell 
-docker run -d -p 80:80 --name nginx --volume webpage:/usr/share/nginx/html nginx2
+docker run -d -p 81:80 --name nginx2 --volume webpage:/usr/share/nginx/html nginx
 ```
 
 **Make a Change to the Webpage**
 
-Connect to the second NGINX container that you created, install a text editor and make a change to the **/usr/share/nginx/html/index.html** file inside the **<h3>** tag. 
+Connect to the second NGINX container that you created, install a text editor and make a change to the **/usr/share/nginx/html/index.html** file inside the <h3> tag. 
 The changes you make should be reflected on both of the containers when you make a HTTP request to them.
 
 Install dependencies for text editor:
