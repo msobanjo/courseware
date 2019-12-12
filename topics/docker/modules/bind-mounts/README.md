@@ -84,3 +84,92 @@ It is Read/Write by default.
 ## Tasks
 
 
+This exercise will get you to create a custom configuration for NGINX on your host machine and then override the default configuration for NGINX running in a  container by using a bind mount of the configuration file.
+
+**Creating a directory**
+
+Create a new directory called `bind_mounts_exercise`, the command for this is:
+
+```shell
+mkdir bind_mounts_exercise
+```
+
+Change to the new directory by executing:
+
+```shell
+cd bind_mounts_exercise
+``` 
+
+**Creating configuration file**
+
+Create NGINX configuration file called `nginx.conf`, the command for this is:
+
+```shell
+touch nginx.conf
+```
+
+Place the following in the configuration file, to keep the formatting try using **SHIFT+INSERT**:
+
+```
+events {}
+http {
+   server {
+       listen 80;
+       location / {
+           return 200 "NGINX";
+       }
+   }
+}
+```
+
+**Run the NGINX container**
+
+Run the NGINX container, mapping port **80** and override the existing NGINX configuration file with the one you created.
+
+The command for this is:
+
+```shell
+docker run -d -p 80:80 --name nginx --mount type=bind,source=$(pwd)/nginx.conf,target=/etc/nginx/nginx.conf nginx
+```
+
+**Checking it works**
+
+There are two ways how you can check whether it works:
+
+Execute the following command:
+
+```shell
+curl localhost:80
+``` 
+
+You should see the highlighted text printed on the terminal:
+
+![docker mount CLI](https://imgur.com/Y5pmala.jpg)
+
+Second way is by navigating your browser to `localhost:80` and you should see the following:
+
+![docker mount CLI](https://imgur.com/lPMUN2c.jpg)
+
+**Stop container**
+ 
+ Stop the container by executing:
+ 
+ ```shell
+docker stop nginx 
+```
+
+**Remove container**
+
+Remove container by excuting:
+
+```shell
+docker rm nginx
+```
+
+**Remove NGINX image**
+
+Remove NGINX image by executing:
+
+```shell 
+docker rmi nginx
+```
