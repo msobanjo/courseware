@@ -51,6 +51,28 @@ The inspect command can be used to see more details about a volume in Docker.
 docker volume inspect my-volume
 ```
 
+## Mounting volumes
 
+Just like with Bind Mounts, you can choose to use either the volume or mount flags. 
+Mounting the volumes into containers is very similar to creating Bind Mounts, except for the source we are pointing to the volume that we want to be mounted not a location on the host file system. Options for mounting volumes as read only are available, just like with Bind Mounts.
+
+When specifying a volume name with any of these commands, if the volumes doesn’t exist then Docker will create one for you. 
+This is a handy feature as it allows us to skip a step if need be, but make sure to spell your volume name correctly because Docker won’t care if you don’t.
+
+###  --volume Flag
+
+When using the volume flag we need to provide the name of the volume that is going to be mounted and the location which the volume is going to be mounted in the container.
+
+```shelll
+docker run --volume my-volume:/usr/share/nginx/html
+```
+
+### --mount Flag
+
+With the mount flag provide the volume name and the destination on the container to mount the volume.
+
+```shell 
+docker run --mount source=my-volume,destination=/usr/share/nginx/html
+```
 
 ## Tasks
