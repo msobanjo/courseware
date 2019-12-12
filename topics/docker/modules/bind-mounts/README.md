@@ -1,5 +1,11 @@
 # Bind mounts
 
+<!--TOC_START-->
+## Contents
+- [Overview](#overview)
+- [Tasks](#tasks)
+
+<!--TOC_END-->
 ## Overview
 
 Bind Mounts are a very old feature in Docker and the most basic way of sharing a file or folder between a container and the host machine. 
@@ -76,4 +82,5 @@ Mount flag options:
 It is Read/Write by default.
 
 ## Tasks
+
 
