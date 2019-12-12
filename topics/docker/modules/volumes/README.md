@@ -84,6 +84,7 @@ docker run --mount source=my-volume,destination=/usr/share/nginx/html
 ```
 
 ## Volume Drivers
+
 Whilst we won't be getting hands on with volume drivers here, they are definitely worth knowing about for future reference. 
 When you do a listing for all the existing volumes, you might have noticed a **driver column** called **local**. 
 This basically means that the volume is stored on the host machine. 
@@ -91,3 +92,90 @@ You may at some point want to develop a solution where the volume can be stored 
 Plugins will allow you run different drivers to attach volumes to remote places like NFS servers or cloud storage.
 
 ## Tasks
+
+This exercise will get you to create and manage volumes in Docker. 
+You will be able to see that data can be persisted after a container is destroyed and how a single volume can be used across multiple containers at the same time. 
+NGINX will serve as another good tool demonstrate this, we will create a simple webpage for NGINX to serve and store it on the volume. 
+If the NGINX container is stopped and removed, when it is created again the same webpage will be served. 
+If another NGINX server is created with the volume, the same webpage will be accessible from that instance of NGINX as well.
+
+**Create a new directory**
+
+Create a new directory called `docker_volumes`, execute the following command for this:
+
+`mkdir docker_volumes`
+
+Change the directory by executing:
+
+`cd docker_volumes`
+
+**Creating a volume**
+
+Create a new volume called `webpage`, the command to do this is:
+
+```shell 
+docker volume create webpage
+```
+
+**Create an NGINX Container**
+
+Create an NGINX container, expose port **80**, mount the `webpage` volume to **/usr/share/nginx/html**, execute the following command:
+
+```shell 
+docker run -d -p 80:80 --name nginx --volume webpage:/usr/share/nginx/html nginx
+```
+
+**Create a Webpage**
+
+Let’s make a change to the default NGINX home page, so it is our page. 
+You will need to connect to the container that you created and edit the index.html file, replacing the entire contents with our one. 
+For that however we need a text editor such as vim or nano. 
+The latest NGINX Docker image is based on Debian so you can use the apt package manager to install one of these.
+
+Install dependencies for text editor:
+
+`docker exec -it nginx apt update`
+
+`docker exec -it nginx apt install -y nano`
+
+Open the index.html file with a nano text editor by executing:
+
+`docker exec -it nginx nano /usr/share/nginx/html/index.html`
+
+Place the following into the file, use **SHIFT + INSERT**:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NGINX</title>
+</head>
+<body>
+       <h3>index.html file stored in a Docker Volume</h3>
+</body>
+</html>
+``` 
+
+**Destroy and recreate the container**
+
+Stop the container
+
+```shell 
+docker stop nginx
+```
+
+Remove the container
+```shell 
+docker rm nginx
+```
+
+**Recreate the container**
+
+Recreate the container, expose port **80**, mount the `webpage` volume to **/usr/share/nginx/html**, execute the following command:
+
+```shell 
+docker run -d -p 80:80 --name nginx --volume webpage:/usr/share/nginx/html nginx
+```
+
+As you can see the webpage is still the same as it's coming from the volume rather than the default NGINX page like you would have expected.
