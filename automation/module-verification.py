@@ -17,15 +17,22 @@ for topic in state['topics']:
 
 errors = []
 for module in modules:
+    print(module)
     with open(module) as readme_file:
         readme_lines = readme_file.readlines()
 
     for spec in specs:
+        print(spec['heading'])
         matched = []
         pattern = re.compile(spec['heading'])
+        code_block = False
         for line in readme_lines:
+            if line.startswith("```"):
+                code_block = not code_block
+
             match = pattern.search(line)
-            if match:
+            if match and not code_block:
+                print(line)
                 matched.append(match)
 
         if 'count' in spec:
