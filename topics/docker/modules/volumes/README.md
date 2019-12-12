@@ -94,6 +94,10 @@ Plugins will allow you run different drivers to attach volumes to remote places 
 
 ## Tasks
 
+<details>
+
+<summary>Expand guided task</summary>
+
 This exercise will get you to create and manage volumes in Docker. 
 You will be able to see that data can be persisted after a container is destroyed and how a single volume can be used across multiple containers at the same time. 
 NGINX will serve as another good tool demonstrate this, we will create a simple webpage for NGINX to serve and store it on the volume. 
@@ -238,3 +242,21 @@ docker rm nginx nginx2
 Remove the NGINX image:
 
 `docker rmi nginx`
+
+**Remove volume**
+
+Remove volume:
+
+`docker volume rm webpage`
+
+</details>
+
+<details>
+
+<summary>Expand individual task</summary>
+
+Stop and remove all containers, delete the volume that was created. 
+Try to persist all the jobs and configurations for Jenkins, so that when the container has been stopped and removed, Jenkins can pick up where it left off when you create the container again.
+The default Jenkins home folder in the Jenkins Docker image is **/var/jenkins_home**, so this is the folder that you will want to look at persisting.
+
+</details>
