@@ -88,7 +88,6 @@ It is Read/Write by default.
 
 ## Tasks
 
-
 This exercise will get you to create a custom configuration for NGINX on your host machine and then override the default configuration for NGINX running in a  container by using a bind mount of the configuration file.
 
 **Creating a directory**
