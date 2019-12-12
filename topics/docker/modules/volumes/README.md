@@ -75,4 +75,11 @@ With the mount flag provide the volume name and the destination on the container
 docker run --mount source=my-volume,destination=/usr/share/nginx/html
 ```
 
+## Volume Drivers
+Whilst we won't be getting hands on with volume drivers here, they are definitely worth knowing about for future reference. 
+When you do a listing for all the existing volumes, you might have noticed a **driver column** called **local**. 
+This basically means that the volume is stored on the host machine. 
+You may at some point want to develop a solution where the volume can be stored on a remote host or in a cloud storage solution perhaps. 
+Plugins will allow you run different drivers to attach volumes to remote places like NFS servers or cloud storage.
+
 ## Tasks
