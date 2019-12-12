@@ -3,6 +3,13 @@
 <!--TOC_START-->
 ## Contents
 - [Overview](#overview)
+- [Functions](#functions)
+	- [Speed](#speed)
+	- [Scaling](#scaling)
+- [Cost](#cost)
+	- [Scenario](#scenario)
+- [Types of Function](#types-of-function)
+- [Task](#task)
 
 <!--TOC_END-->
 ## Overview
