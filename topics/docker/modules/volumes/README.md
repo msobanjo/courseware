@@ -191,6 +191,8 @@ docker run -d -p 81:80 --name nginx2 --volume webpage:/usr/share/nginx/html ngin
 
 **Make a Change to the Webpage**
 
+Connect to the second NGINX container that you created, install a text editor and make a change to the **/usr/share/nginx/html/index.html** file inside the <h3> tags.
+
 Install dependencies for text editor:
 
 `docker exec -it nginx2 apt update`
