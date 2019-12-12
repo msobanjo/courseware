@@ -6,7 +6,7 @@
 - [Comparison Operators](#comparison-operators)
 - [Logical Operators](#logical-operators)
 - [Use with `if` and `while` Statements](#use-with-if-and-while-statements)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

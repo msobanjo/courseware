@@ -14,7 +14,7 @@
 - [Delete VPCs](#delete-vpcs)
 	- [Basic Usage](#basic-usage-2)
 	- [Creating a Default VPC](#creating-a-default-vpc)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Managing a Simple VPC](#managing-a-simple-vpc)
 		- [Create a new VPC with a CIDR block of `10.0.0.0/16`](#create-a-new-vpc-with-a-cidr-block-of-1000016)
 		- [Delete a VPC using ID](#delete-a-vpc-using-id)

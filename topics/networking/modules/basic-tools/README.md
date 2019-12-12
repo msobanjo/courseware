@@ -5,7 +5,7 @@
 - [Overview](#overview)
 	- [`nslookup`](#nslookup)
 	- [`ping`](#ping)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Use `nslookup` to find the IP of a website](#use-nslookup-to-find-the-ip-of-a-website)
 	- [Use `ping` to query a site using its IP address](#use-ping-to-query-a-site-using-its-ip-address)
 	- [Disconnect your machine during a `ping` request](#disconnect-your-machine-during-a-ping-request)

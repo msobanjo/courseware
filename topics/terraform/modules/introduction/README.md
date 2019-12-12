@@ -6,7 +6,7 @@
 	- [Infrastructure as Code](#infrastructure-as-code)
 	- [Workflows](#workflows)
 	- [Common use cases](#common-use-cases)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Installation](#installation)
 	- [Windows](#windows)
 		- [Configuring the Terraform on your `PATH`](#configuring-the-terraform-on-your-path)

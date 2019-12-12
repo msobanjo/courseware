@@ -22,7 +22,7 @@
 ## Contents
 - [Overview](#overview)
 - [Usage](#usage)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Run a Basic Scan](#run-a-basic-scan)
 	- [Run a Scan Again After Installing an Application](#run-a-scan-again-after-installing-an-application)
 		- [Installing on Ubuntu/Debian](#installing-on-ubuntudebian)

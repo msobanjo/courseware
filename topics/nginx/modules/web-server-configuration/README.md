@@ -11,7 +11,7 @@
 - [Configuration](#configuration)
 	- [Top-Level Contexts](#toplevel-contexts)
 	- [Virtual Server](#virtual-server)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Prerequisites](#prerequisites)
 	- [Install the Web Application](#install-the-web-application)
 	- [Configure NGINX](#configure-nginx)

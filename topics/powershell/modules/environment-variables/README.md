@@ -16,7 +16,7 @@
 	- [Unassign Process Level Environment Variable](#unassign-process-level-environment-variable)
 	- [Unassign User Level Environment Variable](#unassign-user-level-environment-variable)
 	- [Unassign System Level Environment Variable](#unassign-system-level-environment-variable)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Process Level Assignment](#process-level-assignment-1)
 	- [User & System Level Assignment](#user--system-level-assignment-1)
 		- [User Level](#user-level)

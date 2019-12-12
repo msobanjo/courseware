@@ -15,7 +15,7 @@
 	- [Overview](#overview-1)
 	- [When you need parenthesis](#when-you-need-parenthesis)
 	- [Omitting Parenthesis with Named Parameters](#omitting-parenthesis-with-named-parameters)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Commenting](#commenting-1)
 
 <!--TOC_END-->

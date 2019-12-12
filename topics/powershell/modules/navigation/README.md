@@ -19,7 +19,7 @@
 		- [Windows](#windows)
 		- [Linux](#linux)
 	- [Relative Paths](#relative-paths)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Change to Your Home Directory](#change-to-your-home-directory)
 	- [Make Some Folders](#make-some-folders)
 	- [Change into Folder `2`](#change-into-folder-2)

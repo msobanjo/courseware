@@ -12,7 +12,7 @@
 - [Order of configuration](#order-of-configuration)
 - [Comments](#comments)
 - [Formatting](#formatting)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [AWS task](#aws-task)
 		- [Prerequisites](#prerequisites)
 		- [Authenticating](#authenticating)

@@ -13,7 +13,7 @@
 - [Overview](#overview)
 - [Proposing a change](#proposing-a-change)
 - [Your idea](#your-idea)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Forking a repository](#forking-a-repository)
 	- [Updating forked repository from original](#updating-forked-repository-from-original)
 

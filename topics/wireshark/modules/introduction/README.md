@@ -23,7 +23,7 @@
 - [Installation](#installation)
 	- [Windows](#windows)
 	- [Ubuntu/Debian](#ubuntudebian)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Open Wireshark](#open-wireshark)
 	- [Select a Network Interface](#select-a-network-interface)
 	- [Filter Packets by Host Name](#filter-packets-by-host-name)

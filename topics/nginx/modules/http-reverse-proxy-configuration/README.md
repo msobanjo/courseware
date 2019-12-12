@@ -14,7 +14,7 @@
 - [Configuration](#configuration)
 	- [Basic](#basic)
 	- [Multi-Tier Applications](#multitier-applications)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Prerequisites](#prerequisites)
 	- [Configure the `api` Virtual Machine](#configure-the-api-virtual-machine)
 		- [Make Sure Git is Installed](#make-sure-git-is-installed)

@@ -15,7 +15,7 @@
 		- [Enable and Start](#enable-and-start)
 	- [Disable a Service](#disable-a-service)
 	- [Check the Service Status](#check-the-service-status)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Install NGINX](#install-nginx)
 	- [Check the Service Status](#check-the-service-status-1)
 	- [Stop the Service](#stop-the-service)

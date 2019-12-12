@@ -23,7 +23,7 @@
 	- [Commiting a Change (`git commit`)](#commiting-a-change-git-commit)
 	- [Pushing Changes (`git push`)](#pushing-changes-git-push)
 	- [Retrieving Remote Changes](#retrieving-remote-changes)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

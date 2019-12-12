@@ -15,7 +15,7 @@
 	- [Releases](#releases)
 	- [Hotfixes](#hotfixes)
 - [Creating and Deleting Branches](#creating-and-deleting-branches)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

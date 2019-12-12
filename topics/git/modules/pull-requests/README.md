@@ -14,7 +14,7 @@
 		- [Create a Pull Request](#create-a-pull-request-1)
 - [Closing a Pull Request](#closing-a-pull-request)
 - [After a Pull Request](#after-a-pull-request)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

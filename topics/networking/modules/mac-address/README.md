@@ -37,7 +37,7 @@
 	- [Linux](#linux-1)
 	- [Windows](#windows-1)
 	- [Why?](#why)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Find Out About Your Current MAC Address](#find-out-about-your-current-mac-address)
 	- [Change Your MAC Address](#change-your-mac-address)
 

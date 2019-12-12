@@ -14,7 +14,7 @@ This handout discusses how to manage these Key Pairs, and how to locally store t
 	- [Private Key Permissions](#private-key-permissions)
 - [Deleting Key Pairs](#deleting-key-pairs)
 		- [Basic Usage](#basic-usage-1)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Creating Key Pairs

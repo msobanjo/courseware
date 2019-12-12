@@ -19,7 +19,7 @@
 ## Contents
 - [Overview](#overview)
 - [Options on Windows](#options-on-windows)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Install NGINX on Windows](#install-nginx-on-windows)
 	- [Identify the Application Using a Port Number](#identify-the-application-using-a-port-number)
 	- [Stop the Application](#stop-the-application)

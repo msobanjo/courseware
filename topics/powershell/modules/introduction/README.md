@@ -9,7 +9,7 @@
 	- [Windows](#windows)
 	- [Linux](#linux)
 	- [MacOS](#macos)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Open PowerShell](#open-powershell)
 	- [Make a Variable](#make-a-variable)
 	- [Show the Contents of a Variable](#show-the-contents-of-a-variable)

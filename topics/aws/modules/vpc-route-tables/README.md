@@ -12,7 +12,7 @@
 	- [Route for Internet Access](#route-for-internet-access)
 - [Deleting Routes](#deleting-routes)
 	- [Basic Usage](#basic-usage-1)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

@@ -12,7 +12,7 @@
 	- [Nesting Statements](#nesting-statements)
 - [`switch` Statement](#switch-statement)
 	- [Example](#example)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Obtain the User Input](#obtain-the-user-input)
 	- [Calculate the User's Input with `if`, `else` & `elseif`](#calculate-the-users-input-with-if-else--elseif)
 	- [Calculate the User's Input with a `switch` Statment](#calculate-the-users-input-with-a-switch-statment)

@@ -16,7 +16,7 @@
 	- [Secret Texts & Files](#secret-texts--files)
 - [Build](#build)
 - [Post-build Actions](#postbuild-actions)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 
 <!--TOC_END-->
 ## Overview

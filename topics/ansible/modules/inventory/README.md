@@ -20,7 +20,7 @@
 	- [Ansible User](#ansible-user)
 	- [SSH Private Key File](#ssh-private-key-file)
 	- [SSH Arguments](#ssh-arguments)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 		- [Prerequisites](#prerequisites)
 	- [Configure the Inventory File](#configure-the-inventory-file)
 	- [Playbook](#playbook)

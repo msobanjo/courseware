@@ -17,7 +17,7 @@
 - [Overview](#overview)
 - [Installation](#installation)
 	- [Using Pip](#using-pip)
-- [Task](#task)
+- [Tutorial](#tutorial)
 	- [Install Ansible](#install-ansible)
 	- [Configure a Playbook to Install a Web Server](#configure-a-playbook-to-install-a-web-server)
 	- [Run the Playbook](#run-the-playbook)

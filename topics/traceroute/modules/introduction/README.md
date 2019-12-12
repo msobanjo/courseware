@@ -17,7 +17,7 @@
 		- [Hop Number](#hop-number)
 		- [Name & IP Address](#name--ip-address)
 		- [RTT Columns](#rtt-columns)
-- [Tasks](#tasks)
+- [Tutorial](#tutorial)
 	- [Installation](#installation)
 		- [Ubuntu/Debian](#ubuntudebian)
 		- [CentOS/RHEL](#centosrhel)
