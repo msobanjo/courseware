@@ -13,6 +13,10 @@
 	- [Standard Input (`<`)](#standard-input)
 	- [Heredocs (`<<`)](#heredocs)
 	- [Piping](#piping)
+- [Redirection with File Descriptors](#redirection-with-file-descriptors)
+	- [Standard Error Redirection](#standard-error-redirection)
+		- [To a File](#to-a-file)
+		- [To Standard Output](#to-standard-output)
 - [Tutorial](#tutorial)
 	- [Running a Remote Script](#running-a-remote-script)
 		- [Prerequisites](#prerequisites)
@@ -128,6 +132,45 @@ The output of the `curl` command (the script itself) can be redirected as `stdin
 ```bash
 # don't try running this unless you don't mind having docker installed on your machine...
 curl https://get.docker.com | sudo bash
+```
+
+## Redirection with File Descriptors
+We can use file descriptors as a way of capturing data streams for standard input, output and error.
+
+POSIX (Portable Operating System Interface) a set of standards which defines how these can be accessed, amongst many other standards for compatibility between operating systems.
+
+According to POSIX [here](https://pubs.opengroup.org/onlinepubs/9699919799/functions/stdin.html):
+- **STDIN_FILENO**
+  Standard input value, stdin. Its value is 0.
+- **STDOUT_FILENO**
+  Standard output value, stdout. Its value is 1.
+- **STDERR_FILENO**
+  Standard error value, stderr. Its value is 2.
+
+So what this is saying is, Standard Input can be accessed with `0`, Standard Output with `1` and Standard Error with `2`.
+
+### Standard Error Redirection
+
+#### To a File
+The file descriptor for Standard Error is `2`, so we can reference this when redirecting output to a file.
+See below for a the errors of a command that is failing being redirected to an error log file:
+```bash
+ls -al /I/will/not/work > /tmp/error.log
+```
+
+We'll be able to see that the Standard Output still just goes to the terminal for commands that work fine:
+```bash
+ls -al / > /tmp/error.log
+```
+
+#### To Standard Output
+There are times when we will want to combine errors and normal output together into the same file.
+To do this we can combine the error and output streams by redirecting the error stream to standard output using `2>&1`.
+
+Here's an example of two commands, the first one is successful and the second one fails.
+Both the standard output and error streams will be combined and sent to a log file:
+```bash
+(ls -al / && ls -al sdfgst43qg4wergs) > /tmp/log.txt 2>&1
 ```
 
 ## Tutorial
