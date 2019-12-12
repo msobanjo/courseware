@@ -34,9 +34,9 @@ for module in modules:
             count = 1
 
         if len(matched) < count:
-            errors.append("There needs to be at least {0} {1} in the file: {2}\n".format(count, spec['description'], module))
+            errors.append("File: {2}\nDescription: There needs to be at least {0} {1}\n".format(count, spec['description'], module))
         elif len(matched) > count:
-            errors.append("There can be no more than {0} {1} in the file: {2}".format(count, spec['description'], module))
+            errors.append("File: {2}\nDescription: There can be no more than {0} {1}\n".format(count, spec['description'], module))
 
 if len(errors) > 0:
     rows, columns = os.popen('stty size', 'r').read().split()
